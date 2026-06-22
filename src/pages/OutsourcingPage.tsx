@@ -476,8 +476,8 @@ const OutsourcingPage: React.FC = () => {
                 width="100%" 
                 height="600" 
                 frameBorder="0" 
-                marginHeight="0" 
-                marginWidth="0" 
+                marginHeight={0} 
+                marginWidth={0} 
                 title="Kontakt Nexus Marketing - Hvorfor Nexus Marketing"
               ></iframe>
             </div>
