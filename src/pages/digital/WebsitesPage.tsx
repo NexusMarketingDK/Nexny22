@@ -155,6 +155,40 @@ export default function WebsitesPage() {
           </Link>
         </div>
       </section>
+      <section className="section bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">Professionelle Hjemmesider der Konverterer – SEO-Optimeret og Mobilvenlig Design</h2>
+            <p className="text-gray-600 mb-4">
+              En professionel hjemmeside fra Nexny er din vigtigste digitale investering – den arbejder for dig 24 timer i døgnet, 7 dage om ugen, og er ofte det første møde potentielle kunder har med din virksomhed. Nexny designer og bygger hjemmesider med et klart formål: at konvertere besøgende til leads og kunder. Vi kombinerer professionelt visuelt design, stærk UX-planlægning og teknisk SEO-optimering for at sikre at din hjemmeside both ser flot ud og ranker godt i Google.
+            </p>
+            <p className="text-gray-600 mb-6">
+              Alle Nexny's hjemmesider er fuldt responsive og mobilvenlige, og er bygget med hurtig indlæsningstid som en kerneprioritering. Vi opsætter Google Analytics og konverteringstracking som standard, integrerer GDPR-compliance og cookie-banner fra starten, og giver 3 måneders gratis support efter lancering. Du ejer 100% af koden og indholdet, og kan selv administrere hjemmesiden via det CMS vi implementerer.
+            </p>
+            <ul className="space-y-2">
+              <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> SEO-optimeret fra grunden med korrekt metadata og struktur</li>
+              <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> Responsivt design til mobile, tablet og desktop</li>
+              <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> CMS-integration for nem selvadministration</li>
+              <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> 3 måneders gratis support efter lancering</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section className="section bg-sky-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">Hjemmeside Priser og Typer – Fra Enkle Landingssider til Komplette Webshops</h2>
+            <p className="text-gray-600 mb-4">
+              Nexny leverer hjemmesider i alle størrelser og kompleksiteter – fra målrettede landingssider til kampagner og annoncetrafik, over professionelle virksomhedshjemmesider, til komplette webshops med fuldt betalingsflow og produktstyring. Vi tilbyder også porteføljesider, bookingplatforme og branche-specifikke løsninger tilpasset din forretning. Prisen afhænger af scope og kompleksitet, og vi sender altid et detaljeret og transparent tilbud inden projektet startes.
+            </p>
+            <p className="text-gray-600 mb-4">
+              Kontakt Nexny på +45 91 95 27 94 eller kontakt@nexny.dk for at høre mere om, hvilken hjemmesideløsning der passer bedst til din virksomhed og dit budget. Vi sender et uforpligtende tilbud inden for 24 timer.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <FAQSection faqs={[
         { question: 'Hvad er en landingsside?', answer: 'En landingsside er en målrettet webside designet til at konvertere besøgende til leads eller kunder – typisk brugt i kampagner og annoncering.' },
         { question: 'Kan jeg selv opdatere indholdet på min hjemmeside?', answer: 'Ja – vi bygger med brugervenlige CMS-løsninger så du nemt kan opdatere tekst, billeder og indhold uden teknisk baggrund.' },

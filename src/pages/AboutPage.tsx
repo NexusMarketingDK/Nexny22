@@ -143,6 +143,40 @@ const AboutPage: React.FC = () => {
           </Link>
         </div>
       </section>
+      <section className="section bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">Om Nexny – Resultatdrevet Vækstbureau med Speciale i B2B Salg og Digitale Løsninger</h2>
+            <p className="text-gray-600 mb-4">
+              Nexny er et resultatdrevet vækstbureau grundlagt af erfarne salgsprofessionelle med ét klart mål: at hjælpe B2B virksomheder i Danmark og internationalt med at vinde flere kunder og skabe bæredygtig vækst. Vi kombinerer menneskelig salgskraft med moderne digitale løsninger – herunder AI-integration, webudvikling og automatiseret leadgenerering – og leverer konsistente, høje resultater uanset branche og målgruppe. Nexny har hjulpet over 200 virksomheder med konkret vækst og har dybdegående erfaring på tværs af over 16 brancher.
+            </p>
+            <p className="text-gray-600 mb-6">
+              Hos Nexny tror vi på, at den bedste vej til vækst går gennem ægte relationer og præcis kommunikation. Vi behandler vores kunders forretning som vores egen og investerer i langvarige samarbejdsrelationer baseret på gensidig tillid og transparens. Vores tre kerneværdier – Resultater, Transparens og Partnerskab – guider os i alt hvad vi gør, fra de første opkald til de løbende optimeringsdiskussioner med vores samarbejdspartnere.
+            </p>
+            <ul className="space-y-2">
+              <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> Hjulpet over 200 virksomheder med dokumenteret vækst</li>
+              <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> Kontorer i Aarhus, Danmark og Valencia, Spanien</li>
+              <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> GDPR-compliant og fuldt transparent samarbejde</li>
+              <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> Dybdegående erfaring på tværs af 16+ brancher</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section className="section bg-sky-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">Nexny's Vision og Tilgang til B2B Vækst i Danmark</h2>
+            <p className="text-gray-600 mb-4">
+              Nexny's vision er at være Danmarks mest effektive vækstpartner for B2B virksomheder – ved at kombinere menneskelig salgskraft med datadrevne metoder og digitale løsninger under ét tag. Vi er ikke et traditionelt callcenter – vi er en strategisk partner der forstår forretning, og som tager ansvaret for hele salgsprocessen fra første leadkvalificering til bookede møder og løbende optimering. Vores tilgang er altid skræddersyet, aldrig standardiseret.
+            </p>
+            <p className="text-gray-600 mb-4">
+              Lær os bedre at kende og hør hvordan Nexny kan hjælpe din virksomhed med at vækste. Ring til os på +45 91 95 27 94 eller skriv til kontakt@nexny.dk – vi er altid klar til en uforpligtende samtale om dine muligheder.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <FAQSection faqs={[
         { question: 'Hvornår blev Nexny grundlagt?', answer: 'Nexny har rødder i professionel telemarketing og B2B salg og har hjulpet over 200 virksomheder med at vækste.' },
         { question: 'Hvor er Nexny baseret?', answer: 'Nexny har kontorer i Danmark (Aarhus) og Spanien (Valencia), og betjener kunder i hele Skandinavien og internationalt.' },

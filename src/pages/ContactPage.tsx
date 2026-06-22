@@ -185,6 +185,34 @@ const ContactPage: React.FC = () => {
         </div>
       </div>
 
+      <section className="section bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">Kontakt Nexny – Din Vækstpartner inden for Telesalg, Mødebooking og AI</h2>
+            <p className="text-gray-600 mb-4">
+              Nexny er din direkte vej til professionelt B2B telesalg, kvalificeret mødebooking, datadrevet leadgenerering og moderne webudvikling med AI-integration. Vi er let tilgængelige og svarer altid hurtigt – ring til os på +45 91 95 27 94 eller send en email til kontakt@nexny.dk, og vi vender tilbage inden for én hverdag med et konkret og uforpligtende svar på din henvendelse.
+            </p>
+            <p className="text-gray-600 mb-6">
+              Uanset om du er en etableret B2B virksomhed der ønsker at outsource dit salg, en startup der søger at vækste hurtigt, eller en freelance sælger der ønsker spændende projekter – Nexny har en løsning til dig. Vores team med kontorer i Aarhus og Valencia er klar til at tage en uforpligtende samtale om dine behov og vise dig præcis hvordan Nexny kan hjælpe din virksomhed med at nå sine vækstmål.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="section bg-sky-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">Kom Hurtigt i Gang med Nexny – Fra Første Samtale til Første Resultater</h2>
+            <p className="text-gray-600 mb-4">
+              Processen fra første kontakt til aktiv kampagne er enkel og hurtig hos Nexny. Du kontakter os, vi tager en indledende samtale om dine behov og mål, og udarbejder herefter et skræddersyet tilbud inden for 24 timer. Efter godkendelse gennemfører vi en grundig opstartsbriefing, og typisk kan vi starte aktiv indsats inden for 1-2 uger. De første kvalificerede møder eller leads kan forventes inden for 2-3 uger efter kampagnestart.
+            </p>
+            <p className="text-gray-600 mb-4">
+              Nexny tilbyder en gratis indledende rådgivningssession, hvor vi gennemgår din situation og anbefaler den bedste løsning. Ingen forpligtelse, ingen skjulte dagsordener – bare ærlig og kompetent rådgivning om hvad der vil skabe de bedste resultater for din virksomhed.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <FAQSection faqs={faqs} />
 
       <CTASection

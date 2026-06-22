@@ -146,6 +146,40 @@ export default function WebDevelopmentPage() {
           </Link>
         </div>
       </section>
+      <section className="section bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">Professionel Webudvikling til Ambitiøse Virksomheder – React, Next.js og TypeScript</h2>
+            <p className="text-gray-600 mb-4">
+              Nexny's webudviklingsteam bygger moderne, skalerbare og konverteringsoptimerede webapplikationer der understøtter din forretning og vækst. Vi arbejder med de bedste og mest afprøvede teknologier – React, Next.js, TypeScript, Node.js og PostgreSQL – og sikrer at din løsning er bygget til at vokse med din virksomhed. Fra enkle præsentationssider til avancerede SaaS-platforme og systemintegrationer håndterer Nexny hele udviklingsprocessen fra kravspecifikation og UI/UX-design til testning, lancering og løbende vedligeholdelse.
+            </p>
+            <p className="text-gray-600 mb-6">
+              Alle Nexny's webløsninger er fuldt responsive og mobilvenlige, SEO-optimerede fra grunden, og bygget med sikkerhed og GDPR-compliance som grundpillerne. Vi leverer nøglefærdige løsninger med fuld dokumentation, kilekodeoverdragelse og et struktureret onboarding-forløb, der sikrer at du og dit team kan administrere og videreudvikle løsningen selv. Hurtige indlæsningstider og optimeret kode er standard i alle projekter.
+            </p>
+            <ul className="space-y-2">
+              <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> Moderne teknologistack: React, Next.js, TypeScript, Node.js</li>
+              <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> Fuldt responsivt design til alle enheder</li>
+              <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> Teknisk SEO og Google Analytics opsætning inkluderet</li>
+              <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> GDPR-compliant med fuld dokumentation og kildekode</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section className="section bg-sky-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">Webudvikling der Genererer Leads og Konverterer Besøgende til Kunder</h2>
+            <p className="text-gray-600 mb-4">
+              En professionel hjemmeside eller webapplikation fra Nexny er mere end blot en digital tilstedeværelse – det er din mest effektive sælger, der arbejder for dig døgnet rundt. Vi designer med konvertering for øje og bygger klare call-to-actions, brugervenlig navigation og overbevisende landingssider der omdanner besøgende til leads og leads til kunder. Kombineret med solid teknisk SEO sikrer vi, at din hjemmeside ranker godt i søgemaskinerne og tiltrækker den rigtige trafik.
+            </p>
+            <p className="text-gray-600 mb-4">
+              Kontakt Nexny på +45 91 95 27 94 eller kontakt@nexny.dk for en uforpligtende snak om dit webudviklingsprojekt. Vi sender et tilbud inden for 24 timer.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <FAQSection faqs={[
         { question: 'Hvad koster en hjemmeside hos Nexny?', answer: 'Prisen afhænger af scope og kompleksitet. Vi tilbyder løsninger fra enkle landingssider til avancerede webapplikationer. Kontakt os for et uforpligtende tilbud.' },
         { question: 'Hvem ejer hjemmesiden når den er færdig?', answer: 'Du ejer 100% af koden og indholdet. Nexny leverer en løsning du selv kan administrere og videreudvikle.' },

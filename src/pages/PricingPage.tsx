@@ -165,6 +165,40 @@ const PricingPage: React.FC = () => {
           </Link>
         </div>
       </section>
+      <section className="section bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">Nexny Priser på Mødebooking og Telemarketing – Transparente og Resultatorienterede</h2>
+            <p className="text-gray-600 mb-4">
+              Nexny tilbyder to gennemsigtige prismodeller for professionel B2B mødebooking og telemarketing, begge designet til at maksimere din ROI og minimere risikoen. Med No Cure No Pay betaler du udelukkende for gennemførte, kvalificerede salgsmøder – der er ingen skjulte gebyrer, og du definerer selv de kvalitetskriterier et møde skal opfylde. Pakkeløsningen giver dig en dedikeret mødebooker, et garanteret minimumsantal salgsmøder og den laveste enhedspris – ideel til virksomheder med et stabilt og kontinuerligt behov for mødebooking.
+            </p>
+            <p className="text-gray-600 mb-6">
+              Alle prismodeller hos Nexny inkluderer skræddersyet kampagneplanlægning, løbende scriptoptimering, CRM-opdatering og månedlig performancerapportering. Vi er fuldt transparente om vores priser og aktivitetsniveau, og fakturerer altid i henhold til det aftalte – ingen overraskelser undervejs. Kontakt Nexny på +45 91 95 27 94 eller kontakt@nexny.dk for et skræddersyet tilbud tilpasset din branche og dine vækstmål.
+            </p>
+            <ul className="space-y-2">
+              <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> No Cure No Pay – betal kun for leverede resultater</li>
+              <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> Fast pakkeløsning med garanteret minimumsantal møder</li>
+              <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> Månedlig fakturering med transparente aktivitetsrapporter</li>
+              <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> Fleksibel opsigelse med 30 dages varsel</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section className="section bg-sky-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">Hvad Koster Mødebooking Priser hos Nexny – og Hvad Får du?</h2>
+            <p className="text-gray-600 mb-4">
+              Prisen på professionel mødebooking hos Nexny afhænger af din branche, målgruppens kompleksitet og den valgte model. Vi sætter altid realistiske forventninger til aktivitetsniveau, møderate og estimeret ROI baseret på vores dybdegående brancheerfaring. Mange kunder ser positiv ROI allerede i første kvartal, og ved langtidssamarbejder tilbyder Nexny fordelagtige priser der sænker enhedsomkostningen yderligere.
+            </p>
+            <p className="text-gray-600 mb-4">
+              Ud over prisen på selve møderne inkluderer Nexny's pakker altid lead-research, BANT-kvalificering, scriptudvikling, dobbelt mødebekræftelse og løbende optimering – en komplet servicepakke der sikrer den højest mulige mødekvalitet og minimerer no-shows.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <FAQSection faqs={[
         { question: 'Er der opstartsgebyr?', answer: 'Det afhænger af den valgte pakke. Kontakt os for at få en gennemgang af hvad der er inkluderet fra dag ét.' },
         { question: 'Kan vi opsige samarbejdet?', answer: 'Vi tilbyder fleksible aftaler med rimelige opsigelsesvarsler – typisk 1 måned.' },
