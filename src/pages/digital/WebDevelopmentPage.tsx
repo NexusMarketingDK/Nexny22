@@ -152,6 +152,16 @@ export default function WebDevelopmentPage() {
         { question: 'Kan I overtage og videreudvikle en eksisterende hjemmeside?', answer: 'Ja – vi kan gennemgå, optimere og videreudvikle eksisterende løsninger uanset teknologi.' },
         { question: 'Laver I mobilvenlige hjemmesider?', answer: 'Alle Nexny\'s webløsninger er fuldt responsive og optimeret til mobile enheder.' },
         { question: 'Inkluderer I SEO-optimering?', answer: 'Ja – vi bygger alle hjemmesider med solid teknisk SEO som fundament, inkl. hurtig loadtid, strukturerede data og metadata.' },
+        { question: "Hvad er en webapp?", answer: "En webapp er en avanceret hjemmeside med interaktive funktioner – f.eks. brugerlogin, dashboards, bookingsystemer eller interne værktøjer." },
+        { question: "Kan I overtage et eksisterende projekt?", answer: "Ja – vi vurderer gerne eksisterende kode og overdrager projektet til vores team med minimal afbrydelse." },
+        { question: "Hvad er forskellen på en hjemmeside og en webapp?", answer: "En hjemmeside præsenterer information. En webapp tilbyder interaktive funktioner og bruges som et digitalt arbejdsredskab." },
+        { question: "Bruger I open source teknologier?", answer: "Ja – vi bygger typisk på moderne open source frameworks som React, Next.js og Node.js for skalerbarhed og transparens." },
+        { question: "Hvad er en CMS?", answer: "Et CMS (Content Management System) er et administrationsværktøj der giver dig mulighed for at opdatere indhold på din hjemmeside uden teknisk viden." },
+        { question: "Kan jeg se en prototype inden projektet godkendes?", answer: "Ja – vi præsenterer altid wireframes og designprototyper til godkendelse inden vi begynder den egentlige udvikling." },
+        { question: "Hvad er vedligeholdelse, og hvad koster det?", answer: "Vedligeholdelse inkluderer sikkerhedsopdateringer, performance-tjek og indholdsændringer. Vi tilbyder månedlige vedligeholdelsespakker." },
+        { question: "Kan I hjælpe med Google Analytics og tracking?", answer: "Ja – vi opsætter Google Analytics, heatmaps og konverteringstracking som standard del af projektet." },
+        { question: "Hvad er hastighed vigtig for?", answer: "Sideindlæsningshastighed påvirker både brugeroplevelsen og Google-rangering. Vi optimerer alle projekter til hurtig loadtid." },
+        { question: "Kan I hjælpe med domæne og hosting?", answer: "Ja – vi hjælper med valg, registrering og opsætning af domæne og hosting som del af projektet." },
       ]} />
       <CTASection
         title="Få dit webudviklingsprojekt startet i dag"

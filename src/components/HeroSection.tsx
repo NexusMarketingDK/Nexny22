@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { ArrowRight } from 'lucide-react';
 
 interface HeroSectionProps {
   title: string;
@@ -18,50 +19,70 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   ctaLink,
   secondaryCtaText,
   secondaryCtaLink,
-  backgroundImage = 'https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+  backgroundImage,
 }) => {
   return (
-    <section className="relative bg-gray-900 text-white min-h-[90vh] flex items-center">
-      {/* Background Image with Overlay */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${backgroundImage})` }}
-      >
-        <div className="absolute inset-0 bg-black opacity-75"></div>
-      </div>
-      
+    <section className="relative min-h-[88vh] flex items-center overflow-hidden">
+      {/* Background */}
+      {backgroundImage ? (
+        <>
+          <div
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: `url(${backgroundImage})` }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-slate-900/90 via-blue-950/80 to-indigo-950/85" />
+        </>
+      ) : (
+        <div className="absolute inset-0 bg-hero-gradient" />
+      )}
+
+      {/* Dot pattern overlay */}
+      <div className="absolute inset-0 bg-dot-pattern opacity-40" />
+
+      {/* Glow orb */}
+      <div className="absolute top-1/4 right-1/3 w-[500px] h-[500px] bg-blue-600/20 rounded-full blur-[120px] pointer-events-none" />
+
       {/* Content */}
-      <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8 py-24">
         <div className="max-w-3xl">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-white fade-in">
+          {/* Badge */}
+          <div className="fade-in mb-6">
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-white/90 text-xs font-semibold uppercase tracking-widest backdrop-blur-sm">
+              <span className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse" />
+              Nexny · Vækstpartner
+            </span>
+          </div>
+
+          <h1 className="text-white mb-6 fade-in stagger-1">
             {title}
           </h1>
-          <p className="text-xl md:text-2xl mb-8 text-white/90 fade-in stagger-1">
+
+          <p className="text-lg md:text-xl text-white/80 mb-10 max-w-2xl fade-in stagger-2 font-normal">
             {subtitle}
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 fade-in stagger-2">
-            <Link to={ctaLink} className="btn bg-blue-600 hover:bg-blue-700 text-white">
+
+          <div className="flex flex-col sm:flex-row gap-3 fade-in stagger-3">
+            <Link
+              to={ctaLink}
+              className="btn btn-primary text-base px-8 py-4"
+            >
               {ctaText}
+              <ArrowRight size={16} className="ml-2" />
             </Link>
             {secondaryCtaText && secondaryCtaLink && (
-              <Link to={secondaryCtaLink} className="btn bg-transparent hover:bg-white/10 border-2 border-white text-white">
+              <Link
+                to={secondaryCtaLink}
+                className="btn text-base px-8 py-4 bg-white/10 hover:bg-white/20 border border-white/30 text-white backdrop-blur-sm"
+              >
                 {secondaryCtaText}
               </Link>
             )}
           </div>
         </div>
       </div>
-      
-      {/* Wave Shape Divider */}
-      <div className="absolute bottom-0 left-0 right-0">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120" className="w-full h-auto">
-          <path 
-            fill="#ffffff" 
-            fillOpacity="1" 
-            d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"
-          ></path>
-        </svg>
-      </div>
+
+      {/* Bottom fade */}
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent pointer-events-none" />
     </section>
   );
 };

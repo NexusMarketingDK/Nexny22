@@ -207,6 +207,16 @@ export default function WebBureauPage() {
         { question: 'Hvem er mine kunder?', answer: 'Du kontakter primært SMV\'er og iværksættere i Danmark der har brug for en professionel online tilstedeværelse.' },
         { question: 'Hvad sker der, når jeg har lavet et salg?', answer: 'Du videregiver kundens information til Nexny\'s web-team, som overtager og leverer løsningen. Du tjener provision på salget.' },
         { question: 'Er der faste kvoter jeg skal nå?', answer: 'Vi arbejder med mål og ambitioner, men tilpasser forventningerne individuelt. Du sætter selv barren.' },
+        { question: "Hvad er USP'en for Nexny's webprodukter?", answer: "Nexny bygger moderne, hurtige og konverteringsoptimerede løsninger til konkurrencedygtige priser – med dansk support og garanti." },
+        { question: "Hvem konkurrerer vi med?", answer: "Kunder sammenligner typisk med Wix, WordPress-bureauer og freelance udviklere. Nexny's fordel er skræddersyet kvalitet med professionel support." },
+        { question: "Hvad er typiske indsigelser fra kunder?", answer: "Vi oplærer dig i at håndtere indsigelser som pris, timing og eksisterende løsning. Du får scripts og svar til alle standardindsigelser." },
+        { question: "Kan jeg sælge til kunder der allerede har en hjemmeside?", answer: "Ja – mange kunder er klar til et redesign eller opgradering. Vi hjælper dig med at identificere og kvalificere disse muligheder." },
+        { question: "Hvad er en god kundereferens?", answer: "Vi giver dig adgang til portfolio og cases som du kan bruge til at overbevise skeptiske kunder om kvaliteten." },
+        { question: "Kan jeg se produktet inden jeg sælger det?", answer: "Ja – du får en grundig gennemgang og demo af alle Nexny's webprodukter inden du begynder at sælge dem." },
+        { question: "Er der mersalgsmuligheder?", answer: "Ja – kunder der køber en hjemmeside kan sælges vedligeholdelse, SEO, AI-integration og andre løbende services." },
+        { question: "Hvad er den gennemsnitlige ordreværdi?", answer: "Det varierer per produkt og kunde. En simpel hjemmeside kan starte fra 10.000 kr., mens større projekter kan være 50.000+ kr." },
+        { question: "Kan jeg specialisere mig i én kundetype?", answer: "Ja – mange sælgere vælger at fokusere på en specifik branche eller virksomhedsstørrelse for at blive eksperter." },
+        { question: "Hvad er provision per salg?", answer: "Provisionen aftales individuelt og afhænger af produkttype og salgspris. Du modtager en klar provisionsstruktur ved opstart." },
       ]} />
 
       <section className="bg-blue-600 text-white py-16">

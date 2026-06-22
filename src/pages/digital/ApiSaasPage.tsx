@@ -144,6 +144,16 @@ export default function ApiSaasPage() {
         { question: 'Kan I bygge en SaaS-platform fra bunden?', answer: 'Ja – Nexny har erfaring med at designe og udvikle komplette SaaS-applikationer med brugeradministration, betalingsintegration og skalerbar infrastruktur.' },
         { question: 'Hvad er en webhook?', answer: 'En webhook er en automatisk notifikation der sendes fra ét system til et andet, når en bestemt hændelse opstår – f.eks. når en ordre er gennemført.' },
         { question: 'Kan I integrere med eksisterende systemer?', answer: 'Ja – vi har erfaring med integrationer til de mest populære CRM-, ERP- og marketingsystemer.' },
+        { question: "Hvad er REST vs GraphQL?", answer: "REST og GraphQL er to forskellige tilgange til API-design. REST er den mest udbredte standard. GraphQL giver mere fleksible datakald. Vi arbejder med begge." },
+        { question: "Hvad er en microservice?", answer: "En microservice er en lille, selvstændig del af en applikation der udfører én specifik opgave. Det giver bedre skalerbarhed og vedligeholdelighed." },
+        { question: "Kan I bygge et admin-panel til vores SaaS?", answer: "Ja – vi bygger brugertilpassede admin-interfaces til brugeradministration, abonnementsstyring og dataovervågning." },
+        { question: "Hvad er en 'rate limit'?", answer: "En rate limit sætter et loft over hvor mange API-kald der kan foretages inden for en given tidsperiode. Det beskytter systemet mod overbelastning." },
+        { question: "Kan I integrere med betalingssystemer?", answer: "Ja – vi har erfaring med Stripe, Reepay, MobilePay og andre betalingsudbydere." },
+        { question: "Hvad er serverless?", answer: "Serverless er en cloud-arkitektur hvor du ikke administrerer servere selv. Det reducerer omkostninger og giver automatisk skalering." },
+        { question: "Kan I bygge multi-tenant SaaS?", answer: "Ja – vi har erfaring med at bygge multi-tenant arkitekturer, hvor én platform betjener mange kunder med isolerede data." },
+        { question: "Hvad er en sandbox?", answer: "En sandbox er et testmiljø der er isoleret fra produktionssystemet. Det bruges til at teste nye funktioner sikkert." },
+        { question: "Hvad koster et API-projekt?", answer: "Prisen afhænger af scope og kompleksitet. Kontakt os for et uforpligtende estimat baseret på dine behov." },
+        { question: "Kan I hjælpe med dokumentation?", answer: "Ja – vi leverer altid teknisk dokumentation og API-dokumentation som del af projektet." },
       ]} />
       <CTASection
         title="Lad Nexny bygge din næste API eller SaaS-løsning"

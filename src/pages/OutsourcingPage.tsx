@@ -145,6 +145,16 @@ const OutsourcingPage: React.FC = () => {
         { question: 'Hvem ejer de leads der genereres?', answer: 'Alle leads og møder tilhører jer som kunde – de leveres direkte ind i jeres CRM-system.' },
         { question: 'Kan Nexny repræsentere vores brand professionelt?', answer: 'Ja – vores sælgere præsenterer sig som en del af jeres team og følger jeres brand guidelines og tone of voice.' },
         { question: 'Hvad er forskellen på Nexny og at ansætte en intern sælger?', answer: 'Med Nexny betaler du kun for aktiv salgstid og resultater. En intern sælger koster fast løn, rekruttering, oplæring og ledelse – uanset performance.' },
+        { question: "Hvad er forskellen på outsourcing og interim salg?", answer: "Outsourcing er løbende ekstern salgsstøtte. Interim salg er typisk en midlertidig sælger der arbejder in-house. Nexny tilbyder eksternt outsourcet salg." },
+        { question: "Kan vi outsource kun én del af salgsfunktionen?", answer: "Ja – du kan outsource prospektering og leadgenerering, mens dit interne team håndterer forhandling og lukning." },
+        { question: "Hvad er de typiske resultater i de første 3 måneder?", answer: "De første 6-8 uger bruges typisk på opbygning og optimering. Fra måned 2-3 begynder resultaterne at accelerere." },
+        { question: "Hvad sker der, hvis vores branche er meget niche?", answer: "Vi elsker nichemarkeder – vi researcher grundigt og tilpasser tilgangen, så vi taler det rigtige sprog til de rigtige personer." },
+        { question: "Kan Nexny hjælpe med salg på nye markeder?", answer: "Ja – vi kan understøtte ekspansion til nye geografier og segmenter med målrettet opsøgende salg." },
+        { question: "Hvad kræver det af os som kunde?", answer: "En kort briefing, adgang til jeres CRM og et godkendt script. Vi tager os af resten." },
+        { question: "Kan vi bruge Nexny til en enkeltstående kampagne?", answer: "Ja – vi tilbyder kampagnebaserede samarbejder ved produktlanceringer, sæsonkampagner og andre engangsbehov." },
+        { question: "Hvad er risikoen ved at outsource salget?", answer: "Den primære risiko er manglende alignment på tone og budskab – det afhjælper vi med grundig onboarding og løbende justeringer." },
+        { question: "Hvad er et godt tidspunkt at starte outsourcing?", answer: "Når du har et klart produkt/service og en defineret målgruppe. Jo mere defineret, jo hurtigere resultater." },
+        { question: "Kan vi stoppe og starte samarbejdet igen?", answer: "Ja – vi har kunder der bruger Nexny sæsonbaseret eller ved specifikke kampagnebehov." },
       ]} />
       <CTASection
         title="Outsource dit salg til Nexny og fokuser på din kerneforretning"

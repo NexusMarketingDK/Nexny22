@@ -160,6 +160,16 @@ const ServicesPage: React.FC = () => {
         { question: 'Kan I integrere med vores CRM-system?', answer: 'Ja, Nexny arbejder med de fleste CRM-systemer og kan levere leads og møder direkte ind i jeres eksisterende salgsflow.' },
         { question: 'Tilbyder I rapportering og statistik?', answer: 'Ja – du modtager løbende rapporter med aktivitetsdata, mødestatistik og ROI-beregning.' },
         { question: 'Kan I hjælpe os i specifikke brancher?', answer: 'Vi har dybdegående erfaring med over 16 brancher og tilpasser altid vores tilgang til din specifikke branche og målgruppe.' },
+        { question: "Kan Nexny hjælpe os med både B2B og B2C salg?", answer: "Primært fokuserer vi på B2B, men vi har også erfaring med B2C salg inden for energi, pension og lignende produkter." },
+        { question: "Hvad er en typisk mødefrekvens med Nexny?", answer: "Vi holder typisk ugentlige statusmøder med kunden og sender løbende rapporter på aktivitet og resultater." },
+        { question: "Tilbyder I optagelse af salgssamtaler?", answer: "Ja – vi kan tilbyde optagelse og gennemgang af salgssamtaler til træning og kvalitetssikring, hvis du ønsker det." },
+        { question: "Kan vi definere vores egen salgspitch?", answer: "Ja – vi arbejder altid med din virksomheds egne budskaber og tone of voice. Vi tilpasser scripts og materialer til jer." },
+        { question: "Hvad er jeres succesrate på mødebooking?", answer: "Vores mødebookingsrate varierer afhængigt af branche og målgruppe, men vi opnår typisk 10-20% møder ud af kvalificerede kontakter." },
+        { question: "Kan I hjælpe med opfølgning efter møder?", answer: "Ja – vi kan håndtere opfølgning, tilbudsopfølgning og fastholde momentum i salgspipelinen efter møder." },
+        { question: "Arbejder I med internationale markeder?", answer: "Vi fokuserer primært på det danske marked, men kan også understøtte salg i Skandinavien og udvalgte europæiske markeder." },
+        { question: "Hvad er minimumskontraktlængde?", answer: "Vi anbefaler minimum 3 måneder for at opnå optimale resultater og et validt datagrundlag for optimering." },
+        { question: "Kan vi se eksempler på jeres arbejde?", answer: "Ja – kontakt os for cases og referencer fra vores tidligere og nuværende samarbejdspartnere." },
+        { question: "Hvad er fordelen ved at samle alle services hos Nexny?", answer: "Når telemarketing, mødebooking og digital tilstedeværelse er koordineret hos én partner, skabes et sammenhængende og mere effektivt salgssystem." },
       ]} />
       <CTASection
         title="Start dit salgssamarbejde med Nexny i dag"

@@ -19,18 +19,16 @@ const Navbar: React.FC = () => {
   };
 
   useEffect(() => {
-    const handleScroll = () => { setIsScrolled(window.scrollY > 50); };
+    const handleScroll = () => setIsScrolled(window.scrollY > 40);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Close dropdowns on route change
   useEffect(() => {
     closeAllDropdowns();
     setIsMenuOpen(false);
   }, [location.pathname]);
 
-  // Close dropdowns on click outside
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
       if (navRef.current && !navRef.current.contains(e.target as Node)) {
@@ -47,7 +45,13 @@ const Navbar: React.FC = () => {
   const togglePartnerDropdown = () => { setIsPartnerDropdownOpen(v => !v); setIsJobsDropdownOpen(false); setIsDigitalDropdownOpen(false); };
 
   const navLinkClass = ({ isActive }: { isActive: boolean }) =>
-    `px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${isActive ? 'text-blue-600' : 'text-gray-500 hover:text-blue-600 hover:bg-blue-50'}`;
+    `px-3 py-2 rounded-lg text-sm font-medium transition-all duration-150 ${
+      isActive
+        ? 'text-blue-600 bg-blue-50'
+        : 'text-slate-600 hover:text-blue-600 hover:bg-slate-50'
+    }`;
+
+  const dropdownItemClass = 'block px-4 py-2.5 text-sm text-slate-600 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors';
 
   const digitalServices = [
     { path: '/digital/webudvikling', title: 'Webudvikling' },
@@ -64,54 +68,88 @@ const Navbar: React.FC = () => {
     { path: '/leadgenerering', title: 'Leadgenerering' }
   ];
 
+  const dropdownClass = 'absolute top-full left-0 mt-2 w-64 bg-white rounded-2xl shadow-xl border border-slate-100 py-2 px-2 z-50';
+
   return (
-    <header ref={navRef} className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'}`}>
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <header
+      ref={navRef}
+      className={`fixed w-full z-50 transition-all duration-300 ${
+        isScrolled
+          ? 'bg-white/90 backdrop-blur-md shadow-sm border-b border-slate-100 py-2'
+          : 'bg-transparent py-4'
+      }`}
+    >
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         <div className="flex justify-between items-center">
-          <Link to="/" className="flex items-center">
-            <div className="text-blue-600 mr-2"><Phone size={24} /></div>
-            <span className="text-xl font-bold text-blue-600">Nexny</span>
+          {/* Logo */}
+          <Link to="/" className="flex items-center gap-2">
+            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center">
+              <Phone size={16} className="text-white" />
+            </div>
+            <span className={`text-xl font-bold tracking-tight ${isScrolled ? 'text-slate-900' : 'text-white'}`}>
+              Nexny
+            </span>
           </Link>
 
-          <nav className="hidden md:flex items-center space-x-1">
+          {/* Desktop nav */}
+          <nav className="hidden md:flex items-center gap-1">
             <NavLink to="/" className={navLinkClass} end>Forside</NavLink>
             <NavLink to="/ydelser" className={navLinkClass}>Ydelser</NavLink>
 
+            {/* Digital dropdown */}
             <div className="relative">
-              <button className="px-3 py-2 rounded-md text-sm font-medium text-gray-500 hover:text-blue-600 hover:bg-blue-50 flex items-center" onClick={toggleDigitalDropdown}>
-                Digital <ChevronDown size={16} className="ml-1" />
+              <button
+                className={`px-3 py-2 rounded-lg text-sm font-medium transition-all duration-150 flex items-center gap-1 ${
+                  isScrolled ? 'text-slate-600 hover:text-blue-600 hover:bg-slate-50' : 'text-white/90 hover:text-white hover:bg-white/10'
+                }`}
+                onClick={toggleDigitalDropdown}
+              >
+                Digital <ChevronDown size={14} className={`transition-transform ${isDigitalDropdownOpen ? 'rotate-180' : ''}`} />
               </button>
               {isDigitalDropdownOpen && (
-                <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-md shadow-lg py-2 z-50">
+                <div className={dropdownClass}>
                   {digitalServices.map((s) => (
-                    <Link key={s.path} to={s.path} className="block px-4 py-2 text-sm text-gray-500 hover:bg-blue-50 hover:text-blue-600" onClick={() => setIsDigitalDropdownOpen(false)}>{s.title}</Link>
+                    <Link key={s.path} to={s.path} className={dropdownItemClass}>{s.title}</Link>
                   ))}
                 </div>
               )}
             </div>
 
+            {/* Jobs dropdown */}
             <div className="relative">
-              <button className="px-3 py-2 rounded-md text-sm font-medium text-gray-500 hover:text-blue-600 hover:bg-blue-50 flex items-center" onClick={toggleJobsDropdown}>
-                Job søgere <ChevronDown size={16} className="ml-1" />
+              <button
+                className={`px-3 py-2 rounded-lg text-sm font-medium transition-all duration-150 flex items-center gap-1 ${
+                  isScrolled ? 'text-slate-600 hover:text-blue-600 hover:bg-slate-50' : 'text-white/90 hover:text-white hover:bg-white/10'
+                }`}
+                onClick={toggleJobsDropdown}
+              >
+                Job søgere <ChevronDown size={14} className={`transition-transform ${isJobsDropdownOpen ? 'rotate-180' : ''}`} />
               </button>
               {isJobsDropdownOpen && (
-                <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-md shadow-lg py-2 z-50">
+                <div className={dropdownClass}>
                   {jobListings.map((job) => (
-                    <Link key={job.path} to={job.path} className="block px-4 py-2 text-sm text-gray-500 hover:bg-blue-50 hover:text-blue-600" onClick={() => setIsJobsDropdownOpen(false)}>{job.title}</Link>
+                    <Link key={job.path} to={job.path} className={dropdownItemClass}>{job.title}</Link>
                   ))}
-                  <Link to="/freelance-telemarketing" className="block px-4 py-2 text-sm text-gray-500 hover:bg-blue-50 hover:text-blue-600 border-t border-gray-100 mt-2" onClick={() => setIsJobsDropdownOpen(false)}>Se alle stillinger</Link>
+                  <div className="my-1 border-t border-slate-100" />
+                  <Link to="/freelance-telemarketing" className={`${dropdownItemClass} font-semibold text-blue-600`}>Se alle stillinger →</Link>
                 </div>
               )}
             </div>
 
+            {/* Samarbejde dropdown */}
             <div className="relative">
-              <button className="px-3 py-2 rounded-md text-sm font-medium text-gray-500 hover:text-blue-600 hover:bg-blue-50 flex items-center" onClick={togglePartnerDropdown}>
-                Samarbejde <ChevronDown size={16} className="ml-1" />
+              <button
+                className={`px-3 py-2 rounded-lg text-sm font-medium transition-all duration-150 flex items-center gap-1 ${
+                  isScrolled ? 'text-slate-600 hover:text-blue-600 hover:bg-slate-50' : 'text-white/90 hover:text-white hover:bg-white/10'
+                }`}
+                onClick={togglePartnerDropdown}
+              >
+                Samarbejde <ChevronDown size={14} className={`transition-transform ${isPartnerDropdownOpen ? 'rotate-180' : ''}`} />
               </button>
               {isPartnerDropdownOpen && (
-                <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-md shadow-lg py-2 z-50">
+                <div className={dropdownClass}>
                   {partnerOptions.map((o) => (
-                    <Link key={o.path} to={o.path} className="block px-4 py-2 text-sm text-gray-500 hover:bg-blue-50 hover:text-blue-600" onClick={() => setIsPartnerDropdownOpen(false)}>{o.title}</Link>
+                    <Link key={o.path} to={o.path} className={dropdownItemClass}>{o.title}</Link>
                   ))}
                 </div>
               )}
@@ -120,36 +158,51 @@ const Navbar: React.FC = () => {
             <NavLink to="/om-os" className={navLinkClass}>Om os</NavLink>
             <NavLink to="/blog" className={navLinkClass}>Blog</NavLink>
             <NavLink to="/kontakt" className={navLinkClass}>Kontakt</NavLink>
-            <Link to="/kontakt" className="ml-4 btn btn-primary">Kontakt os</Link>
+
+            <Link to="/kontakt" className="ml-3 btn btn-primary text-sm px-5 py-2.5">
+              Kom i gang
+            </Link>
           </nav>
 
-          <button type="button" className="md:hidden text-gray-500 hover:text-blue-600 focus:outline-none" onClick={toggleMenu}>
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          {/* Mobile toggle */}
+          <button
+            type="button"
+            className={`md:hidden p-2 rounded-lg transition-colors ${isScrolled ? 'text-slate-700 hover:bg-slate-100' : 'text-white hover:bg-white/10'}`}
+            onClick={toggleMenu}
+          >
+            {isMenuOpen ? <X size={22} /> : <Menu size={22} />}
           </button>
         </div>
       </div>
 
-      <div className={`md:hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-screen opacity-100 visible bg-white shadow-md' : 'max-h-0 opacity-0 invisible'}`}>
-        <nav className="flex flex-col px-4 pt-2 pb-4 space-y-1">
+      {/* Mobile menu */}
+      <div className={`md:hidden transition-all duration-300 ease-in-out overflow-hidden ${isMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
+        <nav className="bg-white border-t border-slate-100 flex flex-col px-4 py-4 gap-1">
           <NavLink to="/" className={navLinkClass} end onClick={toggleMenu}>Forside</NavLink>
           <NavLink to="/ydelser" className={navLinkClass} onClick={toggleMenu}>Ydelser</NavLink>
           <div className="py-2 px-3">
-            <div className="font-medium text-gray-500 mb-2">Digital:</div>
-            {digitalServices.map((s) => (<Link key={s.path} to={s.path} className="block py-2 text-sm text-gray-500 hover:text-blue-600" onClick={toggleMenu}>{s.title}</Link>))}
+            <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Digital</div>
+            {digitalServices.map((s) => (
+              <Link key={s.path} to={s.path} className="block py-2 px-2 text-sm text-slate-600 hover:text-blue-600 rounded-lg" onClick={toggleMenu}>{s.title}</Link>
+            ))}
           </div>
           <div className="py-2 px-3">
-            <div className="font-medium text-gray-500 mb-2">Job søgere:</div>
-            {jobListings.map((job) => (<Link key={job.path} to={job.path} className="block py-2 text-sm text-gray-500 hover:text-blue-600" onClick={toggleMenu}>{job.title}</Link>))}
-            <Link to="/freelance-telemarketing" className="block py-2 text-sm text-blue-600 font-medium" onClick={toggleMenu}>Se alle stillinger →</Link>
+            <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Job søgere</div>
+            {jobListings.map((job) => (
+              <Link key={job.path} to={job.path} className="block py-2 px-2 text-sm text-slate-600 hover:text-blue-600 rounded-lg" onClick={toggleMenu}>{job.title}</Link>
+            ))}
+            <Link to="/freelance-telemarketing" className="block py-2 px-2 text-sm font-semibold text-blue-600" onClick={toggleMenu}>Se alle stillinger →</Link>
           </div>
           <div className="py-2 px-3">
-            <div className="font-medium text-gray-500 mb-2">Samarbejde:</div>
-            {partnerOptions.map((o) => (<Link key={o.path} to={o.path} className="block py-2 text-sm text-gray-500 hover:text-blue-600" onClick={toggleMenu}>{o.title}</Link>))}
+            <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Samarbejde</div>
+            {partnerOptions.map((o) => (
+              <Link key={o.path} to={o.path} className="block py-2 px-2 text-sm text-slate-600 hover:text-blue-600 rounded-lg" onClick={toggleMenu}>{o.title}</Link>
+            ))}
           </div>
           <NavLink to="/om-os" className={navLinkClass} onClick={toggleMenu}>Om os</NavLink>
           <NavLink to="/blog" className={navLinkClass} onClick={toggleMenu}>Blog</NavLink>
           <NavLink to="/kontakt" className={navLinkClass} onClick={toggleMenu}>Kontakt</NavLink>
-          <Link to="/kontakt" className="mt-4 btn btn-primary text-center" onClick={toggleMenu}>Kontakt os</Link>
+          <Link to="/kontakt" className="mt-2 btn btn-primary text-center" onClick={toggleMenu}>Kom i gang</Link>
         </nav>
       </div>
     </header>

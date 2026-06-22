@@ -171,6 +171,16 @@ const PricingPage: React.FC = () => {
         { question: 'Hvad er inkluderet i prisen?', answer: 'Afhængigt af pakken inkluderer prisen typisk kampagneplanlægning, opkaldstimer, rapportering, CRM-opdatering og løbende optimering.' },
         { question: 'Tilbyder I rabat ved langtidssamarbejde?', answer: 'Ja – ved 6 eller 12 måneders aftaler tilbyder vi fordelagtige priser. Kontakt os for et individuelt tilbud.' },
         { question: 'Kan vi skalere op eller ned?', answer: 'Absolut. Nexny\'s løsninger er designet til at skalere med din virksomheds behov og vækst.' },
+        { question: "Kan jeg betale månedligt?", answer: "Ja – vores standardmodeller faktureres månedligt med forudgående aftale om aktivitetsniveau og leverancer." },
+        { question: "Er der en gratis prøveperiode?", answer: "Vi tilbyder ikke gratis perioder, men en kortere pilotperiode til reduceret pris for nye kunder." },
+        { question: "Hvad inkluderer en standardpakke?", answer: "En standardpakke inkluderer typisk kampagneplanlægning, aktive opkaldstimer, CRM-opdatering og månedlig rapportering." },
+        { question: "Kan jeg tilpasse indholdet i pakken?", answer: "Ja – alle pakker er udgangspunkter. Vi skræddersyr indholdet til dine specifikke behov og mål." },
+        { question: "Er der opstartsgebyr?", answer: "Visse pakker har et engangsgebyr for onboarding og kampagneforberedelse. Det aftales altid tydeligt på forhånd." },
+        { question: "Hvad sker der, hvis vi overstiger det aftalte aktivitetsniveau?", answer: "Vi aftaler altid et budget-loft og kontakter dig, inden vi overskrider det aftalte niveau." },
+        { question: "Tilbyder I No Cure No Pay modeller?", answer: "Ja – for udvalgte produktkategorier tilbyder vi No Cure No Pay, hvor du kun betaler for leverede resultater." },
+        { question: "Kan vi opsige en pakke midt i måneden?", answer: "Opsigelse sker typisk med én måneds varsel fra næste fakturadato. Eksakte vilkår aftales ved kontraktindgåelse." },
+        { question: "Er alle priser ekskl. moms?", answer: "Ja – alle priser er ekskl. moms, medmindre andet er angivet. Moms tillægges i henhold til gældende regler." },
+        { question: "Hvad er den billigste måde at komme i gang på?", answer: "Kontakt os for en samtale – vi finder altid en løsning der passer til dit budget, uanset størrelse." },
       ]} />
       <CTASection
         title="Få et skræddersyet tilbud til din virksomhed"

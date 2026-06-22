@@ -473,6 +473,16 @@ export default function AiIntegrationPage() {
         { question: 'Er AI-løsninger dyre?', answer: 'Priserne varierer meget. Nexny tilbyder løsninger i alle størrelser – fra simple chatbots til avancerede automatiseringsplatforme. Vi finder den løsning der passer til dit budget.' },
         { question: 'Kræver AI-integration teknisk viden?', answer: 'Nej – Nexny håndterer hele implementeringen og oplæringen. Du behøver ingen teknisk baggrund for at bruge og drage fordel af AI.' },
         { question: 'Kan AI integreres med mine eksisterende systemer?', answer: 'Ja – Nexny\'s AI-løsninger kan integreres med de fleste CRM-, marketings- og kommunikationssystemer.' },
+        { question: "Hvad er forskellen på AI og automation?", answer: "Automation udfører foruddefinerede opgaver. AI kan tilpasse sig og lære af data, og træffe selvstændige beslutninger baseret på mønstre." },
+        { question: "Kan AI erstatte mine medarbejdere?", answer: "AI erstatter ikke mennesker, men frigiver dem fra gentagne opgaver så de kan fokusere på kreativt og relationsmæssigt arbejde." },
+        { question: "Hvad er en LLM?", answer: "En Large Language Model (LLM) er en AI-model der kan forstå og generere tekst – som ChatGPT. Nexny kan integrere LLM-funktioner direkte på din platform." },
+        { question: "Kan AI hjælpe med kundeservice?", answer: "Ja – AI chatbots kan besvare op til 80% af standard kundehenvendelser automatisk, døgnet rundt, og eskalere komplekse sager til mennesker." },
+        { question: "Hvad er prompt engineering?", answer: "Prompt engineering er kunsten at formulere instrukser til en AI-model, så den giver de bedste og mest relevante svar." },
+        { question: "Er AI-løsninger sikre?", answer: "Ja – vi sikrer at al AI-integration følger GDPR og databeskyttelseslovgivning. Data opbevares og behandles ansvarligt." },
+        { question: "Hvad koster det at integrere AI?", answer: "Prisen varierer meget afhængigt af løsningens kompleksitet. En simpel chatbot kan koste fra få tusinde kr. En avanceret løsning kan koste mere. Kontakt os for et estimat." },
+        { question: "Kan AI generere indhold til vores hjemmeside?", answer: "Ja – vi kan integrere AI-drevet indholdsgenerering til produktbeskrivelser, blogging og SEO-optimeret tekst." },
+        { question: "Hvad er en AI-agent?", answer: "En AI-agent er et autonomt program der kan udføre opgaver, træffe beslutninger og interagere med systemer på vegne af brugeren." },
+        { question: "Hvad er næste skridt, hvis jeg vil have AI integreret?", answer: "Kontakt os for en uforpligtende AI-konsultation, hvor vi kortlægger dine processer og identificerer de bedste muligheder for AI-integration." },
       ]} />
       <CTASection
         title="Få AI til at arbejde for din virksomhed"
