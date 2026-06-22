@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { Settings, CheckCircle, ArrowRight, RefreshCw, Lock, Layers, Globe } from 'lucide-react';
 import HeroSection from '../../components/HeroSection';
 import SEO from '../../components/SEO';
+import FAQSection from '../../components/FAQSection';
+import CTASection from '../../components/CTASection';
 
 export default function ApiSaasPage() {
   const features = [
@@ -137,6 +139,18 @@ export default function ApiSaasPage() {
           </Link>
         </div>
       </section>
+      <FAQSection faqs={[
+        { question: 'Hvad er en API-integration?', answer: 'En API-integration forbinder to eller flere systemer så de kan udveksle data automatisk – f.eks. dit CRM med din hjemmeside eller et betalingssystem.' },
+        { question: 'Kan I bygge en SaaS-platform fra bunden?', answer: 'Ja – Nexny har erfaring med at designe og udvikle komplette SaaS-applikationer med brugeradministration, betalingsintegration og skalerbar infrastruktur.' },
+        { question: 'Hvad er en webhook?', answer: 'En webhook er en automatisk notifikation der sendes fra ét system til et andet, når en bestemt hændelse opstår – f.eks. når en ordre er gennemført.' },
+        { question: 'Kan I integrere med eksisterende systemer?', answer: 'Ja – vi har erfaring med integrationer til de mest populære CRM-, ERP- og marketingsystemer.' },
+      ]} />
+      <CTASection
+        title="Lad Nexny bygge din næste API eller SaaS-løsning"
+        subtitle="Skalerbare digitale platforme og integrationer der driver din forretning fremad."
+        primaryText="Start dit projekt"
+        primaryLink="/kontakt"
+      />
     </>
   );
 }

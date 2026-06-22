@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { TrendingUp, BarChart3, HeartHandshake, CheckCircle, ArrowRight } from 'lucide-react';
 import HeroSection from '../components/HeroSection';
 import SEO from '../components/SEO';
+import FAQSection from '../components/FAQSection';
+import CTASection from '../components/CTASection';
 
 const PartnersPage: React.FC = () => {
   useEffect(() => {
@@ -160,6 +162,21 @@ const PartnersPage: React.FC = () => {
           </Link>
         </div>
       </section>
+      <FAQSection faqs={[
+        { question: 'Hvad indebærer et samarbejde med Nexny?', answer: 'Som samarbejdspartner får du adgang til Nexny\'s team af erfarne salgsprofessionelle, der arbejder dedikeret med at generere leads og booke møder til din virksomhed.' },
+        { question: 'Kan vi selv definere målgruppen?', answer: 'Ja – vi skræddersyr kampagner baseret på din ønskede målgruppe, branche, virksomhedsstørrelse og geografi.' },
+        { question: 'Hvad er minimumslængden på et samarbejde?', answer: 'Vi anbefaler minimum 3 måneder for at opnå optimale resultater, men tilbyder fleksible løsninger.' },
+        { question: 'Får vi adgang til rapportering?', answer: 'Ja, du modtager ugentlige og månedlige rapporter med alle aktiviteter, mødebookinger og resultater.' },
+        { question: 'Arbejder I med NDA og fortrolighed?', answer: 'Selvfølgelig – alle samarbejder er beskyttet af fortrolighedsaftaler.' },
+      ]} />
+      <CTASection
+        title="Bliv samarbejdspartner – start din vækst i dag"
+        subtitle="Lad Nexny fylde din kalender med kvalificerede salgsmøder og varme leads, så dit team kan fokusere på at lukke aftaler."
+        primaryText="Kontakt os"
+        primaryLink="/kontakt"
+        secondaryText="Se priser og pakker"
+        secondaryLink="/priser"
+      />
     </>
   );
 };

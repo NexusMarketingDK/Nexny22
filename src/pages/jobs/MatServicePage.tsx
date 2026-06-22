@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { CheckCircle, ArrowRight, Clock, PiggyBank, Home, Shield, Users, Star } from 'lucide-react';
 import HeroSection from '../../components/HeroSection';
 import SEO from '../../components/SEO';
+import FAQSection from '../../components/FAQSection';
 
 export default function MatServicePage() {
   return (
@@ -150,6 +151,13 @@ export default function MatServicePage() {
           </div>
         </div>
       </section>
+
+      <FAQSection faqs={[
+        { question: 'Hvad sælger jeg?', answer: 'Du booker møder for professionel måtteservice – firmaer der lejer og servicerer måtter til erhvervskunder som sikrer rent arbejdsmiljø.' },
+        { question: 'Hvem er de typiske kunder?', answer: 'Kontorer, butikker, restauranter, hoteller og produktionsvirksomheder der ønsker et professionelt indgangsmiljø.' },
+        { question: 'Er det et tilbagevendende produkt?', answer: 'Ja – måtteservice er typisk abonnementsbaseret, hvilket giver kunderne god stabilitet.' },
+        { question: 'Hvad er mine arbejdstider?', answer: 'Du bestemmer selv dine timer som freelancer. Vi anbefaler at ringe inden for normal kontortid.' },
+      ]} />
 
       <section className="bg-blue-600 text-white py-16">
         <div className="container mx-auto px-4 text-center">

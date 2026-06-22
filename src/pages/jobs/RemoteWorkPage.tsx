@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { CheckCircle, ArrowRight, Clock, PiggyBank, Home, Laptop, Globe, Users } from 'lucide-react';
 import HeroSection from '../../components/HeroSection';
 import SEO from '../../components/SEO';
+import FAQSection from '../../components/FAQSection';
 
 export default function RemoteWorkPage() {
   return (
@@ -145,6 +146,14 @@ export default function RemoteWorkPage() {
           </div>
         </div>
       </section>
+
+      <FAQSection faqs={[
+        { question: 'Kan jeg arbejde remote som sælger hos Nexny?', answer: 'Ja – alle Nexny\'s freelance salgsstillinger kan udføres 100% hjemmefra. Du behøver kun en telefon, computer og stabilt internet.' },
+        { question: 'Hvad er provisionssatsen?', answer: 'Provisionen varierer afhængigt af produkt og kampagne. Du får altid en klar aftale om løn og provision inden opstart.' },
+        { question: 'Skal jeg selv finde kunder?', answer: 'Nej – Nexny leverer leads, scripts og kampagnematerialer. Du ringer til de kontakter vi giver dig og arbejder efter vores salgsproces.' },
+        { question: 'Hvornår udbetales provision?', answer: 'Provision udbetales månedligt baseret på verificerede salg og resultater.' },
+        { question: 'Kan jeg arbejde for Nexny ved siden af et andet job?', answer: 'Ja – mange af vores freelancere arbejder for Nexny som biindtægt eller supplement til studier.' },
+      ]} />
 
       <section className="bg-blue-600 text-white py-16">
         <div className="container mx-auto px-4 text-center">

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { Calendar, User, Tag, Share2, ArrowLeft, Facebook, Linkedin, Twitter, ArrowRight } from 'lucide-react';
 import SEO from '../components/SEO';
+import CTASection from '../components/CTASection';
 
 interface BlogPostData {
   slug: string;
@@ -309,6 +310,14 @@ const BlogPost: React.FC = () => {
           </div>
         </div>
       </div>
+      <CTASection
+        title="Klar til at omsætte viden til resultater?"
+        subtitle="Lad Nexny's specialister hjælpe din virksomhed med at vækste."
+        primaryText="Kontakt Nexny"
+        primaryLink="/kontakt"
+        secondaryText="Se alle ydelser"
+        secondaryLink="/ydelser"
+      />
     </>
   );
 };

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { CheckCircle, ArrowRight, Clock, PiggyBank, Home, Shield, TrendingUp, Users } from 'lucide-react';
 import HeroSection from '../../components/HeroSection';
 import SEO from '../../components/SEO';
+import FAQSection from '../../components/FAQSection';
 
 export default function PensionPage() {
   return (
@@ -150,6 +151,13 @@ export default function PensionPage() {
           </div>
         </div>
       </section>
+
+      <FAQSection faqs={[
+        { question: 'Hvad booker jeg møder om?', answer: 'Du kontakter private og erhvervskunder og booker møder med en certificeret pensionsrådgiver om pensionsplanlægning og opsparingsløsninger.' },
+        { question: 'Kræver det finansiel baggrund?', answer: 'Nej – du skal booke møder, ikke rådgive. Pensionsrådgiveren tager det faglige. Du behøver kun gode salgsevner.' },
+        { question: 'Er pension et følsomt emne at tale om?', answer: 'Pensionsrådgivning berører vigtige livsvalg, men de fleste danskere sætter pris på at blive kontaktet om det. Vi giver dig de rigtige scripts.' },
+        { question: 'Hvad er provisionsniveauet?', answer: 'Pension er et højtværdiprodukt, hvilket typisk afspejles i attraktive provisioner pr. gennemført møde.' },
+      ]} />
 
       <section className="bg-blue-600 text-white py-16">
         <div className="container mx-auto px-4 text-center">

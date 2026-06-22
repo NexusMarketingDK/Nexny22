@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { CheckCircle, ArrowRight, Target, Award, ChevronDown, ChevronUp } from 'lucide-react';
 import HeroSection from '../components/HeroSection';
 import SEO from '../components/SEO';
+import FAQSection from '../components/FAQSection';
+import CTASection from '../components/CTASection';
 
 const PricingPage: React.FC = () => {
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
@@ -163,6 +165,19 @@ const PricingPage: React.FC = () => {
           </Link>
         </div>
       </section>
+      <FAQSection faqs={[
+        { question: 'Er der opstartsgebyr?', answer: 'Det afhænger af den valgte pakke. Kontakt os for at få en gennemgang af hvad der er inkluderet fra dag ét.' },
+        { question: 'Kan vi opsige samarbejdet?', answer: 'Vi tilbyder fleksible aftaler med rimelige opsigelsesvarsler – typisk 1 måned.' },
+        { question: 'Hvad er inkluderet i prisen?', answer: 'Afhængigt af pakken inkluderer prisen typisk kampagneplanlægning, opkaldstimer, rapportering, CRM-opdatering og løbende optimering.' },
+        { question: 'Tilbyder I rabat ved langtidssamarbejde?', answer: 'Ja – ved 6 eller 12 måneders aftaler tilbyder vi fordelagtige priser. Kontakt os for et individuelt tilbud.' },
+        { question: 'Kan vi skalere op eller ned?', answer: 'Absolut. Nexny\'s løsninger er designet til at skalere med din virksomheds behov og vækst.' },
+      ]} />
+      <CTASection
+        title="Få et skræddersyet tilbud til din virksomhed"
+        subtitle="Alle prismodeller er fleksible og tilpassede. Kontakt os for at finde den løsning der passer til dit budget og dine mål."
+        primaryText="Kontakt os"
+        primaryLink="/kontakt"
+      />
     </>
   );
 };

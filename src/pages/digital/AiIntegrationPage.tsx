@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { Cpu, CheckCircle, ArrowRight, Bot, Zap, BarChart3, MessageSquare, Users, Calendar, TrendingUp, Clock, Shield, Star } from 'lucide-react';
 import HeroSection from '../../components/HeroSection';
 import SEO from '../../components/SEO';
+import FAQSection from '../../components/FAQSection';
+import CTASection from '../../components/CTASection';
 
 export default function AiIntegrationPage() {
   const [activeWorkflow, setActiveWorkflow] = useState(0);
@@ -465,6 +467,21 @@ export default function AiIntegrationPage() {
           </Link>
         </div>
       </section>
+      <FAQSection faqs={[
+        { question: 'Hvad kan AI gøre for min virksomhed?', answer: 'AI kan automatisere gentagne opgaver, besvare kundehenvendelser døgnet rundt, kvalificere leads automatisk og give dybdegående indsigt i data – alt mens dine medarbejdere fokuserer på det der skaber mest værdi.' },
+        { question: 'Hvad er en AI chatbot?', answer: 'En AI chatbot er et program der automatisk kan besvare kundespørgsmål, guide besøgende og indsamle leads – direkte på din hjemmeside, 24/7.' },
+        { question: 'Er AI-løsninger dyre?', answer: 'Priserne varierer meget. Nexny tilbyder løsninger i alle størrelser – fra simple chatbots til avancerede automatiseringsplatforme. Vi finder den løsning der passer til dit budget.' },
+        { question: 'Kræver AI-integration teknisk viden?', answer: 'Nej – Nexny håndterer hele implementeringen og oplæringen. Du behøver ingen teknisk baggrund for at bruge og drage fordel af AI.' },
+        { question: 'Kan AI integreres med mine eksisterende systemer?', answer: 'Ja – Nexny\'s AI-løsninger kan integreres med de fleste CRM-, marketings- og kommunikationssystemer.' },
+      ]} />
+      <CTASection
+        title="Få AI til at arbejde for din virksomhed"
+        subtitle="Nexny hjælper dig med at implementere AI-løsninger der automatiserer opgaver, genererer leads og øger effektiviteten."
+        primaryText="Book en AI-konsultation"
+        primaryLink="/kontakt"
+        secondaryText="Se eksempler"
+        secondaryLink="/digital/ai-integration"
+      />
     </>
   );
 }

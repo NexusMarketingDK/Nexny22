@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { CheckCircle, ArrowRight, Clock, PiggyBank, Home, Laptop, Globe, Users } from 'lucide-react';
 import HeroSection from '../../components/HeroSection';
 import SEO from '../../components/SEO';
+import FAQSection from '../../components/FAQSection';
 
 export default function WebBureauPage() {
   return (
@@ -200,6 +201,13 @@ export default function WebBureauPage() {
           </div>
         </div>
       </section>
+
+      <FAQSection faqs={[
+        { question: 'Skal jeg kende til webudvikling for at sælge det?', answer: 'Nej – du behøver ingen teknisk baggrund. Nexny oplærer dig i produkterne og salgsteknikken, så du kan præsentere løsningerne professionelt.' },
+        { question: 'Hvem er mine kunder?', answer: 'Du kontakter primært SMV\'er og iværksættere i Danmark der har brug for en professionel online tilstedeværelse.' },
+        { question: 'Hvad sker der, når jeg har lavet et salg?', answer: 'Du videregiver kundens information til Nexny\'s web-team, som overtager og leverer løsningen. Du tjener provision på salget.' },
+        { question: 'Er der faste kvoter jeg skal nå?', answer: 'Vi arbejder med mål og ambitioner, men tilpasser forventningerne individuelt. Du sætter selv barren.' },
+      ]} />
 
       <section className="bg-blue-600 text-white py-16">
         <div className="container mx-auto px-4 text-center">

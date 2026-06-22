@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { CheckCircle, ArrowRight, Clock, PiggyBank, Home, Coffee, Users, Star } from 'lucide-react';
 import HeroSection from '../../components/HeroSection';
 import SEO from '../../components/SEO';
+import FAQSection from '../../components/FAQSection';
 
 export default function CoffeeServicePage() {
   return (
@@ -150,6 +151,13 @@ export default function CoffeeServicePage() {
           </div>
         </div>
       </section>
+
+      <FAQSection faqs={[
+        { question: 'Hvad sælger jeg præcist?', answer: 'Du booker møder for professionelle kaffeserviceløsninger til virksomheder – kaffemaskiner, service og forbrugsvarer til kontorer og erhvervslokaler.' },
+        { question: 'Er det et let produkt at sælge?', answer: 'Kaffe er et produkt næsten alle virksomheder bruger. Efterspørgslen er høj og samtalerne er typisk positive.' },
+        { question: 'Hvem ringer jeg til?', answer: 'Du kontakter facility managers, indkøbsansvarlige og kontoradministratorer i virksomheder.' },
+        { question: 'Hvad er opkaldsomfanget per dag?', answer: 'Du bestemmer selv dit tempo, men et typisk udgangspunkt er 30-50 opkald om dagen.' },
+      ]} />
 
       <section className="bg-blue-600 text-white py-16">
         <div className="container mx-auto px-4 text-center">

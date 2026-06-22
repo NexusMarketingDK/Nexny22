@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Users, Award, CheckCircle, ArrowRight, Building } from 'lucide-react';
 import SEO from '../components/SEO';
+import FAQSection from '../components/FAQSection';
+import CTASection from '../components/CTASection';
 
 const AboutPage: React.FC = () => {
   const values = [
@@ -141,6 +143,20 @@ const AboutPage: React.FC = () => {
           </Link>
         </div>
       </section>
+      <FAQSection faqs={[
+        { question: 'Hvornår blev Nexny grundlagt?', answer: 'Nexny har rødder i professionel telemarketing og B2B salg og har hjulpet over 200 virksomheder med at vækste.' },
+        { question: 'Hvor er Nexny baseret?', answer: 'Nexny har kontorer i Danmark (Aarhus) og Spanien (Valencia), og betjener kunder i hele Skandinavien og internationalt.' },
+        { question: 'Hvad adskiller Nexny fra andre telemarketingbureauer?', answer: 'Nexny kombinerer menneskelig salgskraft med datadrevne metoder og digitale løsninger – alt under ét tag. Vi fokuserer altid på ROI og dokumenterede resultater.' },
+        { question: 'Arbejder I med store og små virksomheder?', answer: 'Ja – vi samarbejder med virksomheder i alle størrelser, fra iværksættere til etablerede B2B virksomheder.' },
+      ]} />
+      <CTASection
+        title="Lær os bedre at kende – tag en snak med teamet"
+        subtitle="Vi er klar til at fortælle mere om vores tilgang, resultater og samarbejdsmodeller."
+        primaryText="Kontakt Nexny"
+        primaryLink="/kontakt"
+        secondaryText="Se vores ydelser"
+        secondaryLink="/ydelser"
+      />
     </>
   );
 };

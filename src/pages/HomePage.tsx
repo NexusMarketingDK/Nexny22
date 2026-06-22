@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { Phone, Users, Code, ArrowRight, Briefcase, BarChart3, CheckCircle, TrendingUp, HeartHandshake } from 'lucide-react';
 import HeroSection from '../components/HeroSection';
 import SEO from '../components/SEO';
+import FAQSection from '../components/FAQSection';
+import CTASection from '../components/CTASection';
 
 const HomePage: React.FC = () => {
   const services = [
@@ -262,6 +264,21 @@ const HomePage: React.FC = () => {
           </div>
         </div>
       </section>
+      <FAQSection faqs={[
+        { question: 'Hvad gør Nexny?', answer: 'Nexny er en dansk vækstpartner specialiseret i B2B telemarketing, mødebooking, leadgenerering, webudvikling og AI-integration. Vi hjælper virksomheder med at fylde salgspipelinen med kvalificerede møder og leads.' },
+        { question: 'Hvilke brancher arbejder Nexny med?', answer: 'Vi har erfaring på tværs af over 16 brancher, herunder SaaS, IT-konsulenter, finans, energi, HR, transport, solenergi og servicevirksomheder.' },
+        { question: 'Hvad koster det at bruge Nexny?', answer: 'Vi tilbyder fleksible prismodeller tilpasset din virksomheds størrelse og behov. Kontakt os for et uforpligtende tilbud.' },
+        { question: 'Kan Nexny hjælpe med både telemarketing og digital markedsføring?', answer: 'Ja – Nexny kombinerer menneskelig salgskraft med digitale løsninger, herunder webudvikling, AI-integration og leadgenerering via flere kanaler.' },
+        { question: 'Hvor hurtigt kan vi komme i gang?', answer: 'Typisk kan vi opstart et samarbejde inden for 1-2 uger efter den første samtale.' },
+      ]} />
+      <CTASection
+        title="Klar til at accelerere din vækst?"
+        subtitle="Nexny hjælper B2B virksomheder med at generere leads, booke møder og drive salg – med dokumenterede resultater."
+        primaryText="Bliv samarbejdspartner"
+        primaryLink="/samarbejdspartner"
+        secondaryText="Se priser"
+        secondaryLink="/priser"
+      />
     </>
   );
 };

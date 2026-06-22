@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { Calendar, CheckCircle, ArrowRight, Users, BarChart3, Shield } from 'lucide-react';
 import HeroSection from '../components/HeroSection';
 import SEO from '../components/SEO';
+import FAQSection from '../components/FAQSection';
+import CTASection from '../components/CTASection';
 
 const MeetingBookingPage: React.FC = () => {
   const features = [
@@ -131,6 +133,21 @@ const MeetingBookingPage: React.FC = () => {
           </Link>
         </div>
       </section>
+      <FAQSection faqs={[
+        { question: 'Hvad er mødebooking?', answer: 'Mødebooking er processen med at identificere og kontakte potentielle kunder og booke kvalificerede salgsmøder direkte i din kalender – så dit salgsteam kan fokusere på at lukke aftaler.' },
+        { question: 'Hvem booker møderne?', answer: 'Nexny\'s erfarne mødebookere kontakter beslutningstagere i din målgruppe, præsenterer din løsning og booker møder direkte i din kalender.' },
+        { question: 'Hvad sker der, hvis et møde aflyses?', answer: 'Vi håndterer afbud og ombookinger og sikrer at din kalender altid er fyldt med kvalificerede møder.' },
+        { question: 'Kan I booke møder inden for specifikke brancher?', answer: 'Ja – vi har erfaring med mødebooking i over 16 brancher og tilpasser vores tilgang til din målgruppe.' },
+        { question: 'Hvad er en typisk succesrate for mødebooking?', answer: 'Det afhænger af branche og målgruppe, men vores kunder oplever typisk en møderate på 10-20% af kvalificerede kontakter.' },
+      ]} />
+      <CTASection
+        title="Book dit første mødebookingmøde med Nexny i dag"
+        subtitle="Vi er klar til at hjælpe din virksomhed med at fylde kalenderen med kvalificerede salgsmøder."
+        primaryText="Kontakt os nu"
+        primaryLink="/kontakt"
+        secondaryText="Se priser"
+        secondaryLink="/priser"
+      />
     </>
   );
 };

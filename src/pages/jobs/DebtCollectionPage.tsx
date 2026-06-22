@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { CheckCircle, ArrowRight, Clock, PiggyBank, Home, Shield, BarChart3, Users } from 'lucide-react';
 import HeroSection from '../../components/HeroSection';
 import SEO from '../../components/SEO';
+import FAQSection from '../../components/FAQSection';
 
 export default function DebtCollectionPage() {
   return (
@@ -150,6 +151,13 @@ export default function DebtCollectionPage() {
           </div>
         </div>
       </section>
+
+      <FAQSection faqs={[
+        { question: 'Hvad booker jeg møder om?', answer: 'Du kontakter virksomheder og booker møder med inkassoeksperter om professionel debitorhåndtering og gældinddrivelse.' },
+        { question: 'Er det et svært produkt at sælge?', answer: 'Inkasso er et nødvendigt produkt for virksomheder med ubetalte fordringer. Mange virksomheder ser positivt på at forbedre deres debitorhåndtering.' },
+        { question: 'Hvem er målgruppen?', answer: 'Primært SMV\'er og større virksomheder der har udestående fakturaer og behøver professionel hjælp til inddrivelse.' },
+        { question: 'Er der særlige krav til min baggrund?', answer: 'Nej – du behøver ikke juridisk baggrund. Gode kommunikationsevner og professionel optræden er det vigtigste.' },
+      ]} />
 
       <section className="bg-blue-600 text-white py-16">
         <div className="container mx-auto px-4 text-center">

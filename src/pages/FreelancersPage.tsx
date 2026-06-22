@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { Clock, PiggyBank, Award, Users, CheckCircle, ArrowRight, Home, Star } from 'lucide-react';
 import HeroSection from '../components/HeroSection';
 import SEO from '../components/SEO';
+import FAQSection from '../components/FAQSection';
+import CTASection from '../components/CTASection';
 import { jobListings } from '../data/jobListings';
 
 const FreelancersPage: React.FC = () => {
@@ -160,6 +162,21 @@ const FreelancersPage: React.FC = () => {
           </Link>
         </div>
       </section>
+      <FAQSection faqs={[
+        { question: 'Hvad tjener man som freelance sælger hos Nexny?', answer: 'Lønnen består af et fast grundhonorar plus provision på dine resultater. Jo mere du sælger, jo mere tjener du – der er intet loft.' },
+        { question: 'Skal jeg have erfaring for at søge?', answer: 'Erfaring er en fordel, men ikke et krav. Nexny oplærer dig grundigt og giver dig løbende sparring og support.' },
+        { question: 'Kan jeg arbejde deltid?', answer: 'Ja – du bestemmer selv dine arbejdstider og kan arbejde alt fra få timer om ugen til fuld tid.' },
+        { question: 'Hvad sker der, hvis jeg har spørgsmål under arbejdet?', answer: 'Du har altid adgang til support fra Nexny\'s erfarne salgsledere, der kan hjælpe med sparring, scripts og produktspørgsmål.' },
+        { question: 'Hvilke produkter sælger man?', answer: 'Nexny har freelancere inden for mange brancher – webudvikling, energi, solceller, kaffeservice, pension, inkasso og mere. Du vælger det produkt, der passer bedst til dig.' },
+      ]} />
+      <CTASection
+        title="Tag styringen over din karriere – bliv freelance sælger hos Nexny"
+        subtitle="Fleksible arbejdstider, konkurrencedygtig provision og spændende projekter. Alt hvad du behøver for at lykkes som freelancer."
+        primaryText="Søg nu"
+        primaryLink="/kontakt"
+        secondaryText="Se ledige stillinger"
+        secondaryLink="/jobs/arbejd-hjemmefra"
+      />
     </>
   );
 };
