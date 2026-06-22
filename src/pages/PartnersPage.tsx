@@ -59,8 +59,8 @@ const PartnersPage: React.FC = () => {
   return (
     <>
       <SEO
-        title="Bliv Samarbejdspartner | Nexny – B2B Salg & Mødebooking"
-        description="Start et samarbejde med Nexny og få adgang til professionel B2B telemarketing og mødebooking. Vi leverer kvalificerede salgsmøder og målbare resultater til din virksomhed."
+        title="Bliv Samarbejdspartner | Nexny – Telesalg, Mødebooking og AI"
+        description="Start et samarbejde med Nexny – din vækstpartner inden for telesalg, mødebooking, webudvikling, leadgenerering og AI-udviklingsopgaver. Målbare resultater."
         canonical="/samarbejdspartner"
         keywords="Nexny samarbejdspartner, outsource salg, mødebooking partner, B2B salg, telemarketing bureau"
       />

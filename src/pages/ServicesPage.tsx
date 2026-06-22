@@ -66,8 +66,8 @@ const ServicesPage: React.FC = () => {
   return (
     <>
       <SEO
-        title="Ydelser | Nexny – Telemarketing, Mødebooking & Leadgenerering"
-        description="Nexny's professionelle ydelser: B2B telemarketing, kvalificeret mødebooking, leadgenerering og kundeservice. Skræddersyede løsninger der skaber målbare resultater for din virksomhed."
+        title="Ydelser | Nexny – Telesalg, Mødebooking, Webudvikling og AI"
+        description="Nexny's ydelser: professionelt telesalg, mødebooking, leadgenerering, webudvikling og AI-udviklingsopgaver. Din vækstpartner med dokumenterede resultater."
         canonical="/ydelser"
         keywords="Nexny ydelser, telemarketing, mødebooking, leadgenerering, kundeservice, B2B salg, salgsoutsourcing"
       />

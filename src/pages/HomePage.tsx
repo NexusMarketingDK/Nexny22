@@ -100,15 +100,15 @@ const HomePage: React.FC = () => {
   return (
     <>
       <SEO
-        title="Nexny | B2B Salg, Mødebooking & Digital Vækst"
-        description="Nexny skaber vækst for ambitiøse virksomheder gennem professionel B2B salg, mødebooking og digitale løsninger. Kvalificerede leads og salgsmøder leveret til din kalender. ✓ Dokumenterede resultater ✓ Fleksible modeller"
+        title="Nexny | Vækstpartner inden for Telesalg, Mødebooking, Webudvikling og AI"
+        description="Nexny er din vækstpartner inden for telesalg, mødebooking, webudvikling, leadgenerering og AI-udviklingsopgaver. Vi leverer dokumenterede resultater med fleksible modeller."
         canonical="/"
-        keywords="Nexny, B2B salg, mødebooking, telemarketing, leadgenerering, digital vækst, freelance sælger, salgspartner Danmark"
+        keywords="Nexny, vækstpartner, telesalg, mødebooking, webudvikling, leadgenerering, AI, AI-udvikling, salgspartner Danmark"
       />
 
       <HeroSection
-        title="Salgsdrevet Vækst for Ambitiøse Virksomheder"
-        subtitle="Nexny forbinder din virksomhed med kvalificerede beslutningstagere og dygtige sælgere. Vælg et strategisk partnerskab – eller start en spændende karriere som freelance sælger."
+        title="Din Vækstpartner inden for Telesalg og AI"
+        subtitle="Nexny leverer professionelt telesalg, kvalificeret mødebooking, leadgenerering, moderne webudvikling og AI-udviklingsopgaver – alt samlet hos én partner."
         ctaText="Bliv samarbejdspartner"
         ctaLink="/samarbejdspartner"
         secondaryCtaText="Start din karriere"
@@ -243,7 +243,7 @@ const HomePage: React.FC = () => {
               <Briefcase size={48} className="text-blue-400 mx-auto mb-4" />
               <h3 className="text-2xl font-bold mb-4">For Virksomheder</h3>
               <p className="mb-6">
-                Sæt turbo på dit salg med en dedikeret vækstpartner. Nexny leverer kvalificerede møder og varme leads direkte til dit salgsteam.
+                Din vækstpartner inden for telesalg, mødebooking, webudvikling, leadgenerering og AI. Nexny leverer resultater – drevet af menneskelig ekspertise og moderne teknologi.
               </p>
               <Link to="/samarbejdspartner" className="btn bg-blue-600 text-white hover:bg-blue-700 inline-flex items-center">
                 Start samarbejde <ArrowRight size={16} className="ml-2" />

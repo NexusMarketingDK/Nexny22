@@ -41,8 +41,8 @@ const OutsourcingPage: React.FC = () => {
   return (
     <>
       <SEO
-        title="Hvorfor Nexny? | Outsource dit B2B Salg og Mødebooking"
-        description="Oplev fordelene ved at outsource dit salg og din mødebooking til Nexny. Vi leverer erfaren salgskraft, dokumenterede resultater og fuld transparens – til en lavere pris end interne ansatte."
+        title="Hvorfor Nexny? | Din Vækstpartner inden for Telesalg og AI"
+        description="Oplev fordelene ved at vælge Nexny som vækstpartner inden for telesalg, mødebooking, webudvikling, leadgenerering og AI-udviklingsopgaver."
         canonical="/hvorfor-nexusmarketing"
         keywords="outsource salg, outsource mødebooking, Nexny, B2B salgsoutsourcing, ekstern salgsstyrke"
       />
