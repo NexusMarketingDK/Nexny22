@@ -216,40 +216,6 @@ const HomePage: React.FC = () => {
         </div>
       </section>
 
-      <section className="section bg-white">
-        <div className="container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="order-2 lg:order-1">
-              <img
-                src="https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt="Freelance sælger der arbejder hjemmefra med Nexny"
-                className="rounded-lg shadow-lg"
-              />
-            </div>
-            <div className="order-1 lg:order-2">
-              <h2 className="text-3xl font-bold mb-6">Byg din karriere som freelance sælger hos Nexny</h2>
-              <p className="text-lg text-gray-600 mb-8">
-                Ønsker du frihed til at tilrettelægge din egen arbejdsdag? Som freelance sælger eller mødebooker
-                hos Nexny får du attraktiv indtjening, faglig udvikling og et stærkt netværk bag dig.
-              </p>
-              <div className="space-y-4">
-                {freelanceBenefits.map((benefit, index) => (
-                  <div key={index} className="flex items-start fade-in" style={{ animationDelay: `${index * 0.15}s` }}>
-                    <CheckCircle className="text-green-500 mr-3 mt-1 flex-shrink-0" />
-                    <p>{benefit}</p>
-                  </div>
-                ))}
-              </div>
-              <div className="mt-8">
-                <Link to="/freelance-telemarketing" className="btn btn-primary inline-flex items-center">
-                  Se ledige stillinger <ArrowRight size={16} className="ml-2" />
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section className="section bg-gray-50">
         <div className="container">
           <div className="text-center mb-12">
