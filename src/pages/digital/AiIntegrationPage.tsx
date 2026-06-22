@@ -171,6 +171,78 @@ export default function AiIntegrationPage() {
         backgroundImage="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       />
 
+      {/* Vi bygger dit AI-projekt – klar til lancering */}
+      <section className="py-16 bg-gradient-to-br from-blue-900 to-blue-700 text-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-12">
+              <span className="inline-block bg-blue-500 bg-opacity-40 text-blue-100 text-sm font-semibold px-4 py-1 rounded-full mb-4 uppercase tracking-wide">Nexny bygger det – du lancerer det</span>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                Vi tager dit AI-projekt fra idé til klar løsning
+              </h2>
+              <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+                Har du en idé til et AI-projekt, men mangler tekniske ressourcer eller tid til at bygge det? Nexny leverer en færdig, klar-til-lancering AI-løsning til en fast pris – og håndterer leads og møder mens du fokuserer på din kerneforretning.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+              {[
+                {
+                  icon: <Cpu size={36} className="text-blue-300" />,
+                  title: 'Vi bygger dit projekt',
+                  desc: 'Giv os din idé – vi omsætter den til en fuldt fungerende AI-løsning. Fra prototype til produktion, leveret til aftalt pris og deadline.'
+                },
+                {
+                  icon: <Star size={36} className="text-blue-300" />,
+                  title: 'Klar til lancering',
+                  desc: 'Du modtager en kørende løsning der er testet, GDPR-compliant og integreret med dine eksisterende systemer – klar til at sætte i drift.'
+                },
+                {
+                  icon: <Calendar size={36} className="text-blue-300" />,
+                  title: 'Vi håndterer leads og møder',
+                  desc: 'Nexny styrer hele pipeline – AI-genererede leads screenes og kvalificerede salgsmøder bookes direkte i din kalender, så du lukker aftalerne.'
+                }
+              ].map((item, i) => (
+                <div key={i} className="bg-white bg-opacity-10 rounded-xl p-6 border border-white border-opacity-20 hover:bg-opacity-20 transition-all">
+                  <div className="mb-4">{item.icon}</div>
+                  <h3 className="text-xl font-bold mb-3">{item.title}</h3>
+                  <p className="text-blue-100 text-sm leading-relaxed">{item.desc}</p>
+                </div>
+              ))}
+            </div>
+
+            <div className="bg-white bg-opacity-10 border border-white border-opacity-20 rounded-2xl p-8 flex flex-col md:flex-row items-center gap-6">
+              <div className="flex-1">
+                <h3 className="text-2xl font-bold mb-3">Hvad koster det – og hvad får du?</h3>
+                <ul className="space-y-2 text-blue-100">
+                  {[
+                    'Fast pris – ingen overraskelser undervejs',
+                    'Fuld dokumentation og kildekode overdrages til dig',
+                    'Integration med dit CRM, booking og e-mail',
+                    'Nexny håndterer leads og booker møder til din salgsstyrke',
+                    'Løbende support og optimering efter lancering'
+                  ].map((item, i) => (
+                    <li key={i} className="flex items-center gap-3">
+                      <CheckCircle size={18} className="text-green-400 flex-shrink-0" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="flex-shrink-0 text-center">
+                <p className="text-blue-200 text-sm mb-3">Klar til at komme i gang?</p>
+                <Link
+                  to="/kontakt"
+                  className="inline-flex items-center bg-white text-blue-700 font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition-colors shadow-lg"
+                >
+                  Få et fast tilbud <ArrowRight size={18} className="ml-2" />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Fordele ved AI integration */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
