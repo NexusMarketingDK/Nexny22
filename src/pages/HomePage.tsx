@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Phone, Users, Code, ArrowRight, Target, Briefcase, BarChart3, CheckCircle } from 'lucide-react';
+import { Phone, Users, Code, ArrowRight, Briefcase, BarChart3, CheckCircle } from 'lucide-react';
 import HeroSection from '../components/HeroSection';
 import SEO from '../components/SEO';
 
@@ -9,154 +9,106 @@ const HomePage: React.FC = () => {
     {
       icon: <Phone size={40} className="text-blue-600" />,
       title: 'Telemarketing',
-      description: 'Professionel telemarketing målrettet virksomheder, der ønsker at udvide deres kundebase og øge salget.',
+      description: 'Skarpt målrettet B2B telemarketing der åbner døre, skaber dialog og driver reelle forretningsresultater for din virksomhed.',
       features: [
-        'Målrettet opsøgende salg til beslutningstagere',
-        'Kvalificering af leads og kundeemner',
-        'Opdatering af kundedata og kontaktinformation',
-        'Opfølgning på marketing kampagner',
-        'Feedback og markedsundersøgelser',
-        'Detaljeret rapportering og performance-måling'
+        'Direkte kontakt til relevante beslutningstagere',
+        'Kvalificering og prioritering af kundeemner',
+        'Løbende opdatering af prospektdatabaser',
+        'Opfølgning på markedsføringskampagner',
+        'Kundetilfredshedsundersøgelser og feedback',
+        'Detaljeret resultatrapportering'
       ]
     },
     {
       icon: <Users size={40} className="text-blue-600" />,
       title: 'Mødebooking',
-      description: 'Effektiv mødebooking der sikrer jeres salgsteam møder med de rigtige beslutningstagere hos potentielle kunder.',
+      description: 'Vi fylder din kalender med kvalificerede salgsmøder hos de rette beslutningstagere – så dit team kan lukke flere aftaler.',
       features: [
-        'Identifikation af relevante kontaktpersoner',
-        'Kvalificering af potentielle kunder',
-        'Booking af fysiske møder eller online demos',
-        'Koordinering af kalendere og mødetider',
-        'Mødebekræftelser og påmindelser',
-        'Opfølgning og feedback efter møder'
+        'Identifikation og screening af nøglepersoner',
+        'Grundig forhåndskvalificering af emner',
+        'Booking af fysiske møder og digitale demos',
+        'Effektiv kalender- og tidsstyring',
+        'Automatiske mødebekræftelser og påmindelser',
+        'Struktureret opfølgning og feedbackloop'
       ]
     },
     {
       icon: <Code size={40} className="text-blue-600" />,
       title: 'Webudvikling',
-      description: 'Professionel webudvikling med fokus på moderne, brugervenlige og skalerbare løsninger.',
+      description: 'Moderne og konverteringsoptimerede webløsninger der repræsenterer din virksomhed professionelt og genererer leads døgnet rundt.',
       features: [
-        'Skræddersyede webløsninger',
-        'Responsive design',
-        'E-commerce platforme',
-        'API integration',
-        'CMS-systemer',
-        'Teknisk vedligeholdelse'
+        'Skræddersyede webapplikationer',
+        'Mobilvenligt responsivt design',
+        'Webshops og e-handelsplatforme',
+        'API-integrationer og systemkoblinger',
+        'Brugervenlige CMS-løsninger',
+        'Løbende support og vedligeholdelse'
       ]
     },
     {
       icon: <BarChart3 size={40} className="text-blue-600" />,
       title: 'Leadgenerering',
-      description: 'Omfattende leadgenerering med fokus på kvalitet fremfor kvantitet, samt analyse og rapportering.',
+      description: 'Struktureret og datadrevet leadgenerering der leverer varme, salgsklar emner direkte til dit CRM-system.',
       features: [
-        'Multi-channel leadgenerering strategi',
-        'Scoring og kvalificering af leads',
-        'Segmentering baseret på købsintention',
-        'Detaljeret lead-profiling',
-        'Performance analyse og optimering',
-        'Integration med jeres CRM-system'
+        'Flerkanalsstrategi for leadgenerering',
+        'Lead scoring og kvalitetssikring',
+        'Segmentering efter branche og købspotentiale',
+        'Dybdegående lead-profilering',
+        'Løbende performanceanalyse og optimering',
+        'Sømløs CRM-integration'
       ]
     }
   ];
 
   const businessBenefits = [
-    'Telemarketing og leadgenerering',
-    'Mødebooking med beslutningstagere',
-    'Kundepleje og opfølgning',
-    'Markedsundersøgelser og feedback',
-    'Opdatering af kunde- og prospektdatabaser',
-    'Strategi og rådgivning om telemarketing'
+    'Telemarketing og struktureret leadgenerering',
+    'Kvalificerede salgsmøder med beslutningstagere',
+    'Proaktiv kundepleje og systematisk opfølgning',
+    'Markedsanalyser og konkurrentkortlægning',
+    'Opdatering og berigelse af salgsdatabaser',
+    'Strategisk rådgivning om salgsoptimering'
   ];
 
   const freelanceBenefits = [
-    'Fleksible arbejdstider',
-    'Attraktiv provision',
-    'Professionel oplæring',
-    'Støtte og sparring',
-    'Moderne arbejdsplatform',
-    'Spændende projekter'
+    'Selvbestemte arbejdstider og hjemmekontor',
+    'Konkurrencedygtig grundløn og resultatbonus',
+    'Solid oplæring og løbende faglig sparring',
+    'Tæt support fra erfarne salgsledere',
+    'Moderne digitale arbejdsværktøjer',
+    'Varierede og engagerende projekter'
   ];
 
   const industries = [
-    {
-      name: 'SaaS-løsninger',
-      description: 'Møder med tech-savvy beslutningstagere og CTO\'er'
-    },
-    {
-      name: 'IT-konsulentvirksomheder',
-      description: 'Salgsmøder med beslutningstagere'
-    },
-    {
-      name: 'Forretningsudvikling',
-      description: 'B2B-møder med C-level executives'
-    },
-    {
-      name: 'Markedsføring & kommunikation',
-      description: 'Møder med marketingchefer'
-    },
-    {
-      name: 'Digitale bureauer og webdesign',
-      description: 'Møder med virksomheder der søger online synlighed'
-    },
-    {
-      name: 'Økonomi & revision',
-      description: 'Kvalificerede møder med CFO\'er'
-    },
-    {
-      name: 'HR & rekruttering',
-      description: 'Møder med HR-direktører'
-    },
-    {
-      name: 'Transport & logistik',
-      description: 'Salgsmøder med indkøbschefer'
-    },
-    {
-      name: 'LED belysning og energiløsninger',
-      description: 'Møder om energieffektive løsninger til erhverv'
-    },
-    {
-      name: 'Strøm og energioptimering',
-      description: 'B2C og B2B møder om energibesparelser'
-    },
-    {
-      name: 'Kaffeservice til erhverv',
-      description: 'Møder med facility managers og indkøbsansvarlige'
-    },
-    {
-      name: 'Solenergi og vedvarende energi',
-      description: 'Møder om grøn omstilling og bæredygtighed'
-    },
-    {
-      name: 'Måtteservice og facility management',
-      description: 'Møder om arbejdsmiljø og rengøringsløsninger'
-    },
-    {
-      name: 'Pensionsrådgivning',
-      description: 'Møder med privatpersoner og virksomheder om pensionsordninger'
-    },
-    {
-      name: 'Inkasso og debitorhåndtering',
-      description: 'Møder om professionel gældinddrivelse'
-    },
-    {
-      name: 'Serviceydelser generelt',
-      description: 'B2B møder på tværs af servicebrancherne'
-    }
+    { name: 'SaaS & Cloud-løsninger', description: 'Salgsmøder med tech-beslutningstagere og IT-chefer' },
+    { name: 'IT-konsulenter', description: 'Kvalificerede møder med virksomhedsledere' },
+    { name: 'Forretningsudvikling', description: 'B2B-møder med C-level og direktionsniveau' },
+    { name: 'Marketing & Kommunikation', description: 'Møder med CMO\'er og marketingdirektører' },
+    { name: 'Digitale bureauer', description: 'Møder med virksomheder der vil vækste online' },
+    { name: 'Finans & Revision', description: 'Professionelle møder med CFO\'er og regnskabschefer' },
+    { name: 'HR & Rekruttering', description: 'Møder med personalechefer og HR-direktører' },
+    { name: 'Transport & Logistik', description: 'Salgsmøder med indkøbs- og driftschefer' },
+    { name: 'LED & Energieffektivisering', description: 'Møder om energibesparende løsninger til erhverv' },
+    { name: 'Strøm & Energioptimering', description: 'B2B og B2C møder om lavere energiomkostninger' },
+    { name: 'Kaffeservice til erhverv', description: 'Møder med facility managers og indkøbsansvarlige' },
+    { name: 'Solenergi & Vedvarende energi', description: 'Møder om grøn omstilling og bæredygtig drift' },
+    { name: 'Måtte- og rengøringsservice', description: 'Møder om arbejdsmiljø og hygiejneløsninger' },
+    { name: 'Pensionsrådgivning', description: 'Møder med private og erhvervskunder om pensionsplanlægning' },
+    { name: 'Inkasso & Kreditorstyring', description: 'Møder om effektiv og professionel gældinddrivelse' },
+    { name: 'Servicevirksomheder generelt', description: 'B2B møder på tværs af serviceerhverv' }
   ];
 
   return (
     <>
-      <SEO 
-        title="Nexus Marketing | Telemarketing, Mødebooking & Digital Udvikling"
-        description="Professionel telemarketing, mødebooking og digital udvikling. Vi hjælper virksomheder med at vækste gennem målrettede salgsaktiviteter og innovative digitale løsninger. ✓ 20 års erfaring ✓ Dokumenterede resultater"
+      <SEO
+        title="Nexny | B2B Salg, Mødebooking & Digital Vækst"
+        description="Nexny skaber vækst for ambitiøse virksomheder gennem professionel B2B salg, mødebooking og digitale løsninger. Kvalificerede leads og salgsmøder leveret til din kalender. ✓ Dokumenterede resultater ✓ Fleksible modeller"
         canonical="/"
-        keywords="telemarketing, mødebooking, webudvikling, leadgenerering, B2B salg, digital udvikling, salgsoptimering"
+        keywords="Nexny, B2B salg, mødebooking, telemarketing, leadgenerering, digital vækst, freelance sælger, salgspartner Danmark"
       />
 
       <HeroSection
-        title="Professionel B2B Telemarketing & Mødebooking"
-        subtitle="Vi forbinder ambitiøse virksomheder med kvalificerede leads og dygtige sælgere. Vælg mellem strategisk partnerskab eller en spændende karriere som freelance sælger."
+        title="Salgsdrevet Vækst for Ambitiøse Virksomheder"
+        subtitle="Nexny forbinder din virksomhed med kvalificerede beslutningstagere og dygtige sælgere. Vælg et strategisk partnerskab – eller start en spændende karriere som freelance sælger."
         ctaText="Bliv samarbejdspartner"
         ctaLink="/samarbejdspartner"
         secondaryCtaText="Start din karriere"
@@ -164,23 +116,18 @@ const HomePage: React.FC = () => {
         backgroundImage="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       />
 
-      {/* Core Services */}
       <section className="section bg-white">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Vi er Specialister i Telemarketing, Mødebooking, Webudvikling og Leadgenerering</h2>
+            <h2 className="text-3xl font-bold mb-4">Nexny er Specialister i B2B Salg, Mødebooking, Webudvikling og Leadgenerering</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Med over 20 års erfaring hjælper vi virksomheder med at nå deres mål gennem professionelle services og innovative løsninger.
+              Med et stærkt team af erfarne salgsprofessionelle og digitale specialister hjælper Nexny virksomheder med at nå deres vækstmål gennem effektive og målbare indsatser.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service, index) => (
-              <div 
-                key={index} 
-                className="card p-6 flex flex-col items-center text-center fade-in"
-                style={{ animationDelay: `${index * 0.2}s` }}
-              >
+              <div key={index} className="card p-6 flex flex-col items-center text-center fade-in" style={{ animationDelay: `${index * 0.2}s` }}>
                 <div className="mb-4">{service.icon}</div>
                 <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
                 <p className="text-gray-600">{service.description}</p>
@@ -190,15 +137,14 @@ const HomePage: React.FC = () => {
         </div>
       </section>
 
-      {/* For Businesses */}
       <section className="section bg-gray-50">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold mb-6">Boost din virksomheds vækst</h2>
+              <h2 className="text-3xl font-bold mb-6">Accelerér din virksomheds vækst med Nexny</h2>
               <p className="text-lg text-gray-600 mb-8">
-                Outsource din telemarketing og mødebooking til eksperter. Vi hjælper B2B virksomheder med at 
-                generere kvalificerede leads og øge salget gennem målrettede kampagner og professionel dialog.
+                Overlad dit salgsarbejde til erfarne specialister. Nexny hjælper B2B virksomheder med at generere
+                varme leads og booke kvalificerede møder – så din salgsstyrke kan fokusere på det, de er bedst til.
               </p>
               <div className="space-y-4">
                 {businessBenefits.map((benefit, index) => (
@@ -210,41 +156,40 @@ const HomePage: React.FC = () => {
               </div>
               <div className="mt-8">
                 <Link to="/kontakt" className="btn btn-primary inline-flex items-center">
-                  Få et tilbud og se hvad vi kan gøre for dig <ArrowRight size={16} className="ml-2" />
+                  Få et uforpligtende tilbud <ArrowRight size={16} className="ml-2" />
                 </Link>
               </div>
             </div>
             <div className="relative">
-              <img 
-                src="https://images.pexels.com/photos/7567434/pexels-photo-7567434.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
-                alt="Business growth and success visualization" 
+              <img
+                src="https://images.pexels.com/photos/7567434/pexels-photo-7567434.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="Vækst og succes for B2B virksomheder med Nexny"
                 className="rounded-lg shadow-lg object-cover w-full h-[500px]"
               />
               <div className="absolute -bottom-6 -left-6 bg-blue-600 text-white p-6 rounded-lg shadow-lg max-w-xs">
-                <p className="text-xl font-semibold mb-2">Hjulpet +200 med vækst og udvikling</p>
-                <p>Virksomheder i Danmark og udland</p>
+                <p className="text-xl font-semibold mb-2">Hjulpet +200 virksomheder med konkret vækst</p>
+                <p>I Danmark og internationalt</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* For Freelancers */}
       <section className="section bg-white">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
-              <img 
-                src="https://images.pexels.com/photos/3760263/pexels-photo-3760263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
-                alt="Freelance sælger på vej mod succes" 
+              <img
+                src="https://images.pexels.com/photos/3760263/pexels-photo-3760263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="Freelance sælger der arbejder hjemmefra med Nexny"
                 className="rounded-lg shadow-lg"
               />
             </div>
             <div className="order-1 lg:order-2">
-              <h2 className="text-3xl font-bold mb-6">Start din karriere som freelance sælger / mødebooker</h2>
+              <h2 className="text-3xl font-bold mb-6">Byg din karriere som freelance sælger hos Nexny</h2>
               <p className="text-lg text-gray-600 mb-8">
-                Drømmer du om frihed og fleksibilitet i din arbejdsdag? Som freelance sælger eller mødebooker 
-                hos Nexus Marketing får du attraktive indtjeningsmuligheder og professionel udvikling.
+                Ønsker du frihed til at tilrettelægge din egen arbejdsdag? Som freelance sælger eller mødebooker
+                hos Nexny får du attraktiv indtjening, faglig udvikling og et stærkt netværk bag dig.
               </p>
               <div className="space-y-4">
                 {freelanceBenefits.map((benefit, index) => (
@@ -264,23 +209,18 @@ const HomePage: React.FC = () => {
         </div>
       </section>
 
-      {/* Industries */}
       <section className="section bg-gray-50">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Vores Branchespecialiseret Ekspertise inden for salg og mødebooking</h2>
+            <h2 className="text-3xl font-bold mb-4">Nexny's Brancheerfaring inden for B2B Salg og Mødebooking</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Vi har omfattende erfaring med telemarketing og mødebooking på tværs af forskellige B2B brancher.
+              Vi har dybdegående erfaring med B2B mødebooking og telemarketing på tværs af brancher og målgrupper.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {industries.map((industry, index) => (
-              <div
-                key={index}
-                className="bg-white p-6 rounded-lg shadow-md fade-in hover:shadow-lg transition-shadow"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
+              <div key={index} className="bg-white p-6 rounded-lg shadow-md fade-in hover:shadow-lg transition-shadow" style={{ animationDelay: `${index * 0.1}s` }}>
                 <h3 className="text-lg font-semibold mb-2 text-blue-600">{industry.name}</h3>
                 <p className="text-gray-600 text-sm">{industry.description}</p>
               </div>
@@ -289,7 +229,6 @@ const HomePage: React.FC = () => {
         </div>
       </section>
 
-      {/* Final CTA */}
       <section className="section bg-gray-900 text-white">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -297,7 +236,7 @@ const HomePage: React.FC = () => {
               <Briefcase size={48} className="text-blue-400 mx-auto mb-4" />
               <h3 className="text-2xl font-bold mb-4">For Virksomheder</h3>
               <p className="mb-6">
-                Øg dit salg med professionel telemarketing og mødebooking. Vi hjælper dig med at nå dine salgsmål.
+                Sæt turbo på dit salg med en dedikeret vækstpartner. Nexny leverer kvalificerede møder og varme leads direkte til dit salgsteam.
               </p>
               <Link to="/samarbejdspartner" className="btn bg-blue-600 text-white hover:bg-blue-700 inline-flex items-center">
                 Start samarbejde <ArrowRight size={16} className="ml-2" />
@@ -307,7 +246,7 @@ const HomePage: React.FC = () => {
               <BarChart3 size={48} className="text-blue-400 mx-auto mb-4" />
               <h3 className="text-2xl font-bold mb-4">For Sælgere</h3>
               <p className="mb-6">
-                Tag det næste skridt i din karriere. Bliv freelance sælger eller mødebooker med attraktiv indtjening.
+                Tag styringen over din karriere. Bliv freelance sælger hos Nexny og tjene godt med fleksible arbejdstider og spændende projekter.
               </p>
               <Link to="/freelance-telemarketing" className="btn bg-blue-600 text-white hover:bg-blue-700 inline-flex items-center">
                 Se muligheder <ArrowRight size={16} className="ml-2" />
