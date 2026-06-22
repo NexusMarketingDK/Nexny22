@@ -162,6 +162,40 @@ const FreelancersPage: React.FC = () => {
           </Link>
         </div>
       </section>
+      <section className="section bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">Bliv Freelance Sælger hos Nexny – Fleksibel Karriere inden for B2B Telemarketing</h2>
+            <p className="text-gray-600 mb-4">
+              Som freelance sælger eller mødebooker hos Nexny får du den sjældne kombination af frihed og et stærkt professionelt fundament. Du arbejder 100% hjemmefra på dine egne præmisser – ingen pendling, ingen faste kontortider og ingen loft på din indtjening. Nexny leverer leads, scripts, kampagnematerialer og CRM-adgang fra dag ét, så du kan fokusere på det du er bedst til: at skabe resultater. Vores freelancere er tilknyttet projekter inden for alt fra SaaS og webudvikling til energi, kaffeservice og pensionsrådgivning.
+            </p>
+            <p className="text-gray-600 mb-6">
+              Oplæringen hos Nexny er struktureret og grundig – du gennemgår et onboarding-forløb med produkttræning, salgsteknik og gennemgang af scripts inden du begynder. Undervejs har du adgang til løbende coaching og sparring fra erfarne salgsledere, og du er en del af et stærkt Nexny-netværk af freelancere der deler erfaringer og motivation. Provisionen er konkurrencedygtig og afspejler direkte dine resultater – jo mere du sælger, jo mere tjener du.
+            </p>
+            <ul className="space-y-2">
+              <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> Arbejd hjemmefra med fuld fleksibilitet over din arbejdsdag</li>
+              <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> Grundig onboarding og løbende faglig sparring</li>
+              <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> Konkurrencedygtig grundaflønning plus resultatbonus</li>
+              <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> Bredt udvalg af produkter og brancher at vælge imellem</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section className="section bg-sky-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">Freelance Telemarketing og Mødebooking – Karrieremuligheder med Nexny</h2>
+            <p className="text-gray-600 mb-4">
+              Nexny er i konstant vækst og søger løbende dygtige og motiverede freelance sælgere og mødebookere til vores projekter i hele Danmark. Uanset om du er studerende, forælder, erfaren sælger eller nystartet i branchen, er der plads til dig hos Nexny. Du vælger selv det produkt og den branche der passer bedst til din baggrund og interesse – og Nexny leverer resten. Mange af vores freelancere bruger samarbejdet som en fast biindtægt eller som udgangspunkt for en fuld karriere inden for B2B salg og telemarketing.
+            </p>
+            <p className="text-gray-600 mb-4">
+              Tag styringen over din karriere og kontakt Nexny på +45 91 95 27 94 eller kontakt@nexny.dk. Vi tager en uforpligtende snak om de muligheder der passer bedst til din situation, og kommer hurtigt i gang med et onboarding-forløb tilpasset dig.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <FAQSection faqs={[
         { question: 'Hvad tjener man som freelance sælger hos Nexny?', answer: 'Lønnen består af et fast grundhonorar plus provision på dine resultater. Jo mere du sælger, jo mere tjener du – der er intet loft.' },
         { question: 'Skal jeg have erfaring for at søge?', answer: 'Erfaring er en fordel, men ikke et krav. Nexny oplærer dig grundigt og giver dig løbende sparring og support.' },

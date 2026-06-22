@@ -139,6 +139,40 @@ export default function ApiSaasPage() {
           </Link>
         </div>
       </section>
+      <section className="section bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">API-Udvikling og SaaS-Platforme – Skalerbare Digitale Løsninger fra Nexny</h2>
+            <p className="text-gray-600 mb-4">
+              Nexny's digitale team specialiserer sig i at designe og bygge robuste API-løsninger og SaaS-platforme der binder dine systemer og tjenester sammen på en sikker, skalerbar og vedligeholdelsesvenlig måde. Vi arbejder med både RESTful og GraphQL API'er og har dybdegående erfaring med systemintegrationer til CRM-systemer (HubSpot, Salesforce, Pipedrive), ERP-løsninger (e-conomic, Business Central), betalingsgateways (Stripe, Quickpay) og marketingplatforme (Mailchimp, ActiveCampaign). Alle API'er og integrationer bygges med GDPR og datasikkerhed som grundpillerne – tokenstyring, kryptering og adgangskontrol er altid inkluderet.
+            </p>
+            <p className="text-gray-600 mb-6">
+              Nexny bygger skalerbare SaaS-løsninger med multi-tenant arkitektur, abonnementsstyring og automatiserede brugerflows. Vi håndterer alt fra indledende kravspecifikation og teknisk arkitektur til fuld implementering, testning og lancering – og leverer fuld teknisk dokumentation og kildekodeoverdragelse. Vores CI/CD-pipeline og cloud-infrastruktur på Vercel og AWS sikrer hurtig deployment og høj oppetid.
+            </p>
+            <ul className="space-y-2">
+              <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> REST og GraphQL API-design og implementering</li>
+              <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> CRM, ERP og betalingsgateway integrationer</li>
+              <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> Multi-tenant SaaS-platforme med abonnementsstyring</li>
+              <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> GDPR-compliant med tokenstyring og kryptering</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section className="section bg-sky-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">Systemintegration og API-Forbindelser der Automatiserer din Forretning</h2>
+            <p className="text-gray-600 mb-4">
+              En velfungerende systemintegration eliminerer manuelle dataoverførsler, reducerer fejl og frigiver dine medarbejdere til at fokusere på det der skaber reel værdi. Nexny kortlægger dine eksisterende systemer og arbejdsprocesser, identificerer de vigtigste integrationspunkter og designer en teknisk løsning der forbinder det hele i et sammenhængende og effektivt digitalt setup. Fra webhook og event-drevet arkitektur til Single Sign-On (SSO) og OAuth 2.0 – vi har kompetencerne til at løse selv komplekse integrationsprojekter.
+            </p>
+            <p className="text-gray-600 mb-4">
+              Kontakt Nexny på +45 91 95 27 94 eller kontakt@nexny.dk for et uforpligtende estimat på dit API- eller SaaS-projekt. Vi sender et tilbud inden for 24 timer.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <FAQSection faqs={[
         { question: 'Hvad er en API-integration?', answer: 'En API-integration forbinder to eller flere systemer så de kan udveksle data automatisk – f.eks. dit CRM med din hjemmeside eller et betalingssystem.' },
         { question: 'Kan I bygge en SaaS-platform fra bunden?', answer: 'Ja – Nexny har erfaring med at designe og udvikle komplette SaaS-applikationer med brugeradministration, betalingsintegration og skalerbar infrastruktur.' },

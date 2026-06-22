@@ -113,6 +113,40 @@ const LeadGenerationPage: React.FC = () => {
           </Link>
         </div>
       </section>
+      <section className="section bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">Professionel B2B Leadgenerering – Fra Kold Database til Varme, Salgsklar Emner</h2>
+            <p className="text-gray-600 mb-4">
+              Nexny's datadrevne leadgenerering er fundamentet for en stærk salgspipeline. Vi arbejder struktureret med at identificere din ideelle kundeprofil, segmentere målgruppen præcist efter branche, virksomhedsstørrelse, geografi og beslutningsrolle, og leverer herefter validerede, kvalificerede leads direkte til dit CRM-system. Hvert lead er gennemgået, valideret og scoret baseret på købssignaler og fit med din løsning – kun de bedste emner rammer dit salgsteam.
+            </p>
+            <p className="text-gray-600 mb-6">
+              Nexny's flerkanalsstrategi for leadgenerering kombinerer telefonisk opsøgning, emailkampagner og LinkedIn-outreach med AI-drevne løsninger for at maksimere reach og konverteringsrate. Vi leverer ugentlige lead-rapporter med status og pipeline-oversigt, og optimerer løbende indsatsen baseret på konverteringsdata. Integration med HubSpot, Salesforce, Pipedrive og andre CRM-systemer sikrer et gnidningsfrit leadflow direkte ind i dit eksisterende salgssystem.
+            </p>
+            <ul className="space-y-2">
+              <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> Præcis målgruppesegmentering efter ICP-kriterier</li>
+              <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> Lead scoring og prioritering baseret på købssignaler</li>
+              <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> Flerkanalsstrategi: telefon, email og LinkedIn</li>
+              <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> CRM-integration med HubSpot, Salesforce og Pipedrive</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section className="section bg-sky-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">Leadgenerering der Konverterer – Kvalitet Frem for Kvantitet</h2>
+            <p className="text-gray-600 mb-4">
+              Nexny's tilgang til leadgenerering handler om kvalitet frem for kvantitet. Vi investerer tid i at forstå din forretning, dine kunder og din konkurrencesituation, og bruger denne indsigt til at identificere de leads der faktisk konverterer. Vores lead-profiling inkluderer virksomhedsinfo, beslutningsrolle og en prioriteringsscore baseret på købsintention – så dit salgsteam altid starter med de varmeste emner og bruger minimum tid på at nå maksimale resultater.
+            </p>
+            <p className="text-gray-600 mb-4">
+              Kontakt Nexny på +45 91 95 27 94 eller kontakt@nexny.dk for at høre mere om vores leadgenererings-løsninger og få et uforpligtende tilbud tilpasset din virksomheds behov og vækstmål.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <FAQSection faqs={[
         { question: 'Hvad er leadgenerering?', answer: 'Leadgenerering er processen med at identificere og tiltrække potentielle kunder (leads) til din virksomhed gennem målrettede marketingaktiviteter og opsøgende salg.' },
         { question: 'Hvad er forskellen på et koldt og varmt lead?', answer: 'Et koldt lead er en potentiel kunde der endnu ikke har vist interesse. Et varmt lead har vist interesse og er klar til at blive kontaktet af dit salgsteam.' },

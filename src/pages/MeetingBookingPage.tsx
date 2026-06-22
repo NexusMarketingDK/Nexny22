@@ -133,6 +133,40 @@ const MeetingBookingPage: React.FC = () => {
           </Link>
         </div>
       </section>
+      <section className="section bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">Professionel B2B Mødebooking – Kvalificerede Salgsmøder med de Rette Beslutningstagere</h2>
+            <p className="text-gray-600 mb-4">
+              Nexny's professionelle mødebooking-service er designet til at fylde din kalender med kvalificerede salgsmøder hos de beslutningstagere der faktisk har budget, behov og kompetence til at træffe en beslutning. Vores erfarne mødebookere arbejder metodisk og struktureret: vi identificerer og screener relevante virksomheder, kontakter nøglepersonerne med et skræddersyet budskab og booker mødet direkte i din kalender – bekræftet, briefet og klar til gennemførelse. Aflyste møder erstattes automatisk, så du aldrig mister momentum.
+            </p>
+            <p className="text-gray-600 mb-6">
+              B2B mødebooking med Nexny er langt mere end blot at lave telefonopkald. Vi udvikler en komplet kommunikationsstrategi med branchetilpassede scripts, gennemfører BANT-kvalificering af hvert lead og sikrer dobbelt mødebekræftelse via email og SMS. Du modtager løbende rapporter med mødestatus, mødekvalitet og kampagneperformance – og har altid fuld transparens over hvad der sker i din salgspipeline.
+            </p>
+            <ul className="space-y-2">
+              <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> Fuld lead-research og målgruppesegmentering</li>
+              <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> BANT-kvalificering af hvert møde inden booking</li>
+              <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> Dobbelt mødebekræftelse (email + SMS)</li>
+              <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> Mødenoter og briefing-materiale til din salgsstyrke</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section className="section bg-sky-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">Mødebooking Priser og Modeller – No Cure No Pay eller Fast Pakke</h2>
+            <p className="text-gray-600 mb-4">
+              Nexny tilbyder fleksible prismodeller for professionel mødebooking der passer til din virksomheds størrelse og behov. Med vores No Cure No Pay-model betaler du udelukkende for gennemførte, kvalificerede møder – du definerer selv kvalitetskriterierne og betaler ikke for aflyste eller useriøse møder. Pakkeløsningen giver en lavere enhedspris og mere forudsigelige omkostninger, og er bedst egnet til virksomheder med et kontinuerligt behov for mødebooking.
+            </p>
+            <p className="text-gray-600 mb-4">
+              Kontakt Nexny på +45 91 95 27 94 eller kontakt@nexny.dk for et uforpligtende tilbud på mødebooking tilpasset din branche, din målgruppe og dine vækstmål. De første kvalificerede møder kan typisk leveres inden for 2-3 uger efter opstartsbriefing.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <FAQSection faqs={[
         { question: 'Hvad er mødebooking?', answer: 'Mødebooking er processen med at identificere og kontakte potentielle kunder og booke kvalificerede salgsmøder direkte i din kalender – så dit salgsteam kan fokusere på at lukke aftaler.' },
         { question: 'Hvem booker møderne?', answer: 'Nexny\'s erfarne mødebookere kontakter beslutningstagere i din målgruppe, præsenterer din løsning og booker møder direkte i din kalender.' },

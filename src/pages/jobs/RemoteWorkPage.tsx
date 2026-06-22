@@ -147,6 +147,40 @@ export default function RemoteWorkPage() {
         </div>
       </section>
 
+      <section className="section bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">Freelance Remote Salg – Arbejd Hjemmefra som B2B Sælger hos Nexny</h2>
+            <p className="text-gray-600 mb-4">
+              Remote salg er fremtiden for B2B telemarketing og mødebooking – og hos Nexny er det hverdagen. Som remote freelance sælger arbejder du 100% hjemmefra med moderne digitale salgsværktøjer, klare processer og stærk støtte fra Nexny's erfarne salgsledere. Du behøver ingen dyr pendling, intet kontor og ingen faste mødetider – bare et stabilt internet, en telefon og drivkraften til at skabe resultater. Nexny leverer alt det andet: leads, scripts, CRM-adgang og løbende sparring.
+            </p>
+            <p className="text-gray-600 mb-6">
+              Remote salgsstillinger hos Nexny dækker et bredt spektrum af brancher og produkter – fra webudvikling og digitale løsninger til solenergi, LED-belysning, kaffeservice, pensionsrådgivning og B2B mødebooking. Du vælger selv det produkt og den branche der matcher din baggrund og interesse, og Nexny matcher dig med den kampagne der passer bedst til dine kompetencer og ambitioner.
+            </p>
+            <ul className="space-y-2">
+              <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> 100% remote – arbejd hvornår og hvorfra du vil</li>
+              <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> Leads, scripts og CRM leveret fra dag ét</li>
+              <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> Bredt udvalg af produkter og brancher</li>
+              <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> Konkurrencedygtig provision uden loft</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section className="section bg-sky-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">Freelance Hjemmekontor – Kom i Gang med Remote Salg hos Nexny</h2>
+            <p className="text-gray-600 mb-4">
+              At starte som remote freelance sælger hos Nexny er enkelt og hurtigt. Du finder et produkt der passer til dig, sender os en besked – ingen formel ansøgning nødvendig – og Nexny vender tilbage inden for 2 hverdage. Derefter gennemgår du et kort onboarding-forløb med produkttræning og salgsteknik, og er klar til at starte inden for få dage. De fleste sælgere finder deres rytme og leverer solide resultater inden for de første 4-6 uger.
+            </p>
+            <p className="text-gray-600 mb-4">
+              Kontakt Nexny på +45 91 95 27 94 eller kontakt@nexny.dk og hør mere om de aktuelle remote salgsmuligheder. Vi er klar til en uforpligtende snak om hvad Nexny kan tilbyde dig.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <FAQSection faqs={[
         { question: 'Kan jeg arbejde remote som sælger hos Nexny?', answer: 'Ja – alle Nexny\'s freelance salgsstillinger kan udføres 100% hjemmefra. Du behøver kun en telefon, computer og stabilt internet.' },
         { question: 'Hvad er provisionssatsen?', answer: 'Provisionen varierer afhængigt af produkt og kampagne. Du får altid en klar aftale om løn og provision inden opstart.' },

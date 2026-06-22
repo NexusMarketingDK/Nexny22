@@ -139,6 +139,40 @@ const OutsourcingPage: React.FC = () => {
           </Link>
         </div>
       </section>
+      <section className="section bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">Outsourcing af B2B Salg til Nexny – Professionel Salgskraft uden Ansættelsesbyrden</h2>
+            <p className="text-gray-600 mb-4">
+              Outsourcing af B2B salg og telemarketing til Nexny giver din virksomhed adgang til et erfarent og professionelt salgsteam fra dag ét – uden de store faste omkostninger forbundet med rekruttering, oplæring, ledelse og fastholdelse af interne sælgere. Nexny fungerer som din forlængede salgsstyrke og repræsenterer din virksomhed professionelt og engageret over for potentielle kunder, med fuld respekt for dine brand guidelines og din tone of voice. Alle genererede leads og bookede møder tilhører dig og leveres direkte ind i dit CRM-system.
+            </p>
+            <p className="text-gray-600 mb-6">
+              Nexny's outsourcingmodel er designet til maksimal fleksibilitet og skalerbarhed. Du kan hurtigt justere aktivitetsniveauet baseret på dine aktuelle behov, kampagnemål og budget – og du betaler kun for aktiv salgstid og dokumenterede resultater. Vores kunder beholder fuld kontrol og indsigt via løbende rapportering og ugentlige statusmøder, og kan til enhver tid se hvad der sker i pipeline og hvilke resultater indsatsen giver.
+            </p>
+            <ul className="space-y-2">
+              <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> Skalerbar salgsindsats uden faste ansættelsesbyrder</li>
+              <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> Fuld kontrol og transparens via løbende rapportering</li>
+              <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> Alle leads og møder leveres direkte til dit CRM</li>
+              <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> Professionel repræsentation af dit brand</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section className="section bg-sky-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">Hvornår er Outsourcing af Salg den Rigtige Beslutning?</h2>
+            <p className="text-gray-600 mb-4">
+              Outsourcing af salg er den rigtige løsning for virksomheder der ønsker at vækste hurtigt, teste nye markeder eller produkter, eller supplere et eksisterende salgsteam uden at ansætte. Det er særligt relevant for virksomheder der mangler de interne ressourcer til at bemande systematisk telemarketing og mødebooking, eller som har haft svingende resultater med tidligere salgsrekrutteringer.
+            </p>
+            <p className="text-gray-600 mb-4">
+              Kontakt Nexny på +45 91 95 27 94 eller kontakt@nexny.dk for en uforpligtende snak om, hvordan vi kan hjælpe din virksomhed med at accelerere væksten gennem professionel outsourcing af salg og mødebooking.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <FAQSection faqs={[
         { question: 'Hvad er fordelene ved at outsource sit salg?', answer: 'Outsourcing af salg giver adgang til erfarne salgsprofessionelle uden fast ansættelse, reducerer faste lønomkostninger og giver fleksibilitet til at skalere op eller ned.' },
         { question: 'Mister vi kontrollen over salgsprocessen?', answer: 'Nej – Nexny arbejder tæt sammen med jer, følger jeres guidelines og rapporterer løbende. I beholder fuld kontrol og indsigt.' },

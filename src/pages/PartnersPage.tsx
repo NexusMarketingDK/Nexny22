@@ -127,6 +127,40 @@ const PartnersPage: React.FC = () => {
           </Link>
         </div>
       </section>
+      <section className="section bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">Outsourcing af Salg og Mødebooking – Bliv Samarbejdspartner med Nexny</h2>
+            <p className="text-gray-600 mb-4">
+              At blive samarbejdspartner med Nexny er den strategiske beslutning for B2B virksomheder der ønsker at vækste hurtigt og effektivt uden at opbygge og bemande et stort internt salgsteam. Nexny fungerer som din forlængede salgsstyrke – med erfarne salgskonsulenter der repræsenterer din virksomhed professionelt og engageret over for potentielle kunder. Vi skræddersyr kampagnen fuldstændigt til din branche, din målgruppe og dit specifikke produkt eller service, og leverer løbende rapporter der viser præcist hvad indsatsen giver.
+            </p>
+            <p className="text-gray-600 mb-6">
+              Samarbejdet med Nexny starter med et grundigt opstartsmøde hvor vi lærer din virksomhed og dine kunder at kende. Derefter udvikler vi en målrettet strategi med klare KPI'er, kommunikationsplaner og en realistisk plan for opstart og skalering. De fleste samarbejdspartnere kan forvente de første resultater inden for 2-3 uger efter kampagnestart, og mange ser positiv ROI allerede i første kvartal.
+            </p>
+            <ul className="space-y-2">
+              <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> Skalér salget uden dyre faste ansættelser</li>
+              <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> Skræddersyet strategi med klare KPI'er og mål</li>
+              <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> Ugentlige og månedlige performance-rapporter</li>
+              <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> Fleksible aftaler med rimelige opsigelsesvarsler</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section className="section bg-sky-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">Nexny er Mere end et Callcenter – Vi er Din Strategiske Salgspartner</h2>
+            <p className="text-gray-600 mb-4">
+              Nexny adskiller sig fundamentalt fra traditionelle callcentre ved at fokusere på kvalitet frem for volumen. Vi er en strategisk salgspartner med dyb brancheviden, målrettede kommunikationsstrategier og et konstant fokus på at maksimere ROI for vores samarbejdspartnere. Vores team af erfarne salgsprofessionelle arbejder dedikeret med din kampagne og justerer løbende tilgangen baseret på data, feedback og markedsudvikling.
+            </p>
+            <p className="text-gray-600 mb-4">
+              Kontakt Nexny i dag på +45 91 95 27 94 eller kontakt@nexny.dk – vi tilbyder en uforpligtende pilotperiode til reduceret pris for nye samarbejdspartnere, så du kan evaluere resultater og samarbejdsform inden fuld opstart.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <FAQSection faqs={[
         { question: 'Hvad koster det at samarbejde med Nexny?', answer: 'Prisen afhænger af din branche, opgavens omfang og den valgte model. Vi tilbyder både No Cure No Pay og faste pakkeløsninger. Kontakt os for et skræddersyet tilbud.' },
         { question: 'Hvornår kan I starte?', answer: 'Typisk kan vi starte aktiv indsats inden for 1-2 uger efter en grundig opstartsbriefing.' },

@@ -154,6 +154,40 @@ const ServicesPage: React.FC = () => {
           </Link>
         </div>
       </section>
+      <section className="section bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">Outsourcing af Telemarketing og Mødebooking – Sådan Skaber Nexny Vækst</h2>
+            <p className="text-gray-600 mb-4">
+              Outsourcing af B2B telemarketing og mødebooking til Nexny er den effektive vej til at skalere salget uden at investere i dyre faste ansættelser. Nexny's professionelle salgsteam håndterer hele processen – fra identifikation og screening af relevante beslutningstagere til booking af kvalificerede salgsmøder og systematisk opfølgning. Vi bruger strukturerede og dokumenterede salgsmetoder kombineret med løbende coaching og kvalitetssikring, som sikrer en konsistent høj mødekvalitet uanset branche og målgruppe.
+            </p>
+            <p className="text-gray-600 mb-6">
+              Nexny tilbyder ydelser inden for telemarketing, mødebooking, leadgenerering og kundeservice der samlet set dækker hele salgscyklusen fra første kontakt til lukket aftale. Vi arbejder med BANT-kvalificering (Budget, Authority, Need, Timing) og leverer detaljerede mødenoter og briefing-materiale til din salgsstyrke, så hvert møde starter på det rigtige fundament. Alle kampagner er underbygget af løbende performancedata og månedlige rapporter med klar ROI-beregning.
+            </p>
+            <ul className="space-y-2">
+              <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> B2B telemarketing med BANT-kvalificerede kundeemner</li>
+              <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> Professionel mødebooking med dobbelt bekræftelse</li>
+              <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> Datadrevet leadgenerering med CRM-integration</li>
+              <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> Professionel kundeservice og opfølgning</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section className="section bg-sky-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">Branchespecialiserede Salgsydelser til B2B Virksomheder i Danmark</h2>
+            <p className="text-gray-600 mb-4">
+              Nexny har dybdegående brancheerfaring inden for tech og SaaS, IT-konsulentbranchen, grøn energi og bæredygtighed samt facility og servicevirksomheder. Denne specialiserede viden betyder, at vores salgskonsulenter taler branchens sprog, forstår de specifikke udfordringer og kan kommunikere værdiskabelse præcist og troværdigt over for beslutningstagerne i din målgruppe. Resultatet er højere konverteringsrater, bedre mødekvalitet og kortere salgscyklusser.
+            </p>
+            <p className="text-gray-600 mb-4">
+              Uanset om du sælger enterprise software, rådgivningsydelser, energioptimering eller servicekontrakter, tilpasser Nexny sin tilgang og sine scripts til din unikke salgssituation. Kontakt Nexny på +45 91 95 27 94 eller kontakt@nexny.dk for at høre hvordan vi kan skræddersy en ydelsespakke der passer til din virksomhed, dine mål og dit budget.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <FAQSection faqs={[
         { question: 'Hvad er B2B telemarketing?', answer: 'B2B telemarketing er direkte telefonsalg og kundekontakt rettet mod virksomheder. Nexny bruger målrettet telemarketing til at identificere beslutningstagere, kvalificere leads og booke salgsmøder.' },
         { question: 'Hvad er forskellen på telemarketing og mødebooking?', answer: 'Telemarketing dækker alle former for telefonisk B2B-salg og kundekontakt. Mødebooking er specifikt fokuseret på at booke kvalificerede salgsmøder hos beslutningstagere i din målgruppe.' },

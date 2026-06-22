@@ -467,6 +467,40 @@ export default function AiIntegrationPage() {
           </Link>
         </div>
       </section>
+      <section className="section bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">AI Integration til Danske Virksomheder – Automatiser Salg, Booking og Kundeservice</h2>
+            <p className="text-gray-600 mb-4">
+              Nexny implementerer skræddersyede AI-løsninger der er designet til at skabe reel kommerciel værdi for din virksomhed – ikke teknologi for teknologiens skyld. Vi arbejder med markedsledende danske AI-platforme som AIbooking.dk og Leadgenie.dk, og integrerer dem sømlöst i dine eksisterende forretningsprocesser. AI-drevet leadgenerering automatiserer identifikation og scoring af relevante B2B emner, mens AIbooking lader potentielle kunder booke møder direkte uden manuel koordinering – alt GDPR-compliant og tilpasset dansk erhvervsliv.
+            </p>
+            <p className="text-gray-600 mb-6">
+              Nexny's AI-løsninger leverer dokumenterede resultater: op til 70% tidsbesparelse på gentagne administrative opgaver, markant højere konverteringsrate på AI-kvalificerede leads og 24/7 kundeservice med AI-chatbots på dansk. Vi sætter konkrete KPI'er op fra dag ét og leverer løbende rapporter der viser præcist hvad AI-integrationen giver din virksomhed. Fra simpel chatbot til avanceret automatiseringsplatform – Nexny finder den løsning der giver størst ROI for netop din situation.
+            </p>
+            <ul className="space-y-2">
+              <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> AI-chatbots og virtuelle assistenter på dansk</li>
+              <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> Automatisering af leadgenerering med Leadgenie.dk</li>
+              <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> Intelligent booking med AIbooking.dk</li>
+              <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> GDPR-compliant og integreret med dit eksisterende CRM</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section className="section bg-sky-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">Nexny Bygger dit AI-Projekt – Fra Idé til Klar Løsning til Fast Pris</h2>
+            <p className="text-gray-600 mb-4">
+              Har du en idé til et AI-projekt, men mangler tekniske ressourcer eller tid til at realisere den? Nexny omsætter din idé til en fuldt fungerende AI-løsning leveret til aftalt pris og deadline. Vi håndterer alt fra strategi og arkitektur til implementering, test og lancering – og overdrager fuld dokumentation og kildekode til dig ved projektafslutning. Nexny håndterer desuden leads og booker salgsmøder til din salgsstyrke, mens du fokuserer på din kerneforretning.
+            </p>
+            <p className="text-gray-600 mb-4">
+              Book en uforpligtende AI-konsultation med Nexny på +45 91 95 27 94 eller kontakt@nexny.dk – vi gennemgår dine processer og præsenterer konkrete AI-løsninger med estimeret ROI. Gratis og uden binding.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <FAQSection faqs={[
         { question: 'Hvad kan AI gøre for min virksomhed?', answer: 'AI kan automatisere gentagne opgaver, besvare kundehenvendelser døgnet rundt, kvalificere leads automatisk og give dybdegående indsigt i data – alt mens dine medarbejdere fokuserer på det der skaber mest værdi.' },
         { question: 'Hvad er en AI chatbot?', answer: 'En AI chatbot er et program der automatisk kan besvare kundespørgsmål, guide besøgende og indsamle leads – direkte på din hjemmeside, 24/7.' },
