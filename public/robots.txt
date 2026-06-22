@@ -1,0 +1,90 @@
+# Robots.txt for Nexus Marketing
+# Updated: 2026-06-22
+
+User-agent: *
+Allow: /
+
+# Prevent crawling of admin, system, and API pages
+Disallow: /admin/
+Disallow: /system/
+Disallow: /temp/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /static/
+
+# Prevent indexing of query parameters
+Disallow: /*?
+Disallow: /*utm_*
+
+# Specific rules for common bots
+User-agent: Googlebot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+
+User-agent: baiduspider
+Disallow: /
+
+User-agent: SemrushBot
+Crawl-delay: 2
+
+User-agent: AhrefsBot
+Crawl-delay: 2
+
+User-agent: MJ12bot
+Crawl-delay: 5
+
+# Main sections
+User-agent: *
+Allow: /blog/$
+Allow: /ydelser/$
+Allow: /jobs/$
+Allow: /freelance-telemarketing/$
+Allow: /samarbejdspartner/$
+Allow: /priser/$
+Allow: /hvorfor-nexusmarketing/$
+Allow: /digital/$
+Allow: /om-os/$
+Allow: /kontakt/$
+
+# Job landing pages
+Allow: /jobs/arbejd-hjemmefra/$
+Allow: /jobs/web-bureau/$
+Allow: /jobs/led-belysning/$
+Allow: /jobs/energi-salg/$
+Allow: /jobs/kaffe-service/$
+Allow: /jobs/solenergi/$
+Allow: /jobs/matte-service/$
+Allow: /jobs/pensionsordning/$
+Allow: /jobs/inkasso/$
+
+# Digital service pages
+Allow: /digital/webudvikling/$
+Allow: /digital/api-saas/$
+Allow: /digital/hjemmesider/$
+Allow: /digital/ai-integration/$
+
+# Blog articles
+Allow: /blog/effektive-telemarketing-strategier-2025/$
+Allow: /blog/mødebooking-best-practices/$
+Allow: /blog/outsourcing-telemarketing-fordele/$
+Allow: /blog/freelance-sælger-karriere/$
+Allow: /blog/digital-omstilling-telemarketing/$
+Allow: /blog/salgsscripts-der-virker/$
+Allow: /blog/work-life-balance-freelancer/$
+Allow: /blog/b2b-partnerskaber-succes/$
+Allow: /blog/remote-sales-tips/$
+Allow: /blog/ai-telemarketing-fremtiden/$
+Allow: /blog/freelancer-indtjening-guide/$
+Allow: /blog/partner-success-stories/$
+
+# Sitemap location
+Sitemap: https://nexusmarketing.dk/sitemap.xml
+
+# Crawl-delay for general bots (helps prevent server overload)
+Crawl-delay: 1
