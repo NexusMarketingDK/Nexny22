@@ -188,6 +188,48 @@ const ServicesPage: React.FC = () => {
         </div>
       </section>
 
+      {/* AI Widget & Reception teaser */}
+      <section className="section bg-gradient-to-br from-blue-600 to-indigo-700 text-white">
+        <div className="container">
+          <div className="text-center mb-12">
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 border border-white/25 text-white/90 text-xs font-bold uppercase tracking-widest mb-6">
+              <span className="w-1.5 h-1.5 rounded-full bg-blue-300 animate-pulse" />
+              Ny teknologi
+            </span>
+            <h2 className="text-white mb-4">AI-drevne løsninger der arbejder for dig</h2>
+            <p className="text-white/75 max-w-2xl mx-auto text-lg">
+              Nexny tilbyder nu to kraftfulde AI-produkter der automatiserer leadgenerering og telefonpasning — 24 timer i døgnet, 7 dage om ugen.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            <Link to="/digital/ai-widget" className="group bg-white/10 hover:bg-white/20 border border-white/20 rounded-3xl p-8 transition-all">
+              <div className="w-12 h-12 rounded-2xl bg-white/20 flex items-center justify-center mb-5">
+                <MessageSquare size={22} className="text-white" />
+              </div>
+              <h3 className="text-white text-xl font-bold mb-3">AI Widget</h3>
+              <p className="text-white/70 text-sm leading-relaxed mb-5">
+                Intelligent chatbot på din hjemmeside der besvarer spørgsmål, kvalificerer leads og booker møder automatisk — uden menneskelig indblanding.
+              </p>
+              <div className="flex items-center gap-2 text-white/90 text-sm font-semibold group-hover:gap-3 transition-all">
+                Læs mere <ArrowRight size={16} />
+              </div>
+            </Link>
+            <Link to="/digital/ai-reception" className="group bg-white/10 hover:bg-white/20 border border-white/20 rounded-3xl p-8 transition-all">
+              <div className="w-12 h-12 rounded-2xl bg-white/20 flex items-center justify-center mb-5">
+                <Phone size={22} className="text-white" />
+              </div>
+              <h3 className="text-white text-xl font-bold mb-3">AI Receptionist</h3>
+              <p className="text-white/70 text-sm leading-relaxed mb-5">
+                Voice AI der besvarer alle jeres opkald på naturligt dansk — ruter henvendelser, booker møder og håndterer kunder 24/7, uden ventetid.
+              </p>
+              <div className="flex items-center gap-2 text-white/90 text-sm font-semibold group-hover:gap-3 transition-all">
+                Læs mere <ArrowRight size={16} />
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <FAQSection faqs={[
         { question: 'Hvad er B2B telemarketing?', answer: 'B2B telemarketing er direkte telefonsalg og kundekontakt rettet mod virksomheder. Nexny bruger målrettet telemarketing til at identificere beslutningstagere, kvalificere leads og booke salgsmøder.' },
         { question: 'Hvad er forskellen på telemarketing og mødebooking?', answer: 'Telemarketing dækker alle former for telefonisk B2B-salg og kundekontakt. Mødebooking er specifikt fokuseret på at booke kvalificerede salgsmøder hos beslutningstagere i din målgruppe.' },
