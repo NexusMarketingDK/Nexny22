@@ -4,78 +4,113 @@ import { Phone, Mail, MapPin, Facebook, Linkedin } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-900 text-white">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <footer className="relative bg-slate-950 text-white overflow-hidden">
+      {/* Subtle glow */}
+      <div className="absolute top-0 left-1/4 w-[500px] h-[300px] bg-blue-700/10 rounded-full blur-[120px] pointer-events-none" />
+
+      <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+          {/* Brand */}
           <div>
-            <h3 className="text-xl font-bold mb-4 text-white">Nexny</h3>
-            <p className="mb-4">Din vækstpartner inden for telesalg, mødebooking, webudvikling, leadgenerering og AI-udviklingsopgaver.</p>
-            <div className="flex space-x-4">
-              <a href="https://www.facebook.com/profile.php?id=61559179262196" className="text-gray-300 hover:text-white" target="_blank" rel="noopener noreferrer">
-                <Facebook size={20} />
+            <div className="flex items-center gap-2 mb-4">
+              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center">
+                <Phone size={14} className="text-white" />
+              </div>
+              <span className="text-xl font-bold tracking-tight">Nexny</span>
+            </div>
+            <p className="text-slate-400 text-sm leading-relaxed mb-5">
+              Din vækstpartner inden for telesalg, mødebooking, webudvikling, leadgenerering og AI-integration.
+            </p>
+            <div className="flex gap-3">
+              <a
+                href="https://www.facebook.com/profile.php?id=61559179262196"
+                className="w-9 h-9 rounded-xl bg-white/5 hover:bg-blue-600 border border-white/10 hover:border-blue-600 flex items-center justify-center text-slate-400 hover:text-white transition-all"
+                target="_blank" rel="noopener noreferrer"
+              >
+                <Facebook size={16} />
               </a>
-              <a href="https://www.linkedin.com/company/nexusmarketing-dk" className="text-gray-300 hover:text-white" target="_blank" rel="noopener noreferrer">
-                <Linkedin size={20} />
+              <a
+                href="https://www.linkedin.com/company/nexusmarketing-dk"
+                className="w-9 h-9 rounded-xl bg-white/5 hover:bg-blue-600 border border-white/10 hover:border-blue-600 flex items-center justify-center text-slate-400 hover:text-white transition-all"
+                target="_blank" rel="noopener noreferrer"
+              >
+                <Linkedin size={16} />
               </a>
             </div>
           </div>
 
+          {/* Quick links */}
           <div>
-            <h3 className="text-xl font-bold mb-4 text-white">Hurtige Links</h3>
-            <ul className="space-y-2">
-              <li><Link to="/" className="text-gray-300 hover:text-white">Forside</Link></li>
-              <li><Link to="/ydelser" className="text-gray-300 hover:text-white">Ydelser</Link></li>
-              <li><Link to="/jobs/arbejd-hjemmefra" className="text-gray-300 hover:text-white">For Sælgere</Link></li>
-              <li><Link to="/samarbejdspartner" className="text-gray-300 hover:text-white">Samarbejdspartner</Link></li>
-              <li><Link to="/priser" className="text-gray-300 hover:text-white">Priser</Link></li>
-              <li><Link to="/om-os" className="text-gray-300 hover:text-white">Om os</Link></li>
-              <li><Link to="/kontakt" className="text-gray-300 hover:text-white">Kontakt</Link></li>
+            <h3 className="text-sm font-bold uppercase tracking-widest text-slate-400 mb-4">Navigation</h3>
+            <ul className="space-y-2.5">
+              {[
+                { to: '/', label: 'Forside' },
+                { to: '/ydelser', label: 'Ydelser' },
+                { to: '/jobs/arbejd-hjemmefra', label: 'For Sælgere' },
+                { to: '/samarbejdspartner', label: 'Samarbejdspartner' },
+                { to: '/priser', label: 'Priser' },
+                { to: '/om-os', label: 'Om os' },
+                { to: '/kontakt', label: 'Kontakt' },
+              ].map(({ to, label }) => (
+                <li key={to}>
+                  <Link to={to} className="text-slate-400 hover:text-white text-sm transition-colors">{label}</Link>
+                </li>
+              ))}
             </ul>
           </div>
 
+          {/* Services */}
           <div>
-            <h3 className="text-xl font-bold mb-4 text-white">Kontaktoplysninger</h3>
+            <h3 className="text-sm font-bold uppercase tracking-widest text-slate-400 mb-4">Services</h3>
+            <ul className="space-y-2.5">
+              {[
+                { to: '/ydelser', label: 'Telemarketing' },
+                { to: '/modebooking-priser', label: 'Mødebooking' },
+                { to: '/leadgenerering', label: 'Leadgenerering' },
+                { to: '/digital/webudvikling', label: 'Webudvikling' },
+                { to: '/digital/ai-integration', label: 'AI Integration' },
+                { to: '/hvorfor-nexny', label: 'Outsourcing af salg' },
+              ].map(({ to, label }) => (
+                <li key={to}>
+                  <Link to={to} className="text-slate-400 hover:text-white text-sm transition-colors">{label}</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Contact */}
+          <div>
+            <h3 className="text-sm font-bold uppercase tracking-widest text-slate-400 mb-4">Kontakt</h3>
             <div className="space-y-4">
               <div>
-                <h4 className="font-medium mb-2">Nexny Spanien</h4>
-                <div className="flex items-start">
-                  <MapPin size={20} className="mr-2 mt-1 text-blue-400 flex-shrink-0" />
-                  <p className="text-gray-300">Spanien</p>
+                <p className="text-xs font-semibold text-slate-500 mb-1">Nexny Spanien</p>
+                <div className="flex items-start gap-2">
+                  <MapPin size={15} className="text-blue-500 mt-0.5 flex-shrink-0" />
+                  <p className="text-slate-400 text-sm">Calle Las Barcas 2, Valencia</p>
                 </div>
               </div>
               <div>
-                <h4 className="font-medium mb-2">Nexny Danmark</h4>
-                <div className="flex items-start">
-                  <MapPin size={20} className="mr-2 mt-1 text-blue-400 flex-shrink-0" />
-                  <p className="text-gray-300">Danmark</p>
+                <p className="text-xs font-semibold text-slate-500 mb-1">Nexny Danmark</p>
+                <div className="flex items-start gap-2">
+                  <MapPin size={15} className="text-blue-500 mt-0.5 flex-shrink-0" />
+                  <p className="text-slate-400 text-sm">Trindsøvej 6, 8000 Aarhus C</p>
                 </div>
               </div>
-              <div className="flex items-center">
-                <Mail size={20} className="mr-2 text-blue-400 flex-shrink-0" />
-                <a href="mailto:kontakt@nexny.dk" className="text-gray-300 hover:text-white">kontakt@nexny.dk</a>
-              </div>
-              <div className="flex items-center">
-                <Phone size={20} className="mr-2 text-blue-400 flex-shrink-0" />
-                <a href="tel:+4570123456" className="text-gray-300 hover:text-white">+45 70 12 34 56</a>
-              </div>
+              <a href="mailto:kontakt@nexny.dk" className="flex items-center gap-2 text-slate-400 hover:text-white text-sm transition-colors">
+                <Mail size={15} className="text-blue-500 flex-shrink-0" />
+                kontakt@nexny.dk
+              </a>
+              <a href="tel:+4591952794" className="flex items-center gap-2 text-slate-400 hover:text-white text-sm transition-colors">
+                <Phone size={15} className="text-blue-500 flex-shrink-0" />
+                +45 91 95 27 94
+              </a>
             </div>
-          </div>
-
-          <div>
-            <h3 className="text-xl font-bold mb-4 text-white">Vores Services</h3>
-            <ul className="space-y-2">
-              <li><Link to="/ydelser" className="text-gray-300 hover:text-white">Telemarketing</Link></li>
-              <li><Link to="/modebooking-priser" className="text-gray-300 hover:text-white">Mødebooking</Link></li>
-              <li><Link to="/leadgenerering" className="text-gray-300 hover:text-white">Leadgenerering</Link></li>
-              <li><Link to="/digital/webudvikling" className="text-gray-300 hover:text-white">Webudvikling</Link></li>
-              <li><Link to="/digital/ai-integration" className="text-gray-300 hover:text-white">AI Integration</Link></li>
-              <li><Link to="/hvorfor-nexny" className="text-gray-300 hover:text-white">Outsourcing af salg</Link></li>
-            </ul>
           </div>
         </div>
 
-        <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400 text-sm">
+        <div className="border-t border-white/5 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-500">
           <p>&copy; {new Date().getFullYear()} Nexny. Alle rettigheder forbeholdes.</p>
+          <p>CVR · Designet med fokus på vækst</p>
         </div>
       </div>
     </footer>
