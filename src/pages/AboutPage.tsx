@@ -32,8 +32,8 @@ const AboutPage: React.FC = () => {
   return (
     <>
       <SEO
-        title="Om Nexny | Din Vækstpartner inden for B2B Salg & Digital Udvikling"
-        description="Lær mere om Nexny – en ambitiøs vækstpartner for B2B virksomheder. Vi leverer professionel mødebooking, telemarketing og digitale løsninger med dokumenterede resultater og et stærkt team."
+        title="Om Nexny | Vækstpartner inden for Telesalg, Mødebooking og AI"
+        description="Lær mere om Nexny – din vækstpartner inden for telesalg, mødebooking, webudvikling, leadgenerering og AI-udviklingsopgaver. Stærkt team og dokumenterede resultater."
         canonical="/om-os"
         keywords="Nexny, om os, B2B salg, vækstpartner, mødebooking, digital udvikling, salgspartner"
       />

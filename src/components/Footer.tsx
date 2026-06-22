@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <h3 className="text-xl font-bold mb-4 text-white">Nexny</h3>
-            <p className="mb-4">Vi skaber vækst for ambitiøse virksomheder gennem målrettet B2B salg, mødebooking og digitale løsninger.</p>
+            <p className="mb-4">Din vækstpartner inden for telesalg, mødebooking, webudvikling, leadgenerering og AI-udviklingsopgaver.</p>
             <div className="flex space-x-4">
               <a href="https://www.facebook.com/profile.php?id=61559179262196" className="text-gray-300 hover:text-white" target="_blank" rel="noopener noreferrer">
                 <Facebook size={20} />

@@ -31,8 +31,8 @@ const MeetingBookingPage: React.FC = () => {
   return (
     <>
       <SEO
-        title="Mødebooking Priser | Nexny – Kvalificerede B2B Salgsmøder"
-        description="Nexny's professionelle mødebooking sikrer kvalificerede salgsmøder med de rette beslutningstagere. Se vores prismodeller og hør hvordan vi kan fylde din kalender."
+        title="Mødebooking | Nexny – Din Vækstpartner inden for Telesalg og AI"
+        description="Nexny's professionelle mødebooking sikrer kvalificerede salgsmøder. Din vækstpartner inden for telesalg, mødebooking, webudvikling, leadgenerering og AI."
         canonical="/modebooking-priser"
         keywords="mødebooking priser, B2B salgsmøder, Nexny mødebooking, kvalificerede møder, mødebooking service"
       />
