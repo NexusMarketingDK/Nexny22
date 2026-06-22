@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { Phone, Users, Target, BarChart3, CheckCircle, ArrowRight, MessageSquare, Building, Award } from 'lucide-react';
 import HeroSection from '../components/HeroSection';
 import SEO from '../components/SEO';
+import FAQSection from '../components/FAQSection';
+import CTASection from '../components/CTASection';
 
 const ServicesPage: React.FC = () => {
   const services = [
@@ -152,6 +154,21 @@ const ServicesPage: React.FC = () => {
           </Link>
         </div>
       </section>
+      <FAQSection faqs={[
+        { question: 'Hvad er B2B telemarketing?', answer: 'B2B telemarketing er direkte telefonsalg og kundekontakt rettet mod virksomheder. Nexny bruger målrettet telemarketing til at identificere beslutningstagere, kvalificere leads og booke salgsmøder.' },
+        { question: 'Hvad er forskellen på telemarketing og mødebooking?', answer: 'Telemarketing dækker alle former for telefonisk B2B-salg og kundekontakt. Mødebooking er specifikt fokuseret på at booke kvalificerede salgsmøder hos beslutningstagere i din målgruppe.' },
+        { question: 'Kan I integrere med vores CRM-system?', answer: 'Ja, Nexny arbejder med de fleste CRM-systemer og kan levere leads og møder direkte ind i jeres eksisterende salgsflow.' },
+        { question: 'Tilbyder I rapportering og statistik?', answer: 'Ja – du modtager løbende rapporter med aktivitetsdata, mødestatistik og ROI-beregning.' },
+        { question: 'Kan I hjælpe os i specifikke brancher?', answer: 'Vi har dybdegående erfaring med over 16 brancher og tilpasser altid vores tilgang til din specifikke branche og målgruppe.' },
+      ]} />
+      <CTASection
+        title="Start dit salgssamarbejde med Nexny i dag"
+        subtitle="Få adgang til professionelt telesalg, mødebooking og leadgenerering – alt samlet hos én partner."
+        primaryText="Kontakt os nu"
+        primaryLink="/kontakt"
+        secondaryText="Se priser"
+        secondaryLink="/priser"
+      />
     </>
   );
 };

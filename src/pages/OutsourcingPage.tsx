@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { CheckCircle, ArrowRight, TrendingUp, Clock, Shield, Users, BarChart3, Zap } from 'lucide-react';
 import HeroSection from '../components/HeroSection';
 import SEO from '../components/SEO';
+import FAQSection from '../components/FAQSection';
+import CTASection from '../components/CTASection';
 
 const OutsourcingPage: React.FC = () => {
   const reasons = [
@@ -137,6 +139,21 @@ const OutsourcingPage: React.FC = () => {
           </Link>
         </div>
       </section>
+      <FAQSection faqs={[
+        { question: 'Hvad er fordelene ved at outsource sit salg?', answer: 'Outsourcing af salg giver adgang til erfarne salgsprofessionelle uden fast ansættelse, reducerer faste lønomkostninger og giver fleksibilitet til at skalere op eller ned.' },
+        { question: 'Mister vi kontrollen over salgsprocessen?', answer: 'Nej – Nexny arbejder tæt sammen med jer, følger jeres guidelines og rapporterer løbende. I beholder fuld kontrol og indsigt.' },
+        { question: 'Hvem ejer de leads der genereres?', answer: 'Alle leads og møder tilhører jer som kunde – de leveres direkte ind i jeres CRM-system.' },
+        { question: 'Kan Nexny repræsentere vores brand professionelt?', answer: 'Ja – vores sælgere præsenterer sig som en del af jeres team og følger jeres brand guidelines og tone of voice.' },
+        { question: 'Hvad er forskellen på Nexny og at ansætte en intern sælger?', answer: 'Med Nexny betaler du kun for aktiv salgstid og resultater. En intern sælger koster fast løn, rekruttering, oplæring og ledelse – uanset performance.' },
+      ]} />
+      <CTASection
+        title="Outsource dit salg til Nexny og fokuser på din kerneforretning"
+        subtitle="Professionelt telesalg og mødebooking uden faste lønudgifter – fleksibelt, skalerbart og med dokumenterede resultater."
+        primaryText="Kom i gang i dag"
+        primaryLink="/kontakt"
+        secondaryText="Se priser"
+        secondaryLink="/priser"
+      />
     </>
   );
 };
