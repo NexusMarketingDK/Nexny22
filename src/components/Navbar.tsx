@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import React, { useState, useEffect, useRef } from 'react';
+import { NavLink, Link, useLocation } from 'react-router-dom';
 import { Phone, Menu, X, ChevronDown } from 'lucide-react';
 import { jobListings } from '../data/jobListings';
 
@@ -9,6 +9,14 @@ const Navbar: React.FC = () => {
   const [isJobsDropdownOpen, setIsJobsDropdownOpen] = useState(false);
   const [isDigitalDropdownOpen, setIsDigitalDropdownOpen] = useState(false);
   const [isPartnerDropdownOpen, setIsPartnerDropdownOpen] = useState(false);
+  const navRef = useRef<HTMLDivElement>(null);
+  const location = useLocation();
+
+  const closeAllDropdowns = () => {
+    setIsJobsDropdownOpen(false);
+    setIsDigitalDropdownOpen(false);
+    setIsPartnerDropdownOpen(false);
+  };
 
   useEffect(() => {
     const handleScroll = () => { setIsScrolled(window.scrollY > 50); };
@@ -16,10 +24,27 @@ const Navbar: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Close dropdowns on route change
+  useEffect(() => {
+    closeAllDropdowns();
+    setIsMenuOpen(false);
+  }, [location.pathname]);
+
+  // Close dropdowns on click outside
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (navRef.current && !navRef.current.contains(e.target as Node)) {
+        closeAllDropdowns();
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
-  const toggleJobsDropdown = () => setIsJobsDropdownOpen(!isJobsDropdownOpen);
-  const toggleDigitalDropdown = () => setIsDigitalDropdownOpen(!isDigitalDropdownOpen);
-  const togglePartnerDropdown = () => setIsPartnerDropdownOpen(!isPartnerDropdownOpen);
+  const toggleJobsDropdown = () => { setIsJobsDropdownOpen(v => !v); setIsDigitalDropdownOpen(false); setIsPartnerDropdownOpen(false); };
+  const toggleDigitalDropdown = () => { setIsDigitalDropdownOpen(v => !v); setIsJobsDropdownOpen(false); setIsPartnerDropdownOpen(false); };
+  const togglePartnerDropdown = () => { setIsPartnerDropdownOpen(v => !v); setIsJobsDropdownOpen(false); setIsDigitalDropdownOpen(false); };
 
   const navLinkClass = ({ isActive }: { isActive: boolean }) =>
     `px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${isActive ? 'text-blue-600' : 'text-gray-500 hover:text-blue-600 hover:bg-blue-50'}`;
@@ -40,7 +65,7 @@ const Navbar: React.FC = () => {
   ];
 
   return (
-    <header className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'}`}>
+    <header ref={navRef} className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'}`}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center">
