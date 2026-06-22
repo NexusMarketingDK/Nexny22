@@ -30,7 +30,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{ backgroundImage: `url(${backgroundImage})` }}
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-slate-900/90 via-blue-950/80 to-indigo-950/85" />
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-900/75 via-blue-800/55 to-indigo-900/60" />
         </>
       ) : (
         <div className="absolute inset-0 bg-hero-gradient" />
@@ -82,7 +82,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
       </div>
 
       {/* Bottom fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent pointer-events-none" />
+      <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-sky-50/90 via-sky-50/40 to-transparent pointer-events-none" />
     </section>
   );
 };

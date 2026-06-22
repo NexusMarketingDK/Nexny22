@@ -29,7 +29,7 @@ const FAQSection: React.FC<FAQSectionProps> = ({ faqs, title = 'Ofte stillede sp
   };
 
   return (
-    <section className="section bg-slate-50">
+    <section className="section bg-sky-50">
       <Helmet>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
       </Helmet>
