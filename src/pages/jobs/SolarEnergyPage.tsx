@@ -10,7 +10,7 @@ export default function SolarEnergyPage() {
       <SEO
         title="Freelance Sælger Solenergi & Vedvarende Energi | Nexny"
         description="Bliv freelance sælger af solenergi og vedvarende energiløsninger hos Nexny. Sælg solceller til erhverv og private – fleksibelt hjemmearbejde med stærk provision."
-        canonical="/jobs/solar-energy"
+        canonical="/jobs/solenergi"
         keywords="freelance sælger solenergi, sælg solceller, solenergi job, vedvarende energi salg, Nexny solcelle stilling"
       />
 

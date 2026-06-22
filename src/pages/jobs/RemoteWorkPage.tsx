@@ -10,7 +10,7 @@ export default function RemoteWorkPage() {
       <SEO
         title="Freelance Remote Salg – Arbejd Hjemmefra | Nexny"
         description="Bliv freelance sælger og arbejd 100% remote hos Nexny. Vælg dit eget produkt, sæt dine egne tider og byg en karriere hjemmefra med stærk provision."
-        canonical="/jobs/remote-work"
+        canonical="/jobs/arbejd-hjemmefra"
         keywords="freelance remote salg, arbejd hjemmefra sælger, remote job Danmark, hjemmekontor salg, Nexny remote stilling"
       />
 
@@ -58,14 +58,14 @@ export default function RemoteWorkPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
-              { label: 'Webudvikling & digitale løsninger', link: '/jobs/web-bureau' },
-              { label: 'LED-belysning & energieffektivisering', link: '/jobs/led-lighting' },
-              { label: 'Solenergi & vedvarende energi', link: '/jobs/solar-energy' },
-              { label: 'Strøm & energioptimering', link: '/jobs/energy-sales' },
-              { label: 'Kaffeservice til erhverv', link: '/jobs/coffee-service' },
-              { label: 'Måtte- og rengøringsservice', link: '/jobs/mat-service' },
-              { label: 'Pensionsrådgivning', link: '/jobs/pension' },
-              { label: 'Inkasso & kreditorstyring', link: '/jobs/debt-collection' },
+              { label: 'Webudvikling & digitale løsninger', link: '/jobs/webudvikling-salg' },
+              { label: 'LED-belysning & energieffektivisering', link: '/jobs/led-belysning' },
+              { label: 'Solenergi & vedvarende energi', link: '/jobs/solenergi' },
+              { label: 'Strøm & energioptimering', link: '/jobs/energi-salg' },
+              { label: 'Kaffeservice til erhverv', link: '/jobs/kaffe-service' },
+              { label: 'Måtte- og rengøringsservice', link: '/jobs/matte-service' },
+              { label: 'Pensionsrådgivning', link: '/jobs/pensionsordning' },
+              { label: 'Inkasso & kreditorstyring', link: '/jobs/inkasso' },
               { label: 'B2B telemarketing & mødebooking', link: '/freelance-telemarketing' }
             ].map((item, i) => (
               <Link

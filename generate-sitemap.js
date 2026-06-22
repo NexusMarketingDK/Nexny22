@@ -147,7 +147,7 @@ const pages = [
     lastmod: currentDate
   },
   {
-    path: '/jobs/web-bureau',
+    path: '/jobs/webudvikling-salg',
     priority: '0.8',
     changefreq: 'weekly',
     lastmod: currentDate

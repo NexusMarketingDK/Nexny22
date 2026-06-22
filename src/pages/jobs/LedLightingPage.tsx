@@ -10,7 +10,7 @@ export default function LedLightingPage() {
       <SEO
         title="Freelance Sælger LED & Energieffektivisering | Nexny"
         description="Bliv freelance sælger af LED-belysning og energieffektivisering til erhverv hos Nexny. Arbejd hjemmefra med fleksible tider og attraktiv provision."
-        canonical="/jobs/led-lighting"
+        canonical="/jobs/led-belysning"
         keywords="freelance sælger LED, sælg energieffektivisering, LED belysning salg, erhvervsbelysning sælger, Nexny LED stilling"
       />
 

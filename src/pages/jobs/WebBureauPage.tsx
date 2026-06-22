@@ -10,7 +10,7 @@ export default function WebBureauPage() {
       <SEO
         title="Freelance Sælger til Web Bureau | Nexny – Sælg Webudvikling og Digitale Løsninger"
         description="Bliv freelance sælger for web bureau ydelser hos Nexny. Sælg webudvikling, SEO og digitale løsninger hjemmefra med fleksible tider og attraktiv provision."
-        canonical="/jobs/web-bureau"
+        canonical="/jobs/webudvikling-salg"
         keywords="freelance sælger web bureau, sælg webudvikling, digitalt bureau sælger, freelance digital salg, Nexny web bureau stilling"
       />
 

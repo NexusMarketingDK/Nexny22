@@ -10,7 +10,7 @@ export default function CoffeeServicePage() {
       <SEO
         title="Freelance Sælger Kaffeservice til Erhverv | Nexny"
         description="Bliv freelance sælger af kaffeservice og kaffemaskiner til erhverv hos Nexny. Arbejd hjemmefra og sælg et produkt alle kontoransatte elsker."
-        canonical="/jobs/coffee-service"
+        canonical="/jobs/kaffe-service"
         keywords="freelance sælger kaffeservice, kaffemaskin salg erhverv, kaffe B2B sælger, Nexny kaffe stilling, kaffesalg job"
       />
 

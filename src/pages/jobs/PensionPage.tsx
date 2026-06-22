@@ -10,7 +10,7 @@ export default function PensionPage() {
       <SEO
         title="Freelance Sælger Pensionsrådgivning | Nexny"
         description="Bliv freelance sælger inden for pensionsrådgivning hos Nexny. Hjælp private og erhvervskunder med pensionsplanlægning – hjemmefra med god provision."
-        canonical="/jobs/pension"
+        canonical="/jobs/pensionsordning"
         keywords="freelance sælger pension, pensionsrådgivning salg, pension sælger job, finansiel rådgivning freelance, Nexny pension stilling"
       />
 

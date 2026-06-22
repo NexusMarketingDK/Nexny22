@@ -10,7 +10,7 @@ export default function EnergySalesPage() {
       <SEO
         title="Freelance Sælger Strøm & Energioptimering | Nexny"
         description="Bliv freelance sælger af strøm og energioptimering til B2B og B2C kunder hos Nexny. Arbejd hjemmefra med fleksible tider og attraktiv provision."
-        canonical="/jobs/energy-sales"
+        canonical="/jobs/energi-salg"
         keywords="freelance sælger strøm, energioptimering salg, strøm sælger job, energiaftalr B2B, Nexny energi stilling"
       />
 

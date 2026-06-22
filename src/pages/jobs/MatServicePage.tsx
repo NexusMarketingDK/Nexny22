@@ -10,7 +10,7 @@ export default function MatServicePage() {
       <SEO
         title="Freelance Sælger Måtte- og Rengøringsservice | Nexny"
         description="Bliv freelance sælger af måtte- og rengøringsservice til erhverv hos Nexny. Arbejd hjemmefra med fleksible tider og stabil provision på abonnementsaftaler."
-        canonical="/jobs/mat-service"
+        canonical="/jobs/matte-service"
         keywords="freelance sælger rengøringsservice, måtteservice salg, rengøring erhverv sælger, Nexny rengøring stilling, facility service salg"
       />
 

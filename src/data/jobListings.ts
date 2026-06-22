@@ -17,8 +17,8 @@ export const jobListings: JobListing[] = [
     color: 'text-blue-600'
   },
   {
-    path: '/jobs/web-bureau',
-    title: 'Mødebooker - Marketing Bureau',
+    path: '/jobs/webudvikling-salg',
+    title: 'Sælger - Webudvikling & Digitale Løsninger',
     description: 'Book kvalificerede møder for et af Danmarks førende digitale bureauer og hjælp virksomheder med at finde de rigtige marketingløsninger.',
     icon: Building,
     color: 'text-blue-600'

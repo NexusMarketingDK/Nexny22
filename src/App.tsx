@@ -51,7 +51,7 @@ function App() {
     {from: '/privat-strom-salg', to: '/jobs/energi-salg'},
     {from: '/samarbejde-med-nexusmarketing', to: '/samarbejdspartner'},
     {from: '/om-nexusmarketing', to: '/om-os'},
-    {from: '/moedebooker-hjemmeside-seo-og-marketing', to: '/jobs/web-bureau'},
+    {from: '/moedebooker-hjemmeside-seo-og-marketing', to: '/jobs/webudvikling-salg'},
     {from: '/kontakt-nexusmarketing', to: '/kontakt'},
     {from: '/freelance-modebooker-pension', to: '/jobs/pensionsordning'},
     {from: '/nexusmarketing-freelance-moedebooker', to: '/jobs/arbejd-hjemmefra'},
@@ -97,7 +97,8 @@ function App() {
           
           {/* Job Landing Pages */}
           <Route path="/jobs/arbejd-hjemmefra" element={<RemoteWorkPage />} />
-          <Route path="/jobs/web-bureau" element={<WebBureauPage />} />
+          <Route path="/jobs/webudvikling-salg" element={<WebBureauPage />} />
+          <Route path="/jobs/web-bureau" element={<Navigate to="/jobs/webudvikling-salg" replace />} />
           <Route path="/jobs/led-belysning" element={<LedLightingPage />} />
           <Route path="/jobs/energi-salg" element={<EnergySalesPage />} />
           <Route path="/jobs/kaffe-service" element={<CoffeeServicePage />} />

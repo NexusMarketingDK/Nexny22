@@ -10,7 +10,7 @@ export default function DebtCollectionPage() {
       <SEO
         title="Freelance Sælger Inkasso & Kreditorstyring | Nexny"
         description="Bliv freelance sælger inden for inkasso og kreditorstyring hos Nexny. Sælg professionel gældinddrivelse til erhvervskunder – hjemmefra med god provision."
-        canonical="/jobs/debt-collection"
+        canonical="/jobs/inkasso"
         keywords="freelance sælger inkasso, kreditorstyring salg, inkasso sælger job, gældinddrivelse B2B, Nexny inkasso stilling"
       />
 
