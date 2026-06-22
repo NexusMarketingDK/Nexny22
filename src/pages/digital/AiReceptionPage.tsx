@@ -77,13 +77,13 @@ export default function AiReceptionPage() {
       />
 
       <HeroSection
-        title="AI-receptionist der aldrig er optaget"
-        subtitle="Nexny's voice AI besvarer alle jeres opkald øjeblikkeligt – på naturligt dansk. Den kvalificerer kalderen, booker møder og ruter henvendelser, mens dit team fokuserer på det der skaber værdi."
+        title="AI-receptionist der besvarer alle opkald og booker møder automatisk"
+        subtitle="Nexny's voice AI håndterer telefonhenvendelser på naturligt dansk – kvalificerer kalderen, booker møder og ruter videre, 24/7 uden ventetid."
         ctaText="Book en gratis demo"
         ctaLink="/kontakt"
         secondaryCtaText="Se AI-widget"
         secondaryCtaLink="/digital/ai-widget"
-        backgroundImage="https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        backgroundImage="https://images.pexels.com/photos/3184405/pexels-photo-3184405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       />
 
       {/* Problem / Solution */}
