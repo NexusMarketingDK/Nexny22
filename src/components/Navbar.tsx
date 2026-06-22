@@ -34,7 +34,7 @@ const Navbar: React.FC = () => {
   const partnerOptions = [
     { path: '/samarbejdspartner', title: 'Bliv samarbejdspartner' },
     { path: '/priser', title: 'Priser & Pakker' },
-    { path: '/hvorfor-nexusmarketing', title: 'Hvorfor Nexny?' },
+    { path: '/hvorfor-nexny', title: 'Hvorfor Nexny?' },
     { path: '/modebooking-priser', title: 'Mødebooking' },
     { path: '/leadgenerering', title: 'Leadgenerering' }
   ];

@@ -62,7 +62,7 @@ function App() {
     {from: '/freelancers', to: '/freelance-telemarketing'},
     {from: '/freelancere', to: '/freelance-telemarketing'},
     {from: '/telemarketing-freelance-opgave-inkasso/', to: '/jobs/inkasso'},
-    {from: '/hvorfor-outsource', to: '/hvorfor-nexusmarketing'}
+    {from: '/hvorfor-outsource', to: '/hvorfor-nexny'}
   ];
 
   return (
@@ -79,7 +79,8 @@ function App() {
           <Route path="/freelance-telemarketing" element={<FreelancersPage />} />
           <Route path="/samarbejdspartner" element={<PartnersPage />} />
           <Route path="/priser" element={<PricingPage />} />
-          <Route path="/hvorfor-nexusmarketing" element={<OutsourcingPage />} />
+          <Route path="/hvorfor-nexny" element={<OutsourcingPage />} />
+          <Route path="/hvorfor-nexusmarketing" element={<Navigate to="/hvorfor-nexny" replace />} />
           <Route path="/om-os" element={<AboutPage />} />
           <Route path="/kontakt" element={<ContactPage />} />
           <Route path="/blog" element={<BlogPage />} />

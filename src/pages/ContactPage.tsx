@@ -22,7 +22,7 @@ const ContactPage: React.FC = () => {
       link: "/samarbejdspartner"
     },
     {
-      question: "Hvad koster det at samarbejde med Nexus Marketing?",
+      question: "Hvad koster det at samarbejde med Nexny?",
       answer: "Vi tilbyder fleksible prismodeller tilpasset jeres behov. Kontakt os for et skræddersyet tilbud baseret på jeres specifikke ønsker og mål.",
       link: "/samarbejdspartner"
     }
@@ -30,7 +30,7 @@ const ContactPage: React.FC = () => {
 
   const freelanceFAQs = [
     {
-      question: "Hvordan bliver jeg freelance sælger hos Nexus Marketing?",
+      question: "Hvordan bliver jeg freelance sælger hos Nexny?",
       answer: "Start med at sende din ansøgning gennem vores kontaktformular. Vi inviterer dig derefter til en samtale, hvor vi diskuterer mulighederne.",
       link: "/freelancere"
     },
@@ -44,7 +44,7 @@ const ContactPage: React.FC = () => {
   return (
     <>
       <SEO 
-        title="Kontakt Nexus Marketing | Få et uforpligtende tilbud"
+        title="Kontakt Nexny | Få et uforpligtende tilbud"
         description="Kontakt os for en uforpligtende snak om, hvordan vi kan hjælpe din virksomhed med professionel telemarketing, mødebooking eller digital udvikling. ✓ Gratis rådgivning ✓ Skræddersyede løsninger"
         canonical="/kontakt"
         keywords="kontakt, telemarketing bureau, mødebooking bureau, digital udvikling, B2B salg, rådgivning"
@@ -54,7 +54,7 @@ const ContactPage: React.FC = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
           {/* Header */}
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h1 className="text-4xl font-bold mb-6">Kontakt Nexus Marketing</h1>
+            <h1 className="text-4xl font-bold mb-6">Kontakt Nexny</h1>
             <p className="text-lg text-gray-600">
               Vi er klar til at hjælpe dig med dine spørgsmål om telemarketing, 
               mødebooking eller jobmuligheder. Udfyld formularen nedenfor, eller 
@@ -74,7 +74,7 @@ const ContactPage: React.FC = () => {
                   frameBorder="0" 
                   marginHeight={0} 
                   marginWidth={0} 
-                  title="Kontakt Nexus Marketing"
+                  title="Kontakt Nexny"
                 ></iframe>
               </div>
             </div>
@@ -87,7 +87,7 @@ const ContactPage: React.FC = () => {
                 <div className="space-y-8">
                   {/* Spanish Office */}
                   <div>
-                    <h3 className="font-medium text-lg mb-3">NexusMarketing Spanien</h3>
+                    <h3 className="font-medium text-lg mb-3">Nexny Spanien</h3>
                     <div className="flex items-start">
                       <MapPin size={24} className="text-blue-600 mr-4 mt-1" />
                       <p className="text-gray-600">
@@ -100,7 +100,7 @@ const ContactPage: React.FC = () => {
 
                   {/* Danish Office */}
                   <div>
-                    <h3 className="font-medium text-lg mb-3">NexusMarketing Danmark</h3>
+                    <h3 className="font-medium text-lg mb-3">Nexny Danmark</h3>
                     <div className="flex items-start">
                       <MapPin size={24} className="text-blue-600 mr-4 mt-1" />
                       <p className="text-gray-600">
@@ -126,7 +126,7 @@ const ContactPage: React.FC = () => {
                     <div>
                       <h3 className="font-medium">Email</h3>
                       <p className="text-gray-600">
-                        <a href="mailto:kontakt@nexusmarketing.dk" className="hover:text-blue-600">kontakt@nexusmarketing.dk</a>
+                        <a href="mailto:kontakt@nexny.dk" className="hover:text-blue-600">kontakt@nexny.dk</a>
                       </p>
                     </div>
                   </div>
@@ -134,7 +134,7 @@ const ContactPage: React.FC = () => {
                   <div>
                     <h3 className="font-medium">Website</h3>
                     <p className="text-gray-600">
-                      <a href="https://www.nexusmarketing.dk" className="hover:text-blue-600">www.nexusmarketing.dk</a>
+                      <a href="https://www.nexny.dk" className="hover:text-blue-600">www.nexny.dk</a>
                     </p>
                   </div>
                 </div>
@@ -203,7 +203,7 @@ const ContactPage: React.FC = () => {
               <h2 className="text-2xl font-semibold mb-6">Professionel Mødebooking & Telemarketing Partner</h2>
               <div className="prose max-w-none">
                 <p className="mb-4">
-                  Nexus Marketing er din professionelle partner inden for B2B telemarketing og mødebooking. 
+                  Nexny er din professionelle partner inden for B2B telemarketing og mødebooking. 
                   Med over 20 års erfaring i branchen har vi specialiseret os i at skabe værdifulde forbindelser 
                   mellem virksomheder og hjælpe vores kunder med at vækste gennem målrettede salgsaktiviteter.
                 </p>

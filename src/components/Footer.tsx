@@ -69,7 +69,7 @@ const Footer: React.FC = () => {
               <li><Link to="/leadgenerering" className="text-gray-300 hover:text-white">Leadgenerering</Link></li>
               <li><Link to="/digital/webudvikling" className="text-gray-300 hover:text-white">Webudvikling</Link></li>
               <li><Link to="/digital/ai-integration" className="text-gray-300 hover:text-white">AI Integration</Link></li>
-              <li><Link to="/hvorfor-nexusmarketing" className="text-gray-300 hover:text-white">Outsourcing af salg</Link></li>
+              <li><Link to="/hvorfor-nexny" className="text-gray-300 hover:text-white">Outsourcing af salg</Link></li>
             </ul>
           </div>
         </div>
