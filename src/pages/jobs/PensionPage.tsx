@@ -22,7 +22,7 @@ export default function PensionPage() {
         ctaLink="/kontakt"
         secondaryCtaText="Se alle stillinger"
         secondaryCtaLink="/freelance-telemarketing"
-        backgroundImage="https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        backgroundImage="https://images.pexels.com/photos/3760263/pexels-photo-3760263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       />
 
       <section className="py-16 bg-white">
