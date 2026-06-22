@@ -36,6 +36,8 @@ import WebDevelopmentPage from './pages/digital/WebDevelopmentPage';
 import ApiSaasPage from './pages/digital/ApiSaasPage';
 import WebsitesPage from './pages/digital/WebsitesPage';
 import AiIntegrationPage from './pages/digital/AiIntegrationPage';
+import AiWidgetPage from './pages/digital/AiWidgetPage';
+import AiReceptionPage from './pages/digital/AiReceptionPage';
 
 // Meeting Booking Page
 import MeetingBookingPage from './pages/MeetingBookingPage';
@@ -113,6 +115,8 @@ function App() {
           <Route path="/digital/api-saas" element={<ApiSaasPage />} />
           <Route path="/digital/hjemmesider" element={<WebsitesPage />} />
           <Route path="/digital/ai-integration" element={<AiIntegrationPage />} />
+          <Route path="/digital/ai-widget" element={<AiWidgetPage />} />
+          <Route path="/digital/ai-reception" element={<AiReceptionPage />} />
 
           {/* Meeting Booking Page */}
           <Route path="/modebooking-priser" element={<MeetingBookingPage />} />

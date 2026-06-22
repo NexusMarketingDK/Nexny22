@@ -57,7 +57,9 @@ const Navbar: React.FC = () => {
     { path: '/digital/webudvikling', title: 'Webudvikling' },
     { path: '/digital/api-saas', title: 'API & SaaS' },
     { path: '/digital/hjemmesider', title: 'Hjemmesider' },
-    { path: '/digital/ai-integration', title: 'AI Integration' }
+    { path: '/digital/ai-integration', title: 'AI Integration' },
+    { path: '/digital/ai-widget', title: '✦ AI Widget' },
+    { path: '/digital/ai-reception', title: '✦ AI Receptionist' }
   ];
 
   const partnerOptions = [
