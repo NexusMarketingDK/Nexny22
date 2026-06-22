@@ -109,8 +109,8 @@ const HomePage: React.FC = () => {
       />
 
       <HeroSection
-        title="Din Vækstpartner inden for Telesalg, Mødebooking og AI Udvikling og Integration"
-        subtitle="Nexny leverer professionelt telesalg, kvalificeret mødebooking, leadgenerering, moderne webudvikling og AI-udviklingsopgaver – alt samlet hos én partner."
+        title="Din Vækstpartner inden for Telesalg, Mødebooking og AI-Integration"
+        subtitle="Nexny leverer professionelt telesalg, kvalificeret mødebooking, leadgenerering, moderne webudvikling og AI-integration – alt samlet hos én partner."
         ctaText="Bliv samarbejdspartner"
         ctaLink="/samarbejdspartner"
         secondaryCtaText="Start din karriere"
