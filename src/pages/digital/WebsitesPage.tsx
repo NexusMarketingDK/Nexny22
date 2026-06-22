@@ -1,14 +1,158 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { Monitor, CheckCircle, ArrowRight, Search, TrendingUp, PenTool, Gauge } from 'lucide-react';
+import HeroSection from '../../components/HeroSection';
 import SEO from '../../components/SEO';
 
 export default function WebsitesPage() {
+  const features = [
+    {
+      icon: <PenTool size={36} className="text-blue-600" />,
+      title: 'Professionelt design',
+      description: 'Hjemmesider der ser godt ud og giver det rigtige førstehåndsindtryk – tilpasset din branche, målgruppe og brand.'
+    },
+    {
+      icon: <Search size={36} className="text-blue-600" />,
+      title: 'SEO-optimeret fra start',
+      description: 'Vi bygger med søgemaskineoptimering som en kernekomponent – teknisk SEO, hurtige loadtider og korrekt struktureret indhold.'
+    },
+    {
+      icon: <Gauge size={36} className="text-blue-600" />,
+      title: 'Lynhurtig performance',
+      description: 'Optimerede billeder, minimal kode og CDN-hosting sikrer at din hjemmeside loader hurtigt – på alle enheder og forbindelser.'
+    },
+    {
+      icon: <TrendingUp size={36} className="text-blue-600" />,
+      title: 'Konverteringsoptimeret',
+      description: "Vi designer med mål for øje – klare CTA'er, brugervenlig navigation og landingssider der omdanner besøgende til kunder."
+    }
+  ];
+
+  const included = [
+    'Strategisk design og UX-planlægning',
+    'Responsivt design til alle skærmstørrelser',
+    'CMS-integration (WordPress, Webflow, headless)',
+    'Teknisk SEO-opsætning og metadata',
+    'Google Analytics og tracking-opsætning',
+    'Kontaktformularer og lead capture',
+    'Cookie-banner og GDPR-compliance',
+    'Domæne- og hostingopsætning',
+    'Testning og quality assurance',
+    '3 måneders gratis support efter lancering'
+  ];
+
+  const siteTypes = [
+    { title: 'Virksomhedshjemmeside', desc: 'Præsentationssider der viser jer professionelt og genererer leads' },
+    { title: 'Landingssider', desc: 'Kampagnesider optimeret til konvertering og annoncetrafik' },
+    { title: 'Webshops', desc: 'E-handelsløsninger med fuldt betalingsflow og produktstyring' },
+    { title: 'Porteføljesider', desc: 'Visuelle sider der fremviser jeres arbejde og referencer' },
+    { title: 'Booking og reservationer', desc: 'Integrerede bookingsystemer til møder, events og ydelser' },
+    { title: 'Multisprogshjemmesider', desc: 'Lokaliserede sider til det danske og internationale marked' }
+  ];
+
   return (
     <>
-      <SEO title="Digital Løsning | Nexus Marketing" description="Digitale løsninger fra Nexus Marketing." />
-      <div className="max-w-4xl mx-auto px-4 py-16">
-        <h1 className="text-4xl font-bold mb-6">Digital Løsning</h1>
-        <p className="text-gray-600">Side under opbygning.</p>
-      </div>
+      <SEO
+        title="Hjemmesider | Nexny – Professionelle Webløsninger der Konverterer"
+        description="Nexny designer og udvikler professionelle hjemmesider der er SEO-optimerede, hurtige og konverteringsvenlige. Skræddersyet til din virksomhed og dine mål."
+        canonical="/digital/hjemmesider"
+        keywords="hjemmeside, webdesign, SEO hjemmeside, konverteringsoptimering, Nexny digital, professionel hjemmeside"
+      />
+
+      <HeroSection
+        title="Hjemmesider der Skaber Resultater"
+        subtitle="Nexny bygger professionelle, SEO-optimerede hjemmesider der tiltrækker de rigtige besøgende og omdanner dem til kunder."
+        ctaText="Få et tilbud"
+        ctaLink="/kontakt"
+        backgroundImage="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      />
+
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4">Hvad gør en Nexny-hjemmeside anderledes?</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Vi bygger ikke bare smukke hjemmesider – vi bygger digitale salgsmaskiner der arbejder for dig døgnet rundt.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {features.map((f, i) => (
+              <div key={i} className="flex gap-5 p-6 bg-gray-50 rounded-xl">
+                <div className="flex-shrink-0">{f.icon}</div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">{f.title}</h3>
+                  <p className="text-gray-600">{f.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl font-bold mb-6">Alt er inkluderet</h2>
+              <p className="text-lg text-gray-600 mb-8">
+                Hos Nexny får du en komplet løsning – fra første design-skitse til lancering og efterfølgende support. Ingen skjulte omkostninger.
+              </p>
+              <ul className="space-y-3">
+                {included.map((item, i) => (
+                  <li key={i} className="flex items-center">
+                    <CheckCircle className="text-green-500 mr-3 flex-shrink-0" size={18} />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-8">
+                <Link to="/kontakt" className="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                  Bestil din hjemmeside <ArrowRight size={16} className="ml-2" />
+                </Link>
+              </div>
+            </div>
+            <div>
+              <img
+                src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="Webdesign og udvikling hos Nexny"
+                className="rounded-xl shadow-lg w-full"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <Monitor size={48} className="text-blue-600 mx-auto mb-4" />
+            <h2 className="text-3xl font-bold mb-4">Hjemmesidetyper vi specialiserer os i</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Uanset hvilken type hjemmeside du har brug for, har vi ekspertisen til at levere den.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {siteTypes.map((type, i) => (
+              <div key={i} className="bg-gray-50 rounded-xl p-6 border border-gray-100 hover:border-blue-200 hover:shadow-md transition-all">
+                <h3 className="text-lg font-semibold mb-2 text-blue-600">{type.title}</h3>
+                <p className="text-gray-600 text-sm">{type.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-blue-600 text-white py-16">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold mb-6">Klar til en ny hjemmeside?</h2>
+          <p className="text-xl mb-8 max-w-3xl mx-auto">
+            Fortæl os om din virksomhed og dine mål – vi sender et konkret tilbud inden for 24 timer.
+          </p>
+          <Link to="/kontakt" className="inline-flex items-center bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+            Kontakt Nexny nu <ArrowRight className="ml-2" />
+          </Link>
+        </div>
+      </section>
     </>
   );
 }
