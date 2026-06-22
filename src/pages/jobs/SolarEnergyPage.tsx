@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { CheckCircle, ArrowRight, Clock, PiggyBank, Home, Sun, Leaf, TrendingUp } from 'lucide-react';
 import HeroSection from '../../components/HeroSection';
 import SEO from '../../components/SEO';
+import FAQSection from '../../components/FAQSection';
 
 export default function SolarEnergyPage() {
   return (
@@ -150,6 +151,13 @@ export default function SolarEnergyPage() {
           </div>
         </div>
       </section>
+
+      <FAQSection faqs={[
+        { question: 'Hvad booker jeg møder om?', answer: 'Du kontakter virksomheder og private der kan have gavn af solcelleanlæg og vedvarende energiløsninger, og booker møder med en energirådgiver.' },
+        { question: 'Er solenergi let at sælge?', answer: 'Solenergi er et produkt i stærk vækst med høj efterspørgsel. Mange kunder er allerede bevidste om fordelene.' },
+        { question: 'Skal jeg kende til teknik bag solceller?', answer: 'Nej – du skal kunne identificere interesserede kunder og booke møder. Rådgiveren tager det tekniske.' },
+        { question: 'Hvad er mit territorium?', answer: 'Du arbejder remote og kan kontakte kunder i hele Danmark.' },
+      ]} />
 
       <section className="bg-blue-600 text-white py-16">
         <div className="container mx-auto px-4 text-center">

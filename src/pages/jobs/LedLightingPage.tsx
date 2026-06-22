@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { CheckCircle, ArrowRight, Clock, PiggyBank, Home, Zap, Sun, Lightbulb } from 'lucide-react';
 import HeroSection from '../../components/HeroSection';
 import SEO from '../../components/SEO';
+import FAQSection from '../../components/FAQSection';
 
 export default function LedLightingPage() {
   return (
@@ -153,6 +154,13 @@ export default function LedLightingPage() {
           </div>
         </div>
       </section>
+
+      <FAQSection faqs={[
+        { question: 'Hvad sælger jeg som mødebooker inden for LED?', answer: 'Du kontakter erhvervskunder og booker møder med energieffektive belysningsløsninger fra en anerkendt LED-leverandør.' },
+        { question: 'Behøver jeg viden om LED-teknik?', answer: 'Nej – Nexny giver dig al den produktviden du har brug for. Det vigtigste er dine salgskompetencer og din motivation.' },
+        { question: 'Hvem er målgruppen?', answer: 'Primært erhvervskunder som kontorer, produktionsvirksomheder og detail – alle der kan spare betydeligt på energiregningen med LED-belysning.' },
+        { question: 'Hvad er provisionsniveauet?', answer: 'Du modtager fast grundhonorar plus provision pr. booket møde der gennemføres.' },
+      ]} />
 
       <section className="bg-blue-600 text-white py-16">
         <div className="container mx-auto px-4 text-center">

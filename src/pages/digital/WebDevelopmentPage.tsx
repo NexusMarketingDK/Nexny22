@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { Code, CheckCircle, ArrowRight, Smartphone, Zap, Shield, BarChart3 } from 'lucide-react';
 import HeroSection from '../../components/HeroSection';
 import SEO from '../../components/SEO';
+import FAQSection from '../../components/FAQSection';
+import CTASection from '../../components/CTASection';
 
 export default function WebDevelopmentPage() {
   const features = [
@@ -144,6 +146,21 @@ export default function WebDevelopmentPage() {
           </Link>
         </div>
       </section>
+      <FAQSection faqs={[
+        { question: 'Hvad koster en hjemmeside hos Nexny?', answer: 'Prisen afhænger af scope og kompleksitet. Vi tilbyder løsninger fra enkle landingssider til avancerede webapplikationer. Kontakt os for et uforpligtende tilbud.' },
+        { question: 'Hvem ejer hjemmesiden når den er færdig?', answer: 'Du ejer 100% af koden og indholdet. Nexny leverer en løsning du selv kan administrere og videreudvikle.' },
+        { question: 'Kan I overtage og videreudvikle en eksisterende hjemmeside?', answer: 'Ja – vi kan gennemgå, optimere og videreudvikle eksisterende løsninger uanset teknologi.' },
+        { question: 'Laver I mobilvenlige hjemmesider?', answer: 'Alle Nexny\'s webløsninger er fuldt responsive og optimeret til mobile enheder.' },
+        { question: 'Inkluderer I SEO-optimering?', answer: 'Ja – vi bygger alle hjemmesider med solid teknisk SEO som fundament, inkl. hurtig loadtid, strukturerede data og metadata.' },
+      ]} />
+      <CTASection
+        title="Få dit webudviklingsprojekt startet i dag"
+        subtitle="Moderne, konverteringsoptimerede webløsninger der repræsenterer din virksomhed professionelt."
+        primaryText="Kontakt os"
+        primaryLink="/kontakt"
+        secondaryText="Se digital portfolio"
+        secondaryLink="/digital/hjemmesider"
+      />
     </>
   );
 }

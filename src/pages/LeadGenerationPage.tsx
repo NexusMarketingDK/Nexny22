@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { Target, CheckCircle, ArrowRight, BarChart3, Database, Zap } from 'lucide-react';
 import HeroSection from '../components/HeroSection';
 import SEO from '../components/SEO';
+import FAQSection from '../components/FAQSection';
+import CTASection from '../components/CTASection';
 
 const LeadGenerationPage: React.FC = () => {
   return (
@@ -111,6 +113,21 @@ const LeadGenerationPage: React.FC = () => {
           </Link>
         </div>
       </section>
+      <FAQSection faqs={[
+        { question: 'Hvad er leadgenerering?', answer: 'Leadgenerering er processen med at identificere og tiltrække potentielle kunder (leads) til din virksomhed gennem målrettede marketingaktiviteter og opsøgende salg.' },
+        { question: 'Hvad er forskellen på et koldt og varmt lead?', answer: 'Et koldt lead er en potentiel kunde der endnu ikke har vist interesse. Et varmt lead har vist interesse og er klar til at blive kontaktet af dit salgsteam.' },
+        { question: 'Kan I integrere leads direkte i vores CRM?', answer: 'Ja – Nexny leverer leads i det format der passer til dit CRM-system, så leadflow er så gnidningsfrit som muligt.' },
+        { question: 'Hvad er lead scoring?', answer: 'Lead scoring er en metode til at rangere leads baseret på deres sandsynlighed for at konvertere, baseret på adfærd, demografi og engagementniveau.' },
+        { question: 'Hvor mange leads kan vi forvente?', answer: 'Det afhænger af branche, budget og kampagnelængde. Vi sætter realistiske mål og rapporterer løbende på resultater.' },
+      ]} />
+      <CTASection
+        title="Start din leadgenerering med Nexny i dag"
+        subtitle="Struktureret, datadrevet leadgenerering der leverer salgsklar emner direkte til dit CRM."
+        primaryText="Kontakt os"
+        primaryLink="/kontakt"
+        secondaryText="Se priser"
+        secondaryLink="/priser"
+      />
     </>
   );
 };

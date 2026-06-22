@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { Monitor, CheckCircle, ArrowRight, Search, TrendingUp, PenTool, Gauge } from 'lucide-react';
 import HeroSection from '../../components/HeroSection';
 import SEO from '../../components/SEO';
+import FAQSection from '../../components/FAQSection';
+import CTASection from '../../components/CTASection';
 
 export default function WebsitesPage() {
   const features = [
@@ -153,6 +155,20 @@ export default function WebsitesPage() {
           </Link>
         </div>
       </section>
+      <FAQSection faqs={[
+        { question: 'Hvad er en landingsside?', answer: 'En landingsside er en målrettet webside designet til at konvertere besøgende til leads eller kunder – typisk brugt i kampagner og annoncering.' },
+        { question: 'Kan jeg selv opdatere indholdet på min hjemmeside?', answer: 'Ja – vi bygger med brugervenlige CMS-løsninger så du nemt kan opdatere tekst, billeder og indhold uden teknisk baggrund.' },
+        { question: 'Hvor lang tid tager det at bygge en hjemmeside?', answer: 'En simpel hjemmeside tager typisk 2-4 uger. Større løsninger aftales individuelt baseret på scope.' },
+        { question: 'Inkluderer I hosting og domæne?', answer: 'Vi kan hjælpe med opsætning af hosting og domæne, eller integrere med din eksisterende løsning.' },
+      ]} />
+      <CTASection
+        title="Få en professionel hjemmeside der konverterer"
+        subtitle="Nexny bygger moderne, hurtige hjemmesider der tiltrækker kunder og genererer leads."
+        primaryText="Kontakt os"
+        primaryLink="/kontakt"
+        secondaryText="Se priser"
+        secondaryLink="/priser"
+      />
     </>
   );
 }

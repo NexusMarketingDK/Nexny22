@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { CheckCircle, ArrowRight, Clock, PiggyBank, Home, Zap, BarChart3, Shield } from 'lucide-react';
 import HeroSection from '../../components/HeroSection';
 import SEO from '../../components/SEO';
+import FAQSection from '../../components/FAQSection';
 
 export default function EnergySalesPage() {
   return (
@@ -150,6 +151,13 @@ export default function EnergySalesPage() {
           </div>
         </div>
       </section>
+
+      <FAQSection faqs={[
+        { question: 'Hvem sælger jeg til?', answer: 'Du sælger strøm og energioptimering til både private (B2C) og virksomheder (B2B) i hele Danmark.' },
+        { question: 'Kræver det energifaglig baggrund?', answer: 'Nej – Nexny oplærer dig i produkterne. Du skal primært have gode kommunikationsevner og salgsevner.' },
+        { question: 'Er der store kunder der kan give store provisioner?', answer: 'Ja – erhvervskunder kan have meget høje energiforbrug, hvilket giver attraktive provisioner på større aftaler.' },
+        { question: 'Kan jeg vælge kun at arbejde B2B eller B2C?', answer: 'Ja – du aftaler med Nexny hvilken del af markedet du ønsker at fokusere på.' },
+      ]} />
 
       <section className="bg-blue-600 text-white py-16">
         <div className="container mx-auto px-4 text-center">

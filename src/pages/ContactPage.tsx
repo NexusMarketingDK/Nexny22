@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Phone, Mail, MapPin, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
+import CTASection from '../components/CTASection';
 
 const ContactPage: React.FC = () => {
   useEffect(() => {
@@ -231,6 +232,14 @@ const ContactPage: React.FC = () => {
           </div>
         </div>
       </div>
+      <CTASection
+        title="Kom i gang med Nexny – helt uforpligtende"
+        subtitle="Udfyld formularen eller ring til os. Vi vender tilbage inden for én hverdag."
+        primaryText="Se vores ydelser"
+        primaryLink="/ydelser"
+        secondaryText="Se priser"
+        secondaryLink="/priser"
+      />
     </>
   );
 };

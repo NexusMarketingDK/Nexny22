@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Calendar } from 'lucide-react';
 import SEO from '../components/SEO';
+import FAQSection from '../components/FAQSection';
+import CTASection from '../components/CTASection';
 
 const BlogPage: React.FC = () => {
   const posts = [
@@ -79,6 +81,19 @@ const BlogPage: React.FC = () => {
           </div>
         </div>
       </section>
+      <FAQSection faqs={[
+        { question: 'Hvad skriver Nexny om på bloggen?', answer: 'Nexny\'s blog dækker emner som B2B telemarketing, mødebooking, leadgenerering, webudvikling, AI-integration og salgsoptimering.' },
+        { question: 'Hvem skriver artiklerne?', answer: 'Artiklerne skrives af Nexny\'s team af salgs- og digitalspecialister baseret på praktisk erfaring og aktuel brancheviden.' },
+        { question: 'Kan jeg bruge Nexny\'s blogindhold i min virksomhed?', answer: 'Du er velkommen til at dele og referere til vores indhold. Kontakt os, hvis du ønsker at bruge indholdet kommercielt.' },
+      ]} />
+      <CTASection
+        title="Hold dig opdateret – og lad Nexny drive din vækst"
+        subtitle="Læs vores seneste artikler om B2B salg, mødebooking og digital vækst – og kontakt os, når du er klar til at komme i gang."
+        primaryText="Kontakt Nexny"
+        primaryLink="/kontakt"
+        secondaryText="Se ydelser"
+        secondaryLink="/ydelser"
+      />
     </>
   );
 };
