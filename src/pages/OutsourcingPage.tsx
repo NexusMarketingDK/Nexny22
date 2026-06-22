@@ -43,7 +43,7 @@ const OutsourcingPage: React.FC = () => {
       <SEO
         title="Hvorfor Nexny? | Din Vækstpartner inden for Telesalg og AI"
         description="Oplev fordelene ved at vælge Nexny som vækstpartner inden for telesalg, mødebooking, webudvikling, leadgenerering og AI-udviklingsopgaver."
-        canonical="/hvorfor-nexusmarketing"
+        canonical="/hvorfor-nexny"
         keywords="outsource salg, outsource mødebooking, Nexny, B2B salgsoutsourcing, ekstern salgsstyrke"
       />
 

@@ -19,20 +19,20 @@ const SEO: React.FC<SEOProps> = ({
   description,
   canonical,
   keywords,
-  ogImage = 'https://nexusmarketing.dk/social-share.jpg',
+  ogImage = 'https://nexny.dk/social-share.jpg',
   ogType = 'website',
   articlePublishedTime,
   articleModifiedTime,
   author,
   breadcrumbs
 }) => {
-  const domain = 'https://nexusmarketing.dk';
+  const domain = 'https://nexny.dk';
   const fullCanonical = canonical ? `${domain}${canonical}` : domain;
 
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "Nexus Marketing",
+    "name": "Nexny",
     "url": domain,
     "logo": `${domain}/logo.png`,
     "description": "Professionel B2B telemarketing, mødebooking og webudvikling i Danmark",
@@ -52,7 +52,7 @@ const SEO: React.FC<SEOProps> = ({
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "Nexus Marketing",
+    "name": "Nexny",
     "url": domain,
     "potentialAction": {
       "@type": "SearchAction",
@@ -82,11 +82,11 @@ const SEO: React.FC<SEOProps> = ({
     "dateModified": articleModifiedTime || articlePublishedTime,
     "author": {
       "@type": "Person",
-      "name": author || "Nexus Marketing"
+      "name": author || "Nexny"
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Nexus Marketing",
+      "name": "Nexny",
       "logo": {
         "@type": "ImageObject",
         "url": `${domain}/logo.png`
@@ -102,8 +102,8 @@ const SEO: React.FC<SEOProps> = ({
       {keywords && <meta name="keywords" content={keywords} />}
       <link rel="canonical" href={fullCanonical} />
       <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-      <meta name="author" content={author || "Nexus Marketing"} />
-      <meta name="publisher" content="Nexus Marketing" />
+      <meta name="author" content={author || "Nexny"} />
+      <meta name="publisher" content="Nexny" />
       <meta name="language" content="Danish" />
       <meta name="geo.region" content="DK" />
       <meta name="geo.placename" content="Denmark" />
@@ -117,7 +117,7 @@ const SEO: React.FC<SEOProps> = ({
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <meta property="og:image:alt" content={title} />
-      <meta property="og:site_name" content="Nexus Marketing" />
+      <meta property="og:site_name" content="Nexny" />
       <meta property="og:locale" content="da_DK" />
 
       {/* Article Specific Tags */}
@@ -137,7 +137,7 @@ const SEO: React.FC<SEOProps> = ({
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={ogImage} />
       <meta name="twitter:image:alt" content={title} />
-      <meta name="twitter:site" content="@NexusMarketing" />
+      <meta name="twitter:site" content="@Nexny" />
 
       {/* Language and Mobile Tags */}
       <html lang="da" />

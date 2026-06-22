@@ -100,7 +100,7 @@ const BlogPost: React.FC = () => {
       ]);
       
       // Update document title for SEO
-      document.title = `${mockPost.title} | Nexus Marketing Blog`;
+      document.title = `${mockPost.title} | Nexny Blog`;
     }, 300);
     
     // Scroll to top on page load or slug change
@@ -122,7 +122,7 @@ const BlogPost: React.FC = () => {
     <>
       {post && (
         <SEO 
-          title={`${post.title} | Nexus Marketing Blog`}
+          title={`${post.title} | Nexny Blog`}
           description={post.excerpt}
           canonical={`/blog/${post.slug}`}
         />
