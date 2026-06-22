@@ -73,8 +73,8 @@ const BlogPost: React.FC = () => {
         date: '15. august 2023',
         author: 'Mette Hansen',
         authorRole: 'Senior Telemarketing Specialist',
-        authorImage: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=600',
-        image: 'https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        authorImage: 'https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=600',
+        image: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         tags: ['Telemarketing', 'B2B Salg', 'Leadgenerering', 'Salgsstrategier']
       };
       
@@ -85,17 +85,17 @@ const BlogPost: React.FC = () => {
         {
           slug: 'mødebooking-best-practices',
           title: '7 Best Practices for succesfuld mødebooking i B2B-sektoren',
-          image: 'https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+          image: 'https://images.pexels.com/photos/3182781/pexels-photo-3182781.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
         },
         {
           slug: 'outsourcing-telemarketing-fordele',
           title: 'Fordele ved at outsource din telemarketing til specialister',
-          image: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+          image: 'https://images.pexels.com/photos/1181695/pexels-photo-1181695.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
         },
         {
           slug: 'digital-omstilling-telemarketing',
           title: 'Digital omstilling i telemarketing: Trends og muligheder',
-          image: 'https://images.pexels.com/photos/6476808/pexels-photo-6476808.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+          image: 'https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
         }
       ]);
       
