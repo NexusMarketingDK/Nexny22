@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Phone, Users, Code, ArrowRight, Briefcase, BarChart3, CheckCircle } from 'lucide-react';
+import { Phone, Users, Code, ArrowRight, Briefcase, BarChart3, CheckCircle, TrendingUp, HeartHandshake } from 'lucide-react';
 import HeroSection from '../components/HeroSection';
 import SEO from '../components/SEO';
 
@@ -115,6 +115,47 @@ const HomePage: React.FC = () => {
         secondaryCtaLink="/freelance-telemarketing"
         backgroundImage="https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       />
+
+      <section className="section bg-gray-50">
+        <div className="container">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4">Hvorfor vælge Nexny som salgspartner?</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Nexny kombinerer menneskelig salgskraft med datadrevne metoder for at levere resultater der gør en reel forskel for din bundlinje.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              {
+                icon: <TrendingUp size={40} className="text-blue-600" />,
+                title: 'Skalér dit salg',
+                description: 'Nexny leverer kvalificerede møder og varme leads direkte til dit salgsteam – så I kan skalere uden at ansætte.'
+              },
+              {
+                icon: <BarChart3 size={40} className="text-blue-600" />,
+                title: 'Klar ROI-rapportering',
+                description: 'Du får løbende adgang til performance-data, mødestatistik og ROI-beregning i klare, handlingsrettede rapporter.'
+              },
+              {
+                icon: <HeartHandshake size={40} className="text-blue-600" />,
+                title: 'Tilpasset til dig',
+                description: 'Vi skræddersyr vores løsning til din branche, målgruppe og budget. Ingen standardpakker – kun præcis det du har brug for.'
+              }
+            ].map((benefit, index) => (
+              <div key={index} className="text-center p-8 bg-white rounded-lg shadow-md">
+                <div className="flex justify-center mb-4">{benefit.icon}</div>
+                <h3 className="text-xl font-semibold mb-3">{benefit.title}</h3>
+                <p className="text-gray-600">{benefit.description}</p>
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-10">
+            <Link to="/samarbejdspartner" className="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+              Bliv samarbejdspartner <ArrowRight size={16} className="ml-2" />
+            </Link>
+          </div>
+        </div>
+      </section>
 
       <section className="section bg-white">
         <div className="container">

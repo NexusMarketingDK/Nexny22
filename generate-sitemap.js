@@ -4,7 +4,7 @@ import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-const domain = 'https://nexusmarketing.dk';
+const domain = 'https://nexny.dk';
 
 // Get current date for pages that update frequently
 const currentDate = new Date().toISOString();
@@ -67,78 +67,36 @@ const pages = [
     lastmod: currentDate
   },
   
-  // Blog Posts - All individual blog articles with actual publish dates
+  // Blog Posts
   {
-    path: '/blog/effektive-telemarketing-strategier-2025',
+    path: '/blog/saas-loesninger-2026',
     priority: '0.7',
     changefreq: 'monthly',
-    lastmod: new Date('2025-01-15').toISOString()
+    lastmod: new Date('2026-06-01').toISOString()
   },
   {
-    path: '/blog/mødebooking-best-practices',
+    path: '/blog/ai-automation-2026',
     priority: '0.7',
     changefreq: 'monthly',
-    lastmod: new Date('2024-12-03').toISOString()
+    lastmod: new Date('2026-05-15').toISOString()
   },
   {
-    path: '/blog/outsourcing-telemarketing-fordele',
+    path: '/blog/modebooking-2026',
     priority: '0.7',
     changefreq: 'monthly',
-    lastmod: new Date('2024-11-21').toISOString()
+    lastmod: new Date('2026-04-20').toISOString()
   },
   {
-    path: '/blog/freelance-sælger-karriere',
+    path: '/blog/telesalg-2026',
     priority: '0.7',
     changefreq: 'monthly',
-    lastmod: new Date('2024-10-12').toISOString()
+    lastmod: new Date('2026-03-10').toISOString()
   },
   {
-    path: '/blog/digital-omstilling-telemarketing',
+    path: '/blog/outbound-sales-2026',
     priority: '0.7',
     changefreq: 'monthly',
-    lastmod: new Date('2024-09-08').toISOString()
-  },
-  {
-    path: '/blog/salgsscripts-der-virker',
-    priority: '0.7',
-    changefreq: 'monthly',
-    lastmod: new Date('2024-08-17').toISOString()
-  },
-  {
-    path: '/blog/work-life-balance-freelancer',
-    priority: '0.7',
-    changefreq: 'monthly',
-    lastmod: new Date('2024-05-25').toISOString()
-  },
-  {
-    path: '/blog/b2b-partnerskaber-succes',
-    priority: '0.7',
-    changefreq: 'monthly',
-    lastmod: new Date('2024-03-12').toISOString()
-  },
-  {
-    path: '/blog/remote-sales-tips',
-    priority: '0.7',
-    changefreq: 'monthly',
-    lastmod: new Date('2024-01-08').toISOString()
-  },
-  {
-    path: '/blog/ai-telemarketing-fremtiden',
-    priority: '0.7',
-    changefreq: 'monthly',
-    lastmod: new Date('2023-11-15').toISOString()
-  },
-  {
-    path: '/blog/freelancer-indtjening-guide',
-    priority: '0.7',
-    changefreq: 'monthly',
-    lastmod: new Date('2023-09-20').toISOString()
-  },
-  {
-    path: '/blog/partner-success-stories',
-    priority: '0.7',
-    changefreq: 'monthly',
-    lastmod: new Date('2023-07-05').toISOString()
+    lastmod: new Date('2026-02-05').toISOString()
   },
   
   // Partner/Samarbejde pages
@@ -253,7 +211,7 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 </urlset>`;
 
 // Generate robots.txt with enhanced directives
-const robots = `# Robots.txt for Nexus Marketing
+const robots = `# Robots.txt for Nexny
 # Updated: ${new Date().toISOString().split('T')[0]}
 
 User-agent: *
@@ -325,18 +283,11 @@ Allow: /digital/hjemmesider/$
 Allow: /digital/ai-integration/$
 
 # Blog articles
-Allow: /blog/effektive-telemarketing-strategier-2025/$
-Allow: /blog/mødebooking-best-practices/$
-Allow: /blog/outsourcing-telemarketing-fordele/$
-Allow: /blog/freelance-sælger-karriere/$
-Allow: /blog/digital-omstilling-telemarketing/$
-Allow: /blog/salgsscripts-der-virker/$
-Allow: /blog/work-life-balance-freelancer/$
-Allow: /blog/b2b-partnerskaber-succes/$
-Allow: /blog/remote-sales-tips/$
-Allow: /blog/ai-telemarketing-fremtiden/$
-Allow: /blog/freelancer-indtjening-guide/$
-Allow: /blog/partner-success-stories/$
+Allow: /blog/saas-loesninger-2026/$
+Allow: /blog/ai-automation-2026/$
+Allow: /blog/modebooking-2026/$
+Allow: /blog/telesalg-2026/$
+Allow: /blog/outbound-sales-2026/$
 
 # Sitemap location
 Sitemap: ${domain}/sitemap.xml
