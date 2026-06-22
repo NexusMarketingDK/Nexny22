@@ -77,13 +77,13 @@ export default function AiWidgetPage() {
       />
 
       <HeroSection
-        title="AI-widget der genererer leads mens du sover"
-        subtitle="Placer Nexny's intelligente AI-widget på din hjemmeside og lad den besvare spørgsmål, kvalificere besøgende og booke møder – automatisk, på dansk, døgnet rundt."
+        title="AI-widget der håndterer kunder på hjemmesiden og genererer leads 24/7"
+        subtitle="Lad Nexny's intelligente AI-widget besvare spørgsmål, kvalificere besøgende og booke møder automatisk – uden at du løfter en finger."
         ctaText="Få en gratis demo"
         ctaLink="/kontakt"
         secondaryCtaText="Se priser"
         secondaryCtaLink="/priser"
-        backgroundImage="https://images.pexels.com/photos/8386434/pexels-photo-8386434.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        backgroundImage="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       />
 
       {/* Features */}
