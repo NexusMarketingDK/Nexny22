@@ -99,7 +99,7 @@ export default function AiIntegrationPage() {
   const workflows = [
     {
       title: 'AI-drevet salgscyklus for B2B virksomheder',
-      industry: 'Salg & CRM',
+      industry: 'AI-drevet salg og leads',
       steps: [
         { step: '1', label: 'Lead identificering', desc: 'Leadgenie.dk scanner automatisk markedet og finder virksomheder der matcher jeres ICP' },
         { step: '2', label: 'AI-kvalificering', desc: 'AI scorer og prioriterer leads baseret på branche, størrelse, adfærd og købssignaler' },
@@ -110,7 +110,7 @@ export default function AiIntegrationPage() {
     },
     {
       title: 'AI-kundeservice til e-handel og servicevirksomheder',
-      industry: 'Kundeservice',
+      industry: 'Automatisk kundeservice',
       steps: [
         { step: '1', label: 'Kundehenvendelse modtages', desc: 'Kunden skriver på chat, e-mail eller hjemmeside – AI\'en reagerer øjeblikkeligt på dansk' },
         { step: '2', label: 'Intent-analyse', desc: 'AI forstår kundens hensigt: spørgsmål, klage, bestilling eller booking – og ruter korrekt' },
@@ -121,7 +121,7 @@ export default function AiIntegrationPage() {
     },
     {
       title: 'AI-workflow til rekruttering og HR',
-      industry: 'HR & Rekruttering',
+      industry: 'Smart rekruttering med AI',
       steps: [
         { step: '1', label: 'Jobopslag genereres', desc: 'AI skriver SEO-optimerede jobopslag baseret på stillingsbeskrivelse og tone-of-voice' },
         { step: '2', label: 'CV-screening', desc: 'AI screener indkomne ansøgninger og scorer kandidater mod kravspecifikationen automatisk' },
@@ -132,7 +132,7 @@ export default function AiIntegrationPage() {
     },
     {
       title: 'AI til ejendomsmæglere og boligmarkedet',
-      industry: 'Ejendom',
+      industry: 'AI til ejendomsmæglere',
       steps: [
         { step: '1', label: 'Sælger-/køberhenvendelse', desc: 'AI-chatbot på hjemmesiden kvalificerer henvendelsen og indsamler relevante oplysninger' },
         { step: '2', label: 'Automatisk booking', desc: 'AIbooking sætter fremvisning eller vurderingsmøde op – synkroniseret med mæglernes kalendere' },
@@ -325,7 +325,7 @@ export default function AiIntegrationPage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">AI Workflow-eksempler til danske virksomheder</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Se hvordan konkrete AI-workflows ser ud i praksis – fra første kontakt til afsluttet salg eller service. Klik på en branche for at se flowet.
+              Se hvordan konkrete AI-workflows ser ud i praksis – fra første kontakt til afsluttet salg eller service.
             </p>
           </div>
 
