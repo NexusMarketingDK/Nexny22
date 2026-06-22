@@ -18,7 +18,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   ctaLink,
   secondaryCtaText,
   secondaryCtaLink,
-  backgroundImage = 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+  backgroundImage = 'https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
 }) => {
   return (
     <section className="relative bg-gray-900 text-white min-h-[90vh] flex items-center">
