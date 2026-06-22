@@ -85,6 +85,16 @@ const BlogPage: React.FC = () => {
         { question: 'Hvad skriver Nexny om på bloggen?', answer: 'Nexny\'s blog dækker emner som B2B telemarketing, mødebooking, leadgenerering, webudvikling, AI-integration og salgsoptimering.' },
         { question: 'Hvem skriver artiklerne?', answer: 'Artiklerne skrives af Nexny\'s team af salgs- og digitalspecialister baseret på praktisk erfaring og aktuel brancheviden.' },
         { question: 'Kan jeg bruge Nexny\'s blogindhold i min virksomhed?', answer: 'Du er velkommen til at dele og referere til vores indhold. Kontakt os, hvis du ønsker at bruge indholdet kommercielt.' },
+        { question: "Hvor ofte udgiver Nexny nye blogindlæg?", answer: "Vi udgiver løbende indlæg om B2B salg, telemarketing, webudvikling og AI-trends. Følg vores blog for de seneste opdateringer." },
+        { question: "Kan jeg tilmelde mig et nyhedsbrev?", answer: "Kontakt os og angiv at du gerne vil modtage vores nyhedsbrev med de seneste indsigter og tips." },
+        { question: "Skriver Nexny om specifikke brancher?", answer: "Ja – vi dækker brancher som SaaS, energi, finans, HR og servicevirksomheder med praksisnære artikler og cases." },
+        { question: "Kan jeg foreslå emner til bloggen?", answer: "Ja – send os dine forslag via kontaktformularen. Vi skriver gerne om emner der er relevante for vores læsere." },
+        { question: "Bruger Nexny AI til at skrive blogindlæg?", answer: "Vi bruger AI som hjælpeværktøj til research og struktur, men alle artikler kvalitetssikres og godkendes af vores faglige team." },
+        { question: "Er blogindlæggene SEO-optimerede?", answer: "Ja – alle Nexny's blogindlæg skrives med SEO som fokus, inkl. relevante søgeord, meta-beskrivelser og struktureret indhold." },
+        { question: "Kan jeg dele Nexny's artikler på LinkedIn?", answer: "Ja – du er meget velkommen til at dele vores artikler på sociale medier. Vi sætter pris på at budskabet spredes." },
+        { question: "Skriver Nexny gæsteindlæg for andre medier?", answer: "Ja – vi samarbejder med brancherelevante medier og platforme. Kontakt os hvis du er interesseret i et samarbejde." },
+        { question: "Er artiklerne tilgængelige på engelsk?", answer: "Primært skriver vi på dansk, men vi har udvalgte artikler og materialer på engelsk til internationale kunder." },
+        { question: "Kan jeg citere Nexny's artikler i mit eget indhold?", answer: "Ja – du er velkommen til at citere vores artikler med reference til nexny.dk som kilde." },
       ]} />
       <CTASection
         title="Hold dig opdateret – og lad Nexny drive din vækst"

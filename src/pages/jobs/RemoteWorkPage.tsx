@@ -153,6 +153,16 @@ export default function RemoteWorkPage() {
         { question: 'Skal jeg selv finde kunder?', answer: 'Nej – Nexny leverer leads, scripts og kampagnematerialer. Du ringer til de kontakter vi giver dig og arbejder efter vores salgsproces.' },
         { question: 'Hvornår udbetales provision?', answer: 'Provision udbetales månedligt baseret på verificerede salg og resultater.' },
         { question: 'Kan jeg arbejde for Nexny ved siden af et andet job?', answer: 'Ja – mange af vores freelancere arbejder for Nexny som biindtægt eller supplement til studier.' },
+        { question: "Har jeg brug for et dedikeret hjemmekontor?", answer: "Du behøver et stille sted at arbejde fra med stabil internetforbindelse og telefon. Et dedikeret hjemmekontor er en fordel, men ikke et krav." },
+        { question: "Hvad sker der, hvis mit internet driller?", answer: "Tekniske udfordringer er en del af hverdagen. Vi hjælper dig med at finde praktiske løsninger og har backup-procedurer." },
+        { question: "Er der fællesskab, selvom vi arbejder remote?", answer: "Ja – Nexny har regelmæssige online møder, workshops og kanaler til erfaringsudveksling for alle freelancere." },
+        { question: "Kan jeg tale med andre remote sælgere?", answer: "Ja – vi har et netværk af erfarne remote sælgere som deler tips, erfaringer og motivation." },
+        { question: "Hvad sker der, hvis jeg er syg?", answer: "Som freelancer er du ikke dækket af sygedagpenge fra Nexny. Du bestemmer selv din aktivitet, men tjener kun ved resultater." },
+        { question: "Kan jeg arbejde om aftenen?", answer: "Du kan strukturere din dag frit, men salgsopkald bør ske inden for normal dansk kontortid (8-17) for bedst resultat." },
+        { question: "Er der bonusprogrammer?", answer: "Ja – vi kører løbende konkurrencer og bonusprogrammer for topperformere i vores freelancenetværk." },
+        { question: "Hvad kræver det at starte op?", answer: "En telefon, computer og stabilt internet. Vi leverer scripts, leads og CRM-adgang fra dag ét." },
+        { question: "Kan jeg anbefale andre sælgere?", answer: "Ja – vi belønner anbefalinger der fører til nye freelance-samarbejder." },
+        { question: "Hvad er den typiske indkøringsperiode?", answer: "De fleste sælgere finder deres rytme og leverer gode resultater inden for de første 4-6 uger." },
       ]} />
 
       <section className="bg-blue-600 text-white py-16">

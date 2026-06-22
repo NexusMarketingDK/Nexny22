@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -8,77 +8,98 @@
   html {
     font-family: 'Inter', sans-serif;
     scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
-  
+
   body {
-    @apply bg-white text-gray-800;
+    @apply bg-sky-50 text-slate-600;
   }
-  
+
   h1, h2, h3, h4, h5, h6 {
-    @apply font-semibold text-gray-900;
+    @apply font-bold text-slate-900 tracking-tight;
   }
-  
-  h1 {
-    @apply text-4xl md:text-5xl;
-  }
-  
-  h2 {
-    @apply text-3xl md:text-4xl;
-  }
-  
-  h3 {
-    @apply text-2xl md:text-3xl;
-  }
-  
-  p {
-    @apply text-base leading-relaxed;
-  }
+
+  h1 { @apply text-4xl md:text-5xl lg:text-6xl leading-[1.1]; }
+  h2 { @apply text-3xl md:text-4xl leading-[1.15]; }
+  h3 { @apply text-xl md:text-2xl leading-snug; }
+
+  p { @apply leading-relaxed; }
 }
 
 @layer components {
+  /* Buttons */
   .btn {
-    @apply px-6 py-3 font-medium rounded-md transition-all duration-200;
+    @apply inline-flex items-center justify-center px-6 py-3 font-semibold rounded-xl transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 text-sm;
   }
-  
+
   .btn-primary {
-    @apply bg-blue-600 text-white hover:bg-blue-700;
+    @apply bg-gradient-to-r from-blue-600 to-indigo-600 text-white hover:from-blue-700 hover:to-indigo-700 shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 hover:-translate-y-px focus:ring-blue-500;
   }
-  
+
   .btn-secondary {
-    @apply bg-white text-blue-600 border border-blue-600 hover:bg-blue-50;
+    @apply bg-white text-slate-700 border border-slate-200 hover:border-blue-300 hover:text-blue-600 hover:bg-blue-50 shadow-sm focus:ring-blue-500;
   }
-  
+
+  /* Sections */
   .section {
-    @apply py-16 md:py-24;
+    @apply py-20 md:py-28;
   }
-  
+
   .container {
-    @apply mx-auto px-4 sm:px-6 lg:px-8;
+    @apply mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
   }
-  
+
+  /* Cards */
   .card {
-    @apply bg-white rounded-lg shadow-md transition-all duration-300 hover:shadow-lg;
+    @apply bg-white rounded-2xl border border-blue-100/60 shadow-sm hover:shadow-lg hover:shadow-blue-100/50 transition-all duration-300 hover:-translate-y-0.5;
+  }
+
+  /* Gradient text util */
+  .gradient-text {
+    @apply bg-gradient-to-r from-blue-600 to-indigo-500 bg-clip-text text-transparent;
+  }
+
+  /* Section label above headings */
+  .section-label {
+    @apply text-xs font-bold text-blue-600 uppercase tracking-[0.15em] mb-3 block;
+  }
+
+  /* Pill badge */
+  .badge {
+    @apply inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-blue-50 text-blue-700 border border-blue-100;
   }
 }
 
+/* Hero gradient background */
+.bg-hero-gradient {
+  background: linear-gradient(135deg, #1e40af 0%, #2563eb 50%, #3b82f6 100%);
+}
+
+/* Subtle dot grid */
+.bg-dot-pattern {
+  background-image: radial-gradient(circle, rgba(59,130,246,0.15) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* Animations */
 .fade-in {
-  animation: fadeIn 0.8s ease-in-out forwards;
+  animation: fadeIn 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
   opacity: 0;
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
-.stagger-1 { animation-delay: 0.1s; }
-.stagger-2 { animation-delay: 0.2s; }
-.stagger-3 { animation-delay: 0.3s; }
-.stagger-4 { animation-delay: 0.4s; }
-.stagger-5 { animation-delay: 0.5s; }
+.stagger-1 { animation-delay: 0.08s; }
+.stagger-2 { animation-delay: 0.16s; }
+.stagger-3 { animation-delay: 0.24s; }
+.stagger-4 { animation-delay: 0.32s; }
+.stagger-5 { animation-delay: 0.40s; }
+
+/* Glow ring for accent elements */
+.glow-blue {
+  box-shadow: 0 0 0 1px rgba(59,130,246,0.2), 0 4px 24px -4px rgba(59,130,246,0.3);
+}

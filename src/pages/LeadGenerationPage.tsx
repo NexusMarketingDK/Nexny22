@@ -119,6 +119,16 @@ const LeadGenerationPage: React.FC = () => {
         { question: 'Kan I integrere leads direkte i vores CRM?', answer: 'Ja – Nexny leverer leads i det format der passer til dit CRM-system, så leadflow er så gnidningsfrit som muligt.' },
         { question: 'Hvad er lead scoring?', answer: 'Lead scoring er en metode til at rangere leads baseret på deres sandsynlighed for at konvertere, baseret på adfærd, demografi og engagementniveau.' },
         { question: 'Hvor mange leads kan vi forvente?', answer: 'Det afhænger af branche, budget og kampagnelængde. Vi sætter realistiske mål og rapporterer løbende på resultater.' },
+        { question: "Hvad er forskellen på leadgenerering og mødebooking?", answer: "Leadgenerering identificerer og kvalificerer potentielle kunder. Mødebooking er næste skridt – at booke et møde med de identificerede leads." },
+        { question: "Kan I integrere med HubSpot eller Salesforce?", answer: "Ja – vi har erfaring med integration til de mest populære CRM-systemer inkl. HubSpot, Salesforce og Pipedrive." },
+        { question: "Hvad er en 'kold liste'?", answer: "En kold liste er en database af potentielle kunder som endnu ikke har haft kontakt med din virksomhed. Vi bruger målrettede lister til effektiv opsøgning." },
+        { question: "Kan I bygge en ny database til os?", answer: "Ja – vi kan opbygge og berige salgsdatabaser baseret på jeres ønskede målgruppe, branche og geografi." },
+        { question: "Hvad koster et lead?", answer: "Prisen per lead afhænger af branche, kompleksitet og kvalitetskrav. Kontakt os for en specifik prisberegning." },
+        { question: "Hvad er et 'varmt' lead i praksis?", answer: "Et varmt lead har vist konkret interesse – f.eks. ved at downloade materiale, besvare et opkald positivt eller anmode om mere information." },
+        { question: "Kan I hjælpe med indhold til at tiltrække leads?", answer: "Via vores digitale tjenester kan vi hjælpe med landingssider, whitepapers og andre leadmagneter." },
+        { question: "Hvad er conversion rate på jeres leads?", answer: "Conversion rate varierer per branche og produkt, men vores leads er altid kvalitetssikrede for at maksimere din salgsstyrkes tid." },
+        { question: "Kan I segmentere leads efter virksomhedsstørrelse?", answer: "Ja – vi kan filtrere og segmentere leads efter omsætning, medarbejderantal, geografi, branche og meget mere." },
+        { question: "Hvad er en lead nurturing-strategi?", answer: "Lead nurturing er processen med at pleje leads over tid med relevant indhold og opfølgning, indtil de er klar til at købe." },
       ]} />
       <CTASection
         title="Start din leadgenerering med Nexny i dag"

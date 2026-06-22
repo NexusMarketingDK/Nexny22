@@ -168,6 +168,16 @@ const FreelancersPage: React.FC = () => {
         { question: 'Kan jeg arbejde deltid?', answer: 'Ja – du bestemmer selv dine arbejdstider og kan arbejde alt fra få timer om ugen til fuld tid.' },
         { question: 'Hvad sker der, hvis jeg har spørgsmål under arbejdet?', answer: 'Du har altid adgang til support fra Nexny\'s erfarne salgsledere, der kan hjælpe med sparring, scripts og produktspørgsmål.' },
         { question: 'Hvilke produkter sælger man?', answer: 'Nexny har freelancere inden for mange brancher – webudvikling, energi, solceller, kaffeservice, pension, inkasso og mere. Du vælger det produkt, der passer bedst til dig.' },
+        { question: "Er der mulighed for fast ansættelse?", answer: "Samarbejdet starter som freelance. Dygtige freelancere kan på sigt diskutere andre samarbejdsformer med Nexny." },
+        { question: "Hvad sker der i oplæringsperioden?", answer: "Du gennemgår et onboarding-forløb med produkttræning, salgsteknik og gennemgang af scripts. Typisk tager det 1-3 dage." },
+        { question: "Kan jeg sælge flere produkter på én gang?", answer: "Normalt starter du med ét produkt. Når du har opnået rutine, kan du eventuelt tage flere produkter ind." },
+        { question: "Hvad er det laveste jeg kan tjene?", answer: "Det afhænger af aktivitetsniveau og produkt. Vi sætter realistiske forventninger ved opstart og er transparente om løn." },
+        { question: "Har I et fællesskab for freelancere?", answer: "Ja – du bliver en del af Nexny's netværk af freelancere og har adgang til erfaringsudveksling og fælles motivationsaktiviteter." },
+        { question: "Kan jeg arbejde fra udlandet?", answer: "Ja – så længe du har stabilt internet og kan kommunikere professionelt på dansk, kan du arbejde fra hele verden." },
+        { question: "Hvad er det vigtigste for at lykkes som freelancer hos Nexny?", answer: "Vedholdenhed, struktur og positivt mindset. Telemarketing kræver at man kan håndtere afvisninger og bevare motivationen." },
+        { question: "Hvornår modtager jeg min første udbetaling?", answer: "Udbetalinger sker typisk månedligt bagud. Du modtager en opgørelse over verificerede salg og aktiviteter." },
+        { question: "Er der en prøveperiode?", answer: "De første 2-4 uger betragtes typisk som en gensidig prøveperiode, så begge parter kan vurdere samarbejdet." },
+        { question: "Hvad er de typiske arbejdstider?", answer: "De fleste freelancere ringer inden for normal dansk kontortid (8-17), men du bestemmer selv inden for dette vindue." },
       ]} />
       <CTASection
         title="Tag styringen over din karriere – bliv freelance sælger hos Nexny"

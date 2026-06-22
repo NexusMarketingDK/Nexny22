@@ -148,6 +148,16 @@ const AboutPage: React.FC = () => {
         { question: 'Hvor er Nexny baseret?', answer: 'Nexny har kontorer i Danmark (Aarhus) og Spanien (Valencia), og betjener kunder i hele Skandinavien og internationalt.' },
         { question: 'Hvad adskiller Nexny fra andre telemarketingbureauer?', answer: 'Nexny kombinerer menneskelig salgskraft med datadrevne metoder og digitale løsninger – alt under ét tag. Vi fokuserer altid på ROI og dokumenterede resultater.' },
         { question: 'Arbejder I med store og små virksomheder?', answer: 'Ja – vi samarbejder med virksomheder i alle størrelser, fra iværksættere til etablerede B2B virksomheder.' },
+        { question: "Hvad er Nexny's vision?", answer: "Nexny's vision er at være Danmarks mest effektive vækstpartner for B2B virksomheder – ved at kombinere menneskelig salgskraft med digitale løsninger." },
+        { question: "Hvem er typisk kunden hos Nexny?", answer: "Vores typiske kunde er en B2B virksomhed med et klart produkt eller service, der ønsker at vækste hurtigt uden at ansætte et stort internt salgsteam." },
+        { question: "Er Nexny certificeret eller brancheorganiseret?", answer: "Nexny opererer i overensstemmelse med dansk markedsføringslov og branchestandarder for telemarketing og B2B salg." },
+        { question: "Hvad er Nexny's værdier?", answer: "Vores tre kerneværdier er: Resultater (vi leverer det vi lover), Transparens (åben kommunikation og rapportering) og Partnerskab (vi ser os som din partner, ikke leverandør)." },
+        { question: "Hvad er størrelsen på Nexny's team?", answer: "Nexny har et kernehold af specialister suppleret med et netværk af erfarne freelance sælgere der kan mobiliseres hurtigt." },
+        { question: "Har Nexny vundet priser eller anerkendelse?", answer: "Nexny er anerkendt af sine kunder for høj service og dokumenterede resultater. Vi deler gerne referencer og cases ved henvendelse." },
+        { question: "Hvad er Nexny's tilgang til kvalitetssikring?", answer: "Vi QA-tjekker løbende samtaler, scripts og resultater. Kvalitet er altid vigtigere end volumen hos Nexny." },
+        { question: "Er Nexny GDPR-compliant?", answer: "Ja – alle processer, databaser og kommunikation hos Nexny er i fuld overensstemmelse med GDPR og dansk databeskyttelseslovgivning." },
+        { question: "Hvad sker der, hvis min kontaktperson hos Nexny skifter?", answer: "Vi sikrer altid en grundig overdragelse og kontinuitet i samarbejdet. Du mister aldrig viden eller momentum ved personskifte." },
+        { question: "Kan jeg besøge Nexny's kontor?", answer: "Ja – vi har kontorer i Aarhus, Danmark og Valencia, Spanien. Kontakt os for at aftale et besøg." },
       ]} />
       <CTASection
         title="Lær os bedre at kende – tag en snak med teamet"

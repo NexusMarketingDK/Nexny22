@@ -160,6 +160,16 @@ export default function WebsitesPage() {
         { question: 'Kan jeg selv opdatere indholdet på min hjemmeside?', answer: 'Ja – vi bygger med brugervenlige CMS-løsninger så du nemt kan opdatere tekst, billeder og indhold uden teknisk baggrund.' },
         { question: 'Hvor lang tid tager det at bygge en hjemmeside?', answer: 'En simpel hjemmeside tager typisk 2-4 uger. Større løsninger aftales individuelt baseret på scope.' },
         { question: 'Inkluderer I hosting og domæne?', answer: 'Vi kan hjælpe med opsætning af hosting og domæne, eller integrere med din eksisterende løsning.' },
+        { question: "Hvad er forskellen på en hjemmeside og en webshop?", answer: "En hjemmeside præsenterer din virksomhed og genererer leads. En webshop giver kunder mulighed for direkte online køb." },
+        { question: "Kan I lave en hjemmeside på 1 uge?", answer: "En simpel landingsside kan vi levere på 1-2 uger. En fuld hjemmeside tager typisk 3-6 uger afhængigt af scope." },
+        { question: "Hvad er en 'one-pager'?", answer: "En one-pager er en hjemmeside med alt indhold på én lang side, opdelt i sektioner. Perfekt til produktlanceringer og kampagner." },
+        { question: "Kan I redesigne vores eksisterende hjemmeside?", answer: "Ja – vi tilbyder fulde redesigns med bevaret indhold og forbedret design, brugeroplevelse og konverteringsrate." },
+        { question: "Hvad er en conversion rate?", answer: "Conversion rate er procentdelen af besøgende der udfører en ønsket handling – f.eks. udfylder en formular eller køber et produkt." },
+        { question: "Kan vi selv redigere hjemmesiden?", answer: "Ja – vi bygger med brugervenlige CMS-løsninger som WordPress, Webflow eller lignende, så du nemt kan opdatere indhold." },
+        { question: "Hvad er en 'SSL-certifikat'?", answer: "Et SSL-certifikat krypterer forbindelsen mellem brugerens browser og din hjemmeside. Det er nødvendigt for sikkerhed og Google-rangering." },
+        { question: "Kan I lave flersprogede hjemmesider?", answer: "Ja – vi bygger flersprogede løsninger til virksomheder der opererer på internationale markeder." },
+        { question: "Hvad er retargeting?", answer: "Retargeting viser annoncer til besøgende der allerede har besøgt din hjemmeside. Vi kan integrere tracking til dette formål." },
+        { question: "Kan I hjælpe med billeder og tekst?", answer: "Ja – vi samarbejder med tekstforfattere og fotografer og kan levere en komplet løsning inkl. professionelt indhold." },
       ]} />
       <CTASection
         title="Få en professionel hjemmeside der konverterer"

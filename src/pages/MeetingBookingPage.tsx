@@ -139,6 +139,16 @@ const MeetingBookingPage: React.FC = () => {
         { question: 'Hvad sker der, hvis et møde aflyses?', answer: 'Vi håndterer afbud og ombookinger og sikrer at din kalender altid er fyldt med kvalificerede møder.' },
         { question: 'Kan I booke møder inden for specifikke brancher?', answer: 'Ja – vi har erfaring med mødebooking i over 16 brancher og tilpasser vores tilgang til din målgruppe.' },
         { question: 'Hvad er en typisk succesrate for mødebooking?', answer: 'Det afhænger af branche og målgruppe, men vores kunder oplever typisk en møderate på 10-20% af kvalificerede kontakter.' },
+        { question: "Hvad er en beslutningstager?", answer: "En beslutningstager er den person i en virksomhed der har myndighed til at godkende et køb – typisk en direktør, chef eller manager." },
+        { question: "Kan I booke møder i hele Skandinavien?", answer: "Vi fokuserer primært på det danske marked, men kan også understøtte mødebooking i Sverige og Norge." },
+        { question: "Hvad sker der, hvis en potentiel kunde siger nej?", answer: "Vi registrerer feedbacken, opdaterer databasen og vender eventuelt tilbage på et senere tidspunkt med ny information." },
+        { question: "Kan vi se hvem der er kontaktet?", answer: "Ja – du modtager løbende opdateringer og har fuld adgang til aktivitetslog og kontakthistorik." },
+        { question: "Hvordan håndterer I GDPR ved opkald?", answer: "Vi følger alle GDPR-regler for B2B kommunikation og registrering, inkl. korrekt håndtering af opt-out og dataopbevaring." },
+        { question: "Hvor mange opkald laver I per dag?", answer: "Aktivitetsniveauet aftales individuelt baseret på kampagnens omfang og budget." },
+        { question: "Kan vi stille krav til mødetidspunkter?", answer: "Ja – du kan angive præferencer for hvornår møder må bookes, f.eks. kun om morgenen eller bestemte ugedage." },
+        { question: "Hvad er en pre-kvalificering?", answer: "Pre-kvalificering betyder at vi screener potentielle kunder inden mødebooking for at sikre de opfylder dine kriterier for en god kunde." },
+        { question: "Kan vi se en demo af processen?", answer: "Ja – kontakt os for en gennemgang af vores mødebookingproces og eksempler på kampagner." },
+        { question: "Hvad er den hurtigste måde at komme i gang?", answer: "Udfyld kontaktformularen, og vi sætter et afklaringsmøde op inden for 2 hverdage." },
       ]} />
       <CTASection
         title="Book dit første mødebookingmøde med Nexny i dag"

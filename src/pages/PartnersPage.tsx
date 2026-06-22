@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { TrendingUp, BarChart3, HeartHandshake, CheckCircle, ArrowRight } from 'lucide-react';
+import { TrendingUp, BarChart3, HeartHandshake, ArrowRight } from 'lucide-react';
 import HeroSection from '../components/HeroSection';
 import SEO from '../components/SEO';
 import FAQSection from '../components/FAQSection';
@@ -37,25 +37,6 @@ const PartnersPage: React.FC = () => {
     { number: '02', title: 'Strategi & Opsætning', description: 'Vi udvikler en skræddersyet strategi med klare KPI\'er, målsætninger og kommunikationsplaner.' },
     { number: '03', title: 'Kampagnestart', description: 'Vores team briefes grundigt og går i gang med telemarketing eller mødebooking med løbende feedback og justering.' },
     { number: '04', title: 'Opfølgning & Optimering', description: 'Vi evaluerer resultater løbende og optimerer indsatsen kontinuerligt for at sikre den bedste ROI for dig.' }
-  ];
-
-  const faqs = [
-    {
-      question: 'Hvad koster det at samarbejde med Nexny?',
-      answer: 'Prisen afhænger af din branche, opgavens omfang og den valgte model. Vi tilbyder både No Cure No Pay og faste pakkeløsninger. Kontakt os for et skræddersyet tilbud.'
-    },
-    {
-      question: 'Hvornår kan I starte?',
-      answer: 'Typisk kan vi starte aktiv indsats inden for 1-2 uger efter en grundig opstartsbriefing.'
-    },
-    {
-      question: 'Hvilke brancher arbejder I med?',
-      answer: 'Vi arbejder med en bred vifte af B2B brancher – fra IT og SaaS til energi, facility, finans og konsulentbranchen.'
-    },
-    {
-      question: 'Hvad er minimumsperioden for samarbejde?',
-      answer: 'Vi anbefaler minimum 3 måneder for at se solide resultater, men vi er fleksible og tilpasser os din situation.'
-    }
   ];
 
   return (
@@ -135,22 +116,6 @@ const PartnersPage: React.FC = () => {
         </div>
       </section>
 
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8 text-center">Ofte stillede spørgsmål</h2>
-            <div className="space-y-6">
-              {faqs.map((faq, index) => (
-                <div key={index} className="bg-white p-6 rounded-lg shadow">
-                  <h3 className="text-lg font-semibold mb-2">{faq.question}</h3>
-                  <p className="text-gray-600">{faq.answer}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section className="bg-blue-600 text-white py-16">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6">Klar til at samarbejde med Nexny?</h2>
@@ -163,11 +128,25 @@ const PartnersPage: React.FC = () => {
         </div>
       </section>
       <FAQSection faqs={[
+        { question: 'Hvad koster det at samarbejde med Nexny?', answer: 'Prisen afhænger af din branche, opgavens omfang og den valgte model. Vi tilbyder både No Cure No Pay og faste pakkeløsninger. Kontakt os for et skræddersyet tilbud.' },
+        { question: 'Hvornår kan I starte?', answer: 'Typisk kan vi starte aktiv indsats inden for 1-2 uger efter en grundig opstartsbriefing.' },
+        { question: 'Hvilke brancher arbejder I med?', answer: 'Vi arbejder med en bred vifte af B2B brancher – fra IT og SaaS til energi, facility, finans og konsulentbranchen.' },
+        { question: 'Hvad er minimumsperioden for samarbejde?', answer: 'Vi anbefaler minimum 3 måneder for at se solide resultater, men vi er fleksible og tilpasser os din situation.' },
         { question: 'Hvad indebærer et samarbejde med Nexny?', answer: 'Som samarbejdspartner får du adgang til Nexny\'s team af erfarne salgsprofessionelle, der arbejder dedikeret med at generere leads og booke møder til din virksomhed.' },
         { question: 'Kan vi selv definere målgruppen?', answer: 'Ja – vi skræddersyr kampagner baseret på din ønskede målgruppe, branche, virksomhedsstørrelse og geografi.' },
         { question: 'Hvad er minimumslængden på et samarbejde?', answer: 'Vi anbefaler minimum 3 måneder for at opnå optimale resultater, men tilbyder fleksible løsninger.' },
         { question: 'Får vi adgang til rapportering?', answer: 'Ja, du modtager ugentlige og månedlige rapporter med alle aktiviteter, mødebookinger og resultater.' },
         { question: 'Arbejder I med NDA og fortrolighed?', answer: 'Selvfølgelig – alle samarbejder er beskyttet af fortrolighedsaftaler.' },
+        { question: "Hvad er en typisk opstartsproces?", answer: "Vi starter med en briefing, definerer målgruppe og KPI'er, laver et script og testperiode, og går derefter i fuld drift." },
+        { question: "Kan vi se vores leads i realtid?", answer: "Ja – vi kan give adgang til et live dashboard eller levere ugentlige rapporter afhængigt af jeres præference." },
+        { question: "Hvad sker der, hvis resultaterne ikke lever op til forventningerne?", answer: "Vi holder løbende optimeringsmøder og justerer tilgangen baseret på data. Transparens og ærlighed er grundlæggende for vores samarbejde." },
+        { question: "Kan vi stoppe samarbejdet hvis det ikke virker?", answer: "Ja – vi har rimelige opsigelsesvarsler og ønsker ikke at binde kunder der ikke oplever værdi." },
+        { question: "Arbejder I med eksklusive aftaler?", answer: "Vi kan tilbyde eksklusivitet inden for en given branche og region, afhængigt af samarbejdets omfang." },
+        { question: "Kan I arbejde med vores eksisterende salgsteam?", answer: "Absolut – mange kunder bruger Nexny som supplement til deres interne salgsteam, ikke som erstatning." },
+        { question: "Hvad er jeres erfaring med SaaS-virksomheder?", answer: "Vi har stærk erfaring med mødebooking og leadgenerering til SaaS-virksomheder, herunder tech-beslutningstagere og IT-chefer." },
+        { question: "Kan I hjælpe med at validere en ny målgruppe?", answer: "Ja – telemarketing og mødebooking er ideelle til at teste nye målgrupper hurtigt og datadrevet." },
+        { question: "Tilbyder I pilotprojekter?", answer: "Ja – vi tilbyder ofte en kortere pilotperiode så du kan evaluere resultater og samarbejdsform inden fuld opstart." },
+        { question: "Hvad adskiller Nexny fra et traditionelt callcenter?", answer: "Nexny er ikke et callcenter – vi er en strategisk salgspartner med fokus på kvalitet, målretning og dokumenterede resultater, ikke volumen." },
       ]} />
       <CTASection
         title="Bliv samarbejdspartner – start din vækst i dag"

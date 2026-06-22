@@ -157,6 +157,16 @@ export default function CoffeeServicePage() {
         { question: 'Er det et let produkt at sælge?', answer: 'Kaffe er et produkt næsten alle virksomheder bruger. Efterspørgslen er høj og samtalerne er typisk positive.' },
         { question: 'Hvem ringer jeg til?', answer: 'Du kontakter facility managers, indkøbsansvarlige og kontoradministratorer i virksomheder.' },
         { question: 'Hvad er opkaldsomfanget per dag?', answer: 'Du bestemmer selv dit tempo, men et typisk udgangspunkt er 30-50 opkald om dagen.' },
+        { question: "Er der opkaldslister klar fra dag ét?", answer: "Ja – Nexny leverer opkaldslister og kampagnematerialer, så du kan starte med det samme." },
+        { question: "Kan jeg se et eksempel på et script?", answer: "Ja – du modtager et gennemprøvet salgsskript ved opstart som du kan tilpasse din stil." },
+        { question: "Hvad sker der ved et succes-salg eller booket møde?", answer: "Du registrerer resultatet i vores system, og provisionen beregnes automatisk og udbetales månedligt." },
+        { question: "Er der løbende coaching?", answer: "Ja – Nexny's salgsledere holder regelmæssige coaching-sessioner og giver feedback på din salgsstil." },
+        { question: "Kan jeg prøve stillingen i en kortere periode?", answer: "Ja – de første 2-4 uger betragtes som en gensidig prøveperiode." },
+        { question: "Hvad er den gennemsnitlige indkomst for en aktiv freelancer?", answer: "Det afhænger af aktivitet og produkt. Aktive freelancere med gode resultater kan tjene et solidt supplement eller en fuld indkomst." },
+        { question: "Kan jeg arbejde for Nexny og for andre bureauer?", answer: "Som freelancer er du fri til at arbejde for andre, så længe der ikke er konkurrencekonflikt med Nexny's kunder." },
+        { question: "Er der skriftlige kontrakter?", answer: "Ja – alle samarbejder formaliseres med en klar freelance-aftale der beskriver vilkår, provision og forventninger." },
+        { question: "Hvad sker der, hvis jeg ikke trives med produktet?", answer: "Vi kan diskutere om du er bedre egnet til et andet produkt i Nexny's portfolio." },
+        { question: "Hvad er Nexny's forventninger til mig som freelancer?", answer: "Vi forventer selvdisciplin, professionel optræden og løbende kommunikation om aktivitet og resultater." },
       ]} />
 
       <section className="bg-blue-600 text-white py-16">
