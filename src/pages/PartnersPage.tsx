@@ -5,6 +5,7 @@ import HeroSection from '../components/HeroSection';
 import SEO from '../components/SEO';
 import FAQSection from '../components/FAQSection';
 import CTASection from '../components/CTASection';
+import AiSolutionsSection from '../components/AiSolutionsSection';
 
 const PartnersPage: React.FC = () => {
   useEffect(() => {
@@ -160,6 +161,8 @@ const PartnersPage: React.FC = () => {
           </div>
         </div>
       </section>
+
+      <AiSolutionsSection />
 
       <FAQSection faqs={[
         { question: 'Hvad koster det at samarbejde med Nexny?', answer: 'Prisen afhænger af din branche, opgavens omfang og den valgte model. Vi tilbyder både No Cure No Pay og faste pakkeløsninger. Kontakt os for et skræddersyet tilbud.' },
