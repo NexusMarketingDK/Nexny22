@@ -156,7 +156,7 @@ const PartnersPage: React.FC = () => {
               Magnora Marketing adskiller sig fundamentalt fra traditionelle callcentre ved at fokusere på kvalitet frem for volumen. Vi er en strategisk salgspartner med dyb brancheviden, målrettede kommunikationsstrategier og et konstant fokus på at maksimere ROI for vores samarbejdspartnere. Vores team af erfarne salgsprofessionelle arbejder dedikeret med din kampagne og justerer løbende tilgangen baseret på data, feedback og markedsudvikling.
             </p>
             <p className="text-gray-600 mb-4">
-              Kontakt Magnora Marketing i dag på +45 91 95 27 94 eller kontakt@magnoramarketing.dk – vi tilbyder en uforpligtende pilotperiode til reduceret pris for nye samarbejdspartnere, så du kan evaluere resultater og samarbejdsform inden fuld opstart.
+              Kontakt Magnora Marketing i dag på mail@magnoramarketing.dk eller mail@magnoramarketing.dk – vi tilbyder en uforpligtende pilotperiode til reduceret pris for nye samarbejdspartnere, så du kan evaluere resultater og samarbejdsform inden fuld opstart.
             </p>
           </div>
         </div>

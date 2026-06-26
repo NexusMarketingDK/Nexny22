@@ -174,7 +174,7 @@ export default function WebDevelopmentPage() {
               En professionel hjemmeside eller webapplikation fra Magnora Marketing er mere end blot en digital tilstedeværelse – det er din mest effektive sælger, der arbejder for dig døgnet rundt. Vi designer med konvertering for øje og bygger klare call-to-actions, brugervenlig navigation og overbevisende landingssider der omdanner besøgende til leads og leads til kunder. Kombineret med solid teknisk SEO sikrer vi, at din hjemmeside ranker godt i søgemaskinerne og tiltrækker den rigtige trafik.
             </p>
             <p className="text-gray-600 mb-4">
-              Kontakt Magnora Marketing på +45 91 95 27 94 eller kontakt@magnoramarketing.dk for en uforpligtende snak om dit webudviklingsprojekt. Vi sender et tilbud inden for 24 timer.
+              Kontakt Magnora Marketing på mail@magnoramarketing.dk eller mail@magnoramarketing.dk for en uforpligtende snak om dit webudviklingsprojekt. Vi sender et tilbud inden for 24 timer.
             </p>
           </div>
         </div>

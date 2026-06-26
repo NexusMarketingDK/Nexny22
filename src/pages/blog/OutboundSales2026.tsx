@@ -63,7 +63,7 @@ export default function OutboundSales2026() {
           Magnora Marketing tilbyder professionel outbound salgsindsats – fra leadidentifikation og kvalificering til mødebooking og opfølgning – som en fuldt outsourcet løsning eller som supplement til dit interne salgsteam. Vi bygger skræddersyede outbound salgsmaskiner tilpasset din branche, dine produkter og din målgruppe, og leverer løbende rapporter der viser præcist hvad indsatsen giver.
         </p>
         <p className="text-gray-600 mb-6">
-          Kontakt Magnora Marketing på +45 91 95 27 94 eller kontakt@magnoramarketing.dk for at høre mere om vores outbound salgsydelser og få et uforpligtende tilbud tilpasset din virksomheds vækstmål.
+          Kontakt Magnora Marketing på mail@magnoramarketing.dk eller mail@magnoramarketing.dk for at høre mere om vores outbound salgsydelser og få et uforpligtende tilbud tilpasset din virksomheds vækstmål.
         </p>
       </div>
       <CTASection

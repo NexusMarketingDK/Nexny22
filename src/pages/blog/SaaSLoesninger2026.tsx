@@ -58,7 +58,7 @@ export default function SaaSLoesninger2026() {
 
         <h2 className="text-2xl font-bold mb-4 mt-10">Magnora Marketing hjælper din virksomhed med digital omstilling</h2>
         <p className="text-gray-600 mb-6">
-          Magnora Marketing tilbyder en komplet digital transformationspakke for B2B virksomheder – fra strategisk rådgivning og platformvalg til implementering, integration og løbende optimering. Vi kombinerer vores digitale ekspertise med vores dybdegående erfaring inden for B2B salg for at levere løsninger der ikke kun fungerer teknisk, men som driver reel kommerciel vækst. Kontakt Magnora Marketing på +45 91 95 27 94 eller kontakt@magnoramarketing.dk for at høre mere.
+          Magnora Marketing tilbyder en komplet digital transformationspakke for B2B virksomheder – fra strategisk rådgivning og platformvalg til implementering, integration og løbende optimering. Vi kombinerer vores digitale ekspertise med vores dybdegående erfaring inden for B2B salg for at levere løsninger der ikke kun fungerer teknisk, men som driver reel kommerciel vækst. Kontakt Magnora Marketing på mail@magnoramarketing.dk eller mail@magnoramarketing.dk for at høre mere.
         </p>
       </div>
       <CTASection

@@ -190,7 +190,7 @@ const FreelancersPage: React.FC = () => {
               Magnora Marketing er i konstant vækst og søger løbende dygtige og motiverede freelance sælgere og mødebookere til vores projekter i hele Danmark. Uanset om du er studerende, forælder, erfaren sælger eller nystartet i branchen, er der plads til dig hos Magnora Marketing. Du vælger selv det produkt og den branche der passer bedst til din baggrund og interesse – og Magnora Marketing leverer resten. Mange af vores freelancere bruger samarbejdet som en fast biindtægt eller som udgangspunkt for en fuld karriere inden for B2B salg og telemarketing.
             </p>
             <p className="text-gray-600 mb-4">
-              Tag styringen over din karriere og kontakt Magnora Marketing på +45 91 95 27 94 eller kontakt@magnoramarketing.dk. Vi tager en uforpligtende snak om de muligheder der passer bedst til din situation, og kommer hurtigt i gang med et onboarding-forløb tilpasset dig.
+              Tag styringen over din karriere og kontakt Magnora Marketing på mail@magnoramarketing.dk eller mail@magnoramarketing.dk. Vi tager en uforpligtende snak om de muligheder der passer bedst til din situation, og kommer hurtigt i gang med et onboarding-forløb tilpasset dig.
             </p>
           </div>
         </div>

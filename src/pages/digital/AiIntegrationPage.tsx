@@ -496,7 +496,7 @@ export default function AiIntegrationPage() {
               Har du en idé til et AI-projekt, men mangler tekniske ressourcer eller tid til at realisere den? Magnora Marketing omsætter din idé til en fuldt fungerende AI-løsning leveret til aftalt pris og deadline. Vi håndterer alt fra strategi og arkitektur til implementering, test og lancering – og overdrager fuld dokumentation og kildekode til dig ved projektafslutning. Magnora Marketing håndterer desuden leads og booker salgsmøder til din salgsstyrke, mens du fokuserer på din kerneforretning.
             </p>
             <p className="text-gray-600 mb-4">
-              Book en uforpligtende AI-konsultation med Magnora Marketing på +45 91 95 27 94 eller kontakt@magnoramarketing.dk – vi gennemgår dine processer og præsenterer konkrete AI-løsninger med estimeret ROI. Gratis og uden binding.
+              Book en uforpligtende AI-konsultation med Magnora Marketing på mail@magnoramarketing.dk eller mail@magnoramarketing.dk – vi gennemgår dine processer og præsenterer konkrete AI-løsninger med estimeret ROI. Gratis og uden binding.
             </p>
           </div>
         </div>
