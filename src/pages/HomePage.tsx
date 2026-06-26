@@ -109,7 +109,7 @@ const HomePage: React.FC = () => {
       />
 
       <HeroSection
-        title="Din Vækstpartner inden for Telesalg, Mødebooking og AI-Integration"
+        title="Din Vækstpartner inden for Telesalg, Mødebooking, Webudvikling og AI-Integration"
         subtitle="Magnora Marketing leverer professionelt telesalg, kvalificeret mødebooking, leadgenerering, moderne webudvikling og AI-integration – alt samlet hos én partner."
         ctaText="Bliv samarbejdspartner"
         ctaLink="/samarbejdspartner"
