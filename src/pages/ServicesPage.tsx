@@ -69,15 +69,15 @@ const ServicesPage: React.FC = () => {
   return (
     <>
       <SEO
-        title="Ydelser | Nexny – Telesalg, Mødebooking, Webudvikling og AI"
-        description="Nexny's ydelser: professionelt telesalg, mødebooking, leadgenerering, webudvikling og AI-udviklingsopgaver. Din vækstpartner med dokumenterede resultater."
+        title="Ydelser | Magnora Marketing – Telesalg, Mødebooking, Webudvikling og AI"
+        description="Magnora Marketing's ydelser: professionelt telesalg, mødebooking, leadgenerering, webudvikling og AI-udviklingsopgaver. Din vækstpartner med dokumenterede resultater."
         canonical="/ydelser"
-        keywords="Nexny ydelser, telemarketing, mødebooking, leadgenerering, kundeservice, B2B salg, salgsoutsourcing"
+        keywords="Magnora Marketing ydelser, telemarketing, mødebooking, leadgenerering, kundeservice, B2B salg, salgsoutsourcing"
       />
 
       <HeroSection
         title="Ydelser der Skaber Reel Vækst"
-        subtitle="Nexny tilbyder skræddersyede salgs- og marketingløsninger der passer til din virksomhed – fra første kontakt til underskrevet kontrakt."
+        subtitle="Magnora Marketing tilbyder skræddersyede salgs- og marketingløsninger der passer til din virksomhed – fra første kontakt til underskrevet kontrakt."
         ctaText="Kontakt os"
         ctaLink="/kontakt"
         secondaryCtaText="Se priser"
@@ -90,7 +90,7 @@ const ServicesPage: React.FC = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Vores Kerneydelser</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Nexny tilbyder et komplet sortiment af B2B salgsydelser der kan sammensættes og skaleres efter dine behov og vækstmål.
+              Magnora Marketing tilbyder et komplet sortiment af B2B salgsydelser der kan sammensættes og skaleres efter dine behov og vækstmål.
             </p>
           </div>
 
@@ -121,7 +121,7 @@ const ServicesPage: React.FC = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Branchespecialiseret Ekspertise</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Nexny har dybdegående erfaring med B2B salg og mødebooking på tværs af en lang række brancher.
+              Magnora Marketing har dybdegående erfaring med B2B salg og mødebooking på tværs af en lang række brancher.
             </p>
           </div>
 
@@ -148,7 +148,7 @@ const ServicesPage: React.FC = () => {
 
       <section className="bg-blue-600 text-white py-16">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6">Klar til at vækste med Nexny?</h2>
+          <h2 className="text-3xl font-bold mb-6">Klar til at vækste med Magnora Marketing?</h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto">
             Kontakt os for en uforpligtende snak om, hvilke ydelser der passer bedst til din virksomheds mål og budget.
           </p>
@@ -160,12 +160,12 @@ const ServicesPage: React.FC = () => {
       <section className="section bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6">Outsourcing af Telemarketing og Mødebooking – Sådan Skaber Nexny Vækst</h2>
+            <h2 className="text-3xl font-bold mb-6">Outsourcing af Telemarketing og Mødebooking – Sådan Skaber Magnora Marketing Vækst</h2>
             <p className="text-gray-600 mb-4">
-              Outsourcing af B2B telemarketing og mødebooking til Nexny er den effektive vej til at skalere salget uden at investere i dyre faste ansættelser. Nexny's professionelle salgsteam håndterer hele processen – fra identifikation og screening af relevante beslutningstagere til booking af kvalificerede salgsmøder og systematisk opfølgning. Vi bruger strukturerede og dokumenterede salgsmetoder kombineret med løbende coaching og kvalitetssikring, som sikrer en konsistent høj mødekvalitet uanset branche og målgruppe.
+              Outsourcing af B2B telemarketing og mødebooking til Magnora Marketing er den effektive vej til at skalere salget uden at investere i dyre faste ansættelser. Magnora Marketing's professionelle salgsteam håndterer hele processen – fra identifikation og screening af relevante beslutningstagere til booking af kvalificerede salgsmøder og systematisk opfølgning. Vi bruger strukturerede og dokumenterede salgsmetoder kombineret med løbende coaching og kvalitetssikring, som sikrer en konsistent høj mødekvalitet uanset branche og målgruppe.
             </p>
             <p className="text-gray-600 mb-6">
-              Nexny tilbyder ydelser inden for telemarketing, mødebooking, leadgenerering og kundeservice der samlet set dækker hele salgscyklusen fra første kontakt til lukket aftale. Vi arbejder med BANT-kvalificering (Budget, Authority, Need, Timing) og leverer detaljerede mødenoter og briefing-materiale til din salgsstyrke, så hvert møde starter på det rigtige fundament. Alle kampagner er underbygget af løbende performancedata og månedlige rapporter med klar ROI-beregning.
+              Magnora Marketing tilbyder ydelser inden for telemarketing, mødebooking, leadgenerering og kundeservice der samlet set dækker hele salgscyklusen fra første kontakt til lukket aftale. Vi arbejder med BANT-kvalificering (Budget, Authority, Need, Timing) og leverer detaljerede mødenoter og briefing-materiale til din salgsstyrke, så hvert møde starter på det rigtige fundament. Alle kampagner er underbygget af løbende performancedata og månedlige rapporter med klar ROI-beregning.
             </p>
             <ul className="space-y-2">
               <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> B2B telemarketing med BANT-kvalificerede kundeemner</li>
@@ -182,10 +182,10 @@ const ServicesPage: React.FC = () => {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-6">Branchespecialiserede Salgsydelser til B2B Virksomheder i Danmark</h2>
             <p className="text-gray-600 mb-4">
-              Nexny har dybdegående brancheerfaring inden for tech og SaaS, IT-konsulentbranchen, grøn energi og bæredygtighed samt facility og servicevirksomheder. Denne specialiserede viden betyder, at vores salgskonsulenter taler branchens sprog, forstår de specifikke udfordringer og kan kommunikere værdiskabelse præcist og troværdigt over for beslutningstagerne i din målgruppe. Resultatet er højere konverteringsrater, bedre mødekvalitet og kortere salgscyklusser.
+              Magnora Marketing har dybdegående brancheerfaring inden for tech og SaaS, IT-konsulentbranchen, grøn energi og bæredygtighed samt facility og servicevirksomheder. Denne specialiserede viden betyder, at vores salgskonsulenter taler branchens sprog, forstår de specifikke udfordringer og kan kommunikere værdiskabelse præcist og troværdigt over for beslutningstagerne i din målgruppe. Resultatet er højere konverteringsrater, bedre mødekvalitet og kortere salgscyklusser.
             </p>
             <p className="text-gray-600 mb-4">
-              Uanset om du sælger enterprise software, rådgivningsydelser, energioptimering eller servicekontrakter, tilpasser Nexny sin tilgang og sine scripts til din unikke salgssituation. Kontakt Nexny på +45 91 95 27 94 eller kontakt@nexny.dk for at høre hvordan vi kan skræddersy en ydelsespakke der passer til din virksomhed, dine mål og dit budget.
+              Uanset om du sælger enterprise software, rådgivningsydelser, energioptimering eller servicekontrakter, tilpasser Magnora Marketing sin tilgang og sine scripts til din unikke salgssituation. Kontakt Magnora Marketing på +45 91 95 27 94 eller kontakt@magnoramarketing.dk for at høre hvordan vi kan skræddersy en ydelsespakke der passer til din virksomhed, dine mål og dit budget.
             </p>
           </div>
         </div>
@@ -193,13 +193,13 @@ const ServicesPage: React.FC = () => {
 
 
       <FAQSection faqs={[
-        { question: 'Hvad er B2B telemarketing?', answer: 'B2B telemarketing er direkte telefonsalg og kundekontakt rettet mod virksomheder. Nexny bruger målrettet telemarketing til at identificere beslutningstagere, kvalificere leads og booke salgsmøder.' },
+        { question: 'Hvad er B2B telemarketing?', answer: 'B2B telemarketing er direkte telefonsalg og kundekontakt rettet mod virksomheder. Magnora Marketing bruger målrettet telemarketing til at identificere beslutningstagere, kvalificere leads og booke salgsmøder.' },
         { question: 'Hvad er forskellen på telemarketing og mødebooking?', answer: 'Telemarketing dækker alle former for telefonisk B2B-salg og kundekontakt. Mødebooking er specifikt fokuseret på at booke kvalificerede salgsmøder hos beslutningstagere i din målgruppe.' },
-        { question: 'Kan I integrere med vores CRM-system?', answer: 'Ja, Nexny arbejder med de fleste CRM-systemer og kan levere leads og møder direkte ind i jeres eksisterende salgsflow.' },
+        { question: 'Kan I integrere med vores CRM-system?', answer: 'Ja, Magnora Marketing arbejder med de fleste CRM-systemer og kan levere leads og møder direkte ind i jeres eksisterende salgsflow.' },
         { question: 'Tilbyder I rapportering og statistik?', answer: 'Ja – du modtager løbende rapporter med aktivitetsdata, mødestatistik og ROI-beregning.' },
         { question: 'Kan I hjælpe os i specifikke brancher?', answer: 'Vi har dybdegående erfaring med over 16 brancher og tilpasser altid vores tilgang til din specifikke branche og målgruppe.' },
-        { question: "Kan Nexny hjælpe os med både B2B og B2C salg?", answer: "Primært fokuserer vi på B2B, men vi har også erfaring med B2C salg inden for energi, pension og lignende produkter." },
-        { question: "Hvad er en typisk mødefrekvens med Nexny?", answer: "Vi holder typisk ugentlige statusmøder med kunden og sender løbende rapporter på aktivitet og resultater." },
+        { question: "Kan Magnora Marketing hjælpe os med både B2B og B2C salg?", answer: "Primært fokuserer vi på B2B, men vi har også erfaring med B2C salg inden for energi, pension og lignende produkter." },
+        { question: "Hvad er en typisk mødefrekvens med Magnora Marketing?", answer: "Vi holder typisk ugentlige statusmøder med kunden og sender løbende rapporter på aktivitet og resultater." },
         { question: "Tilbyder I optagelse af salgssamtaler?", answer: "Ja – vi kan tilbyde optagelse og gennemgang af salgssamtaler til træning og kvalitetssikring, hvis du ønsker det." },
         { question: "Kan vi definere vores egen salgspitch?", answer: "Ja – vi arbejder altid med din virksomheds egne budskaber og tone of voice. Vi tilpasser scripts og materialer til jer." },
         { question: "Hvad er jeres succesrate på mødebooking?", answer: "Vores mødebookingsrate varierer afhængigt af branche og målgruppe, men vi opnår typisk 10-20% møder ud af kvalificerede kontakter." },
@@ -207,10 +207,10 @@ const ServicesPage: React.FC = () => {
         { question: "Arbejder I med internationale markeder?", answer: "Vi fokuserer primært på det danske marked, men kan også understøtte salg i Skandinavien og udvalgte europæiske markeder." },
         { question: "Hvad er minimumskontraktlængde?", answer: "Vi anbefaler minimum 3 måneder for at opnå optimale resultater og et validt datagrundlag for optimering." },
         { question: "Kan vi se eksempler på jeres arbejde?", answer: "Ja – kontakt os for cases og referencer fra vores tidligere og nuværende samarbejdspartnere." },
-        { question: "Hvad er fordelen ved at samle alle services hos Nexny?", answer: "Når telemarketing, mødebooking og digital tilstedeværelse er koordineret hos én partner, skabes et sammenhængende og mere effektivt salgssystem." },
+        { question: "Hvad er fordelen ved at samle alle services hos Magnora Marketing?", answer: "Når telemarketing, mødebooking og digital tilstedeværelse er koordineret hos én partner, skabes et sammenhængende og mere effektivt salgssystem." },
       ]} />
       <CTASection
-        title="Start dit salgssamarbejde med Nexny i dag"
+        title="Start dit salgssamarbejde med Magnora Marketing i dag"
         subtitle="Få adgang til professionelt telesalg, mødebooking og leadgenerering – alt samlet hos én partner."
         primaryText="Kontakt os nu"
         primaryLink="/kontakt"

@@ -9,10 +9,10 @@ export default function LedLightingPage() {
   return (
     <>
       <SEO
-        title="Freelance Sælger LED & Energieffektivisering | Nexny"
-        description="Bliv freelance sælger af LED-belysning og energieffektivisering til erhverv hos Nexny. Arbejd hjemmefra med fleksible tider og attraktiv provision."
+        title="Freelance Sælger LED & Energieffektivisering | Magnora Marketing"
+        description="Bliv freelance sælger af LED-belysning og energieffektivisering til erhverv hos Magnora Marketing. Arbejd hjemmefra med fleksible tider og attraktiv provision."
         canonical="/jobs/led-belysning"
-        keywords="freelance sælger LED, sælg energieffektivisering, LED belysning salg, erhvervsbelysning sælger, Nexny LED stilling"
+        keywords="freelance sælger LED, sælg energieffektivisering, LED belysning salg, erhvervsbelysning sælger, Magnora Marketing LED stilling"
       />
 
       <HeroSection
@@ -34,7 +34,7 @@ export default function LedLightingPage() {
                 Som freelance sælger inden for LED og energieffektivisering kontakter du virksomheder, produktionshaller, detailbutikker og offentlige institutioner med et budskab der resonerer: spar penge og reducer CO₂-udledning ved at skifte til moderne LED-belysning.
               </p>
               <p className="text-lg text-gray-600 mb-8">
-                Nexny leverer scripts, tilbudsskabeloner og produktviden. Du fokuserer på dialogen med kunden og på at booke møder eller lukke salget direkte.
+                Magnora Marketing leverer scripts, tilbudsskabeloner og produktviden. Du fokuserer på dialogen med kunden og på at booke møder eller lukke salget direkte.
               </p>
               <ul className="space-y-3">
                 {[
@@ -105,7 +105,7 @@ export default function LedLightingPage() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Hvad du får hos Nexny</h2>
+            <h2 className="text-3xl font-bold mb-4">Hvad du får hos Magnora Marketing</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
@@ -148,7 +148,7 @@ export default function LedLightingPage() {
               <h2 className="text-2xl font-bold mb-6">Sådan søger du</h2>
               <p className="text-gray-600 mb-6">Send os en kort besked om dig selv og din salgserfaring. Ingen formel ansøgning – bare skriv til os, så vender vi tilbage inden for 2 hverdage.</p>
               <Link to="/kontakt" className="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
-                Kontakt Nexny nu <ArrowRight size={16} className="ml-2" />
+                Kontakt Magnora Marketing nu <ArrowRight size={16} className="ml-2" />
               </Link>
             </div>
           </div>
@@ -157,25 +157,25 @@ export default function LedLightingPage() {
 
       <FAQSection faqs={[
         { question: 'Hvad sælger jeg som mødebooker inden for LED?', answer: 'Du kontakter erhvervskunder og booker møder med energieffektive belysningsløsninger fra en anerkendt LED-leverandør.' },
-        { question: 'Behøver jeg viden om LED-teknik?', answer: 'Nej – Nexny giver dig al den produktviden du har brug for. Det vigtigste er dine salgskompetencer og din motivation.' },
+        { question: 'Behøver jeg viden om LED-teknik?', answer: 'Nej – Magnora Marketing giver dig al den produktviden du har brug for. Det vigtigste er dine salgskompetencer og din motivation.' },
         { question: 'Hvem er målgruppen?', answer: 'Primært erhvervskunder som kontorer, produktionsvirksomheder og detail – alle der kan spare betydeligt på energiregningen med LED-belysning.' },
         { question: 'Hvad er provisionsniveauet?', answer: 'Du modtager fast grundhonorar plus provision pr. booket møde der gennemføres.' },
-        { question: "Er der opkaldslister klar fra dag ét?", answer: "Ja – Nexny leverer opkaldslister og kampagnematerialer, så du kan starte med det samme." },
+        { question: "Er der opkaldslister klar fra dag ét?", answer: "Ja – Magnora Marketing leverer opkaldslister og kampagnematerialer, så du kan starte med det samme." },
         { question: "Kan jeg se et eksempel på et script?", answer: "Ja – du modtager et gennemprøvet salgsskript ved opstart som du kan tilpasse din stil." },
         { question: "Hvad sker der ved et succes-salg eller booket møde?", answer: "Du registrerer resultatet i vores system, og provisionen beregnes automatisk og udbetales månedligt." },
-        { question: "Er der løbende coaching?", answer: "Ja – Nexny's salgsledere holder regelmæssige coaching-sessioner og giver feedback på din salgsstil." },
+        { question: "Er der løbende coaching?", answer: "Ja – Magnora Marketing's salgsledere holder regelmæssige coaching-sessioner og giver feedback på din salgsstil." },
         { question: "Kan jeg prøve stillingen i en kortere periode?", answer: "Ja – de første 2-4 uger betragtes som en gensidig prøveperiode." },
         { question: "Hvad er den gennemsnitlige indkomst for en aktiv freelancer?", answer: "Det afhænger af aktivitet og produkt. Aktive freelancere med gode resultater kan tjene et solidt supplement eller en fuld indkomst." },
-        { question: "Kan jeg arbejde for Nexny og for andre bureauer?", answer: "Som freelancer er du fri til at arbejde for andre, så længe der ikke er konkurrencekonflikt med Nexny's kunder." },
+        { question: "Kan jeg arbejde for Magnora Marketing og for andre bureauer?", answer: "Som freelancer er du fri til at arbejde for andre, så længe der ikke er konkurrencekonflikt med Magnora Marketing's kunder." },
         { question: "Er der skriftlige kontrakter?", answer: "Ja – alle samarbejder formaliseres med en klar freelance-aftale der beskriver vilkår, provision og forventninger." },
-        { question: "Hvad sker der, hvis jeg ikke trives med produktet?", answer: "Vi kan diskutere om du er bedre egnet til et andet produkt i Nexny's portfolio." },
-        { question: "Hvad er Nexny's forventninger til mig som freelancer?", answer: "Vi forventer selvdisciplin, professionel optræden og løbende kommunikation om aktivitet og resultater." },
+        { question: "Hvad sker der, hvis jeg ikke trives med produktet?", answer: "Vi kan diskutere om du er bedre egnet til et andet produkt i Magnora Marketing's portfolio." },
+        { question: "Hvad er Magnora Marketing's forventninger til mig som freelancer?", answer: "Vi forventer selvdisciplin, professionel optræden og løbende kommunikation om aktivitet og resultater." },
       ]} />
 
       <section className="bg-blue-600 text-white py-16">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6">Klar til at sælge grøn energi?</h2>
-          <p className="text-xl mb-8 max-w-3xl mx-auto">Kontakt Nexny og kom i gang med et produkt der skaber reel forskel – for kunden og for klimaet.</p>
+          <p className="text-xl mb-8 max-w-3xl mx-auto">Kontakt Magnora Marketing og kom i gang med et produkt der skaber reel forskel – for kunden og for klimaet.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/kontakt" className="inline-flex items-center bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
               Send ansøgning <ArrowRight className="ml-2" size={18} />

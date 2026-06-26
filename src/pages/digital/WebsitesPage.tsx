@@ -55,15 +55,15 @@ export default function WebsitesPage() {
   return (
     <>
       <SEO
-        title="Hjemmesider | Nexny – Professionelle Webløsninger der Konverterer"
-        description="Nexny designer og udvikler professionelle hjemmesider der er SEO-optimerede, hurtige og konverteringsvenlige. Skræddersyet til din virksomhed og dine mål."
+        title="Hjemmesider | Magnora Marketing – Professionelle Webløsninger der Konverterer"
+        description="Magnora Marketing designer og udvikler professionelle hjemmesider der er SEO-optimerede, hurtige og konverteringsvenlige. Skræddersyet til din virksomhed og dine mål."
         canonical="/digital/hjemmesider"
-        keywords="hjemmeside, webdesign, SEO hjemmeside, konverteringsoptimering, Nexny digital, professionel hjemmeside"
+        keywords="hjemmeside, webdesign, SEO hjemmeside, konverteringsoptimering, Magnora Marketing digital, professionel hjemmeside"
       />
 
       <HeroSection
         title="Hjemmesider der Skaber Resultater"
-        subtitle="Nexny bygger professionelle, SEO-optimerede hjemmesider der tiltrækker de rigtige besøgende og omdanner dem til kunder."
+        subtitle="Magnora Marketing bygger professionelle, SEO-optimerede hjemmesider der tiltrækker de rigtige besøgende og omdanner dem til kunder."
         ctaText="Få et tilbud"
         ctaLink="/kontakt"
         backgroundImage="https://images.pexels.com/photos/326501/pexels-photo-326501.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -72,7 +72,7 @@ export default function WebsitesPage() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Hvad gør en Nexny-hjemmeside anderledes?</h2>
+            <h2 className="text-3xl font-bold mb-4">Hvad gør en Magnora Marketing-hjemmeside anderledes?</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Vi bygger ikke bare smukke hjemmesider – vi bygger digitale salgsmaskiner der arbejder for dig døgnet rundt.
             </p>
@@ -97,7 +97,7 @@ export default function WebsitesPage() {
             <div>
               <h2 className="text-3xl font-bold mb-6">Alt er inkluderet</h2>
               <p className="text-lg text-gray-600 mb-8">
-                Hos Nexny får du en komplet løsning – fra første design-skitse til lancering og efterfølgende support. Ingen skjulte omkostninger.
+                Hos Magnora Marketing får du en komplet løsning – fra første design-skitse til lancering og efterfølgende support. Ingen skjulte omkostninger.
               </p>
               <ul className="space-y-3">
                 {included.map((item, i) => (
@@ -116,7 +116,7 @@ export default function WebsitesPage() {
             <div>
               <img
                 src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt="Webdesign og udvikling hos Nexny"
+                alt="Webdesign og udvikling hos Magnora Marketing"
                 className="rounded-xl shadow-lg w-full"
               />
             </div>
@@ -151,7 +151,7 @@ export default function WebsitesPage() {
             Fortæl os om din virksomhed og dine mål – vi sender et konkret tilbud inden for 24 timer.
           </p>
           <Link to="/kontakt" className="inline-flex items-center bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-            Kontakt Nexny nu <ArrowRight className="ml-2" />
+            Kontakt Magnora Marketing nu <ArrowRight className="ml-2" />
           </Link>
         </div>
       </section>
@@ -160,10 +160,10 @@ export default function WebsitesPage() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-6">Professionelle Hjemmesider der Konverterer – SEO-Optimeret og Mobilvenlig Design</h2>
             <p className="text-gray-600 mb-4">
-              En professionel hjemmeside fra Nexny er din vigtigste digitale investering – den arbejder for dig 24 timer i døgnet, 7 dage om ugen, og er ofte det første møde potentielle kunder har med din virksomhed. Nexny designer og bygger hjemmesider med et klart formål: at konvertere besøgende til leads og kunder. Vi kombinerer professionelt visuelt design, stærk UX-planlægning og teknisk SEO-optimering for at sikre at din hjemmeside both ser flot ud og ranker godt i Google.
+              En professionel hjemmeside fra Magnora Marketing er din vigtigste digitale investering – den arbejder for dig 24 timer i døgnet, 7 dage om ugen, og er ofte det første møde potentielle kunder har med din virksomhed. Magnora Marketing designer og bygger hjemmesider med et klart formål: at konvertere besøgende til leads og kunder. Vi kombinerer professionelt visuelt design, stærk UX-planlægning og teknisk SEO-optimering for at sikre at din hjemmeside both ser flot ud og ranker godt i Google.
             </p>
             <p className="text-gray-600 mb-6">
-              Alle Nexny's hjemmesider er fuldt responsive og mobilvenlige, og er bygget med hurtig indlæsningstid som en kerneprioritering. Vi opsætter Google Analytics og konverteringstracking som standard, integrerer GDPR-compliance og cookie-banner fra starten, og giver 3 måneders gratis support efter lancering. Du ejer 100% af koden og indholdet, og kan selv administrere hjemmesiden via det CMS vi implementerer.
+              Alle Magnora Marketing's hjemmesider er fuldt responsive og mobilvenlige, og er bygget med hurtig indlæsningstid som en kerneprioritering. Vi opsætter Google Analytics og konverteringstracking som standard, integrerer GDPR-compliance og cookie-banner fra starten, og giver 3 måneders gratis support efter lancering. Du ejer 100% af koden og indholdet, og kan selv administrere hjemmesiden via det CMS vi implementerer.
             </p>
             <ul className="space-y-2">
               <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> SEO-optimeret fra grunden med korrekt metadata og struktur</li>
@@ -180,10 +180,10 @@ export default function WebsitesPage() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-6">Hjemmeside Priser og Typer – Fra Enkle Landingssider til Komplette Webshops</h2>
             <p className="text-gray-600 mb-4">
-              Nexny leverer hjemmesider i alle størrelser og kompleksiteter – fra målrettede landingssider til kampagner og annoncetrafik, over professionelle virksomhedshjemmesider, til komplette webshops med fuldt betalingsflow og produktstyring. Vi tilbyder også porteføljesider, bookingplatforme og branche-specifikke løsninger tilpasset din forretning. Prisen afhænger af scope og kompleksitet, og vi sender altid et detaljeret og transparent tilbud inden projektet startes.
+              Magnora Marketing leverer hjemmesider i alle størrelser og kompleksiteter – fra målrettede landingssider til kampagner og annoncetrafik, over professionelle virksomhedshjemmesider, til komplette webshops med fuldt betalingsflow og produktstyring. Vi tilbyder også porteføljesider, bookingplatforme og branche-specifikke løsninger tilpasset din forretning. Prisen afhænger af scope og kompleksitet, og vi sender altid et detaljeret og transparent tilbud inden projektet startes.
             </p>
             <p className="text-gray-600 mb-4">
-              Kontakt Nexny på +45 91 95 27 94 eller kontakt@nexny.dk for at høre mere om, hvilken hjemmesideløsning der passer bedst til din virksomhed og dit budget. Vi sender et uforpligtende tilbud inden for 24 timer.
+              Kontakt Magnora Marketing på +45 91 95 27 94 eller kontakt@magnoramarketing.dk for at høre mere om, hvilken hjemmesideløsning der passer bedst til din virksomhed og dit budget. Vi sender et uforpligtende tilbud inden for 24 timer.
             </p>
           </div>
         </div>
@@ -207,7 +207,7 @@ export default function WebsitesPage() {
       ]} />
       <CTASection
         title="Få en professionel hjemmeside der konverterer"
-        subtitle="Nexny bygger moderne, hurtige hjemmesider der tiltrækker kunder og genererer leads."
+        subtitle="Magnora Marketing bygger moderne, hurtige hjemmesider der tiltrækker kunder og genererer leads."
         primaryText="Kontakt os"
         primaryLink="/kontakt"
         secondaryText="Se priser"

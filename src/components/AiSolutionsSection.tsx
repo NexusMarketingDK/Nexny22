@@ -12,7 +12,7 @@ const AiSolutionsSection: React.FC<AiSolutionsSectionProps> = ({ variant = 'ligh
       icon: <MessageSquare size={28} className="text-blue-500" />,
       badge: 'AI Widget',
       title: 'Intelligent chat der konverterer besøgende til leads',
-      description: 'Nexny\'s AI-widget placeres på din hjemmeside og besvarer spørgsmål, kvalificerer besøgende og booker møder automatisk – på dansk, 24/7.',
+      description: 'Magnora Marketing\'s AI-widget placeres på din hjemmeside og besvarer spørgsmål, kvalificerer besøgende og booker møder automatisk – på dansk, 24/7.',
       features: [
         'Svarer øjeblikkeligt på kundespørgsmål',
         'Kvalificerer og scorer leads automatisk',
@@ -56,7 +56,7 @@ const AiSolutionsSection: React.FC<AiSolutionsSectionProps> = ({ variant = 'ligh
           <span className="section-label">AI-løsninger</span>
           <h2 className={`mb-4 ${headingColor}`}>AI der arbejder for dig – døgnet rundt</h2>
           <p className={`max-w-2xl mx-auto ${subColor}`}>
-            Nexny tilbyder to kraftfulde AI-produkter der automatiserer din kundekontakt og leadgenerering – på hjemmesiden og i telefonen.
+            Magnora Marketing tilbyder to kraftfulde AI-produkter der automatiserer din kundekontakt og leadgenerering – på hjemmesiden og i telefonen.
           </p>
         </div>
 

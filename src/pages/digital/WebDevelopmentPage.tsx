@@ -49,14 +49,14 @@ export default function WebDevelopmentPage() {
   return (
     <>
       <SEO
-        title="Webudvikling | Nexny – Professionelle Webapplikationer"
-        description="Nexny udvikler skræddersyede webapplikationer og digitale løsninger til ambitiøse virksomheder. Moderne teknologi, responsivt design og høj performance."
+        title="Webudvikling | Magnora Marketing – Professionelle Webapplikationer"
+        description="Magnora Marketing udvikler skræddersyede webapplikationer og digitale løsninger til ambitiøse virksomheder. Moderne teknologi, responsivt design og høj performance."
         canonical="/digital/webudvikling"
-        keywords="webudvikling, webapplikation, React, Next.js, TypeScript, Nexny digital"
+        keywords="webudvikling, webapplikation, React, Next.js, TypeScript, Magnora Marketing digital"
       />
 
       <HeroSection
-        title="Professionel Webudvikling med Nexny"
+        title="Professionel Webudvikling med Magnora Marketing"
         subtitle="Vi bygger moderne, skalerbare og konverteringsoptimerede webapplikationer der understøtter din forretning og vækst."
         ctaText="Få et tilbud"
         ctaLink="/kontakt"
@@ -68,7 +68,7 @@ export default function WebDevelopmentPage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Hvad vi tilbyder inden for webudvikling</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Fra idé til lancering leverer Nexny komplette webløsninger der er bygget til at vokse med din virksomhed.
+              Fra idé til lancering leverer Magnora Marketing komplette webløsninger der er bygget til at vokse med din virksomhed.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -89,7 +89,7 @@ export default function WebDevelopmentPage() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold mb-6">Hvad du modtager fra Nexny</h2>
+              <h2 className="text-3xl font-bold mb-6">Hvad du modtager fra Magnora Marketing</h2>
               <p className="text-lg text-gray-600 mb-8">
                 Vi håndterer hele processen – fra kravspecifikation og design til udvikling, test og lancering. Du får en nøglefærdig løsning med fuld dokumentation og support.
               </p>
@@ -110,7 +110,7 @@ export default function WebDevelopmentPage() {
             <div>
               <img
                 src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt="Webudvikling team hos Nexny"
+                alt="Webudvikling team hos Magnora Marketing"
                 className="rounded-xl shadow-lg w-full"
               />
             </div>
@@ -142,7 +142,7 @@ export default function WebDevelopmentPage() {
             Fortæl os om din idé eller dine behov – vi sender et uforpligtende tilbud inden for 24 timer.
           </p>
           <Link to="/kontakt" className="inline-flex items-center bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-            Kontakt Nexny nu <ArrowRight className="ml-2" />
+            Kontakt Magnora Marketing nu <ArrowRight className="ml-2" />
           </Link>
         </div>
       </section>
@@ -151,10 +151,10 @@ export default function WebDevelopmentPage() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-6">Professionel Webudvikling til Ambitiøse Virksomheder – React, Next.js og TypeScript</h2>
             <p className="text-gray-600 mb-4">
-              Nexny's webudviklingsteam bygger moderne, skalerbare og konverteringsoptimerede webapplikationer der understøtter din forretning og vækst. Vi arbejder med de bedste og mest afprøvede teknologier – React, Next.js, TypeScript, Node.js og PostgreSQL – og sikrer at din løsning er bygget til at vokse med din virksomhed. Fra enkle præsentationssider til avancerede SaaS-platforme og systemintegrationer håndterer Nexny hele udviklingsprocessen fra kravspecifikation og UI/UX-design til testning, lancering og løbende vedligeholdelse.
+              Magnora Marketing's webudviklingsteam bygger moderne, skalerbare og konverteringsoptimerede webapplikationer der understøtter din forretning og vækst. Vi arbejder med de bedste og mest afprøvede teknologier – React, Next.js, TypeScript, Node.js og PostgreSQL – og sikrer at din løsning er bygget til at vokse med din virksomhed. Fra enkle præsentationssider til avancerede SaaS-platforme og systemintegrationer håndterer Magnora Marketing hele udviklingsprocessen fra kravspecifikation og UI/UX-design til testning, lancering og løbende vedligeholdelse.
             </p>
             <p className="text-gray-600 mb-6">
-              Alle Nexny's webløsninger er fuldt responsive og mobilvenlige, SEO-optimerede fra grunden, og bygget med sikkerhed og GDPR-compliance som grundpillerne. Vi leverer nøglefærdige løsninger med fuld dokumentation, kilekodeoverdragelse og et struktureret onboarding-forløb, der sikrer at du og dit team kan administrere og videreudvikle løsningen selv. Hurtige indlæsningstider og optimeret kode er standard i alle projekter.
+              Alle Magnora Marketing's webløsninger er fuldt responsive og mobilvenlige, SEO-optimerede fra grunden, og bygget med sikkerhed og GDPR-compliance som grundpillerne. Vi leverer nøglefærdige løsninger med fuld dokumentation, kilekodeoverdragelse og et struktureret onboarding-forløb, der sikrer at du og dit team kan administrere og videreudvikle løsningen selv. Hurtige indlæsningstider og optimeret kode er standard i alle projekter.
             </p>
             <ul className="space-y-2">
               <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> Moderne teknologistack: React, Next.js, TypeScript, Node.js</li>
@@ -171,20 +171,20 @@ export default function WebDevelopmentPage() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-6">Webudvikling der Genererer Leads og Konverterer Besøgende til Kunder</h2>
             <p className="text-gray-600 mb-4">
-              En professionel hjemmeside eller webapplikation fra Nexny er mere end blot en digital tilstedeværelse – det er din mest effektive sælger, der arbejder for dig døgnet rundt. Vi designer med konvertering for øje og bygger klare call-to-actions, brugervenlig navigation og overbevisende landingssider der omdanner besøgende til leads og leads til kunder. Kombineret med solid teknisk SEO sikrer vi, at din hjemmeside ranker godt i søgemaskinerne og tiltrækker den rigtige trafik.
+              En professionel hjemmeside eller webapplikation fra Magnora Marketing er mere end blot en digital tilstedeværelse – det er din mest effektive sælger, der arbejder for dig døgnet rundt. Vi designer med konvertering for øje og bygger klare call-to-actions, brugervenlig navigation og overbevisende landingssider der omdanner besøgende til leads og leads til kunder. Kombineret med solid teknisk SEO sikrer vi, at din hjemmeside ranker godt i søgemaskinerne og tiltrækker den rigtige trafik.
             </p>
             <p className="text-gray-600 mb-4">
-              Kontakt Nexny på +45 91 95 27 94 eller kontakt@nexny.dk for en uforpligtende snak om dit webudviklingsprojekt. Vi sender et tilbud inden for 24 timer.
+              Kontakt Magnora Marketing på +45 91 95 27 94 eller kontakt@magnoramarketing.dk for en uforpligtende snak om dit webudviklingsprojekt. Vi sender et tilbud inden for 24 timer.
             </p>
           </div>
         </div>
       </section>
 
       <FAQSection faqs={[
-        { question: 'Hvad koster en hjemmeside hos Nexny?', answer: 'Prisen afhænger af scope og kompleksitet. Vi tilbyder løsninger fra enkle landingssider til avancerede webapplikationer. Kontakt os for et uforpligtende tilbud.' },
-        { question: 'Hvem ejer hjemmesiden når den er færdig?', answer: 'Du ejer 100% af koden og indholdet. Nexny leverer en løsning du selv kan administrere og videreudvikle.' },
+        { question: 'Hvad koster en hjemmeside hos Magnora Marketing?', answer: 'Prisen afhænger af scope og kompleksitet. Vi tilbyder løsninger fra enkle landingssider til avancerede webapplikationer. Kontakt os for et uforpligtende tilbud.' },
+        { question: 'Hvem ejer hjemmesiden når den er færdig?', answer: 'Du ejer 100% af koden og indholdet. Magnora Marketing leverer en løsning du selv kan administrere og videreudvikle.' },
         { question: 'Kan I overtage og videreudvikle en eksisterende hjemmeside?', answer: 'Ja – vi kan gennemgå, optimere og videreudvikle eksisterende løsninger uanset teknologi.' },
-        { question: 'Laver I mobilvenlige hjemmesider?', answer: 'Alle Nexny\'s webløsninger er fuldt responsive og optimeret til mobile enheder.' },
+        { question: 'Laver I mobilvenlige hjemmesider?', answer: 'Alle Magnora Marketing\'s webløsninger er fuldt responsive og optimeret til mobile enheder.' },
         { question: 'Inkluderer I SEO-optimering?', answer: 'Ja – vi bygger alle hjemmesider med solid teknisk SEO som fundament, inkl. hurtig loadtid, strukturerede data og metadata.' },
         { question: "Hvad er en webapp?", answer: "En webapp er en avanceret hjemmeside med interaktive funktioner – f.eks. brugerlogin, dashboards, bookingsystemer eller interne værktøjer." },
         { question: "Kan I overtage et eksisterende projekt?", answer: "Ja – vi vurderer gerne eksisterende kode og overdrager projektet til vores team med minimal afbrydelse." },

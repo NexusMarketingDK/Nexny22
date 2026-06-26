@@ -6,7 +6,7 @@ export default function Telesalg2026() {
   return (
     <>
       <SEO
-        title="Telesalg i 2026: Teknikker og strategier for moderne sælgere | Nexny Blog"
+        title="Telesalg i 2026: Teknikker og strategier for moderne sælgere | Magnora Marketing Blog"
         description="Telesalg er forandret. Lær de teknikker og strategier der virker i det moderne B2B salgslandskab – fra salgsscripts og indvendingsbehandling til freelance karriere inden for telesalg."
         canonical="/blog/salgsscripts-der-virker"
         keywords="telesalg teknikker, B2B telesalg 2026, salgsscripts, indvendingsbehandling, freelance telesalg, telemarketing strategier"
@@ -15,7 +15,7 @@ export default function Telesalg2026() {
         <div className="container mx-auto px-4 max-w-4xl">
           <span className="inline-block bg-blue-500 bg-opacity-40 text-blue-100 text-sm font-semibold px-4 py-1 rounded-full mb-4">Telesalg & Salgsscripts</span>
           <h1 className="text-4xl font-bold text-white mb-4">Telesalg i 2026: Teknikker og strategier for moderne sælgere</h1>
-          <p className="text-gray-300">Af Nexny-teamet · 25. januar 2026 · 9 minutters læsning</p>
+          <p className="text-gray-300">Af Magnora Marketing-teamet · 25. januar 2026 · 9 minutters læsning</p>
         </div>
       </div>
       <div className="max-w-4xl mx-auto px-4 py-16">
@@ -25,7 +25,7 @@ export default function Telesalg2026() {
 
         <h2 className="text-2xl font-bold mb-4 mt-10">Hvad adskiller de bedste telesælgere i 2026?</h2>
         <p className="text-gray-600 mb-4">
-          De bedste telesælgere i 2026 er ikke dem der ringer flest op eller følger scriptet mest trofast. De er dem der kombinerer research med autenticitet, og som formår at skabe ægte dialog frem for at levere en salgstale. Hos Nexny har vi trænet og coachnet hundredvis af telesælgere, og vi ser konsistent de samme karakteristika hos topperformerne:
+          De bedste telesælgere i 2026 er ikke dem der ringer flest op eller følger scriptet mest trofast. De er dem der kombinerer research med autenticitet, og som formår at skabe ægte dialog frem for at levere en salgstale. Hos Magnora Marketing har vi trænet og coachnet hundredvis af telesælgere, og vi ser konsistent de samme karakteristika hos topperformerne:
         </p>
         <ul className="list-disc pl-6 space-y-2 text-gray-600 mb-6">
           <li>Grundig research inden opkaldet – de kender virksomheden og kontaktpersonen</li>
@@ -53,26 +53,26 @@ export default function Telesalg2026() {
 
         <h3 className="text-xl font-semibold mb-3 mt-6">Indvendingsbehandling – forberedelse er nøglen</h3>
         <p className="text-gray-600 mb-4">
-          De fleste indvendinger er forudsigelige. Forbered klare, ærlige og respektfulde svar på de 5-10 mest almindelige indvendinger i din branche. "Vi har allerede en løsning", "Vi har ikke budget lige nu", "Send os noget information" – alle kan behandles professionelt med den rette forberedelse. Hos Nexny bruger vi rollespil og løbende coaching til at sikre at vores sælgere er forberedt på alle scenarier.
+          De fleste indvendinger er forudsigelige. Forbered klare, ærlige og respektfulde svar på de 5-10 mest almindelige indvendinger i din branche. "Vi har allerede en løsning", "Vi har ikke budget lige nu", "Send os noget information" – alle kan behandles professionelt med den rette forberedelse. Hos Magnora Marketing bruger vi rollespil og løbende coaching til at sikre at vores sælgere er forberedt på alle scenarier.
         </p>
 
         <h2 className="text-2xl font-bold mb-4 mt-10">Freelance telesalg – en karriere med fremtid</h2>
         <p className="text-gray-600 mb-4">
-          Freelance telesalg er en af de mest fleksible og attraktive karrieremuligheder for selvstændige sælgere i 2026. Du bestemmer selv dine arbejdstider, arbejder hjemmefra og opbygger en indkomst der afspejler dine resultater direkte. Hos Nexny tilbyder vi freelance telesalg-stillinger inden for en bred vifte af brancher og produkter, med stærkt support, god onboarding og konkurrencedygtig provision.
+          Freelance telesalg er en af de mest fleksible og attraktive karrieremuligheder for selvstændige sælgere i 2026. Du bestemmer selv dine arbejdstider, arbejder hjemmefra og opbygger en indkomst der afspejler dine resultater direkte. Hos Magnora Marketing tilbyder vi freelance telesalg-stillinger inden for en bred vifte af brancher og produkter, med stærkt support, god onboarding og konkurrencedygtig provision.
         </p>
         <p className="text-gray-600 mb-6">
-          Nexny søger løbende motiverede og dygtige freelance telesælgere og mødebookere. Uanset om du er erfaren sælger eller ny i branchen, har vi et oplæringsprogram der klæder dig på til succes. Kontakt Nexny på +45 91 95 27 94 eller kontakt@nexny.dk for at høre mere om de aktuelle muligheder.
+          Magnora Marketing søger løbende motiverede og dygtige freelance telesælgere og mødebookere. Uanset om du er erfaren sælger eller ny i branchen, har vi et oplæringsprogram der klæder dig på til succes. Kontakt Magnora Marketing på +45 91 95 27 94 eller kontakt@magnoramarketing.dk for at høre mere om de aktuelle muligheder.
         </p>
 
-        <h2 className="text-2xl font-bold mb-4 mt-10">Nexny's tilgang til professionelt telesalg</h2>
+        <h2 className="text-2xl font-bold mb-4 mt-10">Magnora Marketing's tilgang til professionelt telesalg</h2>
         <p className="text-gray-600 mb-6">
-          Hos Nexny er vores telesalg og mødebooking altid baseret på solid forberedelse, præcis målretning og autentisk kommunikation. Vi uddanner og coacher vores sælgere løbende, og bruger data og feedback systematisk til at forbedre scripts, teknikker og resultater. Det er denne tilgang der sikrer at vores kunder konsistent modtager kvalificerede møder med reel forretningspotentiale.
+          Hos Magnora Marketing er vores telesalg og mødebooking altid baseret på solid forberedelse, præcis målretning og autentisk kommunikation. Vi uddanner og coacher vores sælgere løbende, og bruger data og feedback systematisk til at forbedre scripts, teknikker og resultater. Det er denne tilgang der sikrer at vores kunder konsistent modtager kvalificerede møder med reel forretningspotentiale.
         </p>
       </div>
       <CTASection
-        title="Professionelt telesalg og mødebooking med Nexny"
-        subtitle="Nexny's erfarne telesælgere og mødebookere leverer kvalificerede B2B møder og varme leads – baseret på solid research, præcis målretning og professionel kommunikation."
-        primaryText="Kontakt Nexny"
+        title="Professionelt telesalg og mødebooking med Magnora Marketing"
+        subtitle="Magnora Marketing's erfarne telesælgere og mødebookere leverer kvalificerede B2B møder og varme leads – baseret på solid research, præcis målretning og professionel kommunikation."
+        primaryText="Kontakt Magnora Marketing"
         primaryLink="/kontakt"
         secondaryText="Se freelance muligheder"
         secondaryLink="/freelance-telemarketing"

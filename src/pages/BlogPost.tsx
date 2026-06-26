@@ -101,7 +101,7 @@ const BlogPost: React.FC = () => {
       ]);
       
       // Update document title for SEO
-      document.title = `${mockPost.title} | Nexny Blog`;
+      document.title = `${mockPost.title} | Magnora Marketing Blog`;
     }, 300);
     
     // Scroll to top on page load or slug change
@@ -123,7 +123,7 @@ const BlogPost: React.FC = () => {
     <>
       {post && (
         <SEO 
-          title={`${post.title} | Nexny Blog`}
+          title={`${post.title} | Magnora Marketing Blog`}
           description={post.excerpt}
           canonical={`/blog/${post.slug}`}
         />
@@ -312,8 +312,8 @@ const BlogPost: React.FC = () => {
       </div>
       <CTASection
         title="Klar til at omsætte viden til resultater?"
-        subtitle="Lad Nexny's specialister hjælpe din virksomhed med at vækste."
-        primaryText="Kontakt Nexny"
+        subtitle="Lad Magnora Marketing's specialister hjælpe din virksomhed med at vækste."
+        primaryText="Kontakt Magnora Marketing"
         primaryLink="/kontakt"
         secondaryText="Se alle ydelser"
         secondaryLink="/ydelser"

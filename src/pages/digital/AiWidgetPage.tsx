@@ -11,7 +11,7 @@ export default function AiWidgetPage() {
     {
       icon: <Bot size={36} className="text-blue-600" />,
       title: 'Intelligent AI-chat på din hjemmeside',
-      description: 'Nexny\'s AI-widget besvarer besøgendes spørgsmål øjeblikkeligt – på dansk – og guider dem mod en booking, et tilbud eller et køb.'
+      description: 'Magnora Marketing\'s AI-widget besvarer besøgendes spørgsmål øjeblikkeligt – på dansk – og guider dem mod en booking, et tilbud eller et køb.'
     },
     {
       icon: <Clock size={36} className="text-blue-600" />,
@@ -51,14 +51,14 @@ export default function AiWidgetPage() {
 
   const faqs = [
     { question: 'Hvad er en AI-widget?', answer: 'En AI-widget er en intelligent chatboks der placeres på din hjemmeside. Den besvarer besøgendes spørgsmål, kvalificerer leads og booker møder – automatisk og døgnet rundt.' },
-    { question: 'Kan widgetten tale dansk?', answer: 'Ja – Nexny\'s AI-widget er specialiseret til dansk erhvervskommunikation og forstår nuancer, branchejargon og danske kontekster.' },
+    { question: 'Kan widgetten tale dansk?', answer: 'Ja – Magnora Marketing\'s AI-widget er specialiseret til dansk erhvervskommunikation og forstår nuancer, branchejargon og danske kontekster.' },
     { question: 'Hvad kræver installation af widgetten?', answer: 'Du indsætter et enkelt JavaScript-snippet på din hjemmeside. Det tager typisk under 10 minutter og kræver ingen teknisk ekspertise.' },
     { question: 'Kan widgetten integreres med mit CRM?', answer: 'Ja – vi integrerer med HubSpot, Pipedrive, Salesforce, ActiveCampaign og mange andre CRM-systemer, så leads automatisk sendes til dit system.' },
     { question: 'Hvordan trænes AI\'en til mit produkt?', answer: 'Vi onboarder widgetten med din virksomheds FAQ, produktinformation og salgsmateriale, så den svarer præcist og på brand.' },
-    { question: 'Hvad sker der med de leads widgetten genererer?', answer: 'Leads sendes direkte til dit CRM, din e-mail eller Slack – eller videre til Nexny\'s salgsteam for opfølgning og mødebooking.' },
+    { question: 'Hvad sker der med de leads widgetten genererer?', answer: 'Leads sendes direkte til dit CRM, din e-mail eller Slack – eller videre til Magnora Marketing\'s salgsteam for opfølgning og mødebooking.' },
     { question: 'Kan widgetten booke møder i min kalender?', answer: 'Ja – via integration med Google Calendar, Outlook og Calendly kan besøgende booke møder direkte i chatten.' },
     { question: 'Er widgetten GDPR-kompatibel?', answer: 'Ja – al databehandling sker i overensstemmelse med GDPR. Vi kan hjælpe med cookiesamtykke og databehandleraftale.' },
-    { question: 'Hvad koster en AI-widget fra Nexny?', answer: 'Prisen afhænger af antal samtaler, integrationer og funktioner. Kontakt os for et tilbud tilpasset din virksomhed.' },
+    { question: 'Hvad koster en AI-widget fra Magnora Marketing?', answer: 'Prisen afhænger af antal samtaler, integrationer og funktioner. Kontakt os for et tilbud tilpasset din virksomhed.' },
     { question: 'Kan jeg se statistik over widgettens performance?', answer: 'Ja – du får adgang til et dashboard med konverteringsdata, samtalehistorik og leadstatistik.' },
     { question: 'Hvad sker der hvis AI\'en ikke kender svaret?', answer: 'Widgetten eskalerer ukendte spørgsmål til et menneske via e-mail eller chat-handover, så ingen henvendelse falder mellem to stole.' },
     { question: 'Kan widgetten bruges på mobilsider?', answer: 'Ja – widgetten er fuldt responsiv og fungerer på alle enheder: desktop, tablet og mobil.' },
@@ -70,15 +70,15 @@ export default function AiWidgetPage() {
   return (
     <>
       <SEO
-        title="AI Widget til Hjemmesider | Automatisk Leadgenerering & Mødebooking | Nexny"
-        description="Nexny's AI-widget genererer leads og booker møder automatisk på din hjemmeside – 24/7, på dansk. Nem installation. Integrerer med dit CRM. ✓ GDPR-kompatibel ✓ Prøv gratis"
+        title="AI Widget til Hjemmesider | Automatisk Leadgenerering & Mødebooking | Magnora Marketing"
+        description="Magnora Marketing's AI-widget genererer leads og booker møder automatisk på din hjemmeside – 24/7, på dansk. Nem installation. Integrerer med dit CRM. ✓ GDPR-kompatibel ✓ Prøv gratis"
         canonical="/digital/ai-widget"
         keywords="AI widget, chatbot hjemmeside, AI leadgenerering, automatisk mødebooking, AI chat dansk, chatbot B2B"
       />
 
       <HeroSection
         title="AI-widget der håndterer kunder på hjemmesiden og genererer leads 24/7"
-        subtitle="Lad Nexny's intelligente AI-widget besvare spørgsmål, kvalificere besøgende og booke møder automatisk – uden at du løfter en finger."
+        subtitle="Lad Magnora Marketing's intelligente AI-widget besvare spørgsmål, kvalificere besøgende og booke møder automatisk – uden at du løfter en finger."
         ctaText="Få en gratis demo"
         ctaLink="/kontakt"
         secondaryCtaText="Se priser"
@@ -92,7 +92,7 @@ export default function AiWidgetPage() {
           <div className="text-center mb-14">
             <span className="section-label">Funktioner</span>
             <h2 className="mb-4">Alt hvad en AI-widget skal kunne</h2>
-            <p className="text-slate-500 max-w-2xl mx-auto">Fra simpel FAQ til avanceret leadkvalificering og automatisk booking – Nexny's widget håndterer det hele.</p>
+            <p className="text-slate-500 max-w-2xl mx-auto">Fra simpel FAQ til avanceret leadkvalificering og automatisk booking – Magnora Marketing's widget håndterer det hele.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {features.map((f, i) => (
@@ -138,13 +138,13 @@ export default function AiWidgetPage() {
                   <MessageSquare size={18} className="text-white" />
                 </div>
                 <div>
-                  <div className="font-bold text-slate-800">Nexny AI Assistant</div>
+                  <div className="font-bold text-slate-800">Magnora Marketing AI Assistant</div>
                   <div className="text-xs text-green-500 font-medium flex items-center gap-1"><span className="w-1.5 h-1.5 rounded-full bg-green-500 inline-block" /> Online nu</div>
                 </div>
               </div>
               <div className="space-y-3">
                 <div className="bg-blue-600 text-white rounded-2xl rounded-tl-sm px-4 py-3 text-sm max-w-[85%]">
-                  Hej! Jeg er Nexny's AI-assistent. Hvad kan jeg hjælpe dig med i dag?
+                  Hej! Jeg er Magnora Marketing's AI-assistent. Hvad kan jeg hjælpe dig med i dag?
                 </div>
                 <div className="bg-slate-100 text-slate-700 rounded-2xl rounded-tr-sm px-4 py-3 text-sm max-w-[85%] ml-auto">
                   Jeg er interesseret i mødebooking for min virksomhed
@@ -214,7 +214,7 @@ export default function AiWidgetPage() {
 
       <CTASection
         title="Klar til at lade AI arbejde for dig?"
-        subtitle="Book en gratis demo og se Nexny's AI-widget i aktion på din hjemmeside inden for 48 timer."
+        subtitle="Book en gratis demo og se Magnora Marketing's AI-widget i aktion på din hjemmeside inden for 48 timer."
         primaryText="Book gratis demo"
         primaryLink="/kontakt"
         secondaryText="Se alle digitale løsninger"

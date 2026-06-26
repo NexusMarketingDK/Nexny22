@@ -16,7 +16,7 @@ export default function ApiSaasPage() {
     {
       icon: <RefreshCw size={36} className="text-blue-600" />,
       title: 'Systemintegration',
-      description: 'Nexny integrerer dine eksisterende platforme – CRM, ERP, betalingsløsninger, marketing-tools – i et sammenhængende digitalt setup.'
+      description: 'Magnora Marketing integrerer dine eksisterende platforme – CRM, ERP, betalingsløsninger, marketing-tools – i et sammenhængende digitalt setup.'
     },
     {
       icon: <Layers size={36} className="text-blue-600" />,
@@ -44,14 +44,14 @@ export default function ApiSaasPage() {
   return (
     <>
       <SEO
-        title="API & SaaS Udvikling | Nexny – Systemintegration og Platforme"
-        description="Nexny udvikler robuste API-løsninger og SaaS-platforme der binder dine systemer sammen. Skalerbar arkitektur og sikker datahåndtering."
+        title="API & SaaS Udvikling | Magnora Marketing – Systemintegration og Platforme"
+        description="Magnora Marketing udvikler robuste API-løsninger og SaaS-platforme der binder dine systemer sammen. Skalerbar arkitektur og sikker datahåndtering."
         canonical="/digital/api-saas"
-        keywords="API udvikling, SaaS platform, systemintegration, REST API, GraphQL, Nexny digital"
+        keywords="API udvikling, SaaS platform, systemintegration, REST API, GraphQL, Magnora Marketing digital"
       />
 
       <HeroSection
-        title="API & SaaS Løsninger fra Nexny"
+        title="API & SaaS Løsninger fra Magnora Marketing"
         subtitle="Vi bygger de digitale broer der får dine systemer til at tale sammen – og platforme der skalerer med din forretning."
         ctaText="Få et tilbud"
         ctaLink="/kontakt"
@@ -61,7 +61,7 @@ export default function ApiSaasPage() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Hvad Nexny tilbyder inden for API & SaaS</h2>
+            <h2 className="text-3xl font-bold mb-4">Hvad Magnora Marketing tilbyder inden for API & SaaS</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Fra enkle integrationer til komplekse SaaS-produkter – vi har teknologien og erfaringen til at levere robuste digitale løsninger.
             </p>
@@ -86,7 +86,7 @@ export default function ApiSaasPage() {
             <div>
               <img
                 src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt="API og SaaS udvikling hos Nexny"
+                alt="API og SaaS udvikling hos Magnora Marketing"
                 className="rounded-xl shadow-lg w-full"
               />
             </div>
@@ -119,7 +119,7 @@ export default function ApiSaasPage() {
             <Globe size={48} className="text-blue-600 mx-auto mb-6" />
             <h2 className="text-3xl font-bold mb-6">Skalerbare løsninger der vokser med dig</h2>
             <p className="text-lg text-gray-600 mb-8">
-              Uanset om du skal integrere to systemer eller bygge en fuld SaaS-platform fra bunden, sikrer Nexny at arkitekturen kan håndtere din vækst – nu og fremover.
+              Uanset om du skal integrere to systemer eller bygge en fuld SaaS-platform fra bunden, sikrer Magnora Marketing at arkitekturen kan håndtere din vækst – nu og fremover.
             </p>
             <Link to="/kontakt" className="inline-flex items-center bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
               Kom i gang <ArrowRight className="ml-2" />
@@ -135,19 +135,19 @@ export default function ApiSaasPage() {
             Fortæl os hvad du har brug for – vi leverer et konkret og uforpligtende tilbud inden for 24 timer.
           </p>
           <Link to="/kontakt" className="inline-flex items-center bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-            Kontakt Nexny nu <ArrowRight className="ml-2" />
+            Kontakt Magnora Marketing nu <ArrowRight className="ml-2" />
           </Link>
         </div>
       </section>
       <section className="section bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6">API-Udvikling og SaaS-Platforme – Skalerbare Digitale Løsninger fra Nexny</h2>
+            <h2 className="text-3xl font-bold mb-6">API-Udvikling og SaaS-Platforme – Skalerbare Digitale Løsninger fra Magnora Marketing</h2>
             <p className="text-gray-600 mb-4">
-              Nexny's digitale team specialiserer sig i at designe og bygge robuste API-løsninger og SaaS-platforme der binder dine systemer og tjenester sammen på en sikker, skalerbar og vedligeholdelsesvenlig måde. Vi arbejder med både RESTful og GraphQL API'er og har dybdegående erfaring med systemintegrationer til CRM-systemer (HubSpot, Salesforce, Pipedrive), ERP-løsninger (e-conomic, Business Central), betalingsgateways (Stripe, Quickpay) og marketingplatforme (Mailchimp, ActiveCampaign). Alle API'er og integrationer bygges med GDPR og datasikkerhed som grundpillerne – tokenstyring, kryptering og adgangskontrol er altid inkluderet.
+              Magnora Marketing's digitale team specialiserer sig i at designe og bygge robuste API-løsninger og SaaS-platforme der binder dine systemer og tjenester sammen på en sikker, skalerbar og vedligeholdelsesvenlig måde. Vi arbejder med både RESTful og GraphQL API'er og har dybdegående erfaring med systemintegrationer til CRM-systemer (HubSpot, Salesforce, Pipedrive), ERP-løsninger (e-conomic, Business Central), betalingsgateways (Stripe, Quickpay) og marketingplatforme (Mailchimp, ActiveCampaign). Alle API'er og integrationer bygges med GDPR og datasikkerhed som grundpillerne – tokenstyring, kryptering og adgangskontrol er altid inkluderet.
             </p>
             <p className="text-gray-600 mb-6">
-              Nexny bygger skalerbare SaaS-løsninger med multi-tenant arkitektur, abonnementsstyring og automatiserede brugerflows. Vi håndterer alt fra indledende kravspecifikation og teknisk arkitektur til fuld implementering, testning og lancering – og leverer fuld teknisk dokumentation og kildekodeoverdragelse. Vores CI/CD-pipeline og cloud-infrastruktur på Vercel og AWS sikrer hurtig deployment og høj oppetid.
+              Magnora Marketing bygger skalerbare SaaS-løsninger med multi-tenant arkitektur, abonnementsstyring og automatiserede brugerflows. Vi håndterer alt fra indledende kravspecifikation og teknisk arkitektur til fuld implementering, testning og lancering – og leverer fuld teknisk dokumentation og kildekodeoverdragelse. Vores CI/CD-pipeline og cloud-infrastruktur på Vercel og AWS sikrer hurtig deployment og høj oppetid.
             </p>
             <ul className="space-y-2">
               <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> REST og GraphQL API-design og implementering</li>
@@ -164,10 +164,10 @@ export default function ApiSaasPage() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-6">Systemintegration og API-Forbindelser der Automatiserer din Forretning</h2>
             <p className="text-gray-600 mb-4">
-              En velfungerende systemintegration eliminerer manuelle dataoverførsler, reducerer fejl og frigiver dine medarbejdere til at fokusere på det der skaber reel værdi. Nexny kortlægger dine eksisterende systemer og arbejdsprocesser, identificerer de vigtigste integrationspunkter og designer en teknisk løsning der forbinder det hele i et sammenhængende og effektivt digitalt setup. Fra webhook og event-drevet arkitektur til Single Sign-On (SSO) og OAuth 2.0 – vi har kompetencerne til at løse selv komplekse integrationsprojekter.
+              En velfungerende systemintegration eliminerer manuelle dataoverførsler, reducerer fejl og frigiver dine medarbejdere til at fokusere på det der skaber reel værdi. Magnora Marketing kortlægger dine eksisterende systemer og arbejdsprocesser, identificerer de vigtigste integrationspunkter og designer en teknisk løsning der forbinder det hele i et sammenhængende og effektivt digitalt setup. Fra webhook og event-drevet arkitektur til Single Sign-On (SSO) og OAuth 2.0 – vi har kompetencerne til at løse selv komplekse integrationsprojekter.
             </p>
             <p className="text-gray-600 mb-4">
-              Kontakt Nexny på +45 91 95 27 94 eller kontakt@nexny.dk for et uforpligtende estimat på dit API- eller SaaS-projekt. Vi sender et tilbud inden for 24 timer.
+              Kontakt Magnora Marketing på +45 91 95 27 94 eller kontakt@magnoramarketing.dk for et uforpligtende estimat på dit API- eller SaaS-projekt. Vi sender et tilbud inden for 24 timer.
             </p>
           </div>
         </div>
@@ -175,7 +175,7 @@ export default function ApiSaasPage() {
 
       <FAQSection faqs={[
         { question: 'Hvad er en API-integration?', answer: 'En API-integration forbinder to eller flere systemer så de kan udveksle data automatisk – f.eks. dit CRM med din hjemmeside eller et betalingssystem.' },
-        { question: 'Kan I bygge en SaaS-platform fra bunden?', answer: 'Ja – Nexny har erfaring med at designe og udvikle komplette SaaS-applikationer med brugeradministration, betalingsintegration og skalerbar infrastruktur.' },
+        { question: 'Kan I bygge en SaaS-platform fra bunden?', answer: 'Ja – Magnora Marketing har erfaring med at designe og udvikle komplette SaaS-applikationer med brugeradministration, betalingsintegration og skalerbar infrastruktur.' },
         { question: 'Hvad er en webhook?', answer: 'En webhook er en automatisk notifikation der sendes fra ét system til et andet, når en bestemt hændelse opstår – f.eks. når en ordre er gennemført.' },
         { question: 'Kan I integrere med eksisterende systemer?', answer: 'Ja – vi har erfaring med integrationer til de mest populære CRM-, ERP- og marketingsystemer.' },
         { question: "Hvad er REST vs GraphQL?", answer: "REST og GraphQL er to forskellige tilgange til API-design. REST er den mest udbredte standard. GraphQL giver mere fleksible datakald. Vi arbejder med begge." },
@@ -190,7 +190,7 @@ export default function ApiSaasPage() {
         { question: "Kan I hjælpe med dokumentation?", answer: "Ja – vi leverer altid teknisk dokumentation og API-dokumentation som del af projektet." },
       ]} />
       <CTASection
-        title="Lad Nexny bygge din næste API eller SaaS-løsning"
+        title="Lad Magnora Marketing bygge din næste API eller SaaS-løsning"
         subtitle="Skalerbare digitale platforme og integrationer der driver din forretning fremad."
         primaryText="Start dit projekt"
         primaryLink="/kontakt"

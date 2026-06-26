@@ -9,10 +9,10 @@ export default function DebtCollectionPage() {
   return (
     <>
       <SEO
-        title="Freelance Sælger Inkasso & Kreditorstyring | Nexny"
-        description="Bliv freelance sælger inden for inkasso og kreditorstyring hos Nexny. Sælg professionel gældinddrivelse til erhvervskunder – hjemmefra med god provision."
+        title="Freelance Sælger Inkasso & Kreditorstyring | Magnora Marketing"
+        description="Bliv freelance sælger inden for inkasso og kreditorstyring hos Magnora Marketing. Sælg professionel gældinddrivelse til erhvervskunder – hjemmefra med god provision."
         canonical="/jobs/inkasso"
-        keywords="freelance sælger inkasso, kreditorstyring salg, inkasso sælger job, gældinddrivelse B2B, Nexny inkasso stilling"
+        keywords="freelance sælger inkasso, kreditorstyring salg, inkasso sælger job, gældinddrivelse B2B, Magnora Marketing inkasso stilling"
       />
 
       <HeroSection
@@ -34,7 +34,7 @@ export default function DebtCollectionPage() {
                 Som freelance sælger inden for inkasso og kreditorstyring kontakter du virksomheder der har problemer med sen betaling og udestående tilgodehavender. Du præsenterer professionelle løsninger til gældinddrivelse og kreditorstyring.
               </p>
               <p className="text-lg text-gray-600 mb-8">
-                Det er en reel smerteløsning for mange virksomheder – og behovet er stort. Nexny leverer scripts og leads, du skaber dialogen og booker møder med beslutningstagerne.
+                Det er en reel smerteløsning for mange virksomheder – og behovet er stort. Magnora Marketing leverer scripts og leads, du skaber dialogen og booker møder med beslutningstagerne.
               </p>
               <ul className="space-y-3">
                 {[
@@ -102,7 +102,7 @@ export default function DebtCollectionPage() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Hvad du får hos Nexny</h2>
+            <h2 className="text-3xl font-bold mb-4">Hvad du får hos Magnora Marketing</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
@@ -145,7 +145,7 @@ export default function DebtCollectionPage() {
               <h2 className="text-2xl font-bold mb-6">Sådan søger du</h2>
               <p className="text-gray-600 mb-6">Send en kort besked om dig selv og din salgserfaring. Vi vender tilbage inden for 2 hverdage.</p>
               <Link to="/kontakt" className="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
-                Kontakt Nexny nu <ArrowRight size={16} className="ml-2" />
+                Kontakt Magnora Marketing nu <ArrowRight size={16} className="ml-2" />
               </Link>
             </div>
           </div>
@@ -157,22 +157,22 @@ export default function DebtCollectionPage() {
         { question: 'Er det et svært produkt at sælge?', answer: 'Inkasso er et nødvendigt produkt for virksomheder med ubetalte fordringer. Mange virksomheder ser positivt på at forbedre deres debitorhåndtering.' },
         { question: 'Hvem er målgruppen?', answer: 'Primært SMV\'er og større virksomheder der har udestående fakturaer og behøver professionel hjælp til inddrivelse.' },
         { question: 'Er der særlige krav til min baggrund?', answer: 'Nej – du behøver ikke juridisk baggrund. Gode kommunikationsevner og professionel optræden er det vigtigste.' },
-        { question: "Er der opkaldslister klar fra dag ét?", answer: "Ja – Nexny leverer opkaldslister og kampagnematerialer, så du kan starte med det samme." },
+        { question: "Er der opkaldslister klar fra dag ét?", answer: "Ja – Magnora Marketing leverer opkaldslister og kampagnematerialer, så du kan starte med det samme." },
         { question: "Kan jeg se et eksempel på et script?", answer: "Ja – du modtager et gennemprøvet salgsskript ved opstart som du kan tilpasse din stil." },
         { question: "Hvad sker der ved et succes-salg eller booket møde?", answer: "Du registrerer resultatet i vores system, og provisionen beregnes automatisk og udbetales månedligt." },
-        { question: "Er der løbende coaching?", answer: "Ja – Nexny's salgsledere holder regelmæssige coaching-sessioner og giver feedback på din salgsstil." },
+        { question: "Er der løbende coaching?", answer: "Ja – Magnora Marketing's salgsledere holder regelmæssige coaching-sessioner og giver feedback på din salgsstil." },
         { question: "Kan jeg prøve stillingen i en kortere periode?", answer: "Ja – de første 2-4 uger betragtes som en gensidig prøveperiode." },
         { question: "Hvad er den gennemsnitlige indkomst for en aktiv freelancer?", answer: "Det afhænger af aktivitet og produkt. Aktive freelancere med gode resultater kan tjene et solidt supplement eller en fuld indkomst." },
-        { question: "Kan jeg arbejde for Nexny og for andre bureauer?", answer: "Som freelancer er du fri til at arbejde for andre, så længe der ikke er konkurrencekonflikt med Nexny's kunder." },
+        { question: "Kan jeg arbejde for Magnora Marketing og for andre bureauer?", answer: "Som freelancer er du fri til at arbejde for andre, så længe der ikke er konkurrencekonflikt med Magnora Marketing's kunder." },
         { question: "Er der skriftlige kontrakter?", answer: "Ja – alle samarbejder formaliseres med en klar freelance-aftale der beskriver vilkår, provision og forventninger." },
-        { question: "Hvad sker der, hvis jeg ikke trives med produktet?", answer: "Vi kan diskutere om du er bedre egnet til et andet produkt i Nexny's portfolio." },
-        { question: "Hvad er Nexny's forventninger til mig som freelancer?", answer: "Vi forventer selvdisciplin, professionel optræden og løbende kommunikation om aktivitet og resultater." },
+        { question: "Hvad sker der, hvis jeg ikke trives med produktet?", answer: "Vi kan diskutere om du er bedre egnet til et andet produkt i Magnora Marketing's portfolio." },
+        { question: "Hvad er Magnora Marketing's forventninger til mig som freelancer?", answer: "Vi forventer selvdisciplin, professionel optræden og løbende kommunikation om aktivitet og resultater." },
       ]} />
 
       <section className="bg-blue-600 text-white py-16">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6">Klar til at sælge i en B2B-niche med høj efterspørgsel?</h2>
-          <p className="text-xl mb-8 max-w-3xl mx-auto">Kontakt Nexny og start med inkasso- og kreditorstyringssalg der giver resultater.</p>
+          <p className="text-xl mb-8 max-w-3xl mx-auto">Kontakt Magnora Marketing og start med inkasso- og kreditorstyringssalg der giver resultater.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/kontakt" className="inline-flex items-center bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
               Send ansøgning <ArrowRight className="ml-2" size={18} />

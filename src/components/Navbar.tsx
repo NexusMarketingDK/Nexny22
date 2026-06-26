@@ -65,7 +65,7 @@ const Navbar: React.FC = () => {
   const partnerOptions = [
     { path: '/samarbejdspartner', title: 'Bliv samarbejdspartner' },
     { path: '/priser', title: 'Priser & Pakker' },
-    { path: '/hvorfor-nexny', title: 'Hvorfor Nexny?' },
+    { path: '/hvorfor-nexny', title: 'Hvorfor Magnora Marketing?' },
     { path: '/modebooking-priser', title: 'Mødebooking' },
     { path: '/leadgenerering', title: 'Leadgenerering' }
   ];
@@ -89,7 +89,7 @@ const Navbar: React.FC = () => {
               <Phone size={16} className="text-white" />
             </div>
             <span className={`text-xl font-bold tracking-tight ${isScrolled ? 'text-slate-900' : 'text-white'}`}>
-              Nexny
+              Magnora Marketing
             </span>
           </Link>
 
