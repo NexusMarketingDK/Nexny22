@@ -167,7 +167,7 @@ const OutsourcingPage: React.FC = () => {
               Outsourcing af salg er den rigtige løsning for virksomheder der ønsker at vækste hurtigt, teste nye markeder eller produkter, eller supplere et eksisterende salgsteam uden at ansætte. Det er særligt relevant for virksomheder der mangler de interne ressourcer til at bemande systematisk telemarketing og mødebooking, eller som har haft svingende resultater med tidligere salgsrekrutteringer.
             </p>
             <p className="text-gray-600 mb-4">
-              Kontakt Magnora Marketing på mail@magnoramarketing.dk eller mail@magnoramarketing.dk for en uforpligtende snak om, hvordan vi kan hjælpe din virksomhed med at accelerere væksten gennem professionel outsourcing af salg og mødebooking.
+              Kontakt Magnora Marketing på mail@magnoramarketing.dk for en uforpligtende snak om, hvordan vi kan hjælpe din virksomhed med at accelerere væksten gennem professionel outsourcing af salg og mødebooking.
             </p>
           </div>
         </div>

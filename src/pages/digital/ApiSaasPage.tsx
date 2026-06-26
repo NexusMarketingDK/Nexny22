@@ -167,7 +167,7 @@ export default function ApiSaasPage() {
               En velfungerende systemintegration eliminerer manuelle dataoverførsler, reducerer fejl og frigiver dine medarbejdere til at fokusere på det der skaber reel værdi. Magnora Marketing kortlægger dine eksisterende systemer og arbejdsprocesser, identificerer de vigtigste integrationspunkter og designer en teknisk løsning der forbinder det hele i et sammenhængende og effektivt digitalt setup. Fra webhook og event-drevet arkitektur til Single Sign-On (SSO) og OAuth 2.0 – vi har kompetencerne til at løse selv komplekse integrationsprojekter.
             </p>
             <p className="text-gray-600 mb-4">
-              Kontakt Magnora Marketing på mail@magnoramarketing.dk eller mail@magnoramarketing.dk for et uforpligtende estimat på dit API- eller SaaS-projekt. Vi sender et tilbud inden for 24 timer.
+              Kontakt Magnora Marketing på mail@magnoramarketing.dk for et uforpligtende estimat på dit API- eller SaaS-projekt. Vi sender et tilbud inden for 24 timer.
             </p>
           </div>
         </div>

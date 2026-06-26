@@ -61,7 +61,7 @@ export default function Telesalg2026() {
           Freelance telesalg er en af de mest fleksible og attraktive karrieremuligheder for selvstændige sælgere i 2026. Du bestemmer selv dine arbejdstider, arbejder hjemmefra og opbygger en indkomst der afspejler dine resultater direkte. Hos Magnora Marketing tilbyder vi freelance telesalg-stillinger inden for en bred vifte af brancher og produkter, med stærkt support, god onboarding og konkurrencedygtig provision.
         </p>
         <p className="text-gray-600 mb-6">
-          Magnora Marketing søger løbende motiverede og dygtige freelance telesælgere og mødebookere. Uanset om du er erfaren sælger eller ny i branchen, har vi et oplæringsprogram der klæder dig på til succes. Kontakt Magnora Marketing på mail@magnoramarketing.dk eller mail@magnoramarketing.dk for at høre mere om de aktuelle muligheder.
+          Magnora Marketing søger løbende motiverede og dygtige freelance telesælgere og mødebookere. Uanset om du er erfaren sælger eller ny i branchen, har vi et oplæringsprogram der klæder dig på til succes. Kontakt Magnora Marketing på mail@magnoramarketing.dk for at høre mere om de aktuelle muligheder.
         </p>
 
         <h2 className="text-2xl font-bold mb-4 mt-10">Magnora Marketing's tilgang til professionelt telesalg</h2>
