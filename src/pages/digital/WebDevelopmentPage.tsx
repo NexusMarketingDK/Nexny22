@@ -60,7 +60,7 @@ export default function WebDevelopmentPage() {
         subtitle="Vi bygger moderne, skalerbare og konverteringsoptimerede webapplikationer der understøtter din forretning og vækst."
         ctaText="Få et tilbud"
         ctaLink="/kontakt"
-        backgroundImage="https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        backgroundImage="https://images.pexels.com/photos/3184466/pexels-photo-3184466.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       />
 
       <section className="py-16 bg-white">
@@ -109,7 +109,7 @@ export default function WebDevelopmentPage() {
             </div>
             <div>
               <img
-                src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                src="https://images.pexels.com/photos/3184363/pexels-photo-3184363.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 alt="Webudvikling team hos Magnora Marketing"
                 className="rounded-xl shadow-lg w-full"
               />

@@ -22,7 +22,7 @@ export default function RemoteWorkPage() {
         ctaLink="/freelance-telemarketing"
         secondaryCtaText="Kontakt os"
         secondaryCtaLink="/kontakt"
-        backgroundImage="https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        backgroundImage="https://images.pexels.com/photos/3182781/pexels-photo-3182781.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       />
 
       <section className="py-16 bg-white">

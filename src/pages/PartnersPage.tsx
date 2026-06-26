@@ -56,7 +56,7 @@ const PartnersPage: React.FC = () => {
         ctaLink="#kontakt-formular"
         secondaryCtaText="Se priser"
         secondaryCtaLink="/priser"
-        backgroundImage="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        backgroundImage="https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       />
 
       <section className="py-16 bg-white">

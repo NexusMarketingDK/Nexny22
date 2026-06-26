@@ -22,7 +22,7 @@ export default function LedLightingPage() {
         ctaLink="/kontakt"
         secondaryCtaText="Se alle stillinger"
         secondaryCtaLink="/freelance-telemarketing"
-        backgroundImage="https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        backgroundImage="https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       />
 
       <section className="py-16 bg-white">

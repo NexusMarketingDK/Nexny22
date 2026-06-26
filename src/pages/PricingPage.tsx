@@ -94,7 +94,7 @@ const PricingPage: React.FC = () => {
         subtitle="Gennemsigtige og fleksible prismodeller tilpasset din virksomheds behov. Betal for resultater – ikke for tid."
         ctaText="Få et tilbud"
         ctaLink="/kontakt"
-        backgroundImage="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        backgroundImage="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       />
 
       <section className="py-16 bg-white">

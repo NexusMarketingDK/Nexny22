@@ -82,7 +82,7 @@ const ServicesPage: React.FC = () => {
         ctaLink="/kontakt"
         secondaryCtaText="Se priser"
         secondaryCtaLink="/priser"
-        backgroundImage="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        backgroundImage="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       />
 
       <section className="py-16 bg-white">

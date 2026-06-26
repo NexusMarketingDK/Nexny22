@@ -171,7 +171,7 @@ export default function AiIntegrationPage() {
         subtitle="Magnora Marketing implementerer skræddersyede AI-løsninger til danske virksomheder – automatiser leadgenerering, booking og kundeservice med dokumenteret ROI."
         ctaText="Book en gratis AI-konsultation"
         ctaLink="/kontakt"
-        backgroundImage="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        backgroundImage="https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       />
 
       {/* Vi bygger dit AI-projekt – klar til lancering */}
@@ -404,7 +404,7 @@ export default function AiIntegrationPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
             <div>
               <img
-                src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 alt="AI integration og automatisering hos Magnora Marketing"
                 className="rounded-xl shadow-lg w-full"
               />
