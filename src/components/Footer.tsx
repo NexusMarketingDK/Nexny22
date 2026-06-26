@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Mail, MapPin, Facebook, Linkedin } from 'lucide-react';
+import { Mail, MapPin, Facebook, Linkedin, Zap } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center">
-                <Phone size={14} className="text-white" />
+                <Zap size={14} className="text-white" />
               </div>
               <span className="text-xl font-bold tracking-tight">Magnora Marketing</span>
             </div>
