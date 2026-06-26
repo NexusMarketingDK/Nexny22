@@ -205,7 +205,7 @@ const HomePage: React.FC = () => {
             </div>
             <div className="relative">
               <img
-                src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                src="https://images.pexels.com/photos/3182781/pexels-photo-3182781.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 alt="Vækst og succes for B2B virksomheder med Magnora Marketing"
                 className="rounded-lg shadow-lg object-cover w-full h-[500px]"
               />
