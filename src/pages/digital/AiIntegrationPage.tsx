@@ -5,6 +5,7 @@ import HeroSection from '../../components/HeroSection';
 import SEO from '../../components/SEO';
 import FAQSection from '../../components/FAQSection';
 import CTASection from '../../components/CTASection';
+import AiSolutionsSection from '../../components/AiSolutionsSection';
 
 export default function AiIntegrationPage() {
   const [activeWorkflow, setActiveWorkflow] = useState(0);
@@ -500,6 +501,8 @@ export default function AiIntegrationPage() {
           </div>
         </div>
       </section>
+
+      <AiSolutionsSection variant="dark" />
 
       <FAQSection faqs={[
         { question: 'Hvad kan AI gøre for min virksomhed?', answer: 'AI kan automatisere gentagne opgaver, besvare kundehenvendelser døgnet rundt, kvalificere leads automatisk og give dybdegående indsigt i data – alt mens dine medarbejdere fokuserer på det der skaber mest værdi.' },
