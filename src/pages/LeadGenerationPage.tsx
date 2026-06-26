@@ -141,7 +141,7 @@ const LeadGenerationPage: React.FC = () => {
               Magnora Marketing's tilgang til leadgenerering handler om kvalitet frem for kvantitet. Vi investerer tid i at forstå din forretning, dine kunder og din konkurrencesituation, og bruger denne indsigt til at identificere de leads der faktisk konverterer. Vores lead-profiling inkluderer virksomhedsinfo, beslutningsrolle og en prioriteringsscore baseret på købsintention – så dit salgsteam altid starter med de varmeste emner og bruger minimum tid på at nå maksimale resultater.
             </p>
             <p className="text-gray-600 mb-4">
-              Kontakt Magnora Marketing på +45 91 95 27 94 eller kontakt@magnoramarketing.dk for at høre mere om vores leadgenererings-løsninger og få et uforpligtende tilbud tilpasset din virksomheds behov og vækstmål.
+              Kontakt Magnora Marketing på mail@magnoramarketing.dk eller mail@magnoramarketing.dk for at høre mere om vores leadgenererings-løsninger og få et uforpligtende tilbud tilpasset din virksomheds behov og vækstmål.
             </p>
           </div>
         </div>

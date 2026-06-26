@@ -171,7 +171,7 @@ const AboutPage: React.FC = () => {
               Magnora Marketing's vision er at være Danmarks mest effektive vækstpartner for B2B virksomheder – ved at kombinere menneskelig salgskraft med datadrevne metoder og digitale løsninger under ét tag. Vi er ikke et traditionelt callcenter – vi er en strategisk partner der forstår forretning, og som tager ansvaret for hele salgsprocessen fra første leadkvalificering til bookede møder og løbende optimering. Vores tilgang er altid skræddersyet, aldrig standardiseret.
             </p>
             <p className="text-gray-600 mb-4">
-              Lær os bedre at kende og hør hvordan Magnora Marketing kan hjælpe din virksomhed med at vækste. Ring til os på +45 91 95 27 94 eller skriv til kontakt@magnoramarketing.dk – vi er altid klar til en uforpligtende samtale om dine muligheder.
+              Lær os bedre at kende og hør hvordan Magnora Marketing kan hjælpe din virksomhed med at vækste. Ring til os på mail@magnoramarketing.dk eller skriv til mail@magnoramarketing.dk – vi er altid klar til en uforpligtende samtale om dine muligheder.
             </p>
           </div>
         </div>

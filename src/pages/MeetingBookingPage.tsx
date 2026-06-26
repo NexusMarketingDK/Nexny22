@@ -161,7 +161,7 @@ const MeetingBookingPage: React.FC = () => {
               Magnora Marketing tilbyder fleksible prismodeller for professionel mødebooking der passer til din virksomheds størrelse og behov. Med vores No Cure No Pay-model betaler du udelukkende for gennemførte, kvalificerede møder – du definerer selv kvalitetskriterierne og betaler ikke for aflyste eller useriøse møder. Pakkeløsningen giver en lavere enhedspris og mere forudsigelige omkostninger, og er bedst egnet til virksomheder med et kontinuerligt behov for mødebooking.
             </p>
             <p className="text-gray-600 mb-4">
-              Kontakt Magnora Marketing på +45 91 95 27 94 eller kontakt@magnoramarketing.dk for et uforpligtende tilbud på mødebooking tilpasset din branche, din målgruppe og dine vækstmål. De første kvalificerede møder kan typisk leveres inden for 2-3 uger efter opstartsbriefing.
+              Kontakt Magnora Marketing på mail@magnoramarketing.dk eller mail@magnoramarketing.dk for et uforpligtende tilbud på mødebooking tilpasset din branche, din målgruppe og dine vækstmål. De første kvalificerede møder kan typisk leveres inden for 2-3 uger efter opstartsbriefing.
             </p>
           </div>
         </div>

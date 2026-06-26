@@ -183,7 +183,7 @@ export default function WebsitesPage() {
               Magnora Marketing leverer hjemmesider i alle størrelser og kompleksiteter – fra målrettede landingssider til kampagner og annoncetrafik, over professionelle virksomhedshjemmesider, til komplette webshops med fuldt betalingsflow og produktstyring. Vi tilbyder også porteføljesider, bookingplatforme og branche-specifikke løsninger tilpasset din forretning. Prisen afhænger af scope og kompleksitet, og vi sender altid et detaljeret og transparent tilbud inden projektet startes.
             </p>
             <p className="text-gray-600 mb-4">
-              Kontakt Magnora Marketing på +45 91 95 27 94 eller kontakt@magnoramarketing.dk for at høre mere om, hvilken hjemmesideløsning der passer bedst til din virksomhed og dit budget. Vi sender et uforpligtende tilbud inden for 24 timer.
+              Kontakt Magnora Marketing på mail@magnoramarketing.dk eller mail@magnoramarketing.dk for at høre mere om, hvilken hjemmesideløsning der passer bedst til din virksomhed og dit budget. Vi sender et uforpligtende tilbud inden for 24 timer.
             </p>
           </div>
         </div>

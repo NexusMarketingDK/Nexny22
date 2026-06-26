@@ -67,7 +67,7 @@ export default function AIAutomation2026() {
           Virksomheder der investerer i AI-automation af salgsprocesserne i 2026 får en markant konkurrencefordel: lavere omkostninger per lead, højere konverteringsrater og et salgsteam der bruger tid på de aktiviteter der skaber reel omsætning. Magnora Marketing hjælper din virksomhed med at implementere de rigtige AI-løsninger fra dag ét – GDPR-compliant, integreret med dine eksisterende systemer og med dokumenteret ROI.
         </p>
         <p className="text-gray-600 mb-6">
-          Kontakt Magnora Marketing på +45 91 95 27 94 eller kontakt@magnoramarketing.dk for en uforpligtende AI-konsultation. Vi gennemgår dine salgsprocesser og præsenterer konkrete løsninger med estimeret ROI.
+          Kontakt Magnora Marketing på mail@magnoramarketing.dk eller mail@magnoramarketing.dk for en uforpligtende AI-konsultation. Vi gennemgår dine salgsprocesser og præsenterer konkrete løsninger med estimeret ROI.
         </p>
       </div>
       <CTASection

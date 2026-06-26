@@ -292,7 +292,7 @@ const HomePage: React.FC = () => {
               Hos Magnora Marketing tror vi på, at den bedste vej til vækst går gennem ægte relationer og præcis kommunikation. Vores tilgang til B2B salg og mødebooking er altid skræddersyet til din specifikke branche, målgruppe og salgsproces. Vi dykker ned i din virksomhed, forstår dine produkter og services og udvikler præcise salgsscripts og kommunikationsstrategier der resonerer med dine potentielle kunder – fra SaaS og IT-konsulenter til energi, finans og facility management.
             </p>
             <p className="text-gray-600 mb-6">
-              Med kontorer i Aarhus og Valencia og et stærkt netværk af erfarne freelance sælgere kan Magnora Marketing hurtigt skalere indsatsen og tilpasse sig din virksomheds behov. Kontakt os på telefon +45 91 95 27 94 eller email kontakt@magnoramarketing.dk for en uforpligtende samtale om, hvordan Magnora Marketing kan hjælpe din virksomhed med at generere flere kvalificerede leads og booke flere salgsmøder.
+              Med base i Valencia og et stærkt netværk af erfarne freelance sælgere kan Magnora Marketing hurtigt skalere indsatsen og tilpasse sig din virksomheds behov. Kontakt os på mail@magnoramarketing.dk for en uforpligtende samtale om, hvordan Magnora Marketing kan hjælpe din virksomhed med at generere flere kvalificerede leads og booke flere salgsmøder.
             </p>
           </div>
         </div>

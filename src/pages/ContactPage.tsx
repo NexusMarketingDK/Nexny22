@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Phone, Mail, MapPin } from 'lucide-react';
+import { Mail, MapPin } from 'lucide-react';
 import SEO from '../components/SEO';
 import CTASection from '../components/CTASection';
 import FAQSection from '../components/FAQSection';
@@ -22,7 +22,7 @@ const ContactPage: React.FC = () => {
     { question: "Hvordan bliver jeg freelance sælger hos Magnora Marketing?", answer: "Start med at sende din ansøgning gennem vores kontaktformular. Vi inviterer dig derefter til en samtale, hvor vi diskuterer mulighederne." },
     { question: "Hvilke krav er der til freelance sælgere?", answer: "Vi søger engagerede personer med gode kommunikationsevner. Du skal have et hjemmekontor med stabilt internet og kunne arbejde minimum 20 timer om ugen." },
     { question: "Svarer I på henvendelser i weekenden?", answer: "Vi er tilgængelige mandag-fredag 8-16. Henvendelser modtaget i weekenden besvares den følgende hverdag." },
-    { question: "Kan jeg ringe direkte til Magnora Marketing?", answer: "Ja – du kan ringe til os på +45 91 95 27 94 i vores åbningstider." },
+    { question: "Hvordan kontakter jeg Magnora Marketing?", answer: "Send os en email på mail@magnoramarketing.dk, så vender vi tilbage inden for én hverdag." },
     { question: "Hvad skal jeg inkludere i min henvendelse?", answer: "Fortæl os kort om din virksomhed, hvad du har brug for hjælp til, og hvad dit budget er. Jo mere info, jo bedre kan vi forberede samtalen." },
     { question: "Hvor lang tid tager det at få et tilbud?", answer: "Typisk sender vi et første udkast til tilbud inden for 2-3 hverdage efter den indledende samtale." },
     { question: "Kan jeg booke et møde online?", answer: "Ja – brug kontaktformularen til at angive dine ønsker, og vi kontakter dig for at aftale et tidspunkt." },
@@ -77,38 +77,14 @@ const ContactPage: React.FC = () => {
                 <h2 className="text-2xl font-semibold mb-6">Kontaktoplysninger</h2>
 
                 <div className="space-y-8">
-                  {/* Spanish Office */}
                   <div>
-                    <h3 className="font-medium text-lg mb-3">Magnora Marketing Spanien</h3>
+                    <h3 className="font-medium text-lg mb-3">Magnora Marketing</h3>
                     <div className="flex items-start">
                       <MapPin size={24} className="text-blue-600 mr-4 mt-1" />
                       <p className="text-gray-600">
-                        Calle Las Barcas, 2 2nd floor<br />
-                        46002 Valencia<br />
-                        Spanien
-                      </p>
-                    </div>
-                  </div>
-
-                  {/* Danish Office */}
-                  <div>
-                    <h3 className="font-medium text-lg mb-3">Magnora Marketing Danmark</h3>
-                    <div className="flex items-start">
-                      <MapPin size={24} className="text-blue-600 mr-4 mt-1" />
-                      <p className="text-gray-600">
-                        Trindsøvej 6, 1. sal<br />
-                        8000 Aarhus C<br />
-                        Danmark
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start">
-                    <Phone size={24} className="text-blue-600 mr-4 mt-1" />
-                    <div>
-                      <h3 className="font-medium">Telefon</h3>
-                      <p className="text-gray-600">
-                        <a href="tel:+4591952794" className="hover:text-blue-600">+45 91 95 27 94</a>
+                        Calle Purisima 5<br />
+                        46540 El Puig<br />
+                        Valencia, Spanien
                       </p>
                     </div>
                   </div>
@@ -118,7 +94,7 @@ const ContactPage: React.FC = () => {
                     <div>
                       <h3 className="font-medium">Email</h3>
                       <p className="text-gray-600">
-                        <a href="mailto:kontakt@magnoramarketing.dk" className="hover:text-blue-600">kontakt@magnoramarketing.dk</a>
+                        <a href="mailto:mail@magnoramarketing.dk" className="hover:text-blue-600">mail@magnoramarketing.dk</a>
                       </p>
                     </div>
                   </div>
@@ -190,10 +166,10 @@ const ContactPage: React.FC = () => {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-6">Kontakt Magnora Marketing – Din Vækstpartner inden for Telesalg, Mødebooking og AI</h2>
             <p className="text-gray-600 mb-4">
-              Magnora Marketing er din direkte vej til professionelt B2B telesalg, kvalificeret mødebooking, datadrevet leadgenerering og moderne webudvikling med AI-integration. Vi er let tilgængelige og svarer altid hurtigt – ring til os på +45 91 95 27 94 eller send en email til kontakt@magnoramarketing.dk, og vi vender tilbage inden for én hverdag med et konkret og uforpligtende svar på din henvendelse.
+              Magnora Marketing er din direkte vej til professionelt B2B telesalg, kvalificeret mødebooking, datadrevet leadgenerering og moderne webudvikling med AI-integration. Vi er let tilgængelige og svarer altid hurtigt – send os en email på mail@magnoramarketing.dk, og vi vender tilbage inden for én hverdag med et konkret og uforpligtende svar på din henvendelse.
             </p>
             <p className="text-gray-600 mb-6">
-              Uanset om du er en etableret B2B virksomhed der ønsker at outsource dit salg, en startup der søger at vækste hurtigt, eller en freelance sælger der ønsker spændende projekter – Magnora Marketing har en løsning til dig. Vores team med kontorer i Aarhus og Valencia er klar til at tage en uforpligtende samtale om dine behov og vise dig præcis hvordan Magnora Marketing kan hjælpe din virksomhed med at nå sine vækstmål.
+              Uanset om du er en etableret B2B virksomhed der ønsker at outsource dit salg, en startup der søger at vækste hurtigt, eller en freelance sælger der ønsker spændende projekter – Magnora Marketing har en løsning til dig. Vores team er klar til at tage en uforpligtende samtale om dine behov og vise dig præcis hvordan Magnora Marketing kan hjælpe din virksomhed med at nå sine vækstmål.
             </p>
           </div>
         </div>

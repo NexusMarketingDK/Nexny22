@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Phone, Mail, MapPin, Facebook, Linkedin } from 'lucide-react';
+import { Mail, MapPin, Facebook, Linkedin, Zap } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center">
-                <Phone size={14} className="text-white" />
+                <Zap size={14} className="text-white" />
               </div>
               <span className="text-xl font-bold tracking-tight">Magnora Marketing</span>
             </div>
@@ -83,26 +83,15 @@ const Footer: React.FC = () => {
             <h3 className="text-sm font-bold uppercase tracking-widest text-slate-400 mb-4">Kontakt</h3>
             <div className="space-y-4">
               <div>
-                <p className="text-xs font-semibold text-slate-500 mb-1">Magnora Marketing Spanien</p>
+                <p className="text-xs font-semibold text-slate-500 mb-1">Magnora Marketing</p>
                 <div className="flex items-start gap-2">
                   <MapPin size={15} className="text-blue-500 mt-0.5 flex-shrink-0" />
-                  <p className="text-slate-400 text-sm">Calle Las Barcas 2, Valencia</p>
+                  <p className="text-slate-400 text-sm">Calle Purisima 5<br />46540 El Puig, Valencia</p>
                 </div>
               </div>
-              <div>
-                <p className="text-xs font-semibold text-slate-500 mb-1">Magnora Marketing Danmark</p>
-                <div className="flex items-start gap-2">
-                  <MapPin size={15} className="text-blue-500 mt-0.5 flex-shrink-0" />
-                  <p className="text-slate-400 text-sm">Trindsøvej 6, 8000 Aarhus C</p>
-                </div>
-              </div>
-              <a href="mailto:kontakt@magnoramarketing.dk" className="flex items-center gap-2 text-slate-400 hover:text-white text-sm transition-colors">
+              <a href="mailto:mail@magnoramarketing.dk" className="flex items-center gap-2 text-slate-400 hover:text-white text-sm transition-colors">
                 <Mail size={15} className="text-blue-500 flex-shrink-0" />
-                kontakt@magnoramarketing.dk
-              </a>
-              <a href="tel:+4591952794" className="flex items-center gap-2 text-slate-400 hover:text-white text-sm transition-colors">
-                <Phone size={15} className="text-blue-500 flex-shrink-0" />
-                +45 91 95 27 94
+                mail@magnoramarketing.dk
               </a>
             </div>
           </div>
