@@ -11,7 +11,7 @@ export default function AiReceptionPage() {
     {
       icon: <Mic size={36} className="text-blue-600" />,
       title: 'Naturlig stemmesamtale på dansk',
-      description: 'Nexny\'s AI-receptionist taler flydende dansk med naturlig prosodi og forstår kontekst, dialekter og branchejargon – ligesom en erfaren medarbejder.'
+      description: 'Magnora Marketing\'s AI-receptionist taler flydende dansk med naturlig prosodi og forstår kontekst, dialekter og branchejargon – ligesom en erfaren medarbejder.'
     },
     {
       icon: <Clock size={36} className="text-blue-600" />,
@@ -43,7 +43,7 @@ export default function AiReceptionPage() {
   const scenarios = [
     {
       caller: 'Potentiel kunde',
-      ai: 'Tak for dit opkald til Nexny. Hvad kan jeg hjælpe dig med i dag?',
+      ai: 'Tak for dit opkald til Magnora Marketing. Hvad kan jeg hjælpe dig med i dag?',
       caller2: 'Jeg vil gerne høre mere om jeres mødebooking',
       ai2: 'Selvfølgelig! Vil du have et uforpligtende møde med en af vores specialister? Jeg kan booke det direkte nu.',
     }
@@ -55,7 +55,7 @@ export default function AiReceptionPage() {
     { question: 'Hvad sker der med komplekse henvendelser?', answer: 'AI\'en eskalerer automatisk til et menneske ved komplekse eller følsomme henvendelser. Opkaldet viderestilles eller der sendes en notifikation til den rette medarbejder.' },
     { question: 'Kan AI-receptionisten booke møder direkte?', answer: 'Ja – via integration med Google Calendar og Outlook kan AI\'en finde ledige tider og bekræfte bookingen under selve opkaldet.' },
     { question: 'Hvilke sprog taler AI-receptionisten?', answer: 'Primært dansk, men løsningen kan konfigureres til dansk, engelsk, tysk og andre sprog afhængigt af jeres behov.' },
-    { question: 'Hvad koster en AI-receptionist?', answer: 'Prisen afhænger af opkaldsvolumen og integrationer. Kontakt Nexny for et tilpasset tilbud – typisk markant billigere end en deltidsansat receptionist.' },
+    { question: 'Hvad koster en AI-receptionist?', answer: 'Prisen afhænger af opkaldsvolumen og integrationer. Kontakt Magnora Marketing for et tilpasset tilbud – typisk markant billigere end en deltidsansat receptionist.' },
     { question: 'Kan AI-receptionisten integreres med vores telefonsystem?', answer: 'Ja – vi integrerer med alle gængse VOIP-systemer, Microsoft Teams, 3CX, RingCentral og traditionelle telefonlinjer.' },
     { question: 'Er løsningen GDPR-kompatibel?', answer: 'Ja – samtaler håndteres i overensstemmelse med GDPR. Optagelser opbevares sikkert og slettes efter den aftalte periode.' },
     { question: 'Kan jeg lytte til opkaldene efterfølgende?', answer: 'Ja – alle opkald transskriberes og kan gennemlyttes. Du modtager daglige eller ugentlige opsummeringer.' },
@@ -70,15 +70,15 @@ export default function AiReceptionPage() {
   return (
     <>
       <SEO
-        title="AI Receptionist & Voice Agent | Automatisk Telefonpasning på Dansk | Nexny"
-        description="Nexny's AI-receptionist besvarer alle opkald, booker møder og router henvendelser automatisk – 24/7 på naturligt dansk. Aldrig optaget. ✓ GDPR-kompatibel ✓ Gratis demo"
+        title="AI Receptionist & Voice Agent | Automatisk Telefonpasning på Dansk | Magnora Marketing"
+        description="Magnora Marketing's AI-receptionist besvarer alle opkald, booker møder og router henvendelser automatisk – 24/7 på naturligt dansk. Aldrig optaget. ✓ GDPR-kompatibel ✓ Gratis demo"
         canonical="/digital/ai-reception"
         keywords="AI receptionist, voice agent, AI telefon, automatisk telefonpasning, AI mødebooking, virtuel receptionist dansk"
       />
 
       <HeroSection
         title="AI-receptionist der besvarer alle opkald og booker møder automatisk"
-        subtitle="Nexny's voice AI håndterer telefonhenvendelser på naturligt dansk – kvalificerer kalderen, booker møder og ruter videre, 24/7 uden ventetid."
+        subtitle="Magnora Marketing's voice AI håndterer telefonhenvendelser på naturligt dansk – kvalificerer kalderen, booker møder og ruter videre, 24/7 uden ventetid."
         ctaText="Book en gratis demo"
         ctaLink="/kontakt"
         secondaryCtaText="Se AI-widget"
@@ -97,7 +97,7 @@ export default function AiReceptionPage() {
                 Studier viser at 62% af virksomheders telefonopkald aldrig besvares. Kunder der ringer og ikke får svar, ringer videre til konkurrenten. En enkelt mistet henvendelse kan koste jer en kunde til seks cifre.
               </p>
               <p className="text-slate-500 mb-8 leading-relaxed">
-                Med Nexny's AI-receptionist besvares <strong className="text-slate-800">alle opkald</strong> – uanset tidspunkt, uanset belastning. AI\'en håndterer det meste selv, og ruter kun de komplekse henvendelser til jer.
+                Med Magnora Marketing's AI-receptionist besvares <strong className="text-slate-800">alle opkald</strong> – uanset tidspunkt, uanset belastning. AI\'en håndterer det meste selv, og ruter kun de komplekse henvendelser til jer.
               </p>
               <div className="space-y-3">
                 {[
@@ -119,13 +119,13 @@ export default function AiReceptionPage() {
               <div className="bg-slate-900 rounded-3xl p-6 text-white font-mono text-sm">
                 <div className="flex items-center gap-2 mb-5 text-slate-400 text-xs">
                   <Headphones size={14} />
-                  <span>Aktivt opkald · Nexny AI Reception</span>
+                  <span>Aktivt opkald · Magnora Marketing AI Reception</span>
                   <span className="ml-auto text-green-400">● Forbundet</span>
                 </div>
                 <div className="space-y-3">
                   <div className="flex gap-3">
                     <span className="text-blue-400 flex-shrink-0">AI:</span>
-                    <span className="text-slate-300">Tak for dit opkald til Nexny. Hvad kan jeg hjælpe dig med?</span>
+                    <span className="text-slate-300">Tak for dit opkald til Magnora Marketing. Hvad kan jeg hjælpe dig med?</span>
                   </div>
                   <div className="flex gap-3">
                     <span className="text-green-400 flex-shrink-0">Kalder:</span>
@@ -186,7 +186,7 @@ export default function AiReceptionPage() {
               <thead>
                 <tr className="border-b border-slate-200">
                   <th className="text-left py-4 pr-6 text-slate-500 font-medium"></th>
-                  <th className="py-4 px-6 text-blue-600 font-bold text-center bg-blue-50 rounded-t-xl">Nexny AI-receptionist</th>
+                  <th className="py-4 px-6 text-blue-600 font-bold text-center bg-blue-50 rounded-t-xl">Magnora Marketing AI-receptionist</th>
                   <th className="py-4 px-6 text-slate-600 font-bold text-center">Menneskelig receptionist</th>
                 </tr>
               </thead>
@@ -220,7 +220,7 @@ export default function AiReceptionPage() {
 
       <CTASection
         title="Lad AI besvare jeres telefon fra i morgen"
-        subtitle="Book en gratis demo og se Nexny's AI-receptionist i aktion. Klar til brug inden for 5 hverdage."
+        subtitle="Book en gratis demo og se Magnora Marketing's AI-receptionist i aktion. Klar til brug inden for 5 hverdage."
         primaryText="Book gratis demo"
         primaryLink="/kontakt"
         secondaryText="Se AI-widget"

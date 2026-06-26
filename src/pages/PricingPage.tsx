@@ -55,42 +55,42 @@ const PricingPage: React.FC = () => {
 
   const faqItems = [
     {
-      question: 'Hvad koster professionel mødebooking hos Nexny?',
-      answer: 'Prisen på mødebooking hos Nexny afhænger af din branche, målgruppens kompleksitet og den valgte model. Med No Cure No Pay betaler du typisk pr. gennemført møde, mens pakkeløsninger giver lavere enhedspris ved fast månedlig aftale. Kontakt os for et uforpligtende og skræddersyet tilbud.'
+      question: 'Hvad koster professionel mødebooking hos Magnora Marketing?',
+      answer: 'Prisen på mødebooking hos Magnora Marketing afhænger af din branche, målgruppens kompleksitet og den valgte model. Med No Cure No Pay betaler du typisk pr. gennemført møde, mens pakkeløsninger giver lavere enhedspris ved fast månedlig aftale. Kontakt os for et uforpligtende og skræddersyet tilbud.'
     },
     {
-      question: 'Hvordan fungerer No Cure No Pay hos Nexny?',
-      answer: "Med Nexny's No Cure No Pay model betaler du kun for møder der lever op til jeres på forhånd aftalte kvalitetskrav. Vi definerer sammen, hvad der udgør et vellykket møde – f.eks. varighed, beslutningskompetence og branche. Aflyste eller useriøse møder faktureres ikke."
+      question: 'Hvordan fungerer No Cure No Pay hos Magnora Marketing?',
+      answer: "Med Magnora Marketing's No Cure No Pay model betaler du kun for møder der lever op til jeres på forhånd aftalte kvalitetskrav. Vi definerer sammen, hvad der udgør et vellykket møde – f.eks. varighed, beslutningskompetence og branche. Aflyste eller useriøse møder faktureres ikke."
     },
     {
-      question: 'Hvad er forskellen på No Cure No Pay og pakkeløsning hos Nexny?',
+      question: 'Hvad er forskellen på No Cure No Pay og pakkeløsning hos Magnora Marketing?',
       answer: 'No Cure No Pay er ideel hvis du vil starte uden stor investering eller teste nye markeder. Du betaler kun for leverede resultater. Pakkeløsningen giver lavere pris pr. møde og mere forudsigelige omkostninger – bedst til virksomheder med et stabilt og kontinuerligt behov for mødebooking.'
     },
     {
-      question: 'Hvilke brancher arbejder Nexny med?',
-      answer: 'Nexny har erfaring fra en bred vifte af B2B brancher: tech og SaaS, IT-konsulenter, energi og bæredygtighed, facility management, finans og revision, HR, transport og logistik, markedsføring, inkasso og meget mere.'
+      question: 'Hvilke brancher arbejder Magnora Marketing med?',
+      answer: 'Magnora Marketing har erfaring fra en bred vifte af B2B brancher: tech og SaaS, IT-konsulenter, energi og bæredygtighed, facility management, finans og revision, HR, transport og logistik, markedsføring, inkasso og meget mere.'
     },
     {
-      question: 'Hvornår modtager jeg de første møder fra Nexny?',
-      answer: 'Efter en grundig opstartsbriefing kan Nexny typisk levere de første kvalificerede møder inden for 2-3 uger. Vi prioriterer solid forberedelse fremfor hurtig levering – det sikrer markant bedre mødekvalitet og færre no-shows.'
+      question: 'Hvornår modtager jeg de første møder fra Magnora Marketing?',
+      answer: 'Efter en grundig opstartsbriefing kan Magnora Marketing typisk levere de første kvalificerede møder inden for 2-3 uger. Vi prioriterer solid forberedelse fremfor hurtig levering – det sikrer markant bedre mødekvalitet og færre no-shows.'
     },
     {
-      question: 'Hvordan sikrer Nexny mødekvaliteten?',
-      answer: 'Nexny sikrer høj mødekvalitet via: grundig lead-research og målgruppesegmentering, skræddersyede scripts og kommunikationsstrategier, BANT-baseret forhåndskvalificering, dobbelt mødebekræftelse samt løbende optimering baseret på sælgerfeedback.'
+      question: 'Hvordan sikrer Magnora Marketing mødekvaliteten?',
+      answer: 'Magnora Marketing sikrer høj mødekvalitet via: grundig lead-research og målgruppesegmentering, skræddersyede scripts og kommunikationsstrategier, BANT-baseret forhåndskvalificering, dobbelt mødebekræftelse samt løbende optimering baseret på sælgerfeedback.'
     }
   ];
 
   return (
     <>
       <SEO
-        title="Priser & Pakker | Nexny – Mødebooking og Telemarketing"
-        description="Se Nexny's prismodeller for professionel B2B mødebooking og telemarketing. Vælg mellem No Cure No Pay eller fast pakkeløsning. Transparente priser og dokumenterede resultater."
+        title="Priser & Pakker | Magnora Marketing – Mødebooking og Telemarketing"
+        description="Se Magnora Marketing's prismodeller for professionel B2B mødebooking og telemarketing. Vælg mellem No Cure No Pay eller fast pakkeløsning. Transparente priser og dokumenterede resultater."
         canonical="/priser"
-        keywords="Nexny priser, mødebooking pris, telemarketing pris, No Cure No Pay, pakkeløsning salg"
+        keywords="Magnora Marketing priser, mødebooking pris, telemarketing pris, No Cure No Pay, pakkeløsning salg"
       />
 
       <HeroSection
-        title="Priser & Pakker hos Nexny"
+        title="Priser & Pakker hos Magnora Marketing"
         subtitle="Gennemsigtige og fleksible prismodeller tilpasset din virksomheds behov. Betal for resultater – ikke for tid."
         ctaText="Få et tilbud"
         ctaLink="/kontakt"
@@ -100,7 +100,7 @@ const PricingPage: React.FC = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Vælg din model hos Nexny</h2>
+            <h2 className="text-3xl font-bold mb-4">Vælg din model hos Magnora Marketing</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Vi tilbyder to gennemsigtige prismodeller – begge med fokus på målbare resultater og høj mødekvalitet.
             </p>
@@ -134,7 +134,7 @@ const PricingPage: React.FC = () => {
 
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 max-w-3xl">
-          <h2 className="text-3xl font-bold mb-8 text-center">Ofte stillede spørgsmål om Nexny's priser</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center">Ofte stillede spørgsmål om Magnora Marketing's priser</h2>
           <div className="space-y-4">
             {faqItems.map((faq, index) => (
               <div key={index} className="bg-white rounded-lg shadow overflow-hidden">
@@ -156,24 +156,24 @@ const PricingPage: React.FC = () => {
 
       <section className="bg-blue-600 text-white py-16">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6">Få et uforpligtende tilbud fra Nexny</h2>
+          <h2 className="text-3xl font-bold mb-6">Få et uforpligtende tilbud fra Magnora Marketing</h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto">
             Fortæl os om din virksomhed og dine mål – vi sender et skræddersyet tilbud inden for 24 timer.
           </p>
           <Link to="/kontakt" className="inline-flex items-center bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-            Kontakt Nexny nu <ArrowRight className="ml-2" />
+            Kontakt Magnora Marketing nu <ArrowRight className="ml-2" />
           </Link>
         </div>
       </section>
       <section className="section bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6">Nexny Priser på Mødebooking og Telemarketing – Transparente og Resultatorienterede</h2>
+            <h2 className="text-3xl font-bold mb-6">Magnora Marketing Priser på Mødebooking og Telemarketing – Transparente og Resultatorienterede</h2>
             <p className="text-gray-600 mb-4">
-              Nexny tilbyder to gennemsigtige prismodeller for professionel B2B mødebooking og telemarketing, begge designet til at maksimere din ROI og minimere risikoen. Med No Cure No Pay betaler du udelukkende for gennemførte, kvalificerede salgsmøder – der er ingen skjulte gebyrer, og du definerer selv de kvalitetskriterier et møde skal opfylde. Pakkeløsningen giver dig en dedikeret mødebooker, et garanteret minimumsantal salgsmøder og den laveste enhedspris – ideel til virksomheder med et stabilt og kontinuerligt behov for mødebooking.
+              Magnora Marketing tilbyder to gennemsigtige prismodeller for professionel B2B mødebooking og telemarketing, begge designet til at maksimere din ROI og minimere risikoen. Med No Cure No Pay betaler du udelukkende for gennemførte, kvalificerede salgsmøder – der er ingen skjulte gebyrer, og du definerer selv de kvalitetskriterier et møde skal opfylde. Pakkeløsningen giver dig en dedikeret mødebooker, et garanteret minimumsantal salgsmøder og den laveste enhedspris – ideel til virksomheder med et stabilt og kontinuerligt behov for mødebooking.
             </p>
             <p className="text-gray-600 mb-6">
-              Alle prismodeller hos Nexny inkluderer skræddersyet kampagneplanlægning, løbende scriptoptimering, CRM-opdatering og månedlig performancerapportering. Vi er fuldt transparente om vores priser og aktivitetsniveau, og fakturerer altid i henhold til det aftalte – ingen overraskelser undervejs. Kontakt Nexny på +45 91 95 27 94 eller kontakt@nexny.dk for et skræddersyet tilbud tilpasset din branche og dine vækstmål.
+              Alle prismodeller hos Magnora Marketing inkluderer skræddersyet kampagneplanlægning, løbende scriptoptimering, CRM-opdatering og månedlig performancerapportering. Vi er fuldt transparente om vores priser og aktivitetsniveau, og fakturerer altid i henhold til det aftalte – ingen overraskelser undervejs. Kontakt Magnora Marketing på +45 91 95 27 94 eller kontakt@magnoramarketing.dk for et skræddersyet tilbud tilpasset din branche og dine vækstmål.
             </p>
             <ul className="space-y-2">
               <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> No Cure No Pay – betal kun for leverede resultater</li>
@@ -188,12 +188,12 @@ const PricingPage: React.FC = () => {
       <section className="section bg-sky-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6">Hvad Koster Mødebooking Priser hos Nexny – og Hvad Får du?</h2>
+            <h2 className="text-3xl font-bold mb-6">Hvad Koster Mødebooking Priser hos Magnora Marketing – og Hvad Får du?</h2>
             <p className="text-gray-600 mb-4">
-              Prisen på professionel mødebooking hos Nexny afhænger af din branche, målgruppens kompleksitet og den valgte model. Vi sætter altid realistiske forventninger til aktivitetsniveau, møderate og estimeret ROI baseret på vores dybdegående brancheerfaring. Mange kunder ser positiv ROI allerede i første kvartal, og ved langtidssamarbejder tilbyder Nexny fordelagtige priser der sænker enhedsomkostningen yderligere.
+              Prisen på professionel mødebooking hos Magnora Marketing afhænger af din branche, målgruppens kompleksitet og den valgte model. Vi sætter altid realistiske forventninger til aktivitetsniveau, møderate og estimeret ROI baseret på vores dybdegående brancheerfaring. Mange kunder ser positiv ROI allerede i første kvartal, og ved langtidssamarbejder tilbyder Magnora Marketing fordelagtige priser der sænker enhedsomkostningen yderligere.
             </p>
             <p className="text-gray-600 mb-4">
-              Ud over prisen på selve møderne inkluderer Nexny's pakker altid lead-research, BANT-kvalificering, scriptudvikling, dobbelt mødebekræftelse og løbende optimering – en komplet servicepakke der sikrer den højest mulige mødekvalitet og minimerer no-shows.
+              Ud over prisen på selve møderne inkluderer Magnora Marketing's pakker altid lead-research, BANT-kvalificering, scriptudvikling, dobbelt mødebekræftelse og løbende optimering – en komplet servicepakke der sikrer den højest mulige mødekvalitet og minimerer no-shows.
             </p>
           </div>
         </div>
@@ -204,7 +204,7 @@ const PricingPage: React.FC = () => {
         { question: 'Kan vi opsige samarbejdet?', answer: 'Vi tilbyder fleksible aftaler med rimelige opsigelsesvarsler – typisk 1 måned.' },
         { question: 'Hvad er inkluderet i prisen?', answer: 'Afhængigt af pakken inkluderer prisen typisk kampagneplanlægning, opkaldstimer, rapportering, CRM-opdatering og løbende optimering.' },
         { question: 'Tilbyder I rabat ved langtidssamarbejde?', answer: 'Ja – ved 6 eller 12 måneders aftaler tilbyder vi fordelagtige priser. Kontakt os for et individuelt tilbud.' },
-        { question: 'Kan vi skalere op eller ned?', answer: 'Absolut. Nexny\'s løsninger er designet til at skalere med din virksomheds behov og vækst.' },
+        { question: 'Kan vi skalere op eller ned?', answer: 'Absolut. Magnora Marketing\'s løsninger er designet til at skalere med din virksomheds behov og vækst.' },
         { question: "Kan jeg betale månedligt?", answer: "Ja – vores standardmodeller faktureres månedligt med forudgående aftale om aktivitetsniveau og leverancer." },
         { question: "Er der en gratis prøveperiode?", answer: "Vi tilbyder ikke gratis perioder, men en kortere pilotperiode til reduceret pris for nye kunder." },
         { question: "Hvad inkluderer en standardpakke?", answer: "En standardpakke inkluderer typisk kampagneplanlægning, aktive opkaldstimer, CRM-opdatering og månedlig rapportering." },

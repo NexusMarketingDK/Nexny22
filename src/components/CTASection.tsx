@@ -21,7 +21,7 @@ const CTASection: React.FC<CTASectionProps> = ({ title, subtitle, primaryText, p
     <div className="container relative z-10 text-center">
       <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-white/80 text-xs font-semibold uppercase tracking-widest backdrop-blur-sm mb-6">
         <span className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse" />
-        Nexny · Kom i gang
+        Magnora Marketing · Kom i gang
       </span>
       <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{title}</h2>
       <p className="text-lg md:text-xl text-white/70 mb-10 max-w-2xl mx-auto">{subtitle}</p>

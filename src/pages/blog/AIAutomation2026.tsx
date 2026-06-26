@@ -6,7 +6,7 @@ export default function AIAutomation2026() {
   return (
     <>
       <SEO
-        title="AI Automation i Salg: Sådan bruger du det rigtigt i 2026 | Nexny Blog"
+        title="AI Automation i Salg: Sådan bruger du det rigtigt i 2026 | Magnora Marketing Blog"
         description="Kunstig intelligens forandrer salgsindsatsen. Lær hvordan du implementerer AI i din salgsproces og øger konverteringsraten markant med konkrete eksempler fra dansk erhvervsliv."
         canonical="/blog/ai-telemarketing-fremtiden"
         keywords="AI telemarketing, kunstig intelligens salg, AI automation B2B, lead scoring AI, chatbot salg Danmark"
@@ -15,12 +15,12 @@ export default function AIAutomation2026() {
         <div className="container mx-auto px-4 max-w-4xl">
           <span className="inline-block bg-blue-500 bg-opacity-40 text-blue-100 text-sm font-semibold px-4 py-1 rounded-full mb-4">AI & Teknologi</span>
           <h1 className="text-4xl font-bold text-white mb-4">AI Automation i Salg: Sådan bruger du det rigtigt i 2026</h1>
-          <p className="text-gray-300">Af Nexny-teamet · 10. januar 2026 · 8 minutters læsning</p>
+          <p className="text-gray-300">Af Magnora Marketing-teamet · 10. januar 2026 · 8 minutters læsning</p>
         </div>
       </div>
       <div className="max-w-4xl mx-auto px-4 py-16">
         <p className="text-xl text-gray-700 mb-8 leading-relaxed">
-          Kunstig intelligens er ikke længere fremtidsmusik – det er nutidens konkurrenceparameter. I 2026 bruger de mest effektive salgsteams AI til alt fra lead-scoring og personaliseret outreach til prognosemodeller og mødeforberedelse. Hos Nexny arbejder vi dagligt med B2B salg og mødebooking, og vi ser på tæt hold, hvilke AI-strategier der skaber reel kommerciel værdi – og hvilke der blot er teknologi for teknologiens skyld.
+          Kunstig intelligens er ikke længere fremtidsmusik – det er nutidens konkurrenceparameter. I 2026 bruger de mest effektive salgsteams AI til alt fra lead-scoring og personaliseret outreach til prognosemodeller og mødeforberedelse. Hos Magnora Marketing arbejder vi dagligt med B2B salg og mødebooking, og vi ser på tæt hold, hvilke AI-strategier der skaber reel kommerciel værdi – og hvilke der blot er teknologi for teknologiens skyld.
         </p>
 
         <h2 className="text-2xl font-bold mb-4 mt-10">Hvad er AI automation i salg?</h2>
@@ -33,7 +33,7 @@ export default function AIAutomation2026() {
 
         <h2 className="text-2xl font-bold mb-4 mt-10">Konkrete AI-løsninger der skaber resultater i 2026</h2>
         <p className="text-gray-600 mb-4">
-          Hos Nexny arbejder vi med to danske AI-platforme der leverer dokumenterede resultater for vores kunder: AIbooking.dk og Leadgenie.dk.
+          Hos Magnora Marketing arbejder vi med to danske AI-platforme der leverer dokumenterede resultater for vores kunder: AIbooking.dk og Leadgenie.dk.
         </p>
         <p className="text-gray-600 mb-4">
           <strong>Leadgenie.dk</strong> automatiserer B2B leadgenerering ved at scanne markedet for virksomheder der matcher din ICP, score og prioritere emnerne baseret på branche, størrelse, adfærd og købssignaler, og levere en kontinuerlig strøm af varme, kvalificerede leads direkte til dit CRM-system. En SaaS-virksomhed vi arbejder med, oplevede en 3x stigning i hitrate efter implementering af Leadgenie – fordi sælgerne kun kontaktede de allervarmeste emner.
@@ -44,7 +44,7 @@ export default function AIAutomation2026() {
 
         <h2 className="text-2xl font-bold mb-4 mt-10">Sådan implementerer du AI i din salgsproces – trin for trin</h2>
         <p className="text-gray-600 mb-4">
-          Den vigtigste fejl mange virksomheder gør, er at implementere AI-løsninger uden en klar strategi og uden at definere konkrete KPI'er. Hos Nexny anbefaler vi følgende tilgang:
+          Den vigtigste fejl mange virksomheder gør, er at implementere AI-løsninger uden en klar strategi og uden at definere konkrete KPI'er. Hos Magnora Marketing anbefaler vi følgende tilgang:
         </p>
         <ol className="list-decimal pl-6 space-y-3 text-gray-600 mb-6">
           <li><strong>Kortlæg din nuværende salgsproces</strong> og identificer de trin der er mest tidskrævende og gentagne – de er oftest bedst egnede til AI-automation.</li>
@@ -56,23 +56,23 @@ export default function AIAutomation2026() {
 
         <h2 className="text-2xl font-bold mb-4 mt-10">AI og menneskelig salgskraft – den vindende kombination</h2>
         <p className="text-gray-600 mb-4">
-          Hos Nexny er vores klare erfaring, at AI ikke erstatter menneskelig salgskraft – det forstærker den. AI er fremragende til at sortere, prioritere og automatisere gentagne opgaver, men de afgørende øjeblikke i B2B salg – den personlige dialog, opbygningen af tillid og den nuancerede forhandling – kræver fortsat menneskelig ekspertise og empati.
+          Hos Magnora Marketing er vores klare erfaring, at AI ikke erstatter menneskelig salgskraft – det forstærker den. AI er fremragende til at sortere, prioritere og automatisere gentagne opgaver, men de afgørende øjeblikke i B2B salg – den personlige dialog, opbygningen af tillid og den nuancerede forhandling – kræver fortsat menneskelig ekspertise og empati.
         </p>
         <p className="text-gray-600 mb-6">
-          Den mest effektive tilgang i 2026 er at lade AI håndtere leadidentifikation, scoring og første outreach, mens erfarne salgsprofessionelle tager over ved mødet og lukker aftalerne. Det er præcis den model Nexny tilbyder sine samarbejdspartnere: AI-drevet leadgenerering og booking kombineret med professionel menneskelig opfølgning.
+          Den mest effektive tilgang i 2026 er at lade AI håndtere leadidentifikation, scoring og første outreach, mens erfarne salgsprofessionelle tager over ved mødet og lukker aftalerne. Det er præcis den model Magnora Marketing tilbyder sine samarbejdspartnere: AI-drevet leadgenerering og booking kombineret med professionel menneskelig opfølgning.
         </p>
 
         <h2 className="text-2xl font-bold mb-4 mt-10">Konklusion: AI i telemarketing er fremtiden – og fremtiden er nu</h2>
         <p className="text-gray-600 mb-6">
-          Virksomheder der investerer i AI-automation af salgsprocesserne i 2026 får en markant konkurrencefordel: lavere omkostninger per lead, højere konverteringsrater og et salgsteam der bruger tid på de aktiviteter der skaber reel omsætning. Nexny hjælper din virksomhed med at implementere de rigtige AI-løsninger fra dag ét – GDPR-compliant, integreret med dine eksisterende systemer og med dokumenteret ROI.
+          Virksomheder der investerer i AI-automation af salgsprocesserne i 2026 får en markant konkurrencefordel: lavere omkostninger per lead, højere konverteringsrater og et salgsteam der bruger tid på de aktiviteter der skaber reel omsætning. Magnora Marketing hjælper din virksomhed med at implementere de rigtige AI-løsninger fra dag ét – GDPR-compliant, integreret med dine eksisterende systemer og med dokumenteret ROI.
         </p>
         <p className="text-gray-600 mb-6">
-          Kontakt Nexny på +45 91 95 27 94 eller kontakt@nexny.dk for en uforpligtende AI-konsultation. Vi gennemgår dine salgsprocesser og præsenterer konkrete løsninger med estimeret ROI.
+          Kontakt Magnora Marketing på +45 91 95 27 94 eller kontakt@magnoramarketing.dk for en uforpligtende AI-konsultation. Vi gennemgår dine salgsprocesser og præsenterer konkrete løsninger med estimeret ROI.
         </p>
       </div>
       <CTASection
         title="Klar til at implementere AI i din salgsproces?"
-        subtitle="Lad Nexny's AI-specialister hjælpe din virksomhed med at automatisere leadgenerering, booking og kundeservice – med dokumenteret ROI."
+        subtitle="Lad Magnora Marketing's AI-specialister hjælpe din virksomhed med at automatisere leadgenerering, booking og kundeservice – med dokumenteret ROI."
         primaryText="Book en gratis AI-konsultation"
         primaryLink="/kontakt"
         secondaryText="Se AI-integration"

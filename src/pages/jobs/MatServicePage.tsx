@@ -9,10 +9,10 @@ export default function MatServicePage() {
   return (
     <>
       <SEO
-        title="Freelance Sælger Måtte- og Rengøringsservice | Nexny"
-        description="Bliv freelance sælger af måtte- og rengøringsservice til erhverv hos Nexny. Arbejd hjemmefra med fleksible tider og stabil provision på abonnementsaftaler."
+        title="Freelance Sælger Måtte- og Rengøringsservice | Magnora Marketing"
+        description="Bliv freelance sælger af måtte- og rengøringsservice til erhverv hos Magnora Marketing. Arbejd hjemmefra med fleksible tider og stabil provision på abonnementsaftaler."
         canonical="/jobs/matte-service"
-        keywords="freelance sælger rengøringsservice, måtteservice salg, rengøring erhverv sælger, Nexny rengøring stilling, facility service salg"
+        keywords="freelance sælger rengøringsservice, måtteservice salg, rengøring erhverv sælger, Magnora Marketing rengøring stilling, facility service salg"
       />
 
       <HeroSection
@@ -34,7 +34,7 @@ export default function MatServicePage() {
                 Som freelance sælger inden for måtte- og rengøringsservice kontakter du virksomheder, butikker, klinikker og institutioner med et tilbud om professionel facility service. Det er en ydelse de fleste allerede bruger – og mange er åbne for et bedre tilbud.
               </p>
               <p className="text-lg text-gray-600 mb-8">
-                Nexny leverer leads og scripts. Du ringer, præsenterer løsningen og lukker aftalen eller booker et møde med facility manageren.
+                Magnora Marketing leverer leads og scripts. Du ringer, præsenterer løsningen og lukker aftalen eller booker et møde med facility manageren.
               </p>
               <ul className="space-y-3">
                 {[
@@ -102,7 +102,7 @@ export default function MatServicePage() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Hvad du får hos Nexny</h2>
+            <h2 className="text-3xl font-bold mb-4">Hvad du får hos Magnora Marketing</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
@@ -145,7 +145,7 @@ export default function MatServicePage() {
               <h2 className="text-2xl font-bold mb-6">Sådan søger du</h2>
               <p className="text-gray-600 mb-6">Send en kort besked om din baggrund og erfaring. Vi vender tilbage inden for 2 hverdage.</p>
               <Link to="/kontakt" className="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
-                Kontakt Nexny nu <ArrowRight size={16} className="ml-2" />
+                Kontakt Magnora Marketing nu <ArrowRight size={16} className="ml-2" />
               </Link>
             </div>
           </div>
@@ -157,22 +157,22 @@ export default function MatServicePage() {
         { question: 'Hvem er de typiske kunder?', answer: 'Kontorer, butikker, restauranter, hoteller og produktionsvirksomheder der ønsker et professionelt indgangsmiljø.' },
         { question: 'Er det et tilbagevendende produkt?', answer: 'Ja – måtteservice er typisk abonnementsbaseret, hvilket giver kunderne god stabilitet.' },
         { question: 'Hvad er mine arbejdstider?', answer: 'Du bestemmer selv dine timer som freelancer. Vi anbefaler at ringe inden for normal kontortid.' },
-        { question: "Er der opkaldslister klar fra dag ét?", answer: "Ja – Nexny leverer opkaldslister og kampagnematerialer, så du kan starte med det samme." },
+        { question: "Er der opkaldslister klar fra dag ét?", answer: "Ja – Magnora Marketing leverer opkaldslister og kampagnematerialer, så du kan starte med det samme." },
         { question: "Kan jeg se et eksempel på et script?", answer: "Ja – du modtager et gennemprøvet salgsskript ved opstart som du kan tilpasse din stil." },
         { question: "Hvad sker der ved et succes-salg eller booket møde?", answer: "Du registrerer resultatet i vores system, og provisionen beregnes automatisk og udbetales månedligt." },
-        { question: "Er der løbende coaching?", answer: "Ja – Nexny's salgsledere holder regelmæssige coaching-sessioner og giver feedback på din salgsstil." },
+        { question: "Er der løbende coaching?", answer: "Ja – Magnora Marketing's salgsledere holder regelmæssige coaching-sessioner og giver feedback på din salgsstil." },
         { question: "Kan jeg prøve stillingen i en kortere periode?", answer: "Ja – de første 2-4 uger betragtes som en gensidig prøveperiode." },
         { question: "Hvad er den gennemsnitlige indkomst for en aktiv freelancer?", answer: "Det afhænger af aktivitet og produkt. Aktive freelancere med gode resultater kan tjene et solidt supplement eller en fuld indkomst." },
-        { question: "Kan jeg arbejde for Nexny og for andre bureauer?", answer: "Som freelancer er du fri til at arbejde for andre, så længe der ikke er konkurrencekonflikt med Nexny's kunder." },
+        { question: "Kan jeg arbejde for Magnora Marketing og for andre bureauer?", answer: "Som freelancer er du fri til at arbejde for andre, så længe der ikke er konkurrencekonflikt med Magnora Marketing's kunder." },
         { question: "Er der skriftlige kontrakter?", answer: "Ja – alle samarbejder formaliseres med en klar freelance-aftale der beskriver vilkår, provision og forventninger." },
-        { question: "Hvad sker der, hvis jeg ikke trives med produktet?", answer: "Vi kan diskutere om du er bedre egnet til et andet produkt i Nexny's portfolio." },
-        { question: "Hvad er Nexny's forventninger til mig som freelancer?", answer: "Vi forventer selvdisciplin, professionel optræden og løbende kommunikation om aktivitet og resultater." },
+        { question: "Hvad sker der, hvis jeg ikke trives med produktet?", answer: "Vi kan diskutere om du er bedre egnet til et andet produkt i Magnora Marketing's portfolio." },
+        { question: "Hvad er Magnora Marketing's forventninger til mig som freelancer?", answer: "Vi forventer selvdisciplin, professionel optræden og løbende kommunikation om aktivitet og resultater." },
       ]} />
 
       <section className="bg-blue-600 text-white py-16">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6">Klar til at bygge en stabil salgportefølje?</h2>
-          <p className="text-xl mb-8 max-w-3xl mx-auto">Kontakt Nexny og kom i gang med facility service-salg der giver stabil og tilbagevendende provision.</p>
+          <p className="text-xl mb-8 max-w-3xl mx-auto">Kontakt Magnora Marketing og kom i gang med facility service-salg der giver stabil og tilbagevendende provision.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/kontakt" className="inline-flex items-center bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
               Send ansøgning <ArrowRight className="ml-2" size={18} />

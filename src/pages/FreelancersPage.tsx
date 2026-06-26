@@ -22,7 +22,7 @@ const FreelancersPage: React.FC = () => {
     {
       icon: <Users size={40} className="text-blue-600" />,
       title: 'Stærkt fællesskab',
-      description: 'Selv som freelancer er du aldrig alene. Du er en del af et stærkt Nexny-netværk med sparring og fælles drive.'
+      description: 'Selv som freelancer er du aldrig alene. Du er en del af et stærkt Magnora Marketing-netværk med sparring og fælles drive.'
     },
     {
       icon: <Award size={40} className="text-blue-600" />,
@@ -52,15 +52,15 @@ const FreelancersPage: React.FC = () => {
   return (
     <>
       <SEO
-        title="Freelance Sælger & Mødebooker Stillinger | Nexny"
-        description="Bliv freelance sælger eller mødebooker hos Nexny. Arbejd hjemmefra, sæt dine egne tider og tjen godt med attraktiv provision. Se alle ledige stillinger her."
+        title="Freelance Sælger & Mødebooker Stillinger | Magnora Marketing"
+        description="Bliv freelance sælger eller mødebooker hos Magnora Marketing. Arbejd hjemmefra, sæt dine egne tider og tjen godt med attraktiv provision. Se alle ledige stillinger her."
         canonical="/freelance-telemarketing"
-        keywords="freelance sælger, freelance mødebooker, arbejd hjemmefra, telemarketing job, Nexny stillinger, B2B sælger"
+        keywords="freelance sælger, freelance mødebooker, arbejd hjemmefra, telemarketing job, Magnora Marketing stillinger, B2B sælger"
       />
 
       <HeroSection
         title="Din Karriere som Freelance Sælger starter her"
-        subtitle="Nexny tilbyder fleksible freelance-muligheder inden for B2B salg og mødebooking. Sæt dine egne tider, arbejd hjemmefra og byg en karriere på dine egne præmisser."
+        subtitle="Magnora Marketing tilbyder fleksible freelance-muligheder inden for B2B salg og mødebooking. Sæt dine egne tider, arbejd hjemmefra og byg en karriere på dine egne præmisser."
         ctaText="Se ledige stillinger"
         ctaLink="#stillinger"
         secondaryCtaText="Kontakt os"
@@ -71,9 +71,9 @@ const FreelancersPage: React.FC = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Hvad du får hos Nexny</h2>
+            <h2 className="text-3xl font-bold mb-4">Hvad du får hos Magnora Marketing</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Nexny tilbyder noget sjældent: friheden som freelancer kombineret med et stærkt professionelt fundament.
+              Magnora Marketing tilbyder noget sjældent: friheden som freelancer kombineret med et stærkt professionelt fundament.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -92,9 +92,9 @@ const FreelancersPage: React.FC = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold mb-6">Arbejd hjemmefra med Nexny</h2>
+              <h2 className="text-3xl font-bold mb-6">Arbejd hjemmefra med Magnora Marketing</h2>
               <p className="text-lg text-gray-600 mb-8">
-                Som freelance sælger eller mødebooker hos Nexny har du fuld fleksibilitet til at arbejde fra dit eget hjem. Du får adgang til moderne salgssystemer, løbende sparring og et stærkt netværk – uden at skulle møde ind på et kontor.
+                Som freelance sælger eller mødebooker hos Magnora Marketing har du fuld fleksibilitet til at arbejde fra dit eget hjem. Du får adgang til moderne salgssystemer, løbende sparring og et stærkt netværk – uden at skulle møde ind på et kontor.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
                 {workFromHomeBenefits.map((benefit, index) => (
@@ -106,7 +106,7 @@ const FreelancersPage: React.FC = () => {
                 ))}
               </div>
               <div className="space-y-3">
-                {['Ingen transport og pendling', 'Bedre balance mellem arbejde og privatliv', 'Fuld fleksibilitet i arbejdstilrettelæggelsen', 'Provision og bonus oveni grundlønnen', "Del af Nexny's stærke salgsfællesskab", 'Grundig onboarding og løbende support', 'Professionel og personlig udvikling', 'Sociale events og fælles fejringer'].map((item, i) => (
+                {['Ingen transport og pendling', 'Bedre balance mellem arbejde og privatliv', 'Fuld fleksibilitet i arbejdstilrettelæggelsen', 'Provision og bonus oveni grundlønnen', "Del af Magnora Marketing's stærke salgsfællesskab", 'Grundig onboarding og løbende support', 'Professionel og personlig udvikling', 'Sociale events og fælles fejringer'].map((item, i) => (
                   <div key={i} className="flex items-center">
                     <CheckCircle className="text-green-500 mr-3 flex-shrink-0" size={18} />
                     <span>{item}</span>
@@ -117,7 +117,7 @@ const FreelancersPage: React.FC = () => {
             <div>
               <img
                 src="https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt="Freelance sælger arbejder hjemmefra med Nexny"
+                alt="Freelance sælger arbejder hjemmefra med Magnora Marketing"
                 className="rounded-lg shadow-lg"
               />
             </div>
@@ -128,7 +128,7 @@ const FreelancersPage: React.FC = () => {
       <section id="stillinger" className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Ledige Stillinger hos Nexny</h2>
+            <h2 className="text-3xl font-bold mb-4">Ledige Stillinger hos Magnora Marketing</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Vi søger løbende dygtige og motiverede freelance sælgere og mødebookere. Se de aktuelle stillinger herunder.
             </p>
@@ -153,7 +153,7 @@ const FreelancersPage: React.FC = () => {
 
       <section className="bg-blue-600 text-white py-16">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6">Er du klar til at starte hos Nexny?</h2>
+          <h2 className="text-3xl font-bold mb-6">Er du klar til at starte hos Magnora Marketing?</h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto">
             Send os en besked eller ring – vi tager en uforpligtende snak om de muligheder der passer bedst til dig.
           </p>
@@ -165,12 +165,12 @@ const FreelancersPage: React.FC = () => {
       <section className="section bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6">Bliv Freelance Sælger hos Nexny – Fleksibel Karriere inden for B2B Telemarketing</h2>
+            <h2 className="text-3xl font-bold mb-6">Bliv Freelance Sælger hos Magnora Marketing – Fleksibel Karriere inden for B2B Telemarketing</h2>
             <p className="text-gray-600 mb-4">
-              Som freelance sælger eller mødebooker hos Nexny får du den sjældne kombination af frihed og et stærkt professionelt fundament. Du arbejder 100% hjemmefra på dine egne præmisser – ingen pendling, ingen faste kontortider og ingen loft på din indtjening. Nexny leverer leads, scripts, kampagnematerialer og CRM-adgang fra dag ét, så du kan fokusere på det du er bedst til: at skabe resultater. Vores freelancere er tilknyttet projekter inden for alt fra SaaS og webudvikling til energi, kaffeservice og pensionsrådgivning.
+              Som freelance sælger eller mødebooker hos Magnora Marketing får du den sjældne kombination af frihed og et stærkt professionelt fundament. Du arbejder 100% hjemmefra på dine egne præmisser – ingen pendling, ingen faste kontortider og ingen loft på din indtjening. Magnora Marketing leverer leads, scripts, kampagnematerialer og CRM-adgang fra dag ét, så du kan fokusere på det du er bedst til: at skabe resultater. Vores freelancere er tilknyttet projekter inden for alt fra SaaS og webudvikling til energi, kaffeservice og pensionsrådgivning.
             </p>
             <p className="text-gray-600 mb-6">
-              Oplæringen hos Nexny er struktureret og grundig – du gennemgår et onboarding-forløb med produkttræning, salgsteknik og gennemgang af scripts inden du begynder. Undervejs har du adgang til løbende coaching og sparring fra erfarne salgsledere, og du er en del af et stærkt Nexny-netværk af freelancere der deler erfaringer og motivation. Provisionen er konkurrencedygtig og afspejler direkte dine resultater – jo mere du sælger, jo mere tjener du.
+              Oplæringen hos Magnora Marketing er struktureret og grundig – du gennemgår et onboarding-forløb med produkttræning, salgsteknik og gennemgang af scripts inden du begynder. Undervejs har du adgang til løbende coaching og sparring fra erfarne salgsledere, og du er en del af et stærkt Magnora Marketing-netværk af freelancere der deler erfaringer og motivation. Provisionen er konkurrencedygtig og afspejler direkte dine resultater – jo mere du sælger, jo mere tjener du.
             </p>
             <ul className="space-y-2">
               <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> Arbejd hjemmefra med fuld fleksibilitet over din arbejdsdag</li>
@@ -185,36 +185,36 @@ const FreelancersPage: React.FC = () => {
       <section className="section bg-sky-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6">Freelance Telemarketing og Mødebooking – Karrieremuligheder med Nexny</h2>
+            <h2 className="text-3xl font-bold mb-6">Freelance Telemarketing og Mødebooking – Karrieremuligheder med Magnora Marketing</h2>
             <p className="text-gray-600 mb-4">
-              Nexny er i konstant vækst og søger løbende dygtige og motiverede freelance sælgere og mødebookere til vores projekter i hele Danmark. Uanset om du er studerende, forælder, erfaren sælger eller nystartet i branchen, er der plads til dig hos Nexny. Du vælger selv det produkt og den branche der passer bedst til din baggrund og interesse – og Nexny leverer resten. Mange af vores freelancere bruger samarbejdet som en fast biindtægt eller som udgangspunkt for en fuld karriere inden for B2B salg og telemarketing.
+              Magnora Marketing er i konstant vækst og søger løbende dygtige og motiverede freelance sælgere og mødebookere til vores projekter i hele Danmark. Uanset om du er studerende, forælder, erfaren sælger eller nystartet i branchen, er der plads til dig hos Magnora Marketing. Du vælger selv det produkt og den branche der passer bedst til din baggrund og interesse – og Magnora Marketing leverer resten. Mange af vores freelancere bruger samarbejdet som en fast biindtægt eller som udgangspunkt for en fuld karriere inden for B2B salg og telemarketing.
             </p>
             <p className="text-gray-600 mb-4">
-              Tag styringen over din karriere og kontakt Nexny på +45 91 95 27 94 eller kontakt@nexny.dk. Vi tager en uforpligtende snak om de muligheder der passer bedst til din situation, og kommer hurtigt i gang med et onboarding-forløb tilpasset dig.
+              Tag styringen over din karriere og kontakt Magnora Marketing på +45 91 95 27 94 eller kontakt@magnoramarketing.dk. Vi tager en uforpligtende snak om de muligheder der passer bedst til din situation, og kommer hurtigt i gang med et onboarding-forløb tilpasset dig.
             </p>
           </div>
         </div>
       </section>
 
       <FAQSection faqs={[
-        { question: 'Hvad tjener man som freelance sælger hos Nexny?', answer: 'Lønnen består af et fast grundhonorar plus provision på dine resultater. Jo mere du sælger, jo mere tjener du – der er intet loft.' },
-        { question: 'Skal jeg have erfaring for at søge?', answer: 'Erfaring er en fordel, men ikke et krav. Nexny oplærer dig grundigt og giver dig løbende sparring og support.' },
+        { question: 'Hvad tjener man som freelance sælger hos Magnora Marketing?', answer: 'Lønnen består af et fast grundhonorar plus provision på dine resultater. Jo mere du sælger, jo mere tjener du – der er intet loft.' },
+        { question: 'Skal jeg have erfaring for at søge?', answer: 'Erfaring er en fordel, men ikke et krav. Magnora Marketing oplærer dig grundigt og giver dig løbende sparring og support.' },
         { question: 'Kan jeg arbejde deltid?', answer: 'Ja – du bestemmer selv dine arbejdstider og kan arbejde alt fra få timer om ugen til fuld tid.' },
-        { question: 'Hvad sker der, hvis jeg har spørgsmål under arbejdet?', answer: 'Du har altid adgang til support fra Nexny\'s erfarne salgsledere, der kan hjælpe med sparring, scripts og produktspørgsmål.' },
-        { question: 'Hvilke produkter sælger man?', answer: 'Nexny har freelancere inden for mange brancher – webudvikling, energi, solceller, kaffeservice, pension, inkasso og mere. Du vælger det produkt, der passer bedst til dig.' },
-        { question: "Er der mulighed for fast ansættelse?", answer: "Samarbejdet starter som freelance. Dygtige freelancere kan på sigt diskutere andre samarbejdsformer med Nexny." },
+        { question: 'Hvad sker der, hvis jeg har spørgsmål under arbejdet?', answer: 'Du har altid adgang til support fra Magnora Marketing\'s erfarne salgsledere, der kan hjælpe med sparring, scripts og produktspørgsmål.' },
+        { question: 'Hvilke produkter sælger man?', answer: 'Magnora Marketing har freelancere inden for mange brancher – webudvikling, energi, solceller, kaffeservice, pension, inkasso og mere. Du vælger det produkt, der passer bedst til dig.' },
+        { question: "Er der mulighed for fast ansættelse?", answer: "Samarbejdet starter som freelance. Dygtige freelancere kan på sigt diskutere andre samarbejdsformer med Magnora Marketing." },
         { question: "Hvad sker der i oplæringsperioden?", answer: "Du gennemgår et onboarding-forløb med produkttræning, salgsteknik og gennemgang af scripts. Typisk tager det 1-3 dage." },
         { question: "Kan jeg sælge flere produkter på én gang?", answer: "Normalt starter du med ét produkt. Når du har opnået rutine, kan du eventuelt tage flere produkter ind." },
         { question: "Hvad er det laveste jeg kan tjene?", answer: "Det afhænger af aktivitetsniveau og produkt. Vi sætter realistiske forventninger ved opstart og er transparente om løn." },
-        { question: "Har I et fællesskab for freelancere?", answer: "Ja – du bliver en del af Nexny's netværk af freelancere og har adgang til erfaringsudveksling og fælles motivationsaktiviteter." },
+        { question: "Har I et fællesskab for freelancere?", answer: "Ja – du bliver en del af Magnora Marketing's netværk af freelancere og har adgang til erfaringsudveksling og fælles motivationsaktiviteter." },
         { question: "Kan jeg arbejde fra udlandet?", answer: "Ja – så længe du har stabilt internet og kan kommunikere professionelt på dansk, kan du arbejde fra hele verden." },
-        { question: "Hvad er det vigtigste for at lykkes som freelancer hos Nexny?", answer: "Vedholdenhed, struktur og positivt mindset. Telemarketing kræver at man kan håndtere afvisninger og bevare motivationen." },
+        { question: "Hvad er det vigtigste for at lykkes som freelancer hos Magnora Marketing?", answer: "Vedholdenhed, struktur og positivt mindset. Telemarketing kræver at man kan håndtere afvisninger og bevare motivationen." },
         { question: "Hvornår modtager jeg min første udbetaling?", answer: "Udbetalinger sker typisk månedligt bagud. Du modtager en opgørelse over verificerede salg og aktiviteter." },
         { question: "Er der en prøveperiode?", answer: "De første 2-4 uger betragtes typisk som en gensidig prøveperiode, så begge parter kan vurdere samarbejdet." },
         { question: "Hvad er de typiske arbejdstider?", answer: "De fleste freelancere ringer inden for normal dansk kontortid (8-17), men du bestemmer selv inden for dette vindue." },
       ]} />
       <CTASection
-        title="Tag styringen over din karriere – bliv freelance sælger hos Nexny"
+        title="Tag styringen over din karriere – bliv freelance sælger hos Magnora Marketing"
         subtitle="Fleksible arbejdstider, konkurrencedygtig provision og spændende projekter. Alt hvad du behøver for at lykkes som freelancer."
         primaryText="Søg nu"
         primaryLink="/kontakt"

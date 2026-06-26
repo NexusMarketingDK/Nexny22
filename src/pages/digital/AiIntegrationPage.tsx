@@ -19,7 +19,7 @@ export default function AiIntegrationPage() {
     {
       icon: <Zap size={36} className="text-blue-600" />,
       title: 'Automatisering af arbejdsprocesser',
-      description: 'Nexny kortlægger og automatiserer manuelle processer med AI – fra dataindsamling og rapportering til e-mailflows og opgavedistribution.'
+      description: 'Magnora Marketing kortlægger og automatiserer manuelle processer med AI – fra dataindsamling og rapportering til e-mailflows og opgavedistribution.'
     },
     {
       icon: <BarChart3 size={36} className="text-blue-600" />,
@@ -70,7 +70,7 @@ export default function AiIntegrationPage() {
     {
       name: 'AIbooking.dk',
       tag: 'Online booking med AI',
-      description: 'AIbooking.dk er en dansk AI-drevet bookingplatform der automatiserer møde- og servicebooking for virksomheder. Nexny integrerer AIbooking direkte i jeres hjemmeside, CRM og kundeflows – så kunder kan booke møder, konsultationer eller servicebesøg automatisk, uden manuel koordinering.',
+      description: 'AIbooking.dk er en dansk AI-drevet bookingplatform der automatiserer møde- og servicebooking for virksomheder. Magnora Marketing integrerer AIbooking direkte i jeres hjemmeside, CRM og kundeflows – så kunder kan booke møder, konsultationer eller servicebesøg automatisk, uden manuel koordinering.',
       features: [
         'Automatisk tidsstyring og kalendersynkronisering',
         'AI-baseret optimering af bookingflow',
@@ -85,7 +85,7 @@ export default function AiIntegrationPage() {
     {
       name: 'Leadgenie.dk',
       tag: 'AI-drevet leadgenerering',
-      description: 'Leadgenie.dk er en dansk AI-platform der automatiserer B2B leadgenerering og kundeemne-identifikation. Nexny integrerer Leadgenie i jeres salgsproces for at levere et konstant flow af varme, kvalificerede leads – screenet og scoret af AI inden de rammer dit salgsteam.',
+      description: 'Leadgenie.dk er en dansk AI-platform der automatiserer B2B leadgenerering og kundeemne-identifikation. Magnora Marketing integrerer Leadgenie i jeres salgsproces for at levere et konstant flow af varme, kvalificerede leads – screenet og scoret af AI inden de rammer dit salgsteam.',
       features: [
         'Automatisk identifikation af relevante virksomheder og kontakter',
         'AI-baseret lead scoring og prioritering',
@@ -160,15 +160,15 @@ export default function AiIntegrationPage() {
   return (
     <>
       <SEO
-        title="AI Integration til Danske Virksomheder | Nexny – Automatisering og Kunstig Intelligens"
-        description="Nexny integrerer AI i din forretning med løsninger som AIbooking.dk og Leadgenie.dk. Automatiser leadgenerering, booking og kundeservice – GDPR-compliant og skræddersyet til dansk erhvervsliv."
+        title="AI Integration til Danske Virksomheder | Magnora Marketing – Automatisering og Kunstig Intelligens"
+        description="Magnora Marketing integrerer AI i din forretning med løsninger som AIbooking.dk og Leadgenie.dk. Automatiser leadgenerering, booking og kundeservice – GDPR-compliant og skræddersyet til dansk erhvervsliv."
         canonical="/digital/ai-integration"
-        keywords="AI integration Danmark, kunstig intelligens virksomhed, AIbooking, Leadgenie, automatisering, AI chatbot dansk, leadgenerering AI, Nexny digital"
+        keywords="AI integration Danmark, kunstig intelligens virksomhed, AIbooking, Leadgenie, automatisering, AI chatbot dansk, leadgenerering AI, Magnora Marketing digital"
       />
 
       <HeroSection
         title="AI Integration der Accelererer din Forretning"
-        subtitle="Nexny implementerer skræddersyede AI-løsninger til danske virksomheder – automatiser leadgenerering, booking og kundeservice med dokumenteret ROI."
+        subtitle="Magnora Marketing implementerer skræddersyede AI-løsninger til danske virksomheder – automatiser leadgenerering, booking og kundeservice med dokumenteret ROI."
         ctaText="Book en gratis AI-konsultation"
         ctaLink="/kontakt"
         backgroundImage="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -179,12 +179,12 @@ export default function AiIntegrationPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
-              <span className="inline-block bg-blue-500 bg-opacity-40 text-blue-100 text-sm font-semibold px-4 py-1 rounded-full mb-4 uppercase tracking-wide">Nexny bygger det – du lancerer det</span>
+              <span className="inline-block bg-blue-500 bg-opacity-40 text-blue-100 text-sm font-semibold px-4 py-1 rounded-full mb-4 uppercase tracking-wide">Magnora Marketing bygger det – du lancerer det</span>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
                 Vi tager dit AI-projekt fra idé til klar løsning
               </h2>
               <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-                Har du en idé til et AI-projekt, men mangler tekniske ressourcer eller tid til at bygge det? Nexny leverer en færdig, klar-til-lancering AI-løsning til en fast pris – og håndterer leads og møder mens du fokuserer på din kerneforretning.
+                Har du en idé til et AI-projekt, men mangler tekniske ressourcer eller tid til at bygge det? Magnora Marketing leverer en færdig, klar-til-lancering AI-løsning til en fast pris – og håndterer leads og møder mens du fokuserer på din kerneforretning.
               </p>
             </div>
 
@@ -203,7 +203,7 @@ export default function AiIntegrationPage() {
                 {
                   icon: <Calendar size={36} className="text-blue-300" />,
                   title: 'Vi håndterer leads og møder',
-                  desc: 'Nexny styrer hele pipeline – AI-genererede leads screenes og kvalificerede salgsmøder bookes direkte i din kalender, så du lukker aftalerne.'
+                  desc: 'Magnora Marketing styrer hele pipeline – AI-genererede leads screenes og kvalificerede salgsmøder bookes direkte i din kalender, så du lukker aftalerne.'
                 }
               ].map((item, i) => (
                 <div key={i} className="bg-white bg-opacity-10 rounded-xl p-6 border border-white border-opacity-20 hover:bg-opacity-20 transition-all">
@@ -222,7 +222,7 @@ export default function AiIntegrationPage() {
                     'Fast pris – ingen overraskelser undervejs',
                     'Fuld dokumentation og kildekode overdrages til dig',
                     'Integration med dit CRM, booking og e-mail',
-                    'Nexny håndterer leads og booker møder til din salgsstyrke',
+                    'Magnora Marketing håndterer leads og booker møder til din salgsstyrke',
                     'Løbende support og optimering efter lancering'
                   ].map((item, i) => (
                     <li key={i} className="flex items-center gap-3">
@@ -252,7 +252,7 @@ export default function AiIntegrationPage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Fordele ved AI Integration for din virksomhed</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              AI er ikke længere forbeholdt store koncerner. Nexny hjælper danske virksomheder af alle størrelser med at implementere AI der leverer målbare resultater fra dag ét.
+              AI er ikke længere forbeholdt store koncerner. Magnora Marketing hjælper danske virksomheder af alle størrelser med at implementere AI der leverer målbare resultater fra dag ét.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -273,7 +273,7 @@ export default function AiIntegrationPage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Danske AI-løsninger vi integrerer</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Nexny arbejder med de bedste danske AI-platforme og integrerer dem sømlöst i jeres eksisterende forretningsprocesser.
+              Magnora Marketing arbejder med de bedste danske AI-platforme og integrerer dem sømlöst i jeres eksisterende forretningsprocesser.
             </p>
           </div>
           <div className="space-y-12 max-w-5xl mx-auto">
@@ -379,7 +379,7 @@ export default function AiIntegrationPage() {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Hvad Nexny leverer inden for AI</h2>
+            <h2 className="text-3xl font-bold mb-4">Hvad Magnora Marketing leverer inden for AI</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Fra enkle automatiseringer til avancerede AI-modeller – vi finder løsningen der giver størst værdi for netop din virksomhed.
             </p>
@@ -405,7 +405,7 @@ export default function AiIntegrationPage() {
             <div>
               <img
                 src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt="AI integration og automatisering hos Nexny"
+                alt="AI integration og automatisering hos Magnora Marketing"
                 className="rounded-xl shadow-lg w-full"
               />
             </div>
@@ -432,12 +432,12 @@ export default function AiIntegrationPage() {
         </div>
       </section>
 
-      {/* Hvorfor Nexny */}
+      {/* Hvorfor Magnora Marketing */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="text-center mb-10">
             <Cpu size={48} className="text-blue-600 mx-auto mb-4" />
-            <h2 className="text-3xl font-bold mb-4">Hvorfor vælge Nexny til din AI-integration?</h2>
+            <h2 className="text-3xl font-bold mb-4">Hvorfor vælge Magnora Marketing til din AI-integration?</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Vi er ikke blot teknikere – vi forstår forretning. Vores AI-løsninger er designet til at skabe reel kommerciel værdi, ikke teknologi for teknologiens skyld.
             </p>
@@ -464,7 +464,7 @@ export default function AiIntegrationPage() {
             Book en uforpligtende AI-konsultation – vi gennemgår dine processer og præsenterer konkrete løsninger med estimeret ROI. Gratis og uforpligtende.
           </p>
           <Link to="/kontakt" className="inline-flex items-center bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-            Kontakt Nexny nu <ArrowRight className="ml-2" />
+            Kontakt Magnora Marketing nu <ArrowRight className="ml-2" />
           </Link>
         </div>
       </section>
@@ -473,10 +473,10 @@ export default function AiIntegrationPage() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-6">AI Integration til Danske Virksomheder – Automatiser Salg, Booking og Kundeservice</h2>
             <p className="text-gray-600 mb-4">
-              Nexny implementerer skræddersyede AI-løsninger der er designet til at skabe reel kommerciel værdi for din virksomhed – ikke teknologi for teknologiens skyld. Vi arbejder med markedsledende danske AI-platforme som AIbooking.dk og Leadgenie.dk, og integrerer dem sømlöst i dine eksisterende forretningsprocesser. AI-drevet leadgenerering automatiserer identifikation og scoring af relevante B2B emner, mens AIbooking lader potentielle kunder booke møder direkte uden manuel koordinering – alt GDPR-compliant og tilpasset dansk erhvervsliv.
+              Magnora Marketing implementerer skræddersyede AI-løsninger der er designet til at skabe reel kommerciel værdi for din virksomhed – ikke teknologi for teknologiens skyld. Vi arbejder med markedsledende danske AI-platforme som AIbooking.dk og Leadgenie.dk, og integrerer dem sømlöst i dine eksisterende forretningsprocesser. AI-drevet leadgenerering automatiserer identifikation og scoring af relevante B2B emner, mens AIbooking lader potentielle kunder booke møder direkte uden manuel koordinering – alt GDPR-compliant og tilpasset dansk erhvervsliv.
             </p>
             <p className="text-gray-600 mb-6">
-              Nexny's AI-løsninger leverer dokumenterede resultater: op til 70% tidsbesparelse på gentagne administrative opgaver, markant højere konverteringsrate på AI-kvalificerede leads og 24/7 kundeservice med AI-chatbots på dansk. Vi sætter konkrete KPI'er op fra dag ét og leverer løbende rapporter der viser præcist hvad AI-integrationen giver din virksomhed. Fra simpel chatbot til avanceret automatiseringsplatform – Nexny finder den løsning der giver størst ROI for netop din situation.
+              Magnora Marketing's AI-løsninger leverer dokumenterede resultater: op til 70% tidsbesparelse på gentagne administrative opgaver, markant højere konverteringsrate på AI-kvalificerede leads og 24/7 kundeservice med AI-chatbots på dansk. Vi sætter konkrete KPI'er op fra dag ét og leverer løbende rapporter der viser præcist hvad AI-integrationen giver din virksomhed. Fra simpel chatbot til avanceret automatiseringsplatform – Magnora Marketing finder den løsning der giver størst ROI for netop din situation.
             </p>
             <ul className="space-y-2">
               <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> AI-chatbots og virtuelle assistenter på dansk</li>
@@ -491,12 +491,12 @@ export default function AiIntegrationPage() {
       <section className="section bg-sky-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6">Nexny Bygger dit AI-Projekt – Fra Idé til Klar Løsning til Fast Pris</h2>
+            <h2 className="text-3xl font-bold mb-6">Magnora Marketing Bygger dit AI-Projekt – Fra Idé til Klar Løsning til Fast Pris</h2>
             <p className="text-gray-600 mb-4">
-              Har du en idé til et AI-projekt, men mangler tekniske ressourcer eller tid til at realisere den? Nexny omsætter din idé til en fuldt fungerende AI-løsning leveret til aftalt pris og deadline. Vi håndterer alt fra strategi og arkitektur til implementering, test og lancering – og overdrager fuld dokumentation og kildekode til dig ved projektafslutning. Nexny håndterer desuden leads og booker salgsmøder til din salgsstyrke, mens du fokuserer på din kerneforretning.
+              Har du en idé til et AI-projekt, men mangler tekniske ressourcer eller tid til at realisere den? Magnora Marketing omsætter din idé til en fuldt fungerende AI-løsning leveret til aftalt pris og deadline. Vi håndterer alt fra strategi og arkitektur til implementering, test og lancering – og overdrager fuld dokumentation og kildekode til dig ved projektafslutning. Magnora Marketing håndterer desuden leads og booker salgsmøder til din salgsstyrke, mens du fokuserer på din kerneforretning.
             </p>
             <p className="text-gray-600 mb-4">
-              Book en uforpligtende AI-konsultation med Nexny på +45 91 95 27 94 eller kontakt@nexny.dk – vi gennemgår dine processer og præsenterer konkrete AI-løsninger med estimeret ROI. Gratis og uden binding.
+              Book en uforpligtende AI-konsultation med Magnora Marketing på +45 91 95 27 94 eller kontakt@magnoramarketing.dk – vi gennemgår dine processer og præsenterer konkrete AI-løsninger med estimeret ROI. Gratis og uden binding.
             </p>
           </div>
         </div>
@@ -507,12 +507,12 @@ export default function AiIntegrationPage() {
       <FAQSection faqs={[
         { question: 'Hvad kan AI gøre for min virksomhed?', answer: 'AI kan automatisere gentagne opgaver, besvare kundehenvendelser døgnet rundt, kvalificere leads automatisk og give dybdegående indsigt i data – alt mens dine medarbejdere fokuserer på det der skaber mest værdi.' },
         { question: 'Hvad er en AI chatbot?', answer: 'En AI chatbot er et program der automatisk kan besvare kundespørgsmål, guide besøgende og indsamle leads – direkte på din hjemmeside, 24/7.' },
-        { question: 'Er AI-løsninger dyre?', answer: 'Priserne varierer meget. Nexny tilbyder løsninger i alle størrelser – fra simple chatbots til avancerede automatiseringsplatforme. Vi finder den løsning der passer til dit budget.' },
-        { question: 'Kræver AI-integration teknisk viden?', answer: 'Nej – Nexny håndterer hele implementeringen og oplæringen. Du behøver ingen teknisk baggrund for at bruge og drage fordel af AI.' },
-        { question: 'Kan AI integreres med mine eksisterende systemer?', answer: 'Ja – Nexny\'s AI-løsninger kan integreres med de fleste CRM-, marketings- og kommunikationssystemer.' },
+        { question: 'Er AI-løsninger dyre?', answer: 'Priserne varierer meget. Magnora Marketing tilbyder løsninger i alle størrelser – fra simple chatbots til avancerede automatiseringsplatforme. Vi finder den løsning der passer til dit budget.' },
+        { question: 'Kræver AI-integration teknisk viden?', answer: 'Nej – Magnora Marketing håndterer hele implementeringen og oplæringen. Du behøver ingen teknisk baggrund for at bruge og drage fordel af AI.' },
+        { question: 'Kan AI integreres med mine eksisterende systemer?', answer: 'Ja – Magnora Marketing\'s AI-løsninger kan integreres med de fleste CRM-, marketings- og kommunikationssystemer.' },
         { question: "Hvad er forskellen på AI og automation?", answer: "Automation udfører foruddefinerede opgaver. AI kan tilpasse sig og lære af data, og træffe selvstændige beslutninger baseret på mønstre." },
         { question: "Kan AI erstatte mine medarbejdere?", answer: "AI erstatter ikke mennesker, men frigiver dem fra gentagne opgaver så de kan fokusere på kreativt og relationsmæssigt arbejde." },
-        { question: "Hvad er en LLM?", answer: "En Large Language Model (LLM) er en AI-model der kan forstå og generere tekst – som ChatGPT. Nexny kan integrere LLM-funktioner direkte på din platform." },
+        { question: "Hvad er en LLM?", answer: "En Large Language Model (LLM) er en AI-model der kan forstå og generere tekst – som ChatGPT. Magnora Marketing kan integrere LLM-funktioner direkte på din platform." },
         { question: "Kan AI hjælpe med kundeservice?", answer: "Ja – AI chatbots kan besvare op til 80% af standard kundehenvendelser automatisk, døgnet rundt, og eskalere komplekse sager til mennesker." },
         { question: "Hvad er prompt engineering?", answer: "Prompt engineering er kunsten at formulere instrukser til en AI-model, så den giver de bedste og mest relevante svar." },
         { question: "Er AI-løsninger sikre?", answer: "Ja – vi sikrer at al AI-integration følger GDPR og databeskyttelseslovgivning. Data opbevares og behandles ansvarligt." },
@@ -523,7 +523,7 @@ export default function AiIntegrationPage() {
       ]} />
       <CTASection
         title="Få AI til at arbejde for din virksomhed"
-        subtitle="Nexny hjælper dig med at implementere AI-løsninger der automatiserer opgaver, genererer leads og øger effektiviteten."
+        subtitle="Magnora Marketing hjælper dig med at implementere AI-løsninger der automatiserer opgaver, genererer leads og øger effektiviteten."
         primaryText="Book en AI-konsultation"
         primaryLink="/kontakt"
         secondaryText="Se eksempler"

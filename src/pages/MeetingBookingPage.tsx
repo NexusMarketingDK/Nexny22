@@ -33,14 +33,14 @@ const MeetingBookingPage: React.FC = () => {
   return (
     <>
       <SEO
-        title="Mødebooking | Nexny – Din Vækstpartner inden for Telesalg og AI"
-        description="Nexny's professionelle mødebooking sikrer kvalificerede salgsmøder. Din vækstpartner inden for telesalg, mødebooking, webudvikling, leadgenerering og AI."
+        title="Mødebooking | Magnora Marketing – Din Vækstpartner inden for Telesalg og AI"
+        description="Magnora Marketing's professionelle mødebooking sikrer kvalificerede salgsmøder. Din vækstpartner inden for telesalg, mødebooking, webudvikling, leadgenerering og AI."
         canonical="/modebooking-priser"
-        keywords="mødebooking priser, B2B salgsmøder, Nexny mødebooking, kvalificerede møder, mødebooking service"
+        keywords="mødebooking priser, B2B salgsmøder, Magnora Marketing mødebooking, kvalificerede møder, mødebooking service"
       />
 
       <HeroSection
-        title="Professionel Mødebooking med Nexny"
+        title="Professionel Mødebooking med Magnora Marketing"
         subtitle="Vi leverer kvalificerede salgsmøder med de rette beslutningstagere – så din salgsstyrke kan lukke flere aftaler og bruge tid på det der skaber omsætning."
         ctaText="Se priser"
         ctaLink="/priser"
@@ -52,7 +52,7 @@ const MeetingBookingPage: React.FC = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Nexny's Tilgang til Mødebooking</h2>
+            <h2 className="text-3xl font-bold mb-4">Magnora Marketing's Tilgang til Mødebooking</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Vi går metodisk til mødebooking – fra lead-research og kvalificering til bekræftede møder i din kalender.
             </p>
@@ -73,7 +73,7 @@ const MeetingBookingPage: React.FC = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold mb-6">Sådan fungerer Nexny's mødebooking</h2>
+              <h2 className="text-3xl font-bold mb-6">Sådan fungerer Magnora Marketing's mødebooking</h2>
               <div className="space-y-6">
                 {[
                   { step: '1', title: 'Briefing og strategi', desc: 'Vi lærer din virksomhed og dine ideelle kunder at kende, og udvikler en målrettet kommunikationsstrategi.' },
@@ -92,13 +92,13 @@ const MeetingBookingPage: React.FC = () => {
               </div>
               <div className="mt-8">
                 <Link to="/kontakt" className="btn btn-primary inline-flex items-center">
-                  Kom i gang med Nexny <ArrowRight size={16} className="ml-2" />
+                  Kom i gang med Magnora Marketing <ArrowRight size={16} className="ml-2" />
                 </Link>
               </div>
             </div>
             <div>
               <div className="bg-white rounded-xl shadow-lg p-8">
-                <h3 className="text-xl font-bold mb-4">Hvad inkluderer Nexny's mødebooking?</h3>
+                <h3 className="text-xl font-bold mb-4">Hvad inkluderer Magnora Marketing's mødebooking?</h3>
                 <ul className="space-y-3">
                   {[
                     'Fuld lead-research og målgruppesegmentering',
@@ -124,7 +124,7 @@ const MeetingBookingPage: React.FC = () => {
 
       <section className="bg-blue-600 text-white py-16">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6">Lad Nexny fylde din mødebog</h2>
+          <h2 className="text-3xl font-bold mb-6">Lad Magnora Marketing fylde din mødebog</h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto">
             Kontakt os og få et skræddersyet tilbud på mødebooking tilpasset din branche og dine vækstmål.
           </p>
@@ -138,10 +138,10 @@ const MeetingBookingPage: React.FC = () => {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-6">Professionel B2B Mødebooking – Kvalificerede Salgsmøder med de Rette Beslutningstagere</h2>
             <p className="text-gray-600 mb-4">
-              Nexny's professionelle mødebooking-service er designet til at fylde din kalender med kvalificerede salgsmøder hos de beslutningstagere der faktisk har budget, behov og kompetence til at træffe en beslutning. Vores erfarne mødebookere arbejder metodisk og struktureret: vi identificerer og screener relevante virksomheder, kontakter nøglepersonerne med et skræddersyet budskab og booker mødet direkte i din kalender – bekræftet, briefet og klar til gennemførelse. Aflyste møder erstattes automatisk, så du aldrig mister momentum.
+              Magnora Marketing's professionelle mødebooking-service er designet til at fylde din kalender med kvalificerede salgsmøder hos de beslutningstagere der faktisk har budget, behov og kompetence til at træffe en beslutning. Vores erfarne mødebookere arbejder metodisk og struktureret: vi identificerer og screener relevante virksomheder, kontakter nøglepersonerne med et skræddersyet budskab og booker mødet direkte i din kalender – bekræftet, briefet og klar til gennemførelse. Aflyste møder erstattes automatisk, så du aldrig mister momentum.
             </p>
             <p className="text-gray-600 mb-6">
-              B2B mødebooking med Nexny er langt mere end blot at lave telefonopkald. Vi udvikler en komplet kommunikationsstrategi med branchetilpassede scripts, gennemfører BANT-kvalificering af hvert lead og sikrer dobbelt mødebekræftelse via email og SMS. Du modtager løbende rapporter med mødestatus, mødekvalitet og kampagneperformance – og har altid fuld transparens over hvad der sker i din salgspipeline.
+              B2B mødebooking med Magnora Marketing er langt mere end blot at lave telefonopkald. Vi udvikler en komplet kommunikationsstrategi med branchetilpassede scripts, gennemfører BANT-kvalificering af hvert lead og sikrer dobbelt mødebekræftelse via email og SMS. Du modtager løbende rapporter med mødestatus, mødekvalitet og kampagneperformance – og har altid fuld transparens over hvad der sker i din salgspipeline.
             </p>
             <ul className="space-y-2">
               <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> Fuld lead-research og målgruppesegmentering</li>
@@ -158,10 +158,10 @@ const MeetingBookingPage: React.FC = () => {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-6">Mødebooking Priser og Modeller – No Cure No Pay eller Fast Pakke</h2>
             <p className="text-gray-600 mb-4">
-              Nexny tilbyder fleksible prismodeller for professionel mødebooking der passer til din virksomheds størrelse og behov. Med vores No Cure No Pay-model betaler du udelukkende for gennemførte, kvalificerede møder – du definerer selv kvalitetskriterierne og betaler ikke for aflyste eller useriøse møder. Pakkeløsningen giver en lavere enhedspris og mere forudsigelige omkostninger, og er bedst egnet til virksomheder med et kontinuerligt behov for mødebooking.
+              Magnora Marketing tilbyder fleksible prismodeller for professionel mødebooking der passer til din virksomheds størrelse og behov. Med vores No Cure No Pay-model betaler du udelukkende for gennemførte, kvalificerede møder – du definerer selv kvalitetskriterierne og betaler ikke for aflyste eller useriøse møder. Pakkeløsningen giver en lavere enhedspris og mere forudsigelige omkostninger, og er bedst egnet til virksomheder med et kontinuerligt behov for mødebooking.
             </p>
             <p className="text-gray-600 mb-4">
-              Kontakt Nexny på +45 91 95 27 94 eller kontakt@nexny.dk for et uforpligtende tilbud på mødebooking tilpasset din branche, din målgruppe og dine vækstmål. De første kvalificerede møder kan typisk leveres inden for 2-3 uger efter opstartsbriefing.
+              Kontakt Magnora Marketing på +45 91 95 27 94 eller kontakt@magnoramarketing.dk for et uforpligtende tilbud på mødebooking tilpasset din branche, din målgruppe og dine vækstmål. De første kvalificerede møder kan typisk leveres inden for 2-3 uger efter opstartsbriefing.
             </p>
           </div>
         </div>
@@ -169,7 +169,7 @@ const MeetingBookingPage: React.FC = () => {
 
       <FAQSection faqs={[
         { question: 'Hvad er mødebooking?', answer: 'Mødebooking er processen med at identificere og kontakte potentielle kunder og booke kvalificerede salgsmøder direkte i din kalender – så dit salgsteam kan fokusere på at lukke aftaler.' },
-        { question: 'Hvem booker møderne?', answer: 'Nexny\'s erfarne mødebookere kontakter beslutningstagere i din målgruppe, præsenterer din løsning og booker møder direkte i din kalender.' },
+        { question: 'Hvem booker møderne?', answer: 'Magnora Marketing\'s erfarne mødebookere kontakter beslutningstagere i din målgruppe, præsenterer din løsning og booker møder direkte i din kalender.' },
         { question: 'Hvad sker der, hvis et møde aflyses?', answer: 'Vi håndterer afbud og ombookinger og sikrer at din kalender altid er fyldt med kvalificerede møder.' },
         { question: 'Kan I booke møder inden for specifikke brancher?', answer: 'Ja – vi har erfaring med mødebooking i over 16 brancher og tilpasser vores tilgang til din målgruppe.' },
         { question: 'Hvad er en typisk succesrate for mødebooking?', answer: 'Det afhænger af branche og målgruppe, men vores kunder oplever typisk en møderate på 10-20% af kvalificerede kontakter.' },
@@ -185,7 +185,7 @@ const MeetingBookingPage: React.FC = () => {
         { question: "Hvad er den hurtigste måde at komme i gang?", answer: "Udfyld kontaktformularen, og vi sætter et afklaringsmøde op inden for 2 hverdage." },
       ]} />
       <CTASection
-        title="Book dit første mødebookingmøde med Nexny i dag"
+        title="Book dit første mødebookingmøde med Magnora Marketing i dag"
         subtitle="Vi er klar til at hjælpe din virksomhed med at fylde kalenderen med kvalificerede salgsmøder."
         primaryText="Kontakt os nu"
         primaryLink="/kontakt"

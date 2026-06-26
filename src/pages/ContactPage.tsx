@@ -18,11 +18,11 @@ const ContactPage: React.FC = () => {
 
   const faqs = [
     { question: "Hvordan kommer vi i gang med et samarbejde?", answer: "Vi starter med et uforpligtende møde, hvor vi diskuterer jeres behov og mål. Herefter udarbejder vi en skræddersyet løsning til jer." },
-    { question: "Hvad koster det at samarbejde med Nexny?", answer: "Vi tilbyder fleksible prismodeller tilpasset jeres behov. Kontakt os for et skræddersyet tilbud baseret på jeres specifikke ønsker og mål." },
-    { question: "Hvordan bliver jeg freelance sælger hos Nexny?", answer: "Start med at sende din ansøgning gennem vores kontaktformular. Vi inviterer dig derefter til en samtale, hvor vi diskuterer mulighederne." },
+    { question: "Hvad koster det at samarbejde med Magnora Marketing?", answer: "Vi tilbyder fleksible prismodeller tilpasset jeres behov. Kontakt os for et skræddersyet tilbud baseret på jeres specifikke ønsker og mål." },
+    { question: "Hvordan bliver jeg freelance sælger hos Magnora Marketing?", answer: "Start med at sende din ansøgning gennem vores kontaktformular. Vi inviterer dig derefter til en samtale, hvor vi diskuterer mulighederne." },
     { question: "Hvilke krav er der til freelance sælgere?", answer: "Vi søger engagerede personer med gode kommunikationsevner. Du skal have et hjemmekontor med stabilt internet og kunne arbejde minimum 20 timer om ugen." },
     { question: "Svarer I på henvendelser i weekenden?", answer: "Vi er tilgængelige mandag-fredag 8-16. Henvendelser modtaget i weekenden besvares den følgende hverdag." },
-    { question: "Kan jeg ringe direkte til Nexny?", answer: "Ja – du kan ringe til os på +45 91 95 27 94 i vores åbningstider." },
+    { question: "Kan jeg ringe direkte til Magnora Marketing?", answer: "Ja – du kan ringe til os på +45 91 95 27 94 i vores åbningstider." },
     { question: "Hvad skal jeg inkludere i min henvendelse?", answer: "Fortæl os kort om din virksomhed, hvad du har brug for hjælp til, og hvad dit budget er. Jo mere info, jo bedre kan vi forberede samtalen." },
     { question: "Hvor lang tid tager det at få et tilbud?", answer: "Typisk sender vi et første udkast til tilbud inden for 2-3 hverdage efter den indledende samtale." },
     { question: "Kan jeg booke et møde online?", answer: "Ja – brug kontaktformularen til at angive dine ønsker, og vi kontakter dig for at aftale et tidspunkt." },
@@ -36,7 +36,7 @@ const ContactPage: React.FC = () => {
   return (
     <>
       <SEO
-        title="Kontakt Nexny | Få et uforpligtende tilbud"
+        title="Kontakt Magnora Marketing | Få et uforpligtende tilbud"
         description="Kontakt os for en uforpligtende snak om, hvordan vi kan hjælpe din virksomhed med professionel telemarketing, mødebooking eller digital udvikling. ✓ Gratis rådgivning ✓ Skræddersyede løsninger"
         canonical="/kontakt"
         keywords="kontakt, telemarketing bureau, mødebooking bureau, digital udvikling, B2B salg, rådgivning"
@@ -46,7 +46,7 @@ const ContactPage: React.FC = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
           {/* Header */}
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h1 className="text-4xl font-bold mb-6">Kontakt Nexny</h1>
+            <h1 className="text-4xl font-bold mb-6">Kontakt Magnora Marketing</h1>
             <p className="text-lg text-gray-600">
               Vi er klar til at hjælpe dig med dine spørgsmål om telemarketing,
               mødebooking eller jobmuligheder. Udfyld formularen nedenfor, eller
@@ -66,7 +66,7 @@ const ContactPage: React.FC = () => {
                   frameBorder="0"
                   marginHeight={0}
                   marginWidth={0}
-                  title="Kontakt Nexny"
+                  title="Kontakt Magnora Marketing"
                 ></iframe>
               </div>
             </div>
@@ -79,7 +79,7 @@ const ContactPage: React.FC = () => {
                 <div className="space-y-8">
                   {/* Spanish Office */}
                   <div>
-                    <h3 className="font-medium text-lg mb-3">Nexny Spanien</h3>
+                    <h3 className="font-medium text-lg mb-3">Magnora Marketing Spanien</h3>
                     <div className="flex items-start">
                       <MapPin size={24} className="text-blue-600 mr-4 mt-1" />
                       <p className="text-gray-600">
@@ -92,7 +92,7 @@ const ContactPage: React.FC = () => {
 
                   {/* Danish Office */}
                   <div>
-                    <h3 className="font-medium text-lg mb-3">Nexny Danmark</h3>
+                    <h3 className="font-medium text-lg mb-3">Magnora Marketing Danmark</h3>
                     <div className="flex items-start">
                       <MapPin size={24} className="text-blue-600 mr-4 mt-1" />
                       <p className="text-gray-600">
@@ -118,7 +118,7 @@ const ContactPage: React.FC = () => {
                     <div>
                       <h3 className="font-medium">Email</h3>
                       <p className="text-gray-600">
-                        <a href="mailto:kontakt@nexny.dk" className="hover:text-blue-600">kontakt@nexny.dk</a>
+                        <a href="mailto:kontakt@magnoramarketing.dk" className="hover:text-blue-600">kontakt@magnoramarketing.dk</a>
                       </p>
                     </div>
                   </div>
@@ -126,7 +126,7 @@ const ContactPage: React.FC = () => {
                   <div>
                     <h3 className="font-medium">Website</h3>
                     <p className="text-gray-600">
-                      <a href="https://www.nexny.dk" className="hover:text-blue-600">www.nexny.dk</a>
+                      <a href="https://www.magnoramarketing.dk" className="hover:text-blue-600">www.magnoramarketing.dk</a>
                     </p>
                   </div>
                 </div>
@@ -157,7 +157,7 @@ const ContactPage: React.FC = () => {
             <h2 className="text-2xl font-semibold mb-6">Professionel Mødebooking & Telemarketing Partner</h2>
             <div className="prose max-w-none">
               <p className="mb-4">
-                Nexny er din professionelle partner inden for B2B telemarketing og mødebooking.
+                Magnora Marketing er din professionelle partner inden for B2B telemarketing og mødebooking.
                 Med over 20 års erfaring i branchen har vi specialiseret os i at skabe værdifulde forbindelser
                 mellem virksomheder og hjælpe vores kunder med at vækste gennem målrettede salgsaktiviteter.
               </p>
@@ -188,12 +188,12 @@ const ContactPage: React.FC = () => {
       <section className="section bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6">Kontakt Nexny – Din Vækstpartner inden for Telesalg, Mødebooking og AI</h2>
+            <h2 className="text-3xl font-bold mb-6">Kontakt Magnora Marketing – Din Vækstpartner inden for Telesalg, Mødebooking og AI</h2>
             <p className="text-gray-600 mb-4">
-              Nexny er din direkte vej til professionelt B2B telesalg, kvalificeret mødebooking, datadrevet leadgenerering og moderne webudvikling med AI-integration. Vi er let tilgængelige og svarer altid hurtigt – ring til os på +45 91 95 27 94 eller send en email til kontakt@nexny.dk, og vi vender tilbage inden for én hverdag med et konkret og uforpligtende svar på din henvendelse.
+              Magnora Marketing er din direkte vej til professionelt B2B telesalg, kvalificeret mødebooking, datadrevet leadgenerering og moderne webudvikling med AI-integration. Vi er let tilgængelige og svarer altid hurtigt – ring til os på +45 91 95 27 94 eller send en email til kontakt@magnoramarketing.dk, og vi vender tilbage inden for én hverdag med et konkret og uforpligtende svar på din henvendelse.
             </p>
             <p className="text-gray-600 mb-6">
-              Uanset om du er en etableret B2B virksomhed der ønsker at outsource dit salg, en startup der søger at vækste hurtigt, eller en freelance sælger der ønsker spændende projekter – Nexny har en løsning til dig. Vores team med kontorer i Aarhus og Valencia er klar til at tage en uforpligtende samtale om dine behov og vise dig præcis hvordan Nexny kan hjælpe din virksomhed med at nå sine vækstmål.
+              Uanset om du er en etableret B2B virksomhed der ønsker at outsource dit salg, en startup der søger at vækste hurtigt, eller en freelance sælger der ønsker spændende projekter – Magnora Marketing har en løsning til dig. Vores team med kontorer i Aarhus og Valencia er klar til at tage en uforpligtende samtale om dine behov og vise dig præcis hvordan Magnora Marketing kan hjælpe din virksomhed med at nå sine vækstmål.
             </p>
           </div>
         </div>
@@ -202,12 +202,12 @@ const ContactPage: React.FC = () => {
       <section className="section bg-sky-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6">Kom Hurtigt i Gang med Nexny – Fra Første Samtale til Første Resultater</h2>
+            <h2 className="text-3xl font-bold mb-6">Kom Hurtigt i Gang med Magnora Marketing – Fra Første Samtale til Første Resultater</h2>
             <p className="text-gray-600 mb-4">
-              Processen fra første kontakt til aktiv kampagne er enkel og hurtig hos Nexny. Du kontakter os, vi tager en indledende samtale om dine behov og mål, og udarbejder herefter et skræddersyet tilbud inden for 24 timer. Efter godkendelse gennemfører vi en grundig opstartsbriefing, og typisk kan vi starte aktiv indsats inden for 1-2 uger. De første kvalificerede møder eller leads kan forventes inden for 2-3 uger efter kampagnestart.
+              Processen fra første kontakt til aktiv kampagne er enkel og hurtig hos Magnora Marketing. Du kontakter os, vi tager en indledende samtale om dine behov og mål, og udarbejder herefter et skræddersyet tilbud inden for 24 timer. Efter godkendelse gennemfører vi en grundig opstartsbriefing, og typisk kan vi starte aktiv indsats inden for 1-2 uger. De første kvalificerede møder eller leads kan forventes inden for 2-3 uger efter kampagnestart.
             </p>
             <p className="text-gray-600 mb-4">
-              Nexny tilbyder en gratis indledende rådgivningssession, hvor vi gennemgår din situation og anbefaler den bedste løsning. Ingen forpligtelse, ingen skjulte dagsordener – bare ærlig og kompetent rådgivning om hvad der vil skabe de bedste resultater for din virksomhed.
+              Magnora Marketing tilbyder en gratis indledende rådgivningssession, hvor vi gennemgår din situation og anbefaler den bedste løsning. Ingen forpligtelse, ingen skjulte dagsordener – bare ærlig og kompetent rådgivning om hvad der vil skabe de bedste resultater for din virksomhed.
             </p>
           </div>
         </div>
@@ -216,7 +216,7 @@ const ContactPage: React.FC = () => {
       <FAQSection faqs={faqs} />
 
       <CTASection
-        title="Kom i gang med Nexny – helt uforpligtende"
+        title="Kom i gang med Magnora Marketing – helt uforpligtende"
         subtitle="Udfyld formularen eller ring til os. Vi vender tilbage inden for én hverdag."
         primaryText="Se vores ydelser"
         primaryLink="/ydelser"

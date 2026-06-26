@@ -102,15 +102,15 @@ const HomePage: React.FC = () => {
   return (
     <>
       <SEO
-        title="Nexny | Vækstpartner inden for Telesalg, Mødebooking, Webudvikling og AI"
-        description="Nexny er din vækstpartner inden for telesalg, mødebooking, webudvikling, leadgenerering og AI-udviklingsopgaver. Vi leverer dokumenterede resultater med fleksible modeller."
+        title="Magnora Marketing | Vækstpartner inden for Telesalg, Mødebooking, Webudvikling og AI"
+        description="Magnora Marketing er din vækstpartner inden for telesalg, mødebooking, webudvikling, leadgenerering og AI-udviklingsopgaver. Vi leverer dokumenterede resultater med fleksible modeller."
         canonical="/"
-        keywords="Nexny, vækstpartner, telesalg, mødebooking, webudvikling, leadgenerering, AI, AI-udvikling, salgspartner Danmark"
+        keywords="Magnora Marketing, vækstpartner, telesalg, mødebooking, webudvikling, leadgenerering, AI, AI-udvikling, salgspartner Danmark"
       />
 
       <HeroSection
         title="Din Vækstpartner inden for Telesalg, Mødebooking og AI-Integration"
-        subtitle="Nexny leverer professionelt telesalg, kvalificeret mødebooking, leadgenerering, moderne webudvikling og AI-integration – alt samlet hos én partner."
+        subtitle="Magnora Marketing leverer professionelt telesalg, kvalificeret mødebooking, leadgenerering, moderne webudvikling og AI-integration – alt samlet hos én partner."
         ctaText="Bliv samarbejdspartner"
         ctaLink="/samarbejdspartner"
         secondaryCtaText="Start din karriere"
@@ -121,9 +121,9 @@ const HomePage: React.FC = () => {
       <section className="section bg-gray-50">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Hvorfor vælge Nexny som salgspartner?</h2>
+            <h2 className="text-3xl font-bold mb-4">Hvorfor vælge Magnora Marketing som salgspartner?</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Nexny kombinerer menneskelig salgskraft med datadrevne metoder for at levere resultater der gør en reel forskel for din bundlinje.
+              Magnora Marketing kombinerer menneskelig salgskraft med datadrevne metoder for at levere resultater der gør en reel forskel for din bundlinje.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -131,7 +131,7 @@ const HomePage: React.FC = () => {
               {
                 icon: <TrendingUp size={40} className="text-blue-600" />,
                 title: 'Skalér dit salg',
-                description: 'Nexny leverer kvalificerede møder og varme leads direkte til dit salgsteam – så I kan skalere uden at ansætte.'
+                description: 'Magnora Marketing leverer kvalificerede møder og varme leads direkte til dit salgsteam – så I kan skalere uden at ansætte.'
               },
               {
                 icon: <BarChart3 size={40} className="text-blue-600" />,
@@ -162,9 +162,9 @@ const HomePage: React.FC = () => {
       <section className="section bg-white">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Nexny er Specialister i B2B Salg, Mødebooking, Webudvikling og Leadgenerering</h2>
+            <h2 className="text-3xl font-bold mb-4">Magnora Marketing er Specialister i B2B Salg, Mødebooking, Webudvikling og Leadgenerering</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Med et stærkt team af erfarne salgsprofessionelle og digitale specialister hjælper Nexny virksomheder med at nå deres vækstmål gennem effektive og målbare indsatser.
+              Med et stærkt team af erfarne salgsprofessionelle og digitale specialister hjælper Magnora Marketing virksomheder med at nå deres vækstmål gennem effektive og målbare indsatser.
             </p>
           </div>
 
@@ -184,9 +184,9 @@ const HomePage: React.FC = () => {
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold mb-6">Accelerér din virksomheds vækst med Nexny</h2>
+              <h2 className="text-3xl font-bold mb-6">Accelerér din virksomheds vækst med Magnora Marketing</h2>
               <p className="text-lg text-gray-600 mb-8">
-                Overlad dit salgsarbejde til erfarne specialister. Nexny hjælper B2B virksomheder med at generere
+                Overlad dit salgsarbejde til erfarne specialister. Magnora Marketing hjælper B2B virksomheder med at generere
                 varme leads og booke kvalificerede møder – så din salgsstyrke kan fokusere på det, de er bedst til.
               </p>
               <div className="space-y-4">
@@ -206,7 +206,7 @@ const HomePage: React.FC = () => {
             <div className="relative">
               <img
                 src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt="Vækst og succes for B2B virksomheder med Nexny"
+                alt="Vækst og succes for B2B virksomheder med Magnora Marketing"
                 className="rounded-lg shadow-lg object-cover w-full h-[500px]"
               />
               <div className="absolute -bottom-6 -left-6 bg-blue-600 text-white p-6 rounded-lg shadow-lg max-w-xs">
@@ -221,7 +221,7 @@ const HomePage: React.FC = () => {
       <section className="section bg-gray-50">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Nexny's Brancheerfaring inden for B2B Salg og Mødebooking</h2>
+            <h2 className="text-3xl font-bold mb-4">Magnora Marketing's Brancheerfaring inden for B2B Salg og Mødebooking</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Vi har dybdegående erfaring med B2B mødebooking og telemarketing på tværs af brancher og målgrupper.
             </p>
@@ -245,7 +245,7 @@ const HomePage: React.FC = () => {
               <Briefcase size={48} className="text-blue-400 mx-auto mb-4" />
               <h3 className="text-2xl font-bold mb-4">For Virksomheder</h3>
               <p className="mb-6">
-                Din vækstpartner inden for telesalg, mødebooking, webudvikling, leadgenerering og AI. Nexny leverer resultater – drevet af menneskelig ekspertise og moderne teknologi.
+                Din vækstpartner inden for telesalg, mødebooking, webudvikling, leadgenerering og AI. Magnora Marketing leverer resultater – drevet af menneskelig ekspertise og moderne teknologi.
               </p>
               <Link to="/samarbejdspartner" className="btn bg-blue-600 text-white hover:bg-blue-700 inline-flex items-center">
                 Start samarbejde <ArrowRight size={16} className="ml-2" />
@@ -255,7 +255,7 @@ const HomePage: React.FC = () => {
               <BarChart3 size={48} className="text-blue-400 mx-auto mb-4" />
               <h3 className="text-2xl font-bold mb-4">For Sælgere</h3>
               <p className="mb-6">
-                Tag styringen over din karriere. Bliv freelance sælger hos Nexny og tjene godt med fleksible arbejdstider og spændende projekter.
+                Tag styringen over din karriere. Bliv freelance sælger hos Magnora Marketing og tjene godt med fleksible arbejdstider og spændende projekter.
               </p>
               <Link to="/freelance-telemarketing" className="btn bg-blue-600 text-white hover:bg-blue-700 inline-flex items-center">
                 Se muligheder <ArrowRight size={16} className="ml-2" />
@@ -269,10 +269,10 @@ const HomePage: React.FC = () => {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-6">Professionelt B2B Telesalg og Mødebooking i Danmark</h2>
             <p className="text-gray-600 mb-4">
-              Nexny er Danmarks foretrukne vækstpartner for B2B virksomheder der ønsker at skalere deres salg uden at ansætte et stort internt salgsteam. Vi specialiserer os i professionelt telesalg, kvalificeret mødebooking og datadrevet leadgenerering – og leverer dokumenterede resultater på tværs af over 16 brancher. Vores erfarne salgskonsulenter arbejder målrettet med at identificere relevante beslutningstagere, kvalificere kundeemner og booke møder direkte i din kalender, så din salgsstyrke kan fokusere på det der skaber omsætning.
+              Magnora Marketing er Danmarks foretrukne vækstpartner for B2B virksomheder der ønsker at skalere deres salg uden at ansætte et stort internt salgsteam. Vi specialiserer os i professionelt telesalg, kvalificeret mødebooking og datadrevet leadgenerering – og leverer dokumenterede resultater på tværs af over 16 brancher. Vores erfarne salgskonsulenter arbejder målrettet med at identificere relevante beslutningstagere, kvalificere kundeemner og booke møder direkte i din kalender, så din salgsstyrke kan fokusere på det der skaber omsætning.
             </p>
             <p className="text-gray-600 mb-6">
-              Nexny kombinerer menneskelig salgskraft med moderne digitale løsninger – herunder AI-integration, webudvikling og automatiseret leadgenerering. Vi tilbyder to fleksible prismodeller: No Cure No Pay, hvor du kun betaler for dokumenterede resultater, eller en fast pakkeløsning med garanteret minimumsantal salgsmøder. Uanset om du er en startup eller en etableret B2B virksomhed, skræddersyr Nexny en løsning der passer til dit budget og dine vækstmål.
+              Magnora Marketing kombinerer menneskelig salgskraft med moderne digitale løsninger – herunder AI-integration, webudvikling og automatiseret leadgenerering. Vi tilbyder to fleksible prismodeller: No Cure No Pay, hvor du kun betaler for dokumenterede resultater, eller en fast pakkeløsning med garanteret minimumsantal salgsmøder. Uanset om du er en startup eller en etableret B2B virksomhed, skræddersyr Magnora Marketing en løsning der passer til dit budget og dine vækstmål.
             </p>
             <ul className="space-y-2">
               <li className="flex items-start gap-2 text-gray-700"><span className="text-blue-600 font-bold mt-1">✓</span> Direkte adgang til relevante beslutningstagere i din målgruppe</li>
@@ -287,37 +287,37 @@ const HomePage: React.FC = () => {
       <section className="section bg-sky-50">
         <div className="container">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6">Nexny – Din Salgspartner fra Første Opkald til Underskrevet Kontrakt</h2>
+            <h2 className="text-3xl font-bold mb-6">Magnora Marketing – Din Salgspartner fra Første Opkald til Underskrevet Kontrakt</h2>
             <p className="text-gray-600 mb-4">
-              Hos Nexny tror vi på, at den bedste vej til vækst går gennem ægte relationer og præcis kommunikation. Vores tilgang til B2B salg og mødebooking er altid skræddersyet til din specifikke branche, målgruppe og salgsproces. Vi dykker ned i din virksomhed, forstår dine produkter og services og udvikler præcise salgsscripts og kommunikationsstrategier der resonerer med dine potentielle kunder – fra SaaS og IT-konsulenter til energi, finans og facility management.
+              Hos Magnora Marketing tror vi på, at den bedste vej til vækst går gennem ægte relationer og præcis kommunikation. Vores tilgang til B2B salg og mødebooking er altid skræddersyet til din specifikke branche, målgruppe og salgsproces. Vi dykker ned i din virksomhed, forstår dine produkter og services og udvikler præcise salgsscripts og kommunikationsstrategier der resonerer med dine potentielle kunder – fra SaaS og IT-konsulenter til energi, finans og facility management.
             </p>
             <p className="text-gray-600 mb-6">
-              Med kontorer i Aarhus og Valencia og et stærkt netværk af erfarne freelance sælgere kan Nexny hurtigt skalere indsatsen og tilpasse sig din virksomheds behov. Kontakt os på telefon +45 91 95 27 94 eller email kontakt@nexny.dk for en uforpligtende samtale om, hvordan Nexny kan hjælpe din virksomhed med at generere flere kvalificerede leads og booke flere salgsmøder.
+              Med kontorer i Aarhus og Valencia og et stærkt netværk af erfarne freelance sælgere kan Magnora Marketing hurtigt skalere indsatsen og tilpasse sig din virksomheds behov. Kontakt os på telefon +45 91 95 27 94 eller email kontakt@magnoramarketing.dk for en uforpligtende samtale om, hvordan Magnora Marketing kan hjælpe din virksomhed med at generere flere kvalificerede leads og booke flere salgsmøder.
             </p>
           </div>
         </div>
       </section>
 
       <FAQSection faqs={[
-        { question: 'Hvad gør Nexny?', answer: 'Nexny er en dansk vækstpartner specialiseret i B2B telemarketing, mødebooking, leadgenerering, webudvikling og AI-integration. Vi hjælper virksomheder med at fylde salgspipelinen med kvalificerede møder og leads.' },
-        { question: 'Hvilke brancher arbejder Nexny med?', answer: 'Vi har erfaring på tværs af over 16 brancher, herunder SaaS, IT-konsulenter, finans, energi, HR, transport, solenergi og servicevirksomheder.' },
-        { question: 'Hvad koster det at bruge Nexny?', answer: 'Vi tilbyder fleksible prismodeller tilpasset din virksomheds størrelse og behov. Kontakt os for et uforpligtende tilbud.' },
-        { question: 'Kan Nexny hjælpe med både telemarketing og digital markedsføring?', answer: 'Ja – Nexny kombinerer menneskelig salgskraft med digitale løsninger, herunder webudvikling, AI-integration og leadgenerering via flere kanaler.' },
+        { question: 'Hvad gør Magnora Marketing?', answer: 'Magnora Marketing er en dansk vækstpartner specialiseret i B2B telemarketing, mødebooking, leadgenerering, webudvikling og AI-integration. Vi hjælper virksomheder med at fylde salgspipelinen med kvalificerede møder og leads.' },
+        { question: 'Hvilke brancher arbejder Magnora Marketing med?', answer: 'Vi har erfaring på tværs af over 16 brancher, herunder SaaS, IT-konsulenter, finans, energi, HR, transport, solenergi og servicevirksomheder.' },
+        { question: 'Hvad koster det at bruge Magnora Marketing?', answer: 'Vi tilbyder fleksible prismodeller tilpasset din virksomheds størrelse og behov. Kontakt os for et uforpligtende tilbud.' },
+        { question: 'Kan Magnora Marketing hjælpe med både telemarketing og digital markedsføring?', answer: 'Ja – Magnora Marketing kombinerer menneskelig salgskraft med digitale løsninger, herunder webudvikling, AI-integration og leadgenerering via flere kanaler.' },
         { question: 'Hvor hurtigt kan vi komme i gang?', answer: 'Typisk kan vi opstart et samarbejde inden for 1-2 uger efter den første samtale.' },
-        { question: "Arbejder Nexny med hele Danmark?", answer: "Ja – Nexny servicerer virksomheder i hele Danmark samt internationalt, primært i Skandinavien og Sydeuropa." },
-        { question: "Kan jeg kombinere flere af Nexny's services?", answer: "Absolut. Mange kunder bruger en kombination af telemarketing, mødebooking og webudvikling for at skabe en helhedsorienteret vækststrategi." },
+        { question: "Arbejder Magnora Marketing med hele Danmark?", answer: "Ja – Magnora Marketing servicerer virksomheder i hele Danmark samt internationalt, primært i Skandinavien og Sydeuropa." },
+        { question: "Kan jeg kombinere flere af Magnora Marketing's services?", answer: "Absolut. Mange kunder bruger en kombination af telemarketing, mødebooking og webudvikling for at skabe en helhedsorienteret vækststrategi." },
         { question: "Hvad er No Cure No Pay?", answer: "No Cure No Pay betyder at du kun betaler for dokumenterede resultater – f.eks. gennemførte møder eller kvalificerede leads. Det minimerer din risiko som kunde." },
-        { question: "Tilbyder Nexny gratis rådgivning?", answer: "Ja – vi tilbyder en uforpligtende indledende samtale, hvor vi vurderer dine behov og anbefaler den bedste løsning." },
+        { question: "Tilbyder Magnora Marketing gratis rådgivning?", answer: "Ja – vi tilbyder en uforpligtende indledende samtale, hvor vi vurderer dine behov og anbefaler den bedste løsning." },
         { question: "Hvad er en typisk kampagneperiode?", answer: "En typisk kampagneperiode er 3-6 måneder, men vi tilpasser varigheden til dine mål og dit budget." },
-        { question: "Kan Nexny hjælpe startups?", answer: "Ja – vi hjælper både etablerede virksomheder og startups med at skabe vækst fra dag ét." },
-        { question: "Hvad er ROI på Nexny's services?", answer: "ROI afhænger af branche og ydelse, men mange kunder ser positiv ROI allerede i første kvartal af samarbejdet." },
+        { question: "Kan Magnora Marketing hjælpe startups?", answer: "Ja – vi hjælper både etablerede virksomheder og startups med at skabe vækst fra dag ét." },
+        { question: "Hvad er ROI på Magnora Marketing's services?", answer: "ROI afhænger af branche og ydelse, men mange kunder ser positiv ROI allerede i første kvartal af samarbejdet." },
         { question: "Kan jeg pause et samarbejde?", answer: "Ja – vores fleksible aftaler giver mulighed for at sætte samarbejdet på pause ved behov, f.eks. i feriesæsoner." },
         { question: "Hvad sker der med mine data?", answer: "Alle kundedata behandles fortroligt og i overensstemmelse med GDPR og dansk lovgivning." },
-        { question: "Hvem kontakter jeg ved spørgsmål?", answer: "Du har altid en dedikeret kontaktperson hos Nexny som kender dit projekt og kan besvare spørgsmål hurtigt." },
+        { question: "Hvem kontakter jeg ved spørgsmål?", answer: "Du har altid en dedikeret kontaktperson hos Magnora Marketing som kender dit projekt og kan besvare spørgsmål hurtigt." },
       ]} />
       <CTASection
         title="Klar til at accelerere din vækst?"
-        subtitle="Nexny hjælper B2B virksomheder med at generere leads, booke møder og drive salg – med dokumenterede resultater."
+        subtitle="Magnora Marketing hjælper B2B virksomheder med at generere leads, booke møder og drive salg – med dokumenterede resultater."
         primaryText="Bliv samarbejdspartner"
         primaryLink="/samarbejdspartner"
         secondaryText="Se priser"

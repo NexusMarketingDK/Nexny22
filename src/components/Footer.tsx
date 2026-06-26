@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
               <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center">
                 <Phone size={14} className="text-white" />
               </div>
-              <span className="text-xl font-bold tracking-tight">Nexny</span>
+              <span className="text-xl font-bold tracking-tight">Magnora Marketing</span>
             </div>
             <p className="text-slate-400 text-sm leading-relaxed mb-5">
               Din vækstpartner inden for telesalg, mødebooking, webudvikling, leadgenerering og AI-integration.
@@ -83,22 +83,22 @@ const Footer: React.FC = () => {
             <h3 className="text-sm font-bold uppercase tracking-widest text-slate-400 mb-4">Kontakt</h3>
             <div className="space-y-4">
               <div>
-                <p className="text-xs font-semibold text-slate-500 mb-1">Nexny Spanien</p>
+                <p className="text-xs font-semibold text-slate-500 mb-1">Magnora Marketing Spanien</p>
                 <div className="flex items-start gap-2">
                   <MapPin size={15} className="text-blue-500 mt-0.5 flex-shrink-0" />
                   <p className="text-slate-400 text-sm">Calle Las Barcas 2, Valencia</p>
                 </div>
               </div>
               <div>
-                <p className="text-xs font-semibold text-slate-500 mb-1">Nexny Danmark</p>
+                <p className="text-xs font-semibold text-slate-500 mb-1">Magnora Marketing Danmark</p>
                 <div className="flex items-start gap-2">
                   <MapPin size={15} className="text-blue-500 mt-0.5 flex-shrink-0" />
                   <p className="text-slate-400 text-sm">Trindsøvej 6, 8000 Aarhus C</p>
                 </div>
               </div>
-              <a href="mailto:kontakt@nexny.dk" className="flex items-center gap-2 text-slate-400 hover:text-white text-sm transition-colors">
+              <a href="mailto:kontakt@magnoramarketing.dk" className="flex items-center gap-2 text-slate-400 hover:text-white text-sm transition-colors">
                 <Mail size={15} className="text-blue-500 flex-shrink-0" />
-                kontakt@nexny.dk
+                kontakt@magnoramarketing.dk
               </a>
               <a href="tel:+4591952794" className="flex items-center gap-2 text-slate-400 hover:text-white text-sm transition-colors">
                 <Phone size={15} className="text-blue-500 flex-shrink-0" />
@@ -109,7 +109,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="border-t border-white/5 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-500">
-          <p>&copy; {new Date().getFullYear()} Nexny. Alle rettigheder forbeholdes.</p>
+          <p>&copy; {new Date().getFullYear()} Magnora Marketing. Alle rettigheder forbeholdes.</p>
           <p>CVR · Designet med fokus på vækst</p>
         </div>
       </div>

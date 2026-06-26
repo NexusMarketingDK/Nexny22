@@ -6,8 +6,8 @@ export default function SaaSLoesninger2026() {
   return (
     <>
       <SEO
-        title="SaaS-løsninger i 2026: Hvad B2B virksomheder bør vide | Nexny Blog"
-        description="En gennemgang af de vigtigste SaaS-trends i 2026 og hvordan B2B virksomheder kan drage fordel af cloud-platforme, AI-integrerede løsninger og vertical SaaS. Nexny hjælper med implementering."
+        title="SaaS-løsninger i 2026: Hvad B2B virksomheder bør vide | Magnora Marketing Blog"
+        description="En gennemgang af de vigtigste SaaS-trends i 2026 og hvordan B2B virksomheder kan drage fordel af cloud-platforme, AI-integrerede løsninger og vertical SaaS. Magnora Marketing hjælper med implementering."
         canonical="/blog/digital-omstilling-telemarketing"
         keywords="SaaS løsninger 2026, cloud platforme B2B, vertical SaaS, AI SaaS integration, SaaS Danmark virksomheder"
       />
@@ -15,7 +15,7 @@ export default function SaaSLoesninger2026() {
         <div className="container mx-auto px-4 max-w-4xl">
           <span className="inline-block bg-blue-500 bg-opacity-40 text-blue-100 text-sm font-semibold px-4 py-1 rounded-full mb-4">Digital Omstilling</span>
           <h1 className="text-4xl font-bold text-white mb-4">SaaS-løsninger i 2026: Hvad B2B virksomheder bør vide</h1>
-          <p className="text-gray-300">Af Nexny-teamet · 10. februar 2026 · 9 minutters læsning</p>
+          <p className="text-gray-300">Af Magnora Marketing-teamet · 10. februar 2026 · 9 minutters læsning</p>
         </div>
       </div>
       <div className="max-w-4xl mx-auto px-4 py-16">
@@ -40,30 +40,30 @@ export default function SaaSLoesninger2026() {
 
         <h3 className="text-xl font-semibold mb-3 mt-6">3. Integrationskvalitet er afgørende for ROI</h3>
         <p className="text-gray-600 mb-4">
-          Den gennemsnitlige B2B virksomhed bruger i dag 20-30 forskellige SaaS-platforme. Den store udfordring er at få disse platforme til at tale sammen og dele data effektivt. Nexny hjælper virksomheder med at designe og implementere integrationslag der forbinder CRM, ERP, marketing automation og øvrige systemer i et sammenhængende digitalt setup. Resultatet er eliminerede manuelle dataoverførsler, færre fejl og bedre beslutningsgrundlag for ledelsen.
+          Den gennemsnitlige B2B virksomhed bruger i dag 20-30 forskellige SaaS-platforme. Den store udfordring er at få disse platforme til at tale sammen og dele data effektivt. Magnora Marketing hjælper virksomheder med at designe og implementere integrationslag der forbinder CRM, ERP, marketing automation og øvrige systemer i et sammenhængende digitalt setup. Resultatet er eliminerede manuelle dataoverførsler, færre fejl og bedre beslutningsgrundlag for ledelsen.
         </p>
 
         <h3 className="text-xl font-semibold mb-3 mt-6">4. Datasikkerhed og GDPR er ikke til forhandling</h3>
         <p className="text-gray-600 mb-6">
-          Med øget digitalisering og større mængder personfølsomme data i cloud-platforme er datasikkerhed og GDPR-compliance vigtigere end nogensinde. Alle SaaS-løsninger Nexny implementerer er fuldt GDPR-compliant og bygget med datasikkerhed som grundpillen – tokenstyring, kryptering, adgangskontrol og audit trails er standardkomponenter i alle vores løsninger.
+          Med øget digitalisering og større mængder personfølsomme data i cloud-platforme er datasikkerhed og GDPR-compliance vigtigere end nogensinde. Alle SaaS-løsninger Magnora Marketing implementerer er fuldt GDPR-compliant og bygget med datasikkerhed som grundpillen – tokenstyring, kryptering, adgangskontrol og audit trails er standardkomponenter i alle vores løsninger.
         </p>
 
         <h2 className="text-2xl font-bold mb-4 mt-10">Digital omstilling i telemarketing og salg</h2>
         <p className="text-gray-600 mb-4">
-          Den digitale omstilling har haft stor indflydelse på telemarketing og B2B salg. Moderne salgsteams bruger en kombination af CRM-systemer, AI-drevne leadgenereringsplatforme, marketing automation og analysetools til at drive mere effektiv og præcis salgsindsats. Nexny har hjulpet mange virksomheder med at implementere og integrere disse digitale salgstools og har set markante forbedringer i konverteringsrater og ROI.
+          Den digitale omstilling har haft stor indflydelse på telemarketing og B2B salg. Moderne salgsteams bruger en kombination af CRM-systemer, AI-drevne leadgenereringsplatforme, marketing automation og analysetools til at drive mere effektiv og præcis salgsindsats. Magnora Marketing har hjulpet mange virksomheder med at implementere og integrere disse digitale salgstools og har set markante forbedringer i konverteringsrater og ROI.
         </p>
         <p className="text-gray-600 mb-4">
           Konkrete eksempler på digital omstilling i salg der skaber resultater: AI-drevet lead scoring der reducerer spildt tid med 60%, automatiserede opfølgningsflows der øger konverteringsraten med 40%, og integrerede CRM-systemer der giver salgsteamet komplet overblik over pipeline og aktiviteter i realtid.
         </p>
 
-        <h2 className="text-2xl font-bold mb-4 mt-10">Nexny hjælper din virksomhed med digital omstilling</h2>
+        <h2 className="text-2xl font-bold mb-4 mt-10">Magnora Marketing hjælper din virksomhed med digital omstilling</h2>
         <p className="text-gray-600 mb-6">
-          Nexny tilbyder en komplet digital transformationspakke for B2B virksomheder – fra strategisk rådgivning og platformvalg til implementering, integration og løbende optimering. Vi kombinerer vores digitale ekspertise med vores dybdegående erfaring inden for B2B salg for at levere løsninger der ikke kun fungerer teknisk, men som driver reel kommerciel vækst. Kontakt Nexny på +45 91 95 27 94 eller kontakt@nexny.dk for at høre mere.
+          Magnora Marketing tilbyder en komplet digital transformationspakke for B2B virksomheder – fra strategisk rådgivning og platformvalg til implementering, integration og løbende optimering. Vi kombinerer vores digitale ekspertise med vores dybdegående erfaring inden for B2B salg for at levere løsninger der ikke kun fungerer teknisk, men som driver reel kommerciel vækst. Kontakt Magnora Marketing på +45 91 95 27 94 eller kontakt@magnoramarketing.dk for at høre mere.
         </p>
       </div>
       <CTASection
-        title="Klar til digital omstilling med Nexny?"
-        subtitle="Nexny hjælper din virksomhed med at implementere de rigtige SaaS-platforme og AI-løsninger der driver vækst og øger effektiviteten."
+        title="Klar til digital omstilling med Magnora Marketing?"
+        subtitle="Magnora Marketing hjælper din virksomhed med at implementere de rigtige SaaS-platforme og AI-løsninger der driver vækst og øger effektiviteten."
         primaryText="Book en konsultation"
         primaryLink="/kontakt"
         secondaryText="Se digitale løsninger"
