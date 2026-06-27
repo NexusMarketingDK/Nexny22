@@ -22,7 +22,7 @@ export default function RemoteWorkPage() {
         ctaLink="/freelance-telemarketing"
         secondaryCtaText="Kontakt os"
         secondaryCtaLink="/kontakt"
-        backgroundImage="https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        backgroundImage="https://images.pexels.com/photos/3182781/pexels-photo-3182781.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       />
 
       <section className="py-16 bg-white">
@@ -175,7 +175,7 @@ export default function RemoteWorkPage() {
               At starte som remote freelance sælger hos Magnora Marketing er enkelt og hurtigt. Du finder et produkt der passer til dig, sender os en besked – ingen formel ansøgning nødvendig – og Magnora Marketing vender tilbage inden for 2 hverdage. Derefter gennemgår du et kort onboarding-forløb med produkttræning og salgsteknik, og er klar til at starte inden for få dage. De fleste sælgere finder deres rytme og leverer solide resultater inden for de første 4-6 uger.
             </p>
             <p className="text-gray-600 mb-4">
-              Kontakt Magnora Marketing på mail@magnoramarketing.dk eller mail@magnoramarketing.dk og hør mere om de aktuelle remote salgsmuligheder. Vi er klar til en uforpligtende snak om hvad Magnora Marketing kan tilbyde dig.
+              Kontakt Magnora Marketing på mail@magnoramarketing.dk og hør mere om de aktuelle remote salgsmuligheder. Vi er klar til en uforpligtende snak om hvad Magnora Marketing kan tilbyde dig.
             </p>
           </div>
         </div>

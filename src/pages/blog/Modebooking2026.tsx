@@ -71,7 +71,7 @@ export default function Modebooking2026() {
 
         <h2 className="text-2xl font-bold mb-4 mt-10">Mødebooking med Magnora Marketing – resultater du kan se og måle</h2>
         <p className="text-gray-600 mb-6">
-          Magnora Marketing's professionelle mødebooking-service er bygget på årtiers erfaring og løbende optimering. Vi leverer kvalificerede salgsmøder med de rette beslutningstagere og aflyste møder erstattes automatisk. Du modtager månedlige performance-rapporter med mødestatus, mødekvalitet og ROI-beregning – og har altid fuld transparens over kampagnens resultater. Kontakt Magnora Marketing på mail@magnoramarketing.dk eller mail@magnoramarketing.dk for et uforpligtende tilbud.
+          Magnora Marketing's professionelle mødebooking-service er bygget på årtiers erfaring og løbende optimering. Vi leverer kvalificerede salgsmøder med de rette beslutningstagere og aflyste møder erstattes automatisk. Du modtager månedlige performance-rapporter med mødestatus, mødekvalitet og ROI-beregning – og har altid fuld transparens over kampagnens resultater. Kontakt Magnora Marketing på mail@magnoramarketing.dk for et uforpligtende tilbud.
         </p>
       </div>
       <CTASection

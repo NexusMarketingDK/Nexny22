@@ -171,7 +171,7 @@ export default function AiIntegrationPage() {
         subtitle="Magnora Marketing implementerer skræddersyede AI-løsninger til danske virksomheder – automatiser leadgenerering, booking og kundeservice med dokumenteret ROI."
         ctaText="Book en gratis AI-konsultation"
         ctaLink="/kontakt"
-        backgroundImage="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        backgroundImage="https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       />
 
       {/* Vi bygger dit AI-projekt – klar til lancering */}
@@ -404,7 +404,7 @@ export default function AiIntegrationPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
             <div>
               <img
-                src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 alt="AI integration og automatisering hos Magnora Marketing"
                 className="rounded-xl shadow-lg w-full"
               />
@@ -496,7 +496,7 @@ export default function AiIntegrationPage() {
               Har du en idé til et AI-projekt, men mangler tekniske ressourcer eller tid til at realisere den? Magnora Marketing omsætter din idé til en fuldt fungerende AI-løsning leveret til aftalt pris og deadline. Vi håndterer alt fra strategi og arkitektur til implementering, test og lancering – og overdrager fuld dokumentation og kildekode til dig ved projektafslutning. Magnora Marketing håndterer desuden leads og booker salgsmøder til din salgsstyrke, mens du fokuserer på din kerneforretning.
             </p>
             <p className="text-gray-600 mb-4">
-              Book en uforpligtende AI-konsultation med Magnora Marketing på mail@magnoramarketing.dk eller mail@magnoramarketing.dk – vi gennemgår dine processer og præsenterer konkrete AI-løsninger med estimeret ROI. Gratis og uden binding.
+              Book en uforpligtende AI-konsultation med Magnora Marketing på mail@magnoramarketing.dk – vi gennemgår dine processer og præsenterer konkrete AI-løsninger med estimeret ROI. Gratis og uden binding.
             </p>
           </div>
         </div>

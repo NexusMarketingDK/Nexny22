@@ -46,7 +46,7 @@ const MeetingBookingPage: React.FC = () => {
         ctaLink="/priser"
         secondaryCtaText="Kontakt os"
         secondaryCtaLink="/kontakt"
-        backgroundImage="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        backgroundImage="https://images.pexels.com/photos/3184363/pexels-photo-3184363.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       />
 
       <section className="py-16 bg-white">
@@ -161,7 +161,7 @@ const MeetingBookingPage: React.FC = () => {
               Magnora Marketing tilbyder fleksible prismodeller for professionel mødebooking der passer til din virksomheds størrelse og behov. Med vores No Cure No Pay-model betaler du udelukkende for gennemførte, kvalificerede møder – du definerer selv kvalitetskriterierne og betaler ikke for aflyste eller useriøse møder. Pakkeløsningen giver en lavere enhedspris og mere forudsigelige omkostninger, og er bedst egnet til virksomheder med et kontinuerligt behov for mødebooking.
             </p>
             <p className="text-gray-600 mb-4">
-              Kontakt Magnora Marketing på mail@magnoramarketing.dk eller mail@magnoramarketing.dk for et uforpligtende tilbud på mødebooking tilpasset din branche, din målgruppe og dine vækstmål. De første kvalificerede møder kan typisk leveres inden for 2-3 uger efter opstartsbriefing.
+              Kontakt Magnora Marketing på mail@magnoramarketing.dk for et uforpligtende tilbud på mødebooking tilpasset din branche, din målgruppe og dine vækstmål. De første kvalificerede møder kan typisk leveres inden for 2-3 uger efter opstartsbriefing.
             </p>
           </div>
         </div>

@@ -82,7 +82,7 @@ const ServicesPage: React.FC = () => {
         ctaLink="/kontakt"
         secondaryCtaText="Se priser"
         secondaryCtaLink="/priser"
-        backgroundImage="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        backgroundImage="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       />
 
       <section className="py-16 bg-white">
@@ -185,7 +185,7 @@ const ServicesPage: React.FC = () => {
               Magnora Marketing har dybdegående brancheerfaring inden for tech og SaaS, IT-konsulentbranchen, grøn energi og bæredygtighed samt facility og servicevirksomheder. Denne specialiserede viden betyder, at vores salgskonsulenter taler branchens sprog, forstår de specifikke udfordringer og kan kommunikere værdiskabelse præcist og troværdigt over for beslutningstagerne i din målgruppe. Resultatet er højere konverteringsrater, bedre mødekvalitet og kortere salgscyklusser.
             </p>
             <p className="text-gray-600 mb-4">
-              Uanset om du sælger enterprise software, rådgivningsydelser, energioptimering eller servicekontrakter, tilpasser Magnora Marketing sin tilgang og sine scripts til din unikke salgssituation. Kontakt Magnora Marketing på mail@magnoramarketing.dk eller mail@magnoramarketing.dk for at høre hvordan vi kan skræddersy en ydelsespakke der passer til din virksomhed, dine mål og dit budget.
+              Uanset om du sælger enterprise software, rådgivningsydelser, energioptimering eller servicekontrakter, tilpasser Magnora Marketing sin tilgang og sine scripts til din unikke salgssituation. Kontakt Magnora Marketing på mail@magnoramarketing.dk for at høre hvordan vi kan skræddersy en ydelsespakke der passer til din virksomhed, dine mål og dit budget.
             </p>
           </div>
         </div>

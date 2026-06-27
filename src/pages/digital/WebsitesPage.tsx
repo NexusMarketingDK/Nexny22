@@ -66,7 +66,7 @@ export default function WebsitesPage() {
         subtitle="Magnora Marketing bygger professionelle, SEO-optimerede hjemmesider der tiltrækker de rigtige besøgende og omdanner dem til kunder."
         ctaText="Få et tilbud"
         ctaLink="/kontakt"
-        backgroundImage="https://images.pexels.com/photos/326501/pexels-photo-326501.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        backgroundImage="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       />
 
       <section className="py-16 bg-white">
@@ -115,7 +115,7 @@ export default function WebsitesPage() {
             </div>
             <div>
               <img
-                src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 alt="Webdesign og udvikling hos Magnora Marketing"
                 className="rounded-xl shadow-lg w-full"
               />
@@ -183,7 +183,7 @@ export default function WebsitesPage() {
               Magnora Marketing leverer hjemmesider i alle størrelser og kompleksiteter – fra målrettede landingssider til kampagner og annoncetrafik, over professionelle virksomhedshjemmesider, til komplette webshops med fuldt betalingsflow og produktstyring. Vi tilbyder også porteføljesider, bookingplatforme og branche-specifikke løsninger tilpasset din forretning. Prisen afhænger af scope og kompleksitet, og vi sender altid et detaljeret og transparent tilbud inden projektet startes.
             </p>
             <p className="text-gray-600 mb-4">
-              Kontakt Magnora Marketing på mail@magnoramarketing.dk eller mail@magnoramarketing.dk for at høre mere om, hvilken hjemmesideløsning der passer bedst til din virksomhed og dit budget. Vi sender et uforpligtende tilbud inden for 24 timer.
+              Kontakt Magnora Marketing på mail@magnoramarketing.dk for at høre mere om, hvilken hjemmesideløsning der passer bedst til din virksomhed og dit budget. Vi sender et uforpligtende tilbud inden for 24 timer.
             </p>
           </div>
         </div>

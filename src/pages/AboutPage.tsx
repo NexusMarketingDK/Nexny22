@@ -70,7 +70,7 @@ const AboutPage: React.FC = () => {
             </div>
             <div>
               <img
-                src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 alt="Magnora Marketing teamsamarbejde og partnerrelationer"
                 className="rounded-lg shadow-lg"
               />

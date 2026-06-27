@@ -23,7 +23,7 @@ const LeadGenerationPage: React.FC = () => {
         ctaLink="/kontakt"
         secondaryCtaText="Se priser"
         secondaryCtaLink="/priser"
-        backgroundImage="https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        backgroundImage="https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       />
 
       <section className="py-16 bg-white">
@@ -141,7 +141,7 @@ const LeadGenerationPage: React.FC = () => {
               Magnora Marketing's tilgang til leadgenerering handler om kvalitet frem for kvantitet. Vi investerer tid i at forstå din forretning, dine kunder og din konkurrencesituation, og bruger denne indsigt til at identificere de leads der faktisk konverterer. Vores lead-profiling inkluderer virksomhedsinfo, beslutningsrolle og en prioriteringsscore baseret på købsintention – så dit salgsteam altid starter med de varmeste emner og bruger minimum tid på at nå maksimale resultater.
             </p>
             <p className="text-gray-600 mb-4">
-              Kontakt Magnora Marketing på mail@magnoramarketing.dk eller mail@magnoramarketing.dk for at høre mere om vores leadgenererings-løsninger og få et uforpligtende tilbud tilpasset din virksomheds behov og vækstmål.
+              Kontakt Magnora Marketing på mail@magnoramarketing.dk for at høre mere om vores leadgenererings-løsninger og få et uforpligtende tilbud tilpasset din virksomheds behov og vækstmål.
             </p>
           </div>
         </div>

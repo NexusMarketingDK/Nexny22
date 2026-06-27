@@ -65,7 +65,7 @@ const FreelancersPage: React.FC = () => {
         ctaLink="#stillinger"
         secondaryCtaText="Kontakt os"
         secondaryCtaLink="/kontakt"
-        backgroundImage="https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        backgroundImage="https://images.pexels.com/photos/3182781/pexels-photo-3182781.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       />
 
       <section className="py-16 bg-white">
@@ -116,7 +116,7 @@ const FreelancersPage: React.FC = () => {
             </div>
             <div>
               <img
-                src="https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                src="https://images.pexels.com/photos/3182781/pexels-photo-3182781.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 alt="Freelance sælger arbejder hjemmefra med Magnora Marketing"
                 className="rounded-lg shadow-lg"
               />
@@ -190,7 +190,7 @@ const FreelancersPage: React.FC = () => {
               Magnora Marketing er i konstant vækst og søger løbende dygtige og motiverede freelance sælgere og mødebookere til vores projekter i hele Danmark. Uanset om du er studerende, forælder, erfaren sælger eller nystartet i branchen, er der plads til dig hos Magnora Marketing. Du vælger selv det produkt og den branche der passer bedst til din baggrund og interesse – og Magnora Marketing leverer resten. Mange af vores freelancere bruger samarbejdet som en fast biindtægt eller som udgangspunkt for en fuld karriere inden for B2B salg og telemarketing.
             </p>
             <p className="text-gray-600 mb-4">
-              Tag styringen over din karriere og kontakt Magnora Marketing på mail@magnoramarketing.dk eller mail@magnoramarketing.dk. Vi tager en uforpligtende snak om de muligheder der passer bedst til din situation, og kommer hurtigt i gang med et onboarding-forløb tilpasset dig.
+              Tag styringen over din karriere og kontakt Magnora Marketing på mail@magnoramarketing.dk. Vi tager en uforpligtende snak om de muligheder der passer bedst til din situation, og kommer hurtigt i gang med et onboarding-forløb tilpasset dig.
             </p>
           </div>
         </div>

@@ -109,13 +109,13 @@ const HomePage: React.FC = () => {
       />
 
       <HeroSection
-        title="Din Vækstpartner inden for Telesalg, Mødebooking og AI-Integration"
-        subtitle="Magnora Marketing leverer professionelt telesalg, kvalificeret mødebooking, leadgenerering, moderne webudvikling og AI-integration – alt samlet hos én partner."
+        title="Din Vækstpartner inden for Telesalg, Mødebooking, Webudvikling og AI-Integration"
+        subtitle="Magnora Marketing leverer professionelt telesalg, kvalificeret mødebooking, leadgenerering, moderne webudvikling og AI-integration – alt samlet hos én partner. Vi hjælper både virksomheder fra idefasen, der har brug for udvikling inden løsningen skal sælges, og veletablerede virksomheder der blot ønsker at vækste med mere salg."
         ctaText="Bliv samarbejdspartner"
         ctaLink="/samarbejdspartner"
         secondaryCtaText="Start din karriere"
         secondaryCtaLink="/freelance-telemarketing"
-        backgroundImage="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        backgroundImage="https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       />
 
       <section className="section bg-gray-50">
@@ -205,7 +205,7 @@ const HomePage: React.FC = () => {
             </div>
             <div className="relative">
               <img
-                src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                src="https://images.pexels.com/photos/3182781/pexels-photo-3182781.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 alt="Vækst og succes for B2B virksomheder med Magnora Marketing"
                 className="rounded-lg shadow-lg object-cover w-full h-[500px]"
               />
