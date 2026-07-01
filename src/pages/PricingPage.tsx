@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { CheckCircle, ArrowRight, Target, Award, ChevronDown, ChevronUp } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import HeroSection from '../components/HeroSection';
 import SEO from '../components/SEO';
 import FAQSection from '../components/FAQSection';
 import CTASection from '../components/CTASection';
 
 const PricingPage: React.FC = () => {
+  const { t } = useTranslation();
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
 
   useEffect(() => {
@@ -18,36 +20,18 @@ const PricingPage: React.FC = () => {
 
   const pricingModels = [
     {
-      title: 'Pakkeløsning',
-      subtitle: 'Fast månedlig ydelse',
-      description: 'Den mest omkostningseffektive model til kontinuerlig mødebooking med faste, forudsigelige omkostninger',
-      features: [
-        'Dedikeret mødebooker tilknyttet din kampagne',
-        'Garanteret minimumsantal salgsmøder',
-        'Laveste pris pr. møde ved fast aftale',
-        'Aflyste møder erstattes automatisk',
-        'Løbende strategi- og scriptoptimering',
-        'Månedlig performance-rapport',
-        'Fleksibel opsigelse med 30 dages varsel',
-        'Prioriteret support og dedikeret kontaktperson'
-      ],
+      title: t('pricing.model1.title'),
+      subtitle: t('pricing.model1.subtitle'),
+      description: t('pricing.model1.desc'),
+      features: [t('pricing.model1.f1'), t('pricing.model1.f2'), t('pricing.model1.f3'), t('pricing.model1.f4'), t('pricing.model1.f5'), t('pricing.model1.f6'), t('pricing.model1.f7'), t('pricing.model1.f8')],
       highlight: true,
       icon: Target
     },
     {
-      title: 'No Cure No Pay',
-      subtitle: 'Betal kun for resultater',
-      description: 'Den risikofrie model – du betaler udelukkende for gennemførte, kvalificerede møder',
-      features: [
-        'Ingen forudgående investering eller binding',
-        'Fast pris pr. gennemført, kvalificeret møde',
-        'Du definerer selv kvalitetskriterierne',
-        'Ingen betaling for aflyste eller useriøse møder',
-        'Perfekt til test af nye markeder og målgrupper',
-        'Skalerbar op og ned efter behov',
-        'Fuld transparens og løbende rapportering',
-        'Resultatorienteret samarbejde med klart fokus'
-      ],
+      title: t('pricing.model2.title'),
+      subtitle: t('pricing.model2.subtitle'),
+      description: t('pricing.model2.desc'),
+      features: [t('pricing.model2.f1'), t('pricing.model2.f2'), t('pricing.model2.f3'), t('pricing.model2.f4'), t('pricing.model2.f5'), t('pricing.model2.f6'), t('pricing.model2.f7'), t('pricing.model2.f8')],
       highlight: false,
       icon: Award
     }
@@ -90,9 +74,9 @@ const PricingPage: React.FC = () => {
       />
 
       <HeroSection
-        title="Priser & Pakker hos Magnora Marketing"
-        subtitle="Gennemsigtige og fleksible prismodeller tilpasset din virksomheds behov. Betal for resultater – ikke for tid."
-        ctaText="Få et tilbud"
+        title={t('pricing.hero.title')}
+        subtitle={t('pricing.hero.subtitle')}
+        ctaText={t('common.getOffer')}
         ctaLink="/kontakt"
         backgroundImage="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       />
@@ -100,9 +84,9 @@ const PricingPage: React.FC = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Vælg din model hos Magnora Marketing</h2>
+            <h2 className="text-3xl font-bold mb-4">{t('pricing.section.title')}</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Vi tilbyder to gennemsigtige prismodeller – begge med fokus på målbare resultater og høj mødekvalitet.
+              {t('pricing.section.subtitle')}
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -123,7 +107,7 @@ const PricingPage: React.FC = () => {
                     ))}
                   </ul>
                   <Link to="/kontakt" className={`inline-flex items-center px-6 py-3 rounded-lg font-semibold transition-colors ${model.highlight ? 'bg-white text-blue-600 hover:bg-gray-100' : 'bg-blue-600 text-white hover:bg-blue-700'}`}>
-                    Få et tilbud <ArrowRight size={16} className="ml-2" />
+                    {t('pricing.getOffer')} <ArrowRight size={16} className="ml-2" />
                   </Link>
                 </div>
               );
@@ -134,7 +118,7 @@ const PricingPage: React.FC = () => {
 
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 max-w-3xl">
-          <h2 className="text-3xl font-bold mb-8 text-center">Ofte stillede spørgsmål om Magnora Marketing's priser</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center">{t('pricing.faqTitle')}</h2>
           <div className="space-y-4">
             {faqItems.map((faq, index) => (
               <div key={index} className="bg-white rounded-lg shadow overflow-hidden">
@@ -156,12 +140,10 @@ const PricingPage: React.FC = () => {
 
       <section className="bg-blue-600 text-white py-16">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6">Få et uforpligtende tilbud fra Magnora Marketing</h2>
-          <p className="text-xl mb-8 max-w-3xl mx-auto">
-            Fortæl os om din virksomhed og dine mål – vi sender et skræddersyet tilbud inden for 24 timer.
-          </p>
+          <h2 className="text-3xl font-bold mb-6">{t('pricing.ctaBanner.title')}</h2>
+          <p className="text-xl mb-8 max-w-3xl mx-auto">{t('pricing.ctaBanner.desc')}</p>
           <Link to="/kontakt" className="inline-flex items-center bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-            Kontakt Magnora Marketing nu <ArrowRight className="ml-2" />
+            {t('pricing.ctaBanner.btn')} <ArrowRight className="ml-2" />
           </Link>
         </div>
       </section>
@@ -217,9 +199,9 @@ const PricingPage: React.FC = () => {
         { question: "Hvad er den billigste måde at komme i gang på?", answer: "Kontakt os for en samtale – vi finder altid en løsning der passer til dit budget, uanset størrelse." },
       ]} />
       <CTASection
-        title="Få et skræddersyet tilbud til din virksomhed"
-        subtitle="Alle prismodeller er fleksible og tilpassede. Kontakt os for at finde den løsning der passer til dit budget og dine mål."
-        primaryText="Kontakt os"
+        title={t('pricing.cta.title')}
+        subtitle={t('pricing.cta.subtitle')}
+        primaryText={t('pricing.cta.primary')}
         primaryLink="/kontakt"
       />
     </>

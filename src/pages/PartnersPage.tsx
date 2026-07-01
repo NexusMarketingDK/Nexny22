@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { TrendingUp, BarChart3, HeartHandshake, ArrowRight } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import HeroSection from '../components/HeroSection';
 import SEO from '../components/SEO';
 import FAQSection from '../components/FAQSection';
@@ -8,6 +9,7 @@ import CTASection from '../components/CTASection';
 import AiSolutionsSection from '../components/AiSolutionsSection';
 
 const PartnersPage: React.FC = () => {
+  const { t } = useTranslation();
   useEffect(() => {
     const script = document.createElement('script');
     script.innerHTML = `var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}`;
@@ -16,28 +18,16 @@ const PartnersPage: React.FC = () => {
   }, []);
 
   const benefits = [
-    {
-      icon: <TrendingUp size={40} className="text-blue-600" />,
-      title: 'Skalér dit salg',
-      description: 'Magnora Marketing leverer kvalificerede møder og varme leads direkte til dit salgsteam – så I kan skalere uden at ansætte.'
-    },
-    {
-      icon: <BarChart3 size={40} className="text-blue-600" />,
-      title: 'Klar ROI-rapportering',
-      description: 'Du får løbende adgang til performance-data, mødestatistik og ROI-beregning i klare, handlingsrettede rapporter.'
-    },
-    {
-      icon: <HeartHandshake size={40} className="text-blue-600" />,
-      title: 'Tilpasset til dig',
-      description: 'Vi skræddersyr vores løsning til din branche, målgruppe og budget. Ingen standardpakker – kun præcis det du har brug for.'
-    }
+    { icon: <TrendingUp size={40} className="text-blue-600" />, title: t('partners.b1.title'), description: t('partners.b1.desc') },
+    { icon: <BarChart3 size={40} className="text-blue-600" />, title: t('partners.b2.title'), description: t('partners.b2.desc') },
+    { icon: <HeartHandshake size={40} className="text-blue-600" />, title: t('partners.b3.title'), description: t('partners.b3.desc') },
   ];
 
   const processSteps = [
-    { number: '01', title: 'Opstartsmøde', description: 'Vi starter med et grundigt møde for at forstå din virksomhed, dine produkter og din ideelle kunde.' },
-    { number: '02', title: 'Strategi & Opsætning', description: 'Vi udvikler en skræddersyet strategi med klare KPI\'er, målsætninger og kommunikationsplaner.' },
-    { number: '03', title: 'Kampagnestart', description: 'Vores team briefes grundigt og går i gang med telemarketing eller mødebooking med løbende feedback og justering.' },
-    { number: '04', title: 'Opfølgning & Optimering', description: 'Vi evaluerer resultater løbende og optimerer indsatsen kontinuerligt for at sikre den bedste ROI for dig.' }
+    { number: t('partners.p1.num'), title: t('partners.p1.title'), description: t('partners.p1.desc') },
+    { number: t('partners.p2.num'), title: t('partners.p2.title'), description: t('partners.p2.desc') },
+    { number: t('partners.p3.num'), title: t('partners.p3.title'), description: t('partners.p3.desc') },
+    { number: t('partners.p4.num'), title: t('partners.p4.title'), description: t('partners.p4.desc') },
   ];
 
   return (
@@ -50,11 +40,11 @@ const PartnersPage: React.FC = () => {
       />
 
       <HeroSection
-        title="Lad Magnora Marketing Drive Dit Salg"
-        subtitle="Bliv samarbejdspartner og få adgang til et dedikeret salgsteam der leverer kvalificerede møder, varme leads og dokumenterede resultater – uden ansættelsesbyrden."
-        ctaText="Start samarbejde"
+        title={t('partners.hero.title')}
+        subtitle={t('partners.hero.subtitle')}
+        ctaText={t('partners.cta.primary')}
         ctaLink="#kontakt-formular"
-        secondaryCtaText="Se priser"
+        secondaryCtaText={t('common.getOffer')}
         secondaryCtaLink="/priser"
         backgroundImage="https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       />
@@ -62,9 +52,9 @@ const PartnersPage: React.FC = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Hvorfor vælge Magnora Marketing som salgspartner?</h2>
+            <h2 className="text-3xl font-bold mb-4">{t('partners.benefits.title')}</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Magnora Marketing kombinerer menneskelig salgskraft med datadrevne metoder for at levere resultater der gør en reel forskel for din bundlinje.
+              {t('partners.benefits.subtitle')}
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -82,7 +72,7 @@ const PartnersPage: React.FC = () => {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Sådan starter samarbejdet</h2>
+            <h2 className="text-3xl font-bold mb-4">{t('partners.process.title')}</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {processSteps.map((step, index) => (
@@ -99,7 +89,7 @@ const PartnersPage: React.FC = () => {
       <section id="kontakt-formular" className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center mb-10">
-            <h2 className="text-3xl font-bold mb-4">Kontakt Magnora Marketing</h2>
+            <h2 className="text-3xl font-bold mb-4">{t('contact.hero.title')}</h2>
             <p className="text-lg text-gray-600">Udfyld formularen og vi vender tilbage inden for én hverdag.</p>
           </div>
           <div className="max-w-2xl mx-auto">
@@ -186,11 +176,11 @@ const PartnersPage: React.FC = () => {
         { question: "Hvad adskiller Magnora Marketing fra et traditionelt callcenter?", answer: "Magnora Marketing er ikke et callcenter – vi er en strategisk salgspartner med fokus på kvalitet, målretning og dokumenterede resultater, ikke volumen." },
       ]} />
       <CTASection
-        title="Bliv samarbejdspartner – start din vækst i dag"
-        subtitle="Lad Magnora Marketing fylde din kalender med kvalificerede salgsmøder og varme leads, så dit team kan fokusere på at lukke aftaler."
-        primaryText="Kontakt os"
+        title={t('partners.cta.title')}
+        subtitle={t('partners.cta.subtitle')}
+        primaryText={t('partners.cta.primary')}
         primaryLink="/kontakt"
-        secondaryText="Se priser og pakker"
+        secondaryText={t('partners.cta.secondary')}
         secondaryLink="/priser"
       />
     </>

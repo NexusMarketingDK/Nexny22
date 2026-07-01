@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Calendar, Phone, Globe, Cpu, TrendingUp } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import SEO from '../components/SEO';
 import FAQSection from '../components/FAQSection';
 import CTASection from '../components/CTASection';
@@ -17,10 +18,11 @@ interface Category {
 }
 
 const BlogPage: React.FC = () => {
+  const { t } = useTranslation();
   const categories: Category[] = [
     {
       id: 'telesalg',
-      label: 'Telesalg & Mødebooking',
+      label: t('blog.categories.telesalg'),
       icon: <Phone size={22} />,
       color: 'from-blue-700 to-blue-900',
       badgeColor: 'bg-blue-100 text-blue-700',
@@ -42,7 +44,7 @@ const BlogPage: React.FC = () => {
     },
     {
       id: 'webudvikling',
-      label: 'Webudvikling',
+      label: t('blog.categories.webudvikling'),
       icon: <Globe size={22} />,
       color: 'from-indigo-700 to-indigo-900',
       badgeColor: 'bg-indigo-100 text-indigo-700',
@@ -60,7 +62,7 @@ const BlogPage: React.FC = () => {
     },
     {
       id: 'ai',
-      label: 'AI Integration',
+      label: t('blog.categories.ai'),
       icon: <Cpu size={22} />,
       color: 'from-violet-700 to-violet-900',
       badgeColor: 'bg-violet-100 text-violet-700',
@@ -80,7 +82,7 @@ const BlogPage: React.FC = () => {
         <p className="text-gray-600 mb-4 text-sm">{post.description}</p>
         <div className="flex items-center justify-between text-sm text-gray-400">
           <span className="flex items-center gap-1"><Calendar size={14} />{post.date}</span>
-          <span className="text-blue-600 font-medium flex items-center gap-1">Læs mere <ArrowRight size={14} /></span>
+          <span className="text-blue-600 font-medium flex items-center gap-1">{t('common.readMore')} <ArrowRight size={14} /></span>
         </div>
       </div>
     </Link>
@@ -97,9 +99,9 @@ const BlogPage: React.FC = () => {
 
       <section className="pt-32 pb-16 bg-gradient-to-b from-gray-900 to-blue-900">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">Magnora Marketing Blog</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">{t('blog.hero.title')}</h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Praktisk viden og konkrete råd om B2B salg, mødebooking, webudvikling og AI-integration.
+            {t('blog.hero.subtitle')}
           </p>
           <div className="flex flex-wrap justify-center gap-3 mt-8">
             {categories.map(cat => (
@@ -142,11 +144,11 @@ const BlogPage: React.FC = () => {
         { question: "Kan jeg citere Magnora Marketing's artikler i mit eget indhold?", answer: "Ja – du er velkommen til at citere vores artikler med reference til magnoramarketing.dk som kilde." },
       ]} />
       <CTASection
-        title="Hold dig opdateret – og lad Magnora Marketing drive din vækst"
-        subtitle="Læs vores seneste artikler om B2B salg, mødebooking og digital vækst – og kontakt os, når du er klar til at komme i gang."
-        primaryText="Kontakt Magnora Marketing"
+        title={t('blog.cta.title')}
+        subtitle={t('blog.cta.subtitle')}
+        primaryText={t('blog.cta.primary')}
         primaryLink="/kontakt"
-        secondaryText="Se ydelser"
+        secondaryText={t('blog.cta.secondary')}
         secondaryLink="/ydelser"
       />
     </>

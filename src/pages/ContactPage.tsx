@@ -1,10 +1,12 @@
 import React, { useEffect } from 'react';
 import { Mail, MapPin } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import SEO from '../components/SEO';
 import CTASection from '../components/CTASection';
 import FAQSection from '../components/FAQSection';
 
 const ContactPage: React.FC = () => {
+  const { t } = useTranslation();
   useEffect(() => {
     // Add Tally script
     const script = document.createElement('script');
@@ -46,12 +48,8 @@ const ContactPage: React.FC = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
           {/* Header */}
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h1 className="text-4xl font-bold mb-6">Kontakt Magnora Marketing</h1>
-            <p className="text-lg text-gray-600">
-              Vi er klar til at hjælpe dig med dine spørgsmål om telemarketing,
-              mødebooking eller jobmuligheder. Udfyld formularen nedenfor, eller
-              kontakt os direkte.
-            </p>
+            <h1 className="text-4xl font-bold mb-6">{t('contact.hero.title')}</h1>
+            <p className="text-lg text-gray-600">{t('contact.hero.desc')}</p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
@@ -74,7 +72,7 @@ const ContactPage: React.FC = () => {
             {/* Contact Information */}
             <div className="lg:col-span-2">
               <div className="bg-white rounded-lg shadow-md p-8 mb-8">
-                <h2 className="text-2xl font-semibold mb-6">Kontaktoplysninger</h2>
+                <h2 className="text-2xl font-semibold mb-6">{t('contact.info.title')}</h2>
 
                 <div className="space-y-8">
                   <div>
@@ -92,7 +90,7 @@ const ContactPage: React.FC = () => {
                   <div className="flex items-start">
                     <Mail size={24} className="text-blue-600 mr-4 mt-1" />
                     <div>
-                      <h3 className="font-medium">Email</h3>
+                      <h3 className="font-medium">{t('contact.info.email')}</h3>
                       <p className="text-gray-600">
                         <a href="mailto:mail@magnoramarketing.dk" className="hover:text-blue-600">mail@magnoramarketing.dk</a>
                       </p>
@@ -100,7 +98,7 @@ const ContactPage: React.FC = () => {
                   </div>
 
                   <div>
-                    <h3 className="font-medium">Website</h3>
+                    <h3 className="font-medium">{t('contact.info.website')}</h3>
                     <p className="text-gray-600">
                       <a href="https://www.magnoramarketing.dk" className="hover:text-blue-600">www.magnoramarketing.dk</a>
                     </p>
@@ -109,19 +107,19 @@ const ContactPage: React.FC = () => {
               </div>
 
               <div className="bg-blue-600 text-white rounded-lg shadow-md p-8">
-                <h2 className="text-2xl font-semibold mb-4">Åbningstider</h2>
+                <h2 className="text-2xl font-semibold mb-4">{t('contact.hours.title')}</h2>
                 <ul className="space-y-2">
                   <li className="flex justify-between">
-                    <span>Mandag - Torsdag:</span>
+                    <span>{t('contact.hours.monThu')}:</span>
                     <span>8:00 - 16:00</span>
                   </li>
                   <li className="flex justify-between">
-                    <span>Fredag:</span>
+                    <span>{t('contact.hours.fri')}:</span>
                     <span>8:00 - 15:00</span>
                   </li>
                   <li className="flex justify-between">
-                    <span>Lørdag - Søndag:</span>
-                    <span>Lukket</span>
+                    <span>{t('contact.hours.weekend')}:</span>
+                    <span>{t('contact.hours.closed')}</span>
                   </li>
                 </ul>
               </div>
@@ -130,18 +128,10 @@ const ContactPage: React.FC = () => {
 
           {/* SEO Optimized Content */}
           <div className="mt-16 bg-white rounded-lg shadow-md p-8">
-            <h2 className="text-2xl font-semibold mb-6">Professionel Mødebooking & Telemarketing Partner</h2>
+            <h2 className="text-2xl font-semibold mb-6">{t('contact.seo.title')}</h2>
             <div className="prose max-w-none">
-              <p className="mb-4">
-                Magnora Marketing er din professionelle partner inden for B2B telemarketing og mødebooking.
-                Med over 20 års erfaring i branchen har vi specialiseret os i at skabe værdifulde forbindelser
-                mellem virksomheder og hjælpe vores kunder med at vækste gennem målrettede salgsaktiviteter.
-              </p>
-              <p className="mb-4">
-                Vores dedikerede team af erfarne telemarketingkonsulenter og mødebookere arbejder målrettet
-                med at generere kvalificerede leads og booke møder med beslutningstagere i jeres målgruppe.
-                Vi tilbyder skræddersyede løsninger tilpasset jeres specifikke behov og branche.
-              </p>
+              <p className="mb-4">{t('contact.seo.p1')}</p>
+              <p className="mb-4">{t('contact.seo.p2')}</p>
               <p className="mb-4">
                 Som samarbejdspartner får I adgang til:
               </p>
@@ -192,11 +182,11 @@ const ContactPage: React.FC = () => {
       <FAQSection faqs={faqs} />
 
       <CTASection
-        title="Kom i gang med Magnora Marketing – helt uforpligtende"
-        subtitle="Udfyld formularen eller ring til os. Vi vender tilbage inden for én hverdag."
-        primaryText="Se vores ydelser"
+        title={t('contact.cta.title')}
+        subtitle={t('contact.cta.subtitle')}
+        primaryText={t('contact.cta.primary')}
         primaryLink="/ydelser"
-        secondaryText="Se priser"
+        secondaryText={t('pricing.getOffer')}
         secondaryLink="/priser"
       />
     </>

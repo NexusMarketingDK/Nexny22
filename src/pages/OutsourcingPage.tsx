@@ -1,43 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { CheckCircle, ArrowRight, TrendingUp, Clock, Shield, Users, BarChart3, Zap } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import HeroSection from '../components/HeroSection';
 import SEO from '../components/SEO';
 import FAQSection from '../components/FAQSection';
 import CTASection from '../components/CTASection';
 
 const OutsourcingPage: React.FC = () => {
+  const { t } = useTranslation();
   const reasons = [
-    {
-      icon: <TrendingUp className="w-12 h-12 text-blue-600" />,
-      title: 'Hurtigere skalering',
-      description: 'Skaler din salgsindsats hurtigt op eller ned uden ansættelses- og oplæringsomkostninger.'
-    },
-    {
-      icon: <Clock className="w-12 h-12 text-blue-600" />,
-      title: 'Frigør dit team',
-      description: 'Lad dine egne sælgere fokusere på lukning og kundepleji – vi tager den tidskrævende prospektering.'
-    },
-    {
-      icon: <Shield className="w-12 h-12 text-blue-600" />,
-      title: 'Lav risiko',
-      description: 'Med No Cure No Pay modellen betaler du kun for leverede resultater. Ingen faste lønomkostninger.'
-    },
-    {
-      icon: <Users className="w-12 h-12 text-blue-600" />,
-      title: 'Erfaren salgsstyrke',
-      description: 'Få adgang til et erfarent team af salgsprofessionelle med dokumenterede resultater fra dag ét.'
-    },
-    {
-      icon: <BarChart3 className="w-12 h-12 text-blue-600" />,
-      title: 'Fuld transparens',
-      description: 'Løbende rapportering og data-indsigt giver dig fuld overblik over indsatsen og dens resultater.'
-    },
-    {
-      icon: <Zap className="w-12 h-12 text-blue-600" />,
-      title: 'Hurtigt i gang',
-      description: 'Magnora Marketing kan typisk starte aktiv salg og mødebooking inden for 1-2 uger efter aftaleindgåelse.'
-    }
+    { icon: <TrendingUp className="w-12 h-12 text-blue-600" />, title: t('outsourcing.r1.title'), description: t('outsourcing.r1.desc') },
+    { icon: <Clock className="w-12 h-12 text-blue-600" />, title: t('outsourcing.r2.title'), description: t('outsourcing.r2.desc') },
+    { icon: <Shield className="w-12 h-12 text-blue-600" />, title: t('outsourcing.r3.title'), description: t('outsourcing.r3.desc') },
+    { icon: <Users className="w-12 h-12 text-blue-600" />, title: t('outsourcing.r4.title'), description: t('outsourcing.r4.desc') },
+    { icon: <BarChart3 className="w-12 h-12 text-blue-600" />, title: t('outsourcing.r5.title'), description: t('outsourcing.r5.desc') },
+    { icon: <Zap className="w-12 h-12 text-blue-600" />, title: t('outsourcing.r6.title'), description: t('outsourcing.r6.desc') },
   ];
 
   return (
@@ -50,11 +28,11 @@ const OutsourcingPage: React.FC = () => {
       />
 
       <HeroSection
-        title="Hvorfor Outsource dit Salg til Magnora Marketing?"
-        subtitle="Spar tid og ressourcer – og få adgang til professionel salgskraft og mødebooking uden de faste udgifter ved egne ansatte."
-        ctaText="Kom i gang"
+        title={t('outsourcing.hero.title')}
+        subtitle={t('outsourcing.hero.subtitle')}
+        ctaText={t('common.getStarted')}
         ctaLink="/kontakt"
-        secondaryCtaText="Se priser"
+        secondaryCtaText={t('common.getOffer')}
         secondaryCtaLink="/priser"
         backgroundImage="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       />
@@ -62,9 +40,9 @@ const OutsourcingPage: React.FC = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">6 grunde til at vælge Magnora Marketing som salgspartner</h2>
+            <h2 className="text-3xl font-bold mb-4">{t('outsourcing.reasons.title')}</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Magnora Marketing giver dig det bedste fra to verdener: professionel salgskraft og fuld fleksibilitet.
+              {t('outsourcing.reasons.subtitle')}
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -191,11 +169,11 @@ const OutsourcingPage: React.FC = () => {
         { question: "Kan vi stoppe og starte samarbejdet igen?", answer: "Ja – vi har kunder der bruger Magnora Marketing sæsonbaseret eller ved specifikke kampagnebehov." },
       ]} />
       <CTASection
-        title="Outsource dit salg til Magnora Marketing og fokuser på din kerneforretning"
-        subtitle="Professionelt telesalg og mødebooking uden faste lønudgifter – fleksibelt, skalerbart og med dokumenterede resultater."
-        primaryText="Kom i gang i dag"
+        title={t('outsourcing.cta.title')}
+        subtitle={t('outsourcing.cta.subtitle')}
+        primaryText={t('outsourcing.cta.primary')}
         primaryLink="/kontakt"
-        secondaryText="Se priser"
+        secondaryText={t('outsourcing.cta.secondary')}
         secondaryLink="/priser"
       />
     </>
