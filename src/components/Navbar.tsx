@@ -1,9 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { NavLink, Link, useLocation } from 'react-router-dom';
 import { Phone, Menu, X, ChevronDown } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { jobListings } from '../data/jobListings';
+import LanguageSwitcher from './LanguageSwitcher';
 
 const Navbar: React.FC = () => {
+  const { t } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isJobsDropdownOpen, setIsJobsDropdownOpen] = useState(false);
@@ -95,8 +98,8 @@ const Navbar: React.FC = () => {
 
           {/* Desktop nav */}
           <nav className="hidden md:flex items-center gap-1">
-            <NavLink to="/" className={navLinkClass} end>Forside</NavLink>
-            <NavLink to="/ydelser" className={navLinkClass}>Ydelser</NavLink>
+            <NavLink to="/" className={navLinkClass} end>{t('nav.home')}</NavLink>
+            <NavLink to="/ydelser" className={navLinkClass}>{t('nav.services')}</NavLink>
 
             {/* Digital dropdown */}
             <div className="relative">
@@ -106,7 +109,7 @@ const Navbar: React.FC = () => {
                 }`}
                 onClick={toggleDigitalDropdown}
               >
-                Digital <ChevronDown size={14} className={`transition-transform ${isDigitalDropdownOpen ? 'rotate-180' : ''}`} />
+                {t('nav.digital')} <ChevronDown size={14} className={`transition-transform ${isDigitalDropdownOpen ? 'rotate-180' : ''}`} />
               </button>
               {isDigitalDropdownOpen && (
                 <div className={dropdownClass}>
@@ -125,7 +128,7 @@ const Navbar: React.FC = () => {
                 }`}
                 onClick={toggleJobsDropdown}
               >
-                Job søgere <ChevronDown size={14} className={`transition-transform ${isJobsDropdownOpen ? 'rotate-180' : ''}`} />
+                {t('nav.jobSeekers')} <ChevronDown size={14} className={`transition-transform ${isJobsDropdownOpen ? 'rotate-180' : ''}`} />
               </button>
               {isJobsDropdownOpen && (
                 <div className={dropdownClass}>
@@ -133,7 +136,7 @@ const Navbar: React.FC = () => {
                     <Link key={job.path} to={job.path} className={dropdownItemClass}>{job.title}</Link>
                   ))}
                   <div className="my-1 border-t border-slate-100" />
-                  <Link to="/freelance-telemarketing" className={`${dropdownItemClass} font-semibold text-blue-600`}>Se alle stillinger →</Link>
+                  <Link to="/freelance-telemarketing" className={`${dropdownItemClass} font-semibold text-blue-600`}>{t('nav.allJobs')}</Link>
                 </div>
               )}
             </div>
@@ -146,7 +149,7 @@ const Navbar: React.FC = () => {
                 }`}
                 onClick={togglePartnerDropdown}
               >
-                Samarbejde <ChevronDown size={14} className={`transition-transform ${isPartnerDropdownOpen ? 'rotate-180' : ''}`} />
+                {t('nav.collaboration')} <ChevronDown size={14} className={`transition-transform ${isPartnerDropdownOpen ? 'rotate-180' : ''}`} />
               </button>
               {isPartnerDropdownOpen && (
                 <div className={dropdownClass}>
@@ -157,54 +160,59 @@ const Navbar: React.FC = () => {
               )}
             </div>
 
-            <NavLink to="/om-os" className={navLinkClass}>Om os</NavLink>
-            <NavLink to="/blog" className={navLinkClass}>Blog</NavLink>
-            <NavLink to="/kontakt" className={navLinkClass}>Kontakt</NavLink>
+            <NavLink to="/om-os" className={navLinkClass}>{t('nav.about')}</NavLink>
+            <NavLink to="/blog" className={navLinkClass}>{t('nav.blog')}</NavLink>
+            <NavLink to="/kontakt" className={navLinkClass}>{t('nav.contact')}</NavLink>
 
-            <Link to="/kontakt" className="ml-3 btn btn-primary text-sm px-5 py-2.5">
-              Kom i gang
+            <LanguageSwitcher />
+
+            <Link to="/kontakt" className="ml-2 btn btn-primary text-sm px-5 py-2.5">
+              {t('nav.cta')}
             </Link>
           </nav>
 
           {/* Mobile toggle */}
-          <button
-            type="button"
-            className={`md:hidden p-2 rounded-lg transition-colors ${isScrolled ? 'text-slate-700 hover:bg-slate-100' : 'text-white hover:bg-white/10'}`}
-            onClick={toggleMenu}
-          >
-            {isMenuOpen ? <X size={22} /> : <Menu size={22} />}
-          </button>
+          <div className="md:hidden flex items-center gap-2">
+            <LanguageSwitcher compact />
+            <button
+              type="button"
+              className={`p-2 rounded-lg transition-colors ${isScrolled ? 'text-slate-700 hover:bg-slate-100' : 'text-white hover:bg-white/10'}`}
+              onClick={toggleMenu}
+            >
+              {isMenuOpen ? <X size={22} /> : <Menu size={22} />}
+            </button>
+          </div>
         </div>
       </div>
 
       {/* Mobile menu */}
       <div className={`md:hidden transition-all duration-300 ease-in-out overflow-hidden ${isMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
         <nav className="bg-white border-t border-slate-100 flex flex-col px-4 py-4 gap-1">
-          <NavLink to="/" className={navLinkClass} end onClick={toggleMenu}>Forside</NavLink>
-          <NavLink to="/ydelser" className={navLinkClass} onClick={toggleMenu}>Ydelser</NavLink>
+          <NavLink to="/" className={navLinkClass} end onClick={toggleMenu}>{t('nav.home')}</NavLink>
+          <NavLink to="/ydelser" className={navLinkClass} onClick={toggleMenu}>{t('nav.services')}</NavLink>
           <div className="py-2 px-3">
-            <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Digital</div>
+            <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">{t('nav.digital')}</div>
             {digitalServices.map((s) => (
               <Link key={s.path} to={s.path} className="block py-2 px-2 text-sm text-slate-600 hover:text-blue-600 rounded-lg" onClick={toggleMenu}>{s.title}</Link>
             ))}
           </div>
           <div className="py-2 px-3">
-            <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Job søgere</div>
+            <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">{t('nav.jobSeekers')}</div>
             {jobListings.map((job) => (
               <Link key={job.path} to={job.path} className="block py-2 px-2 text-sm text-slate-600 hover:text-blue-600 rounded-lg" onClick={toggleMenu}>{job.title}</Link>
             ))}
-            <Link to="/freelance-telemarketing" className="block py-2 px-2 text-sm font-semibold text-blue-600" onClick={toggleMenu}>Se alle stillinger →</Link>
+            <Link to="/freelance-telemarketing" className="block py-2 px-2 text-sm font-semibold text-blue-600" onClick={toggleMenu}>{t('nav.allJobs')}</Link>
           </div>
           <div className="py-2 px-3">
-            <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Samarbejde</div>
+            <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">{t('nav.collaboration')}</div>
             {partnerOptions.map((o) => (
               <Link key={o.path} to={o.path} className="block py-2 px-2 text-sm text-slate-600 hover:text-blue-600 rounded-lg" onClick={toggleMenu}>{o.title}</Link>
             ))}
           </div>
-          <NavLink to="/om-os" className={navLinkClass} onClick={toggleMenu}>Om os</NavLink>
-          <NavLink to="/blog" className={navLinkClass} onClick={toggleMenu}>Blog</NavLink>
-          <NavLink to="/kontakt" className={navLinkClass} onClick={toggleMenu}>Kontakt</NavLink>
-          <Link to="/kontakt" className="mt-2 btn btn-primary text-center" onClick={toggleMenu}>Kom i gang</Link>
+          <NavLink to="/om-os" className={navLinkClass} onClick={toggleMenu}>{t('nav.about')}</NavLink>
+          <NavLink to="/blog" className={navLinkClass} onClick={toggleMenu}>{t('nav.blog')}</NavLink>
+          <NavLink to="/kontakt" className={navLinkClass} onClick={toggleMenu}>{t('nav.contact')}</NavLink>
+          <Link to="/kontakt" className="mt-2 btn btn-primary text-center" onClick={toggleMenu}>{t('nav.cta')}</Link>
         </nav>
       </div>
     </header>
