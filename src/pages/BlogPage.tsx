@@ -7,41 +7,31 @@ import CTASection from '../components/CTASection';
 
 const BlogPage: React.FC = () => {
   const posts = [
-    {
-      slug: 'saas-loesninger-2026',
-      title: 'SaaS-løsninger i 2026: Hvad B2B virksomheder bør vide',
-      description: 'En gennemgang af de vigtigste SaaS-trends i 2026 og hvordan B2B virksomheder kan drage fordel af moderne cloud-platforme.',
-      date: '2026-01-15',
-      category: 'Tech & SaaS'
-    },
-    {
-      slug: 'ai-automation-2026',
-      title: 'AI Automation i Salg: Sådan bruger du det rigtigt i 2026',
-      description: 'Kunstig intelligens forandrer salgsindsatsen. Lær hvordan du implementerer AI-automation i din salgsproces og øger konverteringsraten.',
-      date: '2026-02-01',
-      category: 'AI & Teknologi'
-    },
-    {
-      slug: 'modebooking-2026',
-      title: 'Effektiv Mødebooking i 2026: Strategier der virker',
-      description: 'Få de bedste metoder og scripts til professionel mødebooking i 2026 – og se hvorfor kvalitet slår kvantitet.',
-      date: '2026-02-20',
-      category: 'Mødebooking'
-    },
-    {
-      slug: 'telesalg-2026',
-      title: 'Telesalg i 2026: Teknikker og strategier for moderne sælgere',
-      description: 'Telesalg er ikke død – det har bare ændret sig. Her er de teknikker der virker i et moderne B2B salgslandskab.',
-      date: '2026-03-05',
-      category: 'Telemarketing'
-    },
-    {
-      slug: 'outbound-sales-2026',
-      title: 'Outbound Sales 2026: Byg en salgsmaskine der skalerer',
-      description: 'En komplet guide til at bygge og optimere din outbound salgsmotor i 2026 – fra prospektering til lukket aftale.',
-      date: '2026-03-20',
-      category: 'Salgsstrategier'
-    }
+    { slug: 'saas-loesninger-2026', title: 'SaaS-løsninger i 2026: Hvad B2B virksomheder bør vide', description: 'En gennemgang af de vigtigste SaaS-trends i 2026 og hvordan B2B virksomheder kan drage fordel af moderne cloud-platforme.', date: '2026-01-15', category: 'Tech & SaaS' },
+    { slug: 'ai-automation-2026', title: 'AI Automation i Salg: Sådan bruger du det rigtigt i 2026', description: 'Kunstig intelligens forandrer salgsindsatsen. Lær hvordan du implementerer AI-automation i din salgsproces og øger konverteringsraten.', date: '2026-02-01', category: 'AI & Teknologi' },
+    { slug: 'modebooking-2026', title: 'Effektiv Mødebooking i 2026: Strategier der virker', description: 'Få de bedste metoder og scripts til professionel mødebooking i 2026 – og se hvorfor kvalitet slår kvantitet.', date: '2026-02-20', category: 'Mødebooking' },
+    { slug: 'telesalg-2026', title: 'Telesalg i 2026: Teknikker og strategier for moderne sælgere', description: 'Telesalg er ikke død – det har bare ændret sig. Her er de teknikker der virker i et moderne B2B salgslandskab.', date: '2026-03-05', category: 'Telemarketing' },
+    { slug: 'outbound-sales-2026', title: 'Outbound Sales 2026: Byg en salgsmaskine der skalerer', description: 'En komplet guide til at bygge og optimere din outbound salgsmotor i 2026 – fra prospektering til lukket aftale.', date: '2026-03-20', category: 'Salgsstrategier' },
+    { slug: 'hvorfor-saas-2026', title: 'Hvorfor SaaS i 2026? Fordele for B2B virksomheder', description: 'SaaS-løsninger giver fleksibilitet, lavere TCO og hurtigere skalerbarhed. Læs hvorfor B2B virksomheder vælger cloud frem for on-premise.', date: '2026-04-01', category: 'Tech & SaaS' },
+    { slug: 'saas-vs-on-premise', title: 'SaaS vs. On-Premise: Hvad passer til din virksomhed i 2026?', description: 'En grundig sammenligning af SaaS og on-premise løsninger – inkl. hybridmodeller og hvornår det ene er bedre end det andet.', date: '2026-04-05', category: 'Tech & SaaS' },
+    { slug: 'bedste-saas-tools-2026', title: 'De 10 bedste SaaS-tools til B2B virksomheder i 2026', description: 'Top 10 SaaS-platforme der driver vækst, effektivitet og salg for B2B virksomheder i 2026.', date: '2026-04-10', category: 'Tech & SaaS' },
+    { slug: 'saas-integration-2026', title: 'SaaS Integration i 2026: Sådan forbinder du dine platforme', description: 'Integrationskvalitet er afgørende for ROI. Lær de 3 integrationsniveauer og de 5 høj-ROI integrationer din virksomhed bør prioritere.', date: '2026-04-15', category: 'Tech & SaaS' },
+    { slug: 'saas-security-gdpr', title: 'SaaS Sikkerhed & GDPR: Hvad du skal vide i 2026', description: 'GDPR-compliance, DPA-aftaler og datasikkerhed i cloud. En komplet tjekliste til valg af GDPR-sikre SaaS-løsninger.', date: '2026-04-20', category: 'Tech & SaaS' },
+    { slug: 'hvorfor-magnora-webudvikling', title: 'Hvorfor vælge Magnora Marketing til webudvikling?', description: 'Magnora Marketing kombinerer teknisk ekspertise med kommerciel indsigt for at levere hjemmesider der sælger – ikke bare ser godt ud.', date: '2026-04-25', category: 'Webudvikling' },
+    { slug: 'hvorfor-magnora-ai-integration', title: 'Hvorfor vælge Magnora Marketing til AI-integration?', description: 'Magnora Marketing hjælper B2B virksomheder med at implementere AI-løsninger der skaber målbare resultater og øger effektiviteten.', date: '2026-05-01', category: 'AI & Teknologi' },
+    { slug: 'hjemmeside-til-vaekst-2026', title: 'Hjemmeside til Vækst i 2026: Hvad B2B-kunder forventer', description: 'Den digitale rejse for B2B-buyers i 2026 – og hvad der skal til for at din hjemmeside konverterer besøgende til kunder.', date: '2026-05-05', category: 'Webudvikling' },
+    { slug: 'ai-integration-roi-2026', title: 'AI Integration ROI i 2026: Hvornår betaler det sig?', description: 'Beregn ROI på AI-implementering. Top 5 AI-initiativer med dokumenteret effekt – og hvornår det IKKE betaler sig at investere i AI.', date: '2026-05-10', category: 'AI & Teknologi' },
+    { slug: 'websitekonvertering-tips', title: '10 tips til bedre websitekonvertering for B2B virksomheder', description: 'Konkrete CRO-tips der øger konverteringsraten på din B2B hjemmeside – fra landingssider til call-to-action og formularer.', date: '2026-05-15', category: 'Webudvikling' },
+    { slug: 'hvorfor-magnora-telesalg', title: 'Hvorfor vælge Magnora Marketing til telesalg?', description: 'Magnora Marketing leverer professionelt B2B telesalg med erfarne konsulenter, datadrevne metoder og dokumenterede resultater.', date: '2026-05-20', category: 'Telemarketing' },
+    { slug: 'hvorfor-magnora-moedebooking', title: 'Hvorfor vælge Magnora Marketing til mødebooking?', description: 'Magnora Marketing booker kvalificerede møder med beslutningstagere – og leverer konsistent høj mødekvalitet til ambitiøse B2B virksomheder.', date: '2026-05-25', category: 'Mødebooking' },
+    { slug: 'outsourcing-telesalg-2026', title: 'Outsourcing af Telesalg i 2026: Fordele, faldgruber og krav', description: 'Alt du skal vide om at outsource dit telesalg i 2026 – inkl. hvad du skal kræve af en partner og hvilke fejl du skal undgå.', date: '2026-06-01', category: 'Telemarketing' },
+    { slug: 'b2b-salg-strategi-2026', title: 'B2B Salgsstrategi i 2026: 5 fundamenter der skaber vækst', description: 'De 5 fundamenter i en moderne B2B salgsstrategi: ICP-definition, prospektering, dialog, pipeline-styring og closing-teknikker.', date: '2026-06-05', category: 'Salgsstrategier' },
+    { slug: 'moedebooking-scripts-2026', title: 'Mødebooking Scripts 2026: Konkrete eksempler der virker', description: 'Effektive scripteksempler til mødebooking i 2026 – inkl. åbningssætninger, indvendingshåndtering og closing.', date: '2026-06-10', category: 'Mødebooking' },
+    { slug: 'leadgenerering-strategier-2026', title: 'Leadgenerering Strategier 2026: 5 metoder der virker', description: 'De 5 mest effektive leadgenereringsstrategier i 2026: SEO, outbound, LinkedIn, ABM og webinarer – med konkrete implementeringstips.', date: '2026-06-15', category: 'Salgsstrategier' },
+    { slug: 'hvad-er-bant-2026', title: 'Hvad er BANT? Framework til kvalificering af B2B leads i 2026', description: 'BANT-frameworket forklaret med eksempelspørgsmål for alle 4 faktorer – Budget, Authority, Need og Timeline.', date: '2026-06-20', category: 'Salgsstrategier' },
+    { slug: 'vaekst-partner-guide', title: 'Vækstpartner Guide: Hvornår skal du hyre en ekstern partner?', description: 'Hvad er en vækstpartner, hvornår giver det mening at hyre en, og hvad skal du konkret kræve af et samarbejde?', date: '2026-06-23', category: 'Salgsstrategier' },
+    { slug: 'startup-til-vaekst-2026', title: 'Fra Startup til Vækst i 2026: 3 skaleringsmodeller', description: 'De 3 primære skaleringsmodeller for startups og vækstvirksomheder i 2026: outsourcing, inbound og AI-drevet salg.', date: '2026-06-26', category: 'Salgsstrategier' },
+    { slug: 'cold-calling-vs-inbound', title: 'Cold Calling vs. Inbound: Hvad virker bedst i 2026?', description: 'En grundig sammenligning af cold calling og inbound marketing – og hvordan "allbound"-kombinationen skaber de bedste resultater.', date: '2026-06-29', category: 'Telemarketing' },
   ];
 
   return (

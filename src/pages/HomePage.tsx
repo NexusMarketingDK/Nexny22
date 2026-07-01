@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Phone, Users, Code, ArrowRight, Briefcase, BarChart3, CheckCircle, TrendingUp, HeartHandshake } from 'lucide-react';
+import { Phone, Users, Code, ArrowRight, Briefcase, BarChart3, CheckCircle, TrendingUp, HeartHandshake, MessageSquare, Target, Zap } from 'lucide-react';
 import HeroSection from '../components/HeroSection';
 import SEO from '../components/SEO';
 import FAQSection from '../components/FAQSection';
@@ -120,41 +120,83 @@ const HomePage: React.FC = () => {
 
       <section className="section bg-gray-50">
         <div className="container">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Hvorfor vælge Magnora Marketing som salgspartner?</h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Magnora Marketing kombinerer menneskelig salgskraft med datadrevne metoder for at levere resultater der gør en reel forskel for din bundlinje.
+          <div className="text-center mb-4">
+            <span className="section-label">Sådan arbejder vi</span>
+            <h2 className="text-3xl font-bold mb-4">Hvorfor vælge Magnora Marketing som partner?</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-2">
+              Vi hjælper <strong>små som store</strong> – nye startups med en idé og veletablerede virksomheder der vil vækste. Uanset om du har brug for telemarketing, webudvikling eller AI-integration, starter vi altid det samme sted: en uforpligtende snak om dit projekt.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                icon: <TrendingUp size={40} className="text-blue-600" />,
-                title: 'Skalér dit salg',
-                description: 'Magnora Marketing leverer kvalificerede møder og varme leads direkte til dit salgsteam – så I kan skalere uden at ansætte.'
-              },
-              {
-                icon: <BarChart3 size={40} className="text-blue-600" />,
-                title: 'Klar ROI-rapportering',
-                description: 'Du får løbende adgang til performance-data, mødestatistik og ROI-beregning i klare, handlingsrettede rapporter.'
-              },
-              {
-                icon: <HeartHandshake size={40} className="text-blue-600" />,
-                title: 'Tilpasset til dig',
-                description: 'Vi skræddersyr vores løsning til din branche, målgruppe og budget. Ingen standardpakker – kun præcis det du har brug for.'
-              }
-            ].map((benefit, index) => (
-              <div key={index} className="text-center p-8 bg-white rounded-lg shadow-md">
-                <div className="flex justify-center mb-4">{benefit.icon}</div>
-                <h3 className="text-xl font-semibold mb-3">{benefit.title}</h3>
-                <p className="text-gray-600">{benefit.description}</p>
+
+          {/* Process simulation */}
+          <div className="max-w-4xl mx-auto mt-12">
+            <div className="relative">
+              {/* Vertical line */}
+              <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-blue-100 hidden md:block" />
+
+              {[
+                {
+                  step: '01',
+                  icon: <MessageSquare size={22} className="text-white" />,
+                  title: 'Indledende snak – helt uforpligtende',
+                  desc: 'Vi starter altid med en kort samtale om dit projekt. Hvad er idéen? Hvad er målet? Er det TM, webudvikling eller AI? Der er ingen faste pakker – kun en ærlig dialog om hvad der giver mening for dig.',
+                  tag: 'Startup · Veletableret · Alle brancher',
+                  color: 'bg-blue-600',
+                },
+                {
+                  step: '02',
+                  icon: <Target size={22} className="text-white" />,
+                  title: 'Vi kortlægger behovet og lægger en plan',
+                  desc: 'Uanset om du er i idefasen eller klar til at skalere, skræddersyr vi en konkret handlingsplan. Vi definerer målgruppe, budskab, kanal og tidshorisont – og præsenterer et tilbud inden for 24 timer.',
+                  tag: 'Idéfase · Vækstfase · Skalering',
+                  color: 'bg-indigo-600',
+                },
+                {
+                  step: '03',
+                  icon: <Zap size={22} className="text-white" />,
+                  title: 'Vi eksekverer – du følger med live',
+                  desc: 'Vores team går i gang: telemarketing-kampagner, webudvikling eller AI-løsninger. Du får løbende opdateringer, rapporter og adgang til live data. Ingen overraskelser.',
+                  tag: 'Telemarketing · Webudvikling · AI',
+                  color: 'bg-blue-700',
+                },
+                {
+                  step: '04',
+                  icon: <TrendingUp size={22} className="text-white" />,
+                  title: 'Fra idé til afsluttet salg',
+                  desc: 'Vi hjælper hele vejen – fra udvikling af produktet til de første kundemøder er booket og salget er lukket. Magnora Marketing er din partner fra start til slut.',
+                  tag: 'Leadgenerering · Mødebooking · Salgsafslutning',
+                  color: 'bg-green-600',
+                },
+              ].map((s, i) => (
+                <div key={i} className="relative flex gap-6 mb-8 last:mb-0">
+                  <div className={`w-16 h-16 rounded-2xl ${s.color} flex items-center justify-center flex-shrink-0 shadow-lg z-10`}>
+                    {s.icon}
+                  </div>
+                  <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 flex-1">
+                    <div className="flex items-start justify-between gap-4 mb-2">
+                      <h3 className="font-bold text-slate-800 text-lg">{s.title}</h3>
+                      <span className="text-xs font-semibold text-blue-600 bg-blue-50 px-3 py-1 rounded-full whitespace-nowrap">{s.step}</span>
+                    </div>
+                    <p className="text-gray-600 text-sm leading-relaxed mb-3">{s.desc}</p>
+                    <div className="text-xs text-slate-400 font-medium">{s.tag}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Bottom CTA */}
+            <div className="mt-10 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl p-8 text-white text-center">
+              <p className="text-lg font-semibold mb-1">Klar til at tage den første snak?</p>
+              <p className="text-white/80 text-sm mb-6">Vi hjælper startup, SMV og enterprise – alle starter med en gratis og uforpligtende samtale.</p>
+              <div className="flex flex-col sm:flex-row gap-3 justify-center">
+                <Link to="/kontakt" className="inline-flex items-center justify-center bg-white text-blue-600 px-6 py-3 rounded-xl font-semibold hover:bg-gray-100 transition-colors">
+                  Book en gratis snak <ArrowRight size={16} className="ml-2" />
+                </Link>
+                <Link to="/ydelser" className="inline-flex items-center justify-center bg-white/10 border border-white/30 text-white px-6 py-3 rounded-xl font-semibold hover:bg-white/20 transition-colors">
+                  Se vores ydelser
+                </Link>
               </div>
-            ))}
-          </div>
-          <div className="text-center mt-10">
-            <Link to="/samarbejdspartner" className="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
-              Bliv samarbejdspartner <ArrowRight size={16} className="ml-2" />
-            </Link>
+            </div>
           </div>
         </div>
       </section>
