@@ -19,6 +19,26 @@ import AIAutomation2026 from './pages/blog/AIAutomation2026';
 import Modebooking2026 from './pages/blog/Modebooking2026';
 import Telesalg2026 from './pages/blog/Telesalg2026';
 import OutboundSales2026 from './pages/blog/OutboundSales2026';
+import HvorforSaaS2026 from './pages/blog/HvorforSaaS2026';
+import SaaSVsOnPremise from './pages/blog/SaaSVsOnPremise';
+import BedsteSaaSTools2026 from './pages/blog/BedsteSaaSTools2026';
+import SaaSIntegration2026 from './pages/blog/SaaSIntegration2026';
+import SaaSSecurityGDPR from './pages/blog/SaaSSecurityGDPR';
+import HvorforMagnoraWebudvikling from './pages/blog/HvorforMagnoraWebudvikling';
+import HvorforMagnoraAiIntegration from './pages/blog/HvorforMagnoraAiIntegration';
+import HjemmesideTilVaekst2026 from './pages/blog/HjemmesideTilVaekst2026';
+import AiIntegrationROI2026 from './pages/blog/AiIntegrationROI2026';
+import WebsitekonverteringTips from './pages/blog/WebsitekonverteringTips';
+import HvorforMagnoraTelesalg from './pages/blog/HvorforMagnoraTelesalg';
+import HvorforMagnoraMoedebooking from './pages/blog/HvorforMagnoraMoedebooking';
+import OutsourcingTelesalg2026 from './pages/blog/OutsourcingTelesalg2026';
+import B2BSalgStrategi2026 from './pages/blog/B2BSalgStrategi2026';
+import MoedebookingScripts2026 from './pages/blog/MoedebookingScripts2026';
+import LeadgenerseringStrategier2026 from './pages/blog/LeadgenerseringStrategier2026';
+import HvadErBANT2026 from './pages/blog/HvadErBANT2026';
+import VaekstPartnerGuide from './pages/blog/VaekstPartnerGuide';
+import StartupTilVaekst2026 from './pages/blog/StartupTilVaekst2026';
+import ColdCallingVsInbound from './pages/blog/ColdCallingVsInbound';
 
 // Job Landing Pages
 import RemoteWorkPage from './pages/jobs/RemoteWorkPage';
@@ -88,12 +108,32 @@ function App() {
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
 
-          {/* New Blog Posts 2026 */}
+          {/* Blog Posts */}
           <Route path="/blog/saas-loesninger-2026" element={<SaaSLoesninger2026 />} />
           <Route path="/blog/ai-automation-2026" element={<AIAutomation2026 />} />
           <Route path="/blog/modebooking-2026" element={<Modebooking2026 />} />
           <Route path="/blog/telesalg-2026" element={<Telesalg2026 />} />
           <Route path="/blog/outbound-sales-2026" element={<OutboundSales2026 />} />
+          <Route path="/blog/hvorfor-saas-2026" element={<HvorforSaaS2026 />} />
+          <Route path="/blog/saas-vs-on-premise" element={<SaaSVsOnPremise />} />
+          <Route path="/blog/bedste-saas-tools-2026" element={<BedsteSaaSTools2026 />} />
+          <Route path="/blog/saas-integration-2026" element={<SaaSIntegration2026 />} />
+          <Route path="/blog/saas-security-gdpr" element={<SaaSSecurityGDPR />} />
+          <Route path="/blog/hvorfor-magnora-webudvikling" element={<HvorforMagnoraWebudvikling />} />
+          <Route path="/blog/hvorfor-magnora-ai-integration" element={<HvorforMagnoraAiIntegration />} />
+          <Route path="/blog/hjemmeside-til-vaekst-2026" element={<HjemmesideTilVaekst2026 />} />
+          <Route path="/blog/ai-integration-roi-2026" element={<AiIntegrationROI2026 />} />
+          <Route path="/blog/websitekonvertering-tips" element={<WebsitekonverteringTips />} />
+          <Route path="/blog/hvorfor-magnora-telesalg" element={<HvorforMagnoraTelesalg />} />
+          <Route path="/blog/hvorfor-magnora-moedebooking" element={<HvorforMagnoraMoedebooking />} />
+          <Route path="/blog/outsourcing-telesalg-2026" element={<OutsourcingTelesalg2026 />} />
+          <Route path="/blog/b2b-salg-strategi-2026" element={<B2BSalgStrategi2026 />} />
+          <Route path="/blog/moedebooking-scripts-2026" element={<MoedebookingScripts2026 />} />
+          <Route path="/blog/leadgenerering-strategier-2026" element={<LeadgenerseringStrategier2026 />} />
+          <Route path="/blog/hvad-er-bant-2026" element={<HvadErBANT2026 />} />
+          <Route path="/blog/vaekst-partner-guide" element={<VaekstPartnerGuide />} />
+          <Route path="/blog/startup-til-vaekst-2026" element={<StartupTilVaekst2026 />} />
+          <Route path="/blog/cold-calling-vs-inbound" element={<ColdCallingVsInbound />} />
           
           {/* Admin Routes */}
           <Route path="/admin/contact-submissions" element={<ContactSubmissions />} />
