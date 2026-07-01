@@ -10,36 +10,12 @@ import CTASection from '../components/CTASection';
 const OutsourcingPage: React.FC = () => {
   const { t } = useTranslation();
   const reasons = [
-    {
-      icon: <TrendingUp className="w-12 h-12 text-blue-600" />,
-      title: 'Hurtigere skalering',
-      description: 'Skaler din salgsindsats hurtigt op eller ned uden ansættelses- og oplæringsomkostninger.'
-    },
-    {
-      icon: <Clock className="w-12 h-12 text-blue-600" />,
-      title: 'Frigør dit team',
-      description: 'Lad dine egne sælgere fokusere på lukning og kundepleji – vi tager den tidskrævende prospektering.'
-    },
-    {
-      icon: <Shield className="w-12 h-12 text-blue-600" />,
-      title: 'Lav risiko',
-      description: 'Med No Cure No Pay modellen betaler du kun for leverede resultater. Ingen faste lønomkostninger.'
-    },
-    {
-      icon: <Users className="w-12 h-12 text-blue-600" />,
-      title: 'Erfaren salgsstyrke',
-      description: 'Få adgang til et erfarent team af salgsprofessionelle med dokumenterede resultater fra dag ét.'
-    },
-    {
-      icon: <BarChart3 className="w-12 h-12 text-blue-600" />,
-      title: 'Fuld transparens',
-      description: 'Løbende rapportering og data-indsigt giver dig fuld overblik over indsatsen og dens resultater.'
-    },
-    {
-      icon: <Zap className="w-12 h-12 text-blue-600" />,
-      title: 'Hurtigt i gang',
-      description: 'Magnora Marketing kan typisk starte aktiv salg og mødebooking inden for 1-2 uger efter aftaleindgåelse.'
-    }
+    { icon: <TrendingUp className="w-12 h-12 text-blue-600" />, title: t('outsourcing.r1.title'), description: t('outsourcing.r1.desc') },
+    { icon: <Clock className="w-12 h-12 text-blue-600" />, title: t('outsourcing.r2.title'), description: t('outsourcing.r2.desc') },
+    { icon: <Shield className="w-12 h-12 text-blue-600" />, title: t('outsourcing.r3.title'), description: t('outsourcing.r3.desc') },
+    { icon: <Users className="w-12 h-12 text-blue-600" />, title: t('outsourcing.r4.title'), description: t('outsourcing.r4.desc') },
+    { icon: <BarChart3 className="w-12 h-12 text-blue-600" />, title: t('outsourcing.r5.title'), description: t('outsourcing.r5.desc') },
+    { icon: <Zap className="w-12 h-12 text-blue-600" />, title: t('outsourcing.r6.title'), description: t('outsourcing.r6.desc') },
   ];
 
   return (

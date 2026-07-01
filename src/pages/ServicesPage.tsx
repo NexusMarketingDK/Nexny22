@@ -11,61 +11,17 @@ import CTASection from '../components/CTASection';
 const ServicesPage: React.FC = () => {
   const { t } = useTranslation();
   const services = [
-    {
-      icon: <Phone className="w-12 h-12 text-blue-600" />,
-      title: 'Telemarketing',
-      description: 'Målrettet B2B telemarketing der åbner nye dørе, skaber dialog og konverterer emner til reelle salgsmuligheder.',
-      features: ['Opsøgende leadgenerering', 'Direkte salgskontakt', 'Kundeservice og rådgivning', 'Markedsundersøgelser']
-    },
-    {
-      icon: <Users className="w-12 h-12 text-blue-600" />,
-      title: 'Mødebooking',
-      description: 'Kvalificerede salgsmøder med de rette beslutningstagere – booket, bekræftet og klar til dit salgsteam.',
-      features: ['Screenede og kvalificerede møder', 'Effektiv lead-vurdering', 'Mødebekræftelse og opfølgning', 'Kalenderkoordinering']
-    },
-    {
-      icon: <Target className="w-12 h-12 text-blue-600" />,
-      title: 'Leadgenerering',
-      description: 'Datadrevet og flerkanalbaseret leadgenerering der skaber en konstant strøm af varme, salgsklar emner.',
-      features: ['Lead scoring og prioritering', 'Salgsdatabase-opbygning', 'Kampagnestyring og optimering', 'ROI tracking og rapportering']
-    },
-    {
-      icon: <MessageSquare className="w-12 h-12 text-blue-600" />,
-      title: 'Kundeservice',
-      description: 'Professionel og empatisk kundeservice der styrker kundeloyalitet og skaber positive oplevelser ved hvert kontaktpunkt.',
-      features: ['Support og problemløsning', 'Ordrebehandling og koordinering', 'Kundefeedback og analyse', 'Tilfredshedsmålinger']
-    }
+    { icon: <Phone className="w-12 h-12 text-blue-600" />, title: t('services.s1.title'), description: t('services.s1.desc'), features: [t('services.s1.f1'), t('services.s1.f2'), t('services.s1.f3'), t('services.s1.f4')] },
+    { icon: <Users className="w-12 h-12 text-blue-600" />, title: t('services.s2.title'), description: t('services.s2.desc'), features: [t('services.s2.f1'), t('services.s2.f2'), t('services.s2.f3'), t('services.s2.f4')] },
+    { icon: <Target className="w-12 h-12 text-blue-600" />, title: t('services.s3.title'), description: t('services.s3.desc'), features: [t('services.s3.f1'), t('services.s3.f2'), t('services.s3.f3'), t('services.s3.f4')] },
+    { icon: <MessageSquare className="w-12 h-12 text-blue-600" />, title: t('services.s4.title'), description: t('services.s4.desc'), features: [t('services.s4.f1'), t('services.s4.f2'), t('services.s4.f3'), t('services.s4.f4')] },
   ];
 
   const industries = [
-    {
-      icon: <Building className="w-12 h-12 text-blue-600" />,
-      title: 'Tech & SaaS',
-      description: 'Dyb erfaring med salg af softwareløsninger, cloud-platforme og teknologiprodukter til erhvervsmarkedet.',
-      successStory: 'Hjulpet 50+ tech-virksomheder med at øge salgspipelinen markant',
-      expertise: ['SaaS og cloud-løsninger', 'Enterprise software', 'IT-sikkerhed', 'Digital transformation']
-    },
-    {
-      icon: <Building className="w-12 h-12 text-blue-600" />,
-      title: 'Konsulentbranchen',
-      description: 'Specialiseret erfaring med at booke kvalificerede møder for konsulentvirksomheder og rådgivere.',
-      successStory: 'Over 200 kampagner gennemført for konsulentvirksomheder',
-      expertise: ['Management consulting', 'Finansiel rådgivning', 'HR og rekruttering', 'Juridiske ydelser']
-    },
-    {
-      icon: <Building className="w-12 h-12 text-blue-600" />,
-      title: 'Energi & Bæredygtighed',
-      description: 'Stærk track record inden for grøn energi, solenergi og energieffektiviseringsløsninger til erhverv.',
-      successStory: 'Hjulpet energivirksomheder med at nå nye kundesegmenter',
-      expertise: ['Solenergi og vedvarende energi', 'LED og energioptimering', 'Grøn omstilling', 'Erhvervsenergirådgivning']
-    },
-    {
-      icon: <Award className="w-12 h-12 text-blue-600" />,
-      title: 'Facility & Service',
-      description: 'Erfaren indsats inden for facility management, kaffeservice, måtteservice og relaterede erhvervsservices.',
-      successStory: 'Succesfulde kampagner for servicevirksomheder i hele Danmark',
-      expertise: ['Kaffeservice til erhverv', 'Måtteservice og hygiejne', 'Rengøring og facility', 'Kontorservices']
-    }
+    { icon: <Building className="w-12 h-12 text-blue-600" />, title: t('services.i1.title'), description: t('services.i1.desc'), successStory: t('services.i1.story'), expertise: [t('services.i1.e1'), t('services.i1.e2'), t('services.i1.e3'), t('services.i1.e4')] },
+    { icon: <Building className="w-12 h-12 text-blue-600" />, title: t('services.i2.title'), description: t('services.i2.desc'), successStory: t('services.i2.story'), expertise: [t('services.i2.e1'), t('services.i2.e2'), t('services.i2.e3'), t('services.i2.e4')] },
+    { icon: <Building className="w-12 h-12 text-blue-600" />, title: t('services.i3.title'), description: t('services.i3.desc'), successStory: t('services.i3.story'), expertise: [t('services.i3.e1'), t('services.i3.e2'), t('services.i3.e3'), t('services.i3.e4')] },
+    { icon: <Award className="w-12 h-12 text-blue-600" />, title: t('services.i4.title'), description: t('services.i4.desc'), successStory: t('services.i4.story'), expertise: [t('services.i4.e1'), t('services.i4.e2'), t('services.i4.e3'), t('services.i4.e4')] },
   ];
 
   return (

@@ -23,16 +23,7 @@ const PricingPage: React.FC = () => {
       title: t('pricing.model1.title'),
       subtitle: t('pricing.model1.subtitle'),
       description: t('pricing.model1.desc'),
-      features: [
-        'Dedikeret mødebooker tilknyttet din kampagne',
-        'Garanteret minimumsantal salgsmøder',
-        'Laveste pris pr. møde ved fast aftale',
-        'Aflyste møder erstattes automatisk',
-        'Løbende strategi- og scriptoptimering',
-        'Månedlig performance-rapport',
-        'Fleksibel opsigelse med 30 dages varsel',
-        'Prioriteret support og dedikeret kontaktperson'
-      ],
+      features: [t('pricing.model1.f1'), t('pricing.model1.f2'), t('pricing.model1.f3'), t('pricing.model1.f4'), t('pricing.model1.f5'), t('pricing.model1.f6'), t('pricing.model1.f7'), t('pricing.model1.f8')],
       highlight: true,
       icon: Target
     },
@@ -40,16 +31,7 @@ const PricingPage: React.FC = () => {
       title: t('pricing.model2.title'),
       subtitle: t('pricing.model2.subtitle'),
       description: t('pricing.model2.desc'),
-      features: [
-        'Ingen forudgående investering eller binding',
-        'Fast pris pr. gennemført, kvalificeret møde',
-        'Du definerer selv kvalitetskriterierne',
-        'Ingen betaling for aflyste eller useriøse møder',
-        'Perfekt til test af nye markeder og målgrupper',
-        'Skalerbar op og ned efter behov',
-        'Fuld transparens og løbende rapportering',
-        'Resultatorienteret samarbejde med klart fokus'
-      ],
+      features: [t('pricing.model2.f1'), t('pricing.model2.f2'), t('pricing.model2.f3'), t('pricing.model2.f4'), t('pricing.model2.f5'), t('pricing.model2.f6'), t('pricing.model2.f7'), t('pricing.model2.f8')],
       highlight: false,
       icon: Award
     }

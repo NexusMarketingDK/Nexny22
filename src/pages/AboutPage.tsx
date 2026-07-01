@@ -9,28 +9,16 @@ import CTASection from '../components/CTASection';
 const AboutPage: React.FC = () => {
   const { t } = useTranslation();
   const values = [
-    {
-      icon: <Users className="w-12 h-12 text-blue-600" />,
-      title: 'Partnerskab',
-      description: 'Vi behandler vores kunders forretning som vores egen og investerer i langvarige samarbejdsrelationer baseret på gensidig tillid.'
-    },
-    {
-      icon: <Award className="w-12 h-12 text-blue-600" />,
-      title: 'Kompetence',
-      description: 'Vores team af erfarne salgsprofessionelle og digitale eksperter leverer høj kvalitet i alt, hvad vi gør.'
-    },
-    {
-      icon: <CheckCircle className="w-12 h-12 text-blue-600" />,
-      title: 'Resultater',
-      description: 'Vi sætter klare, målbare mål og holder os selv ansvarlige – din vækst er det eneste succeskriterium, der tæller.'
-    }
+    { icon: <Users className="w-12 h-12 text-blue-600" />, title: t('about.val1.title'), description: t('about.val1.desc') },
+    { icon: <Award className="w-12 h-12 text-blue-600" />, title: t('about.val2.title'), description: t('about.val2.desc') },
+    { icon: <CheckCircle className="w-12 h-12 text-blue-600" />, title: t('about.val3.title'), description: t('about.val3.desc') },
   ];
 
   const industries = [
-    { name: 'Tech & SaaS', description: 'Stærk track record inden for salg af softwareløsninger og teknologiprodukter.' },
-    { name: 'Konsulentbranchen', description: 'Specialiseret erfaring med mødebooking for konsulentvirksomheder og rådgivere.' },
-    { name: 'Produktion & Industri', description: 'Solid B2B erfaring inden for industri- og produktionssektoren.' },
-    { name: 'Grøn Energi & Klima', description: 'Dedikeret indsats for bæredygtige løsninger og energioptimering.' }
+    { name: t('about.ind1.name'), description: t('about.ind1.desc') },
+    { name: t('about.ind2.name'), description: t('about.ind2.desc') },
+    { name: t('about.ind3.name'), description: t('about.ind3.desc') },
+    { name: t('about.ind4.name'), description: t('about.ind4.desc') },
   ];
 
   return (

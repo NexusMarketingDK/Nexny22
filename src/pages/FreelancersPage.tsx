@@ -11,44 +11,16 @@ import { jobListings } from '../data/jobListings';
 const FreelancersPage: React.FC = () => {
   const { t } = useTranslation();
   const benefits = [
-    {
-      icon: <Clock size={40} className="text-blue-600" />,
-      title: 'Fleksibel hverdag',
-      description: 'Du bestemmer selv hvornår du arbejder. Tilpas din arbejdsdag til dit liv – ikke omvendt.'
-    },
-    {
-      icon: <PiggyBank size={40} className="text-blue-600" />,
-      title: 'Stærk indtjening',
-      description: 'Konkurrencedygtig grundaflønning kombineret med attraktive resultatbonusser. Jo bedre du performer, jo mere tjener du.'
-    },
-    {
-      icon: <Users size={40} className="text-blue-600" />,
-      title: 'Stærkt fællesskab',
-      description: 'Selv som freelancer er du aldrig alene. Du er en del af et stærkt Magnora Marketing-netværk med sparring og fælles drive.'
-    },
-    {
-      icon: <Award size={40} className="text-blue-600" />,
-      title: 'Faglig udvikling',
-      description: 'Struktureret oplæring, løbende coaching og mulighed for at tage mere ansvar og avancere i rollen.'
-    }
+    { icon: <Clock size={40} className="text-blue-600" />, title: t('freelancers.ben1.title'), description: t('freelancers.ben1.desc') },
+    { icon: <PiggyBank size={40} className="text-blue-600" />, title: t('freelancers.ben2.title'), description: t('freelancers.ben2.desc') },
+    { icon: <Users size={40} className="text-blue-600" />, title: t('freelancers.ben3.title'), description: t('freelancers.ben3.desc') },
+    { icon: <Award size={40} className="text-blue-600" />, title: t('freelancers.ben4.title'), description: t('freelancers.ben4.desc') },
   ];
 
   const workFromHomeBenefits = [
-    {
-      icon: <Home className="w-12 h-12 text-blue-600" />,
-      title: 'Hjemmekontor',
-      description: 'Arbejd effektivt fra dit eget hjem med alle nødvendige digitale redskaber. Ingen transporttid, ingen dyre frokoster.'
-    },
-    {
-      icon: <Clock className="w-12 h-12 text-blue-600" />,
-      title: 'Egne arbejdstider',
-      description: 'Tilrettelæg din dag som det passer dig – ideelt for studerende, forældre og alle med et aktivt liv ved siden af arbejdet.'
-    },
-    {
-      icon: <PiggyBank className="w-12 h-12 text-blue-600" />,
-      title: 'Resultatdrevet løn',
-      description: 'Fast grundløn plus provision. Dine resultater afspejler sig direkte i din lønseddel.'
-    }
+    { icon: <Home className="w-12 h-12 text-blue-600" />, title: t('freelancers.wfh1.title'), description: t('freelancers.wfh1.desc') },
+    { icon: <Clock className="w-12 h-12 text-blue-600" />, title: t('freelancers.wfh2.title'), description: t('freelancers.wfh2.desc') },
+    { icon: <PiggyBank className="w-12 h-12 text-blue-600" />, title: t('freelancers.wfh3.title'), description: t('freelancers.wfh3.desc') },
   ];
 
   return (
@@ -108,7 +80,7 @@ const FreelancersPage: React.FC = () => {
                 ))}
               </div>
               <div className="space-y-3">
-                {['Ingen transport og pendling', 'Bedre balance mellem arbejde og privatliv', 'Fuld fleksibilitet i arbejdstilrettelæggelsen', 'Provision og bonus oveni grundlønnen', "Del af Magnora Marketing's stærke salgsfællesskab", 'Grundig onboarding og løbende support', 'Professionel og personlig udvikling', 'Sociale events og fælles fejringer'].map((item, i) => (
+                {[t('freelancers.cl1'), t('freelancers.cl2'), t('freelancers.cl3'), t('freelancers.cl4'), t('freelancers.cl5'), t('freelancers.cl6'), t('freelancers.cl7'), t('freelancers.cl8')].map((item, i) => (
                   <div key={i} className="flex items-center">
                     <CheckCircle className="text-green-500 mr-3 flex-shrink-0" size={18} />
                     <span>{item}</span>
