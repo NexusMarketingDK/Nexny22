@@ -1,8 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Mail, MapPin, Facebook, Linkedin, Zap } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
+import LanguageSwitcher from './LanguageSwitcher';
 
 const Footer: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className="relative bg-slate-950 text-white overflow-hidden">
       {/* Subtle glow */}
@@ -19,7 +23,7 @@ const Footer: React.FC = () => {
               <span className="text-xl font-bold tracking-tight">Magnora Marketing</span>
             </div>
             <p className="text-slate-400 text-sm leading-relaxed mb-5">
-              Din vækstpartner inden for telesalg, mødebooking, webudvikling, leadgenerering og AI-integration.
+              {t('footer.tagline')}
             </p>
             <div className="flex gap-3">
               <a
@@ -41,16 +45,16 @@ const Footer: React.FC = () => {
 
           {/* Quick links */}
           <div>
-            <h3 className="text-sm font-bold uppercase tracking-widest text-slate-400 mb-4">Navigation</h3>
+            <h3 className="text-sm font-bold uppercase tracking-widest text-slate-400 mb-4">{t('footer.navigation')}</h3>
             <ul className="space-y-2.5">
               {[
-                { to: '/', label: 'Forside' },
-                { to: '/ydelser', label: 'Ydelser' },
-                { to: '/jobs/arbejd-hjemmefra', label: 'For Sælgere' },
-                { to: '/samarbejdspartner', label: 'Samarbejdspartner' },
-                { to: '/priser', label: 'Priser' },
-                { to: '/om-os', label: 'Om os' },
-                { to: '/kontakt', label: 'Kontakt' },
+                { to: '/', label: t('footer.links.home') },
+                { to: '/ydelser', label: t('footer.links.services') },
+                { to: '/jobs/arbejd-hjemmefra', label: t('footer.links.sellers') },
+                { to: '/samarbejdspartner', label: t('footer.links.partner') },
+                { to: '/priser', label: t('footer.links.pricing') },
+                { to: '/om-os', label: t('footer.links.about') },
+                { to: '/kontakt', label: t('footer.links.contact') },
               ].map(({ to, label }) => (
                 <li key={to}>
                   <Link to={to} className="text-slate-400 hover:text-white text-sm transition-colors">{label}</Link>
@@ -61,15 +65,15 @@ const Footer: React.FC = () => {
 
           {/* Services */}
           <div>
-            <h3 className="text-sm font-bold uppercase tracking-widest text-slate-400 mb-4">Services</h3>
+            <h3 className="text-sm font-bold uppercase tracking-widest text-slate-400 mb-4">{t('footer.services')}</h3>
             <ul className="space-y-2.5">
               {[
-                { to: '/ydelser', label: 'Telemarketing' },
-                { to: '/modebooking-priser', label: 'Mødebooking' },
-                { to: '/leadgenerering', label: 'Leadgenerering' },
-                { to: '/digital/webudvikling', label: 'Webudvikling' },
-                { to: '/digital/ai-integration', label: 'AI Integration' },
-                { to: '/hvorfor-nexny', label: 'Outsourcing af salg' },
+                { to: '/ydelser', label: t('footer.links.telemarketing') },
+                { to: '/modebooking-priser', label: t('footer.links.meetingBooking') },
+                { to: '/leadgenerering', label: t('footer.links.leadGeneration') },
+                { to: '/digital/webudvikling', label: t('footer.links.webDevelopment') },
+                { to: '/digital/ai-integration', label: t('footer.links.aiIntegration') },
+                { to: '/hvorfor-nexny', label: t('footer.links.salesOutsourcing') },
               ].map(({ to, label }) => (
                 <li key={to}>
                   <Link to={to} className="text-slate-400 hover:text-white text-sm transition-colors">{label}</Link>
@@ -80,7 +84,7 @@ const Footer: React.FC = () => {
 
           {/* Contact */}
           <div>
-            <h3 className="text-sm font-bold uppercase tracking-widest text-slate-400 mb-4">Kontakt</h3>
+            <h3 className="text-sm font-bold uppercase tracking-widest text-slate-400 mb-4">{t('footer.contact')}</h3>
             <div className="space-y-4">
               <div>
                 <p className="text-xs font-semibold text-slate-500 mb-1">Magnora Marketing</p>
@@ -93,13 +97,17 @@ const Footer: React.FC = () => {
                 <Mail size={15} className="text-blue-500 flex-shrink-0" />
                 mail@magnoramarketing.dk
               </a>
+              <div className="pt-2">
+                <p className="text-xs font-semibold text-slate-500 mb-2">{t('language.da')} / {t('language.en')} / {t('language.es')}</p>
+                <LanguageSwitcher compact />
+              </div>
             </div>
           </div>
         </div>
 
         <div className="border-t border-white/5 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-500">
-          <p>&copy; {new Date().getFullYear()} Magnora Marketing. Alle rettigheder forbeholdes.</p>
-          <p>CVR · Designet med fokus på vækst</p>
+          <p>&copy; {new Date().getFullYear()} Magnora Marketing. {t('footer.rights')}</p>
+          <p>CVR · {t('footer.designed')}</p>
         </div>
       </div>
     </footer>

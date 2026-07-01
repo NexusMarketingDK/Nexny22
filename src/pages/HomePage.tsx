@@ -1,12 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Phone, Users, Code, ArrowRight, Briefcase, BarChart3, CheckCircle, TrendingUp, HeartHandshake, MessageSquare, Target, Zap } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import HeroSection from '../components/HeroSection';
 import SEO from '../components/SEO';
 import FAQSection from '../components/FAQSection';
 import CTASection from '../components/CTASection';
 
 const HomePage: React.FC = () => {
+  const { t } = useTranslation();
   const services = [
     {
       icon: <Phone size={40} className="text-blue-600" />,
@@ -109,8 +111,8 @@ const HomePage: React.FC = () => {
       />
 
       <HeroSection
-        title="Din Vækstpartner inden for Telesalg, Mødebooking, Webudvikling og AI-Integration"
-        subtitle="Magnora Marketing leverer professionelt telesalg, kvalificeret mødebooking, leadgenerering, moderne webudvikling og AI-integration – alt samlet hos én partner. Vi hjælper både virksomheder fra idefasen, der har brug for udvikling inden løsningen skal sælges, og veletablerede virksomheder der blot ønsker at vækste med mere salg."
+        title={t('home.hero.title')}
+        subtitle={t('home.hero.subtitle')}
         ctaText="Bliv samarbejdspartner"
         ctaLink="/samarbejdspartner"
         secondaryCtaText="Start din karriere"
@@ -122,9 +124,9 @@ const HomePage: React.FC = () => {
         <div className="container">
           <div className="text-center mb-4">
             <span className="section-label">Sådan arbejder vi</span>
-            <h2 className="text-3xl font-bold mb-4">Hvorfor vælge Magnora Marketing som partner?</h2>
+            <h2 className="text-3xl font-bold mb-4">{t('home.process.title')}</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-2">
-              Vi hjælper <strong>små som store</strong> – nye startups med en idé og veletablerede virksomheder der vil vækste. Uanset om du har brug for telemarketing, webudvikling eller AI-integration, starter vi altid det samme sted: en uforpligtende snak om dit projekt.
+              {t('home.process.subtitle')}
             </p>
           </div>
 
