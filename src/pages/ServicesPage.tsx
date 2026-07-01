@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Phone, Users, Target, BarChart3, CheckCircle, ArrowRight, MessageSquare, Building, Award } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import AiSolutionsSection from '../components/AiSolutionsSection';
 import HeroSection from '../components/HeroSection';
 import SEO from '../components/SEO';
@@ -8,6 +9,7 @@ import FAQSection from '../components/FAQSection';
 import CTASection from '../components/CTASection';
 
 const ServicesPage: React.FC = () => {
+  const { t } = useTranslation();
   const services = [
     {
       icon: <Phone className="w-12 h-12 text-blue-600" />,
@@ -76,11 +78,11 @@ const ServicesPage: React.FC = () => {
       />
 
       <HeroSection
-        title="Ydelser der Skaber Reel Vækst"
-        subtitle="Magnora Marketing tilbyder skræddersyede salgs- og marketingløsninger der passer til din virksomhed – fra første kontakt til underskrevet kontrakt."
-        ctaText="Kontakt os"
+        title={t('services.hero.title')}
+        subtitle={t('services.hero.subtitle')}
+        ctaText={t('common.contactUs')}
         ctaLink="/kontakt"
-        secondaryCtaText="Se priser"
+        secondaryCtaText={t('common.getOffer')}
         secondaryCtaLink="/priser"
         backgroundImage="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       />
@@ -88,9 +90,9 @@ const ServicesPage: React.FC = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Vores Kerneydelser</h2>
+            <h2 className="text-3xl font-bold mb-4">{t('services.core.title')}</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Magnora Marketing tilbyder et komplet sortiment af B2B salgsydelser der kan sammensættes og skaleres efter dine behov og vækstmål.
+              {t('services.core.subtitle')}
             </p>
           </div>
 
@@ -119,9 +121,9 @@ const ServicesPage: React.FC = () => {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Branchespecialiseret Ekspertise</h2>
+            <h2 className="text-3xl font-bold mb-4">{t('services.industries.title')}</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Magnora Marketing har dybdegående erfaring med B2B salg og mødebooking på tværs af en lang række brancher.
+              {t('services.industries.subtitle')}
             </p>
           </div>
 
@@ -148,12 +150,10 @@ const ServicesPage: React.FC = () => {
 
       <section className="bg-blue-600 text-white py-16">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6">Klar til at vækste med Magnora Marketing?</h2>
-          <p className="text-xl mb-8 max-w-3xl mx-auto">
-            Kontakt os for en uforpligtende snak om, hvilke ydelser der passer bedst til din virksomheds mål og budget.
-          </p>
+          <h2 className="text-3xl font-bold mb-6">{t('services.ctaBanner.title')}</h2>
+          <p className="text-xl mb-8 max-w-3xl mx-auto">{t('services.ctaBanner.desc')}</p>
           <Link to="/kontakt" className="inline-flex items-center bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-            Få et gratis tilbud <ArrowRight className="ml-2" />
+            {t('services.ctaBanner.btn')} <ArrowRight className="ml-2" />
           </Link>
         </div>
       </section>
@@ -210,11 +210,11 @@ const ServicesPage: React.FC = () => {
         { question: "Hvad er fordelen ved at samle alle services hos Magnora Marketing?", answer: "Når telemarketing, mødebooking og digital tilstedeværelse er koordineret hos én partner, skabes et sammenhængende og mere effektivt salgssystem." },
       ]} />
       <CTASection
-        title="Start dit salgssamarbejde med Magnora Marketing i dag"
-        subtitle="Få adgang til professionelt telesalg, mødebooking og leadgenerering – alt samlet hos én partner."
-        primaryText="Kontakt os nu"
+        title={t('services.cta.title')}
+        subtitle={t('services.cta.subtitle')}
+        primaryText={t('services.cta.primary')}
         primaryLink="/kontakt"
-        secondaryText="Se priser"
+        secondaryText={t('services.cta.secondary')}
         secondaryLink="/priser"
       />
     </>

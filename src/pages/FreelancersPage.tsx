@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Clock, PiggyBank, Award, Users, CheckCircle, ArrowRight, Home, Star } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import HeroSection from '../components/HeroSection';
 import SEO from '../components/SEO';
 import FAQSection from '../components/FAQSection';
@@ -8,6 +9,7 @@ import CTASection from '../components/CTASection';
 import { jobListings } from '../data/jobListings';
 
 const FreelancersPage: React.FC = () => {
+  const { t } = useTranslation();
   const benefits = [
     {
       icon: <Clock size={40} className="text-blue-600" />,
@@ -59,11 +61,11 @@ const FreelancersPage: React.FC = () => {
       />
 
       <HeroSection
-        title="Din Karriere som Freelance Sælger starter her"
-        subtitle="Magnora Marketing tilbyder fleksible freelance-muligheder inden for B2B salg og mødebooking. Sæt dine egne tider, arbejd hjemmefra og byg en karriere på dine egne præmisser."
-        ctaText="Se ledige stillinger"
+        title={t('freelancers.hero.title')}
+        subtitle={t('freelancers.hero.subtitle')}
+        ctaText={t('freelancers.jobs.title')}
         ctaLink="#stillinger"
-        secondaryCtaText="Kontakt os"
+        secondaryCtaText={t('common.contactUs')}
         secondaryCtaLink="/kontakt"
         backgroundImage="https://images.pexels.com/photos/3182781/pexels-photo-3182781.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       />
@@ -71,9 +73,9 @@ const FreelancersPage: React.FC = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Hvad du får hos Magnora Marketing</h2>
+            <h2 className="text-3xl font-bold mb-4">{t('freelancers.benefits.title')}</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Magnora Marketing tilbyder noget sjældent: friheden som freelancer kombineret med et stærkt professionelt fundament.
+              {t('freelancers.benefits.subtitle')}
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -92,9 +94,9 @@ const FreelancersPage: React.FC = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold mb-6">Arbejd hjemmefra med Magnora Marketing</h2>
+              <h2 className="text-3xl font-bold mb-6">{t('freelancers.wfh.title')}</h2>
               <p className="text-lg text-gray-600 mb-8">
-                Som freelance sælger eller mødebooker hos Magnora Marketing har du fuld fleksibilitet til at arbejde fra dit eget hjem. Du får adgang til moderne salgssystemer, løbende sparring og et stærkt netværk – uden at skulle møde ind på et kontor.
+                {t('freelancers.wfh.desc')}
               </p>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
                 {workFromHomeBenefits.map((benefit, index) => (
@@ -128,9 +130,9 @@ const FreelancersPage: React.FC = () => {
       <section id="stillinger" className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Ledige Stillinger hos Magnora Marketing</h2>
+            <h2 className="text-3xl font-bold mb-4">{t('freelancers.jobs.title')}</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Vi søger løbende dygtige og motiverede freelance sælgere og mødebookere. Se de aktuelle stillinger herunder.
+              {t('freelancers.jobs.subtitle')}
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -138,12 +140,12 @@ const FreelancersPage: React.FC = () => {
               <Link key={index} to={job.path} className="block bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg hover:border-blue-300 transition-all">
                 <div className="flex items-start justify-between mb-3">
                   <Star className="text-blue-600 flex-shrink-0" size={24} />
-                  <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded font-medium">Ledig</span>
+                  <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded font-medium">{t('common.available')}</span>
                 </div>
                 <h3 className="text-lg font-semibold mb-2">{job.title}</h3>
                 <p className="text-gray-600 text-sm mb-4">{job.description}</p>
                 <span className="text-blue-600 font-medium text-sm inline-flex items-center">
-                  Læs mere <ArrowRight size={14} className="ml-1" />
+                  {t('common.readMore')} <ArrowRight size={14} className="ml-1" />
                 </span>
               </Link>
             ))}
@@ -153,12 +155,10 @@ const FreelancersPage: React.FC = () => {
 
       <section className="bg-blue-600 text-white py-16">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6">Er du klar til at starte hos Magnora Marketing?</h2>
-          <p className="text-xl mb-8 max-w-3xl mx-auto">
-            Send os en besked eller ring – vi tager en uforpligtende snak om de muligheder der passer bedst til dig.
-          </p>
+          <h2 className="text-3xl font-bold mb-6">{t('freelancers.ctaBanner.title')}</h2>
+          <p className="text-xl mb-8 max-w-3xl mx-auto">{t('freelancers.ctaBanner.desc')}</p>
           <Link to="/kontakt" className="inline-flex items-center bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-            Kontakt os i dag <ArrowRight className="ml-2" />
+            {t('freelancers.ctaBanner.btn')} <ArrowRight className="ml-2" />
           </Link>
         </div>
       </section>
@@ -214,12 +214,12 @@ const FreelancersPage: React.FC = () => {
         { question: "Hvad er de typiske arbejdstider?", answer: "De fleste freelancere ringer inden for normal dansk kontortid (8-17), men du bestemmer selv inden for dette vindue." },
       ]} />
       <CTASection
-        title="Tag styringen over din karriere – bliv freelance sælger hos Magnora Marketing"
-        subtitle="Fleksible arbejdstider, konkurrencedygtig provision og spændende projekter. Alt hvad du behøver for at lykkes som freelancer."
-        primaryText="Søg nu"
+        title={t('freelancers.cta.title')}
+        subtitle={t('freelancers.cta.subtitle')}
+        primaryText={t('freelancers.cta.primary')}
         primaryLink="/kontakt"
-        secondaryText="Se ledige stillinger"
-        secondaryLink="/jobs/arbejd-hjemmefra"
+        secondaryText={t('freelancers.cta.secondary')}
+        secondaryLink="#stillinger"
       />
     </>
   );

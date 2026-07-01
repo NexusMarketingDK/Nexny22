@@ -1,11 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Users, Award, CheckCircle, ArrowRight, Building } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import SEO from '../components/SEO';
 import FAQSection from '../components/FAQSection';
 import CTASection from '../components/CTASection';
 
 const AboutPage: React.FC = () => {
+  const { t } = useTranslation();
   const values = [
     {
       icon: <Users className="w-12 h-12 text-blue-600" />,
@@ -44,10 +46,10 @@ const AboutPage: React.FC = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
-              Magnora Marketing – din dedikerede vækstpartner
+              {t('about.hero.title')}
             </h1>
             <p className="text-xl text-gray-300 mb-8">
-              Vi kombinerer erfaren salgskraft med digital ekspertise for at skabe målbare resultater for ambitiøse B2B virksomheder.
+              {t('about.hero.subtitle')}
             </p>
           </div>
         </div>
@@ -57,15 +59,15 @@ const AboutPage: React.FC = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
             <div>
-              <h2 className="text-3xl font-bold mb-6">Om Magnora Marketing</h2>
+              <h2 className="text-3xl font-bold mb-6">{t('about.aboutSection.title')}</h2>
               <p className="text-lg text-gray-600 mb-6">
-                Magnora Marketing er et resultatdrevet vækstbureau med speciale i B2B mødebooking, telemarketing og digitale løsninger. Vi er stiftet af erfarne salgsprofessionelle med et klart mål: at hjælpe virksomheder med at vinde flere kunder og skabe bæredygtig vækst.
+                {t('about.aboutSection.p1')}
               </p>
               <p className="text-lg text-gray-600 mb-6">
-                Hos Magnora Marketing tror vi på, at den bedste vej til vækst går gennem ægte relationer og præcis kommunikation. Vores team arbejder tæt sammen med kunderne om at forstå deres marked, deres kunder og deres unikke værdiskabelse.
+                {t('about.aboutSection.p2')}
               </p>
               <p className="text-lg text-gray-600 mb-8">
-                Vi kombinerer menneskelig salgskraft med smarte digitale redskaber og datadrevne metoder. Det giver os mulighed for at skalere indsatsen og levere konsistente, høje resultater – uanset branche eller målgruppe.
+                {t('about.aboutSection.p3')}
               </p>
             </div>
             <div>
@@ -79,9 +81,9 @@ const AboutPage: React.FC = () => {
 
           <div className="mb-16">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">Vores kerneværdier</h2>
+              <h2 className="text-3xl font-bold mb-4">{t('about.values.title')}</h2>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                Disse værdier guider os i vores daglige arbejde og i samarbejdet med kunder og partnere.
+                {t('about.values.subtitle')}
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -114,9 +116,9 @@ const AboutPage: React.FC = () => {
 
           <div className="mb-16">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">Brancheerfaring hos Magnora Marketing</h2>
+              <h2 className="text-3xl font-bold mb-4">{t('about.industries.title')}</h2>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                Magnora Marketing har dyb erfaring med B2B mødebooking og salgsaktiviteter på tværs af industrier.
+                {t('about.industries.subtitle')}
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -134,12 +136,10 @@ const AboutPage: React.FC = () => {
 
       <section className="bg-blue-600 text-white py-16">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6">Klar til at tage din virksomhed til næste niveau?</h2>
-          <p className="text-xl mb-8 max-w-3xl mx-auto">
-            Tag kontakt til Magnora Marketing i dag og hør, hvordan vi kan hjælpe dig med at skabe mere vækst, flere leads og bedre resultater. Vi ser frem til at møde dig.
-          </p>
+          <h2 className="text-3xl font-bold mb-6">{t('about.ctaBanner.title')}</h2>
+          <p className="text-xl mb-8 max-w-3xl mx-auto">{t('about.ctaBanner.desc')}</p>
           <Link to="/kontakt" className="inline-flex items-center bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-            Kontakt Magnora Marketing nu <ArrowRight className="ml-2" />
+            {t('about.ctaBanner.btn')} <ArrowRight className="ml-2" />
           </Link>
         </div>
       </section>
@@ -194,11 +194,11 @@ const AboutPage: React.FC = () => {
         { question: "Kan jeg besøge Magnora Marketing's kontor?", answer: "Ja – vi har kontorer i Aarhus, Danmark og Valencia, Spanien. Kontakt os for at aftale et besøg." },
       ]} />
       <CTASection
-        title="Lær os bedre at kende – tag en snak med teamet"
-        subtitle="Vi er klar til at fortælle mere om vores tilgang, resultater og samarbejdsmodeller."
-        primaryText="Kontakt Magnora Marketing"
+        title={t('about.cta.title')}
+        subtitle={t('about.cta.subtitle')}
+        primaryText={t('about.cta.primary')}
         primaryLink="/kontakt"
-        secondaryText="Se vores ydelser"
+        secondaryText={t('about.cta.secondary')}
         secondaryLink="/ydelser"
       />
     </>

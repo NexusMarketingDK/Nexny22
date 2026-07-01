@@ -113,62 +113,31 @@ const HomePage: React.FC = () => {
       <HeroSection
         title={t('home.hero.title')}
         subtitle={t('home.hero.subtitle')}
-        ctaText="Bliv samarbejdspartner"
-        ctaLink="/samarbejdspartner"
-        secondaryCtaText="Start din karriere"
-        secondaryCtaLink="/freelance-telemarketing"
+        ctaText={t('common.contactUs')}
+        ctaLink="/kontakt"
+        secondaryCtaText={t('common.learnMore')}
+        secondaryCtaLink="/ydelser"
         backgroundImage="https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       />
 
       <section className="section bg-gray-50">
         <div className="container">
           <div className="text-center mb-4">
-            <span className="section-label">Sådan arbejder vi</span>
             <h2 className="text-3xl font-bold mb-4">{t('home.process.title')}</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-2">
               {t('home.process.subtitle')}
             </p>
           </div>
 
-          {/* Process simulation */}
           <div className="max-w-4xl mx-auto mt-12">
             <div className="relative">
-              {/* Vertical line */}
               <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-blue-100 hidden md:block" />
 
               {[
-                {
-                  step: '01',
-                  icon: <MessageSquare size={22} className="text-white" />,
-                  title: 'Indledende snak – helt uforpligtende',
-                  desc: 'Vi starter altid med en kort samtale om dit projekt. Hvad er idéen? Hvad er målet? Er det TM, webudvikling eller AI? Der er ingen faste pakker – kun en ærlig dialog om hvad der giver mening for dig.',
-                  tag: 'Startup · Veletableret · Alle brancher',
-                  color: 'bg-blue-600',
-                },
-                {
-                  step: '02',
-                  icon: <Target size={22} className="text-white" />,
-                  title: 'Vi kortlægger behovet og lægger en plan',
-                  desc: 'Uanset om du er i idefasen eller klar til at skalere, skræddersyr vi en konkret handlingsplan. Vi definerer målgruppe, budskab, kanal og tidshorisont – og præsenterer et tilbud inden for 24 timer.',
-                  tag: 'Idéfase · Vækstfase · Skalering',
-                  color: 'bg-indigo-600',
-                },
-                {
-                  step: '03',
-                  icon: <Zap size={22} className="text-white" />,
-                  title: 'Vi eksekverer – du følger med live',
-                  desc: 'Vores team går i gang: telemarketing-kampagner, webudvikling eller AI-løsninger. Du får løbende opdateringer, rapporter og adgang til live data. Ingen overraskelser.',
-                  tag: 'Telemarketing · Webudvikling · AI',
-                  color: 'bg-blue-700',
-                },
-                {
-                  step: '04',
-                  icon: <TrendingUp size={22} className="text-white" />,
-                  title: 'Fra idé til afsluttet salg',
-                  desc: 'Vi hjælper hele vejen – fra udvikling af produktet til de første kundemøder er booket og salget er lukket. Magnora Marketing er din partner fra start til slut.',
-                  tag: 'Leadgenerering · Mødebooking · Salgsafslutning',
-                  color: 'bg-green-600',
-                },
+                { step: '01', icon: <MessageSquare size={22} className="text-white" />, title: t('home.process.step1.title'), desc: t('home.process.step1.desc'), tag: t('home.process.step1.tag'), color: 'bg-blue-600' },
+                { step: '02', icon: <Target size={22} className="text-white" />, title: t('home.process.step2.title'), desc: t('home.process.step2.desc'), tag: t('home.process.step2.tag'), color: 'bg-indigo-600' },
+                { step: '03', icon: <Zap size={22} className="text-white" />, title: t('home.process.step3.title'), desc: t('home.process.step3.desc'), tag: t('home.process.step3.tag'), color: 'bg-blue-700' },
+                { step: '04', icon: <TrendingUp size={22} className="text-white" />, title: t('home.process.step4.title'), desc: t('home.process.step4.desc'), tag: t('home.process.step4.tag'), color: 'bg-green-600' },
               ].map((s, i) => (
                 <div key={i} className="relative flex gap-6 mb-8 last:mb-0">
                   <div className={`w-16 h-16 rounded-2xl ${s.color} flex items-center justify-center flex-shrink-0 shadow-lg z-10`}>
@@ -186,16 +155,14 @@ const HomePage: React.FC = () => {
               ))}
             </div>
 
-            {/* Bottom CTA */}
             <div className="mt-10 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl p-8 text-white text-center">
-              <p className="text-lg font-semibold mb-1">Klar til at tage den første snak?</p>
-              <p className="text-white/80 text-sm mb-6">Vi hjælper startup, SMV og enterprise – alle starter med en gratis og uforpligtende samtale.</p>
-              <div className="flex flex-col sm:flex-row gap-3 justify-center">
+              <p className="text-lg font-semibold mb-1">{t('home.process.cta')}</p>
+              <div className="flex flex-col sm:flex-row gap-3 justify-center mt-6">
                 <Link to="/kontakt" className="inline-flex items-center justify-center bg-white text-blue-600 px-6 py-3 rounded-xl font-semibold hover:bg-gray-100 transition-colors">
-                  Book en gratis snak <ArrowRight size={16} className="ml-2" />
+                  {t('home.process.ctaBtn')} <ArrowRight size={16} className="ml-2" />
                 </Link>
                 <Link to="/ydelser" className="inline-flex items-center justify-center bg-white/10 border border-white/30 text-white px-6 py-3 rounded-xl font-semibold hover:bg-white/20 transition-colors">
-                  Se vores ydelser
+                  {t('common.learnMore')}
                 </Link>
               </div>
             </div>
@@ -206,9 +173,9 @@ const HomePage: React.FC = () => {
       <section className="section bg-white">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Magnora Marketing er Specialister i B2B Salg, Mødebooking, Webudvikling og Leadgenerering</h2>
+            <h2 className="text-3xl font-bold mb-4">{t('home.services.title')}</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Med et stærkt team af erfarne salgsprofessionelle og digitale specialister hjælper Magnora Marketing virksomheder med at nå deres vækstmål gennem effektive og målbare indsatser.
+              {t('home.services.subtitle')}
             </p>
           </div>
 
@@ -228,10 +195,9 @@ const HomePage: React.FC = () => {
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold mb-6">Accelerér din virksomheds vækst med Magnora Marketing</h2>
+              <h2 className="text-3xl font-bold mb-6">{t('home.cta.title')}</h2>
               <p className="text-lg text-gray-600 mb-8">
-                Overlad dit salgsarbejde til erfarne specialister. Magnora Marketing hjælper B2B virksomheder med at generere
-                varme leads og booke kvalificerede møder – så din salgsstyrke kan fokusere på det, de er bedst til.
+                {t('home.cta.subtitle')}
               </p>
               <div className="space-y-4">
                 {businessBenefits.map((benefit, index) => (
@@ -243,7 +209,7 @@ const HomePage: React.FC = () => {
               </div>
               <div className="mt-8">
                 <Link to="/kontakt" className="btn btn-primary inline-flex items-center">
-                  Få et uforpligtende tilbud <ArrowRight size={16} className="ml-2" />
+                  {t('common.getOffer')} <ArrowRight size={16} className="ml-2" />
                 </Link>
               </div>
             </div>
@@ -265,9 +231,9 @@ const HomePage: React.FC = () => {
       <section className="section bg-gray-50">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Magnora Marketing's Brancheerfaring inden for B2B Salg og Mødebooking</h2>
+            <h2 className="text-3xl font-bold mb-4">{t('about.industries.title')}</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Vi har dybdegående erfaring med B2B mødebooking og telemarketing på tværs af brancher og målgrupper.
+              {t('about.industries.subtitle')}
             </p>
           </div>
 
@@ -287,22 +253,18 @@ const HomePage: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="text-center p-8 border-b md:border-b-0 md:border-r border-gray-700">
               <Briefcase size={48} className="text-blue-400 mx-auto mb-4" />
-              <h3 className="text-2xl font-bold mb-4">For Virksomheder</h3>
-              <p className="mb-6">
-                Din vækstpartner inden for telesalg, mødebooking, webudvikling, leadgenerering og AI. Magnora Marketing leverer resultater – drevet af menneskelig ekspertise og moderne teknologi.
-              </p>
+              <h3 className="text-2xl font-bold mb-4">{t('partners.hero.title')}</h3>
+              <p className="mb-6">{t('footer.tagline')}</p>
               <Link to="/samarbejdspartner" className="btn bg-blue-600 text-white hover:bg-blue-700 inline-flex items-center">
-                Start samarbejde <ArrowRight size={16} className="ml-2" />
+                {t('partners.cta.primary')} <ArrowRight size={16} className="ml-2" />
               </Link>
             </div>
             <div className="text-center p-8">
               <BarChart3 size={48} className="text-blue-400 mx-auto mb-4" />
-              <h3 className="text-2xl font-bold mb-4">For Sælgere</h3>
-              <p className="mb-6">
-                Tag styringen over din karriere. Bliv freelance sælger hos Magnora Marketing og tjene godt med fleksible arbejdstider og spændende projekter.
-              </p>
+              <h3 className="text-2xl font-bold mb-4">{t('freelancers.benefits.title')}</h3>
+              <p className="mb-6">{t('freelancers.hero.subtitle')}</p>
               <Link to="/freelance-telemarketing" className="btn bg-blue-600 text-white hover:bg-blue-700 inline-flex items-center">
-                Se muligheder <ArrowRight size={16} className="ml-2" />
+                {t('common.learnMore')} <ArrowRight size={16} className="ml-2" />
               </Link>
             </div>
           </div>
@@ -360,12 +322,12 @@ const HomePage: React.FC = () => {
         { question: "Hvem kontakter jeg ved spørgsmål?", answer: "Du har altid en dedikeret kontaktperson hos Magnora Marketing som kender dit projekt og kan besvare spørgsmål hurtigt." },
       ]} />
       <CTASection
-        title="Klar til at accelerere din vækst?"
-        subtitle="Magnora Marketing hjælper B2B virksomheder med at generere leads, booke møder og drive salg – med dokumenterede resultater."
-        primaryText="Bliv samarbejdspartner"
-        primaryLink="/samarbejdspartner"
-        secondaryText="Se priser"
-        secondaryLink="/priser"
+        title={t('home.cta.title')}
+        subtitle={t('home.cta.subtitle')}
+        primaryText={t('home.cta.primary')}
+        primaryLink="/kontakt"
+        secondaryText={t('home.cta.secondary')}
+        secondaryLink="/ydelser"
       />
     </>
   );
