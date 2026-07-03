@@ -57,20 +57,20 @@ const Navbar: React.FC = () => {
   const dropdownItemClass = 'block px-4 py-2.5 text-sm text-slate-600 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors';
 
   const digitalServices = [
-    { path: '/digital/webudvikling', title: 'Webudvikling' },
-    { path: '/digital/api-saas', title: 'API & SaaS' },
-    { path: '/digital/hjemmesider', title: 'Hjemmesider' },
-    { path: '/digital/ai-integration', title: 'AI Integration' },
-    { path: '/digital/ai-widget', title: '✦ AI Widget' },
-    { path: '/digital/ai-reception', title: '✦ AI Receptionist' }
+    { path: '/digital/webudvikling', title: t('nav.digitalMenu.webDev') },
+    { path: '/digital/api-saas', title: t('nav.digitalMenu.apiSaas') },
+    { path: '/digital/hjemmesider', title: t('nav.digitalMenu.websites') },
+    { path: '/digital/ai-integration', title: t('nav.digitalMenu.aiIntegration') },
+    { path: '/digital/ai-widget', title: t('nav.digitalMenu.aiWidget') },
+    { path: '/digital/ai-reception', title: t('nav.digitalMenu.aiReception') }
   ];
 
   const partnerOptions = [
-    { path: '/samarbejdspartner', title: 'Bliv samarbejdspartner' },
-    { path: '/priser', title: 'Priser & Pakker' },
-    { path: '/hvorfor-nexny', title: 'Hvorfor Magnora Marketing?' },
-    { path: '/modebooking-priser', title: 'Mødebooking' },
-    { path: '/leadgenerering', title: 'Leadgenerering' }
+    { path: '/samarbejdspartner', title: t('nav.partnerMenu.become') },
+    { path: '/priser', title: t('nav.partnerMenu.pricing') },
+    { path: '/hvorfor-nexny', title: t('nav.partnerMenu.why') },
+    { path: '/modebooking-priser', title: t('nav.partnerMenu.meetingBooking') },
+    { path: '/leadgenerering', title: t('nav.partnerMenu.leadGeneration') }
   ];
 
   const dropdownClass = 'absolute top-full left-0 mt-2 w-64 bg-white rounded-2xl shadow-xl border border-slate-100 py-2 px-2 z-50';

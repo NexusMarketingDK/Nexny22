@@ -10,6 +10,21 @@ export default {
     blog: 'Blog',
     contact: 'Contacto',
     cta: 'Empezar ahora',
+    digitalMenu: {
+      webDev: 'Desarrollo Web',
+      apiSaas: 'API & SaaS',
+      websites: 'Sitios Web',
+      aiIntegration: 'Integración de IA',
+      aiWidget: '✦ Widget de IA',
+      aiReception: '✦ Recepcionista IA',
+    },
+    partnerMenu: {
+      become: 'Conviértete en socio',
+      pricing: 'Precios y Paquetes',
+      why: '¿Por qué Magnora Marketing?',
+      meetingBooking: 'Reserva de Reuniones',
+      leadGeneration: 'Generación de Leads',
+    },
   },
   footer: {
     tagline: 'Tu socio de crecimiento en televentas, reserva de reuniones, desarrollo web, generación de leads e integración de IA.',
@@ -43,9 +58,12 @@ export default {
   },
   home: {
     hero: {
+      badge: 'Magnora Marketing · Socio de Crecimiento',
       title: 'Tu Socio de Crecimiento en Televentas, Reserva de Reuniones, Desarrollo Web e Integración de IA',
       subtitle: 'Magnora Marketing ofrece televentas B2B profesionales, reserva de reuniones cualificada y soluciones digitales a medida. Ayudamos a empresas desde la fase de idea hasta la venta, así como a empresas establecidas que quieren crecer con más ventas.',
       cta: 'Empezar ahora',
+      ctaPartner: 'Conviértete en socio',
+      ctaCareer: 'Inicia tu carrera',
       learnMore: 'Saber más',
     },
     stats: {
@@ -80,6 +98,13 @@ export default {
     learnMore: 'Saber más',
     seeAll: 'Ver todo',
     back: 'Volver',
+    seePricing: 'Ver precios',
+    ctaBadge: 'Magnora Marketing · Empieza ahora',
+  },
+  cookie: {
+    message: 'Utilizamos cookies para ofrecerte la mejor experiencia en nuestro sitio web. Al continuar, aceptas nuestro uso de cookies.',
+    accept: 'Aceptar',
+    readMore: 'Leer más',
   },
   language: {
     da: 'Dansk',

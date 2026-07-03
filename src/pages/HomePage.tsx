@@ -113,9 +113,9 @@ const HomePage: React.FC = () => {
       <HeroSection
         title={t('home.hero.title')}
         subtitle={t('home.hero.subtitle')}
-        ctaText="Bliv samarbejdspartner"
+        ctaText={t('home.hero.ctaPartner')}
         ctaLink="/samarbejdspartner"
-        secondaryCtaText="Start din karriere"
+        secondaryCtaText={t('home.hero.ctaCareer')}
         secondaryCtaLink="/freelance-telemarketing"
         backgroundImage="https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       />
@@ -362,9 +362,9 @@ const HomePage: React.FC = () => {
       <CTASection
         title="Klar til at accelerere din vækst?"
         subtitle="Magnora Marketing hjælper B2B virksomheder med at generere leads, booke møder og drive salg – med dokumenterede resultater."
-        primaryText="Bliv samarbejdspartner"
+        primaryText={t('home.hero.ctaPartner')}
         primaryLink="/samarbejdspartner"
-        secondaryText="Se priser"
+        secondaryText={t('common.seePricing')}
         secondaryLink="/priser"
       />
     </>

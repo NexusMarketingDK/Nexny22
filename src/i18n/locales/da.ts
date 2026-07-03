@@ -10,6 +10,21 @@ export default {
     blog: 'Blog',
     contact: 'Kontakt',
     cta: 'Kom i gang',
+    digitalMenu: {
+      webDev: 'Webudvikling',
+      apiSaas: 'API & SaaS',
+      websites: 'Hjemmesider',
+      aiIntegration: 'AI Integration',
+      aiWidget: '✦ AI Widget',
+      aiReception: '✦ AI Receptionist',
+    },
+    partnerMenu: {
+      become: 'Bliv samarbejdspartner',
+      pricing: 'Priser & Pakker',
+      why: 'Hvorfor Magnora Marketing?',
+      meetingBooking: 'Mødebooking',
+      leadGeneration: 'Leadgenerering',
+    },
   },
   footer: {
     tagline: 'Din vækstpartner inden for telesalg, mødebooking, webudvikling, leadgenerering og AI-integration.',
@@ -43,9 +58,12 @@ export default {
   },
   home: {
     hero: {
+      badge: 'Magnora Marketing · Vækstpartner',
       title: 'Din Vækstpartner inden for Telesalg, Mødebooking, Webudvikling og AI-Integration',
       subtitle: 'Magnora Marketing leverer professionelt B2B telesalg, kvalificeret mødebooking og skræddersyede digitale løsninger. Vi hjælper både virksomheder fra idefasen med udvikling til løsningen skal sælges, til veletablerede firmaer der vil vækste med mere salg.',
       cta: 'Kom i gang',
+      ctaPartner: 'Bliv samarbejdspartner',
+      ctaCareer: 'Start din karriere',
       learnMore: 'Læs mere',
     },
     stats: {
@@ -80,6 +98,13 @@ export default {
     learnMore: 'Lær mere',
     seeAll: 'Se alle',
     back: 'Tilbage',
+    seePricing: 'Se priser',
+    ctaBadge: 'Magnora Marketing · Kom i gang',
+  },
+  cookie: {
+    message: 'Vi bruger cookies for at give dig den bedste oplevelse på vores hjemmeside. Ved at fortsætte accepterer du vores brug af cookies.',
+    accept: 'Acceptér',
+    readMore: 'Læs mere',
   },
   language: {
     da: 'Dansk',
