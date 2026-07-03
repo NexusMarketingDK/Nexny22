@@ -21,6 +21,7 @@ export interface JobPageContent {
   facts: { label: string; value: string }[];
   sendApplication: string;
   whyTitle: string;
+  whySubtitle?: string;
   why: { title: string; desc: string }[];
   getTitle: string;
   get: { title: string; desc: string }[];
@@ -126,6 +127,7 @@ const JobPageLayout: React.FC<Props> = ({ content, canonical, keywords, backgrou
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">{c.whyTitle}</h2>
+            {c.whySubtitle && <p className="text-lg text-gray-600 max-w-3xl mx-auto">{c.whySubtitle}</p>}
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {c.why.map((item, i) => (

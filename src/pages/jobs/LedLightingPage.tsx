@@ -1,191 +1,243 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { CheckCircle, ArrowRight, Clock, PiggyBank, Home, Zap, Sun, Lightbulb } from 'lucide-react';
-import HeroSection from '../../components/HeroSection';
-import SEO from '../../components/SEO';
-import FAQSection from '../../components/FAQSection';
+import { Zap, Clock, Sun } from 'lucide-react';
+import JobPageLayout, { type JobPageContent } from './JobPageLayout';
+import type { Lang } from '../../i18n/usePageContent';
+
+const content: Record<Lang, JobPageContent> = {
+  da: {
+    seoTitle: 'Freelance Sælger LED & Energieffektivisering | Magnora Marketing',
+    seoDesc: 'Bliv freelance sælger af LED-belysning og energieffektivisering til erhverv hos Magnora Marketing. Arbejd hjemmefra med fleksible tider og attraktiv provision.',
+    heroTitle: 'Freelance Sælger – LED & Energieffektivisering til Erhverv',
+    heroSubtitle: 'Sælg energibesparende LED-løsninger til danske virksomheder og offentlige institutioner. Arbejd hjemmefra med frihed, stærk provision og et produkt der sælger sig selv.',
+    applyCta: 'Søg stillingen',
+    allJobs: 'Se alle stillinger',
+    aboutTitle: 'Hvad går jobbet ud på?',
+    aboutP1: 'Som freelance sælger inden for LED og energieffektivisering kontakter du virksomheder, produktionshaller, detailbutikker og offentlige institutioner med et budskab der resonerer: spar penge og reducer CO₂-udledning ved at skifte til moderne LED-belysning.',
+    aboutP2: 'Magnora Marketing leverer scripts, tilbudsskabeloner og produktviden. Du fokuserer på dialogen med kunden og på at booke møder eller lukke salget direkte.',
+    tasks: [
+      'Opsøgende telefonsalg til erhvervskunder',
+      'Booking af energigennemgange og tilbudsmøder',
+      'Præsentation af besparelsespotentiale og ROI',
+      'Opfølgning på tilbud og interesserede emner',
+      'Rapportering af aktivitet og salgsresultater',
+    ],
+    factsTitle: 'Stillingens nøglefakta',
+    facts: [
+      { label: 'Ansættelsesform', value: 'Freelance / selvstændig' },
+      { label: 'Arbejdssted', value: 'Hjemmefra – hele Danmark' },
+      { label: 'Arbejdstid', value: 'Fleksibel – du bestemmer selv' },
+      { label: 'Løn', value: 'Fast grundhonorar + provision' },
+      { label: 'Produkt', value: 'LED-belysning & energieffektivisering' },
+      { label: 'Opstart', value: 'Hurtigst muligt' },
+    ],
+    sendApplication: 'Send din ansøgning',
+    whyTitle: 'Hvorfor LED sælger sig selv',
+    whySubtitle: 'Energipriser er høje og virksomheder søger besparelser. LED-belysning er en af de hurtigste og mest konkrete investeringer en virksomhed kan gøre.',
+    why: [
+      { title: 'Op til 80% energibesparelse', desc: 'Moderne LED-armaturer bruger markant mindre strøm end ældre belysning – og virksomheder mærker det direkte på elregningen.' },
+      { title: 'Tilbagebetalingstid på 1-3 år', desc: 'De fleste erhvervskunder ser fuld tilbagebetaling inden for 1-3 år, og herefter er besparelsen ren gevinst.' },
+      { title: 'Grøn profil og ESG', desc: 'Virksomheder under pres for at reducere CO₂ ser LED-skiftet som et konkret og synligt skridt mod bæredygtighed.' },
+    ],
+    getTitle: 'Hvad du får hos Magnora Marketing',
+    get: [
+      { title: 'Arbejd hjemmefra', desc: 'Fuld frihed til at arbejde fra dit eget hjem. Ingen transport – bare telefon, computer og drive.' },
+      { title: 'Stærk provision', desc: 'Fast grundhonorar plus provision på hvert salg. Jo flere aftaler du lukker, jo mere tjener du.' },
+      { title: 'Oplæring og materialer', desc: 'Vi oplærer dig i produkterne og besparelsesargumenterne. Du får scripts, tilbudsskabeloner og løbende sparring.' },
+    ],
+    lookForTitle: 'Det kigger vi efter',
+    lookFor: [
+      'Erfaring med telefonsalg eller kundekontakt',
+      'Evne til at forklare besparelser og ROI enkelt',
+      'Selvdisciplin og resultatorienteret indstilling',
+      'Gode kommunikationsevner på dansk',
+      'Teknisk baggrund inden for el eller energi er en fordel – ikke et krav',
+      'Motivation for grøn omstilling',
+    ],
+    howTitle: 'Sådan søger du',
+    howP: 'Send os en kort besked om dig selv og din salgserfaring. Ingen formel ansøgning – bare skriv til os, så vender vi tilbage inden for 2 hverdage.',
+    contactNow: 'Kontakt Magnora Marketing nu',
+    faqs: [
+      { question: 'Hvad sælger jeg som mødebooker inden for LED?', answer: 'Du kontakter erhvervskunder og booker møder med energieffektive belysningsløsninger fra en anerkendt LED-leverandør.' },
+      { question: 'Behøver jeg viden om LED-teknik?', answer: 'Nej – Magnora Marketing giver dig al den produktviden du har brug for. Det vigtigste er dine salgskompetencer og din motivation.' },
+      { question: 'Hvem er målgruppen?', answer: 'Primært erhvervskunder som kontorer, produktionsvirksomheder og detail – alle der kan spare betydeligt på energiregningen med LED-belysning.' },
+      { question: 'Hvad er provisionsniveauet?', answer: 'Du modtager fast grundhonorar plus provision pr. booket møde der gennemføres.' },
+      { question: 'Er der opkaldslister klar fra dag ét?', answer: 'Ja – Magnora Marketing leverer opkaldslister og kampagnematerialer, så du kan starte med det samme.' },
+      { question: 'Kan jeg se et eksempel på et script?', answer: 'Ja – du modtager et gennemprøvet salgsskript ved opstart som du kan tilpasse din stil.' },
+      { question: 'Hvad sker der ved et succes-salg eller booket møde?', answer: 'Du registrerer resultatet i vores system, og provisionen beregnes automatisk og udbetales månedligt.' },
+      { question: 'Er der løbende coaching?', answer: 'Ja – Magnora Marketing\'s salgsledere holder regelmæssige coaching-sessioner og giver feedback på din salgsstil.' },
+      { question: 'Kan jeg prøve stillingen i en kortere periode?', answer: 'Ja – de første 2-4 uger betragtes som en gensidig prøveperiode.' },
+      { question: 'Hvad er den gennemsnitlige indkomst for en aktiv freelancer?', answer: 'Det afhænger af aktivitet og produkt. Aktive freelancere med gode resultater kan tjene et solidt supplement eller en fuld indkomst.' },
+      { question: 'Kan jeg arbejde for Magnora Marketing og for andre bureauer?', answer: 'Som freelancer er du fri til at arbejde for andre, så længe der ikke er konkurrencekonflikt med Magnora Marketing\'s kunder.' },
+      { question: 'Er der skriftlige kontrakter?', answer: 'Ja – alle samarbejder formaliseres med en klar freelance-aftale der beskriver vilkår, provision og forventninger.' },
+      { question: 'Hvad sker der, hvis jeg ikke trives med produktet?', answer: 'Vi kan diskutere om du er bedre egnet til et andet produkt i Magnora Marketing\'s portfolio.' },
+      { question: 'Hvad er Magnora Marketing\'s forventninger til mig som freelancer?', answer: 'Vi forventer selvdisciplin, professionel optræden og løbende kommunikation om aktivitet og resultater.' },
+    ],
+    ctaTitle: 'Klar til at sælge grøn energi?',
+    ctaSubtitle: 'Kontakt Magnora Marketing og kom i gang med et produkt der skaber reel forskel – for kunden og for klimaet.',
+    sendApplicationShort: 'Send ansøgning',
+    seeAllOpen: 'Se alle ledige stillinger',
+  },
+  en: {
+    seoTitle: 'Freelance Sales Rep LED & Energy Efficiency | Magnora Marketing',
+    seoDesc: 'Become a freelance sales rep for LED lighting and energy efficiency for business at Magnora Marketing. Work from home with flexible hours and attractive commission.',
+    heroTitle: 'Freelance Sales Rep – LED & Energy Efficiency for Business',
+    heroSubtitle: 'Sell energy-saving LED solutions to Danish companies and public institutions. Work from home with freedom, strong commission and a product that sells itself.',
+    applyCta: 'Apply for the position',
+    allJobs: 'See all positions',
+    aboutTitle: 'What does the job involve?',
+    aboutP1: 'As a freelance sales rep within LED and energy efficiency, you contact companies, production halls, retail shops and public institutions with a message that resonates: save money and reduce CO₂ emissions by switching to modern LED lighting.',
+    aboutP2: 'Magnora Marketing provides scripts, quote templates and product knowledge. You focus on the dialogue with the customer and on booking meetings or closing the sale directly.',
+    tasks: [
+      'Outbound phone sales to business customers',
+      'Booking energy reviews and quote meetings',
+      'Presenting savings potential and ROI',
+      'Following up on quotes and interested prospects',
+      'Reporting activity and sales results',
+    ],
+    factsTitle: 'Key facts about the position',
+    facts: [
+      { label: 'Employment type', value: 'Freelance / self-employed' },
+      { label: 'Location', value: 'From home – all of Denmark' },
+      { label: 'Working hours', value: 'Flexible – you decide' },
+      { label: 'Pay', value: 'Fixed base fee + commission' },
+      { label: 'Product', value: 'LED lighting & energy efficiency' },
+      { label: 'Start', value: 'As soon as possible' },
+    ],
+    sendApplication: 'Send your application',
+    whyTitle: 'Why LED sells itself',
+    whySubtitle: 'Energy prices are high and companies are looking for savings. LED lighting is one of the fastest and most concrete investments a company can make.',
+    why: [
+      { title: 'Up to 80% energy savings', desc: 'Modern LED fixtures use significantly less electricity than older lighting – and companies feel it directly on the electricity bill.' },
+      { title: 'Payback time of 1-3 years', desc: 'Most business customers see full payback within 1-3 years, and after that the savings are pure gain.' },
+      { title: 'Green profile and ESG', desc: 'Companies under pressure to reduce CO₂ see the LED switch as a concrete and visible step towards sustainability.' },
+    ],
+    getTitle: 'What you get at Magnora Marketing',
+    get: [
+      { title: 'Work from home', desc: 'Full freedom to work from your own home. No commuting – just phone, computer and drive.' },
+      { title: 'Strong commission', desc: 'Fixed base fee plus commission on every sale. The more deals you close, the more you earn.' },
+      { title: 'Training and materials', desc: 'We train you in the products and the savings arguments. You get scripts, quote templates and ongoing sparring.' },
+    ],
+    lookForTitle: 'What we look for',
+    lookFor: [
+      'Experience with phone sales or customer contact',
+      'Ability to explain savings and ROI simply',
+      'Self-discipline and a results-oriented mindset',
+      'Good communication skills',
+      'A technical background in electricity or energy is an advantage – not a requirement',
+      'Motivation for the green transition',
+    ],
+    howTitle: 'How to apply',
+    howP: 'Send us a short message about yourself and your sales experience. No formal application – just write to us, and we get back to you within 2 business days.',
+    contactNow: 'Contact Magnora Marketing now',
+    faqs: [
+      { question: 'What do I sell as a meeting booker within LED?', answer: 'You contact business customers and book meetings for energy-efficient lighting solutions from a recognised LED supplier.' },
+      { question: 'Do I need knowledge of LED technology?', answer: 'No – Magnora Marketing gives you all the product knowledge you need. The most important thing is your sales skills and your motivation.' },
+      { question: 'Who is the target group?', answer: 'Primarily business customers such as offices, production companies and retail – anyone who can save significantly on the energy bill with LED lighting.' },
+      { question: 'What is the commission level?', answer: 'You receive a fixed base fee plus commission per booked meeting that is completed.' },
+      { question: 'Are call lists ready from day one?', answer: 'Yes – Magnora Marketing provides call lists and campaign materials so you can start right away.' },
+      { question: 'Can I see an example of a script?', answer: 'Yes – you receive a proven sales script at onboarding that you can adapt to your style.' },
+      { question: 'What happens on a successful sale or booked meeting?', answer: 'You register the result in our system, and the commission is calculated automatically and paid monthly.' },
+      { question: 'Is there ongoing coaching?', answer: 'Yes – Magnora Marketing\'s sales managers hold regular coaching sessions and give feedback on your sales style.' },
+      { question: 'Can I try the position for a shorter period?', answer: 'Yes – the first 2-4 weeks are considered a mutual trial period.' },
+      { question: 'What is the average income for an active freelancer?', answer: 'It depends on activity and product. Active freelancers with good results can earn a solid supplement or a full income.' },
+      { question: 'Can I work for Magnora Marketing and for other agencies?', answer: 'As a freelancer you are free to work for others, as long as there is no competitive conflict with Magnora Marketing\'s clients.' },
+      { question: 'Are there written contracts?', answer: 'Yes – all collaborations are formalised with a clear freelance agreement describing terms, commission and expectations.' },
+      { question: 'What happens if I don\'t enjoy the product?', answer: 'We can discuss whether you are better suited to another product in Magnora Marketing\'s portfolio.' },
+      { question: 'What are Magnora Marketing\'s expectations of me as a freelancer?', answer: 'We expect self-discipline, professional conduct and ongoing communication about activity and results.' },
+    ],
+    ctaTitle: 'Ready to sell green energy?',
+    ctaSubtitle: 'Contact Magnora Marketing and get started with a product that makes a real difference – for the customer and for the climate.',
+    sendApplicationShort: 'Send application',
+    seeAllOpen: 'See all open positions',
+  },
+  es: {
+    seoTitle: 'Vendedor Freelance LED y Eficiencia Energética | Magnora Marketing',
+    seoDesc: 'Conviértete en vendedor freelance de iluminación LED y eficiencia energética para empresas en Magnora Marketing. Trabaja desde casa con horarios flexibles y comisión atractiva.',
+    heroTitle: 'Vendedor Freelance – LED y Eficiencia Energética para Empresas',
+    heroSubtitle: 'Vende soluciones LED de ahorro energético a empresas danesas e instituciones públicas. Trabaja desde casa con libertad, buena comisión y un producto que se vende solo.',
+    applyCta: 'Solicitar el puesto',
+    allJobs: 'Ver todas las vacantes',
+    aboutTitle: '¿En qué consiste el trabajo?',
+    aboutP1: 'Como vendedor freelance en LED y eficiencia energética, contactas con empresas, naves de producción, tiendas minoristas e instituciones públicas con un mensaje que resuena: ahorra dinero y reduce las emisiones de CO₂ cambiando a iluminación LED moderna.',
+    aboutP2: 'Magnora Marketing proporciona guiones, plantillas de oferta y conocimiento del producto. Tú te centras en el diálogo con el cliente y en reservar reuniones o cerrar la venta directamente.',
+    tasks: [
+      'Venta telefónica proactiva a clientes empresariales',
+      'Reserva de revisiones energéticas y reuniones de oferta',
+      'Presentación del potencial de ahorro y el ROI',
+      'Seguimiento de ofertas y prospectos interesados',
+      'Informe de actividad y resultados de ventas',
+    ],
+    factsTitle: 'Datos clave del puesto',
+    facts: [
+      { label: 'Tipo de contrato', value: 'Freelance / autónomo' },
+      { label: 'Lugar de trabajo', value: 'Desde casa – toda Dinamarca' },
+      { label: 'Horario', value: 'Flexible – tú decides' },
+      { label: 'Retribución', value: 'Base fija + comisión' },
+      { label: 'Producto', value: 'Iluminación LED y eficiencia energética' },
+      { label: 'Inicio', value: 'Lo antes posible' },
+    ],
+    sendApplication: 'Envía tu solicitud',
+    whyTitle: 'Por qué el LED se vende solo',
+    whySubtitle: 'Los precios de la energía son altos y las empresas buscan ahorrar. La iluminación LED es una de las inversiones más rápidas y concretas que una empresa puede hacer.',
+    why: [
+      { title: 'Hasta un 80% de ahorro energético', desc: 'Las luminarias LED modernas consumen mucha menos electricidad que la iluminación antigua – y las empresas lo notan directamente en la factura eléctrica.' },
+      { title: 'Amortización en 1-3 años', desc: 'La mayoría de los clientes empresariales ven la amortización completa en 1-3 años, y a partir de entonces el ahorro es beneficio puro.' },
+      { title: 'Perfil verde y ESG', desc: 'Las empresas presionadas para reducir el CO₂ ven el cambio a LED como un paso concreto y visible hacia la sostenibilidad.' },
+    ],
+    getTitle: 'Lo que obtienes en Magnora Marketing',
+    get: [
+      { title: 'Trabaja desde casa', desc: 'Total libertad para trabajar desde tu propia casa. Sin desplazamientos – solo teléfono, ordenador y empuje.' },
+      { title: 'Comisión fuerte', desc: 'Base fija más comisión por cada venta. Cuantos más acuerdos cierras, más ganas.' },
+      { title: 'Formación y materiales', desc: 'Te formamos en los productos y en los argumentos de ahorro. Recibes guiones, plantillas de oferta y asesoramiento continuo.' },
+    ],
+    lookForTitle: 'Lo que buscamos',
+    lookFor: [
+      'Experiencia en venta telefónica o contacto con clientes',
+      'Capacidad de explicar el ahorro y el ROI de forma sencilla',
+      'Autodisciplina y una actitud orientada a resultados',
+      'Buenas habilidades de comunicación',
+      'Una formación técnica en electricidad o energía es una ventaja – no un requisito',
+      'Motivación por la transición verde',
+    ],
+    howTitle: 'Cómo solicitarlo',
+    howP: 'Envíanos un mensaje breve sobre ti y tu experiencia en ventas. Sin solicitud formal – solo escríbenos y te respondemos en un plazo de 2 días laborables.',
+    contactNow: 'Contacta con Magnora Marketing ahora',
+    faqs: [
+      { question: '¿Qué vendo como agente de reservas en LED?', answer: 'Contactas con clientes empresariales y reservas reuniones para soluciones de iluminación energéticamente eficientes de un proveedor de LED reconocido.' },
+      { question: '¿Necesito conocimientos de tecnología LED?', answer: 'No – Magnora Marketing te da todo el conocimiento de producto que necesitas. Lo más importante son tus habilidades de venta y tu motivación.' },
+      { question: '¿Quién es el público objetivo?', answer: 'Principalmente clientes empresariales como oficinas, empresas de producción y comercio minorista – todos los que pueden ahorrar considerablemente en la factura energética con iluminación LED.' },
+      { question: '¿Cuál es el nivel de comisión?', answer: 'Recibes una base fija más comisión por cada reunión reservada que se completa.' },
+      { question: '¿Hay listas de llamadas listas desde el primer día?', answer: 'Sí – Magnora Marketing proporciona listas de llamadas y materiales de campaña para que puedas empezar de inmediato.' },
+      { question: '¿Puedo ver un ejemplo de guion?', answer: 'Sí – recibes un guion de ventas probado al incorporarte que puedes adaptar a tu estilo.' },
+      { question: '¿Qué ocurre con una venta exitosa o una reunión reservada?', answer: 'Registras el resultado en nuestro sistema, y la comisión se calcula automáticamente y se paga mensualmente.' },
+      { question: '¿Hay coaching continuo?', answer: 'Sí – los responsables de ventas de Magnora Marketing realizan sesiones de coaching periódicas y dan feedback sobre tu estilo de venta.' },
+      { question: '¿Puedo probar el puesto durante un periodo más corto?', answer: 'Sí – las primeras 2-4 semanas se consideran un periodo de prueba mutuo.' },
+      { question: '¿Cuál es el ingreso medio de un freelance activo?', answer: 'Depende de la actividad y del producto. Los freelance activos con buenos resultados pueden ganar un buen complemento o un ingreso completo.' },
+      { question: '¿Puedo trabajar para Magnora Marketing y para otras agencias?', answer: 'Como freelance eres libre de trabajar para otros, siempre que no haya conflicto de competencia con los clientes de Magnora Marketing.' },
+      { question: '¿Hay contratos por escrito?', answer: 'Sí – todas las colaboraciones se formalizan con un acuerdo de freelance claro que describe las condiciones, la comisión y las expectativas.' },
+      { question: '¿Qué ocurre si el producto no me convence?', answer: 'Podemos analizar si encajas mejor con otro producto de la cartera de Magnora Marketing.' },
+      { question: '¿Qué espera Magnora Marketing de mí como freelance?', answer: 'Esperamos autodisciplina, conducta profesional y comunicación continua sobre la actividad y los resultados.' },
+    ],
+    ctaTitle: '¿Listo para vender energía verde?',
+    ctaSubtitle: 'Contacta con Magnora Marketing y empieza con un producto que marca una diferencia real – para el cliente y para el clima.',
+    sendApplicationShort: 'Enviar solicitud',
+    seeAllOpen: 'Ver todas las vacantes disponibles',
+  },
+};
 
 export default function LedLightingPage() {
   return (
-    <>
-      <SEO
-        title="Freelance Sælger LED & Energieffektivisering | Magnora Marketing"
-        description="Bliv freelance sælger af LED-belysning og energieffektivisering til erhverv hos Magnora Marketing. Arbejd hjemmefra med fleksible tider og attraktiv provision."
-        canonical="/jobs/led-belysning"
-        keywords="freelance sælger LED, sælg energieffektivisering, LED belysning salg, erhvervsbelysning sælger, Magnora Marketing LED stilling"
-      />
-
-      <HeroSection
-        title="Freelance Sælger – LED & Energieffektivisering til Erhverv"
-        subtitle="Sælg energibesparende LED-løsninger til danske virksomheder og offentlige institutioner. Arbejd hjemmefra med frihed, stærk provision og et produkt der sælger sig selv."
-        ctaText="Søg stillingen"
-        ctaLink="/kontakt"
-        secondaryCtaText="Se alle stillinger"
-        secondaryCtaLink="/freelance-telemarketing"
-        backgroundImage="https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-      />
-
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 max-w-5xl">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl font-bold mb-6">Hvad går jobbet ud på?</h2>
-              <p className="text-lg text-gray-600 mb-6">
-                Som freelance sælger inden for LED og energieffektivisering kontakter du virksomheder, produktionshaller, detailbutikker og offentlige institutioner med et budskab der resonerer: spar penge og reducer CO₂-udledning ved at skifte til moderne LED-belysning.
-              </p>
-              <p className="text-lg text-gray-600 mb-8">
-                Magnora Marketing leverer scripts, tilbudsskabeloner og produktviden. Du fokuserer på dialogen med kunden og på at booke møder eller lukke salget direkte.
-              </p>
-              <ul className="space-y-3">
-                {[
-                  'Opsøgende telefonsalg til erhvervskunder',
-                  'Booking af energigennemgange og tilbudsmøder',
-                  'Præsentation af besparelsespotentiale og ROI',
-                  'Opfølgning på tilbud og interesserede emner',
-                  'Rapportering af aktivitet og salgsresultater'
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <CheckCircle className="text-green-500 flex-shrink-0 mt-0.5" size={18} />
-                    <span className="text-gray-700">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="bg-yellow-50 rounded-2xl p-8 border border-yellow-100">
-              <h3 className="text-xl font-bold mb-6 text-yellow-800">Stillingens nøglefakta</h3>
-              <div className="space-y-4">
-                {[
-                  { label: 'Ansættelsesform', value: 'Freelance / selvstændig' },
-                  { label: 'Arbejdssted', value: 'Hjemmefra – hele Danmark' },
-                  { label: 'Arbejdstid', value: 'Fleksibel – du bestemmer selv' },
-                  { label: 'Løn', value: 'Fast grundhonorar + provision' },
-                  { label: 'Produkt', value: 'LED-belysning & energieffektivisering' },
-                  { label: 'Opstart', value: 'Hurtigst muligt' }
-                ].map((row, i) => (
-                  <div key={i} className="flex justify-between items-center py-2 border-b border-yellow-100 last:border-0">
-                    <span className="text-gray-600 text-sm">{row.label}</span>
-                    <span className="font-semibold text-gray-900 text-sm">{row.value}</span>
-                  </div>
-                ))}
-              </div>
-              <div className="mt-6">
-                <Link to="/kontakt" className="w-full inline-flex items-center justify-center bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
-                  Send din ansøgning <ArrowRight size={16} className="ml-2" />
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4 max-w-5xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Hvorfor LED sælger sig selv</h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Energipriser er høje og virksomheder søger besparelser. LED-belysning er en af de hurtigste og mest konkrete investeringer en virksomhed kan gøre.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[
-              { icon: <Zap size={36} className="text-yellow-500" />, title: 'Op til 80% energibesparelse', desc: 'Moderne LED-armaturer bruger markant mindre strøm end ældre belysning – og virksomheder mærker det direkte på elregningen.' },
-              { icon: <Clock size={36} className="text-yellow-500" />, title: 'Tilbagebetalingstid på 1-3 år', desc: 'De fleste erhvervskunder ser fuld tilbagebetaling inden for 1-3 år, og herefter er besparelsen ren gevinst.' },
-              { icon: <Sun size={36} className="text-yellow-500" />, title: 'Grøn profil og ESG', desc: 'Virksomheder under pres for at reducere CO₂ ser LED-skiftet som et konkret og synligt skridt mod bæredygtighed.' }
-            ].map((item, i) => (
-              <div key={i} className="bg-white rounded-xl p-6 shadow-sm text-center">
-                <div className="flex justify-center mb-4">{item.icon}</div>
-                <h3 className="font-semibold text-lg mb-2">{item.title}</h3>
-                <p className="text-gray-600 text-sm">{item.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 max-w-5xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Hvad du får hos Magnora Marketing</h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              { icon: <Home size={40} className="text-blue-600" />, title: 'Arbejd hjemmefra', desc: 'Fuld frihed til at arbejde fra dit eget hjem. Ingen transport – bare telefon, computer og drive.' },
-              { icon: <PiggyBank size={40} className="text-blue-600" />, title: 'Stærk provision', desc: 'Fast grundhonorar plus provision på hvert salg. Jo flere aftaler du lukker, jo mere tjener du.' },
-              { icon: <Lightbulb size={40} className="text-blue-600" />, title: 'Oplæring og materialer', desc: 'Vi oplærer dig i produkterne og besparelsesargumenterne. Du får scripts, tilbudsskabeloner og løbende sparring.' }
-            ].map((item, i) => (
-              <div key={i} className="text-center p-8 bg-gray-50 rounded-xl">
-                <div className="flex justify-center mb-4">{item.icon}</div>
-                <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
-                <p className="text-gray-600">{item.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div>
-              <h2 className="text-2xl font-bold mb-6">Det kigger vi efter</h2>
-              <ul className="space-y-3">
-                {[
-                  'Erfaring med telefonsalg eller kundekontakt',
-                  'Evne til at forklare besparelser og ROI enkelt',
-                  'Selvdisciplin og resultatorienteret indstilling',
-                  'Gode kommunikationsevner på dansk',
-                  'Teknisk baggrund inden for el eller energi er en fordel – ikke et krav',
-                  'Motivation for grøn omstilling'
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <CheckCircle className="text-green-500 flex-shrink-0 mt-0.5" size={18} />
-                    <span className="text-gray-700">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <h2 className="text-2xl font-bold mb-6">Sådan søger du</h2>
-              <p className="text-gray-600 mb-6">Send os en kort besked om dig selv og din salgserfaring. Ingen formel ansøgning – bare skriv til os, så vender vi tilbage inden for 2 hverdage.</p>
-              <Link to="/kontakt" className="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
-                Kontakt Magnora Marketing nu <ArrowRight size={16} className="ml-2" />
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <FAQSection faqs={[
-        { question: 'Hvad sælger jeg som mødebooker inden for LED?', answer: 'Du kontakter erhvervskunder og booker møder med energieffektive belysningsløsninger fra en anerkendt LED-leverandør.' },
-        { question: 'Behøver jeg viden om LED-teknik?', answer: 'Nej – Magnora Marketing giver dig al den produktviden du har brug for. Det vigtigste er dine salgskompetencer og din motivation.' },
-        { question: 'Hvem er målgruppen?', answer: 'Primært erhvervskunder som kontorer, produktionsvirksomheder og detail – alle der kan spare betydeligt på energiregningen med LED-belysning.' },
-        { question: 'Hvad er provisionsniveauet?', answer: 'Du modtager fast grundhonorar plus provision pr. booket møde der gennemføres.' },
-        { question: "Er der opkaldslister klar fra dag ét?", answer: "Ja – Magnora Marketing leverer opkaldslister og kampagnematerialer, så du kan starte med det samme." },
-        { question: "Kan jeg se et eksempel på et script?", answer: "Ja – du modtager et gennemprøvet salgsskript ved opstart som du kan tilpasse din stil." },
-        { question: "Hvad sker der ved et succes-salg eller booket møde?", answer: "Du registrerer resultatet i vores system, og provisionen beregnes automatisk og udbetales månedligt." },
-        { question: "Er der løbende coaching?", answer: "Ja – Magnora Marketing's salgsledere holder regelmæssige coaching-sessioner og giver feedback på din salgsstil." },
-        { question: "Kan jeg prøve stillingen i en kortere periode?", answer: "Ja – de første 2-4 uger betragtes som en gensidig prøveperiode." },
-        { question: "Hvad er den gennemsnitlige indkomst for en aktiv freelancer?", answer: "Det afhænger af aktivitet og produkt. Aktive freelancere med gode resultater kan tjene et solidt supplement eller en fuld indkomst." },
-        { question: "Kan jeg arbejde for Magnora Marketing og for andre bureauer?", answer: "Som freelancer er du fri til at arbejde for andre, så længe der ikke er konkurrencekonflikt med Magnora Marketing's kunder." },
-        { question: "Er der skriftlige kontrakter?", answer: "Ja – alle samarbejder formaliseres med en klar freelance-aftale der beskriver vilkår, provision og forventninger." },
-        { question: "Hvad sker der, hvis jeg ikke trives med produktet?", answer: "Vi kan diskutere om du er bedre egnet til et andet produkt i Magnora Marketing's portfolio." },
-        { question: "Hvad er Magnora Marketing's forventninger til mig som freelancer?", answer: "Vi forventer selvdisciplin, professionel optræden og løbende kommunikation om aktivitet og resultater." },
-      ]} />
-
-      <section className="bg-blue-600 text-white py-16">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6">Klar til at sælge grøn energi?</h2>
-          <p className="text-xl mb-8 max-w-3xl mx-auto">Kontakt Magnora Marketing og kom i gang med et produkt der skaber reel forskel – for kunden og for klimaet.</p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/kontakt" className="inline-flex items-center bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-              Send ansøgning <ArrowRight className="ml-2" size={18} />
-            </Link>
-            <Link to="/freelance-telemarketing" className="inline-flex items-center border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
-              Se alle ledige stillinger
-            </Link>
-          </div>
-        </div>
-      </section>
-    </>
+    <JobPageLayout
+      content={content}
+      canonical="/jobs/led-belysning"
+      keywords="freelance sælger LED, sælg energieffektivisering, LED belysning salg, erhvervsbelysning sælger, Magnora Marketing LED stilling"
+      backgroundImage="https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      accent="yellow"
+      whyIcons={[
+        <Zap size={36} className="text-yellow-500" />,
+        <Clock size={36} className="text-yellow-500" />,
+        <Sun size={36} className="text-yellow-500" />,
+      ]}
+    />
   );
 }
