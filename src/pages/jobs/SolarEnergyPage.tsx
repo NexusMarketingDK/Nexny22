@@ -1,188 +1,240 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { CheckCircle, ArrowRight, Clock, PiggyBank, Home, Sun, Leaf, TrendingUp } from 'lucide-react';
-import HeroSection from '../../components/HeroSection';
-import SEO from '../../components/SEO';
-import FAQSection from '../../components/FAQSection';
+import { Sun, Leaf, TrendingUp } from 'lucide-react';
+import JobPageLayout, { type JobPageContent } from './JobPageLayout';
+import type { Lang } from '../../i18n/usePageContent';
+
+const content: Record<Lang, JobPageContent> = {
+  da: {
+    seoTitle: 'Freelance Sælger Solenergi & Vedvarende Energi | Magnora Marketing',
+    seoDesc: 'Bliv freelance sælger af solenergi og vedvarende energiløsninger hos Magnora Marketing. Sælg solceller til erhverv og private – fleksibelt hjemmearbejde med stærk provision.',
+    heroTitle: 'Freelance Sælger – Solenergi & Vedvarende Energi',
+    heroSubtitle: 'Sælg fremtidens energiløsninger til private og erhverv. Solceller er én af de hurtigst voksende brancher i Danmark – og du kan tjene godt på det hjemmefra.',
+    applyCta: 'Søg stillingen',
+    allJobs: 'Se alle stillinger',
+    aboutTitle: 'Hvad går jobbet ud på?',
+    aboutP1: 'Som freelance sælger inden for solenergi kontakter du boligejere, landmænd og erhvervsvirksomheder om investering i solceller og grøn energi. Markedet er i vækst, og efterspørgslen er høj.',
+    aboutP2: 'Magnora Marketing leverer leads, scripts og produktviden. Du håndterer dialogen, besvarer spørgsmål om besparelser og booker tilbudsmøder til vores energirådgivere.',
+    tasks: [
+      'Opsøgende salg til private og erhvervskunder',
+      'Booking af energirådgivningsmøder og tilbudsbesøg',
+      'Rådgivning om besparelser, tilskud og tilbagebetalingstid',
+      'Opfølgning på interesserede emner',
+      'Samarbejde med Magnora Marketing\'s energiteam',
+    ],
+    factsTitle: 'Stillingens nøglefakta',
+    facts: [
+      { label: 'Ansættelsesform', value: 'Freelance / selvstændig' },
+      { label: 'Arbejdssted', value: 'Hjemmefra – hele Danmark' },
+      { label: 'Arbejdstid', value: 'Fleksibel – du bestemmer selv' },
+      { label: 'Løn', value: 'Fast grundhonorar + provision' },
+      { label: 'Produkt', value: 'Solceller & vedvarende energi' },
+      { label: 'Opstart', value: 'Hurtigst muligt' },
+    ],
+    sendApplication: 'Send din ansøgning',
+    whyTitle: 'Et marked i kraftig vækst',
+    why: [
+      { title: 'Rekordinstallationer', desc: 'Danmark sætter år for år rekord i antal nyinstallerede solcelleanlæg – efterspørgslen overstiger udbuddet af gode sælgere.' },
+      { title: 'Høj provision pr. salg', desc: 'Solcellesalg er én af de mest lukrative provisionsprodukter på markedet – hvert salg giver markant afkast.' },
+      { title: 'Meningsfuldt arbejde', desc: 'Du hjælper familier og virksomheder med at reducere deres energiregning og CO₂-aftryk på samme tid.' },
+    ],
+    getTitle: 'Hvad du får hos Magnora Marketing',
+    get: [
+      { title: 'Arbejd hjemmefra', desc: 'Alt hvad du behøver er en telefon og computer. Du arbejder trygt hjemmefra med fuld fleksibilitet.' },
+      { title: 'Attraktiv provision', desc: 'Grundhonorar plus provision. Solceller er et højværdiprodukt – og din provision afspejler det.' },
+      { title: 'Fleksible tider', desc: 'Tilrettelæg din salgsdag som det passer dig. Ideelt for studerende, forældre og dem med andet ved siden af.' },
+    ],
+    lookForTitle: 'Det kigger vi efter',
+    lookFor: [
+      'Erfaring med salg eller kundekontakt',
+      'Evne til at tale enkelt om økonomi og besparelser',
+      'Selvmotiveret og resultatorienteret',
+      'Gode kommunikationsevner på dansk',
+      'Interesse for grøn energi og bæredygtighed',
+      'Teknisk baggrund er ikke nødvendig',
+    ],
+    howTitle: 'Sådan søger du',
+    howP: 'Send en kort besked om dig selv og din baggrund. Ingen lang ansøgning – vi vender tilbage inden for 2 hverdage.',
+    contactNow: 'Kontakt Magnora Marketing nu',
+    faqs: [
+      { question: 'Hvad booker jeg møder om?', answer: 'Du kontakter virksomheder og private der kan have gavn af solcelleanlæg og vedvarende energiløsninger, og booker møder med en energirådgiver.' },
+      { question: 'Er solenergi let at sælge?', answer: 'Solenergi er et produkt i stærk vækst med høj efterspørgsel. Mange kunder er allerede bevidste om fordelene.' },
+      { question: 'Skal jeg kende til teknik bag solceller?', answer: 'Nej – du skal kunne identificere interesserede kunder og booke møder. Rådgiveren tager det tekniske.' },
+      { question: 'Hvad er mit territorium?', answer: 'Du arbejder remote og kan kontakte kunder i hele Danmark.' },
+      { question: 'Er der opkaldslister klar fra dag ét?', answer: 'Ja – Magnora Marketing leverer opkaldslister og kampagnematerialer, så du kan starte med det samme.' },
+      { question: 'Kan jeg se et eksempel på et script?', answer: 'Ja – du modtager et gennemprøvet salgsskript ved opstart som du kan tilpasse din stil.' },
+      { question: 'Hvad sker der ved et succes-salg eller booket møde?', answer: 'Du registrerer resultatet i vores system, og provisionen beregnes automatisk og udbetales månedligt.' },
+      { question: 'Er der løbende coaching?', answer: 'Ja – Magnora Marketing\'s salgsledere holder regelmæssige coaching-sessioner og giver feedback på din salgsstil.' },
+      { question: 'Kan jeg prøve stillingen i en kortere periode?', answer: 'Ja – de første 2-4 uger betragtes som en gensidig prøveperiode.' },
+      { question: 'Hvad er den gennemsnitlige indkomst for en aktiv freelancer?', answer: 'Det afhænger af aktivitet og produkt. Aktive freelancere med gode resultater kan tjene et solidt supplement eller en fuld indkomst.' },
+      { question: 'Kan jeg arbejde for Magnora Marketing og for andre bureauer?', answer: 'Som freelancer er du fri til at arbejde for andre, så længe der ikke er konkurrencekonflikt med Magnora Marketing\'s kunder.' },
+      { question: 'Er der skriftlige kontrakter?', answer: 'Ja – alle samarbejder formaliseres med en klar freelance-aftale der beskriver vilkår, provision og forventninger.' },
+      { question: 'Hvad sker der, hvis jeg ikke trives med produktet?', answer: 'Vi kan diskutere om du er bedre egnet til et andet produkt i Magnora Marketing\'s portfolio.' },
+      { question: 'Hvad er Magnora Marketing\'s forventninger til mig som freelancer?', answer: 'Vi forventer selvdisciplin, professionel optræden og løbende kommunikation om aktivitet og resultater.' },
+    ],
+    ctaTitle: 'Vær med i Danmarks grønne omstilling',
+    ctaSubtitle: 'Kontakt Magnora Marketing og kom i gang med at sælge Danmarks mest efterspurgte energiprodukt.',
+    sendApplicationShort: 'Send ansøgning',
+    seeAllOpen: 'Se alle ledige stillinger',
+  },
+  en: {
+    seoTitle: 'Freelance Sales Rep Solar & Renewable Energy | Magnora Marketing',
+    seoDesc: 'Become a freelance sales rep for solar energy and renewable energy solutions at Magnora Marketing. Sell solar panels to business and private customers – flexible remote work with strong commission.',
+    heroTitle: 'Freelance Sales Rep – Solar & Renewable Energy',
+    heroSubtitle: 'Sell the energy solutions of the future to private and business customers. Solar is one of the fastest-growing industries in Denmark – and you can earn well from it from home.',
+    applyCta: 'Apply for the position',
+    allJobs: 'See all positions',
+    aboutTitle: 'What does the job involve?',
+    aboutP1: 'As a freelance sales rep within solar energy, you contact homeowners, farmers and businesses about investing in solar panels and green energy. The market is growing, and demand is high.',
+    aboutP2: 'Magnora Marketing provides leads, scripts and product knowledge. You handle the dialogue, answer questions about savings and book quote meetings for our energy advisors.',
+    tasks: [
+      'Outbound sales to private and business customers',
+      'Booking energy advisory meetings and quote visits',
+      'Advising on savings, subsidies and payback time',
+      'Following up on interested prospects',
+      'Collaborating with Magnora Marketing\'s energy team',
+    ],
+    factsTitle: 'Key facts about the position',
+    facts: [
+      { label: 'Employment type', value: 'Freelance / self-employed' },
+      { label: 'Location', value: 'From home – all of Denmark' },
+      { label: 'Working hours', value: 'Flexible – you decide' },
+      { label: 'Pay', value: 'Fixed base fee + commission' },
+      { label: 'Product', value: 'Solar panels & renewable energy' },
+      { label: 'Start', value: 'As soon as possible' },
+    ],
+    sendApplication: 'Send your application',
+    whyTitle: 'A market in strong growth',
+    why: [
+      { title: 'Record installations', desc: 'Denmark sets records year after year in newly installed solar systems – demand exceeds the supply of good sales reps.' },
+      { title: 'High commission per sale', desc: 'Solar sales is one of the most lucrative commission products on the market – each sale gives significant return.' },
+      { title: 'Meaningful work', desc: 'You help families and businesses reduce their energy bill and CO₂ footprint at the same time.' },
+    ],
+    getTitle: 'What you get at Magnora Marketing',
+    get: [
+      { title: 'Work from home', desc: 'All you need is a phone and computer. You work comfortably from home with full flexibility.' },
+      { title: 'Attractive commission', desc: 'Base fee plus commission. Solar is a high-value product – and your commission reflects it.' },
+      { title: 'Flexible hours', desc: 'Arrange your sales day as it suits you. Ideal for students, parents and those with other commitments.' },
+    ],
+    lookForTitle: 'What we look for',
+    lookFor: [
+      'Experience with sales or customer contact',
+      'Ability to talk simply about finances and savings',
+      'Self-motivated and results-oriented',
+      'Good communication skills',
+      'Interest in green energy and sustainability',
+      'A technical background is not required',
+    ],
+    howTitle: 'How to apply',
+    howP: 'Send a short message about yourself and your background. No long application – we get back to you within 2 business days.',
+    contactNow: 'Contact Magnora Marketing now',
+    faqs: [
+      { question: 'What do I book meetings about?', answer: 'You contact businesses and private customers who could benefit from solar systems and renewable energy solutions, and book meetings with an energy advisor.' },
+      { question: 'Is solar energy easy to sell?', answer: 'Solar is a product in strong growth with high demand. Many customers are already aware of the benefits.' },
+      { question: 'Do I need to know the technology behind solar panels?', answer: 'No – you need to identify interested customers and book meetings. The advisor handles the technical side.' },
+      { question: 'What is my territory?', answer: 'You work remotely and can contact customers across all of Denmark.' },
+      { question: 'Are call lists ready from day one?', answer: 'Yes – Magnora Marketing provides call lists and campaign materials so you can start right away.' },
+      { question: 'Can I see an example of a script?', answer: 'Yes – you receive a proven sales script at onboarding that you can adapt to your style.' },
+      { question: 'What happens on a successful sale or booked meeting?', answer: 'You register the result in our system, and the commission is calculated automatically and paid monthly.' },
+      { question: 'Is there ongoing coaching?', answer: 'Yes – Magnora Marketing\'s sales managers hold regular coaching sessions and give feedback on your sales style.' },
+      { question: 'Can I try the position for a shorter period?', answer: 'Yes – the first 2-4 weeks are considered a mutual trial period.' },
+      { question: 'What is the average income for an active freelancer?', answer: 'It depends on activity and product. Active freelancers with good results can earn a solid supplement or a full income.' },
+      { question: 'Can I work for Magnora Marketing and for other agencies?', answer: 'As a freelancer you are free to work for others, as long as there is no competitive conflict with Magnora Marketing\'s clients.' },
+      { question: 'Are there written contracts?', answer: 'Yes – all collaborations are formalised with a clear freelance agreement describing terms, commission and expectations.' },
+      { question: 'What happens if I don\'t enjoy the product?', answer: 'We can discuss whether you are better suited to another product in Magnora Marketing\'s portfolio.' },
+      { question: 'What are Magnora Marketing\'s expectations of me as a freelancer?', answer: 'We expect self-discipline, professional conduct and ongoing communication about activity and results.' },
+    ],
+    ctaTitle: 'Be part of Denmark\'s green transition',
+    ctaSubtitle: 'Contact Magnora Marketing and get started selling Denmark\'s most in-demand energy product.',
+    sendApplicationShort: 'Send application',
+    seeAllOpen: 'See all open positions',
+  },
+  es: {
+    seoTitle: 'Vendedor Freelance Energía Solar y Renovable | Magnora Marketing',
+    seoDesc: 'Conviértete en vendedor freelance de energía solar y soluciones de energía renovable en Magnora Marketing. Vende paneles solares a empresas y particulares – trabajo remoto flexible con buena comisión.',
+    heroTitle: 'Vendedor Freelance – Energía Solar y Renovable',
+    heroSubtitle: 'Vende las soluciones energéticas del futuro a particulares y empresas. La energía solar es uno de los sectores de más rápido crecimiento en Dinamarca – y puedes ganar bien con ello desde casa.',
+    applyCta: 'Solicitar el puesto',
+    allJobs: 'Ver todas las vacantes',
+    aboutTitle: '¿En qué consiste el trabajo?',
+    aboutP1: 'Como vendedor freelance en energía solar, contactas con propietarios de viviendas, agricultores y empresas sobre la inversión en paneles solares y energía verde. El mercado está en crecimiento y la demanda es alta.',
+    aboutP2: 'Magnora Marketing proporciona leads, guiones y conocimiento del producto. Tú gestionas el diálogo, respondes preguntas sobre ahorro y reservas reuniones de oferta para nuestros asesores energéticos.',
+    tasks: [
+      'Venta proactiva a clientes particulares y empresas',
+      'Reserva de reuniones de asesoramiento energético y visitas de oferta',
+      'Asesoramiento sobre ahorro, subvenciones y periodo de amortización',
+      'Seguimiento de prospectos interesados',
+      'Colaboración con el equipo energético de Magnora Marketing',
+    ],
+    factsTitle: 'Datos clave del puesto',
+    facts: [
+      { label: 'Tipo de contrato', value: 'Freelance / autónomo' },
+      { label: 'Lugar de trabajo', value: 'Desde casa – toda Dinamarca' },
+      { label: 'Horario', value: 'Flexible – tú decides' },
+      { label: 'Retribución', value: 'Base fija + comisión' },
+      { label: 'Producto', value: 'Paneles solares y energía renovable' },
+      { label: 'Inicio', value: 'Lo antes posible' },
+    ],
+    sendApplication: 'Envía tu solicitud',
+    whyTitle: 'Un mercado en fuerte crecimiento',
+    why: [
+      { title: 'Instalaciones récord', desc: 'Dinamarca bate récords año tras año en instalaciones solares nuevas – la demanda supera la oferta de buenos vendedores.' },
+      { title: 'Alta comisión por venta', desc: 'La venta de energía solar es uno de los productos de comisión más lucrativos del mercado – cada venta genera un retorno considerable.' },
+      { title: 'Trabajo significativo', desc: 'Ayudas a familias y empresas a reducir su factura energética y su huella de CO₂ al mismo tiempo.' },
+    ],
+    getTitle: 'Lo que obtienes en Magnora Marketing',
+    get: [
+      { title: 'Trabaja desde casa', desc: 'Todo lo que necesitas es un teléfono y un ordenador. Trabajas cómodamente desde casa con total flexibilidad.' },
+      { title: 'Comisión atractiva', desc: 'Base fija más comisión. La energía solar es un producto de alto valor – y tu comisión lo refleja.' },
+      { title: 'Horario flexible', desc: 'Organiza tu jornada de venta como mejor te convenga. Ideal para estudiantes, padres y quienes tienen otras ocupaciones.' },
+    ],
+    lookForTitle: 'Lo que buscamos',
+    lookFor: [
+      'Experiencia en ventas o contacto con clientes',
+      'Capacidad de hablar de forma sencilla sobre economía y ahorro',
+      'Automotivado y orientado a resultados',
+      'Buenas habilidades de comunicación',
+      'Interés por la energía verde y la sostenibilidad',
+      'No se necesita formación técnica',
+    ],
+    howTitle: 'Cómo solicitarlo',
+    howP: 'Envía un mensaje breve sobre ti y tu experiencia. Sin solicitud larga – te respondemos en un plazo de 2 días laborables.',
+    contactNow: 'Contacta con Magnora Marketing ahora',
+    faqs: [
+      { question: '¿Sobre qué reservo reuniones?', answer: 'Contactas con empresas y particulares que pueden beneficiarse de instalaciones solares y soluciones de energía renovable, y reservas reuniones con un asesor energético.' },
+      { question: '¿Es fácil vender energía solar?', answer: 'La energía solar es un producto en fuerte crecimiento con alta demanda. Muchos clientes ya conocen las ventajas.' },
+      { question: '¿Necesito conocer la tecnología de los paneles solares?', answer: 'No – necesitas identificar clientes interesados y reservar reuniones. El asesor se encarga de la parte técnica.' },
+      { question: '¿Cuál es mi territorio?', answer: 'Trabajas en remoto y puedes contactar con clientes de toda Dinamarca.' },
+      { question: '¿Hay listas de llamadas listas desde el primer día?', answer: 'Sí – Magnora Marketing proporciona listas de llamadas y materiales de campaña para que puedas empezar de inmediato.' },
+      { question: '¿Puedo ver un ejemplo de guion?', answer: 'Sí – recibes un guion de ventas probado al incorporarte que puedes adaptar a tu estilo.' },
+      { question: '¿Qué ocurre con una venta exitosa o una reunión reservada?', answer: 'Registras el resultado en nuestro sistema, y la comisión se calcula automáticamente y se paga mensualmente.' },
+      { question: '¿Hay coaching continuo?', answer: 'Sí – los responsables de ventas de Magnora Marketing realizan sesiones de coaching periódicas y dan feedback sobre tu estilo de venta.' },
+      { question: '¿Puedo probar el puesto durante un periodo más corto?', answer: 'Sí – las primeras 2-4 semanas se consideran un periodo de prueba mutuo.' },
+      { question: '¿Cuál es el ingreso medio de un freelance activo?', answer: 'Depende de la actividad y del producto. Los freelance activos con buenos resultados pueden ganar un buen complemento o un ingreso completo.' },
+      { question: '¿Puedo trabajar para Magnora Marketing y para otras agencias?', answer: 'Como freelance eres libre de trabajar para otros, siempre que no haya conflicto de competencia con los clientes de Magnora Marketing.' },
+      { question: '¿Hay contratos por escrito?', answer: 'Sí – todas las colaboraciones se formalizan con un acuerdo de freelance claro que describe las condiciones, la comisión y las expectativas.' },
+      { question: '¿Qué ocurre si el producto no me convence?', answer: 'Podemos analizar si encajas mejor con otro producto de la cartera de Magnora Marketing.' },
+      { question: '¿Qué espera Magnora Marketing de mí como freelance?', answer: 'Esperamos autodisciplina, conducta profesional y comunicación continua sobre la actividad y los resultados.' },
+    ],
+    ctaTitle: 'Forma parte de la transición verde de Dinamarca',
+    ctaSubtitle: 'Contacta con Magnora Marketing y empieza a vender el producto energético más demandado de Dinamarca.',
+    sendApplicationShort: 'Enviar solicitud',
+    seeAllOpen: 'Ver todas las vacantes disponibles',
+  },
+};
 
 export default function SolarEnergyPage() {
   return (
-    <>
-      <SEO
-        title="Freelance Sælger Solenergi & Vedvarende Energi | Magnora Marketing"
-        description="Bliv freelance sælger af solenergi og vedvarende energiløsninger hos Magnora Marketing. Sælg solceller til erhverv og private – fleksibelt hjemmearbejde med stærk provision."
-        canonical="/jobs/solenergi"
-        keywords="freelance sælger solenergi, sælg solceller, solenergi job, vedvarende energi salg, Magnora Marketing solcelle stilling"
-      />
-
-      <HeroSection
-        title="Freelance Sælger – Solenergi & Vedvarende Energi"
-        subtitle="Sælg fremtidens energiløsninger til private og erhverv. Solceller er én af de hurtigst voksende brancher i Danmark – og du kan tjene godt på det hjemmefra."
-        ctaText="Søg stillingen"
-        ctaLink="/kontakt"
-        secondaryCtaText="Se alle stillinger"
-        secondaryCtaLink="/freelance-telemarketing"
-        backgroundImage="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-      />
-
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 max-w-5xl">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl font-bold mb-6">Hvad går jobbet ud på?</h2>
-              <p className="text-lg text-gray-600 mb-6">
-                Som freelance sælger inden for solenergi kontakter du boligejere, landmænd og erhvervsvirksomheder om investering i solceller og grøn energi. Markedet er i vækst, og efterspørgslen er høj.
-              </p>
-              <p className="text-lg text-gray-600 mb-8">
-                Magnora Marketing leverer leads, scripts og produktviden. Du håndterer dialogen, besvarer spørgsmål om besparelser og booker tilbudsmøder til vores energirådgivere.
-              </p>
-              <ul className="space-y-3">
-                {[
-                  'Opsøgende salg til private og erhvervskunder',
-                  'Booking af energirådgivningsmøder og tilbudsbesøg',
-                  'Rådgivning om besparelser, tilskud og tilbagebetalingstid',
-                  'Opfølgning på interesserede emner',
-                  'Samarbejde med Magnora Marketing\'s energiteam'
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <CheckCircle className="text-green-500 flex-shrink-0 mt-0.5" size={18} />
-                    <span className="text-gray-700">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="bg-green-50 rounded-2xl p-8 border border-green-100">
-              <h3 className="text-xl font-bold mb-6 text-green-800">Stillingens nøglefakta</h3>
-              <div className="space-y-4">
-                {[
-                  { label: 'Ansættelsesform', value: 'Freelance / selvstændig' },
-                  { label: 'Arbejdssted', value: 'Hjemmefra – hele Danmark' },
-                  { label: 'Arbejdstid', value: 'Fleksibel – du bestemmer selv' },
-                  { label: 'Løn', value: 'Fast grundhonorar + provision' },
-                  { label: 'Produkt', value: 'Solceller & vedvarende energi' },
-                  { label: 'Opstart', value: 'Hurtigst muligt' }
-                ].map((row, i) => (
-                  <div key={i} className="flex justify-between items-center py-2 border-b border-green-100 last:border-0">
-                    <span className="text-gray-600 text-sm">{row.label}</span>
-                    <span className="font-semibold text-gray-900 text-sm">{row.value}</span>
-                  </div>
-                ))}
-              </div>
-              <div className="mt-6">
-                <Link to="/kontakt" className="w-full inline-flex items-center justify-center bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
-                  Send din ansøgning <ArrowRight size={16} className="ml-2" />
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4 max-w-5xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Et marked i kraftig vækst</h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[
-              { icon: <Sun size={36} className="text-orange-500" />, title: 'Rekordinstallationer', desc: 'Danmark sætter år for år rekord i antal nyinstallerede solcelleanlæg – efterspørgslen overstiger udbuddet af gode sælgere.' },
-              { icon: <TrendingUp size={36} className="text-orange-500" />, title: 'Høj provision pr. salg', desc: 'Solcellesalg er én af de mest lukrative provisionsprodukter på markedet – hvert salg giver markant afkast.' },
-              { icon: <Leaf size={36} className="text-orange-500" />, title: 'Meningsfuldt arbejde', desc: 'Du hjælper familier og virksomheder med at reducere deres energiregning og CO₂-aftryk på samme tid.' }
-            ].map((item, i) => (
-              <div key={i} className="bg-white rounded-xl p-6 shadow-sm text-center">
-                <div className="flex justify-center mb-4">{item.icon}</div>
-                <h3 className="font-semibold text-lg mb-2">{item.title}</h3>
-                <p className="text-gray-600 text-sm">{item.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 max-w-5xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Hvad du får hos Magnora Marketing</h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              { icon: <Home size={40} className="text-blue-600" />, title: 'Arbejd hjemmefra', desc: 'Alt hvad du behøver er en telefon og computer. Du arbejder trygt hjemmefra med fuld fleksibilitet.' },
-              { icon: <PiggyBank size={40} className="text-blue-600" />, title: 'Attraktiv provision', desc: 'Grundhonorar plus provision. Solceller er et højværdiprodukt – og din provision afspejler det.' },
-              { icon: <Clock size={40} className="text-blue-600" />, title: 'Fleksible tider', desc: 'Tilrettelæg din salgsdag som det passer dig. Ideelt for studerende, forældre og dem med andet ved siden af.' }
-            ].map((item, i) => (
-              <div key={i} className="text-center p-8 bg-gray-50 rounded-xl">
-                <div className="flex justify-center mb-4">{item.icon}</div>
-                <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
-                <p className="text-gray-600">{item.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div>
-              <h2 className="text-2xl font-bold mb-6">Det kigger vi efter</h2>
-              <ul className="space-y-3">
-                {[
-                  'Erfaring med salg eller kundekontakt',
-                  'Evne til at tale enkelt om økonomi og besparelser',
-                  'Selvmotiveret og resultatorienteret',
-                  'Gode kommunikationsevner på dansk',
-                  'Interesse for grøn energi og bæredygtighed',
-                  'Teknisk baggrund er ikke nødvendig'
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <CheckCircle className="text-green-500 flex-shrink-0 mt-0.5" size={18} />
-                    <span className="text-gray-700">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <h2 className="text-2xl font-bold mb-6">Sådan søger du</h2>
-              <p className="text-gray-600 mb-6">Send en kort besked om dig selv og din baggrund. Ingen lang ansøgning – vi vender tilbage inden for 2 hverdage.</p>
-              <Link to="/kontakt" className="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
-                Kontakt Magnora Marketing nu <ArrowRight size={16} className="ml-2" />
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <FAQSection faqs={[
-        { question: 'Hvad booker jeg møder om?', answer: 'Du kontakter virksomheder og private der kan have gavn af solcelleanlæg og vedvarende energiløsninger, og booker møder med en energirådgiver.' },
-        { question: 'Er solenergi let at sælge?', answer: 'Solenergi er et produkt i stærk vækst med høj efterspørgsel. Mange kunder er allerede bevidste om fordelene.' },
-        { question: 'Skal jeg kende til teknik bag solceller?', answer: 'Nej – du skal kunne identificere interesserede kunder og booke møder. Rådgiveren tager det tekniske.' },
-        { question: 'Hvad er mit territorium?', answer: 'Du arbejder remote og kan kontakte kunder i hele Danmark.' },
-        { question: "Er der opkaldslister klar fra dag ét?", answer: "Ja – Magnora Marketing leverer opkaldslister og kampagnematerialer, så du kan starte med det samme." },
-        { question: "Kan jeg se et eksempel på et script?", answer: "Ja – du modtager et gennemprøvet salgsskript ved opstart som du kan tilpasse din stil." },
-        { question: "Hvad sker der ved et succes-salg eller booket møde?", answer: "Du registrerer resultatet i vores system, og provisionen beregnes automatisk og udbetales månedligt." },
-        { question: "Er der løbende coaching?", answer: "Ja – Magnora Marketing's salgsledere holder regelmæssige coaching-sessioner og giver feedback på din salgsstil." },
-        { question: "Kan jeg prøve stillingen i en kortere periode?", answer: "Ja – de første 2-4 uger betragtes som en gensidig prøveperiode." },
-        { question: "Hvad er den gennemsnitlige indkomst for en aktiv freelancer?", answer: "Det afhænger af aktivitet og produkt. Aktive freelancere med gode resultater kan tjene et solidt supplement eller en fuld indkomst." },
-        { question: "Kan jeg arbejde for Magnora Marketing og for andre bureauer?", answer: "Som freelancer er du fri til at arbejde for andre, så længe der ikke er konkurrencekonflikt med Magnora Marketing's kunder." },
-        { question: "Er der skriftlige kontrakter?", answer: "Ja – alle samarbejder formaliseres med en klar freelance-aftale der beskriver vilkår, provision og forventninger." },
-        { question: "Hvad sker der, hvis jeg ikke trives med produktet?", answer: "Vi kan diskutere om du er bedre egnet til et andet produkt i Magnora Marketing's portfolio." },
-        { question: "Hvad er Magnora Marketing's forventninger til mig som freelancer?", answer: "Vi forventer selvdisciplin, professionel optræden og løbende kommunikation om aktivitet og resultater." },
-      ]} />
-
-      <section className="bg-blue-600 text-white py-16">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6">Vær med i Danmarks grønne omstilling</h2>
-          <p className="text-xl mb-8 max-w-3xl mx-auto">Kontakt Magnora Marketing og kom i gang med at sælge Danmarks mest efterspurgte energiprodukt.</p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/kontakt" className="inline-flex items-center bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-              Send ansøgning <ArrowRight className="ml-2" size={18} />
-            </Link>
-            <Link to="/freelance-telemarketing" className="inline-flex items-center border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
-              Se alle ledige stillinger
-            </Link>
-          </div>
-        </div>
-      </section>
-    </>
+    <JobPageLayout
+      content={content}
+      canonical="/jobs/solenergi"
+      keywords="freelance sælger solenergi, sælg solceller, solenergi job, vedvarende energi salg, Magnora Marketing solcelle stilling"
+      backgroundImage="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      accent="green"
+      whyIcons={[
+        <Sun size={36} className="text-orange-500" />,
+        <TrendingUp size={36} className="text-orange-500" />,
+        <Leaf size={36} className="text-orange-500" />,
+      ]}
+    />
   );
 }

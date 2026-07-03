@@ -1,188 +1,240 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { CheckCircle, ArrowRight, Clock, PiggyBank, Home, Shield, Users, Star } from 'lucide-react';
-import HeroSection from '../../components/HeroSection';
-import SEO from '../../components/SEO';
-import FAQSection from '../../components/FAQSection';
+import { Shield, Users, Star } from 'lucide-react';
+import JobPageLayout, { type JobPageContent } from './JobPageLayout';
+import type { Lang } from '../../i18n/usePageContent';
+
+const content: Record<Lang, JobPageContent> = {
+  da: {
+    seoTitle: 'Freelance Sælger Måtte- og Rengøringsservice | Magnora Marketing',
+    seoDesc: 'Bliv freelance sælger af måtte- og rengøringsservice til erhverv hos Magnora Marketing. Arbejd hjemmefra med fleksible tider og stabil provision på abonnementsaftaler.',
+    heroTitle: 'Freelance Sælger – Måtte- og Rengøringsservice',
+    heroSubtitle: 'Sælg en uundværlig serviceydelse til danske virksomheder. Måtte- og rengøringsservice er et abonnementsprodukt med lang kundelevetid og stabil løbende provision.',
+    applyCta: 'Søg stillingen',
+    allJobs: 'Se alle stillinger',
+    aboutTitle: 'Hvad går jobbet ud på?',
+    aboutP1: 'Som freelance sælger inden for måtte- og rengøringsservice kontakter du virksomheder, butikker, klinikker og institutioner med et tilbud om professionel facility service. Det er en ydelse de fleste allerede bruger – og mange er åbne for et bedre tilbud.',
+    aboutP2: 'Magnora Marketing leverer leads og scripts. Du ringer, præsenterer løsningen og lukker aftalen eller booker et møde med facility manageren.',
+    tasks: [
+      'Opsøgende salg til virksomheder og institutioner',
+      'Kontakt til facility managers og indkøbsansvarlige',
+      'Præsentation af service, priser og kvalitetsgarantier',
+      'Booking af tilbudsbesøg og fremvisninger',
+      'Opfølgning og opbygning af stabil kundeportefølje',
+    ],
+    factsTitle: 'Stillingens nøglefakta',
+    facts: [
+      { label: 'Ansættelsesform', value: 'Freelance / selvstændig' },
+      { label: 'Arbejdssted', value: 'Hjemmefra – hele Danmark' },
+      { label: 'Arbejdstid', value: 'Fleksibel – du bestemmer selv' },
+      { label: 'Løn', value: 'Fast grundhonorar + provision' },
+      { label: 'Produkt', value: 'Måtte- og rengøringsservice' },
+      { label: 'Opstart', value: 'Hurtigst muligt' },
+    ],
+    sendApplication: 'Send din ansøgning',
+    whyTitle: 'Derfor er facility service et stærkt salgsprodukt',
+    why: [
+      { title: 'Stabilt og tilbagevendende', desc: 'Rengørings- og måtteservice er abonnementsbaseret. Når du lander en kunde, giver det provision måned efter måned.' },
+      { title: 'Bredt marked', desc: 'Alle virksomheder med fysiske lokaler er potentielle kunder – butikker, kontorer, klinikker, lagre og institutioner.' },
+      { title: 'Lav afvisningsrisiko', desc: 'Facility service er en saglig og professionel henvendelse der modtages positivt af indkøbsansvarlige og facility managers.' },
+    ],
+    getTitle: 'Hvad du får hos Magnora Marketing',
+    get: [
+      { title: 'Arbejd hjemmefra', desc: 'Ingen transport og ingen mødetider – du sælger fra dit eget hjem med fuld fleksibilitet.' },
+      { title: 'Løbende provision', desc: 'Du tjener på nye salg og fortsætter med at modtage provision på dine eksisterende kunder.' },
+      { title: 'Fleksible tider', desc: 'Du bestemmer selv hvornår du ringer og hvor meget du vil sælge. Ideelt som biindtægt eller fuldtidsjob.' },
+    ],
+    lookForTitle: 'Det kigger vi efter',
+    lookFor: [
+      'Erfaring med telefonsalg eller B2B-kundekontakt',
+      'God til at skabe tillid og professionel relation hurtigt',
+      'Selvdisciplin og målbevidsthed',
+      'Flydende dansk',
+      'Brancheerfaring er ikke et krav',
+      'Motivation for at opbygge en stabil kundeportefølje',
+    ],
+    howTitle: 'Sådan søger du',
+    howP: 'Send en kort besked om din baggrund og erfaring. Vi vender tilbage inden for 2 hverdage.',
+    contactNow: 'Kontakt Magnora Marketing nu',
+    faqs: [
+      { question: 'Hvad sælger jeg?', answer: 'Du booker møder for professionel måtteservice – firmaer der lejer og servicerer måtter til erhvervskunder som sikrer rent arbejdsmiljø.' },
+      { question: 'Hvem er de typiske kunder?', answer: 'Kontorer, butikker, restauranter, hoteller og produktionsvirksomheder der ønsker et professionelt indgangsmiljø.' },
+      { question: 'Er det et tilbagevendende produkt?', answer: 'Ja – måtteservice er typisk abonnementsbaseret, hvilket giver kunderne god stabilitet.' },
+      { question: 'Hvad er mine arbejdstider?', answer: 'Du bestemmer selv dine timer som freelancer. Vi anbefaler at ringe inden for normal kontortid.' },
+      { question: 'Er der opkaldslister klar fra dag ét?', answer: 'Ja – Magnora Marketing leverer opkaldslister og kampagnematerialer, så du kan starte med det samme.' },
+      { question: 'Kan jeg se et eksempel på et script?', answer: 'Ja – du modtager et gennemprøvet salgsskript ved opstart som du kan tilpasse din stil.' },
+      { question: 'Hvad sker der ved et succes-salg eller booket møde?', answer: 'Du registrerer resultatet i vores system, og provisionen beregnes automatisk og udbetales månedligt.' },
+      { question: 'Er der løbende coaching?', answer: 'Ja – Magnora Marketing\'s salgsledere holder regelmæssige coaching-sessioner og giver feedback på din salgsstil.' },
+      { question: 'Kan jeg prøve stillingen i en kortere periode?', answer: 'Ja – de første 2-4 uger betragtes som en gensidig prøveperiode.' },
+      { question: 'Hvad er den gennemsnitlige indkomst for en aktiv freelancer?', answer: 'Det afhænger af aktivitet og produkt. Aktive freelancere med gode resultater kan tjene et solidt supplement eller en fuld indkomst.' },
+      { question: 'Kan jeg arbejde for Magnora Marketing og for andre bureauer?', answer: 'Som freelancer er du fri til at arbejde for andre, så længe der ikke er konkurrencekonflikt med Magnora Marketing\'s kunder.' },
+      { question: 'Er der skriftlige kontrakter?', answer: 'Ja – alle samarbejder formaliseres med en klar freelance-aftale der beskriver vilkår, provision og forventninger.' },
+      { question: 'Hvad sker der, hvis jeg ikke trives med produktet?', answer: 'Vi kan diskutere om du er bedre egnet til et andet produkt i Magnora Marketing\'s portfolio.' },
+      { question: 'Hvad er Magnora Marketing\'s forventninger til mig som freelancer?', answer: 'Vi forventer selvdisciplin, professionel optræden og løbende kommunikation om aktivitet og resultater.' },
+    ],
+    ctaTitle: 'Klar til at bygge en stabil salgportefølje?',
+    ctaSubtitle: 'Kontakt Magnora Marketing og kom i gang med facility service-salg der giver stabil og tilbagevendende provision.',
+    sendApplicationShort: 'Send ansøgning',
+    seeAllOpen: 'Se alle ledige stillinger',
+  },
+  en: {
+    seoTitle: 'Freelance Sales Rep Mat & Cleaning Service | Magnora Marketing',
+    seoDesc: 'Become a freelance sales rep for mat and cleaning service for business at Magnora Marketing. Work from home with flexible hours and stable commission on subscription agreements.',
+    heroTitle: 'Freelance Sales Rep – Mat & Cleaning Service',
+    heroSubtitle: 'Sell an indispensable service to Danish companies. Mat and cleaning service is a subscription product with long customer lifetime and stable recurring commission.',
+    applyCta: 'Apply for the position',
+    allJobs: 'See all positions',
+    aboutTitle: 'What does the job involve?',
+    aboutP1: 'As a freelance sales rep within mat and cleaning service, you contact companies, shops, clinics and institutions with an offer of professional facility service. It is a service most already use – and many are open to a better offer.',
+    aboutP2: 'Magnora Marketing provides leads and scripts. You call, present the solution and close the deal or book a meeting with the facility manager.',
+    tasks: [
+      'Outbound sales to companies and institutions',
+      'Contact with facility managers and purchasing managers',
+      'Presenting service, prices and quality guarantees',
+      'Booking quote visits and demonstrations',
+      'Following up and building a stable customer portfolio',
+    ],
+    factsTitle: 'Key facts about the position',
+    facts: [
+      { label: 'Employment type', value: 'Freelance / self-employed' },
+      { label: 'Location', value: 'From home – all of Denmark' },
+      { label: 'Working hours', value: 'Flexible – you decide' },
+      { label: 'Pay', value: 'Fixed base fee + commission' },
+      { label: 'Product', value: 'Mat and cleaning service' },
+      { label: 'Start', value: 'As soon as possible' },
+    ],
+    sendApplication: 'Send your application',
+    whyTitle: 'Why facility service is a strong sales product',
+    why: [
+      { title: 'Stable and recurring', desc: 'Cleaning and mat service is subscription-based. When you land a customer, it gives commission month after month.' },
+      { title: 'Broad market', desc: 'All companies with physical premises are potential customers – shops, offices, clinics, warehouses and institutions.' },
+      { title: 'Low rejection risk', desc: 'Facility service is a factual and professional approach that is received positively by purchasing managers and facility managers.' },
+    ],
+    getTitle: 'What you get at Magnora Marketing',
+    get: [
+      { title: 'Work from home', desc: 'No commuting and no meeting times – you sell from your own home with full flexibility.' },
+      { title: 'Recurring commission', desc: 'You earn on new sales and continue to receive commission on your existing customers.' },
+      { title: 'Flexible hours', desc: 'You decide when you call and how much you want to sell. Ideal as a side income or full-time job.' },
+    ],
+    lookForTitle: 'What we look for',
+    lookFor: [
+      'Experience with phone sales or B2B customer contact',
+      'Good at building trust and a professional relationship quickly',
+      'Self-discipline and determination',
+      'Fluent communication',
+      'Industry experience is not a requirement',
+      'Motivation to build a stable customer portfolio',
+    ],
+    howTitle: 'How to apply',
+    howP: 'Send a short message about your background and experience. We get back to you within 2 business days.',
+    contactNow: 'Contact Magnora Marketing now',
+    faqs: [
+      { question: 'What do I sell?', answer: 'You book meetings for professional mat service – companies that rent and service mats for business customers to ensure a clean work environment.' },
+      { question: 'Who are the typical customers?', answer: 'Offices, shops, restaurants, hotels and production companies that want a professional entrance environment.' },
+      { question: 'Is it a recurring product?', answer: 'Yes – mat service is typically subscription-based, which gives customers good stability.' },
+      { question: 'What are my working hours?', answer: 'You decide your own hours as a freelancer. We recommend calling within normal office hours.' },
+      { question: 'Are call lists ready from day one?', answer: 'Yes – Magnora Marketing provides call lists and campaign materials so you can start right away.' },
+      { question: 'Can I see an example of a script?', answer: 'Yes – you receive a proven sales script at onboarding that you can adapt to your style.' },
+      { question: 'What happens on a successful sale or booked meeting?', answer: 'You register the result in our system, and the commission is calculated automatically and paid monthly.' },
+      { question: 'Is there ongoing coaching?', answer: 'Yes – Magnora Marketing\'s sales managers hold regular coaching sessions and give feedback on your sales style.' },
+      { question: 'Can I try the position for a shorter period?', answer: 'Yes – the first 2-4 weeks are considered a mutual trial period.' },
+      { question: 'What is the average income for an active freelancer?', answer: 'It depends on activity and product. Active freelancers with good results can earn a solid supplement or a full income.' },
+      { question: 'Can I work for Magnora Marketing and for other agencies?', answer: 'As a freelancer you are free to work for others, as long as there is no competitive conflict with Magnora Marketing\'s clients.' },
+      { question: 'Are there written contracts?', answer: 'Yes – all collaborations are formalised with a clear freelance agreement describing terms, commission and expectations.' },
+      { question: 'What happens if I don\'t enjoy the product?', answer: 'We can discuss whether you are better suited to another product in Magnora Marketing\'s portfolio.' },
+      { question: 'What are Magnora Marketing\'s expectations of me as a freelancer?', answer: 'We expect self-discipline, professional conduct and ongoing communication about activity and results.' },
+    ],
+    ctaTitle: 'Ready to build a stable sales portfolio?',
+    ctaSubtitle: 'Contact Magnora Marketing and get started with facility service sales that give stable and recurring commission.',
+    sendApplicationShort: 'Send application',
+    seeAllOpen: 'See all open positions',
+  },
+  es: {
+    seoTitle: 'Vendedor Freelance Servicio de Alfombras y Limpieza | Magnora Marketing',
+    seoDesc: 'Conviértete en vendedor freelance de servicio de alfombras y limpieza para empresas en Magnora Marketing. Trabaja desde casa con horarios flexibles y comisión estable en acuerdos de suscripción.',
+    heroTitle: 'Vendedor Freelance – Servicio de Alfombras y Limpieza',
+    heroSubtitle: 'Vende un servicio indispensable a las empresas danesas. El servicio de alfombras y limpieza es un producto de suscripción con larga vida del cliente y comisión recurrente estable.',
+    applyCta: 'Solicitar el puesto',
+    allJobs: 'Ver todas las vacantes',
+    aboutTitle: '¿En qué consiste el trabajo?',
+    aboutP1: 'Como vendedor freelance en servicio de alfombras y limpieza, contactas con empresas, tiendas, clínicas e instituciones con una oferta de servicio de facility profesional. Es un servicio que la mayoría ya usa – y muchos están abiertos a una mejor oferta.',
+    aboutP2: 'Magnora Marketing proporciona leads y guiones. Tú llamas, presentas la solución y cierras el acuerdo o reservas una reunión con el facility manager.',
+    tasks: [
+      'Venta proactiva a empresas e instituciones',
+      'Contacto con facility managers y responsables de compras',
+      'Presentación del servicio, precios y garantías de calidad',
+      'Reserva de visitas de oferta y demostraciones',
+      'Seguimiento y creación de una cartera de clientes estable',
+    ],
+    factsTitle: 'Datos clave del puesto',
+    facts: [
+      { label: 'Tipo de contrato', value: 'Freelance / autónomo' },
+      { label: 'Lugar de trabajo', value: 'Desde casa – toda Dinamarca' },
+      { label: 'Horario', value: 'Flexible – tú decides' },
+      { label: 'Retribución', value: 'Base fija + comisión' },
+      { label: 'Producto', value: 'Servicio de alfombras y limpieza' },
+      { label: 'Inicio', value: 'Lo antes posible' },
+    ],
+    sendApplication: 'Envía tu solicitud',
+    whyTitle: 'Por qué el servicio de facility es un producto de venta sólido',
+    why: [
+      { title: 'Estable y recurrente', desc: 'El servicio de limpieza y alfombras es por suscripción. Cuando consigues un cliente, genera comisión mes tras mes.' },
+      { title: 'Mercado amplio', desc: 'Todas las empresas con locales físicos son clientes potenciales – tiendas, oficinas, clínicas, almacenes e instituciones.' },
+      { title: 'Bajo riesgo de rechazo', desc: 'El servicio de facility es un contacto objetivo y profesional que reciben positivamente los responsables de compras y facility managers.' },
+    ],
+    getTitle: 'Lo que obtienes en Magnora Marketing',
+    get: [
+      { title: 'Trabaja desde casa', desc: 'Sin desplazamientos ni horarios de reunión – vendes desde tu propia casa con total flexibilidad.' },
+      { title: 'Comisión recurrente', desc: 'Ganas con las nuevas ventas y sigues recibiendo comisión de tus clientes existentes.' },
+      { title: 'Horario flexible', desc: 'Tú decides cuándo llamas y cuánto quieres vender. Ideal como ingreso extra o trabajo a tiempo completo.' },
+    ],
+    lookForTitle: 'Lo que buscamos',
+    lookFor: [
+      'Experiencia en venta telefónica o contacto B2B con clientes',
+      'Habilidad para generar confianza y una relación profesional rápidamente',
+      'Autodisciplina y determinación',
+      'Comunicación fluida',
+      'La experiencia en el sector no es un requisito',
+      'Motivación para construir una cartera de clientes estable',
+    ],
+    howTitle: 'Cómo solicitarlo',
+    howP: 'Envía un mensaje breve sobre tu experiencia. Te respondemos en un plazo de 2 días laborables.',
+    contactNow: 'Contacta con Magnora Marketing ahora',
+    faqs: [
+      { question: '¿Qué vendo?', answer: 'Reservas reuniones para un servicio de alfombras profesional – empresas que alquilan y dan servicio de alfombras a clientes empresariales para garantizar un entorno de trabajo limpio.' },
+      { question: '¿Quiénes son los clientes típicos?', answer: 'Oficinas, tiendas, restaurantes, hoteles y empresas de producción que desean un entorno de entrada profesional.' },
+      { question: '¿Es un producto recurrente?', answer: 'Sí – el servicio de alfombras suele ser por suscripción, lo que da a los clientes una buena estabilidad.' },
+      { question: '¿Cuál es mi horario de trabajo?', answer: 'Tú decides tus propias horas como freelance. Recomendamos llamar dentro del horario de oficina habitual.' },
+      { question: '¿Hay listas de llamadas listas desde el primer día?', answer: 'Sí – Magnora Marketing proporciona listas de llamadas y materiales de campaña para que puedas empezar de inmediato.' },
+      { question: '¿Puedo ver un ejemplo de guion?', answer: 'Sí – recibes un guion de ventas probado al incorporarte que puedes adaptar a tu estilo.' },
+      { question: '¿Qué ocurre con una venta exitosa o una reunión reservada?', answer: 'Registras el resultado en nuestro sistema, y la comisión se calcula automáticamente y se paga mensualmente.' },
+      { question: '¿Hay coaching continuo?', answer: 'Sí – los responsables de ventas de Magnora Marketing realizan sesiones de coaching periódicas y dan feedback sobre tu estilo de venta.' },
+      { question: '¿Puedo probar el puesto durante un periodo más corto?', answer: 'Sí – las primeras 2-4 semanas se consideran un periodo de prueba mutuo.' },
+      { question: '¿Cuál es el ingreso medio de un freelance activo?', answer: 'Depende de la actividad y del producto. Los freelance activos con buenos resultados pueden ganar un buen complemento o un ingreso completo.' },
+      { question: '¿Puedo trabajar para Magnora Marketing y para otras agencias?', answer: 'Como freelance eres libre de trabajar para otros, siempre que no haya conflicto de competencia con los clientes de Magnora Marketing.' },
+      { question: '¿Hay contratos por escrito?', answer: 'Sí – todas las colaboraciones se formalizan con un acuerdo de freelance claro que describe las condiciones, la comisión y las expectativas.' },
+      { question: '¿Qué ocurre si el producto no me convence?', answer: 'Podemos analizar si encajas mejor con otro producto de la cartera de Magnora Marketing.' },
+      { question: '¿Qué espera Magnora Marketing de mí como freelance?', answer: 'Esperamos autodisciplina, conducta profesional y comunicación continua sobre la actividad y los resultados.' },
+    ],
+    ctaTitle: '¿Listo para construir una cartera de ventas estable?',
+    ctaSubtitle: 'Contacta con Magnora Marketing y empieza con la venta de servicios de facility que dan una comisión estable y recurrente.',
+    sendApplicationShort: 'Enviar solicitud',
+    seeAllOpen: 'Ver todas las vacantes disponibles',
+  },
+};
 
 export default function MatServicePage() {
   return (
-    <>
-      <SEO
-        title="Freelance Sælger Måtte- og Rengøringsservice | Magnora Marketing"
-        description="Bliv freelance sælger af måtte- og rengøringsservice til erhverv hos Magnora Marketing. Arbejd hjemmefra med fleksible tider og stabil provision på abonnementsaftaler."
-        canonical="/jobs/matte-service"
-        keywords="freelance sælger rengøringsservice, måtteservice salg, rengøring erhverv sælger, Magnora Marketing rengøring stilling, facility service salg"
-      />
-
-      <HeroSection
-        title="Freelance Sælger – Måtte- og Rengøringsservice"
-        subtitle="Sælg en uundværlig serviceydelse til danske virksomheder. Måtte- og rengøringsservice er et abonnementsprodukt med lang kundelevetid og stabil løbende provision."
-        ctaText="Søg stillingen"
-        ctaLink="/kontakt"
-        secondaryCtaText="Se alle stillinger"
-        secondaryCtaLink="/freelance-telemarketing"
-        backgroundImage="https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-      />
-
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 max-w-5xl">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl font-bold mb-6">Hvad går jobbet ud på?</h2>
-              <p className="text-lg text-gray-600 mb-6">
-                Som freelance sælger inden for måtte- og rengøringsservice kontakter du virksomheder, butikker, klinikker og institutioner med et tilbud om professionel facility service. Det er en ydelse de fleste allerede bruger – og mange er åbne for et bedre tilbud.
-              </p>
-              <p className="text-lg text-gray-600 mb-8">
-                Magnora Marketing leverer leads og scripts. Du ringer, præsenterer løsningen og lukker aftalen eller booker et møde med facility manageren.
-              </p>
-              <ul className="space-y-3">
-                {[
-                  'Opsøgende salg til virksomheder og institutioner',
-                  'Kontakt til facility managers og indkøbsansvarlige',
-                  'Præsentation af service, priser og kvalitetsgarantier',
-                  'Booking af tilbudsbesøg og fremvisninger',
-                  'Opfølgning og opbygning af stabil kundeportefølje'
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <CheckCircle className="text-green-500 flex-shrink-0 mt-0.5" size={18} />
-                    <span className="text-gray-700">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="bg-teal-50 rounded-2xl p-8 border border-teal-100">
-              <h3 className="text-xl font-bold mb-6 text-teal-800">Stillingens nøglefakta</h3>
-              <div className="space-y-4">
-                {[
-                  { label: 'Ansættelsesform', value: 'Freelance / selvstændig' },
-                  { label: 'Arbejdssted', value: 'Hjemmefra – hele Danmark' },
-                  { label: 'Arbejdstid', value: 'Fleksibel – du bestemmer selv' },
-                  { label: 'Løn', value: 'Fast grundhonorar + provision' },
-                  { label: 'Produkt', value: 'Måtte- og rengøringsservice' },
-                  { label: 'Opstart', value: 'Hurtigst muligt' }
-                ].map((row, i) => (
-                  <div key={i} className="flex justify-between items-center py-2 border-b border-teal-100 last:border-0">
-                    <span className="text-gray-600 text-sm">{row.label}</span>
-                    <span className="font-semibold text-gray-900 text-sm">{row.value}</span>
-                  </div>
-                ))}
-              </div>
-              <div className="mt-6">
-                <Link to="/kontakt" className="w-full inline-flex items-center justify-center bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
-                  Send din ansøgning <ArrowRight size={16} className="ml-2" />
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4 max-w-5xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Derfor er facility service et stærkt salgsprodukt</h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[
-              { icon: <Shield size={36} className="text-teal-600" />, title: 'Stabilt og tilbagevendende', desc: 'Rengørings- og måtteservice er abonnementsbaseret. Når du lander en kunde, giver det provision måned efter måned.' },
-              { icon: <Users size={36} className="text-teal-600" />, title: 'Bredt marked', desc: 'Alle virksomheder med fysiske lokaler er potentielle kunder – butikker, kontorer, klinikker, lagre og institutioner.' },
-              { icon: <Star size={36} className="text-teal-600" />, title: 'Lav afvisningsrisiko', desc: 'Facility service er en saglig og professionel henvendelse der modtages positivt af indkøbsansvarlige og facility managers.' }
-            ].map((item, i) => (
-              <div key={i} className="bg-white rounded-xl p-6 shadow-sm text-center">
-                <div className="flex justify-center mb-4">{item.icon}</div>
-                <h3 className="font-semibold text-lg mb-2">{item.title}</h3>
-                <p className="text-gray-600 text-sm">{item.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 max-w-5xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Hvad du får hos Magnora Marketing</h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              { icon: <Home size={40} className="text-blue-600" />, title: 'Arbejd hjemmefra', desc: 'Ingen transport og ingen mødetider – du sælger fra dit eget hjem med fuld fleksibilitet.' },
-              { icon: <PiggyBank size={40} className="text-blue-600" />, title: 'Løbende provision', desc: 'Du tjener på nye salg og fortsætter med at modtage provision på dine eksisterende kunder.' },
-              { icon: <Clock size={40} className="text-blue-600" />, title: 'Fleksible tider', desc: 'Du bestemmer selv hvornår du ringer og hvor meget du vil sælge. Ideelt som biindtægt eller fuldtidsjob.' }
-            ].map((item, i) => (
-              <div key={i} className="text-center p-8 bg-gray-50 rounded-xl">
-                <div className="flex justify-center mb-4">{item.icon}</div>
-                <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
-                <p className="text-gray-600">{item.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div>
-              <h2 className="text-2xl font-bold mb-6">Det kigger vi efter</h2>
-              <ul className="space-y-3">
-                {[
-                  'Erfaring med telefonsalg eller B2B-kundekontakt',
-                  'God til at skabe tillid og professionel relation hurtigt',
-                  'Selvdisciplin og målbevidsthed',
-                  'Flydende dansk',
-                  'Brancheerfaring er ikke et krav',
-                  'Motivation for at opbygge en stabil kundeportefølje'
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <CheckCircle className="text-green-500 flex-shrink-0 mt-0.5" size={18} />
-                    <span className="text-gray-700">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <h2 className="text-2xl font-bold mb-6">Sådan søger du</h2>
-              <p className="text-gray-600 mb-6">Send en kort besked om din baggrund og erfaring. Vi vender tilbage inden for 2 hverdage.</p>
-              <Link to="/kontakt" className="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
-                Kontakt Magnora Marketing nu <ArrowRight size={16} className="ml-2" />
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <FAQSection faqs={[
-        { question: 'Hvad sælger jeg?', answer: 'Du booker møder for professionel måtteservice – firmaer der lejer og servicerer måtter til erhvervskunder som sikrer rent arbejdsmiljø.' },
-        { question: 'Hvem er de typiske kunder?', answer: 'Kontorer, butikker, restauranter, hoteller og produktionsvirksomheder der ønsker et professionelt indgangsmiljø.' },
-        { question: 'Er det et tilbagevendende produkt?', answer: 'Ja – måtteservice er typisk abonnementsbaseret, hvilket giver kunderne god stabilitet.' },
-        { question: 'Hvad er mine arbejdstider?', answer: 'Du bestemmer selv dine timer som freelancer. Vi anbefaler at ringe inden for normal kontortid.' },
-        { question: "Er der opkaldslister klar fra dag ét?", answer: "Ja – Magnora Marketing leverer opkaldslister og kampagnematerialer, så du kan starte med det samme." },
-        { question: "Kan jeg se et eksempel på et script?", answer: "Ja – du modtager et gennemprøvet salgsskript ved opstart som du kan tilpasse din stil." },
-        { question: "Hvad sker der ved et succes-salg eller booket møde?", answer: "Du registrerer resultatet i vores system, og provisionen beregnes automatisk og udbetales månedligt." },
-        { question: "Er der løbende coaching?", answer: "Ja – Magnora Marketing's salgsledere holder regelmæssige coaching-sessioner og giver feedback på din salgsstil." },
-        { question: "Kan jeg prøve stillingen i en kortere periode?", answer: "Ja – de første 2-4 uger betragtes som en gensidig prøveperiode." },
-        { question: "Hvad er den gennemsnitlige indkomst for en aktiv freelancer?", answer: "Det afhænger af aktivitet og produkt. Aktive freelancere med gode resultater kan tjene et solidt supplement eller en fuld indkomst." },
-        { question: "Kan jeg arbejde for Magnora Marketing og for andre bureauer?", answer: "Som freelancer er du fri til at arbejde for andre, så længe der ikke er konkurrencekonflikt med Magnora Marketing's kunder." },
-        { question: "Er der skriftlige kontrakter?", answer: "Ja – alle samarbejder formaliseres med en klar freelance-aftale der beskriver vilkår, provision og forventninger." },
-        { question: "Hvad sker der, hvis jeg ikke trives med produktet?", answer: "Vi kan diskutere om du er bedre egnet til et andet produkt i Magnora Marketing's portfolio." },
-        { question: "Hvad er Magnora Marketing's forventninger til mig som freelancer?", answer: "Vi forventer selvdisciplin, professionel optræden og løbende kommunikation om aktivitet og resultater." },
-      ]} />
-
-      <section className="bg-blue-600 text-white py-16">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6">Klar til at bygge en stabil salgportefølje?</h2>
-          <p className="text-xl mb-8 max-w-3xl mx-auto">Kontakt Magnora Marketing og kom i gang med facility service-salg der giver stabil og tilbagevendende provision.</p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/kontakt" className="inline-flex items-center bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-              Send ansøgning <ArrowRight className="ml-2" size={18} />
-            </Link>
-            <Link to="/freelance-telemarketing" className="inline-flex items-center border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
-              Se alle ledige stillinger
-            </Link>
-          </div>
-        </div>
-      </section>
-    </>
+    <JobPageLayout
+      content={content}
+      canonical="/jobs/matte-service"
+      keywords="freelance sælger rengøringsservice, måtteservice salg, rengøring erhverv sælger, Magnora Marketing rengøring stilling, facility service salg"
+      backgroundImage="https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      accent="teal"
+      whyIcons={[
+        <Shield size={36} className="text-teal-600" />,
+        <Users size={36} className="text-teal-600" />,
+        <Star size={36} className="text-teal-600" />,
+      ]}
+    />
   );
 }
