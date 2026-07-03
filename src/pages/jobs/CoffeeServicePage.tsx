@@ -1,188 +1,240 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { CheckCircle, ArrowRight, Clock, PiggyBank, Home, Coffee, Users, Star } from 'lucide-react';
-import HeroSection from '../../components/HeroSection';
-import SEO from '../../components/SEO';
-import FAQSection from '../../components/FAQSection';
+import { Coffee, Users, Star } from 'lucide-react';
+import JobPageLayout, { type JobPageContent } from './JobPageLayout';
+import type { Lang } from '../../i18n/usePageContent';
+
+const content: Record<Lang, JobPageContent> = {
+  da: {
+    seoTitle: 'Freelance Sælger Kaffeservice til Erhverv | Magnora Marketing',
+    seoDesc: 'Bliv freelance sælger af kaffeservice og kaffemaskiner til erhverv hos Magnora Marketing. Arbejd hjemmefra og sælg et produkt alle kontoransatte elsker.',
+    heroTitle: 'Freelance Sælger – Kaffeservice til Erhverv',
+    heroSubtitle: 'Sælg noget alle kontoransatte sætter pris på: god kaffe. Kaffeservice til erhverv er et let salg med høj kundretention – og du kan gøre det hjemmefra med attraktiv provision.',
+    applyCta: 'Søg stillingen',
+    allJobs: 'Se alle stillinger',
+    aboutTitle: 'Hvad går jobbet ud på?',
+    aboutP1: 'Som freelance sælger af kaffeservice kontakter du virksomheder, kontorer, klinikker og institutioner med en løsning alle ansatte vil elske: professionel kaffeservice direkte på arbejdspladsen. Du sælger kaffemaskiner, abonnementer og forbrugsvarer i ét samlet tilbud.',
+    aboutP2: 'Kaffeservice er et let salg – kunderne er loyale, og abonnementerne giver løbende provision. Magnora Marketing leverer scripts og leads, du tager kontakten og lukker aftalen.',
+    tasks: [
+      'Opsøgende salg til virksomheder og institutioner',
+      'Præsentation af kaffeservice-pakker og priser',
+      'Booking af demonstrationer og tilbudsmøder',
+      'Opfølgning og lukke abonnementsaftaler',
+      'Opbygning af fast kundeportefølje med løbende provision',
+    ],
+    factsTitle: 'Stillingens nøglefakta',
+    facts: [
+      { label: 'Ansættelsesform', value: 'Freelance / selvstændig' },
+      { label: 'Arbejdssted', value: 'Hjemmefra – hele Danmark' },
+      { label: 'Arbejdstid', value: 'Fleksibel – du bestemmer selv' },
+      { label: 'Løn', value: 'Fast grundhonorar + provision' },
+      { label: 'Produkt', value: 'Kaffeservice & kaffemaskiner til erhverv' },
+      { label: 'Opstart', value: 'Hurtigst muligt' },
+    ],
+    sendApplication: 'Send din ansøgning',
+    whyTitle: 'Hvorfor kaffeservice sælger sig selv',
+    why: [
+      { title: 'Et produkt alle vil have', desc: 'God kaffe på arbejdspladsen er ikke luksus – det er forventet. Næsten alle virksomheder er potentielle kunder.' },
+      { title: 'Lang kundelevetid', desc: 'Når en virksomhed siger ja til kaffeservice, beholder de det i årevis. Det giver dig stabil løbende provision.' },
+      { title: 'Nem afslutning', desc: 'Modtagelse er høj og afvisningsgraden lav – kaffe er et positivt emne der er nemt at tale om med receptionen.' },
+    ],
+    getTitle: 'Hvad du får hos Magnora Marketing',
+    get: [
+      { title: 'Arbejd hjemmefra', desc: 'Sælg fra sofaen, kontoret eller haven. Alt hvad du behøver er din telefon og lidt drive.' },
+      { title: 'Løbende provision', desc: 'Provision på nye aftaler plus gentagen provision på abonnementer. Din kundeportefølje giver passiv indkomst.' },
+      { title: 'Fleksible tider', desc: 'Kontorer er åbne i dagtimerne – men du bestemmer selv hvornår du ringer og hvor mange aftaler du vil lave.' },
+    ],
+    lookForTitle: 'Det kigger vi efter',
+    lookFor: [
+      'Erfaring med telefonsalg eller B2B-kundekontakt',
+      'God til at skabe rapport hurtigt over telefon',
+      'Selvstændig og resultatorienteret',
+      'Flydende dansk i skrift og tale',
+      'Ingen brancheerfaring nødvendig – vi oplærer dig',
+      'Passion for gode kundeoplevelser',
+    ],
+    howTitle: 'Sådan søger du',
+    howP: 'Skriv til os og fortæl kort om din baggrund. Ingen formel ansøgning kræves – vi vender tilbage inden for 2 hverdage.',
+    contactNow: 'Kontakt Magnora Marketing nu',
+    faqs: [
+      { question: 'Hvad sælger jeg præcist?', answer: 'Du booker møder for professionelle kaffeserviceløsninger til virksomheder – kaffemaskiner, service og forbrugsvarer til kontorer og erhvervslokaler.' },
+      { question: 'Er det et let produkt at sælge?', answer: 'Kaffe er et produkt næsten alle virksomheder bruger. Efterspørgslen er høj og samtalerne er typisk positive.' },
+      { question: 'Hvem ringer jeg til?', answer: 'Du kontakter facility managers, indkøbsansvarlige og kontoradministratorer i virksomheder.' },
+      { question: 'Hvad er opkaldsomfanget per dag?', answer: 'Du bestemmer selv dit tempo, men et typisk udgangspunkt er 30-50 opkald om dagen.' },
+      { question: 'Er der opkaldslister klar fra dag ét?', answer: 'Ja – Magnora Marketing leverer opkaldslister og kampagnematerialer, så du kan starte med det samme.' },
+      { question: 'Kan jeg se et eksempel på et script?', answer: 'Ja – du modtager et gennemprøvet salgsskript ved opstart som du kan tilpasse din stil.' },
+      { question: 'Hvad sker der ved et succes-salg eller booket møde?', answer: 'Du registrerer resultatet i vores system, og provisionen beregnes automatisk og udbetales månedligt.' },
+      { question: 'Er der løbende coaching?', answer: 'Ja – Magnora Marketing\'s salgsledere holder regelmæssige coaching-sessioner og giver feedback på din salgsstil.' },
+      { question: 'Kan jeg prøve stillingen i en kortere periode?', answer: 'Ja – de første 2-4 uger betragtes som en gensidig prøveperiode.' },
+      { question: 'Hvad er den gennemsnitlige indkomst for en aktiv freelancer?', answer: 'Det afhænger af aktivitet og produkt. Aktive freelancere med gode resultater kan tjene et solidt supplement eller en fuld indkomst.' },
+      { question: 'Kan jeg arbejde for Magnora Marketing og for andre bureauer?', answer: 'Som freelancer er du fri til at arbejde for andre, så længe der ikke er konkurrencekonflikt med Magnora Marketing\'s kunder.' },
+      { question: 'Er der skriftlige kontrakter?', answer: 'Ja – alle samarbejder formaliseres med en klar freelance-aftale der beskriver vilkår, provision og forventninger.' },
+      { question: 'Hvad sker der, hvis jeg ikke trives med produktet?', answer: 'Vi kan diskutere om du er bedre egnet til et andet produkt i Magnora Marketing\'s portfolio.' },
+      { question: 'Hvad er Magnora Marketing\'s forventninger til mig som freelancer?', answer: 'Vi forventer selvdisciplin, professionel optræden og løbende kommunikation om aktivitet og resultater.' },
+    ],
+    ctaTitle: 'Klar til at sælge Danmarks yndlingsdrik til erhverv?',
+    ctaSubtitle: 'Kontakt Magnora Marketing og start en karriere med et produkt der altid er velkomment.',
+    sendApplicationShort: 'Send ansøgning',
+    seeAllOpen: 'Se alle ledige stillinger',
+  },
+  en: {
+    seoTitle: 'Freelance Sales Rep Coffee Service for Business | Magnora Marketing',
+    seoDesc: 'Become a freelance sales rep for coffee service and coffee machines for business at Magnora Marketing. Work from home and sell a product every office employee loves.',
+    heroTitle: 'Freelance Sales Rep – Coffee Service for Business',
+    heroSubtitle: 'Sell something every office employee appreciates: good coffee. Coffee service for business is an easy sale with high customer retention – and you can do it from home with attractive commission.',
+    applyCta: 'Apply for the position',
+    allJobs: 'See all positions',
+    aboutTitle: 'What does the job involve?',
+    aboutP1: 'As a freelance sales rep for coffee service, you contact companies, offices, clinics and institutions with a solution every employee will love: professional coffee service right at the workplace. You sell coffee machines, subscriptions and consumables in one combined offer.',
+    aboutP2: 'Coffee service is an easy sale – customers are loyal, and the subscriptions provide recurring commission. Magnora Marketing provides scripts and leads, you make the contact and close the deal.',
+    tasks: [
+      'Outbound sales to companies and institutions',
+      'Presenting coffee service packages and prices',
+      'Booking demonstrations and quote meetings',
+      'Following up and closing subscription agreements',
+      'Building a steady customer portfolio with recurring commission',
+    ],
+    factsTitle: 'Key facts about the position',
+    facts: [
+      { label: 'Employment type', value: 'Freelance / self-employed' },
+      { label: 'Location', value: 'From home – all of Denmark' },
+      { label: 'Working hours', value: 'Flexible – you decide' },
+      { label: 'Pay', value: 'Fixed base fee + commission' },
+      { label: 'Product', value: 'Coffee service & machines for business' },
+      { label: 'Start', value: 'As soon as possible' },
+    ],
+    sendApplication: 'Send your application',
+    whyTitle: 'Why coffee service sells itself',
+    why: [
+      { title: 'A product everyone wants', desc: 'Good coffee at the workplace is not a luxury – it is expected. Almost every company is a potential customer.' },
+      { title: 'Long customer lifetime', desc: 'When a company says yes to coffee service, they keep it for years. That gives you stable recurring commission.' },
+      { title: 'Easy to close', desc: 'Reception is high and rejection rates are low – coffee is a positive topic that is easy to discuss with the front desk.' },
+    ],
+    getTitle: 'What you get at Magnora Marketing',
+    get: [
+      { title: 'Work from home', desc: 'Sell from the sofa, the office or the garden. All you need is your phone and a bit of drive.' },
+      { title: 'Recurring commission', desc: 'Commission on new deals plus repeat commission on subscriptions. Your customer portfolio provides passive income.' },
+      { title: 'Flexible hours', desc: 'Offices are open during the day – but you decide when you call and how many deals you want to make.' },
+    ],
+    lookForTitle: 'What we look for',
+    lookFor: [
+      'Experience with phone sales or B2B customer contact',
+      'Good at building rapport quickly over the phone',
+      'Independent and results-oriented',
+      'Fluent communication in writing and speech',
+      'No industry experience needed – we train you',
+      'Passion for good customer experiences',
+    ],
+    howTitle: 'How to apply',
+    howP: 'Write to us and tell us briefly about your background. No formal application required – we get back to you within 2 business days.',
+    contactNow: 'Contact Magnora Marketing now',
+    faqs: [
+      { question: 'What exactly do I sell?', answer: 'You book meetings for professional coffee service solutions for companies – coffee machines, service and consumables for offices and business premises.' },
+      { question: 'Is it an easy product to sell?', answer: 'Coffee is a product almost every company uses. Demand is high and conversations are typically positive.' },
+      { question: 'Who do I call?', answer: 'You contact facility managers, purchasing managers and office administrators at companies.' },
+      { question: 'What is the call volume per day?', answer: 'You set your own pace, but a typical starting point is 30-50 calls a day.' },
+      { question: 'Are call lists ready from day one?', answer: 'Yes – Magnora Marketing provides call lists and campaign materials so you can start right away.' },
+      { question: 'Can I see an example of a script?', answer: 'Yes – you receive a proven sales script at onboarding that you can adapt to your style.' },
+      { question: 'What happens on a successful sale or booked meeting?', answer: 'You register the result in our system, and the commission is calculated automatically and paid monthly.' },
+      { question: 'Is there ongoing coaching?', answer: 'Yes – Magnora Marketing\'s sales managers hold regular coaching sessions and give feedback on your sales style.' },
+      { question: 'Can I try the position for a shorter period?', answer: 'Yes – the first 2-4 weeks are considered a mutual trial period.' },
+      { question: 'What is the average income for an active freelancer?', answer: 'It depends on activity and product. Active freelancers with good results can earn a solid supplement or a full income.' },
+      { question: 'Can I work for Magnora Marketing and for other agencies?', answer: 'As a freelancer you are free to work for others, as long as there is no competitive conflict with Magnora Marketing\'s clients.' },
+      { question: 'Are there written contracts?', answer: 'Yes – all collaborations are formalised with a clear freelance agreement describing terms, commission and expectations.' },
+      { question: 'What happens if I don\'t enjoy the product?', answer: 'We can discuss whether you are better suited to another product in Magnora Marketing\'s portfolio.' },
+      { question: 'What are Magnora Marketing\'s expectations of me as a freelancer?', answer: 'We expect self-discipline, professional conduct and ongoing communication about activity and results.' },
+    ],
+    ctaTitle: 'Ready to sell everyone\'s favourite drink to business?',
+    ctaSubtitle: 'Contact Magnora Marketing and start a career with a product that is always welcome.',
+    sendApplicationShort: 'Send application',
+    seeAllOpen: 'See all open positions',
+  },
+  es: {
+    seoTitle: 'Vendedor Freelance Servicio de Café para Empresas | Magnora Marketing',
+    seoDesc: 'Conviértete en vendedor freelance de servicio de café y máquinas de café para empresas en Magnora Marketing. Trabaja desde casa y vende un producto que encanta a todos los empleados de oficina.',
+    heroTitle: 'Vendedor Freelance – Servicio de Café para Empresas',
+    heroSubtitle: 'Vende algo que todos los empleados de oficina valoran: buen café. El servicio de café para empresas es una venta fácil con alta retención de clientes – y puedes hacerlo desde casa con una comisión atractiva.',
+    applyCta: 'Solicitar el puesto',
+    allJobs: 'Ver todas las vacantes',
+    aboutTitle: '¿En qué consiste el trabajo?',
+    aboutP1: 'Como vendedor freelance de servicio de café, contactas con empresas, oficinas, clínicas e instituciones con una solución que encantará a todos los empleados: servicio de café profesional directamente en el lugar de trabajo. Vendes máquinas de café, suscripciones y consumibles en una oferta combinada.',
+    aboutP2: 'El servicio de café es una venta fácil – los clientes son fieles y las suscripciones generan comisión recurrente. Magnora Marketing proporciona los guiones y los leads, tú haces el contacto y cierras el acuerdo.',
+    tasks: [
+      'Venta proactiva a empresas e instituciones',
+      'Presentación de paquetes de servicio de café y precios',
+      'Reserva de demostraciones y reuniones de oferta',
+      'Seguimiento y cierre de acuerdos de suscripción',
+      'Creación de una cartera de clientes estable con comisión recurrente',
+    ],
+    factsTitle: 'Datos clave del puesto',
+    facts: [
+      { label: 'Tipo de contrato', value: 'Freelance / autónomo' },
+      { label: 'Lugar de trabajo', value: 'Desde casa – toda Dinamarca' },
+      { label: 'Horario', value: 'Flexible – tú decides' },
+      { label: 'Retribución', value: 'Base fija + comisión' },
+      { label: 'Producto', value: 'Servicio de café y máquinas para empresas' },
+      { label: 'Inicio', value: 'Lo antes posible' },
+    ],
+    sendApplication: 'Envía tu solicitud',
+    whyTitle: 'Por qué el servicio de café se vende solo',
+    why: [
+      { title: 'Un producto que todos quieren', desc: 'Un buen café en el lugar de trabajo no es un lujo – se espera. Casi todas las empresas son clientes potenciales.' },
+      { title: 'Larga vida del cliente', desc: 'Cuando una empresa dice sí al servicio de café, lo mantiene durante años. Eso te da una comisión recurrente estable.' },
+      { title: 'Cierre sencillo', desc: 'La receptividad es alta y la tasa de rechazo baja – el café es un tema positivo y fácil de tratar con recepción.' },
+    ],
+    getTitle: 'Lo que obtienes en Magnora Marketing',
+    get: [
+      { title: 'Trabaja desde casa', desc: 'Vende desde el sofá, la oficina o el jardín. Todo lo que necesitas es tu teléfono y un poco de empuje.' },
+      { title: 'Comisión recurrente', desc: 'Comisión por nuevos acuerdos más comisión repetida por suscripciones. Tu cartera de clientes genera ingresos pasivos.' },
+      { title: 'Horario flexible', desc: 'Las oficinas están abiertas durante el día – pero tú decides cuándo llamas y cuántos acuerdos quieres cerrar.' },
+    ],
+    lookForTitle: 'Lo que buscamos',
+    lookFor: [
+      'Experiencia en venta telefónica o contacto B2B con clientes',
+      'Habilidad para crear rapport rápidamente por teléfono',
+      'Autónomo y orientado a resultados',
+      'Comunicación fluida por escrito y hablada',
+      'No se necesita experiencia en el sector – te formamos',
+      'Pasión por las buenas experiencias de cliente',
+    ],
+    howTitle: 'Cómo solicitarlo',
+    howP: 'Escríbenos y cuéntanos brevemente sobre tu experiencia. No se requiere solicitud formal – te respondemos en un plazo de 2 días laborables.',
+    contactNow: 'Contacta con Magnora Marketing ahora',
+    faqs: [
+      { question: '¿Qué vendo exactamente?', answer: 'Reservas reuniones para soluciones profesionales de servicio de café para empresas – máquinas de café, servicio y consumibles para oficinas y locales comerciales.' },
+      { question: '¿Es un producto fácil de vender?', answer: 'El café es un producto que casi todas las empresas usan. La demanda es alta y las conversaciones suelen ser positivas.' },
+      { question: '¿A quién llamo?', answer: 'Contactas con facility managers, responsables de compras y administradores de oficina en las empresas.' },
+      { question: '¿Cuál es el volumen de llamadas al día?', answer: 'Tú marcas tu propio ritmo, pero un punto de partida típico es de 30-50 llamadas al día.' },
+      { question: '¿Hay listas de llamadas listas desde el primer día?', answer: 'Sí – Magnora Marketing proporciona listas de llamadas y materiales de campaña para que puedas empezar de inmediato.' },
+      { question: '¿Puedo ver un ejemplo de guion?', answer: 'Sí – recibes un guion de ventas probado al incorporarte que puedes adaptar a tu estilo.' },
+      { question: '¿Qué ocurre con una venta exitosa o una reunión reservada?', answer: 'Registras el resultado en nuestro sistema, y la comisión se calcula automáticamente y se paga mensualmente.' },
+      { question: '¿Hay coaching continuo?', answer: 'Sí – los responsables de ventas de Magnora Marketing realizan sesiones de coaching periódicas y dan feedback sobre tu estilo de venta.' },
+      { question: '¿Puedo probar el puesto durante un periodo más corto?', answer: 'Sí – las primeras 2-4 semanas se consideran un periodo de prueba mutuo.' },
+      { question: '¿Cuál es el ingreso medio de un freelance activo?', answer: 'Depende de la actividad y del producto. Los freelance activos con buenos resultados pueden ganar un buen complemento o un ingreso completo.' },
+      { question: '¿Puedo trabajar para Magnora Marketing y para otras agencias?', answer: 'Como freelance eres libre de trabajar para otros, siempre que no haya conflicto de competencia con los clientes de Magnora Marketing.' },
+      { question: '¿Hay contratos por escrito?', answer: 'Sí – todas las colaboraciones se formalizan con un acuerdo de freelance claro que describe las condiciones, la comisión y las expectativas.' },
+      { question: '¿Qué ocurre si el producto no me convence?', answer: 'Podemos analizar si encajas mejor con otro producto de la cartera de Magnora Marketing.' },
+      { question: '¿Qué espera Magnora Marketing de mí como freelance?', answer: 'Esperamos autodisciplina, conducta profesional y comunicación continua sobre la actividad y los resultados.' },
+    ],
+    ctaTitle: '¿Listo para vender la bebida favorita de todos a las empresas?',
+    ctaSubtitle: 'Contacta con Magnora Marketing y empieza una carrera con un producto que siempre es bienvenido.',
+    sendApplicationShort: 'Enviar solicitud',
+    seeAllOpen: 'Ver todas las vacantes disponibles',
+  },
+};
 
 export default function CoffeeServicePage() {
   return (
-    <>
-      <SEO
-        title="Freelance Sælger Kaffeservice til Erhverv | Magnora Marketing"
-        description="Bliv freelance sælger af kaffeservice og kaffemaskiner til erhverv hos Magnora Marketing. Arbejd hjemmefra og sælg et produkt alle kontoransatte elsker."
-        canonical="/jobs/kaffe-service"
-        keywords="freelance sælger kaffeservice, kaffemaskin salg erhverv, kaffe B2B sælger, Magnora Marketing kaffe stilling, kaffesalg job"
-      />
-
-      <HeroSection
-        title="Freelance Sælger – Kaffeservice til Erhverv"
-        subtitle="Sælg noget alle kontoransatte sætter pris på: god kaffe. Kaffeservice til erhverv er et let salg med høj kundretention – og du kan gøre det hjemmefra med attraktiv provision."
-        ctaText="Søg stillingen"
-        ctaLink="/kontakt"
-        secondaryCtaText="Se alle stillinger"
-        secondaryCtaLink="/freelance-telemarketing"
-        backgroundImage="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-      />
-
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 max-w-5xl">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl font-bold mb-6">Hvad går jobbet ud på?</h2>
-              <p className="text-lg text-gray-600 mb-6">
-                Som freelance sælger af kaffeservice kontakter du virksomheder, kontorer, klinikker og institutioner med en løsning alle ansatte vil elske: professionel kaffeservice direkte på arbejdspladsen. Du sælger kaffemaskiner, abonnementer og forbrugsvarer i ét samlet tilbud.
-              </p>
-              <p className="text-lg text-gray-600 mb-8">
-                Kaffeservice er et let salg – kunderne er loyale, og abonnementerne giver løbende provision. Magnora Marketing leverer scripts og leads, du tager kontakten og lukker aftalen.
-              </p>
-              <ul className="space-y-3">
-                {[
-                  'Opsøgende salg til virksomheder og institutioner',
-                  'Præsentation af kaffeservice-pakker og priser',
-                  'Booking af demonstrationer og tilbudsmøder',
-                  'Opfølgning og lukke abonnementsaftaler',
-                  'Opbygning af fast kundeportefølje med løbende provision'
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <CheckCircle className="text-green-500 flex-shrink-0 mt-0.5" size={18} />
-                    <span className="text-gray-700">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="bg-amber-50 rounded-2xl p-8 border border-amber-100">
-              <h3 className="text-xl font-bold mb-6 text-amber-800">Stillingens nøglefakta</h3>
-              <div className="space-y-4">
-                {[
-                  { label: 'Ansættelsesform', value: 'Freelance / selvstændig' },
-                  { label: 'Arbejdssted', value: 'Hjemmefra – hele Danmark' },
-                  { label: 'Arbejdstid', value: 'Fleksibel – du bestemmer selv' },
-                  { label: 'Løn', value: 'Fast grundhonorar + provision' },
-                  { label: 'Produkt', value: 'Kaffeservice & kaffemaskiner til erhverv' },
-                  { label: 'Opstart', value: 'Hurtigst muligt' }
-                ].map((row, i) => (
-                  <div key={i} className="flex justify-between items-center py-2 border-b border-amber-100 last:border-0">
-                    <span className="text-gray-600 text-sm">{row.label}</span>
-                    <span className="font-semibold text-gray-900 text-sm">{row.value}</span>
-                  </div>
-                ))}
-              </div>
-              <div className="mt-6">
-                <Link to="/kontakt" className="w-full inline-flex items-center justify-center bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
-                  Send din ansøgning <ArrowRight size={16} className="ml-2" />
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4 max-w-5xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Hvorfor kaffeservice sælger sig selv</h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[
-              { icon: <Coffee size={36} className="text-amber-600" />, title: 'Et produkt alle vil have', desc: 'God kaffe på arbejdspladsen er ikke luksus – det er forventet. Næsten alle virksomheder er potentielle kunder.' },
-              { icon: <Users size={36} className="text-amber-600" />, title: 'Lang kundelevetid', desc: 'Når en virksomhed siger ja til kaffeservice, beholder de det i årevis. Det giver dig stabil løbende provision.' },
-              { icon: <Star size={36} className="text-amber-600" />, title: 'Nem afslutning', desc: 'Modtagelse er høj og afvisningsgraden lav – kaffe er et positivt emne der er nemt at tale om med receptionen.' }
-            ].map((item, i) => (
-              <div key={i} className="bg-white rounded-xl p-6 shadow-sm text-center">
-                <div className="flex justify-center mb-4">{item.icon}</div>
-                <h3 className="font-semibold text-lg mb-2">{item.title}</h3>
-                <p className="text-gray-600 text-sm">{item.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 max-w-5xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Hvad du får hos Magnora Marketing</h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              { icon: <Home size={40} className="text-blue-600" />, title: 'Arbejd hjemmefra', desc: 'Sælg fra sofaen, kontoret eller haven. Alt hvad du behøver er din telefon og lidt drive.' },
-              { icon: <PiggyBank size={40} className="text-blue-600" />, title: 'Løbende provision', desc: 'Provision på nye aftaler plus gentagen provision på abonnementer. Din kundeportefølje giver passiv indkomst.' },
-              { icon: <Clock size={40} className="text-blue-600" />, title: 'Fleksible tider', desc: 'Kontorer er åbne i dagtimerne – men du bestemmer selv hvornår du ringer og hvor mange aftaler du vil lave.' }
-            ].map((item, i) => (
-              <div key={i} className="text-center p-8 bg-gray-50 rounded-xl">
-                <div className="flex justify-center mb-4">{item.icon}</div>
-                <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
-                <p className="text-gray-600">{item.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div>
-              <h2 className="text-2xl font-bold mb-6">Det kigger vi efter</h2>
-              <ul className="space-y-3">
-                {[
-                  'Erfaring med telefonsalg eller B2B-kundekontakt',
-                  'God til at skabe rapport hurtigt over telefon',
-                  'Selvstændig og resultatorienteret',
-                  'Flydende dansk i skrift og tale',
-                  'Ingen brancheerfaring nødvendig – vi oplærer dig',
-                  'Passion for gode kundeoplevelser'
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <CheckCircle className="text-green-500 flex-shrink-0 mt-0.5" size={18} />
-                    <span className="text-gray-700">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <h2 className="text-2xl font-bold mb-6">Sådan søger du</h2>
-              <p className="text-gray-600 mb-6">Skriv til os og fortæl kort om din baggrund. Ingen formel ansøgning kræves – vi vender tilbage inden for 2 hverdage.</p>
-              <Link to="/kontakt" className="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
-                Kontakt Magnora Marketing nu <ArrowRight size={16} className="ml-2" />
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <FAQSection faqs={[
-        { question: 'Hvad sælger jeg præcist?', answer: 'Du booker møder for professionelle kaffeserviceløsninger til virksomheder – kaffemaskiner, service og forbrugsvarer til kontorer og erhvervslokaler.' },
-        { question: 'Er det et let produkt at sælge?', answer: 'Kaffe er et produkt næsten alle virksomheder bruger. Efterspørgslen er høj og samtalerne er typisk positive.' },
-        { question: 'Hvem ringer jeg til?', answer: 'Du kontakter facility managers, indkøbsansvarlige og kontoradministratorer i virksomheder.' },
-        { question: 'Hvad er opkaldsomfanget per dag?', answer: 'Du bestemmer selv dit tempo, men et typisk udgangspunkt er 30-50 opkald om dagen.' },
-        { question: "Er der opkaldslister klar fra dag ét?", answer: "Ja – Magnora Marketing leverer opkaldslister og kampagnematerialer, så du kan starte med det samme." },
-        { question: "Kan jeg se et eksempel på et script?", answer: "Ja – du modtager et gennemprøvet salgsskript ved opstart som du kan tilpasse din stil." },
-        { question: "Hvad sker der ved et succes-salg eller booket møde?", answer: "Du registrerer resultatet i vores system, og provisionen beregnes automatisk og udbetales månedligt." },
-        { question: "Er der løbende coaching?", answer: "Ja – Magnora Marketing's salgsledere holder regelmæssige coaching-sessioner og giver feedback på din salgsstil." },
-        { question: "Kan jeg prøve stillingen i en kortere periode?", answer: "Ja – de første 2-4 uger betragtes som en gensidig prøveperiode." },
-        { question: "Hvad er den gennemsnitlige indkomst for en aktiv freelancer?", answer: "Det afhænger af aktivitet og produkt. Aktive freelancere med gode resultater kan tjene et solidt supplement eller en fuld indkomst." },
-        { question: "Kan jeg arbejde for Magnora Marketing og for andre bureauer?", answer: "Som freelancer er du fri til at arbejde for andre, så længe der ikke er konkurrencekonflikt med Magnora Marketing's kunder." },
-        { question: "Er der skriftlige kontrakter?", answer: "Ja – alle samarbejder formaliseres med en klar freelance-aftale der beskriver vilkår, provision og forventninger." },
-        { question: "Hvad sker der, hvis jeg ikke trives med produktet?", answer: "Vi kan diskutere om du er bedre egnet til et andet produkt i Magnora Marketing's portfolio." },
-        { question: "Hvad er Magnora Marketing's forventninger til mig som freelancer?", answer: "Vi forventer selvdisciplin, professionel optræden og løbende kommunikation om aktivitet og resultater." },
-      ]} />
-
-      <section className="bg-blue-600 text-white py-16">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6">Klar til at sælge Danmarks yndlingsdrik til erhverv?</h2>
-          <p className="text-xl mb-8 max-w-3xl mx-auto">Kontakt Magnora Marketing og start en karriere med et produkt der altid er velkomment.</p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/kontakt" className="inline-flex items-center bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-              Send ansøgning <ArrowRight className="ml-2" size={18} />
-            </Link>
-            <Link to="/freelance-telemarketing" className="inline-flex items-center border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
-              Se alle ledige stillinger
-            </Link>
-          </div>
-        </div>
-      </section>
-    </>
+    <JobPageLayout
+      content={content}
+      canonical="/jobs/kaffe-service"
+      keywords="freelance sælger kaffeservice, kaffemaskin salg erhverv, kaffe B2B sælger, Magnora Marketing kaffe stilling, kaffesalg job"
+      backgroundImage="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      accent="amber"
+      whyIcons={[
+        <Coffee size={36} className="text-amber-600" />,
+        <Users size={36} className="text-amber-600" />,
+        <Star size={36} className="text-amber-600" />,
+      ]}
+    />
   );
 }
