@@ -2,11 +2,12 @@ import React, { useState, useEffect, useRef } from 'react';
 import { NavLink, Link, useLocation } from 'react-router-dom';
 import { Phone, Menu, X, ChevronDown } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import { jobListings } from '../data/jobListings';
+import { useJobListings } from '../data/jobListings';
 import LanguageSwitcher from './LanguageSwitcher';
 
 const Navbar: React.FC = () => {
   const { t } = useTranslation();
+  const jobListings = useJobListings();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isJobsDropdownOpen, setIsJobsDropdownOpen] = useState(false);

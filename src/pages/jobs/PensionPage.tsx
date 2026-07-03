@@ -4,23 +4,244 @@ import { CheckCircle, ArrowRight, Clock, PiggyBank, Home, Shield, TrendingUp, Us
 import HeroSection from '../../components/HeroSection';
 import SEO from '../../components/SEO';
 import FAQSection from '../../components/FAQSection';
+import { usePageContent } from '../../i18n/usePageContent';
+
+const content = {
+  da: {
+    seoTitle: 'Freelance Sælger Pensionsrådgivning | Magnora Marketing',
+    seoDesc: 'Bliv freelance sælger inden for pensionsrådgivning hos Magnora Marketing. Hjælp private og erhvervskunder med pensionsplanlægning – hjemmefra med god provision.',
+    heroTitle: 'Freelance Sælger – Pensionsrådgivning',
+    heroSubtitle: 'Hjælp danskere med at sikre deres fremtid. Pensionsrådgivning er et tillidsbaseret produkt med høj værdi for kunden og attraktiv provision for dig.',
+    applyCta: 'Søg stillingen',
+    allJobs: 'Se alle stillinger',
+    aboutTitle: 'Hvad går jobbet ud på?',
+    aboutP1: 'Som freelance sælger inden for pensionsrådgivning kontakter du private og erhvervskunder med tilbud om en gennemgang af deres pensionsopsparing. Mange danskere har ikke styr på deres pension – og er taknemlige for hjælpen.',
+    aboutP2: 'Du behøver ikke selv at yde rådgivningen. Din opgave er at skabe interesse og booke møder med vores pensionsrådgivere. Magnora Marketing leverer scripts og leads, du tager kontakten.',
+    tasks: [
+      'Opsøgende kontakt til private og erhvervskunder',
+      'Booking af pensionsgennemgange og rådgivningsmøder',
+      'Forklaring af fordele ved en uforpligtende pensionsgennemgang',
+      'Opfølgning på interesserede emner',
+      'Samarbejde med Magnora Marketing\'s pensionsrådgiverteam',
+    ],
+    factsTitle: 'Stillingens nøglefakta',
+    facts: [
+      { label: 'Ansættelsesform', value: 'Freelance / selvstændig' },
+      { label: 'Arbejdssted', value: 'Hjemmefra – hele Danmark' },
+      { label: 'Arbejdstid', value: 'Fleksibel – du bestemmer selv' },
+      { label: 'Løn', value: 'Fast grundhonorar + provision' },
+      { label: 'Produkt', value: 'Pensionsrådgivning (privat og erhverv)' },
+      { label: 'Opstart', value: 'Hurtigst muligt' },
+    ],
+    sendApplication: 'Send din ansøgning',
+    whyTitle: 'Hvorfor pensionssalg er meningsfyldt og lukrativt',
+    why: [
+      { title: 'Stor efterspørgsel', desc: 'Mange danskere har aldrig fået gennemgået deres pension. En gratis gennemgang er et tilbud næsten ingen afviser.' },
+      { title: 'Høj provision', desc: 'Pensionsprodukter har høj gennemsnitsværdi. Én lukket aftale kan give markant provision.' },
+      { title: 'Meningsfuldt arbejde', desc: 'Du hjælper danskere med at sikre en bedre alderdom. Det er salg med en reel positiv effekt for kunden.' },
+    ],
+    getTitle: 'Hvad du får hos Magnora Marketing',
+    get: [
+      { title: 'Arbejd hjemmefra', desc: 'Sælg fra dit eget hjem med fuld fleksibilitet. Ingen pendling, ingen faste mødetider.' },
+      { title: 'Attraktiv provision', desc: 'Fast grundhonorar plus provision på bookede møder og lukkede aftaler. Høj værdi pr. salg.' },
+      { title: 'Fleksible tider', desc: 'Du bestemmer selv hvornår du arbejder. Perfekt som fuldtids freelance eller supplement til andre aktiviteter.' },
+    ],
+    lookForTitle: 'Det kigger vi efter',
+    lookFor: [
+      'Erfaring med salg eller rådgivende kundekontakt',
+      'Troværdig og empatisk i kommunikationen',
+      'Evne til at forklare komplekse emner enkelt',
+      'Selvdisciplin og resultatorientering',
+      'Gode kommunikationsevner på dansk',
+      'Finansiel baggrund er en fordel – ikke et krav',
+    ],
+    howTitle: 'Sådan søger du',
+    howP: 'Send en kort besked om dig selv og din baggrund. Ingen formel ansøgning nødvendig – vi vender tilbage inden for 2 hverdage.',
+    contactNow: 'Kontakt Magnora Marketing nu',
+    faqs: [
+      { question: 'Hvad booker jeg møder om?', answer: 'Du kontakter private og erhvervskunder og booker møder med en certificeret pensionsrådgiver om pensionsplanlægning og opsparingsløsninger.' },
+      { question: 'Kræver det finansiel baggrund?', answer: 'Nej – du skal booke møder, ikke rådgive. Pensionsrådgiveren tager det faglige. Du behøver kun gode salgsevner.' },
+      { question: 'Er pension et følsomt emne at tale om?', answer: 'Pensionsrådgivning berører vigtige livsvalg, men de fleste danskere sætter pris på at blive kontaktet om det. Vi giver dig de rigtige scripts.' },
+      { question: 'Hvad er provisionsniveauet?', answer: 'Pension er et højtværdiprodukt, hvilket typisk afspejles i attraktive provisioner pr. gennemført møde.' },
+      { question: 'Er der opkaldslister klar fra dag ét?', answer: 'Ja – Magnora Marketing leverer opkaldslister og kampagnematerialer, så du kan starte med det samme.' },
+      { question: 'Kan jeg se et eksempel på et script?', answer: 'Ja – du modtager et gennemprøvet salgsskript ved opstart som du kan tilpasse din stil.' },
+      { question: 'Hvad sker der ved et succes-salg eller booket møde?', answer: 'Du registrerer resultatet i vores system, og provisionen beregnes automatisk og udbetales månedligt.' },
+      { question: 'Er der løbende coaching?', answer: 'Ja – Magnora Marketing\'s salgsledere holder regelmæssige coaching-sessioner og giver feedback på din salgsstil.' },
+      { question: 'Kan jeg prøve stillingen i en kortere periode?', answer: 'Ja – de første 2-4 uger betragtes som en gensidig prøveperiode.' },
+      { question: 'Hvad er den gennemsnitlige indkomst for en aktiv freelancer?', answer: 'Det afhænger af aktivitet og produkt. Aktive freelancere med gode resultater kan tjene et solidt supplement eller en fuld indkomst.' },
+      { question: 'Kan jeg arbejde for Magnora Marketing og for andre bureauer?', answer: 'Som freelancer er du fri til at arbejde for andre, så længe der ikke er konkurrencekonflikt med Magnora Marketing\'s kunder.' },
+      { question: 'Er der skriftlige kontrakter?', answer: 'Ja – alle samarbejder formaliseres med en klar freelance-aftale der beskriver vilkår, provision og forventninger.' },
+      { question: 'Hvad sker der, hvis jeg ikke trives med produktet?', answer: 'Vi kan diskutere om du er bedre egnet til et andet produkt i Magnora Marketing\'s portfolio.' },
+      { question: 'Hvad er Magnora Marketing\'s forventninger til mig som freelancer?', answer: 'Vi forventer selvdisciplin, professionel optræden og løbende kommunikation om aktivitet og resultater.' },
+    ],
+    ctaTitle: 'Hjælp danskere med at sikre deres fremtid',
+    ctaSubtitle: 'Kontakt Magnora Marketing og kom i gang med pensionssalg – meningsfyldt arbejde med stærk provision.',
+    sendApplicationShort: 'Send ansøgning',
+    seeAllOpen: 'Se alle ledige stillinger',
+  },
+  en: {
+    seoTitle: 'Freelance Sales Rep Pension Advice | Magnora Marketing',
+    seoDesc: 'Become a freelance sales rep within pension advice at Magnora Marketing. Help private and business customers with pension planning – from home with good commission.',
+    heroTitle: 'Freelance Sales Rep – Pension Advice',
+    heroSubtitle: 'Help people secure their future. Pension advice is a trust-based product with high value for the customer and attractive commission for you.',
+    applyCta: 'Apply for the position',
+    allJobs: 'See all positions',
+    aboutTitle: 'What does the job involve?',
+    aboutP1: 'As a freelance sales rep within pension advice, you contact private and business customers offering a review of their pension savings. Many people don\'t have a clear overview of their pension – and are grateful for the help.',
+    aboutP2: 'You don\'t have to provide the advice yourself. Your task is to create interest and book meetings with our pension advisors. Magnora Marketing provides scripts and leads, you make the contact.',
+    tasks: [
+      'Outbound contact with private and business customers',
+      'Booking pension reviews and advisory meetings',
+      'Explaining the benefits of a no-obligation pension review',
+      'Following up on interested prospects',
+      'Collaborating with Magnora Marketing\'s pension advisory team',
+    ],
+    factsTitle: 'Key facts about the position',
+    facts: [
+      { label: 'Employment type', value: 'Freelance / self-employed' },
+      { label: 'Location', value: 'From home – all of Denmark' },
+      { label: 'Working hours', value: 'Flexible – you decide' },
+      { label: 'Pay', value: 'Fixed base fee + commission' },
+      { label: 'Product', value: 'Pension advice (private and business)' },
+      { label: 'Start', value: 'As soon as possible' },
+    ],
+    sendApplication: 'Send your application',
+    whyTitle: 'Why pension sales is meaningful and lucrative',
+    why: [
+      { title: 'High demand', desc: 'Many people have never had their pension reviewed. A free review is an offer almost no one turns down.' },
+      { title: 'High commission', desc: 'Pension products have a high average value. One closed deal can yield significant commission.' },
+      { title: 'Meaningful work', desc: 'You help people secure a better retirement. It is sales with a real positive effect for the customer.' },
+    ],
+    getTitle: 'What you get at Magnora Marketing',
+    get: [
+      { title: 'Work from home', desc: 'Sell from your own home with full flexibility. No commuting, no fixed meeting times.' },
+      { title: 'Attractive commission', desc: 'Fixed base fee plus commission on booked meetings and closed deals. High value per sale.' },
+      { title: 'Flexible hours', desc: 'You decide when you work. Perfect as full-time freelance or a supplement to other activities.' },
+    ],
+    lookForTitle: 'What we look for',
+    lookFor: [
+      'Experience with sales or advisory customer contact',
+      'Trustworthy and empathetic in communication',
+      'Ability to explain complex topics simply',
+      'Self-discipline and results orientation',
+      'Good communication skills',
+      'A financial background is an advantage – not a requirement',
+    ],
+    howTitle: 'How to apply',
+    howP: 'Send a short message about yourself and your background. No formal application needed – we get back to you within 2 business days.',
+    contactNow: 'Contact Magnora Marketing now',
+    faqs: [
+      { question: 'What do I book meetings about?', answer: 'You contact private and business customers and book meetings with a certified pension advisor about pension planning and savings solutions.' },
+      { question: 'Does it require a financial background?', answer: 'No – you book meetings, you don\'t advise. The pension advisor handles the expertise. You only need good sales skills.' },
+      { question: 'Is pension a sensitive topic to discuss?', answer: 'Pension advice touches on important life choices, but most people appreciate being contacted about it. We give you the right scripts.' },
+      { question: 'What is the commission level?', answer: 'Pension is a high-value product, which is typically reflected in attractive commissions per completed meeting.' },
+      { question: 'Are call lists ready from day one?', answer: 'Yes – Magnora Marketing provides call lists and campaign materials so you can start right away.' },
+      { question: 'Can I see an example of a script?', answer: 'Yes – you receive a proven sales script at onboarding that you can adapt to your style.' },
+      { question: 'What happens on a successful sale or booked meeting?', answer: 'You register the result in our system, and the commission is calculated automatically and paid monthly.' },
+      { question: 'Is there ongoing coaching?', answer: 'Yes – Magnora Marketing\'s sales managers hold regular coaching sessions and give feedback on your sales style.' },
+      { question: 'Can I try the position for a shorter period?', answer: 'Yes – the first 2-4 weeks are considered a mutual trial period.' },
+      { question: 'What is the average income for an active freelancer?', answer: 'It depends on activity and product. Active freelancers with good results can earn a solid supplement or a full income.' },
+      { question: 'Can I work for Magnora Marketing and for other agencies?', answer: 'As a freelancer you are free to work for others, as long as there is no competitive conflict with Magnora Marketing\'s clients.' },
+      { question: 'Are there written contracts?', answer: 'Yes – all collaborations are formalised with a clear freelance agreement describing terms, commission and expectations.' },
+      { question: 'What happens if I don\'t enjoy the product?', answer: 'We can discuss whether you are better suited to another product in Magnora Marketing\'s portfolio.' },
+      { question: 'What are Magnora Marketing\'s expectations of me as a freelancer?', answer: 'We expect self-discipline, professional conduct and ongoing communication about activity and results.' },
+    ],
+    ctaTitle: 'Help people secure their future',
+    ctaSubtitle: 'Contact Magnora Marketing and get started with pension sales – meaningful work with strong commission.',
+    sendApplicationShort: 'Send application',
+    seeAllOpen: 'See all open positions',
+  },
+  es: {
+    seoTitle: 'Vendedor Freelance Asesoría de Pensiones | Magnora Marketing',
+    seoDesc: 'Conviértete en vendedor freelance en asesoría de pensiones en Magnora Marketing. Ayuda a clientes particulares y empresas con la planificación de pensiones – desde casa con buena comisión.',
+    heroTitle: 'Vendedor Freelance – Asesoría de Pensiones',
+    heroSubtitle: 'Ayuda a las personas a asegurar su futuro. La asesoría de pensiones es un producto basado en la confianza, de alto valor para el cliente y con una comisión atractiva para ti.',
+    applyCta: 'Solicitar el puesto',
+    allJobs: 'Ver todas las vacantes',
+    aboutTitle: '¿En qué consiste el trabajo?',
+    aboutP1: 'Como vendedor freelance en asesoría de pensiones, contactas con clientes particulares y empresas ofreciendo una revisión de sus ahorros para la pensión. Muchas personas no tienen una visión clara de su pensión – y agradecen la ayuda.',
+    aboutP2: 'No tienes que dar el asesoramiento tú mismo. Tu tarea es generar interés y reservar reuniones con nuestros asesores de pensiones. Magnora Marketing proporciona los guiones y los leads, tú haces el contacto.',
+    tasks: [
+      'Contacto proactivo con clientes particulares y empresas',
+      'Reserva de revisiones de pensiones y reuniones de asesoramiento',
+      'Explicación de las ventajas de una revisión de pensiones sin compromiso',
+      'Seguimiento de los prospectos interesados',
+      'Colaboración con el equipo de asesores de pensiones de Magnora Marketing',
+    ],
+    factsTitle: 'Datos clave del puesto',
+    facts: [
+      { label: 'Tipo de contrato', value: 'Freelance / autónomo' },
+      { label: 'Lugar de trabajo', value: 'Desde casa – toda Dinamarca' },
+      { label: 'Horario', value: 'Flexible – tú decides' },
+      { label: 'Retribución', value: 'Base fija + comisión' },
+      { label: 'Producto', value: 'Asesoría de pensiones (particular y empresa)' },
+      { label: 'Inicio', value: 'Lo antes posible' },
+    ],
+    sendApplication: 'Envía tu solicitud',
+    whyTitle: 'Por qué la venta de pensiones es significativa y lucrativa',
+    why: [
+      { title: 'Gran demanda', desc: 'Muchas personas nunca han tenido una revisión de su pensión. Una revisión gratuita es una oferta que casi nadie rechaza.' },
+      { title: 'Alta comisión', desc: 'Los productos de pensiones tienen un valor medio alto. Un acuerdo cerrado puede generar una comisión considerable.' },
+      { title: 'Trabajo significativo', desc: 'Ayudas a las personas a asegurar una mejor jubilación. Es una venta con un efecto positivo real para el cliente.' },
+    ],
+    getTitle: 'Lo que obtienes en Magnora Marketing',
+    get: [
+      { title: 'Trabaja desde casa', desc: 'Vende desde tu propio hogar con total flexibilidad. Sin desplazamientos, sin horarios de reunión fijos.' },
+      { title: 'Comisión atractiva', desc: 'Base fija más comisión por reuniones reservadas y acuerdos cerrados. Alto valor por venta.' },
+      { title: 'Horario flexible', desc: 'Tú decides cuándo trabajas. Perfecto como freelance a tiempo completo o como complemento a otras actividades.' },
+    ],
+    lookForTitle: 'Lo que buscamos',
+    lookFor: [
+      'Experiencia en ventas o contacto consultivo con clientes',
+      'Comunicación fiable y empática',
+      'Capacidad de explicar temas complejos de forma sencilla',
+      'Autodisciplina y orientación a resultados',
+      'Buenas habilidades de comunicación',
+      'Una formación financiera es una ventaja – no un requisito',
+    ],
+    howTitle: 'Cómo solicitarlo',
+    howP: 'Envía un mensaje breve sobre ti y tu experiencia. No se necesita solicitud formal – te respondemos en un plazo de 2 días laborables.',
+    contactNow: 'Contacta con Magnora Marketing ahora',
+    faqs: [
+      { question: '¿Sobre qué reservo reuniones?', answer: 'Contactas con clientes particulares y empresas y reservas reuniones con un asesor de pensiones certificado sobre planificación de pensiones y soluciones de ahorro.' },
+      { question: '¿Se requiere formación financiera?', answer: 'No – reservas reuniones, no asesoras. El asesor de pensiones se encarga de la parte técnica. Solo necesitas buenas habilidades de venta.' },
+      { question: '¿Es la pensión un tema delicado?', answer: 'La asesoría de pensiones aborda decisiones vitales importantes, pero la mayoría de las personas agradecen que se les contacte al respecto. Te damos los guiones adecuados.' },
+      { question: '¿Cuál es el nivel de comisión?', answer: 'La pensión es un producto de alto valor, lo que suele reflejarse en comisiones atractivas por reunión completada.' },
+      { question: '¿Hay listas de llamadas listas desde el primer día?', answer: 'Sí – Magnora Marketing proporciona listas de llamadas y materiales de campaña para que puedas empezar de inmediato.' },
+      { question: '¿Puedo ver un ejemplo de guion?', answer: 'Sí – recibes un guion de ventas probado al incorporarte que puedes adaptar a tu estilo.' },
+      { question: '¿Qué ocurre con una venta exitosa o una reunión reservada?', answer: 'Registras el resultado en nuestro sistema, y la comisión se calcula automáticamente y se paga mensualmente.' },
+      { question: '¿Hay coaching continuo?', answer: 'Sí – los responsables de ventas de Magnora Marketing realizan sesiones de coaching periódicas y dan feedback sobre tu estilo de venta.' },
+      { question: '¿Puedo probar el puesto durante un periodo más corto?', answer: 'Sí – las primeras 2-4 semanas se consideran un periodo de prueba mutuo.' },
+      { question: '¿Cuál es el ingreso medio de un freelance activo?', answer: 'Depende de la actividad y del producto. Los freelance activos con buenos resultados pueden ganar un buen complemento o un ingreso completo.' },
+      { question: '¿Puedo trabajar para Magnora Marketing y para otras agencias?', answer: 'Como freelance eres libre de trabajar para otros, siempre que no haya conflicto de competencia con los clientes de Magnora Marketing.' },
+      { question: '¿Hay contratos por escrito?', answer: 'Sí – todas las colaboraciones se formalizan con un acuerdo de freelance claro que describe las condiciones, la comisión y las expectativas.' },
+      { question: '¿Qué ocurre si el producto no me convence?', answer: 'Podemos analizar si encajas mejor con otro producto de la cartera de Magnora Marketing.' },
+      { question: '¿Qué espera Magnora Marketing de mí como freelance?', answer: 'Esperamos autodisciplina, conducta profesional y comunicación continua sobre la actividad y los resultados.' },
+    ],
+    ctaTitle: 'Ayuda a las personas a asegurar su futuro',
+    ctaSubtitle: 'Contacta con Magnora Marketing y empieza con la venta de pensiones – trabajo significativo con una comisión fuerte.',
+    sendApplicationShort: 'Enviar solicitud',
+    seeAllOpen: 'Ver todas las vacantes disponibles',
+  },
+};
 
 export default function PensionPage() {
+  const c = usePageContent(content);
   return (
     <>
       <SEO
-        title="Freelance Sælger Pensionsrådgivning | Magnora Marketing"
-        description="Bliv freelance sælger inden for pensionsrådgivning hos Magnora Marketing. Hjælp private og erhvervskunder med pensionsplanlægning – hjemmefra med god provision."
+        title={c.seoTitle}
+        description={c.seoDesc}
         canonical="/jobs/pensionsordning"
         keywords="freelance sælger pension, pensionsrådgivning salg, pension sælger job, finansiel rådgivning freelance, Magnora Marketing pension stilling"
       />
 
       <HeroSection
-        title="Freelance Sælger – Pensionsrådgivning"
-        subtitle="Hjælp danskere med at sikre deres fremtid. Pensionsrådgivning er et tillidsbaseret produkt med høj værdi for kunden og attraktiv provision for dig."
-        ctaText="Søg stillingen"
+        title={c.heroTitle}
+        subtitle={c.heroSubtitle}
+        ctaText={c.applyCta}
         ctaLink="/kontakt"
-        secondaryCtaText="Se alle stillinger"
+        secondaryCtaText={c.allJobs}
         secondaryCtaLink="/freelance-telemarketing"
         backgroundImage="https://images.pexels.com/photos/3184363/pexels-photo-3184363.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       />
@@ -29,21 +250,11 @@ export default function PensionPage() {
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold mb-6">Hvad går jobbet ud på?</h2>
-              <p className="text-lg text-gray-600 mb-6">
-                Som freelance sælger inden for pensionsrådgivning kontakter du private og erhvervskunder med tilbud om en gennemgang af deres pensionsopsparing. Mange danskere har ikke styr på deres pension – og er taknemlige for hjælpen.
-              </p>
-              <p className="text-lg text-gray-600 mb-8">
-                Du behøver ikke selv at yde rådgivningen. Din opgave er at skabe interesse og booke møder med vores pensionsrådgivere. Magnora Marketing leverer scripts og leads, du tager kontakten.
-              </p>
+              <h2 className="text-3xl font-bold mb-6">{c.aboutTitle}</h2>
+              <p className="text-lg text-gray-600 mb-6">{c.aboutP1}</p>
+              <p className="text-lg text-gray-600 mb-8">{c.aboutP2}</p>
               <ul className="space-y-3">
-                {[
-                  'Opsøgende kontakt til private og erhvervskunder',
-                  'Booking af pensionsgennemgange og rådgivningsmøder',
-                  'Forklaring af fordele ved en uforpligtende pensionsgennemgang',
-                  'Opfølgning på interesserede emner',
-                  'Samarbejde med Magnora Marketing\'s pensionsrådgiverteam'
-                ].map((item, i) => (
+                {c.tasks.map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
                     <CheckCircle className="text-green-500 flex-shrink-0 mt-0.5" size={18} />
                     <span className="text-gray-700">{item}</span>
@@ -52,16 +263,9 @@ export default function PensionPage() {
               </ul>
             </div>
             <div className="bg-purple-50 rounded-2xl p-8 border border-purple-100">
-              <h3 className="text-xl font-bold mb-6 text-purple-800">Stillingens nøglefakta</h3>
+              <h3 className="text-xl font-bold mb-6 text-purple-800">{c.factsTitle}</h3>
               <div className="space-y-4">
-                {[
-                  { label: 'Ansættelsesform', value: 'Freelance / selvstændig' },
-                  { label: 'Arbejdssted', value: 'Hjemmefra – hele Danmark' },
-                  { label: 'Arbejdstid', value: 'Fleksibel – du bestemmer selv' },
-                  { label: 'Løn', value: 'Fast grundhonorar + provision' },
-                  { label: 'Produkt', value: 'Pensionsrådgivning (privat og erhverv)' },
-                  { label: 'Opstart', value: 'Hurtigst muligt' }
-                ].map((row, i) => (
+                {c.facts.map((row, i) => (
                   <div key={i} className="flex justify-between items-center py-2 border-b border-purple-100 last:border-0">
                     <span className="text-gray-600 text-sm">{row.label}</span>
                     <span className="font-semibold text-gray-900 text-sm">{row.value}</span>
@@ -70,7 +274,7 @@ export default function PensionPage() {
               </div>
               <div className="mt-6">
                 <Link to="/kontakt" className="w-full inline-flex items-center justify-center bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
-                  Send din ansøgning <ArrowRight size={16} className="ml-2" />
+                  {c.sendApplication} <ArrowRight size={16} className="ml-2" />
                 </Link>
               </div>
             </div>
@@ -81,18 +285,18 @@ export default function PensionPage() {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Hvorfor pensionssalg er meningsfyldt og lukrativt</h2>
+            <h2 className="text-3xl font-bold mb-4">{c.whyTitle}</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { icon: <Shield size={36} className="text-purple-600" />, title: 'Stor efterspørgsel', desc: 'Mange danskere har aldrig fået gennemgået deres pension. En gratis gennemgang er et tilbud næsten ingen afviser.' },
-              { icon: <TrendingUp size={36} className="text-purple-600" />, title: 'Høj provision', desc: 'Pensionsprodukter har høj gennemsnitsværdi. Én lukket aftale kan give markant provision.' },
-              { icon: <Users size={36} className="text-purple-600" />, title: 'Meningsfuldt arbejde', desc: 'Du hjælper danskere med at sikre en bedre alderdom. Det er salg med en reel positiv effekt for kunden.' }
-            ].map((item, i) => (
+              <Shield size={36} className="text-purple-600" />,
+              <TrendingUp size={36} className="text-purple-600" />,
+              <Users size={36} className="text-purple-600" />,
+            ].map((icon, i) => (
               <div key={i} className="bg-white rounded-xl p-6 shadow-sm text-center">
-                <div className="flex justify-center mb-4">{item.icon}</div>
-                <h3 className="font-semibold text-lg mb-2">{item.title}</h3>
-                <p className="text-gray-600 text-sm">{item.desc}</p>
+                <div className="flex justify-center mb-4">{icon}</div>
+                <h3 className="font-semibold text-lg mb-2">{c.why[i].title}</h3>
+                <p className="text-gray-600 text-sm">{c.why[i].desc}</p>
               </div>
             ))}
           </div>
@@ -102,18 +306,18 @@ export default function PensionPage() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Hvad du får hos Magnora Marketing</h2>
+            <h2 className="text-3xl font-bold mb-4">{c.getTitle}</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { icon: <Home size={40} className="text-blue-600" />, title: 'Arbejd hjemmefra', desc: 'Sælg fra dit eget hjem med fuld fleksibilitet. Ingen pendling, ingen faste mødetider.' },
-              { icon: <PiggyBank size={40} className="text-blue-600" />, title: 'Attraktiv provision', desc: 'Fast grundhonorar plus provision på bookede møder og lukkede aftaler. Høj værdi pr. salg.' },
-              { icon: <Clock size={40} className="text-blue-600" />, title: 'Fleksible tider', desc: 'Du bestemmer selv hvornår du arbejder. Perfekt som fuldtids freelance eller supplement til andre aktiviteter.' }
-            ].map((item, i) => (
+              <Home size={40} className="text-blue-600" />,
+              <PiggyBank size={40} className="text-blue-600" />,
+              <Clock size={40} className="text-blue-600" />,
+            ].map((icon, i) => (
               <div key={i} className="text-center p-8 bg-gray-50 rounded-xl">
-                <div className="flex justify-center mb-4">{item.icon}</div>
-                <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
-                <p className="text-gray-600">{item.desc}</p>
+                <div className="flex justify-center mb-4">{icon}</div>
+                <h3 className="text-xl font-semibold mb-3">{c.get[i].title}</h3>
+                <p className="text-gray-600">{c.get[i].desc}</p>
               </div>
             ))}
           </div>
@@ -124,16 +328,9 @@ export default function PensionPage() {
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
-              <h2 className="text-2xl font-bold mb-6">Det kigger vi efter</h2>
+              <h2 className="text-2xl font-bold mb-6">{c.lookForTitle}</h2>
               <ul className="space-y-3">
-                {[
-                  'Erfaring med salg eller rådgivende kundekontakt',
-                  'Troværdig og empatisk i kommunikationen',
-                  'Evne til at forklare komplekse emner enkelt',
-                  'Selvdisciplin og resultatorientering',
-                  'Gode kommunikationsevner på dansk',
-                  'Finansiel baggrund er en fordel – ikke et krav'
-                ].map((item, i) => (
+                {c.lookFor.map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
                     <CheckCircle className="text-green-500 flex-shrink-0 mt-0.5" size={18} />
                     <span className="text-gray-700">{item}</span>
@@ -142,43 +339,28 @@ export default function PensionPage() {
               </ul>
             </div>
             <div>
-              <h2 className="text-2xl font-bold mb-6">Sådan søger du</h2>
-              <p className="text-gray-600 mb-6">Send en kort besked om dig selv og din baggrund. Ingen formel ansøgning nødvendig – vi vender tilbage inden for 2 hverdage.</p>
+              <h2 className="text-2xl font-bold mb-6">{c.howTitle}</h2>
+              <p className="text-gray-600 mb-6">{c.howP}</p>
               <Link to="/kontakt" className="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
-                Kontakt Magnora Marketing nu <ArrowRight size={16} className="ml-2" />
+                {c.contactNow} <ArrowRight size={16} className="ml-2" />
               </Link>
             </div>
           </div>
         </div>
       </section>
 
-      <FAQSection faqs={[
-        { question: 'Hvad booker jeg møder om?', answer: 'Du kontakter private og erhvervskunder og booker møder med en certificeret pensionsrådgiver om pensionsplanlægning og opsparingsløsninger.' },
-        { question: 'Kræver det finansiel baggrund?', answer: 'Nej – du skal booke møder, ikke rådgive. Pensionsrådgiveren tager det faglige. Du behøver kun gode salgsevner.' },
-        { question: 'Er pension et følsomt emne at tale om?', answer: 'Pensionsrådgivning berører vigtige livsvalg, men de fleste danskere sætter pris på at blive kontaktet om det. Vi giver dig de rigtige scripts.' },
-        { question: 'Hvad er provisionsniveauet?', answer: 'Pension er et højtværdiprodukt, hvilket typisk afspejles i attraktive provisioner pr. gennemført møde.' },
-        { question: "Er der opkaldslister klar fra dag ét?", answer: "Ja – Magnora Marketing leverer opkaldslister og kampagnematerialer, så du kan starte med det samme." },
-        { question: "Kan jeg se et eksempel på et script?", answer: "Ja – du modtager et gennemprøvet salgsskript ved opstart som du kan tilpasse din stil." },
-        { question: "Hvad sker der ved et succes-salg eller booket møde?", answer: "Du registrerer resultatet i vores system, og provisionen beregnes automatisk og udbetales månedligt." },
-        { question: "Er der løbende coaching?", answer: "Ja – Magnora Marketing's salgsledere holder regelmæssige coaching-sessioner og giver feedback på din salgsstil." },
-        { question: "Kan jeg prøve stillingen i en kortere periode?", answer: "Ja – de første 2-4 uger betragtes som en gensidig prøveperiode." },
-        { question: "Hvad er den gennemsnitlige indkomst for en aktiv freelancer?", answer: "Det afhænger af aktivitet og produkt. Aktive freelancere med gode resultater kan tjene et solidt supplement eller en fuld indkomst." },
-        { question: "Kan jeg arbejde for Magnora Marketing og for andre bureauer?", answer: "Som freelancer er du fri til at arbejde for andre, så længe der ikke er konkurrencekonflikt med Magnora Marketing's kunder." },
-        { question: "Er der skriftlige kontrakter?", answer: "Ja – alle samarbejder formaliseres med en klar freelance-aftale der beskriver vilkår, provision og forventninger." },
-        { question: "Hvad sker der, hvis jeg ikke trives med produktet?", answer: "Vi kan diskutere om du er bedre egnet til et andet produkt i Magnora Marketing's portfolio." },
-        { question: "Hvad er Magnora Marketing's forventninger til mig som freelancer?", answer: "Vi forventer selvdisciplin, professionel optræden og løbende kommunikation om aktivitet og resultater." },
-      ]} />
+      <FAQSection faqs={c.faqs} />
 
       <section className="bg-blue-600 text-white py-16">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6">Hjælp danskere med at sikre deres fremtid</h2>
-          <p className="text-xl mb-8 max-w-3xl mx-auto">Kontakt Magnora Marketing og kom i gang med pensionssalg – meningsfyldt arbejde med stærk provision.</p>
+          <h2 className="text-3xl font-bold mb-6">{c.ctaTitle}</h2>
+          <p className="text-xl mb-8 max-w-3xl mx-auto">{c.ctaSubtitle}</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/kontakt" className="inline-flex items-center bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-              Send ansøgning <ArrowRight className="ml-2" size={18} />
+              {c.sendApplicationShort} <ArrowRight className="ml-2" size={18} />
             </Link>
             <Link to="/freelance-telemarketing" className="inline-flex items-center border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
-              Se alle ledige stillinger
+              {c.seeAllOpen}
             </Link>
           </div>
         </div>

@@ -5,9 +5,10 @@ import HeroSection from '../components/HeroSection';
 import SEO from '../components/SEO';
 import FAQSection from '../components/FAQSection';
 import CTASection from '../components/CTASection';
-import { jobListings } from '../data/jobListings';
+import { useJobListings } from '../data/jobListings';
 
 const FreelancersPage: React.FC = () => {
+  const jobListings = useJobListings();
   const benefits = [
     {
       icon: <Clock size={40} className="text-blue-600" />,
