@@ -10,6 +10,21 @@ export default {
     blog: 'Blog',
     contact: 'Contact',
     cta: 'Get started',
+    digitalMenu: {
+      webDev: 'Web Development',
+      apiSaas: 'API & SaaS',
+      websites: 'Websites',
+      aiIntegration: 'AI Integration',
+      aiWidget: '✦ AI Widget',
+      aiReception: '✦ AI Receptionist',
+    },
+    partnerMenu: {
+      become: 'Become a partner',
+      pricing: 'Pricing & Packages',
+      why: 'Why Magnora Marketing?',
+      meetingBooking: 'Meeting Booking',
+      leadGeneration: 'Lead Generation',
+    },
   },
   footer: {
     tagline: 'Your growth partner in telesales, meeting booking, web development, lead generation and AI integration.',
@@ -43,9 +58,12 @@ export default {
   },
   home: {
     hero: {
+      badge: 'Magnora Marketing · Growth Partner',
       title: 'Your Growth Partner in Telesales, Meeting Booking, Web Development and AI Integration',
       subtitle: 'Magnora Marketing delivers professional B2B telesales, qualified meeting booking and tailored digital solutions. We help businesses from the idea phase through development all the way to sales, as well as established companies looking to grow with more sales.',
       cta: 'Get started',
+      ctaPartner: 'Become a partner',
+      ctaCareer: 'Start your career',
       learnMore: 'Learn more',
     },
     stats: {
@@ -80,6 +98,13 @@ export default {
     learnMore: 'Learn more',
     seeAll: 'See all',
     back: 'Back',
+    seePricing: 'See pricing',
+    ctaBadge: 'Magnora Marketing · Get Started',
+  },
+  cookie: {
+    message: 'We use cookies to give you the best experience on our website. By continuing, you accept our use of cookies.',
+    accept: 'Accept',
+    readMore: 'Read more',
   },
   language: {
     da: 'Dansk',

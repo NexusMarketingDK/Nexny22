@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 interface HeroSectionProps {
   title: string;
@@ -21,6 +22,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   secondaryCtaLink,
   backgroundImage,
 }) => {
+  const { t } = useTranslation();
   return (
     <section className="relative min-h-[88vh] flex items-center overflow-hidden">
       {/* Background */}
@@ -49,7 +51,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           <div className="fade-in mb-6">
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-white/90 text-xs font-semibold uppercase tracking-widest backdrop-blur-sm">
               <span className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse" />
-              Magnora Marketing · Vækstpartner
+              {t('home.hero.badge')}
             </span>
           </div>
 
