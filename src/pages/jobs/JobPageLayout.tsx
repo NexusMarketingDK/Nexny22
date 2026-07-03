@@ -54,6 +54,7 @@ const accents: Record<string, Accent> = {
   gray: { factsBox: 'bg-gray-50 border-gray-100', factsTitle: 'text-gray-800', factsRow: 'border-gray-100', whyIconColor: 'text-gray-600' },
   teal: { factsBox: 'bg-teal-50 border-teal-100', factsTitle: 'text-teal-800', factsRow: 'border-teal-100', whyIconColor: 'text-teal-600' },
   indigo: { factsBox: 'bg-indigo-50 border-indigo-100', factsTitle: 'text-indigo-800', factsRow: 'border-indigo-100', whyIconColor: 'text-indigo-600' },
+  slate: { factsBox: 'bg-slate-50 border-slate-200', factsTitle: 'text-slate-800', factsRow: 'border-slate-200', whyIconColor: 'text-slate-600' },
 };
 
 interface Props {

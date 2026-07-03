@@ -1,188 +1,240 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { CheckCircle, ArrowRight, Clock, PiggyBank, Home, Shield, BarChart3, Users } from 'lucide-react';
-import HeroSection from '../../components/HeroSection';
-import SEO from '../../components/SEO';
-import FAQSection from '../../components/FAQSection';
+import { Shield, BarChart3, Users } from 'lucide-react';
+import JobPageLayout, { type JobPageContent } from './JobPageLayout';
+import type { Lang } from '../../i18n/usePageContent';
+
+const content: Record<Lang, JobPageContent> = {
+  da: {
+    seoTitle: 'Freelance Sælger Inkasso & Kreditorstyring | Magnora Marketing',
+    seoDesc: 'Bliv freelance sælger inden for inkasso og kreditorstyring hos Magnora Marketing. Sælg professionel gældinddrivelse til erhvervskunder – hjemmefra med god provision.',
+    heroTitle: 'Freelance Sælger – Inkasso & Kreditorstyring',
+    heroSubtitle: 'Hjælp virksomheder med at få deres tilgodehavender hjem. Inkasso og kreditorstyring er en B2B-niche med høj efterspørgsel og attraktiv provision.',
+    applyCta: 'Søg stillingen',
+    allJobs: 'Se alle stillinger',
+    aboutTitle: 'Hvad går jobbet ud på?',
+    aboutP1: 'Som freelance sælger inden for inkasso og kreditorstyring kontakter du virksomheder der har problemer med sen betaling og udestående tilgodehavender. Du præsenterer professionelle løsninger til gældinddrivelse og kreditorstyring.',
+    aboutP2: 'Det er en reel smerteløsning for mange virksomheder – og behovet er stort. Magnora Marketing leverer scripts og leads, du skaber dialogen og booker møder med beslutningstagerne.',
+    tasks: [
+      'Opsøgende B2B-salg til virksomheder med kreditorbehov',
+      'Kontakt til økonomiansvarlige, CFO\'er og direktører',
+      'Præsentation af inkasso- og kreditorstyringsprodukter',
+      'Booking af rådgivningsmøder og behovs-analyser',
+      'Opfølgning og pipeline-styring',
+    ],
+    factsTitle: 'Stillingens nøglefakta',
+    facts: [
+      { label: 'Ansættelsesform', value: 'Freelance / selvstændig' },
+      { label: 'Arbejdssted', value: 'Hjemmefra – hele Danmark' },
+      { label: 'Arbejdstid', value: 'Fleksibel – du bestemmer selv' },
+      { label: 'Løn', value: 'Fast grundhonorar + provision' },
+      { label: 'Produkt', value: 'Inkasso & kreditorstyring til erhverv' },
+      { label: 'Opstart', value: 'Hurtigst muligt' },
+    ],
+    sendApplication: 'Send din ansøgning',
+    whyTitle: 'Hvorfor inkassosalg er en stærk niche',
+    why: [
+      { title: 'Alle virksomheder har behovet', desc: 'Sen betaling og dårlige debitorer rammer alle brancher. Det giver dig et enormt og konstant marked.' },
+      { title: 'Høj lukningsrate', desc: 'Virksomheder der oplever betalingsproblemer er motiverede for at handle. De er allerede bevidste om smertestedet.' },
+      { title: 'Adgang til beslutningstagere', desc: 'Du taler med CFO\'er og direktører – folk der kan sige ja med det samme. Kortere salgscyklus og hurtigere provision.' },
+    ],
+    getTitle: 'Hvad du får hos Magnora Marketing',
+    get: [
+      { title: 'Arbejd hjemmefra', desc: 'Sælg fra dit eget hjem med fuld frihed. Ingen pendling, ingen faste kontortider.' },
+      { title: 'Attraktiv provision', desc: 'Grundhonorar plus provision per bookede møde og lukket aftale. B2B-inkasso giver høj provision pr. kontrakt.' },
+      { title: 'Fleksible tider', desc: 'Du bestemmer selv din salgsdag. Erhvervskunder kontaktes typisk i dagtimerne – resten af tiden er din.' },
+    ],
+    lookForTitle: 'Det kigger vi efter',
+    lookFor: [
+      'Erfaring med B2B-salg eller erhvervskundekontakt',
+      'Professionel og troværdig kommunikationsstil',
+      'Evne til at navigere og tale med beslutningstagere',
+      'Selvdisciplin og evne til at arbejde selvstændigt',
+      'Juridisk eller finansiel baggrund er en fordel – ikke krav',
+      'Resultatorienteret og målbevidst',
+    ],
+    howTitle: 'Sådan søger du',
+    howP: 'Send en kort besked om dig selv og din salgserfaring. Vi vender tilbage inden for 2 hverdage.',
+    contactNow: 'Kontakt Magnora Marketing nu',
+    faqs: [
+      { question: 'Hvad booker jeg møder om?', answer: 'Du kontakter virksomheder og booker møder med inkassoeksperter om professionel debitorhåndtering og gældinddrivelse.' },
+      { question: 'Er det et svært produkt at sælge?', answer: 'Inkasso er et nødvendigt produkt for virksomheder med ubetalte fordringer. Mange virksomheder ser positivt på at forbedre deres debitorhåndtering.' },
+      { question: 'Hvem er målgruppen?', answer: 'Primært SMV\'er og større virksomheder der har udestående fakturaer og behøver professionel hjælp til inddrivelse.' },
+      { question: 'Er der særlige krav til min baggrund?', answer: 'Nej – du behøver ikke juridisk baggrund. Gode kommunikationsevner og professionel optræden er det vigtigste.' },
+      { question: 'Er der opkaldslister klar fra dag ét?', answer: 'Ja – Magnora Marketing leverer opkaldslister og kampagnematerialer, så du kan starte med det samme.' },
+      { question: 'Kan jeg se et eksempel på et script?', answer: 'Ja – du modtager et gennemprøvet salgsskript ved opstart som du kan tilpasse din stil.' },
+      { question: 'Hvad sker der ved et succes-salg eller booket møde?', answer: 'Du registrerer resultatet i vores system, og provisionen beregnes automatisk og udbetales månedligt.' },
+      { question: 'Er der løbende coaching?', answer: 'Ja – Magnora Marketing\'s salgsledere holder regelmæssige coaching-sessioner og giver feedback på din salgsstil.' },
+      { question: 'Kan jeg prøve stillingen i en kortere periode?', answer: 'Ja – de første 2-4 uger betragtes som en gensidig prøveperiode.' },
+      { question: 'Hvad er den gennemsnitlige indkomst for en aktiv freelancer?', answer: 'Det afhænger af aktivitet og produkt. Aktive freelancere med gode resultater kan tjene et solidt supplement eller en fuld indkomst.' },
+      { question: 'Kan jeg arbejde for Magnora Marketing og for andre bureauer?', answer: 'Som freelancer er du fri til at arbejde for andre, så længe der ikke er konkurrencekonflikt med Magnora Marketing\'s kunder.' },
+      { question: 'Er der skriftlige kontrakter?', answer: 'Ja – alle samarbejder formaliseres med en klar freelance-aftale der beskriver vilkår, provision og forventninger.' },
+      { question: 'Hvad sker der, hvis jeg ikke trives med produktet?', answer: 'Vi kan diskutere om du er bedre egnet til et andet produkt i Magnora Marketing\'s portfolio.' },
+      { question: 'Hvad er Magnora Marketing\'s forventninger til mig som freelancer?', answer: 'Vi forventer selvdisciplin, professionel optræden og løbende kommunikation om aktivitet og resultater.' },
+    ],
+    ctaTitle: 'Klar til at sælge i en B2B-niche med høj efterspørgsel?',
+    ctaSubtitle: 'Kontakt Magnora Marketing og start med inkasso- og kreditorstyringssalg der giver resultater.',
+    sendApplicationShort: 'Send ansøgning',
+    seeAllOpen: 'Se alle ledige stillinger',
+  },
+  en: {
+    seoTitle: 'Freelance Sales Rep Debt Collection & Credit Management | Magnora Marketing',
+    seoDesc: 'Become a freelance sales rep within debt collection and credit management at Magnora Marketing. Sell professional debt recovery to business customers – from home with good commission.',
+    heroTitle: 'Freelance Sales Rep – Debt Collection & Credit Management',
+    heroSubtitle: 'Help companies recover their outstanding receivables. Debt collection and credit management is a B2B niche with high demand and attractive commission.',
+    applyCta: 'Apply for the position',
+    allJobs: 'See all positions',
+    aboutTitle: 'What does the job involve?',
+    aboutP1: 'As a freelance sales rep within debt collection and credit management, you contact companies that have problems with late payment and outstanding receivables. You present professional solutions for debt recovery and credit management.',
+    aboutP2: 'It is a real pain solution for many companies – and the need is great. Magnora Marketing provides scripts and leads, you create the dialogue and book meetings with the decision-makers.',
+    tasks: [
+      'Outbound B2B sales to companies with credit management needs',
+      'Contact with finance managers, CFOs and directors',
+      'Presenting debt collection and credit management products',
+      'Booking advisory meetings and needs analyses',
+      'Following up and pipeline management',
+    ],
+    factsTitle: 'Key facts about the position',
+    facts: [
+      { label: 'Employment type', value: 'Freelance / self-employed' },
+      { label: 'Location', value: 'From home – all of Denmark' },
+      { label: 'Working hours', value: 'Flexible – you decide' },
+      { label: 'Pay', value: 'Fixed base fee + commission' },
+      { label: 'Product', value: 'Debt collection & credit management for business' },
+      { label: 'Start', value: 'As soon as possible' },
+    ],
+    sendApplication: 'Send your application',
+    whyTitle: 'Why debt collection sales is a strong niche',
+    why: [
+      { title: 'Every company has the need', desc: 'Late payment and bad debtors affect all industries. That gives you an enormous and constant market.' },
+      { title: 'High closing rate', desc: 'Companies experiencing payment problems are motivated to act. They are already aware of the pain point.' },
+      { title: 'Access to decision-makers', desc: 'You talk to CFOs and directors – people who can say yes right away. Shorter sales cycle and faster commission.' },
+    ],
+    getTitle: 'What you get at Magnora Marketing',
+    get: [
+      { title: 'Work from home', desc: 'Sell from your own home with full freedom. No commuting, no fixed office hours.' },
+      { title: 'Attractive commission', desc: 'Base fee plus commission per booked meeting and closed deal. B2B debt collection gives high commission per contract.' },
+      { title: 'Flexible hours', desc: 'You decide your own sales day. Business customers are typically contacted during the day – the rest of the time is yours.' },
+    ],
+    lookForTitle: 'What we look for',
+    lookFor: [
+      'Experience with B2B sales or business customer contact',
+      'Professional and trustworthy communication style',
+      'Ability to navigate and talk with decision-makers',
+      'Self-discipline and the ability to work independently',
+      'A legal or financial background is an advantage – not a requirement',
+      'Results-oriented and goal-driven',
+    ],
+    howTitle: 'How to apply',
+    howP: 'Send a short message about yourself and your sales experience. We get back to you within 2 business days.',
+    contactNow: 'Contact Magnora Marketing now',
+    faqs: [
+      { question: 'What do I book meetings about?', answer: 'You contact companies and book meetings with debt collection experts about professional receivables management and debt recovery.' },
+      { question: 'Is it a difficult product to sell?', answer: 'Debt collection is a necessary product for companies with unpaid claims. Many companies view improving their receivables management positively.' },
+      { question: 'Who is the target group?', answer: 'Primarily SMEs and larger companies that have outstanding invoices and need professional help with recovery.' },
+      { question: 'Are there special requirements for my background?', answer: 'No – you don\'t need a legal background. Good communication skills and professional conduct are the most important thing.' },
+      { question: 'Are call lists ready from day one?', answer: 'Yes – Magnora Marketing provides call lists and campaign materials so you can start right away.' },
+      { question: 'Can I see an example of a script?', answer: 'Yes – you receive a proven sales script at onboarding that you can adapt to your style.' },
+      { question: 'What happens on a successful sale or booked meeting?', answer: 'You register the result in our system, and the commission is calculated automatically and paid monthly.' },
+      { question: 'Is there ongoing coaching?', answer: 'Yes – Magnora Marketing\'s sales managers hold regular coaching sessions and give feedback on your sales style.' },
+      { question: 'Can I try the position for a shorter period?', answer: 'Yes – the first 2-4 weeks are considered a mutual trial period.' },
+      { question: 'What is the average income for an active freelancer?', answer: 'It depends on activity and product. Active freelancers with good results can earn a solid supplement or a full income.' },
+      { question: 'Can I work for Magnora Marketing and for other agencies?', answer: 'As a freelancer you are free to work for others, as long as there is no competitive conflict with Magnora Marketing\'s clients.' },
+      { question: 'Are there written contracts?', answer: 'Yes – all collaborations are formalised with a clear freelance agreement describing terms, commission and expectations.' },
+      { question: 'What happens if I don\'t enjoy the product?', answer: 'We can discuss whether you are better suited to another product in Magnora Marketing\'s portfolio.' },
+      { question: 'What are Magnora Marketing\'s expectations of me as a freelancer?', answer: 'We expect self-discipline, professional conduct and ongoing communication about activity and results.' },
+    ],
+    ctaTitle: 'Ready to sell in a B2B niche with high demand?',
+    ctaSubtitle: 'Contact Magnora Marketing and start with debt collection and credit management sales that deliver results.',
+    sendApplicationShort: 'Send application',
+    seeAllOpen: 'See all open positions',
+  },
+  es: {
+    seoTitle: 'Vendedor Freelance Cobro de Deudas y Gestión de Crédito | Magnora Marketing',
+    seoDesc: 'Conviértete en vendedor freelance en cobro de deudas y gestión de crédito en Magnora Marketing. Vende recuperación de deudas profesional a clientes empresariales – desde casa con buena comisión.',
+    heroTitle: 'Vendedor Freelance – Cobro de Deudas y Gestión de Crédito',
+    heroSubtitle: 'Ayuda a las empresas a recuperar sus cuentas pendientes. El cobro de deudas y la gestión de crédito es un nicho B2B con alta demanda y comisión atractiva.',
+    applyCta: 'Solicitar el puesto',
+    allJobs: 'Ver todas las vacantes',
+    aboutTitle: '¿En qué consiste el trabajo?',
+    aboutP1: 'Como vendedor freelance en cobro de deudas y gestión de crédito, contactas con empresas que tienen problemas de pagos tardíos y cuentas por cobrar pendientes. Presentas soluciones profesionales de recuperación de deudas y gestión de crédito.',
+    aboutP2: 'Es una solución real a un problema para muchas empresas – y la necesidad es grande. Magnora Marketing proporciona guiones y leads, tú creas el diálogo y reservas reuniones con los responsables de decisión.',
+    tasks: [
+      'Venta B2B proactiva a empresas con necesidades de gestión de crédito',
+      'Contacto con responsables financieros, CFO y directores',
+      'Presentación de productos de cobro de deudas y gestión de crédito',
+      'Reserva de reuniones de asesoramiento y análisis de necesidades',
+      'Seguimiento y gestión del pipeline',
+    ],
+    factsTitle: 'Datos clave del puesto',
+    facts: [
+      { label: 'Tipo de contrato', value: 'Freelance / autónomo' },
+      { label: 'Lugar de trabajo', value: 'Desde casa – toda Dinamarca' },
+      { label: 'Horario', value: 'Flexible – tú decides' },
+      { label: 'Retribución', value: 'Base fija + comisión' },
+      { label: 'Producto', value: 'Cobro de deudas y gestión de crédito para empresas' },
+      { label: 'Inicio', value: 'Lo antes posible' },
+    ],
+    sendApplication: 'Envía tu solicitud',
+    whyTitle: 'Por qué la venta de cobro de deudas es un nicho sólido',
+    why: [
+      { title: 'Todas las empresas tienen la necesidad', desc: 'El pago tardío y los deudores morosos afectan a todos los sectores. Eso te da un mercado enorme y constante.' },
+      { title: 'Alta tasa de cierre', desc: 'Las empresas que sufren problemas de pago están motivadas para actuar. Ya son conscientes del punto de dolor.' },
+      { title: 'Acceso a responsables de decisión', desc: 'Hablas con CFO y directores – personas que pueden decir sí de inmediato. Ciclo de venta más corto y comisión más rápida.' },
+    ],
+    getTitle: 'Lo que obtienes en Magnora Marketing',
+    get: [
+      { title: 'Trabaja desde casa', desc: 'Vende desde tu propia casa con total libertad. Sin desplazamientos, sin horarios de oficina fijos.' },
+      { title: 'Comisión atractiva', desc: 'Base más comisión por reunión reservada y acuerdo cerrado. El cobro de deudas B2B da una comisión alta por contrato.' },
+      { title: 'Horario flexible', desc: 'Tú decides tu propia jornada de venta. A los clientes empresariales se les contacta normalmente durante el día – el resto del tiempo es tuyo.' },
+    ],
+    lookForTitle: 'Lo que buscamos',
+    lookFor: [
+      'Experiencia en venta B2B o contacto con clientes empresariales',
+      'Estilo de comunicación profesional y fiable',
+      'Capacidad de moverse y hablar con responsables de decisión',
+      'Autodisciplina y capacidad de trabajar de forma autónoma',
+      'Una formación jurídica o financiera es una ventaja – no un requisito',
+      'Orientado a resultados y con determinación',
+    ],
+    howTitle: 'Cómo solicitarlo',
+    howP: 'Envía un mensaje breve sobre ti y tu experiencia en ventas. Te respondemos en un plazo de 2 días laborables.',
+    contactNow: 'Contacta con Magnora Marketing ahora',
+    faqs: [
+      { question: '¿Sobre qué reservo reuniones?', answer: 'Contactas con empresas y reservas reuniones con expertos en cobro de deudas sobre gestión profesional de deudores y recuperación de deudas.' },
+      { question: '¿Es un producto difícil de vender?', answer: 'El cobro de deudas es un producto necesario para las empresas con créditos impagados. Muchas empresas ven con buenos ojos mejorar su gestión de deudores.' },
+      { question: '¿Quién es el público objetivo?', answer: 'Principalmente pymes y empresas más grandes que tienen facturas pendientes y necesitan ayuda profesional para el cobro.' },
+      { question: '¿Hay requisitos especiales para mi experiencia?', answer: 'No – no necesitas formación jurídica. Lo más importante son las buenas habilidades de comunicación y la conducta profesional.' },
+      { question: '¿Hay listas de llamadas listas desde el primer día?', answer: 'Sí – Magnora Marketing proporciona listas de llamadas y materiales de campaña para que puedas empezar de inmediato.' },
+      { question: '¿Puedo ver un ejemplo de guion?', answer: 'Sí – recibes un guion de ventas probado al incorporarte que puedes adaptar a tu estilo.' },
+      { question: '¿Qué ocurre con una venta exitosa o una reunión reservada?', answer: 'Registras el resultado en nuestro sistema, y la comisión se calcula automáticamente y se paga mensualmente.' },
+      { question: '¿Hay coaching continuo?', answer: 'Sí – los responsables de ventas de Magnora Marketing realizan sesiones de coaching periódicas y dan feedback sobre tu estilo de venta.' },
+      { question: '¿Puedo probar el puesto durante un periodo más corto?', answer: 'Sí – las primeras 2-4 semanas se consideran un periodo de prueba mutuo.' },
+      { question: '¿Cuál es el ingreso medio de un freelance activo?', answer: 'Depende de la actividad y del producto. Los freelance activos con buenos resultados pueden ganar un buen complemento o un ingreso completo.' },
+      { question: '¿Puedo trabajar para Magnora Marketing y para otras agencias?', answer: 'Como freelance eres libre de trabajar para otros, siempre que no haya conflicto de competencia con los clientes de Magnora Marketing.' },
+      { question: '¿Hay contratos por escrito?', answer: 'Sí – todas las colaboraciones se formalizan con un acuerdo de freelance claro que describe las condiciones, la comisión y las expectativas.' },
+      { question: '¿Qué ocurre si el producto no me convence?', answer: 'Podemos analizar si encajas mejor con otro producto de la cartera de Magnora Marketing.' },
+      { question: '¿Qué espera Magnora Marketing de mí como freelance?', answer: 'Esperamos autodisciplina, conducta profesional y comunicación continua sobre la actividad y los resultados.' },
+    ],
+    ctaTitle: '¿Listo para vender en un nicho B2B de alta demanda?',
+    ctaSubtitle: 'Contacta con Magnora Marketing y empieza con la venta de cobro de deudas y gestión de crédito que da resultados.',
+    sendApplicationShort: 'Enviar solicitud',
+    seeAllOpen: 'Ver todas las vacantes disponibles',
+  },
+};
 
 export default function DebtCollectionPage() {
   return (
-    <>
-      <SEO
-        title="Freelance Sælger Inkasso & Kreditorstyring | Magnora Marketing"
-        description="Bliv freelance sælger inden for inkasso og kreditorstyring hos Magnora Marketing. Sælg professionel gældinddrivelse til erhvervskunder – hjemmefra med god provision."
-        canonical="/jobs/inkasso"
-        keywords="freelance sælger inkasso, kreditorstyring salg, inkasso sælger job, gældinddrivelse B2B, Magnora Marketing inkasso stilling"
-      />
-
-      <HeroSection
-        title="Freelance Sælger – Inkasso & Kreditorstyring"
-        subtitle="Hjælp virksomheder med at få deres tilgodehavender hjem. Inkasso og kreditorstyring er en B2B-niche med høj efterspørgsel og attraktiv provision."
-        ctaText="Søg stillingen"
-        ctaLink="/kontakt"
-        secondaryCtaText="Se alle stillinger"
-        secondaryCtaLink="/freelance-telemarketing"
-        backgroundImage="https://images.pexels.com/photos/3184466/pexels-photo-3184466.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-      />
-
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 max-w-5xl">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl font-bold mb-6">Hvad går jobbet ud på?</h2>
-              <p className="text-lg text-gray-600 mb-6">
-                Som freelance sælger inden for inkasso og kreditorstyring kontakter du virksomheder der har problemer med sen betaling og udestående tilgodehavender. Du præsenterer professionelle løsninger til gældinddrivelse og kreditorstyring.
-              </p>
-              <p className="text-lg text-gray-600 mb-8">
-                Det er en reel smerteløsning for mange virksomheder – og behovet er stort. Magnora Marketing leverer scripts og leads, du skaber dialogen og booker møder med beslutningstagerne.
-              </p>
-              <ul className="space-y-3">
-                {[
-                  'Opsøgende B2B-salg til virksomheder med kreditorbehov',
-                  'Kontakt til økonomiansvarlige, CFO\'er og direktører',
-                  'Præsentation af inkasso- og kreditorstyringsprodukter',
-                  'Booking af rådgivningsmøder og behovs-analyser',
-                  'Opfølgning og pipeline-styring'
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <CheckCircle className="text-green-500 flex-shrink-0 mt-0.5" size={18} />
-                    <span className="text-gray-700">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="bg-slate-50 rounded-2xl p-8 border border-slate-200">
-              <h3 className="text-xl font-bold mb-6 text-slate-800">Stillingens nøglefakta</h3>
-              <div className="space-y-4">
-                {[
-                  { label: 'Ansættelsesform', value: 'Freelance / selvstændig' },
-                  { label: 'Arbejdssted', value: 'Hjemmefra – hele Danmark' },
-                  { label: 'Arbejdstid', value: 'Fleksibel – du bestemmer selv' },
-                  { label: 'Løn', value: 'Fast grundhonorar + provision' },
-                  { label: 'Produkt', value: 'Inkasso & kreditorstyring til erhverv' },
-                  { label: 'Opstart', value: 'Hurtigst muligt' }
-                ].map((row, i) => (
-                  <div key={i} className="flex justify-between items-center py-2 border-b border-slate-200 last:border-0">
-                    <span className="text-gray-600 text-sm">{row.label}</span>
-                    <span className="font-semibold text-gray-900 text-sm">{row.value}</span>
-                  </div>
-                ))}
-              </div>
-              <div className="mt-6">
-                <Link to="/kontakt" className="w-full inline-flex items-center justify-center bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
-                  Send din ansøgning <ArrowRight size={16} className="ml-2" />
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4 max-w-5xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Hvorfor inkassosalg er en stærk niche</h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[
-              { icon: <Shield size={36} className="text-slate-600" />, title: 'Alle virksomheder har behovet', desc: 'Sen betaling og dårlige debitorer rammer alle brancher. Det giver dig et enormt og konstant marked.' },
-              { icon: <BarChart3 size={36} className="text-slate-600" />, title: 'Høj lukningsrate', desc: 'Virksomheder der oplever betalingsproblemer er motiverede for at handle. De er allerede bevidste om smertestedet.' },
-              { icon: <Users size={36} className="text-slate-600" />, title: 'Adgang til beslutningstagere', desc: 'Du taler med CFO\'er og direktører – folk der kan sige ja med det samme. Kortere salgscyklus og hurtigere provision.' }
-            ].map((item, i) => (
-              <div key={i} className="bg-white rounded-xl p-6 shadow-sm text-center">
-                <div className="flex justify-center mb-4">{item.icon}</div>
-                <h3 className="font-semibold text-lg mb-2">{item.title}</h3>
-                <p className="text-gray-600 text-sm">{item.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 max-w-5xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Hvad du får hos Magnora Marketing</h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              { icon: <Home size={40} className="text-blue-600" />, title: 'Arbejd hjemmefra', desc: 'Sælg fra dit eget hjem med fuld frihed. Ingen pendling, ingen faste kontortider.' },
-              { icon: <PiggyBank size={40} className="text-blue-600" />, title: 'Attraktiv provision', desc: 'Grundhonorar plus provision per bookede møde og lukket aftale. B2B-inkasso giver høj provision pr. kontrakt.' },
-              { icon: <Clock size={40} className="text-blue-600" />, title: 'Fleksible tider', desc: 'Du bestemmer selv din salgsdag. Erhvervskunder kontaktes typisk i dagtimerne – resten af tiden er din.' }
-            ].map((item, i) => (
-              <div key={i} className="text-center p-8 bg-gray-50 rounded-xl">
-                <div className="flex justify-center mb-4">{item.icon}</div>
-                <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
-                <p className="text-gray-600">{item.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div>
-              <h2 className="text-2xl font-bold mb-6">Det kigger vi efter</h2>
-              <ul className="space-y-3">
-                {[
-                  'Erfaring med B2B-salg eller erhvervskundekontakt',
-                  'Professionel og troværdig kommunikationsstil',
-                  'Evne til at navigere og tale med beslutningstagere',
-                  'Selvdisciplin og evne til at arbejde selvstændigt',
-                  'Juridisk eller finansiel baggrund er en fordel – ikke krav',
-                  'Resultatorienteret og målbevidst'
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <CheckCircle className="text-green-500 flex-shrink-0 mt-0.5" size={18} />
-                    <span className="text-gray-700">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <h2 className="text-2xl font-bold mb-6">Sådan søger du</h2>
-              <p className="text-gray-600 mb-6">Send en kort besked om dig selv og din salgserfaring. Vi vender tilbage inden for 2 hverdage.</p>
-              <Link to="/kontakt" className="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
-                Kontakt Magnora Marketing nu <ArrowRight size={16} className="ml-2" />
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <FAQSection faqs={[
-        { question: 'Hvad booker jeg møder om?', answer: 'Du kontakter virksomheder og booker møder med inkassoeksperter om professionel debitorhåndtering og gældinddrivelse.' },
-        { question: 'Er det et svært produkt at sælge?', answer: 'Inkasso er et nødvendigt produkt for virksomheder med ubetalte fordringer. Mange virksomheder ser positivt på at forbedre deres debitorhåndtering.' },
-        { question: 'Hvem er målgruppen?', answer: 'Primært SMV\'er og større virksomheder der har udestående fakturaer og behøver professionel hjælp til inddrivelse.' },
-        { question: 'Er der særlige krav til min baggrund?', answer: 'Nej – du behøver ikke juridisk baggrund. Gode kommunikationsevner og professionel optræden er det vigtigste.' },
-        { question: "Er der opkaldslister klar fra dag ét?", answer: "Ja – Magnora Marketing leverer opkaldslister og kampagnematerialer, så du kan starte med det samme." },
-        { question: "Kan jeg se et eksempel på et script?", answer: "Ja – du modtager et gennemprøvet salgsskript ved opstart som du kan tilpasse din stil." },
-        { question: "Hvad sker der ved et succes-salg eller booket møde?", answer: "Du registrerer resultatet i vores system, og provisionen beregnes automatisk og udbetales månedligt." },
-        { question: "Er der løbende coaching?", answer: "Ja – Magnora Marketing's salgsledere holder regelmæssige coaching-sessioner og giver feedback på din salgsstil." },
-        { question: "Kan jeg prøve stillingen i en kortere periode?", answer: "Ja – de første 2-4 uger betragtes som en gensidig prøveperiode." },
-        { question: "Hvad er den gennemsnitlige indkomst for en aktiv freelancer?", answer: "Det afhænger af aktivitet og produkt. Aktive freelancere med gode resultater kan tjene et solidt supplement eller en fuld indkomst." },
-        { question: "Kan jeg arbejde for Magnora Marketing og for andre bureauer?", answer: "Som freelancer er du fri til at arbejde for andre, så længe der ikke er konkurrencekonflikt med Magnora Marketing's kunder." },
-        { question: "Er der skriftlige kontrakter?", answer: "Ja – alle samarbejder formaliseres med en klar freelance-aftale der beskriver vilkår, provision og forventninger." },
-        { question: "Hvad sker der, hvis jeg ikke trives med produktet?", answer: "Vi kan diskutere om du er bedre egnet til et andet produkt i Magnora Marketing's portfolio." },
-        { question: "Hvad er Magnora Marketing's forventninger til mig som freelancer?", answer: "Vi forventer selvdisciplin, professionel optræden og løbende kommunikation om aktivitet og resultater." },
-      ]} />
-
-      <section className="bg-blue-600 text-white py-16">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6">Klar til at sælge i en B2B-niche med høj efterspørgsel?</h2>
-          <p className="text-xl mb-8 max-w-3xl mx-auto">Kontakt Magnora Marketing og start med inkasso- og kreditorstyringssalg der giver resultater.</p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/kontakt" className="inline-flex items-center bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-              Send ansøgning <ArrowRight className="ml-2" size={18} />
-            </Link>
-            <Link to="/freelance-telemarketing" className="inline-flex items-center border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
-              Se alle ledige stillinger
-            </Link>
-          </div>
-        </div>
-      </section>
-    </>
+    <JobPageLayout
+      content={content}
+      canonical="/jobs/inkasso"
+      keywords="freelance sælger inkasso, kreditorstyring salg, inkasso sælger job, gældinddrivelse B2B, Magnora Marketing inkasso stilling"
+      backgroundImage="https://images.pexels.com/photos/3184466/pexels-photo-3184466.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      accent="slate"
+      whyIcons={[
+        <Shield size={36} className="text-slate-600" />,
+        <BarChart3 size={36} className="text-slate-600" />,
+        <Users size={36} className="text-slate-600" />,
+      ]}
+    />
   );
 }
