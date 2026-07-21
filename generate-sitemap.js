@@ -9,6 +9,35 @@ const domain = 'https://magnoramarketing.dk';
 // Get current date for pages that update frequently
 const currentDate = new Date().toISOString();
 
+// Blog posts [slug, publish date] — keep in sync with src/pages/BlogPage.tsx
+const blogPosts = [
+  ['saas-loesninger-2026', '2026-01-15'],
+  ['ai-automation-2026', '2026-02-01'],
+  ['modebooking-2026', '2026-02-20'],
+  ['telesalg-2026', '2026-03-05'],
+  ['outbound-sales-2026', '2026-03-20'],
+  ['hvorfor-saas-2026', '2026-04-01'],
+  ['saas-vs-on-premise', '2026-04-05'],
+  ['bedste-saas-tools-2026', '2026-04-10'],
+  ['saas-integration-2026', '2026-04-15'],
+  ['saas-security-gdpr', '2026-04-20'],
+  ['hvorfor-magnora-webudvikling', '2026-04-25'],
+  ['hjemmeside-til-vaekst-2026', '2026-05-05'],
+  ['websitekonvertering-tips', '2026-05-15'],
+  ['hvorfor-magnora-ai-integration', '2026-05-01'],
+  ['ai-integration-roi-2026', '2026-05-10'],
+  ['hvorfor-magnora-telesalg', '2026-05-20'],
+  ['hvorfor-magnora-moedebooking', '2026-05-25'],
+  ['outsourcing-telesalg-2026', '2026-06-01'],
+  ['b2b-salg-strategi-2026', '2026-06-05'],
+  ['moedebooking-scripts-2026', '2026-06-10'],
+  ['leadgenerering-strategier-2026', '2026-06-15'],
+  ['hvad-er-bant-2026', '2026-06-20'],
+  ['vaekst-partner-guide', '2026-06-23'],
+  ['startup-til-vaekst-2026', '2026-06-26'],
+  ['cold-calling-vs-inbound', '2026-06-29'],
+];
+
 // Define all pages with their metadata
 const pages = [
   // Main pages
@@ -43,7 +72,7 @@ const pages = [
     lastmod: currentDate
   },
   {
-    path: '/hvorfor-nexusmarketing',
+    path: '/hvorfor-nexny',
     priority: '0.9',
     changefreq: 'weekly',
     lastmod: currentDate
@@ -68,37 +97,13 @@ const pages = [
   },
   
   // Blog Posts
-  {
-    path: '/blog/saas-loesninger-2026',
+  ...blogPosts.map(([slug, date]) => ({
+    path: `/blog/${slug}`,
     priority: '0.7',
     changefreq: 'monthly',
-    lastmod: new Date('2026-06-01').toISOString()
-  },
-  {
-    path: '/blog/ai-automation-2026',
-    priority: '0.7',
-    changefreq: 'monthly',
-    lastmod: new Date('2026-05-15').toISOString()
-  },
-  {
-    path: '/blog/modebooking-2026',
-    priority: '0.7',
-    changefreq: 'monthly',
-    lastmod: new Date('2026-04-20').toISOString()
-  },
-  {
-    path: '/blog/telesalg-2026',
-    priority: '0.7',
-    changefreq: 'monthly',
-    lastmod: new Date('2026-03-10').toISOString()
-  },
-  {
-    path: '/blog/outbound-sales-2026',
-    priority: '0.7',
-    changefreq: 'monthly',
-    lastmod: new Date('2026-02-05').toISOString()
-  },
-  
+    lastmod: new Date(date).toISOString()
+  })),
+
   // Partner/Samarbejde pages
   {
     path: '/modebooking-priser',
@@ -138,7 +143,19 @@ const pages = [
     changefreq: 'weekly',
     lastmod: currentDate
   },
-  
+  {
+    path: '/digital/ai-widget',
+    priority: '0.7',
+    changefreq: 'weekly',
+    lastmod: currentDate
+  },
+  {
+    path: '/digital/ai-reception',
+    priority: '0.7',
+    changefreq: 'weekly',
+    lastmod: currentDate
+  },
+
   // Job Landing Pages
   {
     path: '/jobs/arbejd-hjemmefra',
