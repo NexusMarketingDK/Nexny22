@@ -58,7 +58,7 @@ export default function CoffeeServicePage() {
                   { label: 'Ansættelsesform', value: 'Freelance / selvstændig' },
                   { label: 'Arbejdssted', value: 'Hjemmefra – hele Danmark' },
                   { label: 'Arbejdstid', value: 'Fleksibel – du bestemmer selv' },
-                  { label: 'Løn', value: 'Fast grundhonorar + provision' },
+                  { label: 'Løn', value: 'Attraktiv provisionsløn' },
                   { label: 'Produkt', value: 'Kaffeservice & kaffemaskiner til erhverv' },
                   { label: 'Opstart', value: 'Hurtigst muligt' }
                 ].map((row, i) => (

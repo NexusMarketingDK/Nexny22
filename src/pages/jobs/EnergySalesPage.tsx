@@ -58,7 +58,7 @@ export default function EnergySalesPage() {
                   { label: 'Ansættelsesform', value: 'Freelance / selvstændig' },
                   { label: 'Arbejdssted', value: 'Hjemmefra – hele Danmark' },
                   { label: 'Arbejdstid', value: 'Fleksibel – du bestemmer selv' },
-                  { label: 'Løn', value: 'Fast grundhonorar + provision' },
+                  { label: 'Løn', value: 'Attraktiv provisionsløn' },
                   { label: 'Produkt', value: 'Strøm & energioptimering (B2B/B2C)' },
                   { label: 'Opstart', value: 'Hurtigst muligt' }
                 ].map((row, i) => (

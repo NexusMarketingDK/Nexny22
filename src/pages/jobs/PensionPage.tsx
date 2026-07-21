@@ -58,7 +58,7 @@ export default function PensionPage() {
                   { label: 'Ansættelsesform', value: 'Freelance / selvstændig' },
                   { label: 'Arbejdssted', value: 'Hjemmefra – hele Danmark' },
                   { label: 'Arbejdstid', value: 'Fleksibel – du bestemmer selv' },
-                  { label: 'Løn', value: 'Fast grundhonorar + provision' },
+                  { label: 'Løn', value: 'Attraktiv provisionsløn' },
                   { label: 'Produkt', value: 'Pensionsrådgivning (privat og erhverv)' },
                   { label: 'Opstart', value: 'Hurtigst muligt' }
                 ].map((row, i) => (
