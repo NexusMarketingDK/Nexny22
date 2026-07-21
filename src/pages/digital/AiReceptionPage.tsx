@@ -83,7 +83,7 @@ export default function AiReceptionPage() {
         ctaLink="/kontakt"
         secondaryCtaText="Se AI-widget"
         secondaryCtaLink="/digital/ai-widget"
-        backgroundImage="https://images.pexels.com/photos/3184405/pexels-photo-3184405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        backgroundImage="/heroes/hero-voice.jpg"
       />
 
       {/* Problem / Solution */}

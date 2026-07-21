@@ -66,7 +66,7 @@ export default function WebsitesPage() {
         subtitle="Magnora Marketing bygger professionelle, SEO-optimerede hjemmesider der tiltrækker de rigtige besøgende og omdanner dem til kunder."
         ctaText="Få et tilbud"
         ctaLink="/kontakt"
-        backgroundImage="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        backgroundImage="/heroes/hero-webdev.jpg"
       />
 
       <section className="py-16 bg-white">
@@ -115,7 +115,7 @@ export default function WebsitesPage() {
             </div>
             <div>
               <img
-                src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                src="/heroes/hero-webdev.jpg"
                 alt="Webdesign og udvikling hos Magnora Marketing"
                 className="rounded-xl shadow-lg w-full"
               />

@@ -117,7 +117,7 @@ const HomePage: React.FC = () => {
         ctaLink="/samarbejdspartner"
         secondaryCtaText="Start din karriere"
         secondaryCtaLink="/freelance-telemarketing"
-        backgroundImage="https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        backgroundImage="/heroes/hero-home.jpg"
       />
 
       <section className="section bg-gray-50">
@@ -249,7 +249,7 @@ const HomePage: React.FC = () => {
             </div>
             <div className="relative">
               <img
-                src="https://images.pexels.com/photos/3182781/pexels-photo-3182781.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                src="/heroes/hero-home.jpg"
                 alt="Vækst og succes for B2B virksomheder med Magnora Marketing"
                 className="rounded-lg shadow-lg object-cover w-full h-[500px]"
               />

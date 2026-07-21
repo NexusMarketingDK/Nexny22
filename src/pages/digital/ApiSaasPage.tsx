@@ -55,7 +55,7 @@ export default function ApiSaasPage() {
         subtitle="Vi bygger de digitale broer der får dine systemer til at tale sammen – og platforme der skalerer med din forretning."
         ctaText="Få et tilbud"
         ctaLink="/kontakt"
-        backgroundImage="https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        backgroundImage="/heroes/hero-webdev.jpg"
       />
 
       <section className="py-16 bg-white">
@@ -85,7 +85,7 @@ export default function ApiSaasPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <img
-                src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                src="/heroes/hero-webdev.jpg"
                 alt="API og SaaS udvikling hos Magnora Marketing"
                 className="rounded-xl shadow-lg w-full"
               />

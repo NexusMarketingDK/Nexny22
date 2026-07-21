@@ -22,7 +22,7 @@ export default function WebBureauPage() {
         ctaLink="/kontakt"
         secondaryCtaText="Se alle stillinger"
         secondaryCtaLink="/freelance-telemarketing"
-        backgroundImage="https://images.pexels.com/photos/3184466/pexels-photo-3184466.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        backgroundImage="/heroes/hero-webdev.jpg"
       />
 
       <section className="py-16 bg-white">
