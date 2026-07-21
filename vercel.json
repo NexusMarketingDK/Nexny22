@@ -1,3 +1,8 @@
 {
+  "redirects": [
+    { "source": "/hvorfor-nexusmarketing", "destination": "/hvorfor-nexny", "permanent": true },
+    { "source": "/jobs/web-bureau", "destination": "/jobs/webudvikling-salg", "permanent": true },
+    { "source": "/modebooking", "destination": "/modebooking-priser", "permanent": true }
+  ],
   "rewrites": [{ "source": "/((?!sitemap\\.xml|robots\\.txt).*)", "destination": "/index.html" }]
 }
