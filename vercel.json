@@ -1,8 +1,16 @@
 {
   "redirects": [
-    { "source": "/hvorfor-nexusmarketing", "destination": "/hvorfor-nexny", "permanent": true },
-    { "source": "/jobs/web-bureau", "destination": "/jobs/webudvikling-salg", "permanent": true },
-    { "source": "/modebooking", "destination": "/modebooking-priser", "permanent": true }
-  ],
-  "rewrites": [{ "source": "/((?!sitemap\\.xml|robots\\.txt).*)", "destination": "/index.html" }]
+    { "source": "/forside", "destination": "https://magnoramarketing.dk/", "permanent": true },
+    { "source": "/arbejd-hjemmefra-freelance", "destination": "https://magnoramarketing.dk/karriere", "permanent": true },
+    { "source": "/moedebooker-inden-for-solceller-og-vedvarende-energi", "destination": "https://magnoramarketing.dk/telemarketing", "permanent": true },
+    { "source": "/privat-strom-salg", "destination": "https://magnoramarketing.dk/telemarketing", "permanent": true },
+    { "source": "/samarbejde-med-nexusmarketing", "destination": "https://magnoramarketing.dk/kontakt", "permanent": true },
+    { "source": "/om-nexusmarketing", "destination": "https://magnoramarketing.dk/om-os", "permanent": true },
+    { "source": "/moedebooker-hjemmeside-seo-og-marketing", "destination": "https://magnoramarketing.dk/telemarketing", "permanent": true },
+    { "source": "/kontakt-nexusmarketing", "destination": "https://magnoramarketing.dk/kontakt", "permanent": true },
+    { "source": "/freelance-modebooker-pension", "destination": "https://magnoramarketing.dk/karriere", "permanent": true },
+    { "source": "/freelancere", "destination": "https://magnoramarketing.dk/telemarketing", "permanent": true },
+    { "source": "/hvorfor-outsource", "destination": "https://magnoramarketing.dk/om-os", "permanent": true },
+    { "source": "/(.*)", "destination": "https://magnoramarketing.dk/", "permanent": true }
+  ]
 }
