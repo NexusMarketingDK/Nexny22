@@ -1,23 +1,26 @@
-# Permanent 301 redirects from old WordPress pages to new pages
-/forside/                                                   /                                  301
-/arbejd-hjemmefra-freelance/                               /jobs/arbejd-hjemmefra            301
-/moedebooker-inden-for-solceller-og-vedvarende-energi/    /jobs/solenergi                   301
-/privat-strom-salg/                                        /jobs/energi-salg                 301
-/samarbejde-med-nexusmarketing/                            /samarbejdspartner                301
-/om-nexusmarketing/                                        /om-os                            301
-/moedebooker-hjemmeside-seo-og-marketing/                  /jobs/web-bureau                  301
-/kontakt-nexusmarketing/                                   /kontakt                          301
-/freelance-modebooker-pension/                             /jobs/pensionsordning             301
+# =====================================================================
+# nexusmarketing.dk  ->  SEO redirect-only (host-scoped, 301 permanent)
+# These rules only match requests whose HOST is nexusmarketing.dk, so
+# magnoramarketing.dk is never affected. (Netlify full-URL redirect
+# syntax; ignored by Vercel, which uses vercel.json.)
+# =====================================================================
+https://nexusmarketing.dk/forside/                                                 https://magnoramarketing.dk/                        301!
+https://nexusmarketing.dk/arbejd-hjemmefra-freelance/                              https://magnoramarketing.dk/jobs/arbejd-hjemmefra   301!
+https://nexusmarketing.dk/moedebooker-inden-for-solceller-og-vedvarende-energi/    https://magnoramarketing.dk/jobs/solenergi          301!
+https://nexusmarketing.dk/privat-strom-salg/                                       https://magnoramarketing.dk/jobs/energi-salg        301!
+https://nexusmarketing.dk/samarbejde-med-nexusmarketing/                           https://magnoramarketing.dk/kontakt                 301!
+https://nexusmarketing.dk/om-nexusmarketing/                                       https://magnoramarketing.dk/om-os                   301!
+https://nexusmarketing.dk/moedebooker-hjemmeside-seo-og-marketing/                 https://magnoramarketing.dk/jobs/webudvikling-salg  301!
+https://nexusmarketing.dk/kontakt-nexusmarketing/                                  https://magnoramarketing.dk/kontakt                 301!
+https://nexusmarketing.dk/freelance-modebooker-pension/                            https://magnoramarketing.dk/jobs/pensionsordning    301!
+https://nexusmarketing.dk/freelancere/                                             https://magnoramarketing.dk/freelance-telemarketing 301!
+https://nexusmarketing.dk/hvorfor-outsource/                                       https://magnoramarketing.dk/om-os                   301!
+https://nexusmarketing.dk/*                                                        https://magnoramarketing.dk/                        301!
+https://www.nexusmarketing.dk/*                                                    https://magnoramarketing.dk/                        301!
 
-# Redirect old freelancere URL to new freelance-telemarketing URL
-/freelancere/                                              /freelance-telemarketing          301
-
-# Redirect old outsourcing URL to new nexusmarketing URL
-/hvorfor-outsource/                                        /hvorfor-nexusmarketing           301
-
-# Serve sitemap.xml and robots.txt directly
+# =====================================================================
+# magnoramarketing.dk (and any other host): render the SPA normally.
+# =====================================================================
 /sitemap.xml  /sitemap.xml  200
 /robots.txt   /robots.txt   200
-
-# Ensure all other paths redirect to index.html for client-side routing
-/*    /index.html   200
+/*            /index.html   200
