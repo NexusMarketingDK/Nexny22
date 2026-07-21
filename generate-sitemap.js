@@ -36,6 +36,16 @@ const blogPosts = [
   ['vaekst-partner-guide', '2026-06-23'],
   ['startup-til-vaekst-2026', '2026-06-26'],
   ['cold-calling-vs-inbound', '2026-06-29'],
+  ['hvorfor-samarbejde-magnora', '2026-07-01'],
+  ['ideudvikling-med-magnora', '2026-07-02'],
+  ['fra-ide-til-salg', '2026-07-03'],
+  ['moedebooking-partner-magnora', '2026-07-04'],
+  ['outsource-moedebooking-fordele', '2026-07-05'],
+  ['telesalg-partner-magnora', '2026-07-06'],
+  ['b2b-telesalg-samarbejde', '2026-07-07'],
+  ['vaekstpartner-ide-moedebooking-telesalg', '2026-07-08'],
+  ['saadan-foregaar-samarbejdet', '2026-07-09'],
+  ['hvorfor-outsource-salg-og-moedebooking', '2026-07-10'],
 ];
 
 // Define all pages with their metadata

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Calendar, Phone, Globe, Cpu, TrendingUp } from 'lucide-react';
+import { ArrowRight, Calendar, Phone, Globe, Cpu, TrendingUp, HeartHandshake } from 'lucide-react';
 import SEO from '../components/SEO';
 import FAQSection from '../components/FAQSection';
 import CTASection from '../components/CTASection';
@@ -18,6 +18,25 @@ interface Category {
 
 const BlogPage: React.FC = () => {
   const categories: Category[] = [
+    {
+      id: 'samarbejde',
+      label: 'Samarbejde & Vækst',
+      icon: <HeartHandshake size={22} />,
+      color: 'from-blue-600 to-indigo-800',
+      badgeColor: 'bg-blue-100 text-blue-700',
+      posts: [
+        { slug: 'hvorfor-samarbejde-magnora', title: 'Hvorfor samarbejde med Magnora Marketing? 8 grunde til at vælge os', description: 'De 8 vigtigste grunde til at vælge Magnora Marketing som vækstpartner inden for idéudvikling, mødebooking og telesalg.', date: '2026-07-01' },
+        { slug: 'ideudvikling-med-magnora', title: 'Idéudvikling med Magnora Marketing: Fra koncept til markedsklar løsning', description: 'Har du en idé, men mangler vejen til markedet? Sådan hjælper vi fra koncept til en løsning, der reelt sælger.', date: '2026-07-02' },
+        { slug: 'fra-ide-til-salg', title: 'Fra idé til salg: Sådan tager Magnora din forretningsidé til markedet', description: 'De fire faser fra idé og koncept til digital løsning, mødebooking og betalende kunder – med én samlet partner.', date: '2026-07-03' },
+        { slug: 'moedebooking-partner-magnora', title: 'Mødebooking-partner: Derfor skal du samarbejde med Magnora Marketing', description: 'Vi fylder din kalender med kvalificerede møder hos de rette beslutningstagere – kvalitet frem for kvantitet.', date: '2026-07-04' },
+        { slug: 'outsource-moedebooking-fordele', title: 'Outsource din mødebooking: 7 fordele ved at samarbejde med Magnora', description: 'Hurtigere opstart, lavere risiko og flere kvalificerede møder – de 7 fordele ved ekstern mødebooking.', date: '2026-07-05' },
+        { slug: 'telesalg-partner-magnora', title: 'Telesalg-partner: Hvorfor Magnora Marketing skaber resultater', description: 'Erfarne B2B-sælgere, skræddersyede scripts og fuld transparens – derfor virker vores telesalg.', date: '2026-07-06' },
+        { slug: 'b2b-telesalg-samarbejde', title: 'B2B telesalg-samarbejde: Sådan booster Magnora din pipeline', description: 'Fra ideel kundeprofil og prospektering til kvalificerede møder og en pipeline, der vokser.', date: '2026-07-07' },
+        { slug: 'vaekstpartner-ide-moedebooking-telesalg', title: 'Én vækstpartner til idéudvikling, mødebooking og telesalg', description: 'Hvorfor jonglere med flere leverandører? Saml idéudvikling, mødebooking og telesalg hos én partner.', date: '2026-07-08' },
+        { slug: 'saadan-foregaar-samarbejdet', title: 'Sådan foregår et samarbejde med Magnora Marketing – trin for trin', description: 'Fra første uforpligtende snak til de første kvalificerede møder – enkelt, hurtigt og transparent.', date: '2026-07-09' },
+        { slug: 'hvorfor-outsource-salg-og-moedebooking', title: 'Hvorfor outsource dit salg og din mødebooking til Magnora?', description: 'Hvornår det giver mening at outsource telesalg og mødebooking – og hvilke fordele det giver din vækst.', date: '2026-07-10' },
+      ],
+    },
     {
       id: 'telesalg',
       label: 'Telesalg & Mødebooking',
