@@ -1,17 +1,17 @@
 {
   "redirects": [
-    { "source": "/forside", "has": [{ "type": "host", "value": "(www\\.)?nexusmarketing\\.dk" }], "destination": "https://magnoramarketing.dk/", "permanent": true },
-    { "source": "/arbejd-hjemmefra-freelance", "has": [{ "type": "host", "value": "(www\\.)?nexusmarketing\\.dk" }], "destination": "https://magnoramarketing.dk/jobs/arbejd-hjemmefra", "permanent": true },
-    { "source": "/moedebooker-inden-for-solceller-og-vedvarende-energi", "has": [{ "type": "host", "value": "(www\\.)?nexusmarketing\\.dk" }], "destination": "https://magnoramarketing.dk/jobs/solenergi", "permanent": true },
-    { "source": "/privat-strom-salg", "has": [{ "type": "host", "value": "(www\\.)?nexusmarketing\\.dk" }], "destination": "https://magnoramarketing.dk/jobs/energi-salg", "permanent": true },
-    { "source": "/samarbejde-med-nexusmarketing", "has": [{ "type": "host", "value": "(www\\.)?nexusmarketing\\.dk" }], "destination": "https://magnoramarketing.dk/kontakt", "permanent": true },
-    { "source": "/om-nexusmarketing", "has": [{ "type": "host", "value": "(www\\.)?nexusmarketing\\.dk" }], "destination": "https://magnoramarketing.dk/om-os", "permanent": true },
-    { "source": "/moedebooker-hjemmeside-seo-og-marketing", "has": [{ "type": "host", "value": "(www\\.)?nexusmarketing\\.dk" }], "destination": "https://magnoramarketing.dk/jobs/webudvikling-salg", "permanent": true },
-    { "source": "/kontakt-nexusmarketing", "has": [{ "type": "host", "value": "(www\\.)?nexusmarketing\\.dk" }], "destination": "https://magnoramarketing.dk/kontakt", "permanent": true },
-    { "source": "/freelance-modebooker-pension", "has": [{ "type": "host", "value": "(www\\.)?nexusmarketing\\.dk" }], "destination": "https://magnoramarketing.dk/jobs/pensionsordning", "permanent": true },
-    { "source": "/freelancere", "has": [{ "type": "host", "value": "(www\\.)?nexusmarketing\\.dk" }], "destination": "https://magnoramarketing.dk/freelance-telemarketing", "permanent": true },
-    { "source": "/hvorfor-outsource", "has": [{ "type": "host", "value": "(www\\.)?nexusmarketing\\.dk" }], "destination": "https://magnoramarketing.dk/om-os", "permanent": true },
-    { "source": "/(.*)", "has": [{ "type": "host", "value": "(www\\.)?nexusmarketing\\.dk" }], "destination": "https://magnoramarketing.dk/", "permanent": true }
+    { "source": "/forside", "has": [{ "type": "host", "value": "nexusmarketing.dk" }], "destination": "https://magnoramarketing.dk/", "permanent": true },
+    { "source": "/arbejd-hjemmefra-freelance", "has": [{ "type": "host", "value": "nexusmarketing.dk" }], "destination": "https://magnoramarketing.dk/jobs/arbejd-hjemmefra", "permanent": true },
+    { "source": "/moedebooker-inden-for-solceller-og-vedvarende-energi", "has": [{ "type": "host", "value": "nexusmarketing.dk" }], "destination": "https://magnoramarketing.dk/jobs/solenergi", "permanent": true },
+    { "source": "/privat-strom-salg", "has": [{ "type": "host", "value": "nexusmarketing.dk" }], "destination": "https://magnoramarketing.dk/jobs/energi-salg", "permanent": true },
+    { "source": "/samarbejde-med-nexusmarketing", "has": [{ "type": "host", "value": "nexusmarketing.dk" }], "destination": "https://magnoramarketing.dk/kontakt", "permanent": true },
+    { "source": "/om-nexusmarketing", "has": [{ "type": "host", "value": "nexusmarketing.dk" }], "destination": "https://magnoramarketing.dk/om-os", "permanent": true },
+    { "source": "/moedebooker-hjemmeside-seo-og-marketing", "has": [{ "type": "host", "value": "nexusmarketing.dk" }], "destination": "https://magnoramarketing.dk/jobs/webudvikling-salg", "permanent": true },
+    { "source": "/kontakt-nexusmarketing", "has": [{ "type": "host", "value": "nexusmarketing.dk" }], "destination": "https://magnoramarketing.dk/kontakt", "permanent": true },
+    { "source": "/freelance-modebooker-pension", "has": [{ "type": "host", "value": "nexusmarketing.dk" }], "destination": "https://magnoramarketing.dk/jobs/pensionsordning", "permanent": true },
+    { "source": "/freelancere", "has": [{ "type": "host", "value": "nexusmarketing.dk" }], "destination": "https://magnoramarketing.dk/freelance-telemarketing", "permanent": true },
+    { "source": "/hvorfor-outsource", "has": [{ "type": "host", "value": "nexusmarketing.dk" }], "destination": "https://magnoramarketing.dk/om-os", "permanent": true },
+    { "source": "/(.*)", "has": [{ "type": "host", "value": "nexusmarketing.dk" }], "destination": "https://magnoramarketing.dk/", "permanent": true }
   ],
   "rewrites": [{ "source": "/((?!sitemap\\.xml|robots\\.txt).*)", "destination": "/index.html" }]
 }
