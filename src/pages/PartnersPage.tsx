@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { TrendingUp, BarChart3, HeartHandshake, ArrowRight } from 'lucide-react';
 import HeroSection from '../components/HeroSection';
@@ -6,14 +6,9 @@ import SEO from '../components/SEO';
 import FAQSection from '../components/FAQSection';
 import CTASection from '../components/CTASection';
 import AiSolutionsSection from '../components/AiSolutionsSection';
+import ContactForm from '../components/ContactForm';
 
 const PartnersPage: React.FC = () => {
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.innerHTML = `var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}`;
-    document.body.appendChild(script);
-    return () => { document.body.removeChild(script); };
-  }, []);
 
   const benefits = [
     {
@@ -99,20 +94,11 @@ const PartnersPage: React.FC = () => {
       <section id="kontakt-formular" className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center mb-10">
-            <h2 className="text-3xl font-bold mb-4">Kontakt Magnora Marketing</h2>
-            <p className="text-lg text-gray-600">Udfyld formularen og vi vender tilbage inden for én hverdag.</p>
+            <h2 className="text-3xl font-bold mb-4">Bliv samarbejdspartner</h2>
+            <p className="text-lg text-gray-600">Fortæl os om din virksomhed og dine mål – vi vender tilbage inden for én hverdag med et konkret oplæg til mødebooking eller telesalg.</p>
           </div>
-          <div className="max-w-2xl mx-auto">
-            <iframe
-              data-tally-src="https://tally.so/embed/npM1BJ?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
-              loading="lazy"
-              width="100%"
-              height="400"
-              frameBorder="0"
-              marginHeight={0}
-              marginWidth={0}
-              title="Bliv samarbejdspartner med Magnora Marketing"
-            ></iframe>
+          <div className="max-w-2xl mx-auto bg-white rounded-2xl shadow-lg border border-slate-100 p-8">
+            <ContactForm presetTopic="Pris på Mødebooking / Telesalg" sourceLabel="Samarbejdspartner-siden" />
           </div>
         </div>
       </section>

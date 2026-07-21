@@ -1,20 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { CheckCircle, ArrowRight, Target, Award, ChevronDown, ChevronUp } from 'lucide-react';
 import HeroSection from '../components/HeroSection';
 import SEO from '../components/SEO';
 import FAQSection from '../components/FAQSection';
 import CTASection from '../components/CTASection';
+import ContactForm from '../components/ContactForm';
 
 const PricingPage: React.FC = () => {
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
-
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.innerHTML = `var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}`;
-    document.body.appendChild(script);
-    return () => { document.body.removeChild(script); };
-  }, []);
 
   const pricingModels = [
     {
@@ -155,14 +149,16 @@ const PricingPage: React.FC = () => {
       </section>
 
       <section className="bg-blue-600 text-white py-16">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6">Få et uforpligtende tilbud fra Magnora Marketing</h2>
-          <p className="text-xl mb-8 max-w-3xl mx-auto">
-            Fortæl os om din virksomhed og dine mål – vi sender et skræddersyet tilbud inden for 24 timer.
-          </p>
-          <Link to="/kontakt" className="inline-flex items-center bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-            Kontakt Magnora Marketing nu <ArrowRight className="ml-2" />
-          </Link>
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl font-bold mb-4">Få et uforpligtende tilbud fra Magnora Marketing</h2>
+            <p className="text-xl max-w-3xl mx-auto text-white/85">
+              Fortæl os om din virksomhed og dine mål – vi sender et skræddersyet tilbud inden for 24 timer.
+            </p>
+          </div>
+          <div className="max-w-2xl mx-auto bg-white rounded-2xl shadow-xl p-8 text-left">
+            <ContactForm presetTopic="Pris på Mødebooking / Telesalg" sourceLabel="Prissiden" />
+          </div>
         </div>
       </section>
       <section className="section bg-white">

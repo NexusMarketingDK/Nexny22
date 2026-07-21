@@ -1,21 +1,11 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Mail, MapPin } from 'lucide-react';
 import SEO from '../components/SEO';
 import CTASection from '../components/CTASection';
 import FAQSection from '../components/FAQSection';
+import ContactForm from '../components/ContactForm';
 
 const ContactPage: React.FC = () => {
-  useEffect(() => {
-    // Add Tally script
-    const script = document.createElement('script');
-    script.innerHTML = `var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}`;
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
-
   const faqs = [
     { question: "Hvordan kommer vi i gang med et samarbejde?", answer: "Vi starter med et uforpligtende møde, hvor vi diskuterer jeres behov og mål. Herefter udarbejder vi en skræddersyet løsning til jer." },
     { question: "Hvad koster det at samarbejde med Magnora Marketing?", answer: "Vi tilbyder fleksible prismodeller tilpasset jeres behov. Kontakt os for et skræddersyet tilbud baseret på jeres specifikke ønsker og mål." },
@@ -58,16 +48,9 @@ const ContactPage: React.FC = () => {
             {/* Contact Form */}
             <div className="lg:col-span-3">
               <div className="bg-white rounded-lg shadow-md p-8">
-                <iframe
-                  data-tally-src="https://tally.so/embed/npM1BJ?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
-                  loading="lazy"
-                  width="100%"
-                  height="200"
-                  frameBorder="0"
-                  marginHeight={0}
-                  marginWidth={0}
-                  title="Kontakt Magnora Marketing"
-                ></iframe>
+                <h2 className="text-2xl font-semibold mb-2">Send os en besked</h2>
+                <p className="text-gray-500 text-sm mb-7">Vælg hvad din henvendelse drejer sig om, så lander den hos den rette specialist med det samme.</p>
+                <ContactForm sourceLabel="Kontaktsiden" />
               </div>
             </div>
 

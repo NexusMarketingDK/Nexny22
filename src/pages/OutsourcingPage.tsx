@@ -5,6 +5,7 @@ import HeroSection from '../components/HeroSection';
 import SEO from '../components/SEO';
 import FAQSection from '../components/FAQSection';
 import CTASection from '../components/CTASection';
+import ContactForm from '../components/ContactForm';
 
 const OutsourcingPage: React.FC = () => {
   const reasons = [
@@ -112,16 +113,7 @@ const OutsourcingPage: React.FC = () => {
             <div>
               <div className="bg-white rounded-xl shadow-lg p-8">
                 <h3 className="text-xl font-bold mb-6 text-center">Indsend dit samarbejdsønske</h3>
-                <iframe
-                  data-tally-src="https://tally.so/embed/npM1BJ?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
-                  loading="lazy"
-                  width="100%"
-                  height="400"
-                  frameBorder="0"
-                  marginHeight={0}
-                  marginWidth={0}
-                  title="Kontakt Magnora Marketing om salgsoutsourcing"
-                ></iframe>
+                <ContactForm presetTopic="Pris på Mødebooking / Telesalg" sourceLabel="Hvorfor Magnora-siden" />
               </div>
             </div>
           </div>
