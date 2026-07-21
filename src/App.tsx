@@ -40,6 +40,18 @@ import VaekstPartnerGuide from './pages/blog/VaekstPartnerGuide';
 import StartupTilVaekst2026 from './pages/blog/StartupTilVaekst2026';
 import ColdCallingVsInbound from './pages/blog/ColdCallingVsInbound';
 
+// Samarbejde & Vækst blog posts
+import HvorforSamarbejdeMagnora from './pages/blog/HvorforSamarbejdeMagnora';
+import IdeudviklingMedMagnora from './pages/blog/IdeudviklingMedMagnora';
+import FraIdeTilSalg from './pages/blog/FraIdeTilSalg';
+import MoedebookingPartnerMagnora from './pages/blog/MoedebookingPartnerMagnora';
+import OutsourceMoedebookingFordele from './pages/blog/OutsourceMoedebookingFordele';
+import TelesalgPartnerMagnora from './pages/blog/TelesalgPartnerMagnora';
+import B2BTelesalgSamarbejde from './pages/blog/B2BTelesalgSamarbejde';
+import VaekstpartnerIdeMoedeTelesalg from './pages/blog/VaekstpartnerIdeMoedeTelesalg';
+import SaadanForegaarSamarbejdet from './pages/blog/SaadanForegaarSamarbejdet';
+import HvorforOutsourceSalgMoedebooking from './pages/blog/HvorforOutsourceSalgMoedebooking';
+
 // Job Landing Pages
 import RemoteWorkPage from './pages/jobs/RemoteWorkPage';
 import WebBureauPage from './pages/jobs/WebBureauPage';
@@ -133,6 +145,18 @@ export function AppRoutes() {
           <Route path="/blog/vaekst-partner-guide" element={<VaekstPartnerGuide />} />
           <Route path="/blog/startup-til-vaekst-2026" element={<StartupTilVaekst2026 />} />
           <Route path="/blog/cold-calling-vs-inbound" element={<ColdCallingVsInbound />} />
+
+          {/* Samarbejde & Vækst */}
+          <Route path="/blog/hvorfor-samarbejde-magnora" element={<HvorforSamarbejdeMagnora />} />
+          <Route path="/blog/ideudvikling-med-magnora" element={<IdeudviklingMedMagnora />} />
+          <Route path="/blog/fra-ide-til-salg" element={<FraIdeTilSalg />} />
+          <Route path="/blog/moedebooking-partner-magnora" element={<MoedebookingPartnerMagnora />} />
+          <Route path="/blog/outsource-moedebooking-fordele" element={<OutsourceMoedebookingFordele />} />
+          <Route path="/blog/telesalg-partner-magnora" element={<TelesalgPartnerMagnora />} />
+          <Route path="/blog/b2b-telesalg-samarbejde" element={<B2BTelesalgSamarbejde />} />
+          <Route path="/blog/vaekstpartner-ide-moedebooking-telesalg" element={<VaekstpartnerIdeMoedeTelesalg />} />
+          <Route path="/blog/saadan-foregaar-samarbejdet" element={<SaadanForegaarSamarbejdet />} />
+          <Route path="/blog/hvorfor-outsource-salg-og-moedebooking" element={<HvorforOutsourceSalgMoedebooking />} />
           
           {/* Admin Routes */}
           <Route path="/admin/contact-submissions" element={<ContactSubmissions />} />
