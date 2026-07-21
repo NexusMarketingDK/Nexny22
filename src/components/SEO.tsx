@@ -12,7 +12,6 @@ interface SEOProps {
   articleModifiedTime?: string;
   author?: string;
   breadcrumbs?: Array<{ name: string; url: string }>;
-  faq?: Array<{ question: string; answer: string }>;
 }
 
 const SEO: React.FC<SEOProps> = ({
@@ -20,13 +19,12 @@ const SEO: React.FC<SEOProps> = ({
   description,
   canonical,
   keywords,
-  ogImage = 'https://magnoramarketing.dk/social-share.jpg',
+  ogImage = 'https://magnoramarketing.dk/og-image.png',
   ogType = 'website',
   articlePublishedTime,
   articleModifiedTime,
   author,
-  breadcrumbs,
-  faq
+  breadcrumbs
 }) => {
   const domain = 'https://magnoramarketing.dk';
   const fullCanonical = canonical ? `${domain}${canonical}` : domain;
@@ -94,19 +92,6 @@ const SEO: React.FC<SEOProps> = ({
       "position": index + 1,
       "name": crumb.name,
       "item": `${domain}${crumb.url}`
-    }))
-  } : null;
-
-  const faqSchema = faq && faq.length > 0 ? {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": faq.map((item) => ({
-      "@type": "Question",
-      "name": item.question,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": item.answer
-      }
     }))
   } : null;
 
@@ -197,11 +182,6 @@ const SEO: React.FC<SEOProps> = ({
       {articleSchema && (
         <script type="application/ld+json">
           {JSON.stringify(articleSchema)}
-        </script>
-      )}
-      {faqSchema && (
-        <script type="application/ld+json">
-          {JSON.stringify(faqSchema)}
         </script>
       )}
     </Helmet>
