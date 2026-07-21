@@ -22,7 +22,7 @@ export default function EnergySalesPage() {
         ctaLink="/kontakt"
         secondaryCtaText="Se alle stillinger"
         secondaryCtaLink="/freelance-telemarketing"
-        backgroundImage="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        backgroundImage="/heroes/hero-energi.jpg"
       />
 
       <section className="py-16 bg-white">

@@ -104,7 +104,7 @@ export default function AiWidgetPage() {
         ctaLink="/kontakt"
         secondaryCtaText="Se priser"
         secondaryCtaLink="/priser"
-        backgroundImage="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        backgroundImage="/heroes/hero-voice.jpg"
       />
 
       {/* What is it */}

@@ -65,7 +65,7 @@ const FreelancersPage: React.FC = () => {
         ctaLink="#stillinger"
         secondaryCtaText="Kontakt os"
         secondaryCtaLink="/kontakt"
-        backgroundImage="https://images.pexels.com/photos/3182781/pexels-photo-3182781.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        backgroundImage="/heroes/hero-jobs.jpg"
       />
 
       <section className="py-16 bg-white">
@@ -116,7 +116,7 @@ const FreelancersPage: React.FC = () => {
             </div>
             <div>
               <img
-                src="https://images.pexels.com/photos/3182781/pexels-photo-3182781.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                src="/heroes/hero-jobs.jpg"
                 alt="Freelance sælger arbejder hjemmefra med Magnora Marketing"
                 className="rounded-lg shadow-lg"
               />

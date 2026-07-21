@@ -46,7 +46,7 @@ const MeetingBookingPage: React.FC = () => {
         ctaLink="/priser"
         secondaryCtaText="Kontakt os"
         secondaryCtaLink="/kontakt"
-        backgroundImage="https://images.pexels.com/photos/3184363/pexels-photo-3184363.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        backgroundImage="/heroes/hero-moedebooking.jpg"
       />
 
       <section className="py-16 bg-white">
