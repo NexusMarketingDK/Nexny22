@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build && node generate-sitemap.js && cp dist/sitemap.xml dist/robots.txt public/",
+    "build": "tsc && vite build && vite build --ssr src/entry-server.tsx --outDir dist/server && node generate-sitemap.js && node prerender.mjs && rm -rf dist/server && cp dist/sitemap.xml dist/robots.txt public/",
     "lint": "eslint .",
     "preview": "vite preview"
   },

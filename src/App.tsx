@@ -65,7 +65,7 @@ import MeetingBookingPage from './pages/MeetingBookingPage';
 // Lead Generation Page
 import LeadGenerationPage from './pages/LeadGenerationPage';
 
-function App() {
+export function AppRoutes() {
   const redirects = [
     {from: '/forside', to: '/'},
     {from: '/arbejd-hjemmefra-freelance', to: '/jobs/arbejd-hjemmefra'},
@@ -88,9 +88,8 @@ function App() {
   ];
 
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Layout />}>
+    <Routes>
+      <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
           
           {redirects.map(({from, to}) => (
@@ -164,8 +163,15 @@ function App() {
 
           {/* Lead Generation Page */}
           <Route path="/leadgenerering" element={<LeadGenerationPage />} />
-        </Route>
-      </Routes>
+      </Route>
+    </Routes>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <AppRoutes />
     </Router>
   );
 }

@@ -12,6 +12,7 @@ interface SEOProps {
   articleModifiedTime?: string;
   author?: string;
   breadcrumbs?: Array<{ name: string; url: string }>;
+  faq?: Array<{ question: string; answer: string }>;
 }
 
 const SEO: React.FC<SEOProps> = ({
@@ -24,29 +25,53 @@ const SEO: React.FC<SEOProps> = ({
   articlePublishedTime,
   articleModifiedTime,
   author,
-  breadcrumbs
+  breadcrumbs,
+  faq
 }) => {
   const domain = 'https://magnoramarketing.dk';
   const fullCanonical = canonical ? `${domain}${canonical}` : domain;
 
   const organizationSchema = {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": "ProfessionalService",
     "name": "Magnora Marketing",
     "url": domain,
     "logo": `${domain}/logo.png`,
-    "description": "Professionel B2B telemarketing, mødebooking og webudvikling i Danmark",
+    "image": `${domain}/logo.png`,
+    "description": "Professionel B2B telemarketing, mødebooking, leadgenerering, webudvikling og AI-integration for danske virksomheder.",
+    "email": "mail@magnoramarketing.dk",
     "address": {
       "@type": "PostalAddress",
-      "addressCountry": "DK"
+      "streetAddress": "Calle Purisima 5",
+      "postalCode": "46540",
+      "addressLocality": "El Puig, Valencia",
+      "addressCountry": "ES"
     },
+    "areaServed": {
+      "@type": "Country",
+      "name": "Denmark"
+    },
+    "knowsAbout": [
+      "Telemarketing",
+      "Mødebooking",
+      "Leadgenerering",
+      "B2B-salg",
+      "Telesalg",
+      "Webudvikling",
+      "AI-integration",
+      "SaaS-udvikling"
+    ],
     "contactPoint": {
       "@type": "ContactPoint",
       "contactType": "Customer Service",
+      "email": "mail@magnoramarketing.dk",
       "areaServed": "DK",
-      "availableLanguage": "Danish"
+      "availableLanguage": ["Danish", "English", "Spanish"]
     },
-    "sameAs": []
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=61559179262196",
+      "https://www.linkedin.com/company/nexusmarketing-dk"
+    ]
   };
 
   const websiteSchema = {
@@ -69,6 +94,19 @@ const SEO: React.FC<SEOProps> = ({
       "position": index + 1,
       "name": crumb.name,
       "item": `${domain}${crumb.url}`
+    }))
+  } : null;
+
+  const faqSchema = faq && faq.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faq.map((item) => ({
+      "@type": "Question",
+      "name": item.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": item.answer
+      }
     }))
   } : null;
 
@@ -159,6 +197,11 @@ const SEO: React.FC<SEOProps> = ({
       {articleSchema && (
         <script type="application/ld+json">
           {JSON.stringify(articleSchema)}
+        </script>
+      )}
+      {faqSchema && (
+        <script type="application/ld+json">
+          {JSON.stringify(faqSchema)}
         </script>
       )}
     </Helmet>
