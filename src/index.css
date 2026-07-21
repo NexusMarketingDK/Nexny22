@@ -103,3 +103,37 @@
 .glow-blue {
   box-shadow: 0 0 0 1px rgba(59,130,246,0.2), 0 4px 24px -4px rgba(59,130,246,0.3);
 }
+
+/* Home hero visual (HeroVisual.tsx) — all motion gated behind
+   prefers-reduced-motion: no-preference so reduced-motion users
+   get a fully static scene. */
+@keyframes hvFloat {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  50%      { transform: translate3d(0, -12px, 0); }
+}
+
+@keyframes hvFloatX {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  50%      { transform: translate3d(6px, -9px, 0); }
+}
+
+@keyframes hvPulse {
+  0%, 100% { opacity: 0.35; }
+  50%      { opacity: 1; }
+}
+
+@keyframes hvDraw {
+  from { stroke-dashoffset: 400; }
+  to   { stroke-dashoffset: 0; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hv-float      { animation: hvFloat 9s ease-in-out infinite; }
+  .hv-float-slow { animation: hvFloat 13s ease-in-out infinite; animation-delay: -4s; }
+  .hv-float-x    { animation: hvFloatX 11s ease-in-out infinite; animation-delay: -2s; }
+  .hv-pulse      { animation: hvPulse 3.5s ease-in-out infinite; }
+  .hv-draw {
+    stroke-dasharray: 400;
+    animation: hvDraw 2.4s cubic-bezier(0.22, 1, 0.36, 1) 0.4s both;
+  }
+}

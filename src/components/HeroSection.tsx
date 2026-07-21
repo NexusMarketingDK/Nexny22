@@ -10,6 +10,8 @@ interface HeroSectionProps {
   secondaryCtaText?: string;
   secondaryCtaLink?: string;
   backgroundImage?: string;
+  /** Optional code-rendered background visual. When set, it replaces the photo/gradient background. */
+  visual?: React.ReactNode;
 }
 
 const HeroSection: React.FC<HeroSectionProps> = ({
@@ -20,11 +22,14 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   secondaryCtaText,
   secondaryCtaLink,
   backgroundImage,
+  visual,
 }) => {
   return (
     <section className="relative min-h-[88vh] flex items-center overflow-hidden">
       {/* Background */}
-      {backgroundImage ? (
+      {visual ? (
+        visual
+      ) : backgroundImage ? (
         <>
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
