@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Users, Award, CheckCircle, ArrowRight, Building } from 'lucide-react';
+import { Users, Award, CheckCircle, ArrowRight, Building, Globe, CalendarCheck, Phone, Sparkles } from 'lucide-react';
 import SEO from '../components/SEO';
 import FAQSection from '../components/FAQSection';
 import CTASection from '../components/CTASection';
@@ -21,6 +21,33 @@ const AboutPage: React.FC = () => {
       icon: <CheckCircle className="w-12 h-12 text-blue-600" />,
       title: 'Resultater',
       description: 'Vi sætter klare, målbare mål og holder os selv ansvarlige – din vækst er det eneste succeskriterium, der tæller.'
+    }
+  ];
+
+  const deliverables = [
+    {
+      icon: <Globe className="w-12 h-12 text-blue-600" />,
+      title: 'Hjemmesider',
+      description: 'Moderne, konverteringsoptimerede hjemmesider og webshops – skræddersyet fra idé til færdig løsning.',
+      link: '/digital/hjemmesider'
+    },
+    {
+      icon: <CalendarCheck className="w-12 h-12 text-blue-600" />,
+      title: 'Mødebooking',
+      description: 'Kvalificerede salgsmøder booket direkte i din kalender hos de rette beslutningstagere.',
+      link: '/modebooking-priser'
+    },
+    {
+      icon: <Phone className="w-12 h-12 text-blue-600" />,
+      title: 'Telesalg',
+      description: 'Professionelt B2B telesalg der åbner døre, skaber dialog og driver reelle forretningsresultater.',
+      link: '/ydelser'
+    },
+    {
+      icon: <Sparkles className="w-12 h-12 text-blue-600" />,
+      title: 'AI-løsninger',
+      description: 'Skræddersyede AI-integrationer og automatiseringer – udviklet efter dine ønsker og behov.',
+      link: '/digital/ai-integration'
     }
   ];
 
@@ -47,8 +74,38 @@ const AboutPage: React.FC = () => {
               Magnora Marketing – din dedikerede vækstpartner
             </h1>
             <p className="text-xl text-gray-300 mb-8">
-              Vi kombinerer erfaren salgskraft med digital ekspertise for at skabe målbare resultater for ambitiøse B2B virksomheder.
+              Magnora Marketing leverer professionelt B2B telesalg, kvalificeret mødebooking, skræddersyede hjemmesider og AI-løsninger efter ønske – og skaber målbare resultater for ambitiøse virksomheder.
             </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-sky-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center mb-12">
+            <span className="section-label">Hvad vi leverer</span>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Din vækstpartner inden for telesalg, mødebooking, web og AI
+            </h2>
+            <p className="text-lg text-gray-600">
+              Magnora Marketing leverer professionelt B2B telesalg, kvalificeret mødebooking og skræddersyede digitale løsninger. Vi hjælper både virksomheder fra idéfasen – med udvikling af den løsning, der skal sælges – til veletablerede firmaer, der vil vækste med mere salg.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {deliverables.map((item, index) => (
+              <Link
+                key={index}
+                to={item.link}
+                className="group bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow flex flex-col"
+              >
+                <div className="mb-5">{item.icon}</div>
+                <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
+                <p className="text-gray-600 flex-grow">{item.description}</p>
+                <span className="inline-flex items-center text-blue-600 font-semibold mt-5">
+                  Læs mere <ArrowRight className="ml-1 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </span>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
@@ -178,6 +235,7 @@ const AboutPage: React.FC = () => {
       </section>
 
       <FAQSection faqs={[
+        { question: 'Hvilke ydelser leverer Magnora Marketing?', answer: 'Magnora Marketing leverer hjemmesider, mødebooking, telesalg og AI-løsninger efter ønske. Vi kombinerer menneskelig salgskraft med skræddersyede digitale løsninger, så du får telesalg, kvalificeret mødebooking, konverteringsoptimerede hjemmesider og AI-integrationer under ét tag.' },
         { question: 'Hvornår blev Magnora Marketing grundlagt?', answer: 'Magnora Marketing har rødder i professionel telemarketing og B2B salg og har hjulpet over 200 virksomheder med at vækste.' },
         { question: 'Hvor er Magnora Marketing baseret?', answer: 'Magnora Marketing har kontorer i Danmark (Aarhus) og Spanien (Valencia), og betjener kunder i hele Skandinavien og internationalt.' },
         { question: 'Hvad adskiller Magnora Marketing fra andre telemarketingbureauer?', answer: 'Magnora Marketing kombinerer menneskelig salgskraft med datadrevne metoder og digitale løsninger – alt under ét tag. Vi fokuserer altid på ROI og dokumenterede resultater.' },
