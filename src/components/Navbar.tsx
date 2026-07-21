@@ -78,10 +78,8 @@ const Navbar: React.FC = () => {
   return (
     <header
       ref={navRef}
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled
-          ? 'bg-white/90 backdrop-blur-md shadow-sm border-b border-slate-100 py-2'
-          : 'bg-transparent py-4'
+      className={`fixed w-full z-50 transition-all duration-300 bg-white/95 backdrop-blur-md border-b border-slate-100 ${
+        isScrolled ? 'shadow-sm py-2' : 'py-4'
       }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
@@ -91,7 +89,7 @@ const Navbar: React.FC = () => {
             <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center">
               <Phone size={16} className="text-white" />
             </div>
-            <span className={`text-xl font-bold tracking-tight ${isScrolled ? 'text-slate-900' : 'text-white'}`}>
+            <span className="text-xl font-bold tracking-tight text-slate-900">
               Magnora Marketing
             </span>
           </Link>
@@ -104,9 +102,7 @@ const Navbar: React.FC = () => {
             {/* Digital dropdown */}
             <div className="relative">
               <button
-                className={`px-3 py-2 rounded-lg text-sm font-medium transition-all duration-150 flex items-center gap-1 ${
-                  isScrolled ? 'text-slate-600 hover:text-blue-600 hover:bg-slate-50' : 'text-white/90 hover:text-white hover:bg-white/10'
-                }`}
+                className="px-3 py-2 rounded-lg text-sm font-medium transition-all duration-150 flex items-center gap-1 text-slate-600 hover:text-blue-600 hover:bg-slate-50"
                 onClick={toggleDigitalDropdown}
               >
                 {t('nav.digital')} <ChevronDown size={14} className={`transition-transform ${isDigitalDropdownOpen ? 'rotate-180' : ''}`} />
@@ -123,9 +119,7 @@ const Navbar: React.FC = () => {
             {/* Jobs dropdown */}
             <div className="relative">
               <button
-                className={`px-3 py-2 rounded-lg text-sm font-medium transition-all duration-150 flex items-center gap-1 ${
-                  isScrolled ? 'text-slate-600 hover:text-blue-600 hover:bg-slate-50' : 'text-white/90 hover:text-white hover:bg-white/10'
-                }`}
+                className="px-3 py-2 rounded-lg text-sm font-medium transition-all duration-150 flex items-center gap-1 text-slate-600 hover:text-blue-600 hover:bg-slate-50"
                 onClick={toggleJobsDropdown}
               >
                 {t('nav.jobSeekers')} <ChevronDown size={14} className={`transition-transform ${isJobsDropdownOpen ? 'rotate-180' : ''}`} />
@@ -144,9 +138,7 @@ const Navbar: React.FC = () => {
             {/* Samarbejde dropdown */}
             <div className="relative">
               <button
-                className={`px-3 py-2 rounded-lg text-sm font-medium transition-all duration-150 flex items-center gap-1 ${
-                  isScrolled ? 'text-slate-600 hover:text-blue-600 hover:bg-slate-50' : 'text-white/90 hover:text-white hover:bg-white/10'
-                }`}
+                className="px-3 py-2 rounded-lg text-sm font-medium transition-all duration-150 flex items-center gap-1 text-slate-600 hover:text-blue-600 hover:bg-slate-50"
                 onClick={togglePartnerDropdown}
               >
                 {t('nav.collaboration')} <ChevronDown size={14} className={`transition-transform ${isPartnerDropdownOpen ? 'rotate-180' : ''}`} />
@@ -176,7 +168,7 @@ const Navbar: React.FC = () => {
             <LanguageSwitcher compact />
             <button
               type="button"
-              className={`p-2 rounded-lg transition-colors ${isScrolled ? 'text-slate-700 hover:bg-slate-100' : 'text-white hover:bg-white/10'}`}
+              className="p-2 rounded-lg transition-colors text-slate-700 hover:bg-slate-100"
               onClick={toggleMenu}
             >
               {isMenuOpen ? <X size={22} /> : <Menu size={22} />}
