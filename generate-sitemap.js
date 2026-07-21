@@ -4,7 +4,7 @@ import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-const domain = 'https://nexny.dk';
+const domain = 'https://magnoramarketing.dk';
 
 // Get current date for pages that update frequently
 const currentDate = new Date().toISOString();
@@ -211,7 +211,7 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 </urlset>`;
 
 // Generate robots.txt with enhanced directives
-const robots = `# Robots.txt for Nexny
+const robots = `# Robots.txt for Magnora Marketing
 # Updated: ${new Date().toISOString().split('T')[0]}
 
 User-agent: *
