@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Phone, Users, Code, ArrowRight, Briefcase, BarChart3, CheckCircle, TrendingUp, HeartHandshake, MessageSquare, Target, Zap } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import HeroSection from '../components/HeroSection';
+import HeroVisual from '../components/HeroVisual';
 import SEO from '../components/SEO';
 import FAQSection from '../components/FAQSection';
 import CTASection from '../components/CTASection';
@@ -117,7 +118,7 @@ const HomePage: React.FC = () => {
         ctaLink="/samarbejdspartner"
         secondaryCtaText="Start din karriere"
         secondaryCtaLink="/freelance-telemarketing"
-        backgroundImage="/heroes/hero-home.jpg"
+        visual={<HeroVisual />}
       />
 
       <section className="section bg-gray-50">
