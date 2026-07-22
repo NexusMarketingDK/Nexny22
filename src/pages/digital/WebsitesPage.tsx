@@ -117,14 +117,14 @@ export default function WebsitesPage() {
       name: 'Nexus Marketing',
       url: 'https://nexusmarketing.dk/',
       domain: 'nexusmarketing.dk',
-      desc: 'Hjemmeside for marketing- og vækstbureau.'
+      desc: 'Hjemmeside for B2B telemarketing & mødebooking.'
     },
     {
       image: '/references/showcase-somevideopost.jpg',
       name: 'Some Video Post',
       url: 'https://www.somevideopost.com/',
       domain: 'somevideopost.com',
-      desc: 'Site for video- og SoMe-produktion.'
+      desc: 'AI-platform der laver præsentationsvideoer til udlejning.'
     }
   ];
 
