@@ -128,6 +128,27 @@ export default function WebsitesPage() {
     }
   ];
 
+  const openInPopup = (e: React.MouseEvent, url: string, name: string) => {
+    // Åbn referencesiden i et lille popup-vindue, så brugeren bliver på vores side
+    e.preventDefault();
+    const w = 980;
+    const h = 700;
+    const dualLeft = window.screenLeft ?? window.screenX;
+    const dualTop = window.screenTop ?? window.screenY;
+    const vw = window.innerWidth || document.documentElement.clientWidth || screen.width;
+    const vh = window.innerHeight || document.documentElement.clientHeight || screen.height;
+    const left = Math.max(0, dualLeft + (vw - w) / 2);
+    const top = Math.max(0, dualTop + (vh - h) / 2);
+    const features = `popup=yes,width=${w},height=${h},left=${left},top=${top},scrollbars=yes,resizable=yes`;
+    const popup = window.open(url, name.replace(/\s+/g, '_'), features);
+    if (popup) {
+      popup.focus();
+    } else {
+      // Fallback hvis popup blokeres: åbn i ny fane
+      window.open(url, '_blank', 'noopener,noreferrer');
+    }
+  };
+
   return (
     <>
       <SEO
@@ -296,7 +317,7 @@ export default function WebsitesPage() {
             <span className="inline-block text-sm font-bold tracking-widest text-blue-600 uppercase mb-3">Referencer</span>
             <h2 className="text-3xl font-bold mb-4">Hjemmesider vi har bygget</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Se et udvalg af live hjemmesider vi har lavet. Klik på et kort for at besøge den rigtige side.
+              Se et udvalg af live hjemmesider vi har lavet. Klik på et kort for at åbne den rigtige side i et lille vindue.
             </p>
           </div>
 
@@ -307,6 +328,7 @@ export default function WebsitesPage() {
                 href={site.url}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={(e) => openInPopup(e, site.url, site.name)}
                 className="group block bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
               >
                 <div className="relative overflow-hidden">
