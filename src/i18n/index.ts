@@ -13,6 +13,9 @@ import webdevEs from './locales/webdev/es';
 import apisaasDa from './locales/apisaas/da';
 import apisaasEn from './locales/apisaas/en';
 import apisaasEs from './locales/apisaas/es';
+import aireceptionDa from './locales/aireception/da';
+import aireceptionEn from './locales/aireception/en';
+import aireceptionEs from './locales/aireception/es';
 
 const isBrowser = typeof window !== 'undefined';
 
@@ -27,9 +30,9 @@ i18n
   .use(initReactI18next)
   .init({
     resources: {
-      da: { translation: { ...da, websites: websitesDa, webdev: webdevDa, apisaas: apisaasDa } },
-      en: { translation: { ...en, websites: websitesEn, webdev: webdevEn, apisaas: apisaasEn } },
-      es: { translation: { ...es, websites: websitesEs, webdev: webdevEs, apisaas: apisaasEs } },
+      da: { translation: { ...da, websites: websitesDa, webdev: webdevDa, apisaas: apisaasDa, aireception: aireceptionDa } },
+      en: { translation: { ...en, websites: websitesEn, webdev: webdevEn, apisaas: apisaasEn, aireception: aireceptionEn } },
+      es: { translation: { ...es, websites: websitesEs, webdev: webdevEs, apisaas: apisaasEs, aireception: aireceptionEs } },
     },
     lng: isBrowser ? undefined : 'da',
     fallbackLng: 'da',
