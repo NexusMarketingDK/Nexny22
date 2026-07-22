@@ -19,6 +19,9 @@ import aireceptionEs from './locales/aireception/es';
 import aiwidgetDa from './locales/aiwidget/da';
 import aiwidgetEn from './locales/aiwidget/en';
 import aiwidgetEs from './locales/aiwidget/es';
+import aiintegrationDa from './locales/aiintegration/da';
+import aiintegrationEn from './locales/aiintegration/en';
+import aiintegrationEs from './locales/aiintegration/es';
 
 const isBrowser = typeof window !== 'undefined';
 
@@ -33,9 +36,9 @@ i18n
   .use(initReactI18next)
   .init({
     resources: {
-      da: { translation: { ...da, websites: websitesDa, webdev: webdevDa, apisaas: apisaasDa, aireception: aireceptionDa, aiwidget: aiwidgetDa } },
-      en: { translation: { ...en, websites: websitesEn, webdev: webdevEn, apisaas: apisaasEn, aireception: aireceptionEn, aiwidget: aiwidgetEn } },
-      es: { translation: { ...es, websites: websitesEs, webdev: webdevEs, apisaas: apisaasEs, aireception: aireceptionEs, aiwidget: aiwidgetEs } },
+      da: { translation: { ...da, websites: websitesDa, webdev: webdevDa, apisaas: apisaasDa, aireception: aireceptionDa, aiwidget: aiwidgetDa, aiintegration: aiintegrationDa } },
+      en: { translation: { ...en, websites: websitesEn, webdev: webdevEn, apisaas: apisaasEn, aireception: aireceptionEn, aiwidget: aiwidgetEn, aiintegration: aiintegrationEn } },
+      es: { translation: { ...es, websites: websitesEs, webdev: webdevEs, apisaas: apisaasEs, aireception: aireceptionEs, aiwidget: aiwidgetEs, aiintegration: aiintegrationEs } },
     },
     lng: isBrowser ? undefined : 'da',
     fallbackLng: 'da',
