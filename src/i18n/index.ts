@@ -55,6 +55,9 @@ import freelancersEs from './locales/freelancers/es';
 import leadgenDa from './locales/leadgen/da';
 import leadgenEn from './locales/leadgen/en';
 import leadgenEs from './locales/leadgen/es';
+import meetingbookingDa from './locales/meetingbooking/da';
+import meetingbookingEn from './locales/meetingbooking/en';
+import meetingbookingEs from './locales/meetingbooking/es';
 
 const isBrowser = typeof window !== 'undefined';
 
@@ -69,9 +72,9 @@ i18n
   .use(initReactI18next)
   .init({
     resources: {
-      da: { translation: { ...da, websites: websitesDa, webdev: webdevDa, apisaas: apisaasDa, aireception: aireceptionDa, aiwidget: aiwidgetDa, aiintegration: aiintegrationDa, aisolutions: aisolutionsDa, services: servicesDa, contact: contactDa, pricing: pricingDa, homepage: homepageDa, about: aboutDa, partners: partnersDa, contactform: contactformDa, outsourcing: outsourcingDa, freelancers: freelancersDa, leadgen: leadgenDa } },
-      en: { translation: { ...en, websites: websitesEn, webdev: webdevEn, apisaas: apisaasEn, aireception: aireceptionEn, aiwidget: aiwidgetEn, aiintegration: aiintegrationEn, aisolutions: aisolutionsEn, services: servicesEn, contact: contactEn, pricing: pricingEn, homepage: homepageEn, about: aboutEn, partners: partnersEn, contactform: contactformEn, outsourcing: outsourcingEn, freelancers: freelancersEn, leadgen: leadgenEn } },
-      es: { translation: { ...es, websites: websitesEs, webdev: webdevEs, apisaas: apisaasEs, aireception: aireceptionEs, aiwidget: aiwidgetEs, aiintegration: aiintegrationEs, aisolutions: aisolutionsEs, services: servicesEs, contact: contactEs, pricing: pricingEs, homepage: homepageEs, about: aboutEs, partners: partnersEs, contactform: contactformEs, outsourcing: outsourcingEs, freelancers: freelancersEs, leadgen: leadgenEs } },
+      da: { translation: { ...da, websites: websitesDa, webdev: webdevDa, apisaas: apisaasDa, aireception: aireceptionDa, aiwidget: aiwidgetDa, aiintegration: aiintegrationDa, aisolutions: aisolutionsDa, services: servicesDa, contact: contactDa, pricing: pricingDa, homepage: homepageDa, about: aboutDa, partners: partnersDa, contactform: contactformDa, outsourcing: outsourcingDa, freelancers: freelancersDa, leadgen: leadgenDa, meetingbooking: meetingbookingDa } },
+      en: { translation: { ...en, websites: websitesEn, webdev: webdevEn, apisaas: apisaasEn, aireception: aireceptionEn, aiwidget: aiwidgetEn, aiintegration: aiintegrationEn, aisolutions: aisolutionsEn, services: servicesEn, contact: contactEn, pricing: pricingEn, homepage: homepageEn, about: aboutEn, partners: partnersEn, contactform: contactformEn, outsourcing: outsourcingEn, freelancers: freelancersEn, leadgen: leadgenEn, meetingbooking: meetingbookingEn } },
+      es: { translation: { ...es, websites: websitesEs, webdev: webdevEs, apisaas: apisaasEs, aireception: aireceptionEs, aiwidget: aiwidgetEs, aiintegration: aiintegrationEs, aisolutions: aisolutionsEs, services: servicesEs, contact: contactEs, pricing: pricingEs, homepage: homepageEs, about: aboutEs, partners: partnersEs, contactform: contactformEs, outsourcing: outsourcingEs, freelancers: freelancersEs, leadgen: leadgenEs, meetingbooking: meetingbookingEs } },
     },
     lng: isBrowser ? undefined : 'da',
     fallbackLng: 'da',
