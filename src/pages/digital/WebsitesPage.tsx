@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Monitor, CheckCircle, ArrowRight, Search, TrendingUp, PenTool, Gauge, Leaf, Hammer, Store, ShoppingBag, HardHat, Briefcase, Tag, Image as ImageIcon } from 'lucide-react';
+import { Monitor, CheckCircle, ArrowRight, Search, TrendingUp, PenTool, Gauge, Leaf, Hammer, Store, ShoppingBag, HardHat, Briefcase, Tag, Image as ImageIcon, ExternalLink } from 'lucide-react';
 import HeroSection from '../../components/HeroSection';
 import SEO from '../../components/SEO';
 import FAQSection from '../../components/FAQSection';
@@ -94,6 +94,37 @@ export default function WebsitesPage() {
       desc: 'Rent, corporate udtryk der signalerer ekspertise og troværdighed.',
       icon: <Briefcase size={18} />,
       color: 'text-blue-600 bg-blue-50'
+    }
+  ];
+
+  const showcaseSites = [
+    {
+      image: '/references/showcase-mtvagt.jpg',
+      name: 'MT Vagt',
+      url: 'https://mtvagt.dk/',
+      domain: 'mtvagt.dk',
+      desc: 'Hjemmeside til vagt- og sikkerhedsvirksomhed.'
+    },
+    {
+      image: '/references/showcase-aibooking.jpg',
+      name: 'AI Booking',
+      url: 'https://aibooking.dk/',
+      domain: 'aibooking.dk',
+      desc: 'Digital platform for AI-drevet mødebooking.'
+    },
+    {
+      image: '/references/showcase-nexusmarketing.jpg',
+      name: 'Nexus Marketing',
+      url: 'https://nexusmarketing.dk/',
+      domain: 'nexusmarketing.dk',
+      desc: 'Hjemmeside for marketing- og vækstbureau.'
+    },
+    {
+      image: '/references/showcase-somevideopost.jpg',
+      name: 'Some Video Post',
+      url: 'https://www.somevideopost.com/',
+      domain: 'somevideopost.com',
+      desc: 'Site for video- og SoMe-produktion.'
     }
   ];
 
@@ -255,6 +286,51 @@ export default function WebsitesPage() {
             <Link to="/kontakt" className="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
               Bestil din hjemmeside fra 1.500 kr <ArrowRight size={16} className="ml-2" />
             </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <span className="inline-block text-sm font-bold tracking-widest text-blue-600 uppercase mb-3">Referencer</span>
+            <h2 className="text-3xl font-bold mb-4">Hjemmesider vi har bygget</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Se et udvalg af live hjemmesider vi har lavet. Klik på et kort for at besøge den rigtige side.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {showcaseSites.map((site, i) => (
+              <a
+                key={i}
+                href={site.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+              >
+                <div className="relative overflow-hidden">
+                  <img
+                    src={site.image}
+                    alt={`Hjemmeside vi har bygget: ${site.name}`}
+                    loading="lazy"
+                    className="w-full aspect-[16/10] object-cover object-top group-hover:scale-[1.03] transition-transform duration-500"
+                  />
+                  <span className="absolute top-3 right-3 flex items-center gap-1.5 text-xs font-semibold text-gray-700 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-full shadow-sm opacity-0 group-hover:opacity-100 transition-opacity">
+                    Besøg side <ExternalLink size={13} />
+                  </span>
+                </div>
+                <div className="p-6 flex items-center justify-between gap-4">
+                  <div>
+                    <h3 className="text-lg font-semibold">{site.name}</h3>
+                    <p className="text-gray-600 text-sm mt-1">{site.desc}</p>
+                  </div>
+                  <span className="flex-shrink-0 flex items-center gap-1.5 text-sm font-medium text-blue-600 group-hover:gap-2.5 transition-all">
+                    {site.domain} <ExternalLink size={15} />
+                  </span>
+                </div>
+              </a>
+            ))}
           </div>
         </div>
       </section>
