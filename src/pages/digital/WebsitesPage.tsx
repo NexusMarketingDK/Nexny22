@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Monitor, CheckCircle, ArrowRight, Search, TrendingUp, PenTool, Gauge } from 'lucide-react';
+import { Monitor, CheckCircle, ArrowRight, Search, TrendingUp, PenTool, Gauge, Leaf, Hammer, Store, ShoppingBag, HardHat, Briefcase, Lock } from 'lucide-react';
 import HeroSection from '../../components/HeroSection';
 import SEO from '../../components/SEO';
 import FAQSection from '../../components/FAQSection';
@@ -50,6 +50,51 @@ export default function WebsitesPage() {
     { title: 'Porteføljesider', desc: 'Visuelle sider der fremviser jeres arbejde og referencer' },
     { title: 'Booking og reservationer', desc: 'Integrerede bookingsystemer til møder, events og ydelser' },
     { title: 'Multisprogshjemmesider', desc: 'Lokaliserede sider til det danske og internationale marked' }
+  ];
+
+  const references = [
+    {
+      image: '/references/ref-have-anlaeg.jpg',
+      branche: 'Have og anlæg',
+      desc: 'Grønt, indbydende design med projektgalleri og online tilbudsformular.',
+      icon: <Leaf size={18} />,
+      color: 'text-green-600 bg-green-50'
+    },
+    {
+      image: '/references/ref-haandvaerker.jpg',
+      branche: 'Håndværker',
+      desc: 'Tillidsvækkende site med ydelser, referencer og hurtig kontakt.',
+      icon: <Hammer size={18} />,
+      color: 'text-orange-600 bg-orange-50'
+    },
+    {
+      image: '/references/ref-detail.jpg',
+      branche: 'Detail',
+      desc: 'Levende butiksunivers med nyheder, click & collect og åbningstider.',
+      icon: <Store size={18} />,
+      color: 'text-pink-600 bg-pink-50'
+    },
+    {
+      image: '/references/ref-webshop.jpg',
+      branche: 'Webshop',
+      desc: 'Fuld e-handelsløsning med produktvisning, kurv og betalingsflow.',
+      icon: <ShoppingBag size={18} />,
+      color: 'text-indigo-600 bg-indigo-50'
+    },
+    {
+      image: '/references/ref-entreprenoer.jpg',
+      branche: 'Entreprenør',
+      desc: 'Solidt, professionelt design med referencer og nøgletal i fokus.',
+      icon: <HardHat size={18} />,
+      color: 'text-yellow-600 bg-yellow-50'
+    },
+    {
+      image: '/references/ref-konsulent.jpg',
+      branche: 'Konsulentfirma',
+      desc: 'Rent, corporate udtryk der signalerer ekspertise og troværdighed.',
+      icon: <Briefcase size={18} />,
+      color: 'text-blue-600 bg-blue-50'
+    }
   ];
 
   return (
@@ -140,6 +185,64 @@ export default function WebsitesPage() {
                 <p className="text-gray-600 text-sm">{type.desc}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-10">
+            <span className="inline-block text-sm font-bold tracking-widest text-blue-600 uppercase mb-3">Referencer</span>
+            <h2 className="text-3xl font-bold mb-4">Eksempler på hjemmesider – tilpasset din branche</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Se hvordan en professionel hjemmeside kan se ud inden for netop din branche. Hvert design er skabt med målgruppe, farver og struktur der passer til branchen – fra grønne uderum til byggeri og e-handel.
+            </p>
+          </div>
+
+          <div className="max-w-3xl mx-auto mb-12">
+            <div className="flex items-start gap-3 bg-blue-50 border border-blue-100 rounded-xl px-5 py-4">
+              <Lock size={18} className="text-blue-600 flex-shrink-0 mt-0.5" />
+              <p className="text-sm text-gray-600">
+                <span className="font-semibold text-gray-800">Anonymiserede eksempler.</span> Af hensyn til vores kunders fortrolighed viser vi designeksempler uden firmanavne eller logoer – kun selve designet og opbygningen.
+              </p>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {references.map((ref, i) => (
+              <div
+                key={i}
+                className="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+              >
+                <div className="relative overflow-hidden">
+                  <img
+                    src={ref.image}
+                    alt={`Eksempel på hjemmeside til branchen ${ref.branche}`}
+                    loading="lazy"
+                    className="w-full aspect-[4/3] object-cover object-top group-hover:scale-[1.03] transition-transform duration-500"
+                  />
+                  <span className="absolute top-3 left-3 text-xs font-semibold text-gray-700 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full shadow-sm">
+                    Eksempel
+                  </span>
+                </div>
+                <div className="p-6">
+                  <div className="flex items-center gap-3 mb-2">
+                    <span className={`w-9 h-9 rounded-lg flex items-center justify-center ${ref.color}`}>
+                      {ref.icon}
+                    </span>
+                    <h3 className="text-lg font-semibold">{ref.branche}</h3>
+                  </div>
+                  <p className="text-gray-600 text-sm">{ref.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <p className="text-gray-600 mb-5">Kan du ikke se din branche? Vi bygger skræddersyede hjemmesider til alle brancher.</p>
+            <Link to="/kontakt" className="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+              Få et eksempel til din branche <ArrowRight size={16} className="ml-2" />
+            </Link>
           </div>
         </div>
       </section>
