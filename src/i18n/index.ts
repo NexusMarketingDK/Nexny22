@@ -34,6 +34,9 @@ import contactEs from './locales/contact/es';
 import pricingDa from './locales/pricing/da';
 import pricingEn from './locales/pricing/en';
 import pricingEs from './locales/pricing/es';
+import homepageDa from './locales/homepage/da';
+import homepageEn from './locales/homepage/en';
+import homepageEs from './locales/homepage/es';
 
 const isBrowser = typeof window !== 'undefined';
 
@@ -48,9 +51,9 @@ i18n
   .use(initReactI18next)
   .init({
     resources: {
-      da: { translation: { ...da, websites: websitesDa, webdev: webdevDa, apisaas: apisaasDa, aireception: aireceptionDa, aiwidget: aiwidgetDa, aiintegration: aiintegrationDa, aisolutions: aisolutionsDa, services: servicesDa, contact: contactDa, pricing: pricingDa } },
-      en: { translation: { ...en, websites: websitesEn, webdev: webdevEn, apisaas: apisaasEn, aireception: aireceptionEn, aiwidget: aiwidgetEn, aiintegration: aiintegrationEn, aisolutions: aisolutionsEn, services: servicesEn, contact: contactEn, pricing: pricingEn } },
-      es: { translation: { ...es, websites: websitesEs, webdev: webdevEs, apisaas: apisaasEs, aireception: aireceptionEs, aiwidget: aiwidgetEs, aiintegration: aiintegrationEs, aisolutions: aisolutionsEs, services: servicesEs, contact: contactEs, pricing: pricingEs } },
+      da: { translation: { ...da, websites: websitesDa, webdev: webdevDa, apisaas: apisaasDa, aireception: aireceptionDa, aiwidget: aiwidgetDa, aiintegration: aiintegrationDa, aisolutions: aisolutionsDa, services: servicesDa, contact: contactDa, pricing: pricingDa, homepage: homepageDa } },
+      en: { translation: { ...en, websites: websitesEn, webdev: webdevEn, apisaas: apisaasEn, aireception: aireceptionEn, aiwidget: aiwidgetEn, aiintegration: aiintegrationEn, aisolutions: aisolutionsEn, services: servicesEn, contact: contactEn, pricing: pricingEn, homepage: homepageEn } },
+      es: { translation: { ...es, websites: websitesEs, webdev: webdevEs, apisaas: apisaasEs, aireception: aireceptionEs, aiwidget: aiwidgetEs, aiintegration: aiintegrationEs, aisolutions: aisolutionsEs, services: servicesEs, contact: contactEs, pricing: pricingEs, homepage: homepageEs } },
     },
     lng: isBrowser ? undefined : 'da',
     fallbackLng: 'da',
