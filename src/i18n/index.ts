@@ -4,6 +4,9 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 import da from './locales/da';
 import en from './locales/en';
 import es from './locales/es';
+import websitesDa from './locales/websites/da';
+import websitesEn from './locales/websites/en';
+import websitesEs from './locales/websites/es';
 
 const isBrowser = typeof window !== 'undefined';
 
@@ -18,9 +21,9 @@ i18n
   .use(initReactI18next)
   .init({
     resources: {
-      da: { translation: da },
-      en: { translation: en },
-      es: { translation: es },
+      da: { translation: { ...da, websites: websitesDa } },
+      en: { translation: { ...en, websites: websitesEn } },
+      es: { translation: { ...es, websites: websitesEs } },
     },
     lng: isBrowser ? undefined : 'da',
     fallbackLng: 'da',
