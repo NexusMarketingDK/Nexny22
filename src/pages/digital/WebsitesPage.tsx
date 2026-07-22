@@ -110,7 +110,7 @@ export default function WebsitesPage() {
       name: 'AI Booking',
       url: 'https://aibooking.dk/',
       domain: 'aibooking.dk',
-      desc: 'Digital platform for AI-drevet mødebooking.'
+      desc: 'Platform for AI voice widget & automatisk mødebooking.'
     },
     {
       image: '/references/showcase-nexusmarketing.jpg',
