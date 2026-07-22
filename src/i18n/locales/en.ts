@@ -74,6 +74,7 @@ export default {
     },
   },
   common: {
+    heroBadge: 'Magnora Marketing · Growth Partner',
     readMore: 'Read more',
     contactUs: 'Contact us',
     getStarted: 'Get started',

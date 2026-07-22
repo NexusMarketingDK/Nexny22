@@ -74,6 +74,7 @@ export default {
     },
   },
   common: {
+    heroBadge: 'Magnora Marketing · Vækstpartner',
     readMore: 'Læs mere',
     contactUs: 'Kontakt os',
     getStarted: 'Kom i gang',

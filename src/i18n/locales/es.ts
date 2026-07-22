@@ -74,6 +74,7 @@ export default {
     },
   },
   common: {
+    heroBadge: 'Magnora Marketing · Socio de crecimiento',
     readMore: 'Leer más',
     contactUs: 'Contáctanos',
     getStarted: 'Empezar ahora',
