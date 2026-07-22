@@ -7,6 +7,9 @@ import es from './locales/es';
 import websitesDa from './locales/websites/da';
 import websitesEn from './locales/websites/en';
 import websitesEs from './locales/websites/es';
+import webdevDa from './locales/webdev/da';
+import webdevEn from './locales/webdev/en';
+import webdevEs from './locales/webdev/es';
 
 const isBrowser = typeof window !== 'undefined';
 
@@ -21,9 +24,9 @@ i18n
   .use(initReactI18next)
   .init({
     resources: {
-      da: { translation: { ...da, websites: websitesDa } },
-      en: { translation: { ...en, websites: websitesEn } },
-      es: { translation: { ...es, websites: websitesEs } },
+      da: { translation: { ...da, websites: websitesDa, webdev: webdevDa } },
+      en: { translation: { ...en, websites: websitesEn, webdev: webdevEn } },
+      es: { translation: { ...es, websites: websitesEs, webdev: webdevEs } },
     },
     lng: isBrowser ? undefined : 'da',
     fallbackLng: 'da',
