@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Monitor, CheckCircle, ArrowRight, Search, TrendingUp, PenTool, Gauge, Leaf, Hammer, Store, ShoppingBag, HardHat, Briefcase, Lock } from 'lucide-react';
+import { Monitor, CheckCircle, ArrowRight, Search, TrendingUp, PenTool, Gauge, Leaf, Hammer, Store, ShoppingBag, HardHat, Briefcase, Tag, Image as ImageIcon } from 'lucide-react';
 import HeroSection from '../../components/HeroSection';
 import SEO from '../../components/SEO';
 import FAQSection from '../../components/FAQSection';
@@ -52,18 +52,18 @@ export default function WebsitesPage() {
     { title: 'Multisprogshjemmesider', desc: 'Lokaliserede sider til det danske og internationale marked' }
   ];
 
-  const references = [
+  const budgetTemplates = [
     {
       image: '/references/ref-have-anlaeg.jpg',
       branche: 'Have og anlæg',
-      desc: 'Grønt, indbydende design med projektgalleri og online tilbudsformular.',
+      desc: 'Grønt, indbydende design med plads til projektgalleri og tilbudsformular.',
       icon: <Leaf size={18} />,
       color: 'text-green-600 bg-green-50'
     },
     {
       image: '/references/ref-haandvaerker.jpg',
       branche: 'Håndværker',
-      desc: 'Tillidsvækkende site med ydelser, referencer og hurtig kontakt.',
+      desc: 'Tillidsvækkende layout med ydelser, referencer og hurtig kontakt.',
       icon: <Hammer size={18} />,
       color: 'text-orange-600 bg-orange-50'
     },
@@ -77,7 +77,7 @@ export default function WebsitesPage() {
     {
       image: '/references/ref-webshop.jpg',
       branche: 'Webshop',
-      desc: 'Fuld e-handelsløsning med produktvisning, kurv og betalingsflow.',
+      desc: 'Enkel e-handelsløsning med produktvisning, kurv og betalingsflow.',
       icon: <ShoppingBag size={18} />,
       color: 'text-indigo-600 bg-indigo-50'
     },
@@ -192,24 +192,32 @@ export default function WebsitesPage() {
       <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-10">
-            <span className="inline-block text-sm font-bold tracking-widest text-blue-600 uppercase mb-3">Referencer</span>
-            <h2 className="text-3xl font-bold mb-4">Eksempler på hjemmesider – tilpasset din branche</h2>
+            <span className="inline-block text-sm font-bold tracking-widest text-blue-600 uppercase mb-3">Prisvenlige hjemmesider</span>
+            <h2 className="text-3xl font-bold mb-4">Færdige branche-designs – fra kun 1.500 kr</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Se hvordan en professionel hjemmeside kan se ud inden for netop din branche. Hvert design er skabt med målgruppe, farver og struktur der passer til branchen – fra grønne uderum til byggeri og e-handel.
+              Har du et mindre budget? Vælg et professionelt, færdigt design der passer til din branche – og gør det til dit med dine egne billeder, tekster og farver. Hurtigt online, uden det store budget.
             </p>
           </div>
 
-          <div className="max-w-3xl mx-auto mb-12">
-            <div className="flex items-start gap-3 bg-blue-50 border border-blue-100 rounded-xl px-5 py-4">
-              <Lock size={18} className="text-blue-600 flex-shrink-0 mt-0.5" />
-              <p className="text-sm text-gray-600">
-                <span className="font-semibold text-gray-800">Anonymiserede eksempler.</span> Af hensyn til vores kunders fortrolighed viser vi designeksempler uden firmanavne eller logoer – kun selve designet og opbygningen.
-              </p>
+          <div className="max-w-4xl mx-auto mb-12">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div className="flex items-start gap-3 bg-white border border-gray-100 rounded-xl px-5 py-4 shadow-sm">
+                <Tag size={20} className="text-blue-600 flex-shrink-0 mt-0.5" />
+                <p className="text-sm text-gray-700"><span className="font-semibold text-gray-900">Fra kun 1.500 kr</span> pr. hjemmeside</p>
+              </div>
+              <div className="flex items-start gap-3 bg-white border border-gray-100 rounded-xl px-5 py-4 shadow-sm">
+                <ImageIcon size={20} className="text-blue-600 flex-shrink-0 mt-0.5" />
+                <p className="text-sm text-gray-700"><span className="font-semibold text-gray-900">Tilpas med egne billeder</span> og tekst</p>
+              </div>
+              <div className="flex items-start gap-3 bg-white border border-gray-100 rounded-xl px-5 py-4 shadow-sm">
+                <Gauge size={20} className="text-blue-600 flex-shrink-0 mt-0.5" />
+                <p className="text-sm text-gray-700"><span className="font-semibold text-gray-900">Hurtigt online</span> – klar på få dage</p>
+              </div>
             </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {references.map((ref, i) => (
+            {budgetTemplates.map((ref, i) => (
               <div
                 key={i}
                 className="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
@@ -217,12 +225,12 @@ export default function WebsitesPage() {
                 <div className="relative overflow-hidden">
                   <img
                     src={ref.image}
-                    alt={`Eksempel på hjemmeside til branchen ${ref.branche}`}
+                    alt={`Prisvenligt hjemmeside-design til branchen ${ref.branche}`}
                     loading="lazy"
                     className="w-full aspect-[4/3] object-cover object-top group-hover:scale-[1.03] transition-transform duration-500"
                   />
-                  <span className="absolute top-3 left-3 text-xs font-semibold text-gray-700 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full shadow-sm">
-                    Eksempel
+                  <span className="absolute top-3 left-3 text-xs font-bold text-white bg-blue-600 px-3 py-1 rounded-full shadow-sm">
+                    Fra 1.500 kr
                   </span>
                 </div>
                 <div className="p-6">
@@ -232,16 +240,20 @@ export default function WebsitesPage() {
                     </span>
                     <h3 className="text-lg font-semibold">{ref.branche}</h3>
                   </div>
-                  <p className="text-gray-600 text-sm">{ref.desc}</p>
+                  <p className="text-gray-600 text-sm mb-4">{ref.desc}</p>
+                  <div className="flex items-center gap-2 text-sm text-gray-500">
+                    <ImageIcon size={15} className="text-blue-500" />
+                    <span>Tilpas med dine egne billeder</span>
+                  </div>
                 </div>
               </div>
             ))}
           </div>
 
           <div className="text-center mt-12">
-            <p className="text-gray-600 mb-5">Kan du ikke se din branche? Vi bygger skræddersyede hjemmesider til alle brancher.</p>
+            <p className="text-gray-600 mb-5">Kan du ikke se din branche? Vi laver et prisvenligt design til enhver branche.</p>
             <Link to="/kontakt" className="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
-              Få et eksempel til din branche <ArrowRight size={16} className="ml-2" />
+              Bestil din hjemmeside fra 1.500 kr <ArrowRight size={16} className="ml-2" />
             </Link>
           </div>
         </div>
