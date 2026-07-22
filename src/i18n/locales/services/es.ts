@@ -1,0 +1,77 @@
+export default {
+  seo: {
+    title: 'Servicios | Magnora Marketing – Televentas, reserva de reuniones, desarrollo web e IA',
+    description: 'Servicios de Magnora Marketing: televentas profesionales, reserva de reuniones, generación de leads, desarrollo web y proyectos de IA. Tu socio de crecimiento con resultados documentados.',
+    keywords: 'servicios Magnora Marketing, telemarketing, reserva de reuniones, generación de leads, atención al cliente, ventas B2B, externalización de ventas',
+  },
+  hero: {
+    title: 'Servicios que Generan Crecimiento Real',
+    subtitle: 'Magnora Marketing ofrece soluciones de ventas y marketing a medida que encajan con tu empresa: del primer contacto al contrato firmado.',
+    cta: 'Contáctanos',
+    secondaryCta: 'Ver precios',
+  },
+  coreSection: {
+    title: 'Nuestros servicios principales',
+    subtitle: 'Magnora Marketing ofrece una gama completa de servicios de ventas B2B que se pueden combinar y escalar según tus necesidades y objetivos de crecimiento.',
+  },
+  services: [
+    { title: 'Telemarketing', description: 'Telemarketing B2B específico que abre nuevas puertas, crea diálogo y convierte prospectos en oportunidades de venta reales.', features: ['Generación de leads proactiva', 'Contacto de ventas directo', 'Atención al cliente y asesoramiento', 'Estudios de mercado'] },
+    { title: 'Reserva de reuniones', description: 'Reuniones de ventas cualificadas con los responsables adecuados: reservadas, confirmadas y listas para tu equipo de ventas.', features: ['Reuniones filtradas y cualificadas', 'Evaluación eficiente de leads', 'Confirmación y seguimiento de reuniones', 'Coordinación de calendario'] },
+    { title: 'Generación de leads', description: 'Generación de leads basada en datos y multicanal que crea un flujo constante de prospectos cálidos y listos para la venta.', features: ['Puntuación y priorización de leads', 'Creación de base de datos de ventas', 'Gestión y optimización de campañas', 'Seguimiento de ROI e informes'] },
+    { title: 'Atención al cliente', description: 'Atención al cliente profesional y empática que refuerza la fidelidad y crea experiencias positivas en cada punto de contacto.', features: ['Soporte y resolución de problemas', 'Procesamiento de pedidos y coordinación', 'Feedback de clientes y análisis', 'Mediciones de satisfacción'] },
+  ],
+  industriesSection: {
+    title: 'Experiencia especializada por sector',
+    subtitle: 'Magnora Marketing tiene experiencia profunda en ventas B2B y reserva de reuniones en una amplia gama de sectores.',
+  },
+  industries: [
+    { title: 'Tech & SaaS', description: 'Amplia experiencia vendiendo soluciones de software, plataformas cloud y productos tecnológicos al mercado empresarial.', successStory: 'Hemos ayudado a más de 50 empresas tecnológicas a aumentar notablemente su pipeline de ventas', expertise: ['Soluciones SaaS y cloud', 'Software empresarial', 'Seguridad informática', 'Transformación digital'] },
+    { title: 'Sector de la consultoría', description: 'Experiencia especializada en reservar reuniones cualificadas para consultoras y asesores.', successStory: 'Más de 200 campañas realizadas para consultoras', expertise: ['Consultoría de gestión', 'Asesoramiento financiero', 'RR. HH. y reclutamiento', 'Servicios jurídicos'] },
+    { title: 'Energía y sostenibilidad', description: 'Sólida trayectoria en energía verde, energía solar y soluciones de eficiencia energética para empresas.', successStory: 'Hemos ayudado a empresas de energía a llegar a nuevos segmentos de clientes', expertise: ['Energía solar y renovable', 'LED y optimización energética', 'Transición verde', 'Asesoramiento energético empresarial'] },
+    { title: 'Facility & Service', description: 'Trabajo experimentado en facility management, servicio de café, servicio de alfombras y servicios empresariales relacionados.', successStory: 'Campañas exitosas para empresas de servicios en toda Dinamarca', expertise: ['Servicio de café para empresas', 'Servicio de alfombras e higiene', 'Limpieza y facility', 'Servicios de oficina'] },
+  ],
+  midCta: {
+    title: '¿Listo para crecer con Magnora Marketing?',
+    subtitle: 'Contáctanos para hablar sin compromiso sobre qué servicios se ajustan mejor a los objetivos y el presupuesto de tu empresa.',
+    button: 'Consigue un presupuesto gratuito',
+  },
+  seoText1: {
+    title: 'Externalización de telemarketing y reserva de reuniones – Cómo Magnora Marketing crea crecimiento',
+    p1: 'Externalizar el telemarketing B2B y la reserva de reuniones a Magnora Marketing es la vía eficaz para escalar las ventas sin invertir en costosas contrataciones fijas. El equipo de ventas profesional de Magnora Marketing gestiona todo el proceso: desde la identificación y el filtrado de los responsables relevantes hasta la reserva de reuniones de ventas cualificadas y el seguimiento sistemático. Usamos métodos de ventas estructurados y documentados combinados con coaching continuo y control de calidad, lo que garantiza una calidad de reunión alta y constante, independientemente del sector y el público objetivo.',
+    p2: 'Magnora Marketing ofrece servicios de telemarketing, reserva de reuniones, generación de leads y atención al cliente que, en conjunto, cubren todo el ciclo de ventas, del primer contacto al acuerdo cerrado. Trabajamos con la cualificación BANT (Budget, Authority, Need, Timing) y entregamos notas de reunión detalladas y material de briefing a tu equipo de ventas, para que cada reunión empiece con la base adecuada. Todas las campañas se respaldan con datos de rendimiento continuos e informes mensuales con un cálculo de ROI claro.',
+    bullets: [
+      'Telemarketing B2B con prospectos cualificados por BANT',
+      'Reserva de reuniones profesional con doble confirmación',
+      'Generación de leads basada en datos con integración de CRM',
+      'Atención al cliente y seguimiento profesionales',
+    ],
+  },
+  seoText2: {
+    title: 'Servicios de ventas especializados por sector para empresas B2B en Dinamarca',
+    p1: 'Magnora Marketing tiene una experiencia sectorial profunda en tech y SaaS, el sector de la consultoría de TI, la energía verde y la sostenibilidad, y las empresas de facility y servicios. Este conocimiento especializado significa que nuestros consultores de ventas hablan el idioma del sector, entienden los retos específicos y pueden comunicar la creación de valor de forma precisa y creíble a los responsables de tu público objetivo. El resultado son tasas de conversión más altas, mejor calidad de reunión y ciclos de venta más cortos.',
+    p2: 'Ya sea que vendas software empresarial, servicios de asesoramiento, optimización energética o contratos de servicio, Magnora Marketing adapta su enfoque y sus scripts a tu situación de ventas única. Contacta con Magnora Marketing en mail@magnoramarketing.dk para saber cómo podemos crear a medida un paquete de servicios que encaje con tu empresa, tus objetivos y tu presupuesto.',
+  },
+  faq: [
+    { question: '¿Qué es el telemarketing B2B?', answer: 'El telemarketing B2B son las ventas telefónicas directas y el contacto con clientes dirigidos a empresas. Magnora Marketing usa telemarketing específico para identificar responsables, cualificar leads y reservar reuniones de ventas.' },
+    { question: '¿Cuál es la diferencia entre telemarketing y reserva de reuniones?', answer: 'El telemarketing abarca todas las formas de venta telefónica B2B y contacto con clientes. La reserva de reuniones se centra específicamente en reservar reuniones de ventas cualificadas con responsables de tu público objetivo.' },
+    { question: '¿Podéis integrar con nuestro sistema CRM?', answer: 'Sí, Magnora Marketing trabaja con la mayoría de los sistemas CRM y puede entregar leads y reuniones directamente en vuestro flujo de ventas existente.' },
+    { question: '¿Ofrecéis informes y estadísticas?', answer: 'Sí: recibes informes continuos con datos de actividad, estadísticas de reuniones y cálculo de ROI.' },
+    { question: '¿Podéis ayudarnos en sectores específicos?', answer: 'Tenemos experiencia profunda en más de 16 sectores y siempre adaptamos nuestro enfoque a tu sector y público objetivo específicos.' },
+    { question: '¿Puede Magnora Marketing ayudarnos tanto con ventas B2B como B2C?', answer: 'Nos centramos principalmente en B2B, pero también tenemos experiencia con ventas B2C en energía, pensiones y productos similares.' },
+    { question: '¿Cuál es la frecuencia de reuniones típica con Magnora Marketing?', answer: 'Solemos celebrar reuniones de estado semanales con el cliente y enviamos informes continuos sobre actividad y resultados.' },
+    { question: '¿Ofrecéis grabación de las llamadas de ventas?', answer: 'Sí: podemos ofrecer la grabación y revisión de las llamadas de ventas para formación y control de calidad, si lo deseas.' },
+    { question: '¿Podemos definir nuestro propio discurso de ventas?', answer: 'Sí: siempre trabajamos con los mensajes y el tono de voz propios de tu empresa. Adaptamos los scripts y materiales a vosotros.' },
+    { question: '¿Cuál es vuestra tasa de éxito en la reserva de reuniones?', answer: 'Nuestra tasa de reserva de reuniones varía según el sector y el público objetivo, pero solemos lograr entre un 10% y un 20% de reuniones de los contactos cualificados.' },
+    { question: '¿Podéis ayudar con el seguimiento tras las reuniones?', answer: 'Sí: podemos gestionar el seguimiento, el seguimiento de presupuestos y mantener el impulso en el pipeline de ventas tras las reuniones.' },
+    { question: '¿Trabajáis con mercados internacionales?', answer: 'Nos centramos principalmente en el mercado danés, pero también podemos dar soporte a las ventas en Escandinavia y mercados europeos seleccionados.' },
+    { question: '¿Cuál es la duración mínima del contrato?', answer: 'Recomendamos un mínimo de 3 meses para lograr resultados óptimos y una base de datos válida para la optimización.' },
+    { question: '¿Podemos ver ejemplos de vuestro trabajo?', answer: 'Sí: contáctanos para casos y referencias de nuestros socios anteriores y actuales.' },
+    { question: '¿Cuál es la ventaja de reunir todos los servicios en Magnora Marketing?', answer: 'Cuando el telemarketing, la reserva de reuniones y la presencia digital se coordinan con un solo socio, se crea un sistema de ventas coherente y más eficaz.' },
+  ],
+  finalCta: {
+    title: 'Empieza hoy tu colaboración de ventas con Magnora Marketing',
+    subtitle: 'Accede a televentas, reserva de reuniones y generación de leads profesionales, todo reunido con un solo socio.',
+    primary: 'Contáctanos ahora',
+    secondary: 'Ver precios',
+  },
+};

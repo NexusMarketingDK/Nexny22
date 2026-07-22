@@ -25,6 +25,9 @@ import aiintegrationEs from './locales/aiintegration/es';
 import aisolutionsDa from './locales/aisolutions/da';
 import aisolutionsEn from './locales/aisolutions/en';
 import aisolutionsEs from './locales/aisolutions/es';
+import servicesDa from './locales/services/da';
+import servicesEn from './locales/services/en';
+import servicesEs from './locales/services/es';
 
 const isBrowser = typeof window !== 'undefined';
 
@@ -39,9 +42,9 @@ i18n
   .use(initReactI18next)
   .init({
     resources: {
-      da: { translation: { ...da, websites: websitesDa, webdev: webdevDa, apisaas: apisaasDa, aireception: aireceptionDa, aiwidget: aiwidgetDa, aiintegration: aiintegrationDa, aisolutions: aisolutionsDa } },
-      en: { translation: { ...en, websites: websitesEn, webdev: webdevEn, apisaas: apisaasEn, aireception: aireceptionEn, aiwidget: aiwidgetEn, aiintegration: aiintegrationEn, aisolutions: aisolutionsEn } },
-      es: { translation: { ...es, websites: websitesEs, webdev: webdevEs, apisaas: apisaasEs, aireception: aireceptionEs, aiwidget: aiwidgetEs, aiintegration: aiintegrationEs, aisolutions: aisolutionsEs } },
+      da: { translation: { ...da, websites: websitesDa, webdev: webdevDa, apisaas: apisaasDa, aireception: aireceptionDa, aiwidget: aiwidgetDa, aiintegration: aiintegrationDa, aisolutions: aisolutionsDa, services: servicesDa } },
+      en: { translation: { ...en, websites: websitesEn, webdev: webdevEn, apisaas: apisaasEn, aireception: aireceptionEn, aiwidget: aiwidgetEn, aiintegration: aiintegrationEn, aisolutions: aisolutionsEn, services: servicesEn } },
+      es: { translation: { ...es, websites: websitesEs, webdev: webdevEs, apisaas: apisaasEs, aireception: aireceptionEs, aiwidget: aiwidgetEs, aiintegration: aiintegrationEs, aisolutions: aisolutionsEs, services: servicesEs } },
     },
     lng: isBrowser ? undefined : 'da',
     fallbackLng: 'da',
