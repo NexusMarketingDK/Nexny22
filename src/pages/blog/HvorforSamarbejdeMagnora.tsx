@@ -7,7 +7,6 @@ export default function HvorforSamarbejdeMagnora() {
       slug="hvorfor-samarbejde-magnora"
       canonical="/blog/hvorfor-samarbejde-magnora"
       date="2026-07-01"
-      categoryId="samarbejde"
     />
   );
 }

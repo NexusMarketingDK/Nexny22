@@ -9,8 +9,6 @@ interface ArticlePageProps {
   canonical: string;
   /** ISO publish date (used for structured data). */
   date: string;
-  /** Category id into the `blog.categories` namespace. */
-  categoryId: 'samarbejde' | 'telesalg' | 'webudvikling' | 'ai';
 }
 
 /**
@@ -19,7 +17,7 @@ interface ArticlePageProps {
  * language; only the language-independent metadata (canonical, date, category)
  * is passed per article.
  */
-const ArticlePage: React.FC<ArticlePageProps> = ({ slug, canonical, date, categoryId }) => {
+const ArticlePage: React.FC<ArticlePageProps> = ({ slug, canonical, date }) => {
   const { t, i18n } = useTranslation();
   const base = `articles.${slug}`;
 
@@ -34,7 +32,7 @@ const ArticlePage: React.FC<ArticlePageProps> = ({ slug, canonical, date, catego
       seoDescription={t(`${base}.seoDescription`)}
       canonical={canonical}
       keywords={t(`${base}.keywords`)}
-      category={t(`blog.categories.${categoryId}`)}
+      category={t(`${base}.category`)}
       title={t(`${base}.title`)}
       date={date}
       displayDate={t(`${base}.displayDate`)}
