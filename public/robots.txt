@@ -1,5 +1,5 @@
 # Robots.txt for Magnora Marketing
-# Updated: 2026-07-21
+# Updated: 2026-07-23
 
 User-agent: *
 Allow: /
@@ -47,14 +47,14 @@ Allow: /jobs/$
 Allow: /freelance-telemarketing/$
 Allow: /samarbejdspartner/$
 Allow: /priser/$
-Allow: /hvorfor-nexusmarketing/$
+Allow: /hvorfor-nexny/$
 Allow: /digital/$
 Allow: /om-os/$
 Allow: /kontakt/$
 
 # Job landing pages
 Allow: /jobs/arbejd-hjemmefra/$
-Allow: /jobs/web-bureau/$
+Allow: /jobs/webudvikling-salg/$
 Allow: /jobs/led-belysning/$
 Allow: /jobs/energi-salg/$
 Allow: /jobs/kaffe-service/$

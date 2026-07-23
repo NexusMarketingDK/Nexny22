@@ -58,6 +58,36 @@ import leadgenEs from './locales/leadgen/es';
 import meetingbookingDa from './locales/meetingbooking/da';
 import meetingbookingEn from './locales/meetingbooking/en';
 import meetingbookingEs from './locales/meetingbooking/es';
+import joblistingsDa from './locales/joblistings/da';
+import joblistingsEn from './locales/joblistings/en';
+import joblistingsEs from './locales/joblistings/es';
+import jobremoteDa from './locales/jobremote/da';
+import jobremoteEn from './locales/jobremote/en';
+import jobremoteEs from './locales/jobremote/es';
+import jobwebbureauDa from './locales/jobwebbureau/da';
+import jobwebbureauEn from './locales/jobwebbureau/en';
+import jobwebbureauEs from './locales/jobwebbureau/es';
+import jobledDa from './locales/jobled/da';
+import jobledEn from './locales/jobled/en';
+import jobledEs from './locales/jobled/es';
+import jobenergyDa from './locales/jobenergy/da';
+import jobenergyEn from './locales/jobenergy/en';
+import jobenergyEs from './locales/jobenergy/es';
+import jobcoffeeDa from './locales/jobcoffee/da';
+import jobcoffeeEn from './locales/jobcoffee/en';
+import jobcoffeeEs from './locales/jobcoffee/es';
+import jobsolarDa from './locales/jobsolar/da';
+import jobsolarEn from './locales/jobsolar/en';
+import jobsolarEs from './locales/jobsolar/es';
+import jobmatDa from './locales/jobmat/da';
+import jobmatEn from './locales/jobmat/en';
+import jobmatEs from './locales/jobmat/es';
+import jobpensionDa from './locales/jobpension/da';
+import jobpensionEn from './locales/jobpension/en';
+import jobpensionEs from './locales/jobpension/es';
+import jobdebtDa from './locales/jobdebt/da';
+import jobdebtEn from './locales/jobdebt/en';
+import jobdebtEs from './locales/jobdebt/es';
 
 const isBrowser = typeof window !== 'undefined';
 
@@ -72,9 +102,9 @@ i18n
   .use(initReactI18next)
   .init({
     resources: {
-      da: { translation: { ...da, websites: websitesDa, webdev: webdevDa, apisaas: apisaasDa, aireception: aireceptionDa, aiwidget: aiwidgetDa, aiintegration: aiintegrationDa, aisolutions: aisolutionsDa, services: servicesDa, contact: contactDa, pricing: pricingDa, homepage: homepageDa, about: aboutDa, partners: partnersDa, contactform: contactformDa, outsourcing: outsourcingDa, freelancers: freelancersDa, leadgen: leadgenDa, meetingbooking: meetingbookingDa } },
-      en: { translation: { ...en, websites: websitesEn, webdev: webdevEn, apisaas: apisaasEn, aireception: aireceptionEn, aiwidget: aiwidgetEn, aiintegration: aiintegrationEn, aisolutions: aisolutionsEn, services: servicesEn, contact: contactEn, pricing: pricingEn, homepage: homepageEn, about: aboutEn, partners: partnersEn, contactform: contactformEn, outsourcing: outsourcingEn, freelancers: freelancersEn, leadgen: leadgenEn, meetingbooking: meetingbookingEn } },
-      es: { translation: { ...es, websites: websitesEs, webdev: webdevEs, apisaas: apisaasEs, aireception: aireceptionEs, aiwidget: aiwidgetEs, aiintegration: aiintegrationEs, aisolutions: aisolutionsEs, services: servicesEs, contact: contactEs, pricing: pricingEs, homepage: homepageEs, about: aboutEs, partners: partnersEs, contactform: contactformEs, outsourcing: outsourcingEs, freelancers: freelancersEs, leadgen: leadgenEs, meetingbooking: meetingbookingEs } },
+      da: { translation: { ...da, websites: websitesDa, webdev: webdevDa, apisaas: apisaasDa, aireception: aireceptionDa, aiwidget: aiwidgetDa, aiintegration: aiintegrationDa, aisolutions: aisolutionsDa, services: servicesDa, contact: contactDa, pricing: pricingDa, homepage: homepageDa, about: aboutDa, partners: partnersDa, contactform: contactformDa, outsourcing: outsourcingDa, freelancers: freelancersDa, leadgen: leadgenDa, meetingbooking: meetingbookingDa, joblistings: joblistingsDa, jobremote: jobremoteDa, jobwebbureau: jobwebbureauDa, jobled: jobledDa, jobenergy: jobenergyDa, jobcoffee: jobcoffeeDa, jobsolar: jobsolarDa, jobmat: jobmatDa, jobpension: jobpensionDa, jobdebt: jobdebtDa } },
+      en: { translation: { ...en, websites: websitesEn, webdev: webdevEn, apisaas: apisaasEn, aireception: aireceptionEn, aiwidget: aiwidgetEn, aiintegration: aiintegrationEn, aisolutions: aisolutionsEn, services: servicesEn, contact: contactEn, pricing: pricingEn, homepage: homepageEn, about: aboutEn, partners: partnersEn, contactform: contactformEn, outsourcing: outsourcingEn, freelancers: freelancersEn, leadgen: leadgenEn, meetingbooking: meetingbookingEn, joblistings: joblistingsEn, jobremote: jobremoteEn, jobwebbureau: jobwebbureauEn, jobled: jobledEn, jobenergy: jobenergyEn, jobcoffee: jobcoffeeEn, jobsolar: jobsolarEn, jobmat: jobmatEn, jobpension: jobpensionEn, jobdebt: jobdebtEn } },
+      es: { translation: { ...es, websites: websitesEs, webdev: webdevEs, apisaas: apisaasEs, aireception: aireceptionEs, aiwidget: aiwidgetEs, aiintegration: aiintegrationEs, aisolutions: aisolutionsEs, services: servicesEs, contact: contactEs, pricing: pricingEs, homepage: homepageEs, about: aboutEs, partners: partnersEs, contactform: contactformEs, outsourcing: outsourcingEs, freelancers: freelancersEs, leadgen: leadgenEs, meetingbooking: meetingbookingEs, joblistings: joblistingsEs, jobremote: jobremoteEs, jobwebbureau: jobwebbureauEs, jobled: jobledEs, jobenergy: jobenergyEs, jobcoffee: jobcoffeeEs, jobsolar: jobsolarEs, jobmat: jobmatEs, jobpension: jobpensionEs, jobdebt: jobdebtEs } },
     },
     lng: isBrowser ? undefined : 'da',
     fallbackLng: 'da',

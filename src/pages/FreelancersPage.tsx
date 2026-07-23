@@ -28,6 +28,7 @@ const FreelancersPage: React.FC = () => {
   const wfhChecklist = t('freelancers.wfh.checklist', { returnObjects: true }) as string[];
   const seoBullets = t('freelancers.seoText1.bullets', { returnObjects: true }) as string[];
   const faqs = t('freelancers.faq', { returnObjects: true }) as { question: string; answer: string }[];
+  const jobItems = t('joblistings.items', { returnObjects: true }) as { title: string; description: string }[];
 
   return (
     <>
@@ -114,8 +115,8 @@ const FreelancersPage: React.FC = () => {
                   <Star className="text-blue-600 flex-shrink-0" size={24} />
                   <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded font-medium">{t('freelancers.jobsSection.availableBadge')}</span>
                 </div>
-                <h3 className="text-lg font-semibold mb-2">{job.title}</h3>
-                <p className="text-gray-600 text-sm mb-4">{job.description}</p>
+                <h3 className="text-lg font-semibold mb-2">{jobItems[index]?.title ?? job.title}</h3>
+                <p className="text-gray-600 text-sm mb-4">{jobItems[index]?.description ?? job.description}</p>
                 <span className="text-blue-600 font-medium text-sm inline-flex items-center">
                   {t('freelancers.jobsSection.readMore')} <ArrowRight size={14} className="ml-1" />
                 </span>

@@ -10,6 +10,9 @@ export default {
     blog: 'Blog',
     contact: 'Kontakt',
     cta: 'Kom i gang',
+    language: 'Sprog',
+    digitalItems: ['Webudvikling', 'API & SaaS', 'Hjemmesider', 'AI Integration', '✦ AI Widget', '✦ AI Receptionist'],
+    partnerItems: ['Bliv samarbejdspartner', 'Priser & Pakker', 'Hvorfor Magnora Marketing?', 'Mødebooking', 'Leadgenerering'],
   },
   footer: {
     tagline: 'Din vækstpartner inden for telesalg, mødebooking, webudvikling, leadgenerering og AI-integration.',
@@ -81,6 +84,18 @@ export default {
     learnMore: 'Lær mere',
     seeAll: 'Se alle',
     back: 'Tilbage',
+    jobFaqBoilerplate: [
+      { question: 'Er der opkaldslister klar fra dag ét?', answer: 'Ja – Magnora Marketing leverer opkaldslister og kampagnematerialer, så du kan starte med det samme.' },
+      { question: 'Kan jeg se et eksempel på et script?', answer: 'Ja – du modtager et gennemprøvet salgsskript ved opstart som du kan tilpasse din stil.' },
+      { question: 'Hvad sker der ved et succes-salg eller booket møde?', answer: 'Du registrerer resultatet i vores system, og provisionen beregnes automatisk og udbetales månedligt.' },
+      { question: 'Er der løbende coaching?', answer: "Ja – Magnora Marketing's salgsledere holder regelmæssige coaching-sessioner og giver feedback på din salgsstil." },
+      { question: 'Kan jeg prøve stillingen i en kortere periode?', answer: 'Ja – de første 2-4 uger betragtes som en gensidig prøveperiode.' },
+      { question: 'Hvad er den gennemsnitlige indkomst for en aktiv freelancer?', answer: 'Det afhænger af aktivitet og produkt. Aktive freelancere med gode resultater kan tjene et solidt supplement eller en fuld indkomst.' },
+      { question: 'Kan jeg arbejde for Magnora Marketing og for andre bureauer?', answer: "Som freelancer er du fri til at arbejde for andre, så længe der ikke er konkurrencekonflikt med Magnora Marketing's kunder." },
+      { question: 'Er der skriftlige kontrakter?', answer: 'Ja – alle samarbejder formaliseres med en klar freelance-aftale der beskriver vilkår, provision og forventninger.' },
+      { question: 'Hvad sker der, hvis jeg ikke trives med produktet?', answer: "Vi kan diskutere om du er bedre egnet til et andet produkt i Magnora Marketing's portfolio." },
+      { question: "Hvad er Magnora Marketing's forventninger til mig som freelancer?", answer: 'Vi forventer selvdisciplin, professionel optræden og løbende kommunikation om aktivitet og resultater.' },
+    ],
   },
   language: {
     da: 'Dansk',

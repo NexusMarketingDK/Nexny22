@@ -7,9 +7,10 @@ const langs = ['da', 'en', 'es'] as const;
 
 interface Props {
   compact?: boolean;
+  mobile?: boolean;
 }
 
-const LanguageSwitcher: React.FC<Props> = ({ compact = false }) => {
+const LanguageSwitcher: React.FC<Props> = ({ compact = false, mobile = false }) => {
   const { i18n, t } = useTranslation();
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
@@ -28,6 +29,27 @@ const LanguageSwitcher: React.FC<Props> = ({ compact = false }) => {
     i18n.changeLanguage(lang);
     setOpen(false);
   };
+
+  if (mobile) {
+    return (
+      <div className="grid grid-cols-3 gap-2">
+        {langs.map(l => (
+          <button
+            key={l}
+            onClick={() => change(l)}
+            className={`flex items-center justify-center gap-1.5 px-2 py-2.5 rounded-lg text-sm font-medium border transition-colors ${
+              current === l
+                ? 'bg-blue-50 text-blue-600 border-blue-200'
+                : 'text-slate-600 border-slate-200 hover:bg-slate-50'
+            }`}
+          >
+            <span>{flags[l]}</span>
+            <span>{l.toUpperCase()}</span>
+          </button>
+        ))}
+      </div>
+    );
+  }
 
   if (compact) {
     return (
