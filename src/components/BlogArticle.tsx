@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { Calendar, Clock, ArrowRight, Mail } from 'lucide-react';
 import SEO from './SEO';
 import FAQSection from './FAQSection';
@@ -42,9 +43,10 @@ const BlogArticle: React.FC<BlogArticleProps> = ({
   intro,
   sections,
   faqs,
-  ctaTitle = 'Klar til at samarbejde med Magnora Marketing?',
-  ctaSubtitle = 'Book en gratis og uforpligtende samtale om idéudvikling, mødebooking eller telesalg. Vi vender tilbage inden for én hverdag.',
+  ctaTitle,
+  ctaSubtitle,
 }) => {
+  const { t } = useTranslation();
   return (
     <>
       <SEO
@@ -56,8 +58,8 @@ const BlogArticle: React.FC<BlogArticleProps> = ({
         articlePublishedTime={new Date(date).toISOString()}
         author="Magnora Marketing"
         breadcrumbs={[
-          { name: 'Forside', url: '/' },
-          { name: 'Blog', url: '/blog' },
+          { name: t('blog.article.breadcrumbHome'), url: '/' },
+          { name: t('blog.article.breadcrumbBlog'), url: '/blog' },
           { name: title, url: canonical },
         ]}
       />
@@ -68,7 +70,7 @@ const BlogArticle: React.FC<BlogArticleProps> = ({
           <span className="inline-block bg-blue-500/30 text-blue-100 text-sm font-semibold px-4 py-1 rounded-full mb-4">{category}</span>
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-5 leading-tight">{title}</h1>
           <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-blue-100/80 text-sm">
-            <span className="flex items-center gap-2"><span>Af Magnora Marketing-teamet</span></span>
+            <span className="flex items-center gap-2"><span>{t('blog.article.byline')}</span></span>
             <span className="flex items-center gap-2"><Calendar size={15} /> {displayDate}</span>
             <span className="flex items-center gap-2"><Clock size={15} /> {readTime}</span>
           </div>
@@ -105,13 +107,12 @@ const BlogArticle: React.FC<BlogArticleProps> = ({
 
         {/* Inline contact CTA */}
         <div className="mt-12 rounded-2xl border border-blue-100 bg-gradient-to-br from-blue-50 to-indigo-50 p-8">
-          <h2 className="text-2xl font-bold text-slate-900 mb-2">Lad os tage en uforpligtende snak</h2>
+          <h2 className="text-2xl font-bold text-slate-900 mb-2">{t('blog.article.inlineCtaTitle')}</h2>
           <p className="text-slate-600 mb-6 max-w-2xl">
-            Fortæl os om din idé, din virksomhed og dine mål via vores kontaktformular. Vi vender tilbage inden for én
-            hverdag med et konkret bud på, hvordan Magnora Marketing kan hjælpe dig videre – helt uden forpligtelser.
+            {t('blog.article.inlineCtaBody')}
           </p>
           <Link to="/kontakt" className="btn btn-primary inline-flex items-center gap-2 px-7 py-3.5">
-            <Mail size={17} /> Gå til kontaktformularen <ArrowRight size={16} />
+            <Mail size={17} /> {t('blog.article.inlineCtaButton')} <ArrowRight size={16} />
           </Link>
         </div>
       </article>
@@ -119,11 +120,11 @@ const BlogArticle: React.FC<BlogArticleProps> = ({
       {faqs && faqs.length > 0 && <FAQSection faqs={faqs} />}
 
       <CTASection
-        title={ctaTitle}
-        subtitle={ctaSubtitle}
-        primaryText="Kontakt Magnora Marketing"
+        title={ctaTitle ?? t('blog.article.defaultCtaTitle')}
+        subtitle={ctaSubtitle ?? t('blog.article.defaultCtaSubtitle')}
+        primaryText={t('blog.article.ctaPrimary')}
         primaryLink="/kontakt"
-        secondaryText="Se vores ydelser"
+        secondaryText={t('blog.article.ctaSecondary')}
         secondaryLink="/ydelser"
       />
     </>

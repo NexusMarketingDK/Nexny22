@@ -73,6 +73,10 @@ const Navbar: React.FC = () => {
     { path: '/leadgenerering', title: 'Leadgenerering' }
   ];
 
+  const jobItems = t('joblistings.items', { returnObjects: true }) as { title: string; description: string }[];
+  const digitalLabels = t('nav.digitalItems', { returnObjects: true }) as string[];
+  const partnerLabels = t('nav.partnerItems', { returnObjects: true }) as string[];
+
   const dropdownClass = 'absolute top-full left-0 mt-2 w-64 bg-white rounded-2xl shadow-xl border border-slate-100 py-2 px-2 z-50';
 
   return (
@@ -109,8 +113,8 @@ const Navbar: React.FC = () => {
               </button>
               {isDigitalDropdownOpen && (
                 <div className={dropdownClass}>
-                  {digitalServices.map((s) => (
-                    <Link key={s.path} to={s.path} className={dropdownItemClass}>{s.title}</Link>
+                  {digitalServices.map((s, i) => (
+                    <Link key={s.path} to={s.path} className={dropdownItemClass}>{digitalLabels[i] ?? s.title}</Link>
                   ))}
                 </div>
               )}
@@ -126,8 +130,8 @@ const Navbar: React.FC = () => {
               </button>
               {isJobsDropdownOpen && (
                 <div className={dropdownClass}>
-                  {jobListings.map((job) => (
-                    <Link key={job.path} to={job.path} className={dropdownItemClass}>{job.title}</Link>
+                  {jobListings.map((job, i) => (
+                    <Link key={job.path} to={job.path} className={dropdownItemClass}>{jobItems[i]?.title ?? job.title}</Link>
                   ))}
                   <div className="my-1 border-t border-slate-100" />
                   <Link to="/freelance-telemarketing" className={`${dropdownItemClass} font-semibold text-blue-600`}>{t('nav.allJobs')}</Link>
@@ -145,8 +149,8 @@ const Navbar: React.FC = () => {
               </button>
               {isPartnerDropdownOpen && (
                 <div className={dropdownClass}>
-                  {partnerOptions.map((o) => (
-                    <Link key={o.path} to={o.path} className={dropdownItemClass}>{o.title}</Link>
+                  {partnerOptions.map((o, i) => (
+                    <Link key={o.path} to={o.path} className={dropdownItemClass}>{partnerLabels[i] ?? o.title}</Link>
                   ))}
                 </div>
               )}
@@ -184,27 +188,31 @@ const Navbar: React.FC = () => {
           <NavLink to="/ydelser" className={navLinkClass} onClick={toggleMenu}>{t('nav.services')}</NavLink>
           <div className="py-2 px-3">
             <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">{t('nav.digital')}</div>
-            {digitalServices.map((s) => (
-              <Link key={s.path} to={s.path} className="block py-2 px-2 text-sm text-slate-600 hover:text-blue-600 rounded-lg" onClick={toggleMenu}>{s.title}</Link>
+            {digitalServices.map((s, i) => (
+              <Link key={s.path} to={s.path} className="block py-2 px-2 text-sm text-slate-600 hover:text-blue-600 rounded-lg" onClick={toggleMenu}>{digitalLabels[i] ?? s.title}</Link>
             ))}
           </div>
           <div className="py-2 px-3">
             <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">{t('nav.jobSeekers')}</div>
-            {jobListings.map((job) => (
-              <Link key={job.path} to={job.path} className="block py-2 px-2 text-sm text-slate-600 hover:text-blue-600 rounded-lg" onClick={toggleMenu}>{job.title}</Link>
+            {jobListings.map((job, i) => (
+              <Link key={job.path} to={job.path} className="block py-2 px-2 text-sm text-slate-600 hover:text-blue-600 rounded-lg" onClick={toggleMenu}>{jobItems[i]?.title ?? job.title}</Link>
             ))}
             <Link to="/freelance-telemarketing" className="block py-2 px-2 text-sm font-semibold text-blue-600" onClick={toggleMenu}>{t('nav.allJobs')}</Link>
           </div>
           <div className="py-2 px-3">
             <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">{t('nav.collaboration')}</div>
-            {partnerOptions.map((o) => (
-              <Link key={o.path} to={o.path} className="block py-2 px-2 text-sm text-slate-600 hover:text-blue-600 rounded-lg" onClick={toggleMenu}>{o.title}</Link>
+            {partnerOptions.map((o, i) => (
+              <Link key={o.path} to={o.path} className="block py-2 px-2 text-sm text-slate-600 hover:text-blue-600 rounded-lg" onClick={toggleMenu}>{partnerLabels[i] ?? o.title}</Link>
             ))}
           </div>
           <NavLink to="/om-os" className={navLinkClass} onClick={toggleMenu}>{t('nav.about')}</NavLink>
           <NavLink to="/blog" className={navLinkClass} onClick={toggleMenu}>{t('nav.blog')}</NavLink>
           <NavLink to="/kontakt" className={navLinkClass} onClick={toggleMenu}>{t('nav.contact')}</NavLink>
           <Link to="/kontakt" className="mt-2 btn btn-primary text-center" onClick={toggleMenu}>{t('nav.cta')}</Link>
+          <div className="pt-3 mt-1 border-t border-slate-100">
+            <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2 px-1">{t('nav.language')}</div>
+            <LanguageSwitcher mobile />
+          </div>
         </nav>
       </div>
     </header>

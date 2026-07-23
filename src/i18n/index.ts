@@ -4,6 +4,96 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 import da from './locales/da';
 import en from './locales/en';
 import es from './locales/es';
+import websitesDa from './locales/websites/da';
+import websitesEn from './locales/websites/en';
+import websitesEs from './locales/websites/es';
+import webdevDa from './locales/webdev/da';
+import webdevEn from './locales/webdev/en';
+import webdevEs from './locales/webdev/es';
+import apisaasDa from './locales/apisaas/da';
+import apisaasEn from './locales/apisaas/en';
+import apisaasEs from './locales/apisaas/es';
+import aireceptionDa from './locales/aireception/da';
+import aireceptionEn from './locales/aireception/en';
+import aireceptionEs from './locales/aireception/es';
+import aiwidgetDa from './locales/aiwidget/da';
+import aiwidgetEn from './locales/aiwidget/en';
+import aiwidgetEs from './locales/aiwidget/es';
+import aiintegrationDa from './locales/aiintegration/da';
+import aiintegrationEn from './locales/aiintegration/en';
+import aiintegrationEs from './locales/aiintegration/es';
+import aisolutionsDa from './locales/aisolutions/da';
+import aisolutionsEn from './locales/aisolutions/en';
+import aisolutionsEs from './locales/aisolutions/es';
+import servicesDa from './locales/services/da';
+import servicesEn from './locales/services/en';
+import servicesEs from './locales/services/es';
+import contactDa from './locales/contact/da';
+import contactEn from './locales/contact/en';
+import contactEs from './locales/contact/es';
+import pricingDa from './locales/pricing/da';
+import pricingEn from './locales/pricing/en';
+import pricingEs from './locales/pricing/es';
+import homepageDa from './locales/homepage/da';
+import homepageEn from './locales/homepage/en';
+import homepageEs from './locales/homepage/es';
+import aboutDa from './locales/about/da';
+import aboutEn from './locales/about/en';
+import aboutEs from './locales/about/es';
+import partnersDa from './locales/partners/da';
+import partnersEn from './locales/partners/en';
+import partnersEs from './locales/partners/es';
+import contactformDa from './locales/contactform/da';
+import contactformEn from './locales/contactform/en';
+import contactformEs from './locales/contactform/es';
+import outsourcingDa from './locales/outsourcing/da';
+import outsourcingEn from './locales/outsourcing/en';
+import outsourcingEs from './locales/outsourcing/es';
+import freelancersDa from './locales/freelancers/da';
+import freelancersEn from './locales/freelancers/en';
+import freelancersEs from './locales/freelancers/es';
+import leadgenDa from './locales/leadgen/da';
+import leadgenEn from './locales/leadgen/en';
+import leadgenEs from './locales/leadgen/es';
+import meetingbookingDa from './locales/meetingbooking/da';
+import meetingbookingEn from './locales/meetingbooking/en';
+import meetingbookingEs from './locales/meetingbooking/es';
+import joblistingsDa from './locales/joblistings/da';
+import joblistingsEn from './locales/joblistings/en';
+import joblistingsEs from './locales/joblistings/es';
+import jobremoteDa from './locales/jobremote/da';
+import jobremoteEn from './locales/jobremote/en';
+import jobremoteEs from './locales/jobremote/es';
+import jobwebbureauDa from './locales/jobwebbureau/da';
+import jobwebbureauEn from './locales/jobwebbureau/en';
+import jobwebbureauEs from './locales/jobwebbureau/es';
+import jobledDa from './locales/jobled/da';
+import jobledEn from './locales/jobled/en';
+import jobledEs from './locales/jobled/es';
+import jobenergyDa from './locales/jobenergy/da';
+import jobenergyEn from './locales/jobenergy/en';
+import jobenergyEs from './locales/jobenergy/es';
+import jobcoffeeDa from './locales/jobcoffee/da';
+import jobcoffeeEn from './locales/jobcoffee/en';
+import jobcoffeeEs from './locales/jobcoffee/es';
+import jobsolarDa from './locales/jobsolar/da';
+import jobsolarEn from './locales/jobsolar/en';
+import jobsolarEs from './locales/jobsolar/es';
+import jobmatDa from './locales/jobmat/da';
+import jobmatEn from './locales/jobmat/en';
+import jobmatEs from './locales/jobmat/es';
+import jobpensionDa from './locales/jobpension/da';
+import jobpensionEn from './locales/jobpension/en';
+import jobpensionEs from './locales/jobpension/es';
+import jobdebtDa from './locales/jobdebt/da';
+import jobdebtEn from './locales/jobdebt/en';
+import jobdebtEs from './locales/jobdebt/es';
+import blogDa from './locales/blog/da';
+import blogEn from './locales/blog/en';
+import blogEs from './locales/blog/es';
+import articlesDa from './locales/articles/da';
+import articlesEn from './locales/articles/en';
+import articlesEs from './locales/articles/es';
 
 const isBrowser = typeof window !== 'undefined';
 
@@ -18,9 +108,9 @@ i18n
   .use(initReactI18next)
   .init({
     resources: {
-      da: { translation: da },
-      en: { translation: en },
-      es: { translation: es },
+      da: { translation: { ...da, websites: websitesDa, webdev: webdevDa, apisaas: apisaasDa, aireception: aireceptionDa, aiwidget: aiwidgetDa, aiintegration: aiintegrationDa, aisolutions: aisolutionsDa, services: servicesDa, contact: contactDa, pricing: pricingDa, homepage: homepageDa, about: aboutDa, partners: partnersDa, contactform: contactformDa, outsourcing: outsourcingDa, freelancers: freelancersDa, leadgen: leadgenDa, meetingbooking: meetingbookingDa, joblistings: joblistingsDa, jobremote: jobremoteDa, jobwebbureau: jobwebbureauDa, jobled: jobledDa, jobenergy: jobenergyDa, jobcoffee: jobcoffeeDa, jobsolar: jobsolarDa, jobmat: jobmatDa, jobpension: jobpensionDa, jobdebt: jobdebtDa, blog: blogDa, articles: articlesDa } },
+      en: { translation: { ...en, websites: websitesEn, webdev: webdevEn, apisaas: apisaasEn, aireception: aireceptionEn, aiwidget: aiwidgetEn, aiintegration: aiintegrationEn, aisolutions: aisolutionsEn, services: servicesEn, contact: contactEn, pricing: pricingEn, homepage: homepageEn, about: aboutEn, partners: partnersEn, contactform: contactformEn, outsourcing: outsourcingEn, freelancers: freelancersEn, leadgen: leadgenEn, meetingbooking: meetingbookingEn, joblistings: joblistingsEn, jobremote: jobremoteEn, jobwebbureau: jobwebbureauEn, jobled: jobledEn, jobenergy: jobenergyEn, jobcoffee: jobcoffeeEn, jobsolar: jobsolarEn, jobmat: jobmatEn, jobpension: jobpensionEn, jobdebt: jobdebtEn, blog: blogEn, articles: articlesEn } },
+      es: { translation: { ...es, websites: websitesEs, webdev: webdevEs, apisaas: apisaasEs, aireception: aireceptionEs, aiwidget: aiwidgetEs, aiintegration: aiintegrationEs, aisolutions: aisolutionsEs, services: servicesEs, contact: contactEs, pricing: pricingEs, homepage: homepageEs, about: aboutEs, partners: partnersEs, contactform: contactformEs, outsourcing: outsourcingEs, freelancers: freelancersEs, leadgen: leadgenEs, meetingbooking: meetingbookingEs, joblistings: joblistingsEs, jobremote: jobremoteEs, jobwebbureau: jobwebbureauEs, jobled: jobledEs, jobenergy: jobenergyEs, jobcoffee: jobcoffeeEs, jobsolar: jobsolarEs, jobmat: jobmatEs, jobpension: jobpensionEs, jobdebt: jobdebtEs, blog: blogEs, articles: articlesEs } },
     },
     lng: isBrowser ? undefined : 'da',
     fallbackLng: 'da',

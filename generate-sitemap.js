@@ -287,14 +287,14 @@ Allow: /jobs/$
 Allow: /freelance-telemarketing/$
 Allow: /samarbejdspartner/$
 Allow: /priser/$
-Allow: /hvorfor-nexusmarketing/$
+Allow: /hvorfor-nexny/$
 Allow: /digital/$
 Allow: /om-os/$
 Allow: /kontakt/$
 
 # Job landing pages
 Allow: /jobs/arbejd-hjemmefra/$
-Allow: /jobs/web-bureau/$
+Allow: /jobs/webudvikling-salg/$
 Allow: /jobs/led-belysning/$
 Allow: /jobs/energi-salg/$
 Allow: /jobs/kaffe-service/$

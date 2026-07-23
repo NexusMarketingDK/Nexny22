@@ -1,0 +1,83 @@
+export default {
+  seo: {
+    title: 'Become a Partner | Magnora Marketing – Telesales, Meeting Booking and AI',
+    description: 'Start a partnership with Magnora Marketing – your growth partner in telesales, meeting booking, web development, lead generation and AI development. Measurable results.',
+    keywords: 'Magnora Marketing partner, outsource sales, meeting booking partner, B2B sales, telemarketing agency',
+  },
+  hero: {
+    title: 'Let Magnora Marketing Drive Your Sales',
+    subtitle: 'Become a partner and get access to a dedicated sales team that delivers qualified meetings, warm leads and documented results – without the burden of hiring.',
+    cta: 'Start a partnership',
+    secondaryCta: 'See prices',
+  },
+  whySection: {
+    title: 'Why choose Magnora Marketing as your sales partner?',
+    subtitle: 'Magnora Marketing combines human sales power with data-driven methods to deliver results that make a real difference to your bottom line.',
+  },
+  benefits: [
+    { title: 'Scale your sales', description: 'Magnora Marketing delivers qualified meetings and warm leads directly to your sales team – so you can scale without hiring.' },
+    { title: 'Clear ROI reporting', description: 'You get ongoing access to performance data, meeting statistics and ROI calculation in clear, actionable reports.' },
+    { title: 'Tailored to you', description: 'We tailor our solution to your industry, target group and budget. No standard packages – only exactly what you need.' },
+  ],
+  processSection: {
+    title: 'How the partnership starts',
+  },
+  processSteps: [
+    { number: '01', title: 'Kick-off meeting', description: 'We start with a thorough meeting to understand your business, your products and your ideal customer.' },
+    { number: '02', title: 'Strategy & Setup', description: 'We develop a tailored strategy with clear KPIs, objectives and communication plans.' },
+    { number: '03', title: 'Campaign launch', description: 'Our team is thoroughly briefed and gets going with telemarketing or meeting booking, with ongoing feedback and adjustment.' },
+    { number: '04', title: 'Follow-up & Optimisation', description: 'We evaluate results continuously and optimise the effort continuously to ensure the best ROI for you.' },
+  ],
+  formSection: {
+    title: 'Become a partner',
+    subtitle: 'Tell us about your business and your goals – we’ll get back to you within one business day with a concrete proposal for meeting booking or telesales.',
+  },
+  midCta: {
+    title: 'Ready to partner with Magnora Marketing?',
+    subtitle: 'Take the first step towards more growth. Contact us and hear what Magnora Marketing can do for your business.',
+    button: 'Get started',
+  },
+  seoText1: {
+    title: 'Outsourcing Sales and Meeting Booking – Become a Partner with Magnora Marketing',
+    p1: 'Becoming a partner with Magnora Marketing is the strategic decision for B2B companies that want to grow fast and efficiently without building and staffing a large internal sales team. Magnora Marketing acts as your extended sales force – with experienced sales consultants who represent your business professionally and engagingly to potential customers. We tailor the campaign completely to your industry, your target group and your specific product or service, and deliver ongoing reports that show exactly what the effort delivers.',
+    p2: 'The partnership with Magnora Marketing starts with a thorough kick-off meeting where we get to know your business and your customers. Then we develop a targeted strategy with clear KPIs, communication plans and a realistic plan for start-up and scaling. Most partners can expect the first results within 2-3 weeks after campaign start, and many see positive ROI already in the first quarter.',
+    bullets: [
+      'Scale sales without expensive permanent hires',
+      'Tailored strategy with clear KPIs and goals',
+      'Weekly and monthly performance reports',
+      'Flexible agreements with reasonable notice periods',
+    ],
+  },
+  seoText2: {
+    title: 'Magnora Marketing is More than a Call Centre – We are Your Strategic Sales Partner',
+    p1: 'Magnora Marketing differs fundamentally from traditional call centres by focusing on quality over volume. We are a strategic sales partner with deep industry knowledge, targeted communication strategies and a constant focus on maximising ROI for our partners. Our team of experienced sales professionals works dedicatedly on your campaign and continuously adjusts the approach based on data, feedback and market developments.',
+    p2: 'Contact Magnora Marketing today at mail@magnoramarketing.dk – we offer a no-obligation pilot period at a reduced price for new partners, so you can evaluate results and the collaboration model before a full start.',
+  },
+  faq: [
+    { question: 'What does it cost to partner with Magnora Marketing?', answer: 'The price depends on your industry, the scope of the task and the chosen model. We offer both No Cure No Pay and fixed package solutions. Contact us for a tailored quote.' },
+    { question: 'When can you start?', answer: 'We can typically start active work within 1-2 weeks after a thorough kick-off briefing.' },
+    { question: 'Which industries do you work with?', answer: 'We work with a wide range of B2B industries – from IT and SaaS to energy, facility, finance and the consulting industry.' },
+    { question: 'What is the minimum period for a partnership?', answer: 'We recommend a minimum of 3 months to see solid results, but we are flexible and adapt to your situation.' },
+    { question: 'What does a partnership with Magnora Marketing involve?', answer: 'As a partner you get access to Magnora Marketing’s team of experienced sales professionals who work dedicatedly to generate leads and book meetings for your business.' },
+    { question: 'Can we define the target group ourselves?', answer: 'Yes – we tailor campaigns based on your desired target group, industry, company size and geography.' },
+    { question: 'What is the minimum length of a partnership?', answer: 'We recommend a minimum of 3 months to achieve optimal results, but offer flexible solutions.' },
+    { question: 'Do we get access to reporting?', answer: 'Yes, you receive weekly and monthly reports with all activities, meeting bookings and results.' },
+    { question: 'Do you work with NDAs and confidentiality?', answer: 'Of course – all partnerships are protected by confidentiality agreements.' },
+    { question: 'What is a typical start-up process?', answer: 'We start with a briefing, define the target group and KPIs, create a script and test period, and then go into full operation.' },
+    { question: 'Can we see our leads in real time?', answer: 'Yes – we can provide access to a live dashboard or deliver weekly reports depending on your preference.' },
+    { question: 'What happens if the results don’t meet expectations?', answer: 'We hold ongoing optimisation meetings and adjust the approach based on data. Transparency and honesty are fundamental to our partnership.' },
+    { question: 'Can we stop the partnership if it doesn’t work?', answer: 'Yes – we have reasonable notice periods and don’t want to tie down customers who don’t experience value.' },
+    { question: 'Do you work with exclusive agreements?', answer: 'We can offer exclusivity within a given industry and region, depending on the scope of the partnership.' },
+    { question: 'Can you work with our existing sales team?', answer: 'Absolutely – many customers use Magnora Marketing as a supplement to their internal sales team, not as a replacement.' },
+    { question: 'What is your experience with SaaS companies?', answer: 'We have strong experience with meeting booking and lead generation for SaaS companies, including tech decision-makers and IT managers.' },
+    { question: 'Can you help validate a new target group?', answer: 'Yes – telemarketing and meeting booking are ideal for testing new target groups quickly and in a data-driven way.' },
+    { question: 'Do you offer pilot projects?', answer: 'Yes – we often offer a shorter pilot period so you can evaluate results and the collaboration model before a full start.' },
+    { question: 'What sets Magnora Marketing apart from a traditional call centre?', answer: 'Magnora Marketing is not a call centre – we are a strategic sales partner focused on quality, targeting and documented results, not volume.' },
+  ],
+  finalCta: {
+    title: 'Become a partner – start your growth today',
+    subtitle: 'Let Magnora Marketing fill your calendar with qualified sales meetings and warm leads, so your team can focus on closing deals.',
+    primary: 'Contact us',
+    secondary: 'See prices and packages',
+  },
+};
